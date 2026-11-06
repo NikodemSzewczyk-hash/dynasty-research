@@ -142,3 +142,5 @@ python scripts/dynasty.py review list --status pending
 ```
 
 Only `w` Working Paper identifiers are currently supported; chapter `c` and the retired technical/historical `t`/`h` prefixes are skipped deliberately. Papers are still queued as **unreviewed**, not published. NBER working-paper IDs and explicitly stated DOIs can match existing intellectual works. Author strings in `ref.tsv` may concatenate names ambiguously; the importer splits only clear separators and preserves ambiguous comma forms for reviewer inspection. This offline importer is not yet a scheduled NBER feed.
+
+API keys are supplied as environment variables; the OpenAlex client uses an Authorization bearer header so secrets do not appear in API URLs. Do not commit or print API keys.

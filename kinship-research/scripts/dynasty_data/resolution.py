@@ -23,9 +23,7 @@ def suggest_identifiers(db, source_id: str, limit: int = 5, fetcher=fetch_json) 
     fields=("id,display_name,issn,issn_l,works_count" if kind=="journal"
             else "id,display_name,orcid,works_count,last_known_institutions")
     params={"search":source["name"],"per_page":limit,"select":fields}
-    api_key=os.getenv("OPENALEX_API_KEY","").strip()
     email=os.getenv("DYNASTY_CONTACT_EMAIL","").strip()
-    if api_key:params["api_key"]=api_key
     if email:params["mailto"]=email
     result=fetcher("https://api.openalex.org/"+collection+"?"+urlencode(params))
     suggestions=[]

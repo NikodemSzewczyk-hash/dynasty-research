@@ -17,6 +17,8 @@ from dynasty_data.resolution import suggest_identifiers
 from backfill_plan import build_jobs, main as backfill_main
 from dynasty_data.nber import normalize_nber,iter_nber_tsv
 import csv
+import os
+from unittest.mock import patch
 from contextlib import redirect_stdout
 from io import StringIO
 
@@ -335,6 +337,21 @@ class PipelineTest(unittest.TestCase):
         path.write_text("paper\ttitle\nw1234\tSample\n",encoding="utf-8")
         with self.assertRaisesRegex(ValueError,"needs"):
             list(iter_nber_tsv(path))
+
+
+    def test_api_key_not_embedded_in_search_urls(self):
+        seen=[]
+        example={"id":"https://openalex.org/W12345678","title":"Research","authorships":[],"primary_location":{}}
+        def fake(url):
+            seen.append(url)
+            return {"results":[example]}
+        with patch.dict(os.environ,{"OPENALEX_API_KEY":"top-secret-test-key"}):
+            list(iter_openalex("mobility","2010-01-01","2020-01-01",max_records=2,fetcher=fake))
+            source_rows=seed_sources(self.db,SITE/"registry"/"source_manifest.json")
+            from dynasty_data.resolution import suggest_identifiers
+            suggest_identifiers(self.db,"researcher:jan-stuhler",fetcher=lambda url: (seen.append(url) or {"results":[]}))
+        self.assertTrue(seen)
+        self.assertTrue(all("top-secret-test-key" not in url for url in seen))
 
 if __name__=="__main__":
     unittest.main()

@@ -22,6 +22,9 @@ def fetch_json(url: str) -> dict:
     """Light retries for transient failures; no secrets embedded in the URL logs."""
     email=os.getenv("DYNASTY_CONTACT_EMAIL","").strip()
     headers={"User-Agent":USER_AGENT+(f" mailto:{email}" if email else ""),"Accept":"application/json"}
+    # Keep API credentials out of URLs, logs, redirect parameters and workflow output.
+    if url.startswith("https://api.openalex.org/") and os.getenv("OPENALEX_API_KEY","").strip():
+        headers["Authorization"]="Bearer "+os.environ["OPENALEX_API_KEY"].strip()
     for attempt in range(3):
         try:
             with urlopen(Request(url,headers=headers),timeout=40) as res:
@@ -116,9 +119,6 @@ def iter_openalex(query: str, from_date: str, to_date: str,
         email=os.getenv("DYNASTY_CONTACT_EMAIL","").strip()
         if email:
             params["mailto"]=email
-        api_key=os.getenv("OPENALEX_API_KEY","").strip()
-        if api_key:
-            params["api_key"]=api_key
         result=fetcher("https://api.openalex.org/works?"+urlencode(params))
         batch=result.get("results") or []
         if not batch:
