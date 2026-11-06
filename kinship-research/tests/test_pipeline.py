@@ -62,7 +62,7 @@ class PipelineTest(unittest.TestCase):
         self.assertEqual(stats(self.db)["published"],12)
         seed_curated(self.db,SITE/"data"/"papers.json")
         self.assertEqual(stats(self.db)["works"],12)
-        self.assertEqual(stats(self.db)["versions"],12)
+        self.assertEqual(stats(self.db)["versions"],16)
         folder=Path(self.tmp.name)/"hugo"
         report=export_hugo(self.db,folder)
         self.assertEqual(report["papers"],12)
@@ -95,7 +95,7 @@ class PipelineTest(unittest.TestCase):
         self.assertEqual(row["match_type"],"exact")
         existing=self.db.execute("SELECT work_id FROM versions WHERE doi=?",(doi,)).fetchone()["work_id"]
         self.assertEqual(decide(self.db,cid,"approve",reviewer="tester"),existing)
-        self.assertEqual(stats(self.db)["versions"],12)
+        self.assertEqual(stats(self.db)["versions"],16)
         self.assertEqual(stats(self.db)["works"],12)
         self.assertEqual(self.db.execute("SELECT status FROM candidates WHERE id=?",(cid,)).fetchone()["status"],"accepted")
         self.assertEqual(self.db.execute("SELECT openalex_id FROM versions WHERE doi=?",(doi,)).fetchone()["openalex_id"],rec["provider_id"])
