@@ -1,11 +1,24 @@
 {{ define "main" }}
-<section class="page-hero"><div class="wrap"><div class="eyebrow muted">THE ARCHIVE</div><h1>Research library<span class="brand-period">.</span></h1><p>A curated starting collection on the origins and persistence of inequality. This is a prototype archive, not yet an exhaustive or continuously updated database.</p></div></section>
+{{ $papers := where site.RegularPages "Section" "papers" }}
+<section class="page-hero archive-hero"><div class="wrap page-hero-inner"><div>
+  <div class="micro-label section-code"><span class="code-bullet"></span> RESEARCH INDEX / 001</div>
+  <h1>The paper <span>archive.</span></h1>
+  <p>Explore the studies that help explain the origins and persistence of economic inequality. This is a curated prototype, not yet an exhaustive or continuously updated research database.</p>
+  </div><div class="page-aside"><span class="micro-label">IN THE COLLECTION</span><strong>{{ printf "%02d" (len $papers) }}</strong><span class="micro-label">VERIFIED SEED RECORDS</span></div>
+</div></section>
 <section class="archive-section"><div class="wrap">
- <div class="archive-tools"><label class="search-wrap"><span class="sr-only">Search research papers</span><span class="search-icon">⌕</span><input type="search" id="paper-search" placeholder="Search titles, authors, or ideas…" autocomplete="off"></label>
- <div class="filter-row"><label for="topic-filter">TOPIC</label><select id="topic-filter"><option value="">All topics</option>{{ range site.Taxonomies.topics.Alphabetical }}<option value="{{ .Page.Title | lower }}">{{ .Page.Title }}</option>{{ end }}</select><label for="year-filter">YEAR</label><select id="year-filter"><option value="">All years</option></select></div>
- </div>
- <div class="archive-meta"><span id="result-count">{{ len (where site.RegularPages "Section" "papers") }} papers</span><span>Curated seed collection · chronological</span></div>
- <div id="paper-results" class="paper-grid">{{ range (sort (where site.RegularPages "Section" "papers") "Params.year" "desc") }}{{ partial "paper-card.html" . }}{{ end }}</div>
- <p id="empty-state" class="empty-state" hidden>No papers match these filters. Try another search or topic.</p>
+  <div class="archive-toolbar">
+    <div class="archive-tools">
+      <label class="search-wrap"><span class="sr-only">Search research papers</span><span class="search-icon" aria-hidden="true">⌕</span><input type="search" id="paper-search" placeholder="Search authors, titles, ideas, sources…" autocomplete="off"></label>
+      <div class="filter-row">
+        <label for="topic-filter">TOPIC</label><select id="topic-filter"><option value="">All topics</option>{{ range site.Taxonomies.topics.Alphabetical }}<option value="{{ .Page.Title | lower }}">{{ .Page.Title }}</option>{{ end }}</select>
+        <label for="year-filter">YEAR</label><select id="year-filter"><option value="">All years</option></select>
+      </div>
+    </div>
+    <div class="archive-meta"><span id="result-count" role="status" aria-live="polite">{{ len $papers }} papers</span><span>FILTER THE INDEX / YEAR DESCENDING</span><button id="clear-filters" type="button">CLEAR FILTERS ↺</button></div>
+  </div>
+  <div class="list-heading"><span>WORK / AUTHORS / SOURCE</span><span>YEAR ↓</span></div>
+  <div id="paper-results" class="paper-list">{{ range (sort $papers "Params.year" "desc") }}{{ partial "paper-card.html" . }}{{ end }}</div>
+  <p id="empty-state" class="empty-state" hidden>No papers match these filters. Try another title, author, or topic.</p>
 </div></section>
 {{ end }}
