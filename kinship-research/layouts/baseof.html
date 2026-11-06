@@ -3,39 +3,38 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#0a1119">
+  <meta name="theme-color" content="#f5f4ef">
   <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ site.Params.description }}{{ end }}">
-  <title>{{ if .IsHome }}dynasty_ — The origins and persistence of inequality{{ else }}{{ .Title }} · dynasty_{{ end }}</title>
+  <title>{{ if .IsHome }}dynasty_ — Research on inherited advantage{{ else }}{{ .Title }} · dynasty_{{ end }}</title>
   <link rel="icon" href="{{ "favicon.svg" | relURL }}" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=IBM+Plex+Mono:wght@400;500;600&family=Newsreader:opsz,wght,ital@6..72,400,0;6..72,500,0;6..72,500,1&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{{ "css/site.css" | relURL }}">
   <script src="{{ "js/site.js" | relURL }}" defer></script>
 </head>
 <body>
   <a href="#main" class="skip-link">Skip to main content</a>
+  <div class="edition-bar"><div class="wrap edition-inner"><span>ECONOMIC INEQUALITY / FAMILY / GENERATIONS</span><span>INDEPENDENT RESEARCH INDEX <span class="edition-cross">✳</span> EST. 2026</span></div></div>
   <header class="site-header">
     <div class="wrap header-row">
-      <a class="brand" href="{{ "/" | relURL }}" aria-label="dynasty_ home"><span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span><span></span></span><span>dynasty<span class="brand-period">_</span></span></a>
-      <div class="header-identity" aria-hidden="true"><span class="identity-pulse"></span><span>INDEPENDENT RESEARCH OBSERVATORY</span></div>
-      <button type="button" id="menu-toggle" class="menu-toggle" aria-expanded="false" aria-controls="primary-nav">MENU <span aria-hidden="true">☰</span></button>
+      <a class="brand" href="{{ "/" | relURL }}" aria-label="dynasty_, homepage"><span class="brand-symbol" aria-hidden="true">D<span>_</span></span><span class="brand-text">dynasty<span class="brand-period">_</span></span></a>
+      <button type="button" id="menu-toggle" class="menu-toggle" aria-expanded="false" aria-controls="primary-nav">MENU <span aria-hidden="true">+</span></button>
       <nav class="nav" id="primary-nav" aria-label="Primary navigation">
         {{ $current := .RelPermalink }}
-        {{ range site.Menus.main }}
-          <a href="{{ .URL | relURL }}" {{ if eq $current (.URL | relURL) }}aria-current="page"{{ end }}>{{ .Name }}</a>
-        {{ end }}
+        {{ range site.Menus.main }}<a href="{{ .URL | relURL }}" {{ if eq $current (.URL | relURL) }}aria-current="page"{{ end }}>{{ .Name }}</a>{{ end }}
       </nav>
+      <a class="header-index" href="{{ "/papers/" | relURL }}"><span>OPEN THE INDEX</span><span aria-hidden="true">↗</span></a>
     </div>
   </header>
   <main id="main">{{ block "main" . }}{{ end }}</main>
   <footer class="site-footer">
-    <div class="wrap footer-grid">
-      <div class="footer-intro"><a class="brand foot-brand" href="{{ "/" | relURL }}"><span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span><span></span></span><span>dynasty<span class="brand-period">_</span></span></a><p>Mapping the origins and persistence of economic inequality, and how advantage passes across generations.</p></div>
-      <div class="footer-links"><span class="micro-label">EXPLORE</span><a href="{{ "/papers/" | relURL }}">Paper archive ↗</a><a href="{{ "/briefs/" | relURL }}">Research briefs ↗</a><a href="{{ "/sources/" | relURL }}">Sources ↗</a><a href="{{ "/about/" | relURL }}">About ↗</a></div>
-      <div class="footer-note"><span class="micro-label">PROJECT STATUS</span><span>RESEARCH OBSERVATORY / PROTOTYPE</span><span>Curated archive · not a live feed</span><span>© {{ now.Year }} dynasty_ research</span></div>
+    <div class="wrap footer-main">
+      <div class="footer-title">dynasty<span>_</span></div>
+      <div class="footer-intro"><span class="micro-label">A RESEARCH PROJECT ABOUT</span><p>The origins and persistence of economic inequality, and the relationships that carry advantage from one generation to the next.</p></div>
+      <div class="footer-links"><span class="micro-label">SECTIONS</span><a href="{{ "/papers/" | relURL }}">Research index ↗</a><a href="{{ "/briefs/" | relURL }}">Research briefs ↗</a><a href="{{ "/sources/" | relURL }}">Source registry ↗</a><a href="{{ "/about/" | relURL }}">About ↗</a></div>
     </div>
-    <div class="wrap footer-bottom"><span>FOLLOW THE MECHANISMS. QUESTION THE PATTERNS.</span><span>INDEPENDENT / INTERDISCIPLINARY / OPEN</span></div>
+    <div class="wrap footer-bottom"><span>© {{ now.Year }} dynasty_ RESEARCH</span><span>PROTOTYPE ARCHIVE / NOT YET AUTOMATED</span><span>INDEPENDENT · INTERDISCIPLINARY</span></div>
   </footer>
 </body>
 </html>
