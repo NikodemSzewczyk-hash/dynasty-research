@@ -1,0 +1,70 @@
+name: Manual dynasty_ metadata discovery
+
+# Manual operation only. This does not commit candidate records or publish papers.
+on:
+  workflow_dispatch:
+    inputs:
+      provider:
+        description: API metadata source
+        required: true
+        type: choice
+        options:
+          - openalex
+          - crossref
+      query:
+        description: Focused search query
+        required: true
+        default: intergenerational mobility
+        type: string
+      from_date:
+        description: First publication date (YYYY-MM-DD)
+        required: true
+        default: '2000-01-01'
+        type: string
+      to_date:
+        description: Last publication date (YYYY-MM-DD)
+        required: true
+        default: '2026-11-06'
+        type: string
+      max_records:
+        description: Candidate cap per run (1-10000; recommend 100)
+        required: true
+        default: '100'
+        type: string
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    defaults:
+      run:
+        working-directory: kinship-research
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Run tests
+        run: python -m unittest discover -s tests -q
+      - name: Initialize database and seed curated records
+        run: python scripts/dynasty.py --db data/discovery.sqlite seed
+      - name: Fetch bounded metadata into unreviewed queue
+        env:
+          OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
+          DYNASTY_CONTACT_EMAIL: ${{ vars.DYNASTY_CONTACT_EMAIL }}
+          PROVIDER: ${{ inputs.provider }}
+          QUERY: ${{ inputs.query }}
+          DATE_FROM: ${{ inputs.from_date }}
+          DATE_TO: ${{ inputs.to_date }}
+          MAX_RECORDS: ${{ inputs.max_records }}
+        run: |
+          python scripts/dynasty.py --db data/discovery.sqlite ingest "$PROVIDER" --query "$QUERY" --from-date "$DATE_FROM" --to-date "$DATE_TO" --max-records "$MAX_RECORDS"
+          python scripts/dynasty.py --db data/discovery.sqlite review list --limit 1000 > data/review-candidates.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: dynasty-unreviewed-metadata
+          path: |
+            kinship-research/data/discovery.sqlite
+            kinship-research/data/review-candidates.json
+          retention-days: 14
