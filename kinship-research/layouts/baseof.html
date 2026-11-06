@@ -3,32 +3,39 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0a1119">
   <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ site.Params.description }}{{ end }}">
-  <title>{{ if .IsHome }}Kinship — How advantage is made and inherited{{ else }}{{ .Title }} · Kinship{{ end }}</title>
+  <title>{{ if .IsHome }}Kinship — The origins and persistence of inequality{{ else }}{{ .Title }} · Kinship{{ end }}</title>
   <link rel="icon" href="{{ "favicon.svg" | relURL }}" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{{ "css/site.css" | relURL }}">
   <script src="{{ "js/site.js" | relURL }}" defer></script>
 </head>
 <body>
-  <a href="#main" class="skip-link">Skip to content</a>
-  <div class="topline"></div>
+  <a href="#main" class="skip-link">Skip to main content</a>
   <header class="site-header">
     <div class="wrap header-row">
-      <a class="brand" href="{{ "/" | relURL }}" aria-label="Kinship, homepage"><span class="brand-mark" aria-hidden="true">✳</span><span>kinship<span class="brand-period">.</span></span></a>
-      <button type="button" id="menu-toggle" class="menu-toggle" aria-expanded="false" aria-controls="primary-nav">Menu <span aria-hidden="true">☰</span></button>
+      <a class="brand" href="{{ "/" | relURL }}" aria-label="Kinship home"><span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span><span></span></span><span>kinship<span class="brand-period">.</span></span></a>
+      <div class="header-identity" aria-hidden="true"><span class="identity-pulse"></span><span>INDEPENDENT RESEARCH OBSERVATORY</span></div>
+      <button type="button" id="menu-toggle" class="menu-toggle" aria-expanded="false" aria-controls="primary-nav">MENU <span aria-hidden="true">☰</span></button>
       <nav class="nav" id="primary-nav" aria-label="Primary navigation">
         {{ $current := .RelPermalink }}
-        {{ range site.Menus.main }}<a href="{{ .URL | relURL }}" {{ if eq $current (.URL | relURL) }}aria-current="page"{{ end }}>{{ .Name }}</a>{{ end }}
+        {{ range site.Menus.main }}
+          <a href="{{ .URL | relURL }}" {{ if eq $current (.URL | relURL) }}aria-current="page"{{ end }}>{{ .Name }}</a>
+        {{ end }}
       </nav>
     </div>
   </header>
   <main id="main">{{ block "main" . }}{{ end }}</main>
   <footer class="site-footer">
     <div class="wrap footer-grid">
-      <div><a class="brand foot-brand" href="{{ "/" | relURL }}"><span class="brand-mark">✳</span><span>kinship<span class="brand-period">.</span></span></a><p>Research on the origins and persistence of economic inequality.</p></div>
-      <div class="footer-links"><a href="{{ "/papers/" | relURL }}">Paper archive</a><a href="{{ "/briefs/" | relURL }}">Research briefs</a><a href="{{ "/sources/" | relURL }}">Our sources</a><a href="{{ "/about/" | relURL }}">About</a></div>
-      <div class="footer-note"><span>Independent research discovery project.</span><span>Prototype · v0.1</span></div>
+      <div class="footer-intro"><a class="brand foot-brand" href="{{ "/" | relURL }}"><span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span><span></span></span><span>kinship<span class="brand-period">.</span></span></a><p>Mapping the origins and persistence of economic inequality, and how advantage passes across generations.</p></div>
+      <div class="footer-links"><span class="micro-label">EXPLORE</span><a href="{{ "/papers/" | relURL }}">Paper archive ↗</a><a href="{{ "/briefs/" | relURL }}">Research briefs ↗</a><a href="{{ "/sources/" | relURL }}">Sources ↗</a><a href="{{ "/about/" | relURL }}">About ↗</a></div>
+      <div class="footer-note"><span class="micro-label">PROJECT STATUS</span><span>RESEARCH OBSERVATORY / PROTOTYPE</span><span>Curated archive · not a live feed</span><span>© {{ now.Year }} Kinship Research</span></div>
     </div>
+    <div class="wrap footer-bottom"><span>FOLLOW THE MECHANISMS. QUESTION THE PATTERNS.</span><span>INDEPENDENT / INTERDISCIPLINARY / OPEN</span></div>
   </footer>
 </body>
 </html>
