@@ -1,33 +1,27 @@
-# Get Kinship running on your PC and GitHub
+# Run dynasty_ locally on Windows
 
-## Local preview in 3 steps
+The GitHub repository is [dynasty-research](https://github.com/NikodemSzewczyk-hash/dynasty-research).
+Its Hugo project lives inside the existing `kinship-research` folder. This folder name is kept for deployment compatibility even though the public brand is now **dynasty_**.
 
-1. Extract `kinship-research-starter.zip` to a folder such as `Documents\kinship-research`.
-2. Install Hugo (in PowerShell: `winget install -e --id Hugo.Hugo.Extended`). Restart the terminal.
-3. Inside the project folder, run `hugo server -D`, then open <http://localhost:1313/>.
+## Local setup
 
-The separate `kinship-preview.html` file can also be opened directly in a browser; it is a static design preview and does not require Hugo.
+1. Install [Hugo Extended](https://gohugo.io/installation/windows/): `winget install -e --id Hugo.Hugo.Extended`. Restart PowerShell.
+2. Install Git if it isn't installed already.
+3. Run:
+   ```powershell
+   git clone https://github.com/NikodemSzewczyk-hash/dynasty-research.git
+   cd dynasty-research\kinship-research
+   hugo server -D
+   ```
+4. Visit http://localhost:1313/ to preview the site.
 
-## Connect to GitHub (the one manual action)
+## Editing and publishing
 
-1. Open <https://github.com/new>. Create a **private** repository named `kinship-research` on your personal account. For the commands below, **do not** initialize it with a README, license, or `.gitignore`; those are already inside the ZIP.
-2. Open PowerShell in the extracted project folder, then run:
+- Change content under `content/`, templates under `layouts/`, and styles under `static/css/`.
+- Commit and push changes to the GitHub `main` branch to deploy via the existing Netlify project at https://dynastyecon.netlify.app/.
+- Netlify builds from `kinship-research` (configured in the repository-root `netlify.toml`).
+- Do not rename the Hugo directory without updating the build configuration.
 
-```powershell
-git init
-git add .
-git commit -m "Initial Kinship research prototype"
-git branch -M main
-git remote add origin https://github.com/NikodemSzewczyk-hash/kinship-research.git
-git push -u origin main
-```
+## Current status
 
-If Git prompts for authentication, complete the browser sign-in or use GitHub Desktop. The repo remains private until you explicitly change its visibility.
-
-## Publish later
-
-Link that repository to Netlify or Cloudflare Pages. Configure the build command `hugo --minify` and output folder `public`. Set the Hugo version to the version in `.github/workflows/build.yml`. Before adding a real domain, change `baseURL` in `hugo.toml`.
-
-## What is NOT live yet
-
-The research pipeline only generates *unreviewed* candidate metadata; it is not scheduled, not linked to the current ChatGPT Sites publication, and does not automatically publish papers. The existing ChatGPT-hosted Kinship site remains untouched.
+The website includes a small curated research archive. Automated ingestion and publication are not yet enabled.

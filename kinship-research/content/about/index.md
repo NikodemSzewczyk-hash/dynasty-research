@@ -1,5 +1,5 @@
 ---
-title: "Why Kinship exists"
+title: "Why dynasty_ exists"
 description: "Our mission and editorial principles."
 ---
 
@@ -7,7 +7,7 @@ description: "Our mission and editorial principles."
 
 **How are economic advantages and disadvantages created, sustained, and transmitted across generations?**
 
-Kinship is an independent research-discovery project centered on the origins and persistence of economic inequality. Families and kinship networks are central to this question: they transmit resources, influence opportunities, provide insurance, and shape life trajectories long after childhood ends.
+dynasty_ is an independent research-discovery project centered on the origins and persistence of economic inequality. Families and kinship networks are central to this question: they transmit resources, influence opportunities, provide insurance, and shape life trajectories long after childhood ends.
 
 But inequality is not created by families alone. Schools, neighborhoods, labor markets, social networks and public institutions are equally important parts of the story.
 

@@ -1,6 +1,6 @@
-# Kinship Research
+# dynasty_
 
-A Hugo-powered research observatory on the origins and persistence of economic inequality, especially the role of families, kinship and intergenerational relationships.
+dynasty_ is a Hugo-powered research observatory on the origins and persistence of economic inequality, especially the role of families, kinship and intergenerational relationships.
 
 **Status:** v0.1 prototype, with a verified historical seed collection. It is not yet a comprehensive archive or automated live newsletter.
 
@@ -45,3 +45,6 @@ Later: OpenAlex, Crossref, NBER/CEPR and institutional feeds â†’ review queue â†
 ## Rights
 
 Paper metadata is linked to its original source. Editorial summaries in this prototype are brief paraphrases, not copied abstracts. Always check rights before republishing full abstracts or article text.
+
+
+**Naming note:** The Hugo source folder is still named `kinship-research` to avoid breaking the current hosting configuration. The public-facing project name is **dynasty_**.

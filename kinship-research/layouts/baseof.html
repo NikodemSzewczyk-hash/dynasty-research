@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f5f4ef">
   <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ site.Params.description }}{{ end }}">
-  <title>{{ if .IsHome }}Kinship — Research on inherited advantage{{ else }}{{ .Title }} · Kinship{{ end }}</title>
+  <title>{{ if .IsHome }}dynasty_ — Research on inherited advantage{{ else }}{{ .Title }} · dynasty_{{ end }}</title>
   <link rel="icon" href="{{ "favicon.svg" | relURL }}" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,7 +18,7 @@
   <div class="edition-bar"><div class="wrap edition-inner"><span>ECONOMIC INEQUALITY / FAMILY / GENERATIONS</span><span>INDEPENDENT RESEARCH INDEX <span class="edition-cross">✳</span> EST. 2026</span></div></div>
   <header class="site-header">
     <div class="wrap header-row">
-      <a class="brand" href="{{ "/" | relURL }}" aria-label="Kinship, homepage"><span class="brand-symbol" aria-hidden="true">K<span>+</span></span><span class="brand-text">KINSHIP<span class="brand-period">.</span></span></a>
+      <a class="brand" href="{{ "/" | relURL }}" aria-label="dynasty_, homepage"><span class="brand-symbol" aria-hidden="true">D<span>_</span></span><span class="brand-text">dynasty<span class="brand-period">_</span></span></a>
       <button type="button" id="menu-toggle" class="menu-toggle" aria-expanded="false" aria-controls="primary-nav">MENU <span aria-hidden="true">+</span></button>
       <nav class="nav" id="primary-nav" aria-label="Primary navigation">
         {{ $current := .RelPermalink }}
@@ -30,11 +30,11 @@
   <main id="main">{{ block "main" . }}{{ end }}</main>
   <footer class="site-footer">
     <div class="wrap footer-main">
-      <div class="footer-title">KINSHIP<span>.</span></div>
+      <div class="footer-title">dynasty<span>_</span></div>
       <div class="footer-intro"><span class="micro-label">A RESEARCH PROJECT ABOUT</span><p>The origins and persistence of economic inequality, and the relationships that carry advantage from one generation to the next.</p></div>
       <div class="footer-links"><span class="micro-label">SECTIONS</span><a href="{{ "/papers/" | relURL }}">Research index ↗</a><a href="{{ "/briefs/" | relURL }}">Research briefs ↗</a><a href="{{ "/sources/" | relURL }}">Source registry ↗</a><a href="{{ "/about/" | relURL }}">About ↗</a></div>
     </div>
-    <div class="wrap footer-bottom"><span>© {{ now.Year }} KINSHIP RESEARCH</span><span>PROTOTYPE ARCHIVE / NOT YET AUTOMATED</span><span>INDEPENDENT · INTERDISCIPLINARY</span></div>
+    <div class="wrap footer-bottom"><span>© {{ now.Year }} dynasty_ RESEARCH</span><span>PROTOTYPE ARCHIVE / NOT YET AUTOMATED</span><span>INDEPENDENT · INTERDISCIPLINARY</span></div>
   </footer>
 </body>
 </html>
