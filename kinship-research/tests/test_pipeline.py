@@ -58,7 +58,7 @@ class PipelineTest(unittest.TestCase):
     def test_seed_and_export_idempotent(self):
         self.seed()
         self.assertEqual(stats(self.db)["works"],12)
-        self.assertEqual(stats(self.db)["versions"],12)
+        self.assertEqual(stats(self.db)["versions"],16)
         self.assertEqual(stats(self.db)["published"],12)
         seed_curated(self.db,SITE/"data"/"papers.json")
         self.assertEqual(stats(self.db)["works"],12)
@@ -71,6 +71,11 @@ class PipelineTest(unittest.TestCase):
         self.assertEqual(len(search),12)
         self.assertIn("authors",search[0])
         self.assertIn("paper_url",search[0])
+        has_wp=[p for p in search if p.get("working_paper_url")]
+        self.assertEqual(len(has_wp),4)
+        self.assertTrue(all(p["version_count"]>=2 for p in has_wp))
+        page=(folder/"content"/"papers"/"bequests-wealth-inequality.md").read_text(encoding="utf-8")
+        self.assertIn("working_paper_url:",page)
 
     def test_doi_normalization(self):
         self.assertEqual(canonical_doi("HTTPS://DOI.ORG/10.3386/W22549?x=y"),"10.3386/w22549")
@@ -128,7 +133,7 @@ class PipelineTest(unittest.TestCase):
         with self.assertRaisesRegex(ValueError,"Possible existing"):
             decide(self.db,cid,"approve",reviewer="editor",takeaway="Test",topics=["Mobility"])
         self.assertEqual(decide(self.db,cid,"approve",reviewer="editor",merge_into=base["id"]),base["id"])
-        self.assertEqual(stats(self.db)["versions"],13)
+        self.assertEqual(stats(self.db)["versions"],17)
         self.assertEqual(self.db.execute("SELECT count(*) FROM works").fetchone()[0],12)
 
     def test_review_reject_defer_and_unreviewed_export(self):

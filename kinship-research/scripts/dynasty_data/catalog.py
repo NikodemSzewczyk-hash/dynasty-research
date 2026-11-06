@@ -4,7 +4,7 @@ import json
 import sqlite3
 from pathlib import Path
 from typing import Any
-from .identity import author_key, canonical_doi, clean_text, key, possible_match, safe_https, short_hash, slug, version_kind
+from .identity import author_key, canonical_doi, clean_text, key, possible_match, safe_https, short_hash, slug, version_kind, external_nber_id
 
 def encode(value: Any) -> str:
     return json.dumps(value, ensure_ascii=False, separators=(",", ":"), sort_keys=True)
@@ -86,6 +86,19 @@ def seed_curated(db: sqlite3.Connection, papers_path: str | Path) -> int:
                           source_name=excluded.source_name,source_id=excluded.source_id,url=excluded.url""",
                        (version_id,wid,version_kind(p.get("status"),p.get("source")),p["title"],p["year"],
                         doi,p["source"],_source_id(db,p["source"]),url,encode({"status":p.get("status","Published"),"working_paper_url":p.get("working_paper_url")})))
+            # A linked preprint is a separate version of the SAME intellectual work.
+            preprint_url=safe_https(p.get("working_paper_url"))
+            if preprint_url and preprint_url!=url:
+                nber_id=external_nber_id(preprint_url)
+                db.execute("""INSERT INTO versions(id,work_id,kind,title,year,doi,provider,provider_id,
+                              source_name,source_id,url,metadata_json)
+                              VALUES(?,?,?,?,?,?,?,?,?,?,?,?)
+                              ON CONFLICT(id) DO UPDATE SET url=excluded.url,source_name=excluded.source_name""",
+                           ("seed:wp:"+wid,wid,"working_paper",p["title"],p["year"],None,
+                            "seed",nber_id or preprint_url,
+                            "NBER Working Papers" if nber_id else "Working paper",
+                            _source_id(db,"NBER Working Papers") if nber_id else None,preprint_url,
+                            encode({"linked_from":"data/papers.json"})))
     return created
 
 def find_match(db, doi: str | None, title: str, authors: list[str], year: int | None, provider: str = "", provider_id: str = "") -> tuple[str,str | None]:
@@ -178,7 +191,12 @@ def decide(db, candidate_id: int, action: str, reviewer: str = "editor", takeawa
             elif merge_into:
                 if not db.execute("SELECT 1 FROM works WHERE id=?",(merge_into,)).fetchone():
                     raise ValueError("Requested merge destination does not exist")
+                if row["match_type"]=="exact" and merge_into!=row["possible_work_id"]:
+                    raise ValueError("Provider ID already belongs to another work")
                 result_work=merge_into
+            elif row["match_type"]=="exact" and row["possible_work_id"]:
+                # A provider identifier can be exact even when there is no DOI.
+                result_work=row["possible_work_id"]
             elif row["match_type"]=="possible" and not force_new:
                 raise ValueError(f"Possible existing version of {row['possible_work_id']}; use --merge-into or --force-new")
             else:
@@ -236,9 +254,12 @@ def export_records(db) -> list[dict]:
         if not v:
             continue
         status="Published" if v["kind"]=="journal_article" else ("Working paper" if v["kind"]=="working_paper" else "Research")
+        wp=db.execute("SELECT url FROM versions WHERE work_id=? AND kind='working_paper' AND id!=? ORDER BY year DESC,id LIMIT 1",
+                      (w["id"],v["id"])).fetchone()
         records.append({"id":w["id"],"title":w["title"],"authors":_authors_for(db,w["id"]),
             "topics":_topics_for(db,w["id"]),"year":w["year"],"source":v["source_name"] or "Research",
-            "status":status,"doi":v["doi"],"paper_url":v["url"],"takeaway":w["takeaway"],
+            "status":status,"doi":v["doi"],"paper_url":v["url"],"working_paper_url":wp["url"] if wp else None,
+            "takeaway":w["takeaway"],
             "description":w["description"],"method":w["method"],"version_count":db.execute(
             "SELECT count(*) n FROM versions WHERE work_id=?",(w["id"],)).fetchone()["n"]})
     return records
@@ -253,6 +274,8 @@ def render_markdown(record: dict) -> str:
            f"method: {_yaml_str(record['method'])}"]
     if record["doi"]:
         lines.append(f"doi: {_yaml_str(record['doi'])}")
+    if record.get("working_paper_url"):
+        lines.append(f"working_paper_url: {_yaml_str(record['working_paper_url'])}")
     for field in ("authors","topics"):
         lines.append(field+":")
         lines.extend("  - "+_yaml_str(x) for x in record[field])
