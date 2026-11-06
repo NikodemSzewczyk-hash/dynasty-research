@@ -101,7 +101,7 @@ def seed_curated(db: sqlite3.Connection, papers_path: str | Path) -> int:
                             encode({"linked_from":"data/papers.json"})))
     return created
 
-def find_match(db, doi: str | None, title: str, authors: list[str], year: int | None, provider: str = "", provider_id: str = "") -> tuple[str,str | None]:
+def find_match(db, doi: str | None, title: str, authors: list[str], year: int | None, provider: str = "", provider_id: str = "", url: str = "") -> tuple[str,str | None]:
     doi = canonical_doi(doi)
     if doi:
         row = db.execute("SELECT work_id FROM versions WHERE doi=? LIMIT 1",(doi,)).fetchone()
@@ -110,6 +110,11 @@ def find_match(db, doi: str | None, title: str, authors: list[str], year: int | 
     if provider_id:
         row = db.execute("SELECT work_id FROM versions WHERE (provider=? AND provider_id=?) OR (openalex_id=? AND ?='openalex') LIMIT 1",
                          (provider,provider_id,provider_id,provider)).fetchone()
+        if row:
+            return "exact",row["work_id"]
+    nber=external_nber_id(url)
+    if nber:
+        row=db.execute("SELECT work_id FROM versions WHERE kind='working_paper' AND provider_id=? LIMIT 1",(nber,)).fetchone()
         if row:
             return "exact",row["work_id"]
     probable = possible_match(db,title,authors,year)
@@ -137,7 +142,7 @@ def enqueue(db, record: dict) -> tuple[bool,int]:
     existing = db.execute("SELECT id FROM candidates WHERE provider=? AND provider_id=?",(provider,provider_id)).fetchone()
     if existing:
         return False,existing["id"]
-    match_type, probable_id = find_match(db,doi,title,authors,year,provider,provider_id)
+    match_type, probable_id = find_match(db,doi,title,authors,year,provider,provider_id,url)
     with db:
         cursor = db.execute("""INSERT INTO candidates(provider,provider_id,doi,title,title_key,year,first_author_key,
              authors_json,source_name,url,kind,date,payload_json,match_type,possible_work_id)
@@ -181,6 +186,16 @@ def decide(db, candidate_id: int, action: str, reviewer: str = "editor", takeawa
         if action=="approve":
             authors=json.loads(row["authors_json"])
             exact = db.execute("SELECT work_id,id FROM versions WHERE doi=?",(row["doi"],)).fetchone() if row["doi"] else None
+            if not exact:
+                exact=db.execute("SELECT work_id,id FROM versions WHERE provider=? AND provider_id=? LIMIT 1",
+                                 (row["provider"],row["provider_id"])).fetchone()
+            if not exact and row["provider"]=="openalex":
+                exact=db.execute("SELECT work_id,id FROM versions WHERE openalex_id=? LIMIT 1",
+                                 (row["provider_id"],)).fetchone()
+            nber=external_nber_id(row["url"])
+            if not exact and nber:
+                exact=db.execute("SELECT work_id,id FROM versions WHERE kind='working_paper' AND provider_id=? LIMIT 1",
+                                 (nber,)).fetchone()
             if exact:
                 if merge_into and merge_into!=exact["work_id"]:
                     raise ValueError("DOI already belongs to another work")

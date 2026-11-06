@@ -250,5 +250,22 @@ class PipelineTest(unittest.TestCase):
         self.assertEqual(rows,[])
         self.assertEqual(len(fake_cr_calls),1)
 
+
+    def test_nber_preprint_link_matches_without_doi(self):
+        self.seed()
+        original=self.db.execute("SELECT work_id FROM versions WHERE provider_id='w21896'").fetchone()
+        self.assertIsNotNone(original)
+        rec=candidate(provider_id="https://openalex.org/W777000123",doi=None,
+                      title="Different title for an old preprint",authors=["Unrelated Person"])
+        rec["url"]="https://www.nber.org/papers/w21896"
+        _,cid=enqueue(self.db,rec)
+        row=self.db.execute("SELECT match_type,possible_work_id FROM candidates WHERE id=?",(cid,)).fetchone()
+        self.assertEqual(row["match_type"],"exact")
+        self.assertEqual(row["possible_work_id"],original["work_id"])
+        self.assertEqual(decide(self.db,cid,"approve",reviewer="editor"),original["work_id"])
+        self.assertEqual(stats(self.db)["versions"],16)
+        linked=self.db.execute("SELECT openalex_id FROM versions WHERE provider_id='w21896'").fetchone()
+        self.assertEqual(linked["openalex_id"],"https://openalex.org/W777000123")
+
 if __name__=="__main__":
     unittest.main()

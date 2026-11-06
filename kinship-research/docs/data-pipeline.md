@@ -99,3 +99,9 @@ This is a **working foundation**, not a complete historical archive. It has no l
 3. Add incremental ingestion checkpoints, recurring monitored queries, persistent storage/backup, and confidence metrics.
 4. Introduce Pagefind (or another static index) and archive pagination before exporting thousands of cards.
 5. Build a reviewer UI over the current auditable CLI after the candidate volume warrants it.
+
+## Identifier suggestion and safe matching updates
+
+Run `python scripts/dynasty.py sources suggest journal:quarterly-journal-of-economics` (or a `researcher:` identifier) to examine unverified OpenAlex identity suggestions. These do **not** enable any source. After checking identities, use `sources verify`. Persist your verified local source configuration with `sources dump --output registry/source_manifest.json`, review the Git diff, and commit it if appropriate.
+
+The import cap counts all API records processed, including malformed or incomplete records. Exact matching recognizes canonical DOIs, OpenAlex/provider IDs and known NBER working-paper URLs. Metadata with only similar title/author/year values still requires an explicit editorial merge decision. The existing 12 seed works contain 16 known versions, including four distinct NBER preprint links.
