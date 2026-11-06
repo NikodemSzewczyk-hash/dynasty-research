@@ -1,24 +1,13 @@
 {{ define "main" }}
-{{ $papers := where site.RegularPages "Section" "papers" }}
-<section class="page-hero archive-hero"><div class="wrap page-hero-inner"><div>
-  <div class="micro-label section-code"><span class="code-bullet"></span> RESEARCH INDEX / 001</div>
-  <h1>The paper <span>archive.</span></h1>
-  <p>Explore the studies that help explain the origins and persistence of economic inequality. This is a curated prototype, not yet an exhaustive or continuously updated research database.</p>
-  </div><div class="page-aside"><span class="micro-label">IN THE COLLECTION</span><strong>{{ printf "%02d" (len $papers) }}</strong><span class="micro-label">VERIFIED SEED RECORDS</span></div>
-</div></section>
-<section class="archive-section"><div class="wrap">
-  <div class="archive-toolbar">
-    <div class="archive-tools">
-      <label class="search-wrap"><span class="sr-only">Search research papers</span><span class="search-icon" aria-hidden="true">⌕</span><input type="search" id="paper-search" placeholder="Search authors, titles, ideas, sources…" autocomplete="off"></label>
-      <div class="filter-row">
-        <label for="topic-filter">TOPIC</label><select id="topic-filter"><option value="">All topics</option>{{ range site.Taxonomies.topics.Alphabetical }}<option value="{{ .Page.Title | lower }}">{{ .Page.Title }}</option>{{ end }}</select>
-        <label for="year-filter">YEAR</label><select id="year-filter"><option value="">All years</option></select>
-      </div>
-    </div>
-    <div class="archive-meta"><span id="result-count" role="status" aria-live="polite">{{ len $papers }} papers</span><span>FILTER THE INDEX / YEAR DESCENDING</span><button id="clear-filters" type="button">CLEAR FILTERS ↺</button></div>
+{{ $papers := sort (where site.RegularPages "Section" "papers") "Params.year" "desc" }}
+<section class="page-hero"><div class="wrap"><div class="page-top"><span class="micro-label">KINSHIP / RESEARCH INDEX</span><span class="micro-label">SECTION 01</span></div><h1>Research <em>index</em><span class="title-punct">.</span></h1><div class="page-description"><p>Studies explaining how economic inequality emerges, persists, and travels across generations. A carefully selected prototype collection, not yet a complete or automatically updated database.</p><span class="page-numeral">{{ printf "%02d" (len $papers) }} <small>RECORDS</small></span></div></div></section>
+<section class="archive-section section-block"><div class="wrap">
+  <div class="archive-tools"><label class="search-wrap"><span class="sr-only">Search papers</span><input type="search" id="paper-search" placeholder="Search titles, authors, sources, and ideas…" autocomplete="off"><span class="search-icon" aria-hidden="true">⌕</span></label>
+    <div class="filter-row"><label for="topic-filter">TOPIC</label><select id="topic-filter"><option value="">All topics</option>{{ range site.Taxonomies.topics.Alphabetical }}<option value="{{ .Page.Title | lower }}">{{ .Page.Title }}</option>{{ end }}</select><label for="year-filter">YEAR</label><select id="year-filter"><option value="">All years</option></select></div>
   </div>
-  <div class="list-heading"><span>WORK / AUTHORS / SOURCE</span><span>YEAR ↓</span></div>
-  <div id="paper-results" class="paper-list">{{ range (sort $papers "Params.year" "desc") }}{{ partial "paper-card.html" . }}{{ end }}</div>
-  <p id="empty-state" class="empty-state" hidden>No papers match these filters. Try another title, author, or topic.</p>
+  <div class="archive-meta"><span id="result-count" role="status" aria-live="polite">{{ len $papers }} papers</span><button id="clear-filters" type="button">RESET FILTERS ↺</button></div>
+  <div class="index-table-head"><span>RESEARCH / TITLE & AUTHORS</span><span>SOURCE</span><span>YEAR</span></div>
+  <div class="paper-list" id="paper-results">{{ range $papers }}{{ partial "paper-card.html" . }}{{ end }}</div>
+  <p id="empty-state" class="empty-state" hidden>No papers match the current filters.</p>
 </div></section>
 {{ end }}

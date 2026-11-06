@@ -1,11 +1,10 @@
 <article class="paper-card" data-paper data-title="{{ .Title | lower }}" data-authors="{{ delimit .Params.authors " " | lower }}" data-topics="{{ delimit .Params.topics "|" | lower }}" data-year="{{ .Params.year }}" data-source="{{ .Params.source | lower }}" data-summary="{{ .Params.takeaway | lower }}">
-  <div class="paper-index" aria-hidden="true"><span class="index-mark"></span></div>
   <div class="paper-content">
-    <div class="paper-topline"><span>{{ .Params.status | default "Research" }}</span><span class="paper-divider">/</span><span>{{ .Params.source }}</span></div>
+    <div class="paper-topline">{{ range first 2 .Params.topics }}<span>{{ . }}</span>{{ end }}</div>
     <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
     <p class="paper-authors">{{ delimit .Params.authors ", " }}</p>
     <p class="paper-takeaway">{{ .Params.takeaway }}</p>
-    <div class="tag-row">{{ range first 3 .Params.topics }}<span class="tag">{{ . }}</span>{{ end }}</div>
   </div>
+  <div class="paper-publication">{{ .Params.source }}<span class="paper-status">{{ .Params.status | default "Research" }}</span></div>
   <div class="paper-aside"><span class="paper-year">{{ .Params.year }}</span><a class="paper-arrow" href="{{ .RelPermalink }}" aria-label="Read details: {{ .Title }}">↗</a></div>
 </article>
