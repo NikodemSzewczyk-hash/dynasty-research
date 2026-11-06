@@ -1,5 +1,5 @@
 ---
-title: "Introducing Kinship: following the reproduction of advantage"
+title: "Introducing dynasty_: following the reproduction of advantage"
 date: 2026-11-06
 summary: "A research agenda for understanding where economic advantage originates and why it persists."
 ---

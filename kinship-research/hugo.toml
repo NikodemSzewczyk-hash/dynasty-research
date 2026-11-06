@@ -1,12 +1,12 @@
 baseURL = 'http://localhost:1313/'
 languageCode = 'en-us'
-title = 'Kinship — Research on inequality and opportunity'
+title = 'dynasty_ — Research on inequality and opportunity'
 enableRobotsTXT = true
 summaryLength = 30
 
 [params]
   description = 'Curated economics research on the origins and persistence of inequality, and the role of families in transmitting advantage.'
-  author = 'Kinship Research'
+  author = 'dynasty_ research'
 
 [markup.goldmark.renderer]
   unsafe = false
