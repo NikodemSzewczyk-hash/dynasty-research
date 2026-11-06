@@ -13,6 +13,7 @@ from dynasty_data.catalog import (
     seed_sources,seed_curated,enqueue,queue,decide,stats,export_hugo
 )
 from dynasty_data.providers import iter_openalex,iter_crossref,lookup_source
+from dynasty_data.resolution import suggest_identifiers
 from dynasty_data.schema import connect,initialize
 
 ROOT=Path(__file__).resolve().parents[1]
@@ -59,6 +60,10 @@ def parser() -> argparse.ArgumentParser:
     sv=ss.add_parser("verify",help="Enable a source after manually checking external ID")
     sv.add_argument("id");sv.add_argument("--key",required=True,choices=["issn","openalex_author_id"])
     sv.add_argument("--value",required=True);sv.add_argument("--verified-by",required=True)
+    sj=ss.add_parser("suggest",help="Search possible external identifiers WITHOUT enabling them")
+    sj.add_argument("id");sj.add_argument("--limit",type=int,default=5)
+    sd=ss.add_parser("dump",help="Export current verified registry to a reviewable JSON manifest")
+    sd.add_argument("--output",type=Path,required=True)
 
     imp=sub.add_parser("ingest",help="Bounded OpenAlex/Crossref metadata ingestion into review queue")
     imp.add_argument("provider",choices=["openalex","crossref"])
@@ -116,9 +121,24 @@ def main(argv=None) -> int:
                     row["identifiers"]=json.loads(row.pop("identifiers_json"))
                     row["retrieval"]=json.loads(row.pop("retrieval_json"))
                 say(rows)
-            else:
+            elif args.source_command=="verify":
                 set_source(db,args.id,args.key,args.value,args.verified_by)
                 say({"source_id":args.id,"retrieval_enabled":True,"verified_by":args.verified_by})
+            elif args.source_command=="suggest":
+                say(suggest_identifiers(db,args.id,args.limit))
+            elif args.source_command=="dump":
+                rows=db.execute("SELECT * FROM sources ORDER BY kind,id").fetchall()
+                records=[]
+                for row in rows:
+                    records.append({"id":row["id"],"kind":row["kind"],"name":row["name"],"area":row["area"],
+                                    "tier":row["tier"],"identifiers":json.loads(row["identifiers_json"]),
+                                    "retrieval":json.loads(row["retrieval_json"]),"editorial_status":row["editorial_status"]})
+                manifest={"schema_version":1,"generated_from":"SQLite editorial registry",
+                          "notes":"Public, explicitly reviewed identifiers; local source IDs remain stable.",
+                          "sources":records}
+                args.output.parent.mkdir(parents=True,exist_ok=True)
+                args.output.write_text(json.dumps(manifest,indent=2,ensure_ascii=False)+"\\n",encoding="utf-8")
+                say({"written":str(args.output),"sources":len(records)})
         elif args.command=="ingest":
             if not args.query and not args.source_id:
                 raise ValueError("Provide --query or --source-id")

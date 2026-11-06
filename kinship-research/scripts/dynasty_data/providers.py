@@ -105,11 +105,11 @@ def iter_openalex(query: str, from_date: str, to_date: str,
     filter_value=f"from_publication_date:{from_date},to_publication_date:{to_date}"
     if author_id:
         filter_value+=",author.id:"+author_id
-    produced=0
+    processed=0  # Count ALL fetched records, even if metadata normalization rejects them.
     per_page=min(100,max_records)
     page=1
-    while produced<max_records:
-        params={"filter":filter_value,"per_page":min(per_page,max_records-produced),"page":page,
+    while processed<max_records:
+        params={"filter":filter_value,"per_page":min(per_page,max_records-processed),"page":page,
                 "select":"id,doi,title,publication_year,publication_date,authorships,primary_location,type"}
         if query:
             params["search"]=query
@@ -124,11 +124,11 @@ def iter_openalex(query: str, from_date: str, to_date: str,
         if not batch:
             break
         for raw in batch:
+            processed+=1
             normalized=normalize_openalex(raw)
             if normalized:
                 yield normalized
-                produced+=1
-            if produced>=max_records:
+            if processed>=max_records:
                 break
         if len(batch)<params["per_page"]:
             break
@@ -147,11 +147,11 @@ def iter_crossref(query: str, from_date: str, to_date: str,
     base=("https://api.crossref.org/journals/"+quote(journal_issn)+"/works"
           if journal_issn else "https://api.crossref.org/works")
     cursor="*"
-    produced=0
+    processed=0  # Raw API records, not just accepted metadata.
     page_size=min(100,max_records)
-    while produced<max_records:
+    while processed<max_records:
         params={"filter":f"from-pub-date:{from_date},until-pub-date:{to_date}",
-                "rows":min(page_size,max_records-produced),"cursor":cursor}
+                "rows":min(page_size,max_records-processed),"cursor":cursor}
         if query:
             params["query.bibliographic"]=query
         mailto=os.getenv("DYNASTY_CONTACT_EMAIL","").strip()
@@ -163,11 +163,11 @@ def iter_crossref(query: str, from_date: str, to_date: str,
         if not batch:
             break
         for raw in batch:
+            processed+=1
             normalized=normalize_crossref(raw)
             if normalized:
                 yield normalized
-                produced+=1
-            if produced>=max_records:
+            if processed>=max_records:
                 break
         nxt=message.get("next-cursor")
         if len(batch)<params["rows"] or not nxt or nxt==cursor:

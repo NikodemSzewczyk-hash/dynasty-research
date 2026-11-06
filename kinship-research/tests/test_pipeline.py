@@ -12,7 +12,10 @@ from dynasty_data.schema import connect,initialize
 from dynasty_data.identity import canonical_doi,key,author_key,possible_match,external_nber_id
 from dynasty_data.catalog import seed_sources,seed_curated,enqueue,decide,queue,stats,export_hugo,export_records
 from dynasty_data.providers import normalize_openalex,normalize_crossref,iter_openalex,iter_crossref,lookup_source
-from dynasty import set_source
+from dynasty import set_source, main as dynasty_main
+from dynasty_data.resolution import suggest_identifiers
+from contextlib import redirect_stdout
+from io import StringIO
 
 def candidate(provider="openalex",doi=None,title="Family Wealth and Opportunity",authors=None,provider_id=None,year=2024):
     return {"provider":provider,"provider_id":provider_id or "https://openalex.org/W123456789",
@@ -203,6 +206,49 @@ class PipelineTest(unittest.TestCase):
         self.assertIn("query.bibliographic",calls[0])
         with self.assertRaises(ValueError):
             list(iter_crossref("","2023-01-01","2022-01-01",fetcher=fake))
+
+
+    def test_source_identifier_suggestions_not_autoverified(self):
+        seed_sources(self.db,SITE/"registry"/"source_manifest.json")
+        sid="journal:quarterly-journal-of-economics"
+        called=[]
+        def fake(url):
+            called.append(url)
+            return {"results":[{"id":"https://openalex.org/S101","display_name":"Quarterly Journal of Economics",
+                                "issn":["0033-5533"],"issn_l":"0033-5533","works_count":1234}]}
+        result=suggest_identifiers(self.db,sid,limit=3,fetcher=fake)
+        self.assertIn("UNVERIFIED",result["note"])
+        self.assertEqual(result["suggestions"][0]["issn_candidates"],["0033-5533"])
+        self.assertTrue(result["suggestions"][0]["name_exact"])
+        self.assertIn("/sources?",called[0])
+        db_source=self.db.execute("SELECT retrieval_json FROM sources WHERE id=?",(sid,)).fetchone()
+        self.assertFalse(json.loads(db_source["retrieval_json"])["enabled"])
+
+    def test_source_registry_dump_roundtrip(self):
+        seed_sources(self.db,SITE/"registry"/"source_manifest.json")
+        out=Path(self.tmp.name)/"verified-registry.json"
+        with redirect_stdout(StringIO()):
+            self.assertEqual(dynasty_main(["--db",str(Path(self.tmp.name)/"research.sqlite"),
+                  "sources","dump","--output",str(out)]),0)
+        data=json.loads(out.read_text(encoding="utf-8"))
+        self.assertEqual(data["schema_version"],1)
+        self.assertEqual(len(data["sources"]),128)
+
+    def test_importer_caps_include_malformed_records(self):
+        fake_oa_calls=[]
+        def oa(url):
+            fake_oa_calls.append(url)
+            return {"results":[{"id":"invalid","title":"Bad metadata"},{"id":"invalid2","title":"Bad metadata"}]}
+        rows=list(iter_openalex("mobility","2010-01-01","2020-01-01",max_records=2,fetcher=oa))
+        self.assertEqual(rows,[])
+        self.assertEqual(len(fake_oa_calls),1)
+        fake_cr_calls=[]
+        def cr(url):
+            fake_cr_calls.append(url)
+            return {"message":{"items":[{"title":["No DOI"]},{"title":["Also no DOI"]}],"next-cursor":"MORE"}}
+        rows=list(iter_crossref("mobility","2010-01-01","2020-01-01",max_records=2,fetcher=cr))
+        self.assertEqual(rows,[])
+        self.assertEqual(len(fake_cr_calls),1)
 
 if __name__=="__main__":
     unittest.main()
