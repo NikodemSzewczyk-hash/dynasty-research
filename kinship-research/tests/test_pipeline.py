@@ -14,6 +14,8 @@ from dynasty_data.catalog import seed_sources,seed_curated,enqueue,decide,queue,
 from dynasty_data.providers import normalize_openalex,normalize_crossref,iter_openalex,iter_crossref,lookup_source
 from dynasty import set_source, main as dynasty_main
 from dynasty_data.resolution import suggest_identifiers
+from backfill_plan import build_jobs, main as backfill_main
+import csv
 from contextlib import redirect_stdout
 from io import StringIO
 
@@ -266,6 +268,40 @@ class PipelineTest(unittest.TestCase):
         self.assertEqual(stats(self.db)["versions"],16)
         linked=self.db.execute("SELECT openalex_id FROM versions WHERE provider_id='w21896'").fetchone()
         self.assertEqual(linked["openalex_id"],"https://openalex.org/W777000123")
+
+
+    def test_historical_query_plan(self):
+        plan=json.loads((SITE/"registry"/"discovery_plan.json").read_text(encoding="utf-8"))
+        jobs=build_jobs(plan)
+        self.assertEqual(len(jobs),36)
+        selected=build_jobs(plan,provider="crossref",selected={"family-steps"})
+        self.assertEqual(len(selected),1)
+        self.assertEqual(selected[0]["query"],"stepfamilies repartnering child adult outcomes")
+        with self.assertRaisesRegex(ValueError,"do not exist"):
+            build_jobs(plan,selected={"totally-unknown"})
+
+    def test_backfill_dry_run_does_not_create_database(self):
+        path=Path(self.tmp.name)/"not-created.sqlite"
+        with redirect_stdout(StringIO()) as output:
+            self.assertEqual(backfill_main(["--db",str(path),"--max-jobs","2"]),0)
+        report=json.loads(output.getvalue())
+        self.assertEqual(report["mode"],"dry_run")
+        self.assertEqual(len(report["jobs"]),2)
+        self.assertFalse(path.exists())
+
+    def test_review_csv_export_and_formula_escape(self):
+        record=candidate(title='=HYPERLINK("https://example.com","click")')
+        enqueue(self.db,record)
+        path=Path(self.tmp.name)/"review.csv"
+        with redirect_stdout(StringIO()):
+            code=dynasty_main(["--db",str(Path(self.tmp.name)/"research.sqlite"),
+                               "review","export","--output",str(path)])
+        self.assertEqual(code,0)
+        with path.open(encoding="utf-8",newline="") as f:
+            rows=list(csv.DictReader(f))
+        self.assertEqual(len(rows),1)
+        self.assertTrue(rows[0]["title"].startswith("'=HYPERLINK"))
+        self.assertEqual(rows[0]["status"],"pending")
 
 if __name__=="__main__":
     unittest.main()

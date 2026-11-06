@@ -2,6 +2,7 @@
 """dynasty_ metadata CLI. Safe by default: imports are queued, never published."""
 from __future__ import annotations
 import argparse
+import csv
 import json
 import os
 import re
@@ -77,6 +78,10 @@ def parser() -> argparse.ArgumentParser:
     rv=rev.add_subparsers(dest="review_command",required=True)
     q=rv.add_parser("list");q.add_argument("--status",choices=["pending","accepted","rejected","deferred","all"],default="pending")
     q.add_argument("--limit",type=int,default=30)
+    qcsv=rv.add_parser("export",help="Export candidate triage list to CSV; does not approve papers")
+    qcsv.add_argument("--status",choices=["pending","accepted","rejected","deferred","all"],default="pending")
+    qcsv.add_argument("--limit",type=int,default=1000)
+    qcsv.add_argument("--output",type=Path,required=True)
     detail=rv.add_parser("show");detail.add_argument("id",type=int)
     for action in ("approve","reject","defer"):
         d=rv.add_parser(action)
@@ -165,6 +170,30 @@ def main(argv=None) -> int:
         elif args.command=="review":
             if args.review_command=="list":
                 say(queue(db,args.status,args.limit))
+            elif args.review_command=="export":
+                if not 1<=args.limit<=10000:
+                    raise ValueError("Queue export limit must be 1..10000")
+                fields=["id","title","authors","year","source_name","provider","doi","match_type","possible_work_id","url","status"]
+                sql="SELECT * FROM candidates"
+                par=()
+                if args.status!="all":
+                    sql+=" WHERE status=?"
+                    par=(args.status,)
+                sql+=" ORDER BY id DESC LIMIT ?"
+                rows=db.execute(sql,par+(args.limit,)).fetchall()
+                args.output.parent.mkdir(parents=True,exist_ok=True)
+                with args.output.open("w",encoding="utf-8",newline="") as output:
+                    writer=csv.DictWriter(output,fieldnames=fields)
+                    writer.writeheader()
+                    for row in rows:
+                        item={k:row[k] for k in fields if k not in ("authors",)}
+                        item["authors"]=", ".join(json.loads(row["authors_json"]))
+                        # Defang spreadsheet formulas from untrusted provider metadata.
+                        for k,value in item.items():
+                            if isinstance(value,str) and value.lstrip().startswith(("=","+","-","@")):
+                                item[k]="'"+value
+                        writer.writerow(item)
+                say({"written":str(args.output),"rows":len(rows),"status":args.status})
             elif args.review_command=="show":
                 row=db.execute("SELECT * FROM candidates WHERE id=?",(args.id,)).fetchone()
                 if not row:

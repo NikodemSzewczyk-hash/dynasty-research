@@ -61,10 +61,12 @@ jobs:
         run: |
           python scripts/dynasty.py --db data/discovery.sqlite ingest "$PROVIDER" --query "$QUERY" --from-date "$DATE_FROM" --to-date "$DATE_TO" --max-records "$MAX_RECORDS"
           python scripts/dynasty.py --db data/discovery.sqlite review list --limit 1000 > data/review-candidates.json
+          python scripts/dynasty.py --db data/discovery.sqlite review export --status pending --limit 1000 --output data/review-queue.csv
       - uses: actions/upload-artifact@v4
         with:
           name: dynasty-unreviewed-metadata
           path: |
             kinship-research/data/discovery.sqlite
             kinship-research/data/review-candidates.json
+            kinship-research/data/review-queue.csv
           retention-days: 14

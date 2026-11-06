@@ -105,3 +105,29 @@ This is a **working foundation**, not a complete historical archive. It has no l
 Run `python scripts/dynasty.py sources suggest journal:quarterly-journal-of-economics` (or a `researcher:` identifier) to examine unverified OpenAlex identity suggestions. These do **not** enable any source. After checking identities, use `sources verify`. Persist your verified local source configuration with `sources dump --output registry/source_manifest.json`, review the Git diff, and commit it if appropriate.
 
 The import cap counts all API records processed, including malformed or incomplete records. Exact matching recognizes canonical DOIs, OpenAlex/provider IDs and known NBER working-paper URLs. Metadata with only similar title/author/year values still requires an explicit editorial merge decision. The existing 12 seed works contain 16 known versions, including four distinct NBER preprint links.
+
+## Historical backfill plan and spreadsheet triage
+
+The checked-in `registry/discovery_plan.json` contains 18 focused historical search queries across mobility, wealth transfers, family structure, institutions and research design. Each has an ID, theme, search phrase and approved provider list. These are exploratory search terms, not exhaustive historical source coverage.
+
+Dry-run up to four jobs without network calls or database writes:
+
+```bash
+python scripts/backfill_plan.py --max-jobs 4
+```
+
+Execute one focused OpenAlex batch when ready:
+
+```bash
+python scripts/backfill_plan.py --provider openalex --query-id transfer-gifts --max-jobs 1 --max-records-per-job 50 --execute
+```
+
+The script defaults to dry run. It requires explicit `--execute` to contact provider APIs. A bounded run will skip matching completed provider/query/date combinations that previously returned records, unless you pass `--force`. It imports metadata only and does not publish papers.
+
+Create an editorial triage CSV, which can be opened in Excel:
+
+```bash
+python scripts/dynasty.py review export --status pending --limit 1000 --output data/review-queue.csv
+```
+
+The CSV exporter prefixes formula-like values so untrusted metadata is not interpreted as spreadsheet formulas. The output is not a publication decision. Review approvals and merges remain explicit, audited CLI actions.
