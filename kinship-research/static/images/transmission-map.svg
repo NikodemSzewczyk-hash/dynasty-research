@@ -1,26 +1,26 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 480" role="img" aria-labelledby="title desc">
 <title id="title">Conceptual transmission network</title><desc id="desc">Diagram of potential connections between family resources, institutions, networks, and economic opportunity across generations; no data values are represented.</desc>
-<defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#9af1d4"/><stop offset="1" stop-color="#998fe5"/></linearGradient><filter id="glow"><feGaussianBlur stdDeviation="5"/></filter></defs>
-<g stroke="#2c3c4b" stroke-width=".7" opacity=".45">
+<defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#169d9b"/><stop offset="1" stop-color="#7064d4"/></linearGradient><filter id="glow"><feGaussianBlur stdDeviation="5"/></filter></defs>
+<g stroke="#9db9ca" stroke-width=".7" opacity=".45">
 <path d="M0 60H680M0 120H680M0 180H680M0 240H680M0 300H680M0 360H680M0 420H680"/>
 <path d="M60 0V480M120 0V480M180 0V480M240 0V480M300 0V480M360 0V480M420 0V480M480 0V480M540 0V480M600 0V480M660 0V480"/>
 </g>
-<g fill="#7c90a3" font-family="monospace" font-size="10" letter-spacing="2"><text x="36" y="40">ORIGINS</text><text x="276" y="40">MECHANISMS</text><text x="530" y="40">OUTCOMES</text><text x="36" y="459">GEN / 01</text><text x="310" y="459">GEN / 02</text><text x="565" y="459">GEN / 03</text></g>
+<g fill="#657e91" font-family="monospace" font-size="10" letter-spacing="2"><text x="36" y="40">ORIGINS</text><text x="276" y="40">MECHANISMS</text><text x="530" y="40">OUTCOMES</text><text x="36" y="459">GEN / 01</text><text x="310" y="459">GEN / 02</text><text x="565" y="459">GEN / 03</text></g>
 <g fill="none" stroke-width="1.35">
-  <path d="M117 156 C220 125 230 105 326 134" stroke="#9af1d4" opacity=".77"/>
-  <path d="M117 156 C200 180 212 244 326 268" stroke="#9af1d4" opacity=".55"/>
-  <path d="M117 324 C218 280 222 260 326 268" stroke="#9188cf" opacity=".7"/>
-  <path d="M117 324 C216 332 220 394 326 400" stroke="#9188cf" opacity=".72"/>
+  <path d="M117 156 C220 125 230 105 326 134" stroke="#169d9b" opacity=".77"/>
+  <path d="M117 156 C200 180 212 244 326 268" stroke="#169d9b" opacity=".55"/>
+  <path d="M117 324 C218 280 222 260 326 268" stroke="#8174db" opacity=".7"/>
+  <path d="M117 324 C216 332 220 394 326 400" stroke="#8174db" opacity=".72"/>
   <path d="M326 134 C444 106 443 178 561 185" stroke="url(#g)" opacity=".7"/>
   <path d="M326 268 C450 242 438 210 561 185" stroke="url(#g)" opacity=".95"/>
-  <path d="M326 268 C446 290 442 338 561 347" stroke="#9af1d4" opacity=".82"/>
-  <path d="M326 400 C442 392 453 355 561 347" stroke="#9188cf" opacity=".7"/>
-  <path d="M561 185 C628 230 630 315 561 347" stroke="#9af1d4" stroke-dasharray="4 7" opacity=".55"/>
+  <path d="M326 268 C446 290 442 338 561 347" stroke="#169d9b" opacity=".82"/>
+  <path d="M326 400 C442 392 453 355 561 347" stroke="#8174db" opacity=".7"/>
+  <path d="M561 185 C628 230 630 315 561 347" stroke="#169d9b" stroke-dasharray="4 7" opacity=".55"/>
 </g>
-<g fill="#0b121c" stroke-width="1.5"><circle cx="117" cy="156" r="40" stroke="#9af1d4"/><circle cx="117" cy="324" r="40" stroke="#978fdf"/><circle cx="326" cy="134" r="40" stroke="#9af1d4"/><circle cx="326" cy="268" r="51" stroke="url(#g)"/><circle cx="326" cy="400" r="40" stroke="#978fdf"/><circle cx="561" cy="185" r="47" stroke="#9af1d4"/><circle cx="561" cy="347" r="47" stroke="#978fdf"/></g>
-<g fill="#9af1d4"><circle cx="117" cy="156" r="6"/><circle cx="326" cy="134" r="6"/><circle cx="326" cy="268" r="10"/><circle cx="561" cy="185" r="7"/></g><g fill="#978fdf"><circle cx="117" cy="324" r="6"/><circle cx="326" cy="400" r="6"/><circle cx="561" cy="347" r="7"/></g>
-<g font-family="monospace" font-size="10" text-anchor="middle" fill="#cad4df" letter-spacing=".8">
+<g fill="#ffffff" stroke-width="1.5"><circle cx="117" cy="156" r="40" stroke="#169d9b"/><circle cx="117" cy="324" r="40" stroke="#7064d4"/><circle cx="326" cy="134" r="40" stroke="#169d9b"/><circle cx="326" cy="268" r="51" stroke="url(#g)"/><circle cx="326" cy="400" r="40" stroke="#7064d4"/><circle cx="561" cy="185" r="47" stroke="#169d9b"/><circle cx="561" cy="347" r="47" stroke="#7064d4"/></g>
+<g fill="#169d9b"><circle cx="117" cy="156" r="6"/><circle cx="326" cy="134" r="6"/><circle cx="326" cy="268" r="10"/><circle cx="561" cy="185" r="7"/></g><g fill="#7064d4"><circle cx="117" cy="324" r="6"/><circle cx="326" cy="400" r="6"/><circle cx="561" cy="347" r="7"/></g>
+<g font-family="monospace" font-size="10" text-anchor="middle" fill="#254254" letter-spacing=".8">
 <text x="117" y="218">FAMILY</text><text x="117" y="231">RESOURCES</text><text x="117" y="386">PLACE &amp;</text><text x="117" y="399">INSTITUTIONS</text><text x="326" y="195">NETWORKS</text><text x="326" y="338">TRANSMISSION</text><text x="326" y="462"></text><text x="326" y="447">POLICY</text><text x="561" y="250">OPPORTUNITY</text><text x="561" y="414">INEQUALITY</text>
 </g>
-<path d="M44 92h-11v11M639 92h11v11M44 416h-11v-11M639 416h11v-11" stroke="#65788a" stroke-width="1" fill="none"/>
+<path d="M44 92h-11v11M639 92h11v11M44 416h-11v-11M639 416h11v-11" stroke="#95abbb" stroke-width="1" fill="none"/>
 </svg>
