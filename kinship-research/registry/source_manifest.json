@@ -859,11 +859,12 @@
       "tier": "A",
       "identifiers": {},
       "retrieval": {
-        "provider": "institutional",
-        "method": "verified_feed",
+        "provider": "nber",
+        "method": "official_ref_tsv_manual_import",
         "identifier_field": "feed_url",
         "enabled": false,
-        "verification": "needs_verified_identifier"
+        "verification": "official_metadata_documented_not_scheduled",
+        "documentation_url": "https://www.nber.org/research/data/nber-working-papers-and-chapters-metadata"
       },
       "editorial_status": "candidate"
     },

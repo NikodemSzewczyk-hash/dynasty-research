@@ -131,3 +131,14 @@ python scripts/dynasty.py review export --status pending --limit 1000 --output d
 ```
 
 The CSV exporter prefixes formula-like values so untrusted metadata is not interpreted as spreadsheet formulas. The output is not a publication decision. Review approvals and merges remain explicit, audited CLI actions.
+
+## NBER official historical metadata adapter (additional V0.2 follow-on)
+
+NBER publicly provides bibliographic tables for its Working Papers and Chapters, including a tab-separated `ref.tsv` with columns `paper`, `author`, `title`, `issue_date`, and `doi`. Visit https://www.nber.org/research/data/nber-working-papers-and-chapters-metadata and download the official TSV file yourself. No NBER PDF text or author-owned content is downloaded by this adapter.
+
+```bash
+python scripts/ingest_nber_tsv.py --file /path/to/ref.tsv --from-year 2000 --to-year 2026 --max-records 500
+python scripts/dynasty.py review list --status pending
+```
+
+Only `w` Working Paper identifiers are currently supported; chapter `c` and the retired technical/historical `t`/`h` prefixes are skipped deliberately. Papers are still queued as **unreviewed**, not published. NBER working-paper IDs and explicitly stated DOIs can match existing intellectual works. Author strings in `ref.tsv` may concatenate names ambiguously; the importer splits only clear separators and preserves ambiguous comma forms for reviewer inspection. This offline importer is not yet a scheduled NBER feed.

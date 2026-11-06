@@ -15,6 +15,7 @@ from dynasty_data.providers import normalize_openalex,normalize_crossref,iter_op
 from dynasty import set_source, main as dynasty_main
 from dynasty_data.resolution import suggest_identifiers
 from backfill_plan import build_jobs, main as backfill_main
+from dynasty_data.nber import normalize_nber,iter_nber_tsv
 import csv
 from contextlib import redirect_stdout
 from io import StringIO
@@ -302,6 +303,38 @@ class PipelineTest(unittest.TestCase):
         self.assertEqual(len(rows),1)
         self.assertTrue(rows[0]["title"].startswith("'=HYPERLINK"))
         self.assertEqual(rows[0]["status"],"pending")
+
+
+    def test_official_nber_tsv_import_and_version_match(self):
+        self.seed()
+        ref=Path(self.tmp.name)/"ref.tsv"
+        ref.write_text(
+            "paper\tauthor\ttitle\tissue_date\tdoi\n"
+            "w21896\tA. Author and B. Author\tOld preprint test\t2016-05-01\t10.3386/w21896\n"
+            "w543210\tJane Smith; John Doe\tNew NBER research\t2025-06-01\t\n"
+            "c12345\tBook Author\tNot a working paper\t2020-01-01\t\n",
+            encoding="utf-8")
+        items=list(iter_nber_tsv(ref,from_year=2015,to_year=2026,max_records=10))
+        self.assertEqual(len(items),2)
+        self.assertEqual(items[0]["provider"],"nber")
+        self.assertEqual(items[0]["authors"],["A. Author","B. Author"])
+        self.assertEqual(items[0]["url"],"https://www.nber.org/papers/w21896")
+        original=self.db.execute("SELECT work_id FROM versions WHERE provider_id='w21896'").fetchone()
+        _,cid=enqueue(self.db,items[0])
+        match=self.db.execute("SELECT match_type,possible_work_id FROM candidates WHERE id=?",(cid,)).fetchone()
+        self.assertEqual(match["match_type"],"exact")
+        self.assertEqual(match["possible_work_id"],original["work_id"])
+        self.assertEqual(decide(self.db,cid,"approve",reviewer="editor"),original["work_id"])
+        self.assertEqual(stats(self.db)["versions"],16)
+        _,new_id=enqueue(self.db,items[1])
+        self.assertEqual(self.db.execute("SELECT match_type FROM candidates WHERE id=?",(new_id,)).fetchone()[0],"none")
+        self.assertEqual(stats(self.db)["queue_status"]["pending"],1)
+
+    def test_nber_tsv_rejects_unrelated_files(self):
+        path=Path(self.tmp.name)/"wrong.tsv"
+        path.write_text("paper\ttitle\nw1234\tSample\n",encoding="utf-8")
+        with self.assertRaisesRegex(ValueError,"needs"):
+            list(iter_nber_tsv(path))
 
 if __name__=="__main__":
     unittest.main()

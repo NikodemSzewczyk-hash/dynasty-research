@@ -123,7 +123,7 @@ def find_match(db, doi: str | None, title: str, authors: list[str], year: int | 
 def enqueue(db, record: dict) -> tuple[bool,int]:
     """Store one normalized API record; never publish it or merge fuzzy matches."""
     provider = str(record["provider"]).lower()
-    if provider not in ("openalex","crossref"):
+    if provider not in ("openalex","crossref","nber"):
         raise ValueError(f"Unsupported provider {provider}")
     title = clean_text(record.get("title"))
     authors = [clean_text(x) for x in record.get("authors",[]) if clean_text(x)]
