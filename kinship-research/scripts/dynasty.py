@@ -137,7 +137,7 @@ def main(argv=None) -> int:
                           "notes":"Public, explicitly reviewed identifiers; local source IDs remain stable.",
                           "sources":records}
                 args.output.parent.mkdir(parents=True,exist_ok=True)
-                args.output.write_text(json.dumps(manifest,indent=2,ensure_ascii=False)+"\\n",encoding="utf-8")
+                args.output.write_text(json.dumps(manifest,indent=2,ensure_ascii=False)+"\n",encoding="utf-8")
                 say({"written":str(args.output),"sources":len(records)})
         elif args.command=="ingest":
             if not args.query and not args.source_id:
