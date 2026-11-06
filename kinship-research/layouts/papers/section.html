@@ -1,0 +1,11 @@
+{{ define "main" }}
+<section class="page-hero"><div class="wrap"><div class="eyebrow muted">THE ARCHIVE</div><h1>Research library<span class="brand-period">.</span></h1><p>A curated starting collection on the origins and persistence of inequality. This is a prototype archive, not yet an exhaustive or continuously updated database.</p></div></section>
+<section class="archive-section"><div class="wrap">
+ <div class="archive-tools"><label class="search-wrap"><span class="sr-only">Search research papers</span><span class="search-icon">⌕</span><input type="search" id="paper-search" placeholder="Search titles, authors, or ideas…" autocomplete="off"></label>
+ <div class="filter-row"><label for="topic-filter">TOPIC</label><select id="topic-filter"><option value="">All topics</option>{{ range site.Taxonomies.topics.Alphabetical }}<option value="{{ .Page.Title | lower }}">{{ .Page.Title }}</option>{{ end }}</select><label for="year-filter">YEAR</label><select id="year-filter"><option value="">All years</option></select></div>
+ </div>
+ <div class="archive-meta"><span id="result-count">{{ len (where site.RegularPages "Section" "papers") }} papers</span><span>Curated seed collection · chronological</span></div>
+ <div id="paper-results" class="paper-grid">{{ range (sort (where site.RegularPages "Section" "papers") "Params.year" "desc") }}{{ partial "paper-card.html" . }}{{ end }}</div>
+ <p id="empty-state" class="empty-state" hidden>No papers match these filters. Try another search or topic.</p>
+</div></section>
+{{ end }}

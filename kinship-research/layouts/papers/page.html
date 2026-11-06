@@ -1,0 +1,10 @@
+{{ define "main" }}
+<article class="article-shell wrap"><a class="back-link" href="{{ "/papers/" | relURL }}">← Paper archive</a>
+<div class="article-kicker">{{ .Params.year }} <span>—</span> {{ .Params.source }} <span>—</span> {{ .Params.status | default "Published" }}</div>
+<h1>{{ .Title }}</h1><p class="article-authors">{{ delimit .Params.authors " · " }}</p>
+<div class="article-metadata"><span>Listed year: {{ .Params.year }}</span>{{ with .Params.doi }}<span>DOI: <a href="https://doi.org/{{ . }}" target="_blank" rel="noopener noreferrer">{{ . }}</a></span>{{ end }}</div>
+<div class="article-grid"><div class="article-main"><div class="eyebrow muted">WHY IT MATTERS</div><p class="standfirst">{{ .Params.takeaway }}</p><div class="article-body">{{ .Content }}</div>
+<div class="article-ctas"><a class="btn btn-dark" href="{{ .Params.paper_url }}" target="_blank" rel="noopener noreferrer">Read original paper ↗</a>{{ with .Params.working_paper_url }}<a class="btn btn-outline" href="{{ . }}" target="_blank" rel="noopener noreferrer">Working-paper version ↗</a>{{ end }}</div></div>
+<aside class="article-side"><div class="aside-label">RESEARCH DETAILS</div><div class="side-label">TOPICS</div><div class="tag-row">{{ range .Params.topics }}<span class="tag">{{ . }}</span>{{ end }}</div><div class="side-label">METHOD / LENS</div><p>{{ .Params.method | default "See original study" }}</p><div class="side-label">SOURCE</div><p>{{ .Params.source }}</p><div class="side-note">Summaries are editorial descriptions, not substitutes for reading the original study.</div></aside></div>
+</article>
+{{ end }}

@@ -1,0 +1,256 @@
+[
+  {
+    "id": "where-is-the-land-of-opportunity",
+    "title": "Where Is the Land of Opportunity? The Geography of Intergenerational Mobility in the United States",
+    "authors": [
+      "Raj Chetty",
+      "Nathaniel Hendren",
+      "Patrick Kline",
+      "Emmanuel Saez"
+    ],
+    "year": 2014,
+    "source": "Quarterly Journal of Economics",
+    "status": "Published",
+    "doi": "10.1093/qje/qju022",
+    "paper_url": "https://doi.org/10.1093/qje/qju022",
+    "topics": [
+      "Intergenerational mobility",
+      "Place and opportunity"
+    ],
+    "method": "US administrative income data; geographic comparisons",
+    "takeaway": "Economic mobility differs strikingly across US regions, motivating a closer look at the places and institutions that shape opportunity.",
+    "description": "A foundational mapping of geographic variation in US intergenerational mobility using linked parent-child income records."
+  },
+  {
+    "id": "bequests-wealth-inequality",
+    "title": "The Role of Bequests in Shaping Wealth Inequality: Evidence from Danish Wealth Records",
+    "authors": [
+      "Simon H. Boserup",
+      "Wojciech Kopczuk",
+      "Claus T. Kreiner"
+    ],
+    "year": 2016,
+    "source": "American Economic Review",
+    "status": "Published",
+    "doi": "10.1257/aer.p20161036",
+    "paper_url": "https://doi.org/10.1257/aer.p20161036",
+    "working_paper_url": "https://www.nber.org/papers/w21896",
+    "topics": [
+      "Wealth and inheritance",
+      "Intergenerational transfers"
+    ],
+    "method": "Danish administrative wealth records; parental death event study",
+    "takeaway": "Bequests can raise absolute wealth dispersion while reducing relative measures of inequality — a reminder that inequality metrics matter.",
+    "description": "Studies wealth distributions before and after parental death in Danish administrative records."
+  },
+  {
+    "id": "inheritance-multiple-generations",
+    "title": "Intergenerational Wealth Mobility and the Role of Inheritance: Evidence from Multiple Generations",
+    "authors": [
+      "Adrian Adermon",
+      "Mikael Lindahl",
+      "Daniel Waldenström"
+    ],
+    "year": 2018,
+    "source": "Economic Journal",
+    "status": "Published",
+    "doi": "10.1111/ecoj.12535",
+    "paper_url": "https://doi.org/10.1111/ecoj.12535",
+    "topics": [
+      "Wealth and inheritance",
+      "Intergenerational mobility"
+    ],
+    "method": "Swedish multigenerational wealth and inheritance records",
+    "takeaway": "Transfers and bequests help explain the persistence of wealth across several generations.",
+    "description": "Links wealth and inheritance data across up to four generations to quantify persistence and channels of transmission."
+  },
+  {
+    "id": "neighborhood-mto-children",
+    "title": "The Effects of Exposure to Better Neighborhoods on Children: New Evidence from the Moving to Opportunity Experiment",
+    "authors": [
+      "Raj Chetty",
+      "Nathaniel Hendren",
+      "Lawrence F. Katz"
+    ],
+    "year": 2016,
+    "source": "American Economic Review",
+    "status": "Published",
+    "doi": "10.1257/aer.20150572",
+    "paper_url": "https://doi.org/10.1257/aer.20150572",
+    "topics": [
+      "Place and opportunity",
+      "Childhood and education"
+    ],
+    "method": "Randomized housing voucher experiment linked to tax records",
+    "takeaway": "Moving to lower-poverty neighborhoods benefits young children in adulthood, highlighting the importance of childhood exposure.",
+    "description": "Revisits the Moving to Opportunity experiment to study long-run outcomes by children’s age at relocation."
+  },
+  {
+    "id": "more-the-merrier-birth-order",
+    "title": "The More the Merrier? The Effect of Family Size and Birth Order on Children’s Education",
+    "authors": [
+      "Sandra E. Black",
+      "Paul J. Devereux",
+      "Kjell G. Salvanes"
+    ],
+    "year": 2005,
+    "source": "Quarterly Journal of Economics",
+    "status": "Published",
+    "doi": "10.1093/qje/120.2.669",
+    "paper_url": "https://doi.org/10.1093/qje/120.2.669",
+    "working_paper_url": "https://www.nber.org/papers/w10720",
+    "topics": [
+      "Families and kinship",
+      "Childhood and education"
+    ],
+    "method": "Norwegian population registers; twin births and birth-order comparisons",
+    "takeaway": "Birth order appears more consequential for educational outcomes than family size once key confounders are addressed.",
+    "description": "Uses Norwegian register data to distinguish the roles of family size and birth order in children’s educational attainment."
+  },
+  {
+    "id": "divorce-laws-intertemporal",
+    "title": "Yours, Mine, and Ours: Do Divorce Laws Affect the Intertemporal Behavior of Married Couples?",
+    "authors": [
+      "Alessandra Voena"
+    ],
+    "year": 2015,
+    "source": "American Economic Review",
+    "status": "Published",
+    "doi": "10.1257/aer.20120234",
+    "paper_url": "https://doi.org/10.1257/aer.20120234",
+    "topics": [
+      "Families and kinship",
+      "Institutions and policy"
+    ],
+    "method": "Changes in US divorce laws; household decision model",
+    "takeaway": "Property division rules alter saving and labor decisions within marriage, linking family institutions to resource allocation.",
+    "description": "Analyzes how changes in divorce and property-division laws affect household intertemporal choices."
+  },
+  {
+    "id": "neighborhood-childhood-exposure",
+    "title": "The Impacts of Neighborhoods on Intergenerational Mobility I: Childhood Exposure Effects",
+    "authors": [
+      "Raj Chetty",
+      "Nathaniel Hendren"
+    ],
+    "year": 2018,
+    "source": "Quarterly Journal of Economics",
+    "status": "Published",
+    "doi": "10.1093/qje/qjy007",
+    "paper_url": "https://doi.org/10.1093/qje/qjy007",
+    "working_paper_url": "https://www.nber.org/papers/w23001",
+    "topics": [
+      "Place and opportunity",
+      "Intergenerational mobility"
+    ],
+    "method": "Mover design; sibling comparisons; linked administrative data",
+    "takeaway": "Children gain more from moving to better neighborhoods when exposure occurs earlier, consistent with cumulative childhood effects.",
+    "description": "Uses the timing of family moves across areas to estimate childhood exposure effects of place."
+  },
+  {
+    "id": "neighborhood-county-level",
+    "title": "The Impacts of Neighborhoods on Intergenerational Mobility II: County-Level Estimates",
+    "authors": [
+      "Raj Chetty",
+      "Nathaniel Hendren"
+    ],
+    "year": 2018,
+    "source": "Quarterly Journal of Economics",
+    "status": "Published",
+    "doi": "10.1093/qje/qjy006",
+    "paper_url": "https://doi.org/10.1093/qje/qjy006",
+    "topics": [
+      "Place and opportunity",
+      "Intergenerational mobility"
+    ],
+    "method": "Mover design; county-level place-effect estimates",
+    "takeaway": "Where a child grows up matters, with substantial variation in estimated opportunity even within metro areas.",
+    "description": "Estimates causal county effects on adult income using linked data and variation in the timing of childhood moves."
+  },
+  {
+    "id": "birth-weight-adult-outcomes",
+    "title": "From the Cradle to the Labor Market? The Effect of Birth Weight on Adult Outcomes",
+    "authors": [
+      "Sandra E. Black",
+      "Paul J. Devereux",
+      "Kjell G. Salvanes"
+    ],
+    "year": 2007,
+    "source": "Quarterly Journal of Economics",
+    "status": "Published",
+    "doi": "10.1162/qjec.122.1.409",
+    "paper_url": "https://doi.org/10.1162/qjec.122.1.409",
+    "working_paper_url": "https://www.nber.org/papers/w11796",
+    "topics": [
+      "Childhood and education",
+      "Intergenerational mobility"
+    ],
+    "method": "Norwegian register data; within-twin comparisons",
+    "takeaway": "Early-life health differences can affect education and adult labor-market outcomes, providing one route from childhood conditions to inequality.",
+    "description": "Studies the long-run consequences of birth weight using linked Norwegian population records and twin comparisons."
+  },
+  {
+    "id": "mobility-report-cards-colleges",
+    "title": "Mobility Report Cards: The Role of Colleges in Intergenerational Mobility",
+    "authors": [
+      "Raj Chetty",
+      "John N. Friedman",
+      "Emmanuel Saez",
+      "Nicholas Turner",
+      "Danny Yagan"
+    ],
+    "year": 2017,
+    "source": "NBER Working Papers",
+    "status": "Working-paper version",
+    "doi": "10.3386/w23618",
+    "paper_url": "https://www.nber.org/papers/w23618",
+    "topics": [
+      "Intergenerational mobility",
+      "Childhood and education"
+    ],
+    "method": "US tax and higher-education administrative data; descriptive mobility measures",
+    "takeaway": "Colleges differ greatly in low-income access and mobility outcomes, showing how institutional access can reproduce or reduce advantage.",
+    "description": "Documents intergenerational income mobility by college using large-scale US administrative data."
+  },
+  {
+    "id": "born-with-silver-spoon",
+    "title": "Born with a Silver Spoon? Danish Evidence on Wealth Inequality in Childhood",
+    "authors": [
+      "Simon Halphen Boserup",
+      "Wojciech Kopczuk",
+      "Claus Thustrup Kreiner"
+    ],
+    "year": 2016,
+    "source": "NBER Working Papers",
+    "status": "Working-paper version",
+    "doi": "10.3386/w22549",
+    "paper_url": "https://www.nber.org/papers/w22549",
+    "topics": [
+      "Wealth and inheritance",
+      "Intergenerational transfers"
+    ],
+    "method": "Danish wealth records; descriptive childhood wealth distributions",
+    "takeaway": "Wealth inequality emerges already in childhood, and wealth at age 18 predicts later outcomes beyond parental wealth alone.",
+    "description": "Examines childhood assets and the role of inter vivos transfers in Danish register data."
+  },
+  {
+    "id": "parenting-with-style",
+    "title": "Parenting with Style: Altruism and Paternalism in Intergenerational Preference Transmission",
+    "authors": [
+      "Matthias Doepke",
+      "Fabrizio Zilibotti"
+    ],
+    "year": 2014,
+    "source": "NBER Working Papers",
+    "status": "Working-paper version",
+    "doi": "10.3386/w20214",
+    "paper_url": "https://www.nber.org/papers/w20214",
+    "topics": [
+      "Families and kinship",
+      "Intergenerational mobility"
+    ],
+    "method": "Theoretical model of parenting and preference transmission",
+    "takeaway": "A model of how socioeconomic conditions shape parenting strategies and thereby influence the transmission of preferences.",
+    "description": "Develops a theory of parenting styles in which parents combine altruism and paternalism."
+  }
+]

@@ -1,0 +1,648 @@
+{
+  "journals": [
+    {
+      "name": "American Economic Review",
+      "tier": "A",
+      "area": "General economics"
+    },
+    {
+      "name": "Quarterly Journal of Economics",
+      "tier": "A",
+      "area": "General economics"
+    },
+    {
+      "name": "Journal of Political Economy",
+      "tier": "A",
+      "area": "General economics"
+    },
+    {
+      "name": "Econometrica",
+      "tier": "A",
+      "area": "General economics"
+    },
+    {
+      "name": "Review of Economic Studies",
+      "tier": "A",
+      "area": "General economics"
+    },
+    {
+      "name": "AEJ: Applied Economics",
+      "tier": "A",
+      "area": "Applied microeconomics"
+    },
+    {
+      "name": "AEJ: Economic Policy",
+      "tier": "A",
+      "area": "Applied public policy"
+    },
+    {
+      "name": "American Economic Review: Insights",
+      "tier": "A",
+      "area": "General economics"
+    },
+    {
+      "name": "Review of Economics and Statistics",
+      "tier": "A",
+      "area": "Applied economics"
+    },
+    {
+      "name": "Journal of the European Economic Association",
+      "tier": "A",
+      "area": "General economics"
+    },
+    {
+      "name": "Economic Journal",
+      "tier": "A",
+      "area": "General economics"
+    },
+    {
+      "name": "Journal of Labor Economics",
+      "tier": "A",
+      "area": "Labor and family"
+    },
+    {
+      "name": "Journal of Human Resources",
+      "tier": "A",
+      "area": "Human capital and mobility"
+    },
+    {
+      "name": "Journal of Public Economics",
+      "tier": "A",
+      "area": "Transfers and taxation"
+    },
+    {
+      "name": "Journal of Development Economics",
+      "tier": "A",
+      "area": "Families and development"
+    },
+    {
+      "name": "Journal of Population Economics",
+      "tier": "A",
+      "area": "Family and demography"
+    },
+    {
+      "name": "Demography",
+      "tier": "A",
+      "area": "Population and families"
+    },
+    {
+      "name": "Journal of Economic Perspectives",
+      "tier": "A",
+      "area": "Synthesis and reviews"
+    },
+    {
+      "name": "Journal of Economic Literature",
+      "tier": "A",
+      "area": "Synthesis and reviews"
+    },
+    {
+      "name": "European Economic Review",
+      "tier": "B",
+      "area": "General economics"
+    },
+    {
+      "name": "Economic Policy",
+      "tier": "B",
+      "area": "Policy"
+    },
+    {
+      "name": "Labour Economics",
+      "tier": "B",
+      "area": "Labor economics"
+    },
+    {
+      "name": "Journal of Economic Inequality",
+      "tier": "B",
+      "area": "Wealth and mobility"
+    },
+    {
+      "name": "Economics of Education Review",
+      "tier": "B",
+      "area": "Human capital"
+    },
+    {
+      "name": "Journal of Health Economics",
+      "tier": "B",
+      "area": "Health and family"
+    },
+    {
+      "name": "Journal of Urban Economics",
+      "tier": "B",
+      "area": "Neighborhoods and mobility"
+    },
+    {
+      "name": "Review of Economics of the Household",
+      "tier": "B",
+      "area": "Household decisions"
+    },
+    {
+      "name": "Journal of Economic Behavior & Organization",
+      "tier": "B",
+      "area": "Behavior and households"
+    },
+    {
+      "name": "Journal of Economic Geography",
+      "tier": "B",
+      "area": "Place and mobility"
+    },
+    {
+      "name": "Journal of Finance",
+      "tier": "B",
+      "area": "Household finance"
+    },
+    {
+      "name": "Journal of Financial Economics",
+      "tier": "B",
+      "area": "Household finance"
+    },
+    {
+      "name": "Review of Financial Studies",
+      "tier": "B",
+      "area": "Household finance"
+    },
+    {
+      "name": "National Tax Journal",
+      "tier": "B",
+      "area": "Taxation and transfers"
+    },
+    {
+      "name": "International Tax and Public Finance",
+      "tier": "B",
+      "area": "Taxation"
+    },
+    {
+      "name": "Fiscal Studies",
+      "tier": "B",
+      "area": "Household/public policy"
+    },
+    {
+      "name": "Journal of Policy Analysis and Management",
+      "tier": "B",
+      "area": "Family and social policy"
+    },
+    {
+      "name": "Population and Development Review",
+      "tier": "B",
+      "area": "Demography"
+    },
+    {
+      "name": "Journal of Marriage and Family",
+      "tier": "B",
+      "area": "Family sociology"
+    },
+    {
+      "name": "American Sociological Review",
+      "tier": "B",
+      "area": "Social stratification"
+    },
+    {
+      "name": "American Journal of Sociology",
+      "tier": "B",
+      "area": "Social stratification"
+    },
+    {
+      "name": "European Sociological Review",
+      "tier": "B",
+      "area": "Inequality and family"
+    },
+    {
+      "name": "Social Forces",
+      "tier": "B",
+      "area": "Social stratification"
+    },
+    {
+      "name": "Nature Human Behaviour",
+      "tier": "B",
+      "area": "Interdisciplinary"
+    },
+    {
+      "name": "Journal of Econometrics",
+      "tier": "C",
+      "area": "Causal methods"
+    },
+    {
+      "name": "Quantitative Economics",
+      "tier": "C",
+      "area": "Causal methods"
+    },
+    {
+      "name": "Journal of Economic Theory",
+      "tier": "C",
+      "area": "Family and inequality theory"
+    },
+    {
+      "name": "Games and Economic Behavior",
+      "tier": "C",
+      "area": "Bargaining theory"
+    },
+    {
+      "name": "Experimental Economics",
+      "tier": "C",
+      "area": "Transfers and preferences"
+    },
+    {
+      "name": "Journal of Economic History",
+      "tier": "C",
+      "area": "Historical mobility"
+    },
+    {
+      "name": "Scandinavian Journal of Economics",
+      "tier": "C",
+      "area": "Nordic economics"
+    },
+    {
+      "name": "Science",
+      "tier": "C",
+      "area": "Selective cross-disciplinary"
+    },
+    {
+      "name": "Nature",
+      "tier": "C",
+      "area": "Selective cross-disciplinary"
+    },
+    {
+      "name": "PNAS",
+      "tier": "C",
+      "area": "Selective cross-disciplinary"
+    }
+  ],
+  "repositories": [
+    {
+      "name": "NBER Working Papers",
+      "tier": "A",
+      "area": "General economics"
+    },
+    {
+      "name": "CEPR Discussion Papers",
+      "tier": "A",
+      "area": "European/international economics"
+    },
+    {
+      "name": "IZA Discussion Papers",
+      "tier": "A",
+      "area": "Labor and family"
+    },
+    {
+      "name": "IFS Working Papers",
+      "tier": "A",
+      "area": "Public, families, wealth"
+    },
+    {
+      "name": "HCEO / University of Chicago",
+      "tier": "A",
+      "area": "Human capital and inequality"
+    },
+    {
+      "name": "LSE Centre for Economic Performance",
+      "tier": "A",
+      "area": "Labor and mobility"
+    },
+    {
+      "name": "Princeton Industrial Relations Section",
+      "tier": "A",
+      "area": "Labor economics"
+    },
+    {
+      "name": "NHH Economics",
+      "tier": "A",
+      "area": "Norwegian applied micro"
+    },
+    {
+      "name": "NHH FAIR / Choice Lab",
+      "tier": "A",
+      "area": "Family, inequality, behavioral"
+    },
+    {
+      "name": "IFAU Sweden",
+      "tier": "A",
+      "area": "Register-based applied micro"
+    },
+    {
+      "name": "SOFI Stockholm University",
+      "tier": "A",
+      "area": "Mobility and family"
+    },
+    {
+      "name": "CESifo Working Papers",
+      "tier": "B",
+      "area": "International economics"
+    },
+    {
+      "name": "Statistics Norway Discussion Papers",
+      "tier": "B",
+      "area": "Administrative data"
+    },
+    {
+      "name": "Frisch Centre",
+      "tier": "B",
+      "area": "Norwegian economics"
+    },
+    {
+      "name": "ROCKWOOL Foundation",
+      "tier": "B",
+      "area": "Nordic social and labor"
+    },
+    {
+      "name": "ZEW Discussion Papers",
+      "tier": "B",
+      "area": "Labor and public"
+    },
+    {
+      "name": "ISER Essex Working Papers",
+      "tier": "B",
+      "area": "Household dynamics"
+    },
+    {
+      "name": "Uppsala UCLS",
+      "tier": "B",
+      "area": "Longitudinal research"
+    },
+    {
+      "name": "VIVE Denmark",
+      "tier": "B",
+      "area": "Welfare and families"
+    },
+    {
+      "name": "IIES Stockholm",
+      "tier": "B",
+      "area": "Economics"
+    },
+    {
+      "name": "CEMFI Working Papers",
+      "tier": "B",
+      "area": "Applied micro"
+    },
+    {
+      "name": "EUI Economics Working Papers",
+      "tier": "B",
+      "area": "European economics"
+    },
+    {
+      "name": "Chicago Becker Friedman Institute",
+      "tier": "B",
+      "area": "Economics research"
+    },
+    {
+      "name": "Opportunity Insights",
+      "tier": "B",
+      "area": "Mobility, inequality"
+    },
+    {
+      "name": "Luxembourg Income Study",
+      "tier": "B",
+      "area": "Income and wealth"
+    },
+    {
+      "name": "Paris School of Economics",
+      "tier": "B",
+      "area": "Wealth and inequality"
+    },
+    {
+      "name": "World Bank Policy Research",
+      "tier": "B",
+      "area": "Families and development"
+    },
+    {
+      "name": "SSRN Economics",
+      "tier": "C",
+      "area": "Early discovery"
+    },
+    {
+      "name": "RePEc / IDEAS",
+      "tier": "C",
+      "area": "Metadata discovery"
+    },
+    {
+      "name": "OpenAlex",
+      "tier": "C",
+      "area": "Metadata discovery"
+    },
+    {
+      "name": "Federal Reserve working papers",
+      "tier": "C",
+      "area": "Household debt and wealth"
+    },
+    {
+      "name": "Max Planck demographic research",
+      "tier": "C",
+      "area": "Family demography"
+    },
+    {
+      "name": "UCL CReAM",
+      "tier": "C",
+      "area": "Families and migration"
+    }
+  ],
+  "researchers": [
+    {
+      "name": "Jan Stuhler",
+      "tier": "A",
+      "area": "Multigenerational mobility"
+    },
+    {
+      "name": "Martin Nybom",
+      "tier": "A",
+      "area": "Intergenerational persistence"
+    },
+    {
+      "name": "Katrine V. Løken",
+      "tier": "A",
+      "area": "Families and child outcomes"
+    },
+    {
+      "name": "Aline Bütikofer",
+      "tier": "A",
+      "area": "Family and long-run outcomes"
+    },
+    {
+      "name": "Kjell G. Salvanes",
+      "tier": "A",
+      "area": "Family, education, mobility"
+    },
+    {
+      "name": "Magne Mogstad",
+      "tier": "A",
+      "area": "Intergenerational outcomes"
+    },
+    {
+      "name": "Sandra E. Black",
+      "tier": "A",
+      "area": "Parental resources and children"
+    },
+    {
+      "name": "Alessandra Voena",
+      "tier": "A",
+      "area": "Marriage, divorce, bargaining"
+    },
+    {
+      "name": "Corina Mommaerts",
+      "tier": "A",
+      "area": "Family insurance and transfers"
+    },
+    {
+      "name": "Wojciech Kopczuk",
+      "tier": "A",
+      "area": "Bequests, gifts, taxation"
+    },
+    {
+      "name": "Daniel Waldenström",
+      "tier": "A",
+      "area": "Wealth and inheritance"
+    },
+    {
+      "name": "Raj Chetty",
+      "tier": "A",
+      "area": "Opportunity and mobility"
+    },
+    {
+      "name": "Nathaniel Hendren",
+      "tier": "A",
+      "area": "Mobility and welfare"
+    },
+    {
+      "name": "Sarah Cattan",
+      "tier": "A",
+      "area": "Child development"
+    },
+    {
+      "name": "Anne Ardila Brenøe",
+      "tier": "A",
+      "area": "Families, gender, education"
+    },
+    {
+      "name": "Bhashkar Mazumder",
+      "tier": "B",
+      "area": "Income mobility"
+    },
+    {
+      "name": "Jo Blanden",
+      "tier": "B",
+      "area": "Education and mobility"
+    },
+    {
+      "name": "Paul Devereux",
+      "tier": "B",
+      "area": "Family background"
+    },
+    {
+      "name": "Florencia Torche",
+      "tier": "B",
+      "area": "Stratification and family"
+    },
+    {
+      "name": "Fabian Pfeffer",
+      "tier": "B",
+      "area": "Wealth and opportunity"
+    },
+    {
+      "name": "David Deming",
+      "tier": "B",
+      "area": "Education and mobility"
+    },
+    {
+      "name": "Mikael Lindahl",
+      "tier": "B",
+      "area": "Mobility and human capital"
+    },
+    {
+      "name": "Matthias Doepke",
+      "tier": "B",
+      "area": "Family and parenting"
+    },
+    {
+      "name": "Raquel Fernández",
+      "tier": "B",
+      "area": "Gender and family"
+    },
+    {
+      "name": "Nezih Guner",
+      "tier": "B",
+      "area": "Fertility and marriage"
+    },
+    {
+      "name": "Pierre-André Chiappori",
+      "tier": "B",
+      "area": "Household bargaining"
+    },
+    {
+      "name": "Claudia Olivetti",
+      "tier": "B",
+      "area": "Gender and family"
+    },
+    {
+      "name": "Marianne Bertrand",
+      "tier": "B",
+      "area": "Gender and households"
+    },
+    {
+      "name": "Melissa Kearney",
+      "tier": "B",
+      "area": "Family structure"
+    },
+    {
+      "name": "Anna Aizer",
+      "tier": "B",
+      "area": "Families and public policy"
+    },
+    {
+      "name": "Maya Rossin-Slater",
+      "tier": "B",
+      "area": "Family policy and early life"
+    },
+    {
+      "name": "Hilary Hoynes",
+      "tier": "B",
+      "area": "Family transfers and welfare"
+    },
+    {
+      "name": "Johanna Rickne",
+      "tier": "B",
+      "area": "Gender, marriage, inequality"
+    },
+    {
+      "name": "Theresa Kuchler",
+      "tier": "B",
+      "area": "Networks and finance"
+    },
+    {
+      "name": "Winnie van Dijk",
+      "tier": "B",
+      "area": "Household finance"
+    },
+    {
+      "name": "Will Dobbie",
+      "tier": "B",
+      "area": "Debt and distress"
+    },
+    {
+      "name": "Raymond Kluender",
+      "tier": "B",
+      "area": "Bankruptcy and credit"
+    },
+    {
+      "name": "Martin Hällsten",
+      "tier": "B",
+      "area": "Wealth and family"
+    },
+    {
+      "name": "Andreas Kotsadam",
+      "tier": "B",
+      "area": "Gender and family"
+    },
+    {
+      "name": "Mari Rege",
+      "tier": "B",
+      "area": "Child development"
+    },
+    {
+      "name": "Henrik Kleven",
+      "tier": "B",
+      "area": "Tax, gender, household labor"
+    },
+    {
+      "name": "Mette Gørtz",
+      "tier": "B",
+      "area": "Family labor supply"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+<article class="paper-card" data-paper data-title="{{ .Title | lower }}" data-authors="{{ delimit .Params.authors " " | lower }}" data-topics="{{ delimit .Params.topics "|" | lower }}" data-year="{{ .Params.year }}" data-source="{{ .Params.source | lower }}" data-summary="{{ .Params.takeaway | lower }}">
+  <div class="paper-topline"><span class="paper-year">{{ .Params.year }}</span><span class="paper-divider">/</span><span class="paper-source">{{ .Params.source }}</span></div>
+  <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+  <p class="paper-authors">{{ delimit .Params.authors ", " }}</p>
+  <p class="paper-takeaway">{{ .Params.takeaway }}</p>
+  <div class="tag-row">{{ range first 3 .Params.topics }}<span class="tag">{{ . }}</span>{{ end }}</div>
+</article>
