@@ -1,0 +1,8 @@
+# Kinship Hugo site lives in a subfolder of this repository.
+[build]
+  base = "kinship-research"
+  command = 'hugo --minify --baseURL "$DEPLOY_PRIME_URL/"'
+  publish = "public"
+
+[build.environment]
+  HUGO_VERSION = "0.159.2"
