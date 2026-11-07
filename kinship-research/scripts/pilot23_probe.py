@@ -30,7 +30,7 @@ RESEARCHERS=[
  "researcher:jan-stuhler","researcher:martin-nybom",
  "researcher:katrine-v-l-ken","researcher:aline-butikofer",
  "researcher:kjell-g-salvanes","researcher:magne-mogstad",
- "researcher:sandra-e-black","researcher:alessandra-voena",
+ "researcher:raj-chetty","researcher:alessandra-voena",
  "researcher:corina-mommaerts","researcher:wojciech-kopczuk"
 ]
 def fetch(url):
