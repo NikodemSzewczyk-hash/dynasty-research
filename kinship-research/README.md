@@ -61,3 +61,9 @@ python -m unittest discover -s tests -v
 ```
 
 The default backfill mode is dry run. Manually verified source IDs can be suggested, reviewed and saved; official NBER TSV metadata has a separate offline importer. See [identifier verification](docs/identifier-verification.md) and the data-pipeline guide for details.
+
+## V0.3 historical discovery preview
+
+The searchable /discovery/ section is explicitly **unreviewed bibliographic metadata**, separate from the 12-paper curated archive. Its complete 3,477-record candidate corpus is version-controlled in registry/candidates-v03.jsonl; the public preview shows only a title-screened subset. See docs/v03-milestone.md and docs/metadata-audit.md.
+
+The proposed 30-paper reading queue in registry/reading_queue_v03.json contains **unread** papers, not full-text summaries. Use scripts/notes.py to create evidence-first note templates only after acquiring the relevant PDF.

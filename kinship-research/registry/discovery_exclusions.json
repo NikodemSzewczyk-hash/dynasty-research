@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "review_level": "title_only",
+  "note": "These are topical exclusions from the unreviewed public preview, NOT assessments of scholarly quality or claims of full-text review. Full records remain in the audit database.",
+  "records": [
+    {
+      "doi": "10.18574/nyu/9780814772522.003.0005",
+      "reason": "Premarital-intercourse outcomes outside economic inequality scope"
+    },
+    {
+      "doi": "10.5465/amj.2017.0769",
+      "reason": "Employee job mobility rather than intergenerational mobility"
+    },
+    {
+      "doi": "10.1287/orsc.1090.0470",
+      "reason": "Technical-professional mobility rather than family mobility"
+    },
+    {
+      "doi": "10.33200/ijcer.554728",
+      "reason": "School innovation climate rather than economic transmission"
+    },
+    {
+      "doi": "10.7817/jameroriesoci.135.3.617",
+      "reason": "Historical poetry book review, not economic mobility study"
+    },
+    {
+      "doi": "10.1016/j.beth.2009.01.003",
+      "reason": "Clinical referral study, not economic inequality"
+    },
+    {
+      "doi": "10.7770/cuhso-v22n1-art366",
+      "reason": "Fisheries governance, not family economic transmission"
+    },
+    {
+      "doi": "10.1111/j.1468-2370.2008.00247.x",
+      "reason": "Firm innovation social capital, not inequality"
+    },
+    {
+      "doi": "10.1016/j.jbusvent.2008.10.008",
+      "reason": "Entrepreneurship social capital, not inequality"
+    },
+    {
+      "doi": "10.1016/s0969-5931(01)00061-0",
+      "reason": "Technology-firm international growth, not inequality"
+    },
+    {
+      "doi": "10.15181/tbb.v76i1.1510",
+      "reason": "Daycare practice article outside economic outcomes"
+    },
+    {
+      "doi": "10.19031/jkheea.2016.06.28.2.61",
+      "reason": "Terminology comparison outside economic inequality"
+    },
+    {
+      "doi": "10.1080/03004430802586130",
+      "reason": "School transition experiences outside economic outcomes"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{{ define "main" }}
+<section class="page-hero archive-hero">
+  <div class="wrap page-hero-inner">
+    <div>
+      <div class="micro-label section-code"><span class="code-bullet"></span> RESEARCH DISCOVERY / BETA</div>
+      <h1>Research <span>discovery.</span></h1>
+      <p>Explore newly indexed bibliographic records on the origins and persistence of inequality. These entries are candidates for review, not a curated bibliography.</p>
+    </div>
+    <div class="page-aside"><span class="micro-label">INDEXED RECORDS</span><strong id="discovery-total">—</strong><span class="micro-label">UNREVIEWED METADATA</span></div>
+  </div>
+</section>
+<section class="archive-section">
+  <div class="wrap">
+    <p class="discovery-notice"><strong>Important:</strong> These records come from automated metadata searches. Titles, author lists, relevance, and publication versions have not been individually verified. For papers with editorial analysis, visit the <a href="{{ "/papers/" | relURL }}">curated archive</a>.</p>
+    <div class="archive-toolbar discovery-toolbar">
+      <div class="archive-tools">
+        <label class="search-wrap"><span class="sr-only">Search discovered research</span><span class="search-icon" aria-hidden="true">⌕</span><input type="search" id="discovery-search" placeholder="Search title, author, journal, DOI…" autocomplete="off"></label>
+        <div class="filter-row">
+          <label for="discovery-year">YEAR</label><select id="discovery-year"><option value="">All years</option></select>
+          <label for="discovery-sort">SORT</label><select id="discovery-sort"><option value="relevance">Lexical relevance</option><option value="newest">Newest first</option><option value="oldest">Oldest first</option><option value="title">Title A–Z</option></select>
+        </div>
+      </div>
+      <div class="archive-meta"><span id="discovery-count" role="status" aria-live="polite">Loading…</span><span>METADATA ONLY / NOT EDITORIALLY REVIEWED</span></div>
+    </div>
+    <div class="list-heading"><span>DISCOVERED WORK / AUTHORS / SOURCE</span><span>YEAR ↓</span></div>
+    <div id="discovery-results" class="paper-list" aria-live="off"></div>
+    <p id="discovery-empty" class="empty-state" hidden>No records match your filters.</p>
+    <p id="discovery-error" class="empty-state" hidden>Discovery records are not available in this preview yet. The curated paper archive remains accessible.</p>
+    <div class="discovery-pagination"><button id="discovery-more" type="button" hidden>LOAD MORE RECORDS ↓</button></div>
+  </div>
+</section>
+<script src="{{ "js/discovery.js" | relURL }}" defer></script>
+{{ end }}

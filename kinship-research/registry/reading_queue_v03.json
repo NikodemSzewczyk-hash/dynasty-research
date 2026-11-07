@@ -1,0 +1,578 @@
+{
+  "schema_version": 1,
+  "title": "dynasty_ pilot reading queue",
+  "status": "proposed_unread",
+  "notes": "A proposed 30-paper full-text reading pilot. No item in this queue is claimed to have been read or independently verified. Obtain lawful PDF access and evidence-check notes before publishing.",
+  "papers": [
+    {
+      "priority": 1,
+      "source_type": "curated_seed",
+      "paper_id": "where-is-the-land-of-opportunity",
+      "doi": "10.1093/qje/qju022",
+      "title": "Where Is the Land of Opportunity? The Geography of Intergenerational Mobility in the United States",
+      "authors": [
+        "Raj Chetty",
+        "Nathaniel Hendren",
+        "Patrick Kline",
+        "Emmanuel Saez"
+      ],
+      "year": 2014,
+      "url": "https://doi.org/10.1093/qje/qju022",
+      "topics": [
+        "Intergenerational mobility",
+        "Place and opportunity"
+      ],
+      "status": "not_read",
+      "pdf_path": null,
+      "note_path": null
+    },
+    {
+      "priority": 2,
+      "source_type": "curated_seed",
+      "paper_id": "bequests-wealth-inequality",
+      "doi": "10.1257/aer.p20161036",
+      "title": "The Role of Bequests in Shaping Wealth Inequality: Evidence from Danish Wealth Records",
+      "authors": [
+        "Simon H. Boserup",
+        "Wojciech Kopczuk",
+        "Claus T. Kreiner"
+      ],
+      "year": 2016,
+      "url": "https://doi.org/10.1257/aer.p20161036",
+      "topics": [
+        "Wealth and inheritance",
+        "Intergenerational transfers"
+      ],
+      "status": "not_read",
+      "pdf_path": null,
+      "note_path": null
+    },
+    {
+      "priority": 3,
+      "source_type": "curated_seed",
+      "paper_id": "inheritance-multiple-generations",
+      "doi": "10.1111/ecoj.12535",
+      "title": "Intergenerational Wealth Mobility and the Role of Inheritance: Evidence from Multiple Generations",
+      "authors": [
+        "Adrian Adermon",
+        "Mikael Lindahl",
+        "Daniel Waldenström"
+      ],
+      "year": 2018,
+      "url": "https://doi.org/10.1111/ecoj.12535",
+      "topics": [
+        "Wealth and inheritance",
+        "Intergenerational mobility"
+      ],
+      "status": "not_read",
+      "pdf_path": null,
+      "note_path": null
+    },
+    {
+      "priority": 4,
+      "source_type": "curated_seed",
+      "paper_id": "neighborhood-mto-children",
+      "doi": "10.1257/aer.20150572",
+      "title": "The Effects of Exposure to Better Neighborhoods on Children: New Evidence from the Moving to Opportunity Experiment",
+      "authors": [
+        "Raj Chetty",
+        "Nathaniel Hendren",
+        "Lawrence F. Katz"
+      ],
+      "year": 2016,
+      "url": "https://doi.org/10.1257/aer.20150572",
+      "topics": [
+        "Place and opportunity",
+        "Childhood and education"
+      ],
+      "status": "not_read",
+      "pdf_path": null,
+      "note_path": null
+    },
+    {
+      "priority": 5,
+      "source_type": "curated_seed",
+      "paper_id": "more-the-merrier-birth-order",
+      "doi": "10.1093/qje/120.2.669",
+      "title": "The More the Merrier? The Effect of Family Size and Birth Order on Children’s Education",
+      "authors": [
+        "Sandra E. Black",
+        "Paul J. Devereux",
+        "Kjell G. Salvanes"
+      ],
+      "year": 2005,
+      "url": "https://doi.org/10.1093/qje/120.2.669",
+      "topics": [
+        "Families and kinship",
+        "Childhood and education"
+      ],
+      "status": "not_read",
+      "pdf_path": null,
+      "note_path": null
+    },
+    {
+      "priority": 6,
+      "source_type": "curated_seed",
+      "paper_id": "divorce-laws-intertemporal",
+      "doi": "10.1257/aer.20120234",
+      "title": "Yours, Mine, and Ours: Do Divorce Laws Affect the Intertemporal Behavior of Married Couples?",
+      "authors": [
+        "Alessandra Voena"
+      ],
+      "year": 2015,
+      "url": "https://doi.org/10.1257/aer.20120234",
+      "topics": [
+        "Families and kinship",
+        "Institutions and policy"
+      ],
+      "status": "not_read",
+      "pdf_path": null,
+      "note_path": null
+    },
+    {
+      "priority": 7,
+      "source_type": "curated_seed",
+      "paper_id": "neighborhood-childhood-exposure",
+      "doi": "10.1093/qje/qjy007",
+      "title": "The Impacts of Neighborhoods on Intergenerational Mobility I: Childhood Exposure Effects",
+      "authors": [
+        "Raj Chetty",
+        "Nathaniel Hendren"
+      ],
+      "year": 2018,
+      "url": "https://doi.org/10.1093/qje/qjy007",
+      "topics": [
+        "Place and opportunity",
+        "Intergenerational mobility"
+      ],
+      "status": "not_read",
+      "pdf_path": null,
+      "note_path": null
+    },
+    {
+      "priority": 8,
+      "source_type": "curated_seed",
+      "paper_id": "neighborhood-county-level",
+      "doi": "10.1093/qje/qjy006",
+      "title": "The Impacts of Neighborhoods on Intergenerational Mobility II: County-Level Estimates",
+      "authors": [
+        "Raj Chetty",
+        "Nathaniel Hendren"
+      ],
+      "year": 2018,
+      "url": "https://doi.org/10.1093/qje/qjy006",
+      "topics": [
+        "Place and opportunity",
+        "Intergenerational mobility"
+      ],
+      "status": "not_read",
+      "pdf_path": null,
+      "note_path": null
+    },
+    {
+      "priority": 9,
+      "source_type": "curated_seed",
+      "paper_id": "birth-weight-adult-outcomes",
+      "doi": "10.1162/qjec.122.1.409",
+      "title": "From the Cradle to the Labor Market? The Effect of Birth Weight on Adult Outcomes",
+      "authors": [
+        "Sandra E. Black",
+        "Paul J. Devereux",
+        "Kjell G. Salvanes"
+      ],
+      "year": 2007,
+      "url": "https://doi.org/10.1162/qjec.122.1.409",
+      "topics": [
+        "Childhood and education",
+        "Intergenerational mobility"
+      ],
+      "status": "not_read",
+      "pdf_path": null,
+      "note_path": null
+    },
+    {
+      "priority": 10,
+      "source_type": "curated_seed",
+      "paper_id": "mobility-report-cards-colleges",
+      "doi": "10.3386/w23618",
+      "title": "Mobility Report Cards: The Role of Colleges in Intergenerational Mobility",
+      "authors": [
+        "Raj Chetty",
+        "John N. Friedman",
+        "Emmanuel Saez",
+        "Nicholas Turner",
+        "Danny Yagan"
+      ],
+      "year": 2017,
+      "url": "https://www.nber.org/papers/w23618",
+      "topics": [
+        "Intergenerational mobility",
+        "Childhood and education"
+      ],
+      "status": "not_read",
+      "pdf_path": null,
+      "note_path": null
+    },
+    {
+      "priority": 11,
+      "source_type": "curated_seed",
+      "paper_id": "born-with-silver-spoon",
+      "doi": "10.3386/w22549",
+      "title": "Born with a Silver Spoon? Danish Evidence on Wealth Inequality in Childhood",
+      "authors": [
+        "Simon Halphen Boserup",
+        "Wojciech Kopczuk",
+        "Claus Thustrup Kreiner"
+      ],
+      "year": 2016,
+      "url": "https://www.nber.org/papers/w22549",
+      "topics": [
+        "Wealth and inheritance",
+        "Intergenerational transfers"
+      ],
+      "status": "not_read",
+      "pdf_path": null,
+      "note_path": null
+    },
+    {
+      "priority": 12,
+      "source_type": "curated_seed",
+      "paper_id": "parenting-with-style",
+      "doi": "10.3386/w20214",
+      "title": "Parenting with Style: Altruism and Paternalism in Intergenerational Preference Transmission",
+      "authors": [
+        "Matthias Doepke",
+        "Fabrizio Zilibotti"
+      ],
+      "year": 2014,
+      "url": "https://www.nber.org/papers/w20214",
+      "topics": [
+        "Families and kinship",
+        "Intergenerational mobility"
+      ],
+      "status": "not_read",
+      "pdf_path": null,
+      "note_path": null
+    },
+    {
+      "priority": 13,
+      "source_type": "discovery_candidate",
+      "paper_id": null,
+      "doi": "10.1920/wp.ifs.2005.0505",
+      "title": "The impact of parental income and education on the schooling of their children",
+      "authors": [
+        "Arnaud Chevalier",
+        "Harmon, Harmon",
+        "Vincent O'Sullivan",
+        "Ian Walker"
+      ],
+      "year": 2026,
+      "url": "https://doi.org/10.1920/wp.ifs.2005.0505",
+      "topics": [],
+      "status": "not_read",
+      "pdf_path": null,
+      "note_path": null
+    },
+    {
+      "priority": 14,
+      "source_type": "discovery_candidate",
+      "paper_id": null,
+      "doi": "10.1016/j.chieco.2019.101399",
+      "title": "Bequest motive, household portfolio choice, and wealth inequality in urban China",
+      "authors": [
+        "Xintong Yang",
+        "Li Gan"
+      ],
+      "year": 2020,
+      "url": "https://doi.org/10.1016/j.chieco.2019.101399",
+      "topics": [],
+      "status": "not_read",
+      "pdf_path": null,
+      "note_path": null
+    },
+    {
+      "priority": 15,
+      "source_type": "discovery_candidate",
+      "paper_id": null,
+      "doi": "10.1016/j.jmacro.2009.06.005",
+      "title": "Intergenerational transfers and fertility: Trade-off between human capital and child labour",
+      "authors": [
+        "Kouki Sugawara"
+      ],
+      "year": 2010,
+      "url": "https://doi.org/10.1016/j.jmacro.2009.06.005",
+      "topics": [],
+      "status": "not_read",
+      "pdf_path": null,
+      "note_path": null
+    },
+    {
+      "priority": 16,
+      "source_type": "discovery_candidate",
+      "paper_id": null,
+      "doi": "10.1093/ei/39.3.453",
+      "title": "Bequest Motives, Social Security, and Economic Growth",
+      "authors": [
+        "Junsen Zhang",
+        "Junxi Zhang"
+      ],
+      "year": 2001,
+      "url": "https://doi.org/10.1093/ei/39.3.453",
+      "topics": [],
+      "status": "not_read",
+      "pdf_path": null,
+      "note_path": null
+    },
+    {
+      "priority": 17,
+      "source_type": "discovery_candidate",
+      "paper_id": null,
+      "doi": "10.1016/s0165-1765(01)00523-7",
+      "title": "Risk aversion and social mobility: the implausibility of order-preserving income redistributions",
+      "authors": [
+        "Leif Danziger",
+        "Heinrich W Ursprung"
+      ],
+      "year": 2001,
+      "url": "https://doi.org/10.1016/s0165-1765(01)00523-7",
+      "topics": [],
+      "status": "not_read",
+      "pdf_path": null,
+      "note_path": null
+    },
+    {
+      "priority": 18,
+      "source_type": "discovery_candidate",
+      "paper_id": null,
+      "doi": "10.1920/wp.ifs.2017.1701",
+      "title": "Two decades of income inequality in Britain: the role of wages, household earnings and redistribution",
+      "authors": [
+        "Chris Belfield",
+        "Richard Blundell",
+        "Jonathan Cribb",
+        "Andrew Hood",
+        "Robert Joyce"
+      ],
+      "year": 2026,
+      "url": "https://doi.org/10.1920/wp.ifs.2017.1701",
+      "topics": [],
+      "status": "not_read",
+      "pdf_path": null,
+      "note_path": null
+    },
+    {
+      "priority": 19,
+      "source_type": "discovery_candidate",
+      "paper_id": null,
+      "doi": "10.1016/j.red.2009.10.006",
+      "title": "Consumption, income, and wealth inequality in Canada",
+      "authors": [
+        "Matthew Brzozowski",
+        "Martin Gervais",
+        "Paul Klein",
+        "Michio Suzuki"
+      ],
+      "year": 2010,
+      "url": "https://doi.org/10.1016/j.red.2009.10.006",
+      "topics": [],
+      "status": "not_read",
+      "pdf_path": null,
+      "note_path": null
+    },
+    {
+      "priority": 20,
+      "source_type": "discovery_candidate",
+      "paper_id": null,
+      "doi": "10.1016/s0047-2727(00)00097-9",
+      "title": "Simulating the transmission of wealth inequality via bequests",
+      "authors": [
+        "Jagadeesh Gokhale",
+        "Laurence J Kotlikoff",
+        "James Sefton",
+        "Martin Weale"
+      ],
+      "year": 2001,
+      "url": "https://doi.org/10.1016/s0047-2727(00)00097-9",
+      "topics": [],
+      "status": "not_read",
+      "pdf_path": null,
+      "note_path": null
+    },
+    {
+      "priority": 21,
+      "source_type": "discovery_candidate",
+      "paper_id": null,
+      "doi": "10.1920/wp.ifs.2013.1317",
+      "title": "Education policy and intergenerational transfers in equilibrium",
+      "authors": [
+        "Brant Abbott",
+        "Giovanni Gallipoli",
+        "Costas Meghir",
+        "Gianluca Violante"
+      ],
+      "year": 2026,
+      "url": "https://doi.org/10.1920/wp.ifs.2013.1317",
+      "topics": [],
+      "status": "not_read",
+      "pdf_path": null,
+      "note_path": null
+    },
+    {
+      "priority": 22,
+      "source_type": "discovery_candidate",
+      "paper_id": null,
+      "doi": "10.1920/wp.ifs.2010.1016",
+      "title": "Explaining the socio-economic gradient in child outcomes: the intergenerational transmission of cognitive skills",
+      "authors": [
+        "Claire Crawford",
+        "Alissa Goodman",
+        "Robert Joyce"
+      ],
+      "year": 2026,
+      "url": "https://doi.org/10.1920/wp.ifs.2010.1016",
+      "topics": [],
+      "status": "not_read",
+      "pdf_path": null,
+      "note_path": null
+    },
+    {
+      "priority": 23,
+      "source_type": "discovery_candidate",
+      "paper_id": null,
+      "doi": "10.1920/wp.ifs.2017.w1711",
+      "title": "Intergenerational income persistence within families",
+      "authors": [
+        "Chris Belfield",
+        "Claire Crawford",
+        "Ellen Greaves",
+        "Paul Gregg",
+        "Lindsey Macmillan"
+      ],
+      "year": 2026,
+      "url": "https://doi.org/10.1920/wp.ifs.2017.w1711",
+      "topics": [],
+      "status": "not_read",
+      "pdf_path": null,
+      "note_path": null
+    },
+    {
+      "priority": 24,
+      "source_type": "discovery_candidate",
+      "paper_id": null,
+      "doi": "10.1016/j.econedurev.2009.04.005",
+      "title": "Intergenerational correlations in educational attainment: Birth order and family size effects using Canadian data",
+      "authors": [
+        "Anindya Sen",
+        "Anthony Clemente"
+      ],
+      "year": 2010,
+      "url": "https://doi.org/10.1016/j.econedurev.2009.04.005",
+      "topics": [],
+      "status": "not_read",
+      "pdf_path": null,
+      "note_path": null
+    },
+    {
+      "priority": 25,
+      "source_type": "discovery_candidate",
+      "paper_id": null,
+      "doi": "10.1111/j.1536-7150.2010.00725.x",
+      "title": "Motives for Intergenerational Transfers: New Test for Exchange",
+      "authors": [
+        "Jingshu Wang"
+      ],
+      "year": 2010,
+      "url": "https://doi.org/10.1111/j.1536-7150.2010.00725.x",
+      "topics": [],
+      "status": "not_read",
+      "pdf_path": null,
+      "note_path": null
+    },
+    {
+      "priority": 26,
+      "source_type": "discovery_candidate",
+      "paper_id": null,
+      "doi": "10.1016/s0167-2681(01)00166-4",
+      "title": "Counter-compensatory inter-vivos transfers and parental altruism: compatibility or orthogonality?",
+      "authors": [
+        "Oded Stark",
+        "Junsen Zhang"
+      ],
+      "year": 2002,
+      "url": "https://doi.org/10.1016/s0167-2681(01)00166-4",
+      "topics": [],
+      "status": "not_read",
+      "pdf_path": null,
+      "note_path": null
+    },
+    {
+      "priority": 27,
+      "source_type": "discovery_candidate",
+      "paper_id": null,
+      "doi": "10.1016/s0047-2727(00)00101-8",
+      "title": "Bequest motives: a comparison of Sweden and the United States",
+      "authors": [
+        "John Laitner",
+        "Henry Ohlsson"
+      ],
+      "year": 2001,
+      "url": "https://doi.org/10.1016/s0047-2727(00)00101-8",
+      "topics": [],
+      "status": "not_read",
+      "pdf_path": null,
+      "note_path": null
+    },
+    {
+      "priority": 28,
+      "source_type": "discovery_candidate",
+      "paper_id": null,
+      "doi": "10.1016/j.labeco.2009.06.002",
+      "title": "Family income and children's education: Using the Norwegian oil boom as a natural experiment",
+      "authors": [
+        "Katrine V. Løken"
+      ],
+      "year": 2010,
+      "url": "https://doi.org/10.1016/j.labeco.2009.06.002",
+      "topics": [],
+      "status": "not_read",
+      "pdf_path": null,
+      "note_path": null
+    },
+    {
+      "priority": 29,
+      "source_type": "discovery_candidate",
+      "paper_id": null,
+      "doi": "10.1111/dpr.12457",
+      "title": "Inheriting the family farm: Generational wealth transfers in rural Kenya",
+      "authors": [
+        "Njeri Kagotho",
+        "Neema N. Salim",
+        "Michele Patak‐Pietrafesa",
+        "Stavroula Kyriakakis"
+      ],
+      "year": 2020,
+      "url": "https://doi.org/10.1111/dpr.12457",
+      "topics": [],
+      "status": "not_read",
+      "pdf_path": null,
+      "note_path": null
+    },
+    {
+      "priority": 30,
+      "source_type": "discovery_candidate",
+      "paper_id": null,
+      "doi": "10.1016/s0047-2727(00)00088-8",
+      "title": "Bequest taxes and capital gains realizations",
+      "authors": [
+        "Gerald Auten",
+        "David Joulfaian"
+      ],
+      "year": 2001,
+      "url": "https://doi.org/10.1016/s0047-2727(00)00088-8",
+      "topics": [],
+      "status": "not_read",
+      "pdf_path": null,
+      "note_path": null
+    }
+  ]
+}

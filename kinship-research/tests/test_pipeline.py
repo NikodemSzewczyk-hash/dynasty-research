@@ -279,7 +279,7 @@ class PipelineTest(unittest.TestCase):
         self.assertEqual(len(jobs),36)
         selected=build_jobs(plan,provider="crossref",selected={"family-steps"})
         self.assertEqual(len(selected),1)
-        self.assertEqual(selected[0]["query"],"stepfamilies repartnering child adult outcomes")
+        self.assertEqual(selected[0]["query"],"stepfamilies child outcomes")
         with self.assertRaisesRegex(ValueError,"do not exist"):
             build_jobs(plan,selected={"totally-unknown"})
 

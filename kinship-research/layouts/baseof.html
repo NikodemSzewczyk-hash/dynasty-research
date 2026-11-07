@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#0a1119">
   <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ site.Params.description }}{{ end }}">
+  {{ if eq .Section "discovery" }}<meta name="robots" content="noindex,follow">{{ end }}
   <title>{{ if .IsHome }}dynasty_ — The origins and persistence of inequality{{ else }}{{ .Title }} · dynasty_{{ end }}</title>
   <link rel="icon" href="{{ "favicon.svg" | relURL }}" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
