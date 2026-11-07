@@ -1,4 +1,5 @@
 {{ define "main" }}
+{{ $catalog := index site.Data "source-catalog" | default (index site.Data "source_catalog") }}
 <section class="page-hero archive-hero">
   <div class="wrap page-hero-inner">
     <div>
@@ -19,7 +20,7 @@
           <label for="discovery-year">YEAR</label><select id="discovery-year"><option value="">All years</option></select>
           <label for="discovery-topic">TOPIC</label><select id="discovery-topic"><option value="">All topics</option></select>
           <label for="discovery-source">SOURCE</label><select id="discovery-source"><option value="">All sources</option><option value="__other__">Historical / other</option>
-            {{ with site.Data.source_catalog }}
+            {{ with $catalog }}
               {{ range (slice .journals .repositories .researchers) }}{{ range . }}{{ if .active }}<option value="{{ .id }}">{{ .name }}</option>{{ end }}{{ end }}{{ end }}
             {{ end }}
           </select>

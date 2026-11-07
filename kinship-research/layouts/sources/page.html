@@ -1,5 +1,5 @@
 {{ define "main" }}
-{{ $catalog := site.Data.source_catalog }}
+{{ $catalog := index site.Data "source-catalog" | default (index site.Data "source_catalog") }}
 <section class="page-hero"><div class="wrap">
   <div class="micro-label section-code"><span class="code-bullet"></span> 003 / DISCOVERY INFRASTRUCTURE</div>
   <h1>The source <span>network.</span></h1>

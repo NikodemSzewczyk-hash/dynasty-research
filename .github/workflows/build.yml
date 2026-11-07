@@ -44,6 +44,8 @@ jobs:
           report=json.loads(Path("data/discovery-pilot-report.json").read_text(encoding="utf-8"))
           papers=Path("public/papers/index.html").read_text(encoding="utf-8")
           home=Path("public/index.html").read_text(encoding="utf-8")
+          print("Papers count HTML:",papers[max(0,papers.find("discovery-total")-40):papers.find("discovery-total")+100])
+          print("Homepage indexed count HTML:",home[max(0,home.find("INDEXED RESEARCH RECORDS")-100):home.find("INDEXED RESEARCH RECORDS")+100])
           assert len(index)==report["total_displayed"]==103
           assert sum(r["review_status"]=="curated" for r in index)==12
           assert 'discovery-results' in papers, "Papers page is still the 12-only archive"

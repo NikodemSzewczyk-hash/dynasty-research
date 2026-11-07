@@ -1,8 +1,10 @@
 {{ define "main" }}
 {{ $papers := where site.RegularPages "Section" "papers" }}
 {{ $nSources := add (add (len site.Data.sources.journals) (len site.Data.sources.repositories)) (len site.Data.sources.researchers) }}
-{{ $indexTotal := (site.Data.discovery_pilot_report.total_displayed | default (len $papers)) }}
-{{ $verifiedSources := (site.Data.source_catalog.summary.verified_active | default 0) }}
+{{ $report := index site.Data "discovery-pilot-report" | default (index site.Data "discovery_pilot_report") }}
+{{ $catalog := index site.Data "source-catalog" | default (index site.Data "source_catalog") }}
+{{ $indexTotal := $report.total_displayed | default (len $papers) }}
+{{ $verifiedSources := $catalog.summary.verified_active | default 0 }}
 <section class="hero">
   <div class="hero-gridline" aria-hidden="true"></div>
   <div class="wrap hero-inner">
