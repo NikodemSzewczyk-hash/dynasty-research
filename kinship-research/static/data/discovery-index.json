@@ -345,31 +345,6 @@
     "kind": "journal_article"
   },
   {
-    "id": "crossref:10.1920/wp.ifs.2005.0505",
-    "title": "The impact of parental income and education on the schooling of their children",
-    "authors": [
-      "Arnaud Chevalier",
-      "Harmon, Harmon",
-      "Vincent O'Sullivan",
-      "Ian Walker"
-    ],
-    "year": 2026,
-    "source": "",
-    "doi": "10.1920/wp.ifs.2005.0505",
-    "url": "https://doi.org/10.1920/wp.ifs.2005.0505",
-    "provider": "crossref",
-    "match_type": "none",
-    "possible_work_id": null,
-    "review_status": "pending",
-    "score": 15,
-    "evidence_level": "metadata_only",
-    "collection": "historical",
-    "topics": [
-      "Intergenerational mobility"
-    ],
-    "source_ids": []
-  },
-  {
     "id": "crossref:10.4314/ad.v35i4.70224",
     "title": "11 - Household-level Social Capital in Cameroon and Children’s Schooling: A Gender Analysis",
     "authors": [
@@ -422,6 +397,31 @@
     "source": "Journal of Macroeconomics",
     "doi": "10.1016/j.jmacro.2009.06.005",
     "url": "https://doi.org/10.1016/j.jmacro.2009.06.005",
+    "provider": "crossref",
+    "match_type": "none",
+    "possible_work_id": null,
+    "review_status": "pending",
+    "score": 15,
+    "evidence_level": "metadata_only",
+    "collection": "historical",
+    "topics": [
+      "Intergenerational mobility"
+    ],
+    "source_ids": []
+  },
+  {
+    "id": "crossref:10.1920/wp.ifs.2005.0505",
+    "title": "The impact of parental income and education on the schooling of their children",
+    "authors": [
+      "Arnaud Chevalier",
+      "Harmon, Harmon",
+      "Vincent O'Sullivan",
+      "Ian Walker"
+    ],
+    "year": 2005,
+    "source": "",
+    "doi": "10.1920/wp.ifs.2005.0505",
+    "url": "https://doi.org/10.1920/wp.ifs.2005.0505",
     "provider": "crossref",
     "match_type": "none",
     "possible_work_id": null,
@@ -1612,30 +1612,6 @@
     "kind": "journal_article"
   },
   {
-    "id": "crossref:10.1920/wp.ifs.2017.1701",
-    "title": "Two decades of income inequality in Britain: the role of wages, household earnings and redistribution",
-    "authors": [
-      "Chris Belfield",
-      "Richard Blundell",
-      "Jonathan Cribb",
-      "Andrew Hood",
-      "Robert Joyce"
-    ],
-    "year": 2026,
-    "source": "",
-    "doi": "10.1920/wp.ifs.2017.1701",
-    "url": "https://doi.org/10.1920/wp.ifs.2017.1701",
-    "provider": "crossref",
-    "match_type": "none",
-    "possible_work_id": null,
-    "review_status": "pending",
-    "score": 13,
-    "evidence_level": "metadata_only",
-    "collection": "historical",
-    "topics": [],
-    "source_ids": []
-  },
-  {
     "id": "crossref:10.20856/jnicec.3807",
     "title": "Experiential work-based learning as a social mobility mechanism for widening participaton students",
     "authors": [
@@ -1722,6 +1698,30 @@
     "topics": [
       "Wealth and inheritance"
     ],
+    "source_ids": []
+  },
+  {
+    "id": "crossref:10.1920/wp.ifs.2017.1701",
+    "title": "Two decades of income inequality in Britain: the role of wages, household earnings and redistribution",
+    "authors": [
+      "Chris Belfield",
+      "Richard Blundell",
+      "Jonathan Cribb",
+      "Andrew Hood",
+      "Robert Joyce"
+    ],
+    "year": 2017,
+    "source": "",
+    "doi": "10.1920/wp.ifs.2017.1701",
+    "url": "https://doi.org/10.1920/wp.ifs.2017.1701",
+    "provider": "crossref",
+    "match_type": "none",
+    "possible_work_id": null,
+    "review_status": "pending",
+    "score": 13,
+    "evidence_level": "metadata_only",
+    "collection": "historical",
+    "topics": [],
     "source_ids": []
   },
   {
@@ -1838,128 +1838,6 @@
     "source_ids": []
   },
   {
-    "id": "crossref:10.1920/wp.ifs.2013.1317",
-    "title": "Education policy and intergenerational transfers in equilibrium",
-    "authors": [
-      "Brant Abbott",
-      "Giovanni Gallipoli",
-      "Costas Meghir",
-      "Gianluca Violante"
-    ],
-    "year": 2026,
-    "source": "",
-    "doi": "10.1920/wp.ifs.2013.1317",
-    "url": "https://doi.org/10.1920/wp.ifs.2013.1317",
-    "provider": "crossref",
-    "match_type": "none",
-    "possible_work_id": null,
-    "review_status": "pending",
-    "score": 11,
-    "evidence_level": "metadata_only",
-    "collection": "historical",
-    "topics": [
-      "Intergenerational mobility"
-    ],
-    "source_ids": []
-  },
-  {
-    "id": "crossref:10.1920/wp.ifs.2010.1016",
-    "title": "Explaining the socio-economic gradient in child outcomes: the intergenerational transmission of cognitive skills",
-    "authors": [
-      "Claire Crawford",
-      "Alissa Goodman",
-      "Robert Joyce"
-    ],
-    "year": 2026,
-    "source": "",
-    "doi": "10.1920/wp.ifs.2010.1016",
-    "url": "https://doi.org/10.1920/wp.ifs.2010.1016",
-    "provider": "crossref",
-    "match_type": "none",
-    "possible_work_id": null,
-    "review_status": "pending",
-    "score": 11,
-    "evidence_level": "metadata_only",
-    "collection": "historical",
-    "topics": [
-      "Intergenerational mobility"
-    ],
-    "source_ids": []
-  },
-  {
-    "id": "crossref:10.1920/wp.ifs.2017.w1725",
-    "title": "Income inequality and the labour market in Britain and the US",
-    "authors": [
-      "Richard Blundell",
-      "Robert Joyce",
-      "Agnes Norris Keiller",
-      "James P. Ziliak"
-    ],
-    "year": 2026,
-    "source": "",
-    "doi": "10.1920/wp.ifs.2017.w1725",
-    "url": "https://doi.org/10.1920/wp.ifs.2017.w1725",
-    "provider": "crossref",
-    "match_type": "none",
-    "possible_work_id": null,
-    "review_status": "pending",
-    "score": 11,
-    "evidence_level": "metadata_only",
-    "collection": "historical",
-    "topics": [],
-    "source_ids": []
-  },
-  {
-    "id": "crossref:10.1920/wp.ifs.2017.w1711",
-    "title": "Intergenerational income persistence within families",
-    "authors": [
-      "Chris Belfield",
-      "Claire Crawford",
-      "Ellen Greaves",
-      "Paul Gregg",
-      "Lindsey Macmillan"
-    ],
-    "year": 2026,
-    "source": "",
-    "doi": "10.1920/wp.ifs.2017.w1711",
-    "url": "https://doi.org/10.1920/wp.ifs.2017.w1711",
-    "provider": "crossref",
-    "match_type": "none",
-    "possible_work_id": null,
-    "review_status": "pending",
-    "score": 11,
-    "evidence_level": "metadata_only",
-    "collection": "historical",
-    "topics": [
-      "Intergenerational mobility"
-    ],
-    "source_ids": []
-  },
-  {
-    "id": "crossref:10.1920/wp.ifs.1995.9520",
-    "title": "Intergenerational mobility in Britain",
-    "authors": [
-      "Lorraine Dearden",
-      "Stephen Machin",
-      "Howard Reed"
-    ],
-    "year": 2025,
-    "source": "",
-    "doi": "10.1920/wp.ifs.1995.9520",
-    "url": "https://doi.org/10.1920/wp.ifs.1995.9520",
-    "provider": "crossref",
-    "match_type": "none",
-    "possible_work_id": null,
-    "review_status": "pending",
-    "score": 11,
-    "evidence_level": "metadata_only",
-    "collection": "historical",
-    "topics": [
-      "Intergenerational mobility"
-    ],
-    "source_ids": []
-  },
-  {
     "id": "crossref:10.1016/j.jebo.2019.03.004",
     "title": "The regional transmission of uncertainty shocks on income inequality in the United States",
     "authors": [
@@ -2023,6 +1901,104 @@
     "evidence_level": "metadata_only",
     "collection": "historical",
     "topics": [],
+    "source_ids": []
+  },
+  {
+    "id": "crossref:10.1920/wp.ifs.2017.w1725",
+    "title": "Income inequality and the labour market in Britain and the US",
+    "authors": [
+      "Richard Blundell",
+      "Robert Joyce",
+      "Agnes Norris Keiller",
+      "James P. Ziliak"
+    ],
+    "year": 2017,
+    "source": "",
+    "doi": "10.1920/wp.ifs.2017.w1725",
+    "url": "https://doi.org/10.1920/wp.ifs.2017.w1725",
+    "provider": "crossref",
+    "match_type": "none",
+    "possible_work_id": null,
+    "review_status": "pending",
+    "score": 11,
+    "evidence_level": "metadata_only",
+    "collection": "historical",
+    "topics": [],
+    "source_ids": []
+  },
+  {
+    "id": "crossref:10.1920/wp.ifs.2017.w1711",
+    "title": "Intergenerational income persistence within families",
+    "authors": [
+      "Chris Belfield",
+      "Claire Crawford",
+      "Ellen Greaves",
+      "Paul Gregg",
+      "Lindsey Macmillan"
+    ],
+    "year": 2017,
+    "source": "",
+    "doi": "10.1920/wp.ifs.2017.w1711",
+    "url": "https://doi.org/10.1920/wp.ifs.2017.w1711",
+    "provider": "crossref",
+    "match_type": "none",
+    "possible_work_id": null,
+    "review_status": "pending",
+    "score": 11,
+    "evidence_level": "metadata_only",
+    "collection": "historical",
+    "topics": [
+      "Intergenerational mobility"
+    ],
+    "source_ids": []
+  },
+  {
+    "id": "crossref:10.1920/wp.ifs.2013.1317",
+    "title": "Education policy and intergenerational transfers in equilibrium",
+    "authors": [
+      "Brant Abbott",
+      "Giovanni Gallipoli",
+      "Costas Meghir",
+      "Gianluca Violante"
+    ],
+    "year": 2013,
+    "source": "",
+    "doi": "10.1920/wp.ifs.2013.1317",
+    "url": "https://doi.org/10.1920/wp.ifs.2013.1317",
+    "provider": "crossref",
+    "match_type": "none",
+    "possible_work_id": null,
+    "review_status": "pending",
+    "score": 11,
+    "evidence_level": "metadata_only",
+    "collection": "historical",
+    "topics": [
+      "Intergenerational mobility"
+    ],
+    "source_ids": []
+  },
+  {
+    "id": "crossref:10.1920/wp.ifs.2010.1016",
+    "title": "Explaining the socio-economic gradient in child outcomes: the intergenerational transmission of cognitive skills",
+    "authors": [
+      "Claire Crawford",
+      "Alissa Goodman",
+      "Robert Joyce"
+    ],
+    "year": 2010,
+    "source": "",
+    "doi": "10.1920/wp.ifs.2010.1016",
+    "url": "https://doi.org/10.1920/wp.ifs.2010.1016",
+    "provider": "crossref",
+    "match_type": "none",
+    "possible_work_id": null,
+    "review_status": "pending",
+    "score": 11,
+    "evidence_level": "metadata_only",
+    "collection": "historical",
+    "topics": [
+      "Intergenerational mobility"
+    ],
     "source_ids": []
   },
   {
@@ -2225,6 +2201,30 @@
     "source_ids": []
   },
   {
+    "id": "crossref:10.1920/wp.ifs.1995.9520",
+    "title": "Intergenerational mobility in Britain",
+    "authors": [
+      "Lorraine Dearden",
+      "Stephen Machin",
+      "Howard Reed"
+    ],
+    "year": 1995,
+    "source": "",
+    "doi": "10.1920/wp.ifs.1995.9520",
+    "url": "https://doi.org/10.1920/wp.ifs.1995.9520",
+    "provider": "crossref",
+    "match_type": "none",
+    "possible_work_id": null,
+    "review_status": "pending",
+    "score": 11,
+    "evidence_level": "metadata_only",
+    "collection": "historical",
+    "topics": [
+      "Intergenerational mobility"
+    ],
+    "source_ids": []
+  },
+  {
     "id": "crossref:10.1016/j.gaceta.2018.07.014",
     "title": "The role of parental social class, education and unemployment on child cognitive development",
     "authors": [
@@ -2285,32 +2285,6 @@
     "possible_work_id": null,
     "review_status": "pending",
     "score": 10,
-    "evidence_level": "metadata_only",
-    "collection": "historical",
-    "topics": [
-      "Intergenerational mobility"
-    ],
-    "source_ids": []
-  },
-  {
-    "id": "crossref:10.1920/wp.ifs.2013.1312",
-    "title": "Parental socialisation effort and the intergenerational transmission of risk preferences",
-    "authors": [
-      "Sule Alan",
-      "Nazli Baydar",
-      "Teodora Boneva",
-      "Thomas F. Crossley",
-      "Seda Ertac"
-    ],
-    "year": 2026,
-    "source": "",
-    "doi": "10.1920/wp.ifs.2013.1312",
-    "url": "https://doi.org/10.1920/wp.ifs.2013.1312",
-    "provider": "crossref",
-    "match_type": "none",
-    "possible_work_id": null,
-    "review_status": "pending",
-    "score": 9,
     "evidence_level": "metadata_only",
     "collection": "historical",
     "topics": [
@@ -2411,6 +2385,32 @@
     "source_ids": []
   },
   {
+    "id": "crossref:10.1920/wp.ifs.2013.1312",
+    "title": "Parental socialisation effort and the intergenerational transmission of risk preferences",
+    "authors": [
+      "Sule Alan",
+      "Nazli Baydar",
+      "Teodora Boneva",
+      "Thomas F. Crossley",
+      "Seda Ertac"
+    ],
+    "year": 2013,
+    "source": "",
+    "doi": "10.1920/wp.ifs.2013.1312",
+    "url": "https://doi.org/10.1920/wp.ifs.2013.1312",
+    "provider": "crossref",
+    "match_type": "none",
+    "possible_work_id": null,
+    "review_status": "pending",
+    "score": 9,
+    "evidence_level": "metadata_only",
+    "collection": "historical",
+    "topics": [
+      "Intergenerational mobility"
+    ],
+    "source_ids": []
+  },
+  {
     "id": "crossref:10.1016/s0378-4371(01)00113-3",
     "title": "Finite market size as a source of extreme wealth inequality and market instability",
     "authors": [
@@ -2459,28 +2459,6 @@
     "source_ids": []
   },
   {
-    "id": "crossref:10.1920/wp.ifs.2014.1401",
-    "title": "Labor income dynamics and the insurance from taxes, transfers and the family",
-    "authors": [
-      "Richard Blundell",
-      "Michael Graber",
-      "Magne Mogstad"
-    ],
-    "year": 2026,
-    "source": "",
-    "doi": "10.1920/wp.ifs.2014.1401",
-    "url": "https://doi.org/10.1920/wp.ifs.2014.1401",
-    "provider": "crossref",
-    "match_type": "none",
-    "possible_work_id": null,
-    "review_status": "pending",
-    "score": 8,
-    "evidence_level": "metadata_only",
-    "collection": "historical",
-    "topics": [],
-    "source_ids": []
-  },
-  {
     "id": "crossref:10.1111/dpr.12457",
     "title": "Inheriting the family farm: Generational wealth transfers in rural Kenya",
     "authors": [
@@ -2516,6 +2494,28 @@
     "source": "Early Childhood Research Quarterly",
     "doi": "10.1016/j.ecresq.2018.04.008",
     "url": "https://doi.org/10.1016/j.ecresq.2018.04.008",
+    "provider": "crossref",
+    "match_type": "none",
+    "possible_work_id": null,
+    "review_status": "pending",
+    "score": 8,
+    "evidence_level": "metadata_only",
+    "collection": "historical",
+    "topics": [],
+    "source_ids": []
+  },
+  {
+    "id": "crossref:10.1920/wp.ifs.2014.1401",
+    "title": "Labor income dynamics and the insurance from taxes, transfers and the family",
+    "authors": [
+      "Richard Blundell",
+      "Michael Graber",
+      "Magne Mogstad"
+    ],
+    "year": 2014,
+    "source": "",
+    "doi": "10.1920/wp.ifs.2014.1401",
+    "url": "https://doi.org/10.1920/wp.ifs.2014.1401",
     "provider": "crossref",
     "match_type": "none",
     "possible_work_id": null,

@@ -47,9 +47,24 @@ def validate_dates(from_date: str, to_date: str) -> None:
     if a>b:
         raise ValueError("Start date must not be after end date")
 
+# Some publishers re-deposit old working papers, so Crossref "published"/"issued" (and the
+# OpenAlex year derived from it) can be the re-deposit date rather than the issue date.
+# IFS DOIs encode the issue year twice: 10.1920/wp.ifs.<YYYY>.<w?><YY><NN> (e.g. W95/20 ->
+# 10.1920/wp.ifs.1995.9520). We trust the DOI year only when both encodings agree; this was
+# cross-checked against RePEc IDEAS citation dates (see docs/metadata-audit.md).
+_IFS_DOI_YEAR=re.compile(r"^10\.1920/wp\.ifs\.((?:19|20)\d{2})\.w?(\d{2})\d{2}$",re.I)
+
+def doi_convention_year(doi: str | None) -> int | None:
+    """Issue year encoded by a known DOI convention, or None when absent/inconsistent."""
+    m=_IFS_DOI_YEAR.match((doi or "").strip())
+    if not m or m.group(1)[2:]!=m.group(2):
+        return None
+    return int(m.group(1))
+
 def _year_openalex(work: dict) -> int | None:
     value=work.get("publication_year")
-    return int(value) if value and str(value).isdigit() else None
+    year=int(value) if value and str(value).isdigit() else None
+    return doi_convention_year(canonical_doi(work.get("doi"))) or year
 
 def normalize_openalex(work: dict) -> dict | None:
     title=clean_text(work.get("title") or work.get("display_name"))
@@ -93,7 +108,7 @@ def normalize_crossref(work: dict) -> dict | None:
     kind="journal_article" if wt=="journal-article" else ("working_paper" if wt in ("posted-content","working-paper") else "other")
     url=safe_https(work.get("URL")) or "https://doi.org/"+doi
     return {"provider":"crossref","provider_id":doi,"doi":doi,"title":title,
-            "authors":people,"year":_year_crossref(work),"date":None,
+            "authors":people,"year":doi_convention_year(doi) or _year_crossref(work),"date":None,
             "source_name":source,"url":url,"kind":kind}
 
 def iter_openalex(query: str, from_date: str, to_date: str,
