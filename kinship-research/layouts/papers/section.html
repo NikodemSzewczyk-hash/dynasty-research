@@ -1,24 +1,40 @@
 {{ define "main" }}
-{{ $papers := where site.RegularPages "Section" "papers" }}
-<section class="page-hero archive-hero"><div class="wrap page-hero-inner"><div>
-  <div class="micro-label section-code"><span class="code-bullet"></span> RESEARCH INDEX / 001</div>
-  <h1>The paper <span>archive.</span></h1>
-  <p>Explore the studies that help explain the origins and persistence of economic inequality. This curated archive is distinct from our <a href="{{ "/discovery/" | relURL }}">unreviewed research discovery index</a>.</p>
-  </div><div class="page-aside"><span class="micro-label">IN THE COLLECTION</span><strong>{{ printf "%02d" (len $papers) }}</strong><span class="micro-label">VERIFIED SEED RECORDS</span></div>
-</div></section>
-<section class="archive-section"><div class="wrap">
-  <div class="archive-toolbar">
-    <div class="archive-tools">
-      <label class="search-wrap"><span class="sr-only">Search research papers</span><span class="search-icon" aria-hidden="true">⌕</span><input type="search" id="paper-search" placeholder="Search authors, titles, ideas, sources…" autocomplete="off"></label>
-      <div class="filter-row">
-        <label for="topic-filter">TOPIC</label><select id="topic-filter"><option value="">All topics</option>{{ range site.Taxonomies.topics.Alphabetical }}<option value="{{ .Page.Title | lower }}">{{ .Page.Title }}</option>{{ end }}</select>
-        <label for="year-filter">YEAR</label><select id="year-filter"><option value="">All years</option></select>
-      </div>
+<section class="page-hero archive-hero">
+  <div class="wrap page-hero-inner">
+    <div>
+      <div class="micro-label section-code"><span class="code-bullet"></span> RESEARCH PAPERS / FULL INDEX</div>
+      <h1>The research <span>index.</span></h1>
+      <p>Browse the entire research database, including curated papers and unreviewed bibliographic candidates. Filter by topic, source, year, or editorial status.</p>
     </div>
-    <div class="archive-meta"><span id="result-count" role="status" aria-live="polite">{{ len $papers }} papers</span><span>FILTER THE INDEX / YEAR DESCENDING</span><button id="clear-filters" type="button">CLEAR FILTERS ↺</button></div>
+    <div class="page-aside"><span class="micro-label">INDEXED ENTRIES</span><strong id="discovery-total">{{ with site.Data.discovery_pilot_report }}{{ .total_displayed }}{{ else }}—{{ end }}</strong><span class="micro-label">{{ with site.Data.discovery_pilot_report }}{{ .curated_displayed }} CURATED · <span id="discovery-pilot-total">{{ .pilot_displayed }}</span> NEW PILOT CANDIDATES{{ else }}<span id="discovery-pilot-total">—</span> NEW PILOT CANDIDATES{{ end }}</span></div>
   </div>
-  <div class="list-heading"><span>WORK / AUTHORS / SOURCE</span><span>YEAR ↓</span></div>
-  <div id="paper-results" class="paper-list">{{ range (sort $papers "Params.year" "desc") }}{{ partial "paper-card.html" . }}{{ end }}</div>
-  <p id="empty-state" class="empty-state" hidden>No papers match these filters. Try another title, author, or topic.</p>
-</div></section>
+</section>
+<section class="archive-section">
+  <div class="wrap">
+    <p class="discovery-notice"><strong>How to read this index:</strong> The default view shows <strong>all indexed records</strong>. <em>Curated</em> papers have editorial summaries; <em>unreviewed</em> entries are metadata screened by title keywords only, not verified against full texts. <a href="{{ "/papers/?status=curated" | relURL }}">Show curated papers only</a>. Neither label implies a full PDF was read for this index.</p>
+    <div class="archive-toolbar discovery-toolbar">
+      <div class="archive-tools">
+        <label class="search-wrap"><span class="sr-only">Search discovered research</span><span class="search-icon" aria-hidden="true">⌕</span><input type="search" id="discovery-search" placeholder="Search titles, authors, journals, DOI…" autocomplete="off"></label>
+        <div class="filter-row discovery-filters">
+          <label for="discovery-year">YEAR</label><select id="discovery-year"><option value="">All years</option></select>
+          <label for="discovery-topic">TOPIC</label><select id="discovery-topic"><option value="">All topics</option></select>
+          <label for="discovery-source">SOURCE</label><select id="discovery-source"><option value="">All sources</option><option value="__other__">Historical / other</option>
+            {{ with site.Data.source_catalog }}
+              {{ range (slice .journals .repositories .researchers) }}{{ range . }}{{ if .active }}<option value="{{ .id }}">{{ .name }}</option>{{ end }}{{ end }}{{ end }}
+            {{ end }}
+          </select>
+          <label for="discovery-status">STATUS</label><select id="discovery-status"><option value="">All statuses</option><option value="pending">Unreviewed metadata</option><option value="curated">Curated summary</option></select>
+          <label for="discovery-sort">SORT</label><select id="discovery-sort"><option value="newest">Newest first</option><option value="relevance">Title relevance</option><option value="oldest">Oldest first</option><option value="title">Title A–Z</option></select>
+        </div>
+      </div>
+      <div class="archive-meta"><span id="discovery-count" role="status" aria-live="polite">Loading…</span><span>METADATA / CURATED SUMMARIES LABELLED</span></div>
+    </div>
+    <div class="list-heading"><span>RESEARCH / AUTHORS / SOURCE</span><span>YEAR ↓</span></div>
+    <div id="discovery-results" class="paper-list" aria-live="off"></div>
+    <p id="discovery-empty" class="empty-state" hidden>No records match your filters.</p>
+    <p id="discovery-error" class="empty-state" hidden>The research index is temporarily unavailable. Please try again shortly.</p>
+    <div class="discovery-pagination"><button id="discovery-more" type="button" hidden>LOAD MORE RECORDS ↓</button></div>
+  </div>
+</section>
+<script src="{{ "js/discovery.js" | relURL }}" defer></script>
 {{ end }}

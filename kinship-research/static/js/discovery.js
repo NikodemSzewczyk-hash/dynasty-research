@@ -155,8 +155,11 @@
       years.forEach(y => { const option = el('option', '', y); option.value = String(y); year.appendChild(option); });
       const topics = [...new Set(records.flatMap(r => r.topics || []))].sort();
       topics.forEach(t => { const option = el('option', '', t); option.value = t; topic.appendChild(option); });
-      const query = new URLSearchParams(window.location.search).get('q');
+      const params = new URLSearchParams(window.location.search);
+      const query = params.get('q');
       if (query) search.value = query;
+      const requestedStatus = params.get('status');
+      if (requestedStatus === 'curated' || requestedStatus === 'pending') status.value = requestedStatus;
       apply();
     })
     .catch(() => {

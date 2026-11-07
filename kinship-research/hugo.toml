@@ -23,12 +23,12 @@ summaryLength = 30
   url = '/'
   weight = 1
 [[menu.main]]
-  name = 'Paper archive'
+  name = 'All papers'
   url = '/papers/'
   weight = 2
 [[menu.main]]
-  name = 'Discovery'
-  url = '/discovery/'
+  name = 'Curated papers'
+  url = '/papers/?status=curated'
   weight = 3
 [[menu.main]]
   name = 'Research briefs'
