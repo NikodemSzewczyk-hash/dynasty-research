@@ -117,6 +117,9 @@ def iter_openalex(query: str, from_date: str, to_date: str,
                 "select":"id,doi,title,publication_year,publication_date,authorships,primary_location,type"}
         if query:
             params["search"]=query
+        if author_id:
+            # Source monitoring must retrieve recent works, not the most-cited works.
+            params["sort"]="publication_date:desc"
         email=os.getenv("DYNASTY_CONTACT_EMAIL","").strip()
         if email:
             params["mailto"]=email
@@ -157,6 +160,10 @@ def iter_crossref(query: str, from_date: str, to_date: str,
                 "rows":min(page_size,max_records-processed),"cursor":cursor}
         if query:
             params["query."+query_mode]=query
+        if journal_issn:
+            # A bounded source poll must prioritize recent publication dates.
+            params["sort"]="published"
+            params["order"]="desc"
         mailto=os.getenv("DYNASTY_CONTACT_EMAIL","").strip()
         if mailto:
             params["mailto"]=mailto
