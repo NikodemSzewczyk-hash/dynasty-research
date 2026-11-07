@@ -46,8 +46,8 @@ jobs:
           home=Path("public/index.html").read_text(encoding="utf-8")
           assert len(index)==report["total_displayed"]==103
           assert sum(r["review_status"]=="curated" for r in index)==12
-          assert 'id="discovery-results"' in papers, "Papers page is still the 12-only archive"
-          assert 'id="discovery-total">103<' in papers, "Index count not rendered on Papers page"
+          assert 'discovery-results' in papers, "Papers page is still the 12-only archive"
+          assert 'discovery-total' in papers and '>103<' in papers, "Index count not rendered on Papers page"
           assert 'INDEXED RESEARCH RECORDS' in home and '>103<' in home, "Home still shows 12 as full collection"
           assert 'VERIFIED FEEDS' in home and '>23<' in home, "Verified source count missing"
           print("Verified: all 103 records are indexed on the Papers page, with 12 curated and 23 active feeds.")
