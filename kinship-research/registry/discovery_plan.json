@@ -1,0 +1,169 @@
+{
+  "schema_version": 1,
+  "description": "Bounded exploratory historical discovery queries for dynasty_: origins and persistence of economic inequality. This is a starting query plan, not a claim of exhaustive coverage.",
+  "from_date": "2000-01-01",
+  "queries": [
+    {
+      "id": "mobility-income",
+      "theme": "Intergenerational mobility",
+      "query": "intergenerational income mobility",
+      "providers": [
+        "openalex",
+        "crossref"
+      ]
+    },
+    {
+      "id": "mobility-wealth",
+      "theme": "Intergenerational mobility",
+      "query": "intergenerational wealth mobility",
+      "providers": [
+        "openalex",
+        "crossref"
+      ]
+    },
+    {
+      "id": "mobility-multigen",
+      "theme": "Intergenerational mobility",
+      "query": "multigenerational economic mobility",
+      "providers": [
+        "openalex",
+        "crossref"
+      ]
+    },
+    {
+      "id": "mobility-education",
+      "theme": "Intergenerational mobility",
+      "query": "intergenerational educational mobility",
+      "providers": [
+        "openalex",
+        "crossref"
+      ]
+    },
+    {
+      "id": "transfer-inheritance",
+      "theme": "Wealth and inheritance",
+      "query": "inheritance wealth inequality intergenerational transfers",
+      "providers": [
+        "openalex",
+        "crossref"
+      ]
+    },
+    {
+      "id": "transfer-gifts",
+      "theme": "Wealth and inheritance",
+      "query": "inter vivos gifts parental transfers adult children",
+      "providers": [
+        "openalex",
+        "crossref"
+      ]
+    },
+    {
+      "id": "transfer-bequests",
+      "theme": "Wealth and inheritance",
+      "query": "bequest motives estate tax inheritance tax",
+      "providers": [
+        "openalex",
+        "crossref"
+      ]
+    },
+    {
+      "id": "transfer-housing",
+      "theme": "Wealth and inheritance",
+      "query": "parental wealth housing down payment adult children",
+      "providers": [
+        "openalex",
+        "crossref"
+      ]
+    },
+    {
+      "id": "family-divorce",
+      "theme": "Family structure",
+      "query": "parental divorce family disruption child outcomes",
+      "providers": [
+        "openalex",
+        "crossref"
+      ]
+    },
+    {
+      "id": "family-steps",
+      "theme": "Family structure",
+      "query": "stepfamilies repartnering child adult outcomes",
+      "providers": [
+        "openalex",
+        "crossref"
+      ]
+    },
+    {
+      "id": "family-siblings",
+      "theme": "Family structure",
+      "query": "siblings birth order inequality within family",
+      "providers": [
+        "openalex",
+        "crossref"
+      ]
+    },
+    {
+      "id": "family-support",
+      "theme": "Family structure",
+      "query": "parental support adult children economic outcomes",
+      "providers": [
+        "openalex",
+        "crossref"
+      ]
+    },
+    {
+      "id": "place-neighborhood",
+      "theme": "Place and opportunity",
+      "query": "neighborhood effects intergenerational mobility",
+      "providers": [
+        "openalex",
+        "crossref"
+      ]
+    },
+    {
+      "id": "place-education",
+      "theme": "Place and opportunity",
+      "query": "school quality educational inequality childhood",
+      "providers": [
+        "openalex",
+        "crossref"
+      ]
+    },
+    {
+      "id": "place-networks",
+      "theme": "Place and opportunity",
+      "query": "social capital networks economic mobility",
+      "providers": [
+        "openalex",
+        "crossref"
+      ]
+    },
+    {
+      "id": "institutions-tax",
+      "theme": "Institutions and policy",
+      "query": "redistribution taxation intergenerational inequality",
+      "providers": [
+        "openalex",
+        "crossref"
+      ]
+    },
+    {
+      "id": "institutions-labor",
+      "theme": "Institutions and policy",
+      "query": "labor market institutions intergenerational mobility",
+      "providers": [
+        "openalex",
+        "crossref"
+      ]
+    },
+    {
+      "id": "family-wealth-shocks",
+      "theme": "Research designs",
+      "query": "lottery wealth shocks parents children outcomes",
+      "providers": [
+        "openalex",
+        "crossref"
+      ]
+    }
+  ]
+}

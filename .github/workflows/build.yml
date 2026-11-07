@@ -1,4 +1,4 @@
-name: Validate and build Kinship
+name: Validate and build dynasty_
 
 on:
   push:
@@ -16,14 +16,21 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Validate source records
+      - name: Validate curated research records
         run: python scripts/validate.py
-      - name: Regenerate paper pages
+      - name: Run offline metadata pipeline tests
+        run: python -m unittest discover -s tests -v
+      - name: Smoke test seed and database export
+        run: |
+          python scripts/dynasty.py --db /tmp/dynasty-ci.sqlite seed
+          python scripts/dynasty.py --db /tmp/dynasty-ci.sqlite export --site-root /tmp/dynasty-ci-site
+          python -c "import json; from pathlib import Path; p=Path('/tmp/dynasty-ci-site/static/data/research-index.json'); assert len(json.loads(p.read_text()))==12"
+      - name: Regenerate legacy paper pages
         run: python scripts/build_content.py
-      - name: Ensure generated pages are current
+      - name: Ensure the existing site remains unchanged
         run: git diff --exit-code -- content/papers
       - uses: peaceiris/actions-hugo@v3
         with:
           hugo-version: '0.159.2'
-      - name: Build website
+      - name: Build Hugo site
         run: hugo --minify

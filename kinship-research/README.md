@@ -48,3 +48,16 @@ Paper metadata is linked to its original source. Editorial summaries in this pro
 
 
 **Naming note:** The Hugo source folder is still named `kinship-research` to avoid breaking the current hosting configuration. The public-facing project name is **dynasty_**.
+
+## dynasty_ V0.2 data pipeline (opt-in)
+
+The optional research-data infrastructure is in `scripts/dynasty_data/`, documented in [docs/data-pipeline.md](docs/data-pipeline.md). The live Hugo site still builds from the current seed archive; unreviewed API metadata is never published automatically.
+
+```bash
+python scripts/dynasty.py seed
+python scripts/dynasty.py stats
+python scripts/backfill_plan.py --max-jobs 4
+python -m unittest discover -s tests -v
+```
+
+The default backfill mode is dry run. Manually verified source IDs can be suggested, reviewed and saved; official NBER TSV metadata has a separate offline importer. See [identifier verification](docs/identifier-verification.md) and the data-pipeline guide for details.

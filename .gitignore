@@ -1,0 +1,19 @@
+# Runtime databases, temporary imports and locally generated assets
+*.sqlite
+*.sqlite3
+*.db
+*.db-wal
+*.db-shm
+*.sqlite-wal
+*.sqlite-shm
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.env
+.env.*
+!.env.example
+.DS_Store
+kinship-research/public/
+kinship-research/resources/
+kinship-research/data/candidates.jsonl
+kinship-research/.hugo_build.lock
