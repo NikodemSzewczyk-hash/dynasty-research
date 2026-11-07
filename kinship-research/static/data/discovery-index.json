@@ -1,5 +1,303 @@
 [
   {
+    "id": "curated:inheritance-multiple-generations",
+    "title": "Intergenerational Wealth Mobility and the Role of Inheritance: Evidence from Multiple Generations",
+    "authors": [
+      "Adrian Adermon",
+      "Mikael Lindahl",
+      "Daniel Waldenström"
+    ],
+    "year": 2018,
+    "source": "Economic Journal",
+    "doi": "10.1111/ecoj.12535",
+    "url": "https://doi.org/10.1111/ecoj.12535",
+    "curated_url": "/papers/inheritance-multiple-generations/",
+    "provider": "curated",
+    "review_status": "curated",
+    "evidence_level": "editorial_summary",
+    "collection": "curated",
+    "topics": [
+      "Wealth and inheritance",
+      "Intergenerational mobility"
+    ],
+    "source_ids": [],
+    "score": 100,
+    "match_type": "curated"
+  },
+  {
+    "id": "curated:neighborhood-childhood-exposure",
+    "title": "The Impacts of Neighborhoods on Intergenerational Mobility I: Childhood Exposure Effects",
+    "authors": [
+      "Raj Chetty",
+      "Nathaniel Hendren"
+    ],
+    "year": 2018,
+    "source": "Quarterly Journal of Economics",
+    "doi": "10.1093/qje/qjy007",
+    "url": "https://doi.org/10.1093/qje/qjy007",
+    "curated_url": "/papers/neighborhood-childhood-exposure/",
+    "provider": "curated",
+    "review_status": "curated",
+    "evidence_level": "editorial_summary",
+    "collection": "curated",
+    "topics": [
+      "Place and opportunity",
+      "Intergenerational mobility"
+    ],
+    "source_ids": [],
+    "score": 100,
+    "match_type": "curated"
+  },
+  {
+    "id": "curated:neighborhood-county-level",
+    "title": "The Impacts of Neighborhoods on Intergenerational Mobility II: County-Level Estimates",
+    "authors": [
+      "Raj Chetty",
+      "Nathaniel Hendren"
+    ],
+    "year": 2018,
+    "source": "Quarterly Journal of Economics",
+    "doi": "10.1093/qje/qjy006",
+    "url": "https://doi.org/10.1093/qje/qjy006",
+    "curated_url": "/papers/neighborhood-county-level/",
+    "provider": "curated",
+    "review_status": "curated",
+    "evidence_level": "editorial_summary",
+    "collection": "curated",
+    "topics": [
+      "Place and opportunity",
+      "Intergenerational mobility"
+    ],
+    "source_ids": [],
+    "score": 100,
+    "match_type": "curated"
+  },
+  {
+    "id": "curated:mobility-report-cards-colleges",
+    "title": "Mobility Report Cards: The Role of Colleges in Intergenerational Mobility",
+    "authors": [
+      "Raj Chetty",
+      "John N. Friedman",
+      "Emmanuel Saez",
+      "Nicholas Turner",
+      "Danny Yagan"
+    ],
+    "year": 2017,
+    "source": "NBER Working Papers",
+    "doi": "10.3386/w23618",
+    "url": "https://www.nber.org/papers/w23618",
+    "curated_url": "/papers/mobility-report-cards-colleges/",
+    "provider": "curated",
+    "review_status": "curated",
+    "evidence_level": "editorial_summary",
+    "collection": "curated",
+    "topics": [
+      "Intergenerational mobility",
+      "Childhood and education"
+    ],
+    "source_ids": [],
+    "score": 100,
+    "match_type": "curated"
+  },
+  {
+    "id": "curated:born-with-silver-spoon",
+    "title": "Born with a Silver Spoon? Danish Evidence on Wealth Inequality in Childhood",
+    "authors": [
+      "Simon Halphen Boserup",
+      "Wojciech Kopczuk",
+      "Claus Thustrup Kreiner"
+    ],
+    "year": 2016,
+    "source": "NBER Working Papers",
+    "doi": "10.3386/w22549",
+    "url": "https://www.nber.org/papers/w22549",
+    "curated_url": "/papers/born-with-silver-spoon/",
+    "provider": "curated",
+    "review_status": "curated",
+    "evidence_level": "editorial_summary",
+    "collection": "curated",
+    "topics": [
+      "Wealth and inheritance",
+      "Intergenerational transfers"
+    ],
+    "source_ids": [],
+    "score": 100,
+    "match_type": "curated"
+  },
+  {
+    "id": "curated:neighborhood-mto-children",
+    "title": "The Effects of Exposure to Better Neighborhoods on Children: New Evidence from the Moving to Opportunity Experiment",
+    "authors": [
+      "Raj Chetty",
+      "Nathaniel Hendren",
+      "Lawrence F. Katz"
+    ],
+    "year": 2016,
+    "source": "American Economic Review",
+    "doi": "10.1257/aer.20150572",
+    "url": "https://doi.org/10.1257/aer.20150572",
+    "curated_url": "/papers/neighborhood-mto-children/",
+    "provider": "curated",
+    "review_status": "curated",
+    "evidence_level": "editorial_summary",
+    "collection": "curated",
+    "topics": [
+      "Place and opportunity",
+      "Childhood and education"
+    ],
+    "source_ids": [],
+    "score": 100,
+    "match_type": "curated"
+  },
+  {
+    "id": "curated:bequests-wealth-inequality",
+    "title": "The Role of Bequests in Shaping Wealth Inequality: Evidence from Danish Wealth Records",
+    "authors": [
+      "Simon H. Boserup",
+      "Wojciech Kopczuk",
+      "Claus T. Kreiner"
+    ],
+    "year": 2016,
+    "source": "American Economic Review",
+    "doi": "10.1257/aer.p20161036",
+    "url": "https://doi.org/10.1257/aer.p20161036",
+    "curated_url": "/papers/bequests-wealth-inequality/",
+    "provider": "curated",
+    "review_status": "curated",
+    "evidence_level": "editorial_summary",
+    "collection": "curated",
+    "topics": [
+      "Wealth and inheritance",
+      "Intergenerational transfers"
+    ],
+    "source_ids": [],
+    "score": 100,
+    "match_type": "curated"
+  },
+  {
+    "id": "curated:divorce-laws-intertemporal",
+    "title": "Yours, Mine, and Ours: Do Divorce Laws Affect the Intertemporal Behavior of Married Couples?",
+    "authors": [
+      "Alessandra Voena"
+    ],
+    "year": 2015,
+    "source": "American Economic Review",
+    "doi": "10.1257/aer.20120234",
+    "url": "https://doi.org/10.1257/aer.20120234",
+    "curated_url": "/papers/divorce-laws-intertemporal/",
+    "provider": "curated",
+    "review_status": "curated",
+    "evidence_level": "editorial_summary",
+    "collection": "curated",
+    "topics": [
+      "Families and kinship",
+      "Institutions and policy"
+    ],
+    "source_ids": [],
+    "score": 100,
+    "match_type": "curated"
+  },
+  {
+    "id": "curated:parenting-with-style",
+    "title": "Parenting with Style: Altruism and Paternalism in Intergenerational Preference Transmission",
+    "authors": [
+      "Matthias Doepke",
+      "Fabrizio Zilibotti"
+    ],
+    "year": 2014,
+    "source": "NBER Working Papers",
+    "doi": "10.3386/w20214",
+    "url": "https://www.nber.org/papers/w20214",
+    "curated_url": "/papers/parenting-with-style/",
+    "provider": "curated",
+    "review_status": "curated",
+    "evidence_level": "editorial_summary",
+    "collection": "curated",
+    "topics": [
+      "Families and kinship",
+      "Intergenerational mobility"
+    ],
+    "source_ids": [],
+    "score": 100,
+    "match_type": "curated"
+  },
+  {
+    "id": "curated:where-is-the-land-of-opportunity",
+    "title": "Where Is the Land of Opportunity? The Geography of Intergenerational Mobility in the United States",
+    "authors": [
+      "Raj Chetty",
+      "Nathaniel Hendren",
+      "Patrick Kline",
+      "Emmanuel Saez"
+    ],
+    "year": 2014,
+    "source": "Quarterly Journal of Economics",
+    "doi": "10.1093/qje/qju022",
+    "url": "https://doi.org/10.1093/qje/qju022",
+    "curated_url": "/papers/where-is-the-land-of-opportunity/",
+    "provider": "curated",
+    "review_status": "curated",
+    "evidence_level": "editorial_summary",
+    "collection": "curated",
+    "topics": [
+      "Intergenerational mobility",
+      "Place and opportunity"
+    ],
+    "source_ids": [],
+    "score": 100,
+    "match_type": "curated"
+  },
+  {
+    "id": "curated:birth-weight-adult-outcomes",
+    "title": "From the Cradle to the Labor Market? The Effect of Birth Weight on Adult Outcomes",
+    "authors": [
+      "Sandra E. Black",
+      "Paul J. Devereux",
+      "Kjell G. Salvanes"
+    ],
+    "year": 2007,
+    "source": "Quarterly Journal of Economics",
+    "doi": "10.1162/qjec.122.1.409",
+    "url": "https://doi.org/10.1162/qjec.122.1.409",
+    "curated_url": "/papers/birth-weight-adult-outcomes/",
+    "provider": "curated",
+    "review_status": "curated",
+    "evidence_level": "editorial_summary",
+    "collection": "curated",
+    "topics": [
+      "Childhood and education",
+      "Intergenerational mobility"
+    ],
+    "source_ids": [],
+    "score": 100,
+    "match_type": "curated"
+  },
+  {
+    "id": "curated:more-the-merrier-birth-order",
+    "title": "The More the Merrier? The Effect of Family Size and Birth Order on Children’s Education",
+    "authors": [
+      "Sandra E. Black",
+      "Paul J. Devereux",
+      "Kjell G. Salvanes"
+    ],
+    "year": 2005,
+    "source": "Quarterly Journal of Economics",
+    "doi": "10.1093/qje/120.2.669",
+    "url": "https://doi.org/10.1093/qje/120.2.669",
+    "curated_url": "/papers/more-the-merrier-birth-order/",
+    "provider": "curated",
+    "review_status": "curated",
+    "evidence_level": "editorial_summary",
+    "collection": "curated",
+    "topics": [
+      "Families and kinship",
+      "Childhood and education"
+    ],
+    "source_ids": [],
+    "score": 100,
+    "match_type": "curated"
+  },
+  {
     "id": "crossref:10.1016/s0277-9536(01)00049-1",
     "title": "Social capital and health (plus wealth, income inequality and regional health governance)",
     "authors": [
@@ -14,7 +312,37 @@
     "possible_work_id": null,
     "review_status": "pending",
     "score": 18,
-    "evidence_level": "metadata_only"
+    "evidence_level": "metadata_only",
+    "collection": "historical",
+    "topics": [],
+    "source_ids": []
+  },
+  {
+    "id": "crossref:10.1257/pol.20220197",
+    "title": "Intergenerational and Sibling Spillovers in High School Majors",
+    "authors": [
+      "Gordon B. Dahl",
+      "Dan-Olof Rooth",
+      "Anders Stenberg"
+    ],
+    "year": 2024,
+    "source": "American Economic Journal: Economic Policy",
+    "doi": "10.1257/pol.20220197",
+    "url": "https://doi.org/10.1257/pol.20220197",
+    "provider": "crossref",
+    "review_status": "pending",
+    "evidence_level": "metadata_only",
+    "collection": "pilot23",
+    "topics": [
+      "Intergenerational mobility",
+      "Family structure"
+    ],
+    "source_ids": [
+      "journal:aej-economic-policy"
+    ],
+    "score": 16,
+    "match_type": "none",
+    "kind": "journal_article"
   },
   {
     "id": "crossref:10.1920/wp.ifs.2005.0505",
@@ -34,7 +362,12 @@
     "possible_work_id": null,
     "review_status": "pending",
     "score": 15,
-    "evidence_level": "metadata_only"
+    "evidence_level": "metadata_only",
+    "collection": "historical",
+    "topics": [
+      "Intergenerational mobility"
+    ],
+    "source_ids": []
   },
   {
     "id": "crossref:10.4314/ad.v35i4.70224",
@@ -51,7 +384,10 @@
     "possible_work_id": null,
     "review_status": "pending",
     "score": 15,
-    "evidence_level": "metadata_only"
+    "evidence_level": "metadata_only",
+    "collection": "historical",
+    "topics": [],
+    "source_ids": []
   },
   {
     "id": "crossref:10.1016/j.chieco.2019.101399",
@@ -69,7 +405,12 @@
     "possible_work_id": null,
     "review_status": "pending",
     "score": 15,
-    "evidence_level": "metadata_only"
+    "evidence_level": "metadata_only",
+    "collection": "historical",
+    "topics": [
+      "Wealth and inheritance"
+    ],
+    "source_ids": []
   },
   {
     "id": "crossref:10.1016/j.jmacro.2009.06.005",
@@ -86,7 +427,12 @@
     "possible_work_id": null,
     "review_status": "pending",
     "score": 15,
-    "evidence_level": "metadata_only"
+    "evidence_level": "metadata_only",
+    "collection": "historical",
+    "topics": [
+      "Intergenerational mobility"
+    ],
+    "source_ids": []
   },
   {
     "id": "crossref:10.1093/ei/39.3.453",
@@ -104,7 +450,12 @@
     "possible_work_id": null,
     "review_status": "pending",
     "score": 15,
-    "evidence_level": "metadata_only"
+    "evidence_level": "metadata_only",
+    "collection": "historical",
+    "topics": [
+      "Wealth and inheritance"
+    ],
+    "source_ids": []
   },
   {
     "id": "crossref:10.1016/s0272-7757(01)00010-3",
@@ -121,7 +472,12 @@
     "possible_work_id": null,
     "review_status": "pending",
     "score": 15,
-    "evidence_level": "metadata_only"
+    "evidence_level": "metadata_only",
+    "collection": "historical",
+    "topics": [
+      "Intergenerational mobility"
+    ],
+    "source_ids": []
   },
   {
     "id": "crossref:10.1016/s0165-1765(01)00523-7",
@@ -139,7 +495,1121 @@
     "possible_work_id": null,
     "review_status": "pending",
     "score": 15,
-    "evidence_level": "metadata_only"
+    "evidence_level": "metadata_only",
+    "collection": "historical",
+    "topics": [
+      "Intergenerational mobility"
+    ],
+    "source_ids": []
+  },
+  {
+    "id": "openalex:https://openalex.org/W7118181214",
+    "title": "Assortative Mating, Inequality, and Rising Educational Mobility in Spain",
+    "authors": [
+      "Ricard Grebol",
+      "Margarita Machelett",
+      "Jan Leonard Stuhler",
+      "Ernesto Villanueva"
+    ],
+    "year": 2026,
+    "source": "SSRN Electronic Journal",
+    "doi": "10.2139/ssrn.5992354",
+    "url": "https://doi.org/10.2139/ssrn.5992354",
+    "provider": "openalex",
+    "review_status": "pending",
+    "evidence_level": "metadata_only",
+    "collection": "pilot23",
+    "topics": [
+      "Intergenerational mobility"
+    ],
+    "source_ids": [
+      "researcher:jan-stuhler"
+    ],
+    "score": 14,
+    "match_type": "possible",
+    "kind": "working_paper",
+    "versions": [
+      {
+        "doi": "10.48550/arxiv.2512.22848",
+        "url": "https://doi.org/10.48550/arxiv.2512.22848",
+        "source": "arXiv (Cornell University)",
+        "provider": "openalex"
+      },
+      {
+        "doi": "10.2139/ssrn.5992354",
+        "url": "https://doi.org/10.2139/ssrn.5992354",
+        "source": "SSRN Electronic Journal",
+        "provider": "openalex"
+      },
+      {
+        "doi": "10.2139/ssrn.6528258",
+        "url": "https://doi.org/10.2139/ssrn.6528258",
+        "source": "SSRN Electronic Journal",
+        "provider": "openalex"
+      }
+    ],
+    "version_count": 3
+  },
+  {
+    "id": "openalex:https://openalex.org/W7119471288",
+    "title": "Changing Opportunity: Sociological Mechanisms Underlying Growing Class Gaps and Shrinking Race Gaps in Economic Mobility",
+    "authors": [
+      "Raj Chetty",
+      "Will Dobbie",
+      "Benjamin Goldman",
+      "Sonya R Porter",
+      "Crystal S Yang"
+    ],
+    "year": 2026,
+    "source": "The Quarterly Journal of Economics",
+    "doi": "10.1093/qje/qjaf057",
+    "url": "https://doi.org/10.1093/qje/qjaf057",
+    "provider": "openalex",
+    "review_status": "pending",
+    "evidence_level": "metadata_only",
+    "collection": "pilot23",
+    "topics": [
+      "Intergenerational mobility"
+    ],
+    "source_ids": [
+      "researcher:raj-chetty"
+    ],
+    "score": 14,
+    "match_type": "none",
+    "kind": "journal_article"
+  },
+  {
+    "id": "repec:RePEc:iza:izadps:dp18974",
+    "title": "Childhood Exposure to Communal Violence and Long-Run Religious Inequality in Psychological and Economic Well-Being",
+    "authors": [
+      "Sahoo, Soham",
+      "Sogani, Shweta"
+    ],
+    "year": 2026,
+    "source": "IZA Discussion Papers",
+    "doi": null,
+    "url": "https://ideas.repec.org/p/iza/izadps/dp18974.html",
+    "provider": "repec",
+    "review_status": "pending",
+    "evidence_level": "metadata_only",
+    "collection": "pilot23",
+    "topics": [
+      "Place and opportunity"
+    ],
+    "source_ids": [
+      "working_paper_series:iza-discussion-papers"
+    ],
+    "score": 14,
+    "match_type": "none",
+    "kind": "working_paper"
+  },
+  {
+    "id": "openalex:https://openalex.org/W7167509383",
+    "title": "Educational mobility across multiple generations in Indonesia",
+    "authors": [
+      "Sarah Cattan",
+      "Antonio Dalla Zuanna",
+      "Jan Leonard Stuhler",
+      "Po Yin Wong"
+    ],
+    "year": 2026,
+    "source": "Journal of Development Economics",
+    "doi": "10.1016/j.jdeveco.2026.103868",
+    "url": "https://doi.org/10.1016/j.jdeveco.2026.103868",
+    "provider": "openalex",
+    "review_status": "pending",
+    "evidence_level": "metadata_only",
+    "collection": "pilot23",
+    "topics": [
+      "Intergenerational mobility"
+    ],
+    "source_ids": [
+      "researcher:jan-stuhler"
+    ],
+    "score": 14,
+    "match_type": "possible",
+    "kind": "journal_article",
+    "versions": [
+      {
+        "doi": "10.1016/j.jdeveco.2026.103868",
+        "url": "https://doi.org/10.1016/j.jdeveco.2026.103868",
+        "source": "Journal of Development Economics",
+        "provider": "openalex"
+      },
+      {
+        "doi": "10.2139/ssrn.6625879",
+        "url": "https://doi.org/10.2139/ssrn.6625879",
+        "source": "SSRN Electronic Journal",
+        "provider": "openalex"
+      }
+    ],
+    "version_count": 2
+  },
+  {
+    "id": "repec:RePEc:nbr:nberwo:35972",
+    "title": "Governance Regimes, Economic Mobility, and the Composition of Public Investment: Evidence from the Democratization of Villages in India",
+    "authors": [
+      "Andrew D. Foster",
+      "Mark R. Rosenzweig"
+    ],
+    "year": 2026,
+    "source": "NBER Working Papers",
+    "doi": null,
+    "url": "https://ideas.repec.org/p/nbr/nberwo/35972.html",
+    "provider": "repec",
+    "review_status": "pending",
+    "evidence_level": "metadata_only",
+    "collection": "pilot23",
+    "topics": [
+      "Intergenerational mobility"
+    ],
+    "source_ids": [
+      "working_paper_series:nber-working-papers"
+    ],
+    "score": 14,
+    "match_type": "none",
+    "kind": "working_paper"
+  },
+  {
+    "id": "repec:RePEc:nbr:nberwo:35965",
+    "title": "Income Inequality and Intergenerational Mobility in Russia: Trends, Sources, and Measurement",
+    "authors": [
+      "Kristina Butaeva",
+      "Steven N. Durlauf",
+      "Dmitry Rudenko"
+    ],
+    "year": 2026,
+    "source": "NBER Working Papers",
+    "doi": null,
+    "url": "https://ideas.repec.org/p/nbr/nberwo/35965.html",
+    "provider": "repec",
+    "review_status": "pending",
+    "evidence_level": "metadata_only",
+    "collection": "pilot23",
+    "topics": [
+      "Intergenerational mobility"
+    ],
+    "source_ids": [
+      "working_paper_series:nber-working-papers"
+    ],
+    "score": 14,
+    "match_type": "none",
+    "kind": "working_paper"
+  },
+  {
+    "id": "openalex:https://openalex.org/W7161800425",
+    "title": "Indirect Estimators of Intergenerational Mobility",
+    "authors": [
+      "Andrea Del Pizzo",
+      "Martin Nybom",
+      "Jan Leonard Stuhler"
+    ],
+    "year": 2026,
+    "source": "arXiv (Cornell University)",
+    "doi": "10.48550/arxiv.2605.19154",
+    "url": "https://doi.org/10.48550/arxiv.2605.19154",
+    "provider": "openalex",
+    "review_status": "pending",
+    "evidence_level": "metadata_only",
+    "collection": "pilot23",
+    "topics": [
+      "Intergenerational mobility"
+    ],
+    "source_ids": [
+      "researcher:jan-stuhler",
+      "researcher:martin-nybom"
+    ],
+    "score": 14,
+    "match_type": "none",
+    "kind": "working_paper"
+  },
+  {
+    "id": "repec:RePEc:iza:izadps:dp18952",
+    "title": "Poverty and Income Mobility in a Data-Scarce World: Concepts, Measures, and Data Challenges",
+    "authors": [
+      "Dang, Hai-Anh"
+    ],
+    "year": 2026,
+    "source": "IZA Discussion Papers",
+    "doi": null,
+    "url": "https://ideas.repec.org/p/iza/izadps/dp18952.html",
+    "provider": "repec",
+    "review_status": "pending",
+    "evidence_level": "metadata_only",
+    "collection": "pilot23",
+    "topics": [
+      "Intergenerational mobility"
+    ],
+    "source_ids": [
+      "working_paper_series:iza-discussion-papers"
+    ],
+    "score": 14,
+    "match_type": "none",
+    "kind": "working_paper"
+  },
+  {
+    "id": "openalex:https://openalex.org/W7129768374",
+    "title": "Social Mobility in Western Countries: The Role of Families, Networks, and Institutions",
+    "authors": [
+      "Martin Nybom",
+      "José V. Rodríguez Mora",
+      "Kjell G. Salvanes"
+    ],
+    "year": 2026,
+    "source": "SSRN Electronic Journal",
+    "doi": "10.2139/ssrn.6253899",
+    "url": "https://doi.org/10.2139/ssrn.6253899",
+    "provider": "openalex",
+    "review_status": "pending",
+    "evidence_level": "metadata_only",
+    "collection": "pilot23",
+    "topics": [
+      "Intergenerational mobility"
+    ],
+    "source_ids": [
+      "researcher:martin-nybom"
+    ],
+    "score": 14,
+    "match_type": "none",
+    "kind": "working_paper"
+  },
+  {
+    "id": "openalex:https://openalex.org/W4408883837",
+    "title": "The relationship between intergenerational mobility and equality of opportunity",
+    "authors": [
+      "Adrian Adermon",
+      "Gunnar Brandén",
+      "Martin Nybom"
+    ],
+    "year": 2026,
+    "source": "Scandinavian Journal of Economics",
+    "doi": "10.1111/sjoe.70033",
+    "url": "https://doi.org/10.1111/sjoe.70033",
+    "provider": "openalex",
+    "review_status": "pending",
+    "evidence_level": "metadata_only",
+    "collection": "pilot23",
+    "topics": [
+      "Intergenerational mobility"
+    ],
+    "source_ids": [
+      "researcher:martin-nybom"
+    ],
+    "score": 14,
+    "match_type": "none",
+    "kind": "journal_article"
+  },
+  {
+    "id": "repec:RePEc:iza:izadps:dp19035",
+    "title": "Wealth among Siblings in Germany",
+    "authors": [
+      "Lersch, Philipp",
+      "Schnitzlein, Daniel D.",
+      "Pfeffer, Fabian",
+      "Grabka, Markus"
+    ],
+    "year": 2026,
+    "source": "IZA Discussion Papers",
+    "doi": null,
+    "url": "https://ideas.repec.org/p/iza/izadps/dp19035.html",
+    "provider": "repec",
+    "review_status": "pending",
+    "evidence_level": "metadata_only",
+    "collection": "pilot23",
+    "topics": [
+      "Family structure"
+    ],
+    "source_ids": [
+      "working_paper_series:iza-discussion-papers"
+    ],
+    "score": 14,
+    "match_type": "none",
+    "kind": "working_paper"
+  },
+  {
+    "id": "repec:RePEc:iza:izadps:dp18951",
+    "title": "Will Today’s Children Be Richer than Their Parents? Projecting Future Absolute Intergenerational Income Mobility",
+    "authors": [
+      "Ahmed, Maruf",
+      "Deutscher, Nathan",
+      "Siminski, Peter"
+    ],
+    "year": 2026,
+    "source": "IZA Discussion Papers",
+    "doi": null,
+    "url": "https://ideas.repec.org/p/iza/izadps/dp18951.html",
+    "provider": "repec",
+    "review_status": "pending",
+    "evidence_level": "metadata_only",
+    "collection": "pilot23",
+    "topics": [
+      "Intergenerational mobility"
+    ],
+    "source_ids": [
+      "working_paper_series:iza-discussion-papers"
+    ],
+    "score": 14,
+    "match_type": "none",
+    "kind": "working_paper"
+  },
+  {
+    "id": "openalex:https://openalex.org/W4409727725",
+    "title": "A Lifecycle Estimator of Intergenerational Income Mobility",
+    "authors": [
+      "Ursula Mattioli Mello",
+      "Martin Nybom",
+      "Jan Leonard Stuhler"
+    ],
+    "year": 2025,
+    "source": "The Review of Economics and Statistics",
+    "doi": "10.1162/rest_a_01585",
+    "url": "https://doi.org/10.1162/rest_a_01585",
+    "provider": "openalex",
+    "review_status": "pending",
+    "evidence_level": "metadata_only",
+    "collection": "pilot23",
+    "topics": [
+      "Intergenerational mobility"
+    ],
+    "source_ids": [
+      "researcher:jan-stuhler",
+      "researcher:martin-nybom"
+    ],
+    "score": 14,
+    "match_type": "none",
+    "kind": "journal_article"
+  },
+  {
+    "id": "crossref:10.3368/jhr.0321-11554r3",
+    "title": "Accounting for Intergenerational Educational Immobility in Low- and Middle-Income Countries",
+    "authors": [
+      "Fabian Koenings",
+      "Jakob Schwab"
+    ],
+    "year": 2025,
+    "source": "Journal of Human Resources",
+    "doi": "10.3368/jhr.0321-11554r3",
+    "url": "https://doi.org/10.3368/jhr.0321-11554r3",
+    "provider": "crossref",
+    "review_status": "pending",
+    "evidence_level": "metadata_only",
+    "collection": "pilot23",
+    "topics": [
+      "Intergenerational mobility"
+    ],
+    "source_ids": [
+      "journal:journal-of-human-resources"
+    ],
+    "score": 14,
+    "match_type": "none",
+    "kind": "journal_article"
+  },
+  {
+    "id": "crossref:10.1257/app.20210117",
+    "title": "Changes in Family Structure and Welfare Participation since the 1960s: The Role of Legal Services",
+    "authors": [
+      "Jamein Cunningham",
+      "Andrew Goodman-Bacon"
+    ],
+    "year": 2025,
+    "source": "American Economic Journal: Applied Economics",
+    "doi": "10.1257/app.20210117",
+    "url": "https://doi.org/10.1257/app.20210117",
+    "provider": "crossref",
+    "review_status": "pending",
+    "evidence_level": "metadata_only",
+    "collection": "pilot23",
+    "topics": [
+      "Family structure"
+    ],
+    "source_ids": [
+      "journal:aej-applied-economics"
+    ],
+    "score": 14,
+    "match_type": "none",
+    "kind": "journal_article"
+  },
+  {
+    "id": "openalex:https://openalex.org/W4411467207",
+    "title": "Geographic Variation in Multigenerational Mobility",
+    "authors": [
+      "Martin Nybom",
+      "Jan Leonard Stuhler"
+    ],
+    "year": 2025,
+    "source": "Sociological Methods & Research",
+    "doi": "10.1177/00491241251341196",
+    "url": "https://doi.org/10.1177/00491241251341196",
+    "provider": "openalex",
+    "review_status": "pending",
+    "evidence_level": "metadata_only",
+    "collection": "pilot23",
+    "topics": [
+      "Intergenerational mobility"
+    ],
+    "source_ids": [
+      "researcher:jan-stuhler",
+      "researcher:martin-nybom"
+    ],
+    "score": 14,
+    "match_type": "none",
+    "kind": "journal_article"
+  },
+  {
+    "id": "crossref:10.1086/730322",
+    "title": "Impact of an Early-Career Shock on Intergenerational Mobility",
+    "authors": [
+      "Martti Kaila",
+      "Emily Nix",
+      "Krista Riukula"
+    ],
+    "year": 2025,
+    "source": "Journal of Labor Economics",
+    "doi": "10.1086/730322",
+    "url": "https://doi.org/10.1086/730322",
+    "provider": "crossref",
+    "review_status": "pending",
+    "evidence_level": "metadata_only",
+    "collection": "pilot23",
+    "topics": [
+      "Intergenerational mobility"
+    ],
+    "source_ids": [
+      "journal:journal-of-labor-economics"
+    ],
+    "score": 14,
+    "match_type": "none",
+    "kind": "journal_article"
+  },
+  {
+    "id": "openalex:https://openalex.org/W4407693098",
+    "title": "Intergenerational Mobility of Immigrants in 15 Destination Countries",
+    "authors": [
+      "Leah Platt Boustan",
+      "Mathias Fjællegaard Jensen",
+      "Ran Abramitzky",
+      "Elisa Jácome",
+      "Alan Manning",
+      "Santiago T. Pérez",
+      "Analysia Watley",
+      "Adrian Adermon",
+      "Jaime Arellano-Bover",
+      "Olof Åslund",
+      "Marie Connolly",
+      "Nathan Deutscher",
+      "Anne C. Gielen",
+      "Yvonne Giesing",
+      "Yajna Govind",
+      "Martin Halla",
+      "Dominik Hangartner",
+      "Yuyan Jiang",
+      "Cecilia Karmel",
+      "Fanny Landaud",
+      "Lindsey Macmillan",
+      "Isabel Z. Martínez",
+      "Alberto Polo",
+      "Panu Poutvaara",
+      "Hillel Rapoport C"
+    ],
+    "year": 2025,
+    "source": "SSRN Electronic Journal",
+    "doi": "10.2139/ssrn.5142323",
+    "url": "https://doi.org/10.2139/ssrn.5142323",
+    "provider": "openalex",
+    "review_status": "pending",
+    "evidence_level": "metadata_only",
+    "collection": "pilot23",
+    "topics": [
+      "Intergenerational mobility"
+    ],
+    "source_ids": [
+      "researcher:jan-stuhler",
+      "researcher:kjell-g-salvanes"
+    ],
+    "score": 14,
+    "match_type": "possible",
+    "kind": "working_paper",
+    "versions": [
+      {
+        "doi": "10.2139/ssrn.5142323",
+        "url": "https://doi.org/10.2139/ssrn.5142323",
+        "source": "SSRN Electronic Journal",
+        "provider": "openalex"
+      },
+      {
+        "doi": "10.2139/ssrn.5172102",
+        "url": "https://doi.org/10.2139/ssrn.5172102",
+        "source": "SSRN Electronic Journal",
+        "provider": "openalex"
+      }
+    ],
+    "version_count": 2
+  },
+  {
+    "id": "crossref:10.1086/725595",
+    "title": "The Intergenerational Effects of the Vietnam Draft on Risky Behaviors",
+    "authors": [
+      "Monica Deza",
+      "Alvaro Mezza"
+    ],
+    "year": 2025,
+    "source": "Journal of Labor Economics",
+    "doi": "10.1086/725595",
+    "url": "https://doi.org/10.1086/725595",
+    "provider": "crossref",
+    "review_status": "pending",
+    "evidence_level": "metadata_only",
+    "collection": "pilot23",
+    "topics": [
+      "Intergenerational mobility"
+    ],
+    "source_ids": [
+      "journal:journal-of-labor-economics"
+    ],
+    "score": 14,
+    "match_type": "none",
+    "kind": "journal_article"
+  },
+  {
+    "id": "openalex:https://openalex.org/W3134434737",
+    "title": "The Opportunity Atlas: Mapping the Childhood Roots of Social Mobility",
+    "authors": [
+      "Raj Chetty",
+      "John N. Friedman",
+      "Nathaniel Hendren",
+      "Maggie R. Jones",
+      "Sonya R. Porter"
+    ],
+    "year": 2025,
+    "source": "American Economic Review",
+    "doi": "10.1257/aer.20200108",
+    "url": "https://doi.org/10.1257/aer.20200108",
+    "provider": "openalex",
+    "review_status": "pending",
+    "evidence_level": "metadata_only",
+    "collection": "pilot23",
+    "topics": [
+      "Intergenerational mobility"
+    ],
+    "source_ids": [
+      "researcher:raj-chetty"
+    ],
+    "score": 14,
+    "match_type": "none",
+    "kind": "journal_article"
+  },
+  {
+    "id": "crossref:10.3368/jhr.0221-11499r5",
+    "title": "Unilateral Divorce, Assortative Mating, and Household Income Inequality",
+    "authors": [
+      "Sitian Liu"
+    ],
+    "year": 2025,
+    "source": "Journal of Human Resources",
+    "doi": "10.3368/jhr.0221-11499r5",
+    "url": "https://doi.org/10.3368/jhr.0221-11499r5",
+    "provider": "crossref",
+    "review_status": "pending",
+    "evidence_level": "metadata_only",
+    "collection": "pilot23",
+    "topics": [
+      "Family structure"
+    ],
+    "source_ids": [
+      "journal:journal-of-human-resources"
+    ],
+    "score": 14,
+    "match_type": "none",
+    "kind": "journal_article"
+  },
+  {
+    "id": "openalex:https://openalex.org/W4399518485",
+    "title": "Insurance against Income Shocks, Parental Investments, and Child Development",
+    "authors": [
+      "Pedro Carneiro",
+      "Kjell G. Salvanes",
+      "Emma Tominey"
+    ],
+    "year": 2024,
+    "source": "SSRN Electronic Journal",
+    "doi": "10.2139/ssrn.4861032",
+    "url": "https://doi.org/10.2139/ssrn.4861032",
+    "provider": "openalex",
+    "review_status": "pending",
+    "evidence_level": "metadata_only",
+    "collection": "pilot23",
+    "topics": [
+      "Family structure"
+    ],
+    "source_ids": [
+      "researcher:kjell-g-salvanes"
+    ],
+    "score": 14,
+    "match_type": "none",
+    "kind": "working_paper"
+  },
+  {
+    "id": "crossref:10.1086/730206",
+    "title": "Intergenerational Insurance",
+    "authors": [
+      "Francesco Lancia",
+      "Alessia Russo",
+      "Tim Worrall"
+    ],
+    "year": 2024,
+    "source": "Journal of Political Economy",
+    "doi": "10.1086/730206",
+    "url": "https://doi.org/10.1086/730206",
+    "provider": "crossref",
+    "review_status": "pending",
+    "evidence_level": "metadata_only",
+    "collection": "pilot23",
+    "topics": [
+      "Intergenerational mobility"
+    ],
+    "source_ids": [
+      "journal:journal-of-political-economy"
+    ],
+    "score": 14,
+    "match_type": "none",
+    "kind": "journal_article"
+  },
+  {
+    "id": "crossref:10.1257/app.20210686",
+    "title": "Intergenerational Mobility in India: New Measures and Estimates across Time and Social Groups",
+    "authors": [
+      "Sam Asher",
+      "Paul Novosad",
+      "Charlie Rafkin"
+    ],
+    "year": 2024,
+    "source": "American Economic Journal: Applied Economics",
+    "doi": "10.1257/app.20210686",
+    "url": "https://doi.org/10.1257/app.20210686",
+    "provider": "crossref",
+    "review_status": "pending",
+    "evidence_level": "metadata_only",
+    "collection": "pilot23",
+    "topics": [
+      "Intergenerational mobility"
+    ],
+    "source_ids": [
+      "journal:aej-applied-economics"
+    ],
+    "score": 14,
+    "match_type": "none",
+    "kind": "journal_article"
+  },
+  {
+    "id": "crossref:10.1086/729582",
+    "title": "Interpreting Trends in Intergenerational Mobility",
+    "authors": [
+      "Martin Nybom",
+      "Jan Stuhler"
+    ],
+    "year": 2024,
+    "source": "Journal of Political Economy",
+    "doi": "10.1086/729582",
+    "url": "https://doi.org/10.1086/729582",
+    "provider": "crossref",
+    "review_status": "pending",
+    "evidence_level": "metadata_only",
+    "collection": "pilot23",
+    "topics": [
+      "Intergenerational mobility"
+    ],
+    "source_ids": [
+      "journal:journal-of-political-economy",
+      "researcher:jan-stuhler",
+      "researcher:martin-nybom"
+    ],
+    "score": 14,
+    "match_type": "none",
+    "kind": "journal_article",
+    "versions": [
+      {
+        "doi": "10.1086/729582",
+        "url": "https://doi.org/10.1086/729582",
+        "source": "Journal of Political Economy",
+        "provider": "openalex"
+      }
+    ],
+    "version_count": 1
+  },
+  {
+    "id": "openalex:https://openalex.org/W4403383913",
+    "title": "Like Mother, Like Child? The Rise of Women’s Intergenerational Income Persistence in Sweden and the United States",
+    "authors": [
+      "Gunnar Brandén",
+      "Martin Nybom",
+      "Kelly Vosters"
+    ],
+    "year": 2024,
+    "source": "Journal of Labor Economics",
+    "doi": "10.1086/733491",
+    "url": "https://doi.org/10.1086/733491",
+    "provider": "openalex",
+    "review_status": "pending",
+    "evidence_level": "metadata_only",
+    "collection": "pilot23",
+    "topics": [
+      "Intergenerational mobility"
+    ],
+    "source_ids": [
+      "researcher:martin-nybom"
+    ],
+    "score": 14,
+    "match_type": "none",
+    "kind": "journal_article"
+  },
+  {
+    "id": "crossref:10.1257/app.20210137",
+    "title": "Measuring Absolute Income Mobility: Lessons from North America and Europe",
+    "authors": [
+      "Robert Manduca",
+      "Maximilian Hell",
+      "Adrian Adermon",
+      "Jo Blanden",
+      "Espen Bratberg",
+      "Anne C. Gielen",
+      "Hans van Kippersluis",
+      "Keunbok Lee",
+      "Stephen Machin",
+      "Martin D. Munk",
+      "Martin Nybom",
+      "Yuri Ostrovsky",
+      "Sumaiya Rahman",
+      "Outi Sirniö"
+    ],
+    "year": 2024,
+    "source": "American Economic Journal: Applied Economics",
+    "doi": "10.1257/app.20210137",
+    "url": "https://doi.org/10.1257/app.20210137",
+    "provider": "crossref",
+    "review_status": "pending",
+    "evidence_level": "metadata_only",
+    "collection": "pilot23",
+    "topics": [
+      "Intergenerational mobility"
+    ],
+    "source_ids": [
+      "journal:aej-applied-economics",
+      "researcher:martin-nybom"
+    ],
+    "score": 14,
+    "match_type": "none",
+    "kind": "journal_article",
+    "versions": [
+      {
+        "doi": "10.1257/app.20210137",
+        "url": "https://doi.org/10.1257/app.20210137",
+        "source": "American Economic Journal Applied Economics",
+        "provider": "openalex"
+      }
+    ],
+    "version_count": 1
+  },
+  {
+    "id": "crossref:10.1257/app.20220137",
+    "title": "Multigenerational Transmission of Wealth: Florence, 1403–1480",
+    "authors": [
+      "Marianna Belloc",
+      "Francesco Drago",
+      "Mattia Fochesato",
+      "Roberto Galbiati"
+    ],
+    "year": 2024,
+    "source": "American Economic Journal: Applied Economics",
+    "doi": "10.1257/app.20220137",
+    "url": "https://doi.org/10.1257/app.20220137",
+    "provider": "crossref",
+    "review_status": "pending",
+    "evidence_level": "metadata_only",
+    "collection": "pilot23",
+    "topics": [
+      "Intergenerational mobility"
+    ],
+    "source_ids": [
+      "journal:aej-applied-economics"
+    ],
+    "score": 14,
+    "match_type": "none",
+    "kind": "journal_article"
+  },
+  {
+    "id": "openalex:https://openalex.org/W4396918681",
+    "title": "Name-Based Estimators of Intergenerational Mobility",
+    "authors": [
+      "Torsten Santavirta",
+      "Jan Leonard Stuhler"
+    ],
+    "year": 2024,
+    "source": "The Economic Journal",
+    "doi": "10.1093/ej/ueae035",
+    "url": "https://doi.org/10.1093/ej/ueae035",
+    "provider": "openalex",
+    "review_status": "pending",
+    "evidence_level": "metadata_only",
+    "collection": "pilot23",
+    "topics": [
+      "Intergenerational mobility"
+    ],
+    "source_ids": [
+      "researcher:jan-stuhler"
+    ],
+    "score": 14,
+    "match_type": "none",
+    "kind": "journal_article"
+  },
+  {
+    "id": "crossref:10.3368/jhr.0422-12259r2",
+    "title": "Public and Parental Investments, and Children’s Skill Formation",
+    "authors": [
+      "Miriam Gensowski",
+      "Rasmus Landersø",
+      "Philip Dale",
+      "Anders Højen",
+      "Laura Justice",
+      "Dorthe Bleses"
+    ],
+    "year": 2024,
+    "source": "Journal of Human Resources",
+    "doi": "10.3368/jhr.0422-12259r2",
+    "url": "https://doi.org/10.3368/jhr.0422-12259r2",
+    "provider": "crossref",
+    "review_status": "pending",
+    "evidence_level": "metadata_only",
+    "collection": "pilot23",
+    "topics": [
+      "Family structure"
+    ],
+    "source_ids": [
+      "journal:journal-of-human-resources"
+    ],
+    "score": 14,
+    "match_type": "none",
+    "kind": "journal_article"
+  },
+  {
+    "id": "openalex:https://openalex.org/W4405398345",
+    "title": "The (Un)Importance of Inheritance",
+    "authors": [
+      "Sandra E Black",
+      "Paul J. Devereux",
+      "Fanny Landaud",
+      "Kjell G. Salvanes"
+    ],
+    "year": 2024,
+    "source": "Journal of the European Economic Association",
+    "doi": "10.1093/jeea/jvae056",
+    "url": "https://doi.org/10.1093/jeea/jvae056",
+    "provider": "openalex",
+    "review_status": "pending",
+    "evidence_level": "metadata_only",
+    "collection": "pilot23",
+    "topics": [
+      "Wealth and inheritance"
+    ],
+    "source_ids": [
+      "researcher:kjell-g-salvanes"
+    ],
+    "score": 14,
+    "match_type": "none",
+    "kind": "journal_article"
+  },
+  {
+    "id": "openalex:https://openalex.org/W4393007675",
+    "title": "The Consequences of Miscarriage on Parental Investments",
+    "authors": [
+      "Aline Bütikofer",
+      "Deirdre Coy",
+      "Orla Doyle",
+      "Rita Ginja"
+    ],
+    "year": 2024,
+    "source": "SSRN Electronic Journal",
+    "doi": "10.2139/ssrn.4761335",
+    "url": "https://doi.org/10.2139/ssrn.4761335",
+    "provider": "openalex",
+    "review_status": "pending",
+    "evidence_level": "metadata_only",
+    "collection": "pilot23",
+    "topics": [
+      "Family structure"
+    ],
+    "source_ids": [
+      "researcher:aline-butikofer"
+    ],
+    "score": 14,
+    "match_type": "possible",
+    "kind": "working_paper",
+    "versions": [
+      {
+        "doi": "10.2139/ssrn.4761335",
+        "url": "https://doi.org/10.2139/ssrn.4761335",
+        "source": "SSRN Electronic Journal",
+        "provider": "openalex"
+      },
+      {
+        "doi": "10.2139/ssrn.4764350",
+        "url": "https://doi.org/10.2139/ssrn.4764350",
+        "source": "SSRN Electronic Journal",
+        "provider": "openalex"
+      }
+    ],
+    "version_count": 2
+  },
+  {
+    "id": "crossref:10.1257/app.20210816",
+    "title": "The Impact of Cash Transfers to Poor Mothers on Family Structure and Maternal Well-Being",
+    "authors": [
+      "Anna Aizer",
+      "Sungwoo Cho",
+      "Shari Eli",
+      "Adriana Lleras-Muney"
+    ],
+    "year": 2024,
+    "source": "American Economic Journal: Applied Economics",
+    "doi": "10.1257/app.20210816",
+    "url": "https://doi.org/10.1257/app.20210816",
+    "provider": "crossref",
+    "review_status": "pending",
+    "evidence_level": "metadata_only",
+    "collection": "pilot23",
+    "topics": [
+      "Family structure"
+    ],
+    "source_ids": [
+      "journal:aej-applied-economics"
+    ],
+    "score": 14,
+    "match_type": "none",
+    "kind": "journal_article"
+  },
+  {
+    "id": "crossref:10.3368/jhr.1022-12589r1",
+    "title": "The Intergenerational Effects of Marital Transfers",
+    "authors": [
+      "Bilal Ahmad Bhat",
+      "Sounak Thakur"
+    ],
+    "year": 2024,
+    "source": "Journal of Human Resources",
+    "doi": "10.3368/jhr.1022-12589r1",
+    "url": "https://doi.org/10.3368/jhr.1022-12589r1",
+    "provider": "crossref",
+    "review_status": "pending",
+    "evidence_level": "metadata_only",
+    "collection": "pilot23",
+    "topics": [
+      "Intergenerational mobility"
+    ],
+    "source_ids": [
+      "journal:journal-of-human-resources"
+    ],
+    "score": 14,
+    "match_type": "none",
+    "kind": "journal_article"
+  },
+  {
+    "id": "crossref:10.3368/jhr.0422-12241r2",
+    "title": "The Intergenerational Transmission of Poverty and Public Assistance",
+    "authors": [
+      "Nicardo McInnis",
+      "Katherine Michelmore",
+      "Natasha Pilkauskas"
+    ],
+    "year": 2024,
+    "source": "Journal of Human Resources",
+    "doi": "10.3368/jhr.0422-12241r2",
+    "url": "https://doi.org/10.3368/jhr.0422-12241r2",
+    "provider": "crossref",
+    "review_status": "pending",
+    "evidence_level": "metadata_only",
+    "collection": "pilot23",
+    "topics": [
+      "Intergenerational mobility"
+    ],
+    "source_ids": [
+      "journal:journal-of-human-resources"
+    ],
+    "score": 14,
+    "match_type": "none",
+    "kind": "journal_article"
+  },
+  {
+    "id": "crossref:10.1093/qje/qjae031",
+    "title": "The Long-Run Impacts of Public Industrial Investment on Local Development and Economic Mobility: Evidence from World War II",
+    "authors": [
+      "Andrew Garin",
+      "Jonathan Rothbaum"
+    ],
+    "year": 2024,
+    "source": "The Quarterly Journal of Economics",
+    "doi": "10.1093/qje/qjae031",
+    "url": "https://doi.org/10.1093/qje/qjae031",
+    "provider": "crossref",
+    "review_status": "pending",
+    "evidence_level": "metadata_only",
+    "collection": "pilot23",
+    "topics": [
+      "Intergenerational mobility"
+    ],
+    "source_ids": [
+      "journal:quarterly-journal-of-economics"
+    ],
+    "score": 14,
+    "match_type": "none",
+    "kind": "journal_article"
+  },
+  {
+    "id": "crossref:10.1093/qje/qjae036",
+    "title": "War Reparations, Structural Change, and Intergenerational Mobility",
+    "authors": [
+      "Matti Mitrunen"
+    ],
+    "year": 2024,
+    "source": "The Quarterly Journal of Economics",
+    "doi": "10.1093/qje/qjae036",
+    "url": "https://doi.org/10.1093/qje/qjae036",
+    "provider": "crossref",
+    "review_status": "pending",
+    "evidence_level": "metadata_only",
+    "collection": "pilot23",
+    "topics": [
+      "Intergenerational mobility"
+    ],
+    "source_ids": [
+      "journal:quarterly-journal-of-economics"
+    ],
+    "score": 14,
+    "match_type": "none",
+    "kind": "journal_article"
+  },
+  {
+    "id": "crossref:10.3982/ecta19092",
+    "title": "Wealth Inequality in a Low Rate Environment",
+    "authors": [
+      "Matthieu Gomez",
+      "Émilien Gouin-Bonenfant"
+    ],
+    "year": 2024,
+    "source": "Econometrica",
+    "doi": "10.3982/ecta19092",
+    "url": "https://doi.org/10.3982/ecta19092",
+    "provider": "crossref",
+    "review_status": "pending",
+    "evidence_level": "metadata_only",
+    "collection": "pilot23",
+    "topics": [
+      "Wealth and inheritance"
+    ],
+    "source_ids": [
+      "journal:econometrica"
+    ],
+    "score": 14,
+    "match_type": "none",
+    "kind": "journal_article"
   },
   {
     "id": "crossref:10.1920/wp.ifs.2017.1701",
@@ -160,7 +1630,10 @@
     "possible_work_id": null,
     "review_status": "pending",
     "score": 13,
-    "evidence_level": "metadata_only"
+    "evidence_level": "metadata_only",
+    "collection": "historical",
+    "topics": [],
+    "source_ids": []
   },
   {
     "id": "crossref:10.20856/jnicec.3807",
@@ -179,7 +1652,12 @@
     "possible_work_id": null,
     "review_status": "pending",
     "score": 13,
-    "evidence_level": "metadata_only"
+    "evidence_level": "metadata_only",
+    "collection": "historical",
+    "topics": [
+      "Intergenerational mobility"
+    ],
+    "source_ids": []
   },
   {
     "id": "crossref:10.18574/nyu/9781479884575.003.0011",
@@ -194,7 +1672,12 @@
     "possible_work_id": null,
     "review_status": "pending",
     "score": 13,
-    "evidence_level": "metadata_only"
+    "evidence_level": "metadata_only",
+    "collection": "historical",
+    "topics": [
+      "Intergenerational mobility"
+    ],
+    "source_ids": []
   },
   {
     "id": "crossref:10.2298/pan170306025l",
@@ -211,7 +1694,12 @@
     "possible_work_id": null,
     "review_status": "pending",
     "score": 13,
-    "evidence_level": "metadata_only"
+    "evidence_level": "metadata_only",
+    "collection": "historical",
+    "topics": [
+      "Intergenerational mobility"
+    ],
+    "source_ids": []
   },
   {
     "id": "crossref:10.1016/j.econmod.2019.06.017",
@@ -229,7 +1717,12 @@
     "possible_work_id": null,
     "review_status": "pending",
     "score": 13,
-    "evidence_level": "metadata_only"
+    "evidence_level": "metadata_only",
+    "collection": "historical",
+    "topics": [
+      "Wealth and inheritance"
+    ],
+    "source_ids": []
   },
   {
     "id": "crossref:10.1016/j.red.2009.10.006",
@@ -249,7 +1742,12 @@
     "possible_work_id": null,
     "review_status": "pending",
     "score": 13,
-    "evidence_level": "metadata_only"
+    "evidence_level": "metadata_only",
+    "collection": "historical",
+    "topics": [
+      "Wealth and inheritance"
+    ],
+    "source_ids": []
   },
   {
     "id": "crossref:10.1080/00472330903270726",
@@ -266,7 +1764,12 @@
     "possible_work_id": null,
     "review_status": "pending",
     "score": 13,
-    "evidence_level": "metadata_only"
+    "evidence_level": "metadata_only",
+    "collection": "historical",
+    "topics": [
+      "Wealth and inheritance"
+    ],
+    "source_ids": []
   },
   {
     "id": "crossref:10.1016/s0272-7757(00)00038-8",
@@ -283,7 +1786,10 @@
     "possible_work_id": null,
     "review_status": "pending",
     "score": 13,
-    "evidence_level": "metadata_only"
+    "evidence_level": "metadata_only",
+    "collection": "historical",
+    "topics": [],
+    "source_ids": []
   },
   {
     "id": "crossref:10.1016/s0047-2727(00)00097-9",
@@ -303,7 +1809,12 @@
     "possible_work_id": null,
     "review_status": "pending",
     "score": 13,
-    "evidence_level": "metadata_only"
+    "evidence_level": "metadata_only",
+    "collection": "historical",
+    "topics": [
+      "Wealth and inheritance"
+    ],
+    "source_ids": []
   },
   {
     "id": "crossref:10.1016/s0165-1765(00)00293-7",
@@ -321,7 +1832,10 @@
     "possible_work_id": null,
     "review_status": "pending",
     "score": 13,
-    "evidence_level": "metadata_only"
+    "evidence_level": "metadata_only",
+    "collection": "historical",
+    "topics": [],
+    "source_ids": []
   },
   {
     "id": "crossref:10.1920/wp.ifs.2013.1317",
@@ -341,7 +1855,12 @@
     "possible_work_id": null,
     "review_status": "pending",
     "score": 11,
-    "evidence_level": "metadata_only"
+    "evidence_level": "metadata_only",
+    "collection": "historical",
+    "topics": [
+      "Intergenerational mobility"
+    ],
+    "source_ids": []
   },
   {
     "id": "crossref:10.1920/wp.ifs.2010.1016",
@@ -360,7 +1879,12 @@
     "possible_work_id": null,
     "review_status": "pending",
     "score": 11,
-    "evidence_level": "metadata_only"
+    "evidence_level": "metadata_only",
+    "collection": "historical",
+    "topics": [
+      "Intergenerational mobility"
+    ],
+    "source_ids": []
   },
   {
     "id": "crossref:10.1920/wp.ifs.2017.w1725",
@@ -380,7 +1904,10 @@
     "possible_work_id": null,
     "review_status": "pending",
     "score": 11,
-    "evidence_level": "metadata_only"
+    "evidence_level": "metadata_only",
+    "collection": "historical",
+    "topics": [],
+    "source_ids": []
   },
   {
     "id": "crossref:10.1920/wp.ifs.2017.w1711",
@@ -401,7 +1928,12 @@
     "possible_work_id": null,
     "review_status": "pending",
     "score": 11,
-    "evidence_level": "metadata_only"
+    "evidence_level": "metadata_only",
+    "collection": "historical",
+    "topics": [
+      "Intergenerational mobility"
+    ],
+    "source_ids": []
   },
   {
     "id": "crossref:10.1920/wp.ifs.1995.9520",
@@ -420,7 +1952,12 @@
     "possible_work_id": null,
     "review_status": "pending",
     "score": 11,
-    "evidence_level": "metadata_only"
+    "evidence_level": "metadata_only",
+    "collection": "historical",
+    "topics": [
+      "Intergenerational mobility"
+    ],
+    "source_ids": []
   },
   {
     "id": "crossref:10.1016/j.jebo.2019.03.004",
@@ -439,7 +1976,10 @@
     "possible_work_id": null,
     "review_status": "pending",
     "score": 11,
-    "evidence_level": "metadata_only"
+    "evidence_level": "metadata_only",
+    "collection": "historical",
+    "topics": [],
+    "source_ids": []
   },
   {
     "id": "crossref:10.1162/rest_a_00824",
@@ -457,7 +1997,12 @@
     "possible_work_id": null,
     "review_status": "pending",
     "score": 11,
-    "evidence_level": "metadata_only"
+    "evidence_level": "metadata_only",
+    "collection": "historical",
+    "topics": [
+      "Intergenerational mobility"
+    ],
+    "source_ids": []
   },
   {
     "id": "crossref:10.1016/j.frl.2019.04.036",
@@ -475,7 +2020,10 @@
     "possible_work_id": null,
     "review_status": "pending",
     "score": 11,
-    "evidence_level": "metadata_only"
+    "evidence_level": "metadata_only",
+    "collection": "historical",
+    "topics": [],
+    "source_ids": []
   },
   {
     "id": "crossref:10.1353/jda.0.0052",
@@ -492,7 +2040,10 @@
     "possible_work_id": null,
     "review_status": "pending",
     "score": 11,
-    "evidence_level": "metadata_only"
+    "evidence_level": "metadata_only",
+    "collection": "historical",
+    "topics": [],
+    "source_ids": []
   },
   {
     "id": "crossref:10.1016/j.econedurev.2009.04.005",
@@ -510,7 +2061,13 @@
     "possible_work_id": null,
     "review_status": "pending",
     "score": 11,
-    "evidence_level": "metadata_only"
+    "evidence_level": "metadata_only",
+    "collection": "historical",
+    "topics": [
+      "Intergenerational mobility",
+      "Family structure"
+    ],
+    "source_ids": []
   },
   {
     "id": "crossref:10.1016/j.econedurev.2009.02.006",
@@ -529,7 +2086,12 @@
     "possible_work_id": null,
     "review_status": "pending",
     "score": 11,
-    "evidence_level": "metadata_only"
+    "evidence_level": "metadata_only",
+    "collection": "historical",
+    "topics": [
+      "Intergenerational mobility"
+    ],
+    "source_ids": []
   },
   {
     "id": "crossref:10.1111/j.1536-7150.2010.00725.x",
@@ -546,7 +2108,12 @@
     "possible_work_id": null,
     "review_status": "pending",
     "score": 11,
-    "evidence_level": "metadata_only"
+    "evidence_level": "metadata_only",
+    "collection": "historical",
+    "topics": [
+      "Intergenerational mobility"
+    ],
+    "source_ids": []
   },
   {
     "id": "crossref:10.1016/j.jaging.2008.03.003",
@@ -563,7 +2130,10 @@
     "possible_work_id": null,
     "review_status": "pending",
     "score": 11,
-    "evidence_level": "metadata_only"
+    "evidence_level": "metadata_only",
+    "collection": "historical",
+    "topics": [],
+    "source_ids": []
   },
   {
     "id": "crossref:10.1016/s0167-2681(01)00166-4",
@@ -581,7 +2151,12 @@
     "possible_work_id": null,
     "review_status": "pending",
     "score": 11,
-    "evidence_level": "metadata_only"
+    "evidence_level": "metadata_only",
+    "collection": "historical",
+    "topics": [
+      "Wealth and inheritance"
+    ],
+    "source_ids": []
   },
   {
     "id": "crossref:10.1016/s0047-2727(00)00101-8",
@@ -599,7 +2174,12 @@
     "possible_work_id": null,
     "review_status": "pending",
     "score": 11,
-    "evidence_level": "metadata_only"
+    "evidence_level": "metadata_only",
+    "collection": "historical",
+    "topics": [
+      "Wealth and inheritance"
+    ],
+    "source_ids": []
   },
   {
     "id": "crossref:10.1016/s0165-1765(01)00374-3",
@@ -617,7 +2197,10 @@
     "possible_work_id": null,
     "review_status": "pending",
     "score": 11,
-    "evidence_level": "metadata_only"
+    "evidence_level": "metadata_only",
+    "collection": "historical",
+    "topics": [],
+    "source_ids": []
   },
   {
     "id": "crossref:10.1016/s0165-1765(01)00357-3",
@@ -636,7 +2219,10 @@
     "possible_work_id": null,
     "review_status": "pending",
     "score": 11,
-    "evidence_level": "metadata_only"
+    "evidence_level": "metadata_only",
+    "collection": "historical",
+    "topics": [],
+    "source_ids": []
   },
   {
     "id": "crossref:10.1016/j.gaceta.2018.07.014",
@@ -658,7 +2244,10 @@
     "possible_work_id": null,
     "review_status": "pending",
     "score": 10,
-    "evidence_level": "metadata_only"
+    "evidence_level": "metadata_only",
+    "collection": "historical",
+    "topics": [],
+    "source_ids": []
   },
   {
     "id": "crossref:10.1016/j.labeco.2009.06.002",
@@ -675,7 +2264,10 @@
     "possible_work_id": null,
     "review_status": "pending",
     "score": 10,
-    "evidence_level": "metadata_only"
+    "evidence_level": "metadata_only",
+    "collection": "historical",
+    "topics": [],
+    "source_ids": []
   },
   {
     "id": "crossref:10.1016/s0272-7757(99)00029-1",
@@ -693,7 +2285,12 @@
     "possible_work_id": null,
     "review_status": "pending",
     "score": 10,
-    "evidence_level": "metadata_only"
+    "evidence_level": "metadata_only",
+    "collection": "historical",
+    "topics": [
+      "Intergenerational mobility"
+    ],
+    "source_ids": []
   },
   {
     "id": "crossref:10.1920/wp.ifs.2013.1312",
@@ -714,7 +2311,12 @@
     "possible_work_id": null,
     "review_status": "pending",
     "score": 9,
-    "evidence_level": "metadata_only"
+    "evidence_level": "metadata_only",
+    "collection": "historical",
+    "topics": [
+      "Intergenerational mobility"
+    ],
+    "source_ids": []
   },
   {
     "id": "crossref:10.1016/j.jrurstud.2019.01.010",
@@ -734,7 +2336,10 @@
     "possible_work_id": null,
     "review_status": "pending",
     "score": 9,
-    "evidence_level": "metadata_only"
+    "evidence_level": "metadata_only",
+    "collection": "historical",
+    "topics": [],
+    "source_ids": []
   },
   {
     "id": "crossref:10.2139/ssrn.3506725",
@@ -753,7 +2358,12 @@
     "possible_work_id": null,
     "review_status": "pending",
     "score": 9,
-    "evidence_level": "metadata_only"
+    "evidence_level": "metadata_only",
+    "collection": "historical",
+    "topics": [
+      "Wealth and inheritance"
+    ],
+    "source_ids": []
   },
   {
     "id": "crossref:10.1016/j.soscij.2019.03.005",
@@ -770,7 +2380,10 @@
     "possible_work_id": null,
     "review_status": "pending",
     "score": 9,
-    "evidence_level": "metadata_only"
+    "evidence_level": "metadata_only",
+    "collection": "historical",
+    "topics": [],
+    "source_ids": []
   },
   {
     "id": "crossref:10.3386/w26621",
@@ -790,7 +2403,12 @@
     "possible_work_id": null,
     "review_status": "pending",
     "score": 9,
-    "evidence_level": "metadata_only"
+    "evidence_level": "metadata_only",
+    "collection": "historical",
+    "topics": [
+      "Wealth and inheritance"
+    ],
+    "source_ids": []
   },
   {
     "id": "crossref:10.1016/s0378-4371(01)00113-3",
@@ -808,7 +2426,12 @@
     "possible_work_id": null,
     "review_status": "pending",
     "score": 9,
-    "evidence_level": "metadata_only"
+    "evidence_level": "metadata_only",
+    "collection": "historical",
+    "topics": [
+      "Wealth and inheritance"
+    ],
+    "source_ids": []
   },
   {
     "id": "crossref:10.1016/s0140-6736(01)05407-1",
@@ -830,7 +2453,10 @@
     "possible_work_id": null,
     "review_status": "pending",
     "score": 9,
-    "evidence_level": "metadata_only"
+    "evidence_level": "metadata_only",
+    "collection": "historical",
+    "topics": [],
+    "source_ids": []
   },
   {
     "id": "crossref:10.1920/wp.ifs.2014.1401",
@@ -849,7 +2475,10 @@
     "possible_work_id": null,
     "review_status": "pending",
     "score": 8,
-    "evidence_level": "metadata_only"
+    "evidence_level": "metadata_only",
+    "collection": "historical",
+    "topics": [],
+    "source_ids": []
   },
   {
     "id": "crossref:10.1111/dpr.12457",
@@ -869,7 +2498,12 @@
     "possible_work_id": null,
     "review_status": "pending",
     "score": 8,
-    "evidence_level": "metadata_only"
+    "evidence_level": "metadata_only",
+    "collection": "historical",
+    "topics": [
+      "Wealth and inheritance"
+    ],
+    "source_ids": []
   },
   {
     "id": "crossref:10.1016/j.ecresq.2018.04.008",
@@ -887,7 +2521,10 @@
     "possible_work_id": null,
     "review_status": "pending",
     "score": 8,
-    "evidence_level": "metadata_only"
+    "evidence_level": "metadata_only",
+    "collection": "historical",
+    "topics": [],
+    "source_ids": []
   },
   {
     "id": "crossref:10.1111/j.1465-7295.2008.00208.x",
@@ -904,7 +2541,12 @@
     "possible_work_id": null,
     "review_status": "pending",
     "score": 8,
-    "evidence_level": "metadata_only"
+    "evidence_level": "metadata_only",
+    "collection": "historical",
+    "topics": [
+      "Wealth and inheritance"
+    ],
+    "source_ids": []
   },
   {
     "id": "crossref:10.1016/j.jdeveco.2009.01.006",
@@ -923,7 +2565,10 @@
     "possible_work_id": null,
     "review_status": "pending",
     "score": 8,
-    "evidence_level": "metadata_only"
+    "evidence_level": "metadata_only",
+    "collection": "historical",
+    "topics": [],
+    "source_ids": []
   },
   {
     "id": "crossref:10.1080/01411920903083111",
@@ -941,7 +2586,10 @@
     "possible_work_id": null,
     "review_status": "pending",
     "score": 8,
-    "evidence_level": "metadata_only"
+    "evidence_level": "metadata_only",
+    "collection": "historical",
+    "topics": [],
+    "source_ids": []
   },
   {
     "id": "crossref:10.1016/s0047-2727(00)00088-8",
@@ -959,6 +2607,11 @@
     "possible_work_id": null,
     "review_status": "pending",
     "score": 8,
-    "evidence_level": "metadata_only"
+    "evidence_level": "metadata_only",
+    "collection": "historical",
+    "topics": [
+      "Wealth and inheritance"
+    ],
+    "source_ids": []
   }
 ]

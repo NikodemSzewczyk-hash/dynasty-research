@@ -1,0 +1,86 @@
+name: Build public discovery pilot dataset (review branch)
+on:
+  push:
+    branches: [feat/discovery-pilot-live]
+    paths:
+      - 'kinship-research/scripts/publish_pilot_discovery.py'
+      - 'kinship-research/tests/test_discovery_pilot.py'
+      - 'kinship-research/layouts/discovery/section.html'
+      - 'kinship-research/layouts/sources/page.html'
+      - 'kinship-research/static/js/discovery.js'
+      - '.github/workflows/discovery-pilot-publish.yml'
+  workflow_dispatch:
+concurrency:
+  group: discovery-pilot-publish-branch
+  cancel-in-progress: true
+permissions:
+  contents: write
+jobs:
+  collect-and-preview:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    defaults:
+      run:
+        working-directory: kinship-research
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Offline tests
+        run: python -m unittest discover -s tests -v
+      - name: Collect bounded 2024–2026 metadata from all 23 verified sources
+        env:
+          OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
+          DYNASTY_CONTACT_EMAIL: ${{ vars.DYNASTY_CONTACT_EMAIL }}
+        run: |
+          python scripts/pilot23_ingest.py --mode weekly --from-date 2024-01-01 \
+            --max-per-source 80 \
+            --snapshot registry/pilot23-candidates.jsonl \
+            --state registry/pilot23-state.json \
+            --report registry/pilot23-report.json \
+            --db /tmp/pilot23-publish.sqlite
+      - name: Generate title-screened public preview and verified-source catalog
+        run: |
+          python scripts/publish_pilot_discovery.py
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          r=json.loads(Path("data/discovery-pilot-report.json").read_text())
+          s=json.loads(Path("registry/pilot23-report.json").read_text())
+          assert s["source_count"]==23 and s["sources_succeeded"]==23 and not s["errors"],s
+          assert r["pilot_displayed"]>=10,r
+          assert r["curated_displayed"]==12,r
+          assert r["total_displayed"]>=70,r
+          assert r["pilot_source_count"]==23,r
+          print("Public preview:",r["total_displayed"],"records,",r["pilot_displayed"],"title-screened pilot entries")
+          PY
+      - uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: '0.159.2'
+      - name: Build full Hugo website
+        run: hugo --minify
+      - name: Preserve reviewable data in feature branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add registry/pilot23-candidates.jsonl registry/pilot23-state.json \
+            registry/pilot23-report.json static/data/discovery-index.json \
+            data/source-catalog.json data/discovery-pilot-report.json
+          if ! git diff --cached --quiet; then
+            git commit -m "data: bounded 23-source discovery preview for website review"
+            git fetch origin feat/discovery-pilot-live
+            git rebase origin/feat/discovery-pilot-live
+            git push origin HEAD:feat/discovery-pilot-live
+          fi
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: discovery-pilot-preview
+          path: |
+            kinship-research/registry/pilot23-report.json
+            kinship-research/data/discovery-pilot-report.json
+            kinship-research/static/data/discovery-index.json
+          retention-days: 14

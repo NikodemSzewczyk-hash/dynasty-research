@@ -1,0 +1,1166 @@
+{
+  "journals": [
+    {
+      "id": "journal:aej-applied-economics",
+      "name": "AEJ: Applied Economics",
+      "tier": "A",
+      "area": "Applied microeconomics",
+      "active": true,
+      "provider": "crossref_journal",
+      "evidence_url": "https://api.crossref.org/journals/1945-7782"
+    },
+    {
+      "id": "journal:aej-economic-policy",
+      "name": "AEJ: Economic Policy",
+      "tier": "A",
+      "area": "Applied public policy",
+      "active": true,
+      "provider": "crossref_journal",
+      "evidence_url": "https://api.crossref.org/journals/1945-7731"
+    },
+    {
+      "id": "journal:american-economic-review",
+      "name": "American Economic Review",
+      "tier": "A",
+      "area": "General economics",
+      "active": true,
+      "provider": "crossref_journal",
+      "evidence_url": "https://api.crossref.org/journals/0002-8282"
+    },
+    {
+      "id": "journal:american-economic-review-insights",
+      "name": "American Economic Review: Insights",
+      "tier": "A",
+      "area": "General economics",
+      "active": false,
+      "provider": "",
+      "evidence_url": null
+    },
+    {
+      "id": "journal:demography",
+      "name": "Demography",
+      "tier": "A",
+      "area": "Population and families",
+      "active": false,
+      "provider": "",
+      "evidence_url": null
+    },
+    {
+      "id": "journal:econometrica",
+      "name": "Econometrica",
+      "tier": "A",
+      "area": "General economics",
+      "active": true,
+      "provider": "crossref_journal",
+      "evidence_url": "https://api.crossref.org/journals/0012-9682"
+    },
+    {
+      "id": "journal:economic-journal",
+      "name": "Economic Journal",
+      "tier": "A",
+      "area": "General economics",
+      "active": false,
+      "provider": "",
+      "evidence_url": null
+    },
+    {
+      "id": "journal:journal-of-development-economics",
+      "name": "Journal of Development Economics",
+      "tier": "A",
+      "area": "Families and development",
+      "active": false,
+      "provider": "",
+      "evidence_url": null
+    },
+    {
+      "id": "journal:journal-of-economic-literature",
+      "name": "Journal of Economic Literature",
+      "tier": "A",
+      "area": "Synthesis and reviews",
+      "active": false,
+      "provider": "",
+      "evidence_url": null
+    },
+    {
+      "id": "journal:journal-of-economic-perspectives",
+      "name": "Journal of Economic Perspectives",
+      "tier": "A",
+      "area": "Synthesis and reviews",
+      "active": false,
+      "provider": "",
+      "evidence_url": null
+    },
+    {
+      "id": "journal:journal-of-human-resources",
+      "name": "Journal of Human Resources",
+      "tier": "A",
+      "area": "Human capital and mobility",
+      "active": true,
+      "provider": "crossref_journal",
+      "evidence_url": "https://api.crossref.org/journals/0022-166X"
+    },
+    {
+      "id": "journal:journal-of-labor-economics",
+      "name": "Journal of Labor Economics",
+      "tier": "A",
+      "area": "Labor and family",
+      "active": true,
+      "provider": "crossref_journal",
+      "evidence_url": "https://api.crossref.org/journals/0734-306X"
+    },
+    {
+      "id": "journal:journal-of-political-economy",
+      "name": "Journal of Political Economy",
+      "tier": "A",
+      "area": "General economics",
+      "active": true,
+      "provider": "crossref_journal",
+      "evidence_url": "https://api.crossref.org/journals/0022-3808"
+    },
+    {
+      "id": "journal:journal-of-population-economics",
+      "name": "Journal of Population Economics",
+      "tier": "A",
+      "area": "Family and demography",
+      "active": false,
+      "provider": "",
+      "evidence_url": null
+    },
+    {
+      "id": "journal:journal-of-public-economics",
+      "name": "Journal of Public Economics",
+      "tier": "A",
+      "area": "Transfers and taxation",
+      "active": false,
+      "provider": "",
+      "evidence_url": null
+    },
+    {
+      "id": "journal:journal-of-the-european-economic-association",
+      "name": "Journal of the European Economic Association",
+      "tier": "A",
+      "area": "General economics",
+      "active": false,
+      "provider": "",
+      "evidence_url": null
+    },
+    {
+      "id": "journal:quarterly-journal-of-economics",
+      "name": "Quarterly Journal of Economics",
+      "tier": "A",
+      "area": "General economics",
+      "active": true,
+      "provider": "crossref_journal",
+      "evidence_url": "https://api.crossref.org/journals/0033-5533"
+    },
+    {
+      "id": "journal:review-of-economic-studies",
+      "name": "Review of Economic Studies",
+      "tier": "A",
+      "area": "General economics",
+      "active": true,
+      "provider": "crossref_journal",
+      "evidence_url": "https://api.crossref.org/journals/0034-6527"
+    },
+    {
+      "id": "journal:review-of-economics-and-statistics",
+      "name": "Review of Economics and Statistics",
+      "tier": "A",
+      "area": "Applied economics",
+      "active": true,
+      "provider": "crossref_journal",
+      "evidence_url": "https://api.crossref.org/journals/0034-6535"
+    },
+    {
+      "id": "journal:american-journal-of-sociology",
+      "name": "American Journal of Sociology",
+      "tier": "B",
+      "area": "Social stratification",
+      "active": false,
+      "provider": "",
+      "evidence_url": null
+    },
+    {
+      "id": "journal:american-sociological-review",
+      "name": "American Sociological Review",
+      "tier": "B",
+      "area": "Social stratification",
+      "active": false,
+      "provider": "",
+      "evidence_url": null
+    },
+    {
+      "id": "journal:economic-policy",
+      "name": "Economic Policy",
+      "tier": "B",
+      "area": "Policy",
+      "active": false,
+      "provider": "",
+      "evidence_url": null
+    },
+    {
+      "id": "journal:economics-of-education-review",
+      "name": "Economics of Education Review",
+      "tier": "B",
+      "area": "Human capital",
+      "active": false,
+      "provider": "",
+      "evidence_url": null
+    },
+    {
+      "id": "journal:european-economic-review",
+      "name": "European Economic Review",
+      "tier": "B",
+      "area": "General economics",
+      "active": false,
+      "provider": "",
+      "evidence_url": null
+    },
+    {
+      "id": "journal:european-sociological-review",
+      "name": "European Sociological Review",
+      "tier": "B",
+      "area": "Inequality and family",
+      "active": false,
+      "provider": "",
+      "evidence_url": null
+    },
+    {
+      "id": "journal:fiscal-studies",
+      "name": "Fiscal Studies",
+      "tier": "B",
+      "area": "Household/public policy",
+      "active": false,
+      "provider": "",
+      "evidence_url": null
+    },
+    {
+      "id": "journal:international-tax-and-public-finance",
+      "name": "International Tax and Public Finance",
+      "tier": "B",
+      "area": "Taxation",
+      "active": false,
+      "provider": "",
+      "evidence_url": null
+    },
+    {
+      "id": "journal:journal-of-economic-behavior-and-organization",
+      "name": "Journal of Economic Behavior & Organization",
+      "tier": "B",
+      "area": "Behavior and households",
+      "active": false,
+      "provider": "",
+      "evidence_url": null
+    },
+    {
+      "id": "journal:journal-of-economic-geography",
+      "name": "Journal of Economic Geography",
+      "tier": "B",
+      "area": "Place and mobility",
+      "active": false,
+      "provider": "",
+      "evidence_url": null
+    },
+    {
+      "id": "journal:journal-of-economic-inequality",
+      "name": "Journal of Economic Inequality",
+      "tier": "B",
+      "area": "Wealth and mobility",
+      "active": false,
+      "provider": "",
+      "evidence_url": null
+    },
+    {
+      "id": "journal:journal-of-finance",
+      "name": "Journal of Finance",
+      "tier": "B",
+      "area": "Household finance",
+      "active": false,
+      "provider": "",
+      "evidence_url": null
+    },
+    {
+      "id": "journal:journal-of-financial-economics",
+      "name": "Journal of Financial Economics",
+      "tier": "B",
+      "area": "Household finance",
+      "active": false,
+      "provider": "",
+      "evidence_url": null
+    },
+    {
+      "id": "journal:journal-of-health-economics",
+      "name": "Journal of Health Economics",
+      "tier": "B",
+      "area": "Health and family",
+      "active": false,
+      "provider": "",
+      "evidence_url": null
+    },
+    {
+      "id": "journal:journal-of-marriage-and-family",
+      "name": "Journal of Marriage and Family",
+      "tier": "B",
+      "area": "Family sociology",
+      "active": false,
+      "provider": "",
+      "evidence_url": null
+    },
+    {
+      "id": "journal:journal-of-policy-analysis-and-management",
+      "name": "Journal of Policy Analysis and Management",
+      "tier": "B",
+      "area": "Family and social policy",
+      "active": false,
+      "provider": "",
+      "evidence_url": null
+    },
+    {
+      "id": "journal:journal-of-urban-economics",
+      "name": "Journal of Urban Economics",
+      "tier": "B",
+      "area": "Neighborhoods and mobility",
+      "active": false,
+      "provider": "",
+      "evidence_url": null
+    },
+    {
+      "id": "journal:labour-economics",
+      "name": "Labour Economics",
+      "tier": "B",
+      "area": "Labor economics",
+      "active": false,
+      "provider": "",
+      "evidence_url": null
+    },
+    {
+      "id": "journal:national-tax-journal",
+      "name": "National Tax Journal",
+      "tier": "B",
+      "area": "Taxation and transfers",
+      "active": false,
+      "provider": "",
+      "evidence_url": null
+    },
+    {
+      "id": "journal:nature-human-behaviour",
+      "name": "Nature Human Behaviour",
+      "tier": "B",
+      "area": "Interdisciplinary",
+      "active": false,
+      "provider": "",
+      "evidence_url": null
+    },
+    {
+      "id": "journal:population-and-development-review",
+      "name": "Population and Development Review",
+      "tier": "B",
+      "area": "Demography",
+      "active": false,
+      "provider": "",
+      "evidence_url": null
+    },
+    {
+      "id": "journal:review-of-economics-of-the-household",
+      "name": "Review of Economics of the Household",
+      "tier": "B",
+      "area": "Household decisions",
+      "active": false,
+      "provider": "",
+      "evidence_url": null
+    },
+    {
+      "id": "journal:review-of-financial-studies",
+      "name": "Review of Financial Studies",
+      "tier": "B",
+      "area": "Household finance",
+      "active": false,
+      "provider": "",
+      "evidence_url": null
+    },
+    {
+      "id": "journal:social-forces",
+      "name": "Social Forces",
+      "tier": "B",
+      "area": "Social stratification",
+      "active": false,
+      "provider": "",
+      "evidence_url": null
+    },
+    {
+      "id": "journal:experimental-economics",
+      "name": "Experimental Economics",
+      "tier": "C",
+      "area": "Transfers and preferences",
+      "active": false,
+      "provider": "",
+      "evidence_url": null
+    },
+    {
+      "id": "journal:games-and-economic-behavior",
+      "name": "Games and Economic Behavior",
+      "tier": "C",
+      "area": "Bargaining theory",
+      "active": false,
+      "provider": "",
+      "evidence_url": null
+    },
+    {
+      "id": "journal:journal-of-econometrics",
+      "name": "Journal of Econometrics",
+      "tier": "C",
+      "area": "Causal methods",
+      "active": false,
+      "provider": "",
+      "evidence_url": null
+    },
+    {
+      "id": "journal:journal-of-economic-history",
+      "name": "Journal of Economic History",
+      "tier": "C",
+      "area": "Historical mobility",
+      "active": false,
+      "provider": "",
+      "evidence_url": null
+    },
+    {
+      "id": "journal:journal-of-economic-theory",
+      "name": "Journal of Economic Theory",
+      "tier": "C",
+      "area": "Family and inequality theory",
+      "active": false,
+      "provider": "",
+      "evidence_url": null
+    },
+    {
+      "id": "journal:nature",
+      "name": "Nature",
+      "tier": "C",
+      "area": "Selective cross-disciplinary",
+      "active": false,
+      "provider": "",
+      "evidence_url": null
+    },
+    {
+      "id": "journal:pnas",
+      "name": "PNAS",
+      "tier": "C",
+      "area": "Selective cross-disciplinary",
+      "active": false,
+      "provider": "",
+      "evidence_url": null
+    },
+    {
+      "id": "journal:quantitative-economics",
+      "name": "Quantitative Economics",
+      "tier": "C",
+      "area": "Causal methods",
+      "active": false,
+      "provider": "",
+      "evidence_url": null
+    },
+    {
+      "id": "journal:scandinavian-journal-of-economics",
+      "name": "Scandinavian Journal of Economics",
+      "tier": "C",
+      "area": "Nordic economics",
+      "active": false,
+      "provider": "",
+      "evidence_url": null
+    },
+    {
+      "id": "journal:science",
+      "name": "Science",
+      "tier": "C",
+      "area": "Selective cross-disciplinary",
+      "active": false,
+      "provider": "",
+      "evidence_url": null
+    }
+  ],
+  "repositories": [
+    {
+      "id": "working_paper_series:cepr-discussion-papers",
+      "name": "CEPR Discussion Papers",
+      "tier": "A",
+      "area": "European/international economics",
+      "active": true,
+      "provider": "repec_series_listing",
+      "evidence_url": "https://ideas.repec.org/s/cpr/ceprdp.html"
+    },
+    {
+      "id": "working_paper_series:hceo-university-of-chicago",
+      "name": "HCEO / University of Chicago",
+      "tier": "A",
+      "area": "Human capital and inequality",
+      "active": false,
+      "provider": "",
+      "evidence_url": null
+    },
+    {
+      "id": "working_paper_series:ifau-sweden",
+      "name": "IFAU Sweden",
+      "tier": "A",
+      "area": "Register-based applied micro",
+      "active": false,
+      "provider": "",
+      "evidence_url": null
+    },
+    {
+      "id": "working_paper_series:ifs-working-papers",
+      "name": "IFS Working Papers",
+      "tier": "A",
+      "area": "Public, families, wealth",
+      "active": false,
+      "provider": "",
+      "evidence_url": null
+    },
+    {
+      "id": "working_paper_series:iza-discussion-papers",
+      "name": "IZA Discussion Papers",
+      "tier": "A",
+      "area": "Labor and family",
+      "active": true,
+      "provider": "repec_series_listing",
+      "evidence_url": "https://ideas.repec.org/s/iza/izadps.html"
+    },
+    {
+      "id": "working_paper_series:lse-centre-for-economic-performance",
+      "name": "LSE Centre for Economic Performance",
+      "tier": "A",
+      "area": "Labor and mobility",
+      "active": false,
+      "provider": "",
+      "evidence_url": null
+    },
+    {
+      "id": "working_paper_series:nber-working-papers",
+      "name": "NBER Working Papers",
+      "tier": "A",
+      "area": "General economics",
+      "active": true,
+      "provider": "repec_series_listing",
+      "evidence_url": "https://ideas.repec.org/s/nbr/nberwo.html"
+    },
+    {
+      "id": "working_paper_series:nhh-economics",
+      "name": "NHH Economics",
+      "tier": "A",
+      "area": "Norwegian applied micro",
+      "active": false,
+      "provider": "",
+      "evidence_url": null
+    },
+    {
+      "id": "working_paper_series:nhh-fair-choice-lab",
+      "name": "NHH FAIR / Choice Lab",
+      "tier": "A",
+      "area": "Family, inequality, behavioral",
+      "active": false,
+      "provider": "",
+      "evidence_url": null
+    },
+    {
+      "id": "working_paper_series:princeton-industrial-relations-section",
+      "name": "Princeton Industrial Relations Section",
+      "tier": "A",
+      "area": "Labor economics",
+      "active": false,
+      "provider": "",
+      "evidence_url": null
+    },
+    {
+      "id": "working_paper_series:sofi-stockholm-university",
+      "name": "SOFI Stockholm University",
+      "tier": "A",
+      "area": "Mobility and family",
+      "active": false,
+      "provider": "",
+      "evidence_url": null
+    },
+    {
+      "id": "working_paper_series:cemfi-working-papers",
+      "name": "CEMFI Working Papers",
+      "tier": "B",
+      "area": "Applied micro",
+      "active": false,
+      "provider": "",
+      "evidence_url": null
+    },
+    {
+      "id": "working_paper_series:cesifo-working-papers",
+      "name": "CESifo Working Papers",
+      "tier": "B",
+      "area": "International economics",
+      "active": false,
+      "provider": "",
+      "evidence_url": null
+    },
+    {
+      "id": "working_paper_series:chicago-becker-friedman-institute",
+      "name": "Chicago Becker Friedman Institute",
+      "tier": "B",
+      "area": "Economics research",
+      "active": false,
+      "provider": "",
+      "evidence_url": null
+    },
+    {
+      "id": "working_paper_series:eui-economics-working-papers",
+      "name": "EUI Economics Working Papers",
+      "tier": "B",
+      "area": "European economics",
+      "active": false,
+      "provider": "",
+      "evidence_url": null
+    },
+    {
+      "id": "working_paper_series:frisch-centre",
+      "name": "Frisch Centre",
+      "tier": "B",
+      "area": "Norwegian economics",
+      "active": false,
+      "provider": "",
+      "evidence_url": null
+    },
+    {
+      "id": "working_paper_series:iies-stockholm",
+      "name": "IIES Stockholm",
+      "tier": "B",
+      "area": "Economics",
+      "active": false,
+      "provider": "",
+      "evidence_url": null
+    },
+    {
+      "id": "working_paper_series:iser-essex-working-papers",
+      "name": "ISER Essex Working Papers",
+      "tier": "B",
+      "area": "Household dynamics",
+      "active": false,
+      "provider": "",
+      "evidence_url": null
+    },
+    {
+      "id": "working_paper_series:luxembourg-income-study",
+      "name": "Luxembourg Income Study",
+      "tier": "B",
+      "area": "Income and wealth",
+      "active": false,
+      "provider": "",
+      "evidence_url": null
+    },
+    {
+      "id": "working_paper_series:opportunity-insights",
+      "name": "Opportunity Insights",
+      "tier": "B",
+      "area": "Mobility, inequality",
+      "active": false,
+      "provider": "",
+      "evidence_url": null
+    },
+    {
+      "id": "working_paper_series:paris-school-of-economics",
+      "name": "Paris School of Economics",
+      "tier": "B",
+      "area": "Wealth and inequality",
+      "active": false,
+      "provider": "",
+      "evidence_url": null
+    },
+    {
+      "id": "working_paper_series:rockwool-foundation",
+      "name": "ROCKWOOL Foundation",
+      "tier": "B",
+      "area": "Nordic social and labor",
+      "active": false,
+      "provider": "",
+      "evidence_url": null
+    },
+    {
+      "id": "working_paper_series:statistics-norway-discussion-papers",
+      "name": "Statistics Norway Discussion Papers",
+      "tier": "B",
+      "area": "Administrative data",
+      "active": false,
+      "provider": "",
+      "evidence_url": null
+    },
+    {
+      "id": "working_paper_series:uppsala-ucls",
+      "name": "Uppsala UCLS",
+      "tier": "B",
+      "area": "Longitudinal research",
+      "active": false,
+      "provider": "",
+      "evidence_url": null
+    },
+    {
+      "id": "working_paper_series:vive-denmark",
+      "name": "VIVE Denmark",
+      "tier": "B",
+      "area": "Welfare and families",
+      "active": false,
+      "provider": "",
+      "evidence_url": null
+    },
+    {
+      "id": "working_paper_series:world-bank-policy-research",
+      "name": "World Bank Policy Research",
+      "tier": "B",
+      "area": "Families and development",
+      "active": false,
+      "provider": "",
+      "evidence_url": null
+    },
+    {
+      "id": "working_paper_series:zew-discussion-papers",
+      "name": "ZEW Discussion Papers",
+      "tier": "B",
+      "area": "Labor and public",
+      "active": false,
+      "provider": "",
+      "evidence_url": null
+    },
+    {
+      "id": "working_paper_series:federal-reserve-working-papers",
+      "name": "Federal Reserve working papers",
+      "tier": "C",
+      "area": "Household debt and wealth",
+      "active": false,
+      "provider": "",
+      "evidence_url": null
+    },
+    {
+      "id": "working_paper_series:max-planck-demographic-research",
+      "name": "Max Planck demographic research",
+      "tier": "C",
+      "area": "Family demography",
+      "active": false,
+      "provider": "",
+      "evidence_url": null
+    },
+    {
+      "id": "working_paper_series:openalex",
+      "name": "OpenAlex",
+      "tier": "C",
+      "area": "Metadata discovery",
+      "active": false,
+      "provider": "",
+      "evidence_url": null
+    },
+    {
+      "id": "working_paper_series:repec-ideas",
+      "name": "RePEc / IDEAS",
+      "tier": "C",
+      "area": "Metadata discovery",
+      "active": false,
+      "provider": "",
+      "evidence_url": null
+    },
+    {
+      "id": "working_paper_series:ssrn-economics",
+      "name": "SSRN Economics",
+      "tier": "C",
+      "area": "Early discovery",
+      "active": false,
+      "provider": "",
+      "evidence_url": null
+    },
+    {
+      "id": "working_paper_series:ucl-cream",
+      "name": "UCL CReAM",
+      "tier": "C",
+      "area": "Families and migration",
+      "active": false,
+      "provider": "",
+      "evidence_url": null
+    }
+  ],
+  "researchers": [
+    {
+      "id": "researcher:alessandra-voena",
+      "name": "Alessandra Voena",
+      "tier": "A",
+      "area": "Marriage, divorce, bargaining",
+      "active": true,
+      "provider": "openalex_author",
+      "evidence_url": "https://api.openalex.org/authors/A5045271714"
+    },
+    {
+      "id": "researcher:aline-butikofer",
+      "name": "Aline Bütikofer",
+      "tier": "A",
+      "area": "Family and long-run outcomes",
+      "active": true,
+      "provider": "openalex_author",
+      "evidence_url": "https://api.openalex.org/authors/A5038291213"
+    },
+    {
+      "id": "researcher:anne-ardila-bren-e",
+      "name": "Anne Ardila Brenøe",
+      "tier": "A",
+      "area": "Families, gender, education",
+      "active": false,
+      "provider": "",
+      "evidence_url": null
+    },
+    {
+      "id": "researcher:corina-mommaerts",
+      "name": "Corina Mommaerts",
+      "tier": "A",
+      "area": "Family insurance and transfers",
+      "active": true,
+      "provider": "openalex_author",
+      "evidence_url": "https://api.openalex.org/authors/A5020232464"
+    },
+    {
+      "id": "researcher:daniel-waldenstrom",
+      "name": "Daniel Waldenström",
+      "tier": "A",
+      "area": "Wealth and inheritance",
+      "active": false,
+      "provider": "",
+      "evidence_url": null
+    },
+    {
+      "id": "researcher:jan-stuhler",
+      "name": "Jan Stuhler",
+      "tier": "A",
+      "area": "Multigenerational mobility",
+      "active": true,
+      "provider": "openalex_author",
+      "evidence_url": "https://api.openalex.org/authors/A5071390181"
+    },
+    {
+      "id": "researcher:katrine-v-l-ken",
+      "name": "Katrine V. Løken",
+      "tier": "A",
+      "area": "Families and child outcomes",
+      "active": true,
+      "provider": "openalex_author",
+      "evidence_url": "https://api.openalex.org/authors/A5038351764"
+    },
+    {
+      "id": "researcher:kjell-g-salvanes",
+      "name": "Kjell G. Salvanes",
+      "tier": "A",
+      "area": "Family, education, mobility",
+      "active": true,
+      "provider": "openalex_author",
+      "evidence_url": "https://api.openalex.org/authors/A5025896273"
+    },
+    {
+      "id": "researcher:magne-mogstad",
+      "name": "Magne Mogstad",
+      "tier": "A",
+      "area": "Intergenerational outcomes",
+      "active": true,
+      "provider": "openalex_author",
+      "evidence_url": "https://api.openalex.org/authors/A5035713394"
+    },
+    {
+      "id": "researcher:martin-nybom",
+      "name": "Martin Nybom",
+      "tier": "A",
+      "area": "Intergenerational persistence",
+      "active": true,
+      "provider": "openalex_author",
+      "evidence_url": "https://api.openalex.org/authors/A5018550128"
+    },
+    {
+      "id": "researcher:nathaniel-hendren",
+      "name": "Nathaniel Hendren",
+      "tier": "A",
+      "area": "Mobility and welfare",
+      "active": false,
+      "provider": "",
+      "evidence_url": null
+    },
+    {
+      "id": "researcher:raj-chetty",
+      "name": "Raj Chetty",
+      "tier": "A",
+      "area": "Opportunity and mobility",
+      "active": true,
+      "provider": "openalex_author",
+      "evidence_url": "https://api.openalex.org/authors/A5051484328"
+    },
+    {
+      "id": "researcher:sandra-e-black",
+      "name": "Sandra E. Black",
+      "tier": "A",
+      "area": "Parental resources and children",
+      "active": false,
+      "provider": "",
+      "evidence_url": null
+    },
+    {
+      "id": "researcher:sarah-cattan",
+      "name": "Sarah Cattan",
+      "tier": "A",
+      "area": "Child development",
+      "active": false,
+      "provider": "",
+      "evidence_url": null
+    },
+    {
+      "id": "researcher:wojciech-kopczuk",
+      "name": "Wojciech Kopczuk",
+      "tier": "A",
+      "area": "Bequests, gifts, taxation",
+      "active": true,
+      "provider": "openalex_author",
+      "evidence_url": "https://api.openalex.org/authors/A5028570467"
+    },
+    {
+      "id": "researcher:andreas-kotsadam",
+      "name": "Andreas Kotsadam",
+      "tier": "B",
+      "area": "Gender and family",
+      "active": false,
+      "provider": "",
+      "evidence_url": null
+    },
+    {
+      "id": "researcher:anna-aizer",
+      "name": "Anna Aizer",
+      "tier": "B",
+      "area": "Families and public policy",
+      "active": false,
+      "provider": "",
+      "evidence_url": null
+    },
+    {
+      "id": "researcher:bhashkar-mazumder",
+      "name": "Bhashkar Mazumder",
+      "tier": "B",
+      "area": "Income mobility",
+      "active": false,
+      "provider": "",
+      "evidence_url": null
+    },
+    {
+      "id": "researcher:claudia-olivetti",
+      "name": "Claudia Olivetti",
+      "tier": "B",
+      "area": "Gender and family",
+      "active": false,
+      "provider": "",
+      "evidence_url": null
+    },
+    {
+      "id": "researcher:david-deming",
+      "name": "David Deming",
+      "tier": "B",
+      "area": "Education and mobility",
+      "active": false,
+      "provider": "",
+      "evidence_url": null
+    },
+    {
+      "id": "researcher:fabian-pfeffer",
+      "name": "Fabian Pfeffer",
+      "tier": "B",
+      "area": "Wealth and opportunity",
+      "active": false,
+      "provider": "",
+      "evidence_url": null
+    },
+    {
+      "id": "researcher:florencia-torche",
+      "name": "Florencia Torche",
+      "tier": "B",
+      "area": "Stratification and family",
+      "active": false,
+      "provider": "",
+      "evidence_url": null
+    },
+    {
+      "id": "researcher:henrik-kleven",
+      "name": "Henrik Kleven",
+      "tier": "B",
+      "area": "Tax, gender, household labor",
+      "active": false,
+      "provider": "",
+      "evidence_url": null
+    },
+    {
+      "id": "researcher:hilary-hoynes",
+      "name": "Hilary Hoynes",
+      "tier": "B",
+      "area": "Family transfers and welfare",
+      "active": false,
+      "provider": "",
+      "evidence_url": null
+    },
+    {
+      "id": "researcher:jo-blanden",
+      "name": "Jo Blanden",
+      "tier": "B",
+      "area": "Education and mobility",
+      "active": false,
+      "provider": "",
+      "evidence_url": null
+    },
+    {
+      "id": "researcher:johanna-rickne",
+      "name": "Johanna Rickne",
+      "tier": "B",
+      "area": "Gender, marriage, inequality",
+      "active": false,
+      "provider": "",
+      "evidence_url": null
+    },
+    {
+      "id": "researcher:mari-rege",
+      "name": "Mari Rege",
+      "tier": "B",
+      "area": "Child development",
+      "active": false,
+      "provider": "",
+      "evidence_url": null
+    },
+    {
+      "id": "researcher:marianne-bertrand",
+      "name": "Marianne Bertrand",
+      "tier": "B",
+      "area": "Gender and households",
+      "active": false,
+      "provider": "",
+      "evidence_url": null
+    },
+    {
+      "id": "researcher:martin-hallsten",
+      "name": "Martin Hällsten",
+      "tier": "B",
+      "area": "Wealth and family",
+      "active": false,
+      "provider": "",
+      "evidence_url": null
+    },
+    {
+      "id": "researcher:matthias-doepke",
+      "name": "Matthias Doepke",
+      "tier": "B",
+      "area": "Family and parenting",
+      "active": false,
+      "provider": "",
+      "evidence_url": null
+    },
+    {
+      "id": "researcher:maya-rossin-slater",
+      "name": "Maya Rossin-Slater",
+      "tier": "B",
+      "area": "Family policy and early life",
+      "active": false,
+      "provider": "",
+      "evidence_url": null
+    },
+    {
+      "id": "researcher:melissa-kearney",
+      "name": "Melissa Kearney",
+      "tier": "B",
+      "area": "Family structure",
+      "active": false,
+      "provider": "",
+      "evidence_url": null
+    },
+    {
+      "id": "researcher:mette-g-rtz",
+      "name": "Mette Gørtz",
+      "tier": "B",
+      "area": "Family labor supply",
+      "active": false,
+      "provider": "",
+      "evidence_url": null
+    },
+    {
+      "id": "researcher:mikael-lindahl",
+      "name": "Mikael Lindahl",
+      "tier": "B",
+      "area": "Mobility and human capital",
+      "active": false,
+      "provider": "",
+      "evidence_url": null
+    },
+    {
+      "id": "researcher:nezih-guner",
+      "name": "Nezih Guner",
+      "tier": "B",
+      "area": "Fertility and marriage",
+      "active": false,
+      "provider": "",
+      "evidence_url": null
+    },
+    {
+      "id": "researcher:paul-devereux",
+      "name": "Paul Devereux",
+      "tier": "B",
+      "area": "Family background",
+      "active": false,
+      "provider": "",
+      "evidence_url": null
+    },
+    {
+      "id": "researcher:pierre-andre-chiappori",
+      "name": "Pierre-André Chiappori",
+      "tier": "B",
+      "area": "Household bargaining",
+      "active": false,
+      "provider": "",
+      "evidence_url": null
+    },
+    {
+      "id": "researcher:raquel-fernandez",
+      "name": "Raquel Fernández",
+      "tier": "B",
+      "area": "Gender and family",
+      "active": false,
+      "provider": "",
+      "evidence_url": null
+    },
+    {
+      "id": "researcher:raymond-kluender",
+      "name": "Raymond Kluender",
+      "tier": "B",
+      "area": "Bankruptcy and credit",
+      "active": false,
+      "provider": "",
+      "evidence_url": null
+    },
+    {
+      "id": "researcher:theresa-kuchler",
+      "name": "Theresa Kuchler",
+      "tier": "B",
+      "area": "Networks and finance",
+      "active": false,
+      "provider": "",
+      "evidence_url": null
+    },
+    {
+      "id": "researcher:will-dobbie",
+      "name": "Will Dobbie",
+      "tier": "B",
+      "area": "Debt and distress",
+      "active": false,
+      "provider": "",
+      "evidence_url": null
+    },
+    {
+      "id": "researcher:winnie-van-dijk",
+      "name": "Winnie van Dijk",
+      "tier": "B",
+      "area": "Household finance",
+      "active": false,
+      "provider": "",
+      "evidence_url": null
+    }
+  ],
+  "summary": {
+    "registered": 128,
+    "verified_active": 23,
+    "planned": 105,
+    "scope": "Metadata collection configured; not a claim of comprehensive coverage"
+  }
+}

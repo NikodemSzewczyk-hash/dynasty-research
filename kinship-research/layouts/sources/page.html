@@ -1,9 +1,43 @@
 {{ define "main" }}
-<section class="page-hero"><div class="wrap"><div class="micro-label section-code"><span class="code-bullet"></span> 003 / DISCOVERY INFRASTRUCTURE</div><h1>The source <span>network.</span></h1><p>Journals, working-paper series, and researchers in the dynasty_ candidate monitoring universe. Inclusion is a discovery decision, not an endorsement of every paper.</p></div></section>
+{{ $catalog := site.Data.source_catalog }}
+<section class="page-hero"><div class="wrap">
+  <div class="micro-label section-code"><span class="code-bullet"></span> 003 / DISCOVERY INFRASTRUCTURE</div>
+  <h1>The source <span>network.</span></h1>
+  <p>We track journals, working-paper series and researchers to study how economic advantage originates and persists across generations. A verified feed is a source of metadata, not an endorsement of every paper.</p>
+  {{ with $catalog }}
+  <div class="source-summary" aria-label="Source monitoring status">
+    <div><strong>{{ .summary.verified_active }}</strong><span>VERIFIED METADATA FEEDS</span></div>
+    <div><strong>{{ .summary.planned }}</strong><span>PLANNED / NOT CONNECTED</span></div>
+    <div><strong>{{ .summary.registered }}</strong><span>TOTAL REGISTERED SOURCES</span></div>
+  </div>
+  {{ end }}
+</div></section>
 <section class="content-section"><div class="wrap">
-<div class="source-section"><div class="section-heading"><div><div class="micro-label section-code">01 / JOURNAL SIGNAL</div><h2>Journals <span>we scan</span></h2></div><span class="source-count">{{ len site.Data.sources.journals }} SOURCES</span></div><div class="source-grid">{{ range site.Data.sources.journals }}<div class="source-item"><span class="source-tier">{{ .tier }}</span><div><strong>{{ .name }}</strong><small>{{ .area }}</small></div></div>{{ end }}</div></div>
-<div class="source-section"><div class="section-heading"><div><div class="micro-label section-code">02 / EARLY RESEARCH</div><h2>Working-paper <span>series</span></h2></div><span class="source-count">{{ len site.Data.sources.repositories }} SOURCES</span></div><div class="source-grid">{{ range site.Data.sources.repositories }}<div class="source-item"><span class="source-tier">{{ .tier }}</span><div><strong>{{ .name }}</strong><small>{{ .area }}</small></div></div>{{ end }}</div></div>
-<div class="source-section"><div class="section-heading"><div><div class="micro-label section-code">03 / RESEARCH NETWORK</div><h2>Researchers <span>to follow</span></h2></div><span class="source-count">{{ len site.Data.sources.researchers }} PEOPLE</span></div><div class="source-grid">{{ range site.Data.sources.researchers }}<div class="source-item"><span class="source-tier">{{ .tier }}</span><div><strong>{{ .name }}</strong><small>{{ .area }}</small></div></div>{{ end }}</div></div>
-<p class="source-disclaimer"><span class="code-bullet"></span> Source tiers are editorial monitoring priorities, not academic rankings. Automated ingestion is not yet live.</p>
+  {{ with $catalog }}
+  <p class="source-disclaimer"><span class="code-bullet"></span> <strong>Verified</strong> means a retrieval identifier has been checked and the source connector tested. It does not mean every publication is indexed. <strong>Planned</strong> sources are not yet systematically ingested. <a href="{{ "/discovery/" | relURL }}">Explore indexed papers →</a></p>
+  {{ range (slice (dict "name" "Journals" "tag" "01 / JOURNAL SIGNAL" "key" "journals") (dict "name" "Working-paper series" "tag" "02 / EARLY RESEARCH" "key" "repositories") (dict "name" "Researchers" "tag" "03 / RESEARCH NETWORK" "key" "researchers")) }}
+    {{ $key := .key }}
+    {{ $rows := index $catalog $key }}
+    {{ $active := where $rows "active" true }}
+    <div class="source-section">
+      <div class="section-heading"><div><div class="micro-label section-code">{{ .tag }}</div><h2>{{ .name }}</h2></div><span class="source-count">{{ len $active }} VERIFIED / {{ len $rows }} REGISTERED</span></div>
+      <div class="source-grid">
+        {{ range $rows }}
+        <div class="source-item {{ if .active }}source-active{{ else }}source-planned{{ end }}">
+          <span class="source-tier">{{ .tier }}</span>
+          <div class="source-item-copy">
+            <strong>{{ .name }}</strong><small>{{ .area }}</small>
+            <span class="source-status {{ if .active }}is-verified{{ end }}">{{ if .active }}VERIFIED FEED{{ else }}PLANNED{{ end }}</span>
+            {{ if and .active .evidence_url }}<a class="source-evidence" href="{{ .evidence_url }}" target="_blank" rel="noopener noreferrer" aria-label="Verification record for {{ .name }}">IDENTIFIER ↗</a>{{ end }}
+          </div>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  {{ end }}
+  {{ else }}
+  <p class="source-disclaimer">Source catalog is being prepared. The existing research archive remains available.</p>
+  {{ end }}
+  <p class="source-disclaimer"><span class="code-bullet"></span> Source tiers are editorial monitoring priorities, not academic rankings. Newly discovered papers are unreviewed until explicitly curated.</p>
 </div></section>
 {{ end }}
