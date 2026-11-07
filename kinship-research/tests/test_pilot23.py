@@ -9,6 +9,7 @@ from unittest.mock import patch
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/"scripts"))
 from dynasty_data.repec import listing_url,parse_listing,iter_repec
+from dynasty_data.providers import iter_crossref,iter_openalex
 from dynasty_data.schema import connect,initialize
 from dynasty_data.catalog import enqueue
 from pilot23_ingest import (
@@ -50,6 +51,24 @@ class PilotTest(unittest.TestCase):
             p.write_text(json.dumps(manifest))
             with self.assertRaisesRegex(ValueError,"not verified"):
                 sources_for_pilot(p)
+
+    def test_source_polls_sort_recent_first(self):
+        seen=[]
+        def crossref(url):
+            seen.append(url)
+            return {"message":{"items":[]}}
+        list(iter_crossref("","2025-01-01","2026-11-07",2,
+                           fetcher=crossref,journal_issn="0002-8282"))
+        self.assertIn("sort=published",seen[0])
+        self.assertIn("order=desc",seen[0])
+        seen.clear()
+        def openalex(url):
+            seen.append(url)
+            return {"results":[]}
+        list(iter_openalex("","2025-01-01","2026-11-07",2,
+                           fetcher=openalex,author_id="A5071390181"))
+        self.assertIn("sort=publication_date%3Adesc",seen[0])
+        self.assertIn("authorships.author.id",seen[0])
 
     def test_repec_parses_title_authors_year_and_handle(self):
         rows=parse_listing(REPEC_HTML,"RePEc:iza:izadps","IZA Discussion Papers",100)
