@@ -48,12 +48,13 @@ class PipelineTest(unittest.TestCase):
         self.assertEqual(seed_sources(self.db,SITE/"registry"/"source_manifest.json"),0)
         self.assertEqual(stats(self.db)["sources"],128)
         all_rows=self.db.execute("SELECT id,retrieval_json FROM sources").fetchall()
-        self.assertTrue(all(not json.loads(r["retrieval_json"])["enabled"] for r in all_rows))
+        self.assertEqual(sum(bool(json.loads(r["retrieval_json"])["enabled"]) for r in all_rows),23)
+        self.assertEqual(sum(not json.loads(r["retrieval_json"])["enabled"] for r in all_rows),105)
         self.assertEqual(len({x["id"] for x in all_rows}),128)
 
     def test_manual_source_verification(self):
         seed_sources(self.db,SITE/"registry"/"source_manifest.json")
-        sid="journal:american-economic-review"
+        sid="journal:journal-of-development-economics"
         with self.assertRaisesRegex(ValueError,"disabled"):
             lookup_source(self.db,sid,"crossref")
         with self.assertRaisesRegex(ValueError,"Expected"):
