@@ -1,6 +1,10 @@
 {{ define "main" }}
 {{ $papers := where site.RegularPages "Section" "papers" }}
 {{ $nSources := add (add (len site.Data.sources.journals) (len site.Data.sources.repositories)) (len site.Data.sources.researchers) }}
+{{ $report := index site.Data "discovery-pilot-report" | default (index site.Data "discovery_pilot_report") }}
+{{ $catalog := index site.Data "source-catalog" | default (index site.Data "source_catalog") }}
+{{ $indexTotal := $report.total_displayed | default (len $papers) }}
+{{ $verifiedSources := $catalog.summary.verified_active | default 0 }}
 <section class="hero">
   <div class="hero-gridline" aria-hidden="true"></div>
   <div class="wrap hero-inner">
@@ -25,19 +29,19 @@
   <div class="wrap hero-bottom"><span>RESEARCH NOTE / 001</span><span>THE QUESTION: WHY DOES ADVANTAGE PERSIST?</span><span class="scroll-cue">SCROLL TO EXPLORE <span aria-hidden="true">↓</span></span></div>
 </section>
 <section class="index-strip" aria-label="Collection status"><div class="wrap index-strip-inner">
-  <div class="index-stat"><strong>{{ printf "%02d" (len $papers) }}</strong><div><span>CURATED PAPERS</span><small>Initial research collection</small></div></div>
-  <div class="index-stat"><strong>{{ $nSources }}</strong><div><span>SOURCES IN REGISTRY</span><small>Candidate journals, series, people</small></div></div>
-  <div class="index-stat"><strong>03</strong><div><span>EDITORIAL QUESTIONS</span><small>Origins · persistence · mechanisms</small></div></div>
-  <div class="index-status"><span class="code-bullet"></span><span>PROTOTYPE INDEX<br><small>Discovery automation not yet active</small></span></div>
+  <div class="index-stat"><strong>{{ $indexTotal }}</strong><div><span>INDEXED RESEARCH RECORDS</span><small>Curated and unreviewed metadata</small></div></div>
+  <div class="index-stat"><strong>{{ len $papers }}</strong><div><span>CURATED PAPERS</span><small>Editorial summaries available</small></div></div>
+  <div class="index-stat"><strong>{{ $verifiedSources }}</strong><div><span>VERIFIED FEEDS</span><small>Of {{ $nSources }} registered sources</small></div></div>
+  <div class="index-status"><span class="code-bullet"></span><span>METADATA PILOT ACTIVE<br><small>Unreviewed papers labelled</small></span></div>
 </div></section>
 <section class="content-section collection-section"><div class="wrap">
   <div class="section-heading">
-    <div><div class="micro-label section-code">01 / THE COLLECTION</div><h2>Inside the <span>archive</span></h2><p>Foundational work on how economic advantage emerges and travels across generations.</p></div>
+    <div><div class="micro-label section-code">01 / THE COLLECTION</div><h2>Inside the <span>research index</span></h2><p>A curated selection from a larger, searchable database of research on inequality and families.</p></div>
     <a class="text-link" href="{{ "/papers/" | relURL }}">VIEW FULL INDEX <span aria-hidden="true">↗</span></a>
   </div>
   <div class="list-heading"><span>SELECTED RESEARCH / CURATED SET</span><span>PUBLICATION YEAR ↓</span></div>
   <div class="paper-list">{{ range first 5 (sort $papers "Params.year" "desc") }}{{ partial "paper-card.html" . }}{{ end }}</div>
-  <div class="collection-footer"><span>These are established studies in a seed archive, not newly released papers.</span><a class="text-link" href="{{ "/papers/" | relURL }}">EXPLORE {{ len $papers }} PAPERS ↗</a></div>
+  <div class="collection-footer"><span>Showing a curated selection; the full index also contains unreviewed bibliographic candidates.</span><a class="text-link" href="{{ "/papers/" | relURL }}">EXPLORE ALL {{ $indexTotal }} RECORDS ↗</a></div>
 </div></section>
 <section class="thesis-section"><div class="wrap">
   <div class="thesis-top"><span class="micro-label">02 / THE RESEARCH LENS</span><span class="micro-label">THREE QUESTIONS / ONE BIG PROBLEM</span></div>
