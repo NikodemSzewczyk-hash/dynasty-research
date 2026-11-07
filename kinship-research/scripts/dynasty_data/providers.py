@@ -5,6 +5,7 @@ for human review. No automatic bulk scraping or unbounded cursor traversal.
 """
 from __future__ import annotations
 import json
+from html import unescape
 import os
 import re
 import time
@@ -78,7 +79,7 @@ def _year_crossref(work: dict) -> int | None:
 def normalize_crossref(work: dict) -> dict | None:
     doi=canonical_doi(work.get("DOI"))
     raw_title=work.get("title") or []
-    title=clean_text(raw_title[0] if isinstance(raw_title,list) and raw_title else raw_title if isinstance(raw_title,str) else "")
+    title=clean_text(unescape(raw_title[0] if isinstance(raw_title,list) and raw_title else raw_title if isinstance(raw_title,str) else ""))
     if not doi or not title:
         return None
     people=[]
@@ -87,7 +88,7 @@ def normalize_crossref(work: dict) -> dict | None:
         if name:
             people.append(name)
     venue=work.get("container-title") or []
-    source=clean_text(venue[0] if isinstance(venue,list) and venue else venue if isinstance(venue,str) else "")
+    source=clean_text(unescape(venue[0] if isinstance(venue,list) and venue else venue if isinstance(venue,str) else ""))
     wt=work.get("type","")
     kind="journal_article" if wt=="journal-article" else ("working_paper" if wt in ("posted-content","working-paper") else "other")
     url=safe_https(work.get("URL")) or "https://doi.org/"+doi
@@ -136,8 +137,10 @@ def iter_openalex(query: str, from_date: str, to_date: str,
 
 def iter_crossref(query: str, from_date: str, to_date: str,
                   max_records: int=100, fetcher: Fetch=fetch_json,
-                  journal_issn: str | None=None) -> Iterator[dict]:
+                  journal_issn: str | None=None, query_mode: str="bibliographic") -> Iterator[dict]:
     validate_dates(from_date,to_date)
+    if query_mode not in ("bibliographic","title"):
+        raise ValueError("Crossref query_mode must be bibliographic or title")
     if not 1<=max_records<=10000:
         raise ValueError("Bounded Crossref runs must request 1..10000 records")
     if not query and not journal_issn:
@@ -153,7 +156,7 @@ def iter_crossref(query: str, from_date: str, to_date: str,
         params={"filter":f"from-pub-date:{from_date},until-pub-date:{to_date}",
                 "rows":min(page_size,max_records-processed),"cursor":cursor}
         if query:
-            params["query.bibliographic"]=query
+            params["query."+query_mode]=query
         mailto=os.getenv("DYNASTY_CONTACT_EMAIL","").strip()
         if mailto:
             params["mailto"]=mailto

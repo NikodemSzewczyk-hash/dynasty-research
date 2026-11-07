@@ -1,0 +1,90 @@
+name: V0.3 historical discovery backfill (metadata only)
+
+on:
+  push:
+    branches: [feat/v0.3-historical-corpus]
+    paths:
+      - 'kinship-research/scripts/v03_bootstrap.py'
+      - 'kinship-research/registry/discovery_plan.json'
+      - 'kinship-research/registry/discovery_exclusions.json'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  historical-metadata:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    defaults:
+      run:
+        working-directory: kinship-research
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: feat/v0.3-historical-corpus
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Offline unit tests
+        run: python -m unittest discover -s tests -v
+      - name: Historical Crossref import into unreviewed queue
+        env:
+          DYNASTY_CONTACT_EMAIL: ${{ vars.DYNASTY_CONTACT_EMAIL }}
+        run: |
+          python scripts/v03_bootstrap.py --execute \
+            --provider crossref --max-jobs 54 --per-query 90 \
+            --pause 1.0 --output-dir data/v03-export --db data/v03.sqlite
+      - name: Record NBER access limitation (no access-control bypass)
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          p=Path("data/v03-export/report.json")
+          data=json.loads(p.read_text(encoding="utf-8"))
+          data["nber"]={"status":"not_imported",
+                        "reason":"Official metadata endpoint returned HTTP 403 on GitHub Actions; use the documented local TSV importer instead."}
+          p.write_text(json.dumps(data,indent=2,ensure_ascii=False)+"\n",encoding="utf-8")
+          PY
+      - name: Prepare preview-only metadata index
+        run: |
+          mkdir -p static/data
+          cp data/v03-export/discovery-index.json static/data/discovery-index.json
+          cp data/v03-export/report.json data/discovery-report.json
+          cp data/v03-export/all-candidates.jsonl registry/candidates-v03.jsonl
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          report=json.loads(Path('data/discovery-report.json').read_text())
+          print('Candidates:',report['discovery']['total_candidate_rows'])
+          print('Metadata-only preview entries:',report['discovery']['metadata_only_public_records'])
+          print('Successful queries:',report['queries_succeeded'])
+          if report['queries_succeeded']==0:
+              raise SystemExit('All external queries failed')
+          PY
+      - name: Generate stratified manual metadata audit sample
+        run: |
+          python scripts/audit_sample.py --input registry/candidates-v03.jsonl \
+            --output registry/review-sample-v03.csv --n 100 --seed 20261107
+      - name: Upload complete review queue and database (private workflow artifact)
+        uses: actions/upload-artifact@v4
+        with:
+          name: dynasty-v03-historical-review
+          path: |
+            kinship-research/data/v03.sqlite
+            kinship-research/data/v03-export/review-queue.csv
+            kinship-research/registry/review-sample-v03.csv
+            kinship-research/data/v03-export/report.json
+          retention-days: 30
+      - name: Commit only transparent metadata preview and provenance
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add static/data/discovery-index.json data/discovery-report.json registry/candidates-v03.jsonl registry/review-sample-v03.csv
+          if git diff --cached --quiet; then
+            echo "No changes to preview metadata"
+          else
+            git commit -m "data: add unreviewed historical discovery metadata preview"
+            git push origin HEAD:feat/v0.3-historical-corpus
+          fi

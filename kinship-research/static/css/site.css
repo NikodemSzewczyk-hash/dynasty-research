@@ -38,3 +38,15 @@ body{background:var(--bg);color:var(--ink)}
 .article-side{background:#f5faff}
 .source-item{background:#fff}
 @media(max-width:650px){.nav.nav-open{box-shadow:0 15px 20px #7792a21c}}
+
+/* V0.3 metadata discovery: visually separate unreviewed records from curated work. */
+.discovery-notice { margin: 0 0 2rem; padding: 1rem 1.3rem; border-left: 3px solid var(--accent, #4d82ad); background: rgba(120,145,170,.08); font-size: .93rem; line-height: 1.7; }
+.discovery-notice strong { font-weight: 700; }
+.discovery-notice a { text-decoration: underline; text-underline-offset: 3px; }
+.discovery-toolbar { gap: 1.2rem; }
+.discovery-paper .paper-takeaway { opacity: .75; font-size: .88rem; }
+.discovery-label { letter-spacing: .055em; font-weight: 700; }
+.discovery-pagination { display: flex; justify-content: center; padding: 2rem 0 3rem; }
+.discovery-pagination button { cursor: pointer; border: 1px solid currentColor; background: transparent; color: inherit; font: inherit; font-size: .82rem; letter-spacing: .08em; padding: .85rem 1.3rem; }
+.discovery-pagination button:hover { opacity: .7; }
+.discovery-pagination button[hidden] { display: none; }
