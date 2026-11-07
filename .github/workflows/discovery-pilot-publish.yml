@@ -10,6 +10,9 @@ on:
       - 'kinship-research/static/js/discovery.js'
       - '.github/workflows/discovery-pilot-publish.yml'
   workflow_dispatch:
+concurrency:
+  group: discovery-pilot-publish-branch
+  cancel-in-progress: true
 permissions:
   contents: write
 jobs:
@@ -68,6 +71,8 @@ jobs:
             data/source-catalog.json data/discovery-pilot-report.json
           if ! git diff --cached --quiet; then
             git commit -m "data: bounded 23-source discovery preview for website review"
+            git fetch origin feat/discovery-pilot-live
+            git rebase origin/feat/discovery-pilot-live
             git push origin HEAD:feat/discovery-pilot-live
           fi
       - uses: actions/upload-artifact@v4
