@@ -67,6 +67,24 @@
     if (pilot) tags.appendChild(el('span', 'tag', 'Verified-source pilot'));
     if (record.match_type === 'possible') tags.appendChild(el('span', 'tag', 'Possible other version'));
     body.appendChild(tags);
+    if ((record.version_count || 0) > 1 && Array.isArray(record.versions)) {
+      const details = el('details', 'discovery-versions');
+      details.appendChild(el('summary', '', record.version_count + ' metadata versions (possible same work)'));
+      const list = el('ul');
+      record.versions.forEach(v => {
+        const linkUrl = safeUrl(v.url, false);
+        if (!linkUrl) return;
+        const item = el('li');
+        const a = el('a', '', (v.source || v.provider || 'Source') + (v.doi ? ' · ' + v.doi : ''));
+        a.href = linkUrl;
+        a.target = '_blank';
+        a.rel = 'noopener noreferrer';
+        item.appendChild(a);
+        list.appendChild(item);
+      });
+      details.appendChild(list);
+      body.appendChild(details);
+    }
     article.appendChild(body);
     const aside = el('div', 'paper-aside');
     aside.appendChild(el('span', 'paper-year', record.year || '—'));

@@ -67,3 +67,9 @@ body{background:var(--bg);color:var(--ink)}
 .discovery-filters select{min-height:43px;max-width:220px}
 .discovery-label.is-curated{color:var(--mint)}
 @media(max-width:650px){.source-summary{gap:12px}.source-summary>div{padding:8px 12px 8px 0}.source-summary strong{font-size:25px}.discovery-filters select{max-width:100%;min-width:135px}}
+
+.discovery-versions{margin-top:13px;font-size:12px;color:var(--muted)}
+.discovery-versions summary{cursor:pointer;color:var(--mint);font:600 11px/1.6 var(--mono)}
+.discovery-versions ul{margin:9px 0 0;padding-left:19px}
+.discovery-versions li{margin-bottom:5px;overflow-wrap:anywhere}
+.discovery-versions a{text-decoration:underline;text-underline-offset:2px}
