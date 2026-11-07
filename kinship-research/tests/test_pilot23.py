@@ -59,8 +59,8 @@ class PilotTest(unittest.TestCase):
             return {"message":{"items":[]}}
         list(iter_crossref("","2025-01-01","2026-11-07",2,
                            fetcher=crossref,journal_issn="0002-8282"))
-        self.assertIn("sort=published",seen[0])
-        self.assertIn("order=desc",seen[0])
+        self.assertIn("from-pub-date",seen[0])
+        self.assertIn("/journals/0002-8282/works",seen[0])
         seen.clear()
         def openalex(url):
             seen.append(url)

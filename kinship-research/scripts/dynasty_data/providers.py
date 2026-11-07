@@ -160,10 +160,6 @@ def iter_crossref(query: str, from_date: str, to_date: str,
                 "rows":min(page_size,max_records-processed),"cursor":cursor}
         if query:
             params["query."+query_mode]=query
-        if journal_issn:
-            # A bounded source poll must prioritize recent publication dates.
-            params["sort"]="published"
-            params["order"]="desc"
         mailto=os.getenv("DYNASTY_CONTACT_EMAIL","").strip()
         if mailto:
             params["mailto"]=mailto
