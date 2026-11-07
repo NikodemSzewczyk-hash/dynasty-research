@@ -542,19 +542,13 @@
         "provider": "openalex"
       },
       {
-        "doi": "10.53479/42525",
-        "url": "https://doi.org/10.53479/42525",
-        "source": "Documentos de trabajo/Documento de trabajo - Banco de España, Servicio de Estudios",
-        "provider": "openalex"
-      },
-      {
         "doi": "10.2139/ssrn.6528258",
         "url": "https://doi.org/10.2139/ssrn.6528258",
         "source": "SSRN Electronic Journal",
         "provider": "openalex"
       }
     ],
-    "version_count": 4
+    "version_count": 3
   },
   {
     "id": "openalex:https://openalex.org/W7119471288",
@@ -581,23 +575,8 @@
       "researcher:raj-chetty"
     ],
     "score": 14,
-    "match_type": "possible",
-    "kind": "journal_article",
-    "versions": [
-      {
-        "doi": "10.3386/w32697",
-        "url": "https://doi.org/10.3386/w32697",
-        "source": "National Bureau of Economic Research",
-        "provider": "openalex"
-      },
-      {
-        "doi": "10.1093/qje/qjaf057",
-        "url": "https://doi.org/10.1093/qje/qjaf057",
-        "source": "The Quarterly Journal of Economics",
-        "provider": "openalex"
-      }
-    ],
-    "version_count": 2
+    "match_type": "none",
+    "kind": "journal_article"
   },
   {
     "id": "repec:RePEc:iza:izadps:dp18974",
@@ -652,21 +631,9 @@
     "kind": "journal_article",
     "versions": [
       {
-        "doi": "10.1920/wp.ifs.2026.2826",
-        "url": "https://doi.org/10.1920/wp.ifs.2026.2826",
-        "source": "Jan Stuhler",
-        "provider": "openalex"
-      },
-      {
         "doi": "10.1016/j.jdeveco.2026.103868",
         "url": "https://doi.org/10.1016/j.jdeveco.2026.103868",
         "source": "Journal of Development Economics",
-        "provider": "openalex"
-      },
-      {
-        "doi": "10.65864/035kd4i6nq",
-        "url": "https://doi.org/10.65864/035kd4i6nq",
-        "source": "CESifo",
         "provider": "openalex"
       },
       {
@@ -676,7 +643,7 @@
         "provider": "openalex"
       }
     ],
-    "version_count": 4
+    "version_count": 2
   },
   {
     "id": "repec:RePEc:nbr:nberwo:35972",
@@ -753,23 +720,8 @@
       "researcher:martin-nybom"
     ],
     "score": 14,
-    "match_type": "possible",
-    "kind": "working_paper",
-    "versions": [
-      {
-        "doi": "10.48550/arxiv.2605.19154",
-        "url": "https://doi.org/10.48550/arxiv.2605.19154",
-        "source": "arXiv (Cornell University)",
-        "provider": "openalex"
-      },
-      {
-        "doi": "10.65864/wtx7m009jm",
-        "url": "https://doi.org/10.65864/wtx7m009jm",
-        "source": "CESifo",
-        "provider": "openalex"
-      }
-    ],
-    "version_count": 2
+    "match_type": "none",
+    "kind": "working_paper"
   },
   {
     "id": "repec:RePEc:iza:izadps:dp18952",
@@ -1085,19 +1037,13 @@
         "provider": "openalex"
       },
       {
-        "doi": "10.3386/w33558",
-        "url": "https://doi.org/10.3386/w33558",
-        "source": "National Bureau of Economic Research",
-        "provider": "openalex"
-      },
-      {
         "doi": "10.2139/ssrn.5172102",
         "url": "https://doi.org/10.2139/ssrn.5172102",
         "source": "SSRN Electronic Journal",
         "provider": "openalex"
       }
     ],
-    "version_count": 3
+    "version_count": 2
   },
   {
     "id": "crossref:10.1086/725595",
@@ -1201,30 +1147,6 @@
     "score": 14,
     "match_type": "none",
     "kind": "working_paper"
-  },
-  {
-    "id": "openalex:https://openalex.org/W4398184276",
-    "title": "Intergenerational income mobility",
-    "authors": [
-      "Martin Nybom"
-    ],
-    "year": 2024,
-    "source": "Edward Elgar Publishing eBooks",
-    "doi": "10.4337/9781800888265.00012",
-    "url": "https://doi.org/10.4337/9781800888265.00012",
-    "provider": "openalex",
-    "review_status": "pending",
-    "evidence_level": "metadata_only",
-    "collection": "pilot23",
-    "topics": [
-      "Intergenerational mobility"
-    ],
-    "source_ids": [
-      "researcher:martin-nybom"
-    ],
-    "score": 14,
-    "match_type": "none",
-    "kind": "other"
   },
   {
     "id": "crossref:10.1086/730206",
@@ -1388,30 +1310,6 @@
     "version_count": 1
   },
   {
-    "id": "openalex:https://openalex.org/W4398184596",
-    "title": "Multigenerational Inequality",
-    "authors": [
-      "Jan Leonard Stuhler"
-    ],
-    "year": 2024,
-    "source": "Edward Elgar Publishing eBooks",
-    "doi": "10.2139/ssrn.5531721",
-    "url": "https://doi.org/10.2139/ssrn.5531721",
-    "provider": "openalex",
-    "review_status": "pending",
-    "evidence_level": "metadata_only",
-    "collection": "pilot23",
-    "topics": [
-      "Intergenerational mobility"
-    ],
-    "source_ids": [
-      "researcher:jan-stuhler"
-    ],
-    "score": 14,
-    "match_type": "none",
-    "kind": "other"
-  },
-  {
     "id": "crossref:10.1257/app.20220137",
     "title": "Multigenerational Transmission of Wealth: Florence, 1403–1480",
     "authors": [
@@ -1557,15 +1455,9 @@
         "url": "https://doi.org/10.2139/ssrn.4764350",
         "source": "SSRN Electronic Journal",
         "provider": "openalex"
-      },
-      {
-        "doi": "10.1920/wp.ifs.2024.0624",
-        "url": "https://doi.org/10.1920/wp.ifs.2024.0624",
-        "source": "Aline Bütikofer",
-        "provider": "openalex"
       }
     ],
-    "version_count": 3
+    "version_count": 2
   },
   {
     "id": "crossref:10.1257/app.20210816",
