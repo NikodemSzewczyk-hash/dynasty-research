@@ -150,6 +150,8 @@ def pilot_records(snapshot,manifest):
         r=json.loads(line)
         if r.get("review_status")!="pending" or r.get("evidence_level")!="metadata_only":
             raise ValueError("Pilot snapshot contains non-pending or non-metadata record")
+        if r.get("kind") not in ("journal_article","working_paper"):
+            continue  # Do not present book chapters, datasets or other records as papers.
         ids=sorted(set(r.get("pilot_source_ids") or []))
         if not ids or any(s not in active for s in ids):
             unrecognized+=1;continue

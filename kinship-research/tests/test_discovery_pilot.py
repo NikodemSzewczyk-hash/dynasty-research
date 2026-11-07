@@ -62,6 +62,16 @@ class ExportTests(unittest.TestCase):
             self.assertEqual(records[0]["topics"],["Wealth and inheritance"])
             self.assertEqual(records[0]["source_ids"],["journal:american-economic-review"])
 
+    def test_book_chapters_are_not_mislabelled_as_papers(self):
+        with tempfile.TemporaryDirectory() as d:
+            path=Path(d)/"snapshot.jsonl"
+            chapter=pilot("10.1000/book","Intergenerational Income Mobility")
+            chapter["kind"]="other"
+            path.write_text(json.dumps(chapter)+"\n")
+            records,stats=pilot_records(path,self.manifest)
+            self.assertEqual(records,[])
+            self.assertEqual(stats["title_screened_candidates"],0)
+
     def test_duplicate_doi_prefers_curated_and_retains_provenance(self):
         curated=curated_records(self.papers)[0]
         paper=pilot("10.1000/x","Intergenerational mobility",doi=curated["doi"])
