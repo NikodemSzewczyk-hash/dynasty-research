@@ -1,14 +1,14 @@
 {
   "raw_candidates": 1226,
-  "title_screened_candidates": 58,
+  "title_screened_candidates": 55,
   "unrecognized_source_rows": 0,
   "schema_version": 1,
   "generated_on": "2026-11-07",
-  "total_displayed": 120,
+  "total_displayed": 105,
   "historical_displayed": 52,
-  "pilot_displayed": 56,
+  "pilot_displayed": 41,
   "curated_displayed": 12,
   "pilot_source_count": 23,
   "scope": "Title-screened bibliographic candidates; not editorial endorsements",
-  "deduplication": "Exact DOI only; distinct versions without DOI may remain"
+  "deduplication": "Exact DOI, then exact normalized title + first author (latter labelled possible versions)"
 }

@@ -341,7 +341,8 @@
       "journal:aej-economic-policy"
     ],
     "score": 16,
-    "match_type": "none"
+    "match_type": "none",
+    "kind": "journal_article"
   },
   {
     "id": "crossref:10.1920/wp.ifs.2005.0505",
@@ -525,59 +526,35 @@
       "researcher:jan-stuhler"
     ],
     "score": 14,
-    "match_type": "none"
-  },
-  {
-    "id": "openalex:https://openalex.org/W7129023341",
-    "title": "Assortative Mating, Inequality, and Rising Educational Mobility in Spain",
-    "authors": [
-      "Ricard Grebol",
-      "Margarita Machelett",
-      "Jan Leonard Stuhler",
-      "Ernesto Villanueva"
+    "match_type": "possible",
+    "kind": "working_paper",
+    "versions": [
+      {
+        "doi": "10.48550/arxiv.2512.22848",
+        "url": "https://doi.org/10.48550/arxiv.2512.22848",
+        "source": "arXiv (Cornell University)",
+        "provider": "openalex"
+      },
+      {
+        "doi": "10.2139/ssrn.5992354",
+        "url": "https://doi.org/10.2139/ssrn.5992354",
+        "source": "SSRN Electronic Journal",
+        "provider": "openalex"
+      },
+      {
+        "doi": "10.53479/42525",
+        "url": "https://doi.org/10.53479/42525",
+        "source": "Documentos de trabajo/Documento de trabajo - Banco de España, Servicio de Estudios",
+        "provider": "openalex"
+      },
+      {
+        "doi": "10.2139/ssrn.6528258",
+        "url": "https://doi.org/10.2139/ssrn.6528258",
+        "source": "SSRN Electronic Journal",
+        "provider": "openalex"
+      }
     ],
-    "year": 2026,
-    "source": "Documentos de trabajo/Documento de trabajo - Banco de España, Servicio de Estudios",
-    "doi": "10.53479/42525",
-    "url": "https://doi.org/10.53479/42525",
-    "provider": "openalex",
-    "review_status": "pending",
-    "evidence_level": "metadata_only",
-    "collection": "pilot23",
-    "topics": [
-      "Intergenerational mobility"
-    ],
-    "source_ids": [
-      "researcher:jan-stuhler"
-    ],
-    "score": 14,
-    "match_type": "none"
-  },
-  {
-    "id": "openalex:https://openalex.org/W7150955259",
-    "title": "Assortative Mating, Inequality, and Rising Educational Mobility in Spain",
-    "authors": [
-      "Ricard Grebol",
-      "Margarita Machelett",
-      "Jan Leonard Stuhler",
-      "Ernesto Villanueva"
-    ],
-    "year": 2026,
-    "source": "SSRN Electronic Journal",
-    "doi": "10.2139/ssrn.6528258",
-    "url": "https://doi.org/10.2139/ssrn.6528258",
-    "provider": "openalex",
-    "review_status": "pending",
-    "evidence_level": "metadata_only",
-    "collection": "pilot23",
-    "topics": [
-      "Intergenerational mobility"
-    ],
-    "source_ids": [
-      "researcher:jan-stuhler"
-    ],
-    "score": 14,
-    "match_type": "none"
+    "version_count": 4
   },
   {
     "id": "openalex:https://openalex.org/W7119471288",
@@ -604,7 +581,23 @@
       "researcher:raj-chetty"
     ],
     "score": 14,
-    "match_type": "none"
+    "match_type": "possible",
+    "kind": "journal_article",
+    "versions": [
+      {
+        "doi": "10.3386/w32697",
+        "url": "https://doi.org/10.3386/w32697",
+        "source": "National Bureau of Economic Research",
+        "provider": "openalex"
+      },
+      {
+        "doi": "10.1093/qje/qjaf057",
+        "url": "https://doi.org/10.1093/qje/qjaf057",
+        "source": "The Quarterly Journal of Economics",
+        "provider": "openalex"
+      }
+    ],
+    "version_count": 2
   },
   {
     "id": "repec:RePEc:iza:izadps:dp18974",
@@ -628,33 +621,8 @@
       "working_paper_series:iza-discussion-papers"
     ],
     "score": 14,
-    "match_type": "none"
-  },
-  {
-    "id": "openalex:https://openalex.org/W7154499203",
-    "title": "Educational mobility across multiple generations in Indonesia",
-    "authors": [
-      "Sarah Cattan",
-      "Antonio Dalla Zuanna",
-      "Jan Leonard Stuhler",
-      "Po Yin Wong"
-    ],
-    "year": 2026,
-    "source": "Jan Stuhler",
-    "doi": "10.1920/wp.ifs.2026.2826",
-    "url": "https://doi.org/10.1920/wp.ifs.2026.2826",
-    "provider": "openalex",
-    "review_status": "pending",
-    "evidence_level": "metadata_only",
-    "collection": "pilot23",
-    "topics": [
-      "Intergenerational mobility"
-    ],
-    "source_ids": [
-      "researcher:jan-stuhler"
-    ],
-    "score": 14,
-    "match_type": "none"
+    "match_type": "none",
+    "kind": "working_paper"
   },
   {
     "id": "openalex:https://openalex.org/W7167509383",
@@ -680,59 +648,35 @@
       "researcher:jan-stuhler"
     ],
     "score": 14,
-    "match_type": "none"
-  },
-  {
-    "id": "openalex:https://openalex.org/W7167819495",
-    "title": "Educational Mobility Across Multiple Generations in Indonesia",
-    "authors": [
-      "Sarah Cattan",
-      "Antonio Dalla Zuanna",
-      "Jan Leonard Stuhler",
-      "Po Yin Wong"
+    "match_type": "possible",
+    "kind": "journal_article",
+    "versions": [
+      {
+        "doi": "10.1920/wp.ifs.2026.2826",
+        "url": "https://doi.org/10.1920/wp.ifs.2026.2826",
+        "source": "Jan Stuhler",
+        "provider": "openalex"
+      },
+      {
+        "doi": "10.1016/j.jdeveco.2026.103868",
+        "url": "https://doi.org/10.1016/j.jdeveco.2026.103868",
+        "source": "Journal of Development Economics",
+        "provider": "openalex"
+      },
+      {
+        "doi": "10.65864/035kd4i6nq",
+        "url": "https://doi.org/10.65864/035kd4i6nq",
+        "source": "CESifo",
+        "provider": "openalex"
+      },
+      {
+        "doi": "10.2139/ssrn.6625879",
+        "url": "https://doi.org/10.2139/ssrn.6625879",
+        "source": "SSRN Electronic Journal",
+        "provider": "openalex"
+      }
     ],
-    "year": 2026,
-    "source": "CESifo",
-    "doi": "10.65864/035kd4i6nq",
-    "url": "https://doi.org/10.65864/035kd4i6nq",
-    "provider": "openalex",
-    "review_status": "pending",
-    "evidence_level": "metadata_only",
-    "collection": "pilot23",
-    "topics": [
-      "Intergenerational mobility"
-    ],
-    "source_ids": [
-      "researcher:jan-stuhler"
-    ],
-    "score": 14,
-    "match_type": "none"
-  },
-  {
-    "id": "openalex:https://openalex.org/W7220854264",
-    "title": "Educational Mobility Across Multiple Generations in Indonesia",
-    "authors": [
-      "Sarah Cattan",
-      "Antonio Dalla Zuanna",
-      "Jan Leonard Stuhler",
-      "Po Yin Wong"
-    ],
-    "year": 2026,
-    "source": "SSRN Electronic Journal",
-    "doi": "10.2139/ssrn.6625879",
-    "url": "https://doi.org/10.2139/ssrn.6625879",
-    "provider": "openalex",
-    "review_status": "pending",
-    "evidence_level": "metadata_only",
-    "collection": "pilot23",
-    "topics": [
-      "Intergenerational mobility"
-    ],
-    "source_ids": [
-      "researcher:jan-stuhler"
-    ],
-    "score": 14,
-    "match_type": "none"
+    "version_count": 4
   },
   {
     "id": "repec:RePEc:nbr:nberwo:35972",
@@ -756,7 +700,8 @@
       "working_paper_series:nber-working-papers"
     ],
     "score": 14,
-    "match_type": "none"
+    "match_type": "none",
+    "kind": "working_paper"
   },
   {
     "id": "repec:RePEc:nbr:nberwo:35965",
@@ -781,7 +726,8 @@
       "working_paper_series:nber-working-papers"
     ],
     "score": 14,
-    "match_type": "none"
+    "match_type": "none",
+    "kind": "working_paper"
   },
   {
     "id": "openalex:https://openalex.org/W7161800425",
@@ -807,33 +753,23 @@
       "researcher:martin-nybom"
     ],
     "score": 14,
-    "match_type": "none"
-  },
-  {
-    "id": "openalex:https://openalex.org/W7167809328",
-    "title": "Indirect Estimators of Intergenerational Mobility",
-    "authors": [
-      "Andrea Del Pizzo",
-      "Martin Nybom",
-      "Jan Leonard Stuhler"
+    "match_type": "possible",
+    "kind": "working_paper",
+    "versions": [
+      {
+        "doi": "10.48550/arxiv.2605.19154",
+        "url": "https://doi.org/10.48550/arxiv.2605.19154",
+        "source": "arXiv (Cornell University)",
+        "provider": "openalex"
+      },
+      {
+        "doi": "10.65864/wtx7m009jm",
+        "url": "https://doi.org/10.65864/wtx7m009jm",
+        "source": "CESifo",
+        "provider": "openalex"
+      }
     ],
-    "year": 2026,
-    "source": "CESifo",
-    "doi": "10.65864/wtx7m009jm",
-    "url": "https://doi.org/10.65864/wtx7m009jm",
-    "provider": "openalex",
-    "review_status": "pending",
-    "evidence_level": "metadata_only",
-    "collection": "pilot23",
-    "topics": [
-      "Intergenerational mobility"
-    ],
-    "source_ids": [
-      "researcher:jan-stuhler",
-      "researcher:martin-nybom"
-    ],
-    "score": 14,
-    "match_type": "none"
+    "version_count": 2
   },
   {
     "id": "repec:RePEc:iza:izadps:dp18952",
@@ -856,33 +792,8 @@
       "working_paper_series:iza-discussion-papers"
     ],
     "score": 14,
-    "match_type": "none"
-  },
-  {
-    "id": "openalex:https://openalex.org/W7171445383",
-    "title": "Replication Code for: \"Educational mobility across multiple generations in Indonesia\"",
-    "authors": [
-      "Sarah Cattan",
-      "Antonio Dalla Zuanna",
-      "Jan Leonard Stuhler",
-      "Po Yin Wong"
-    ],
-    "year": 2026,
-    "source": "Mendeley Data",
-    "doi": "10.17632/79f48fx6s3",
-    "url": "https://doi.org/10.17632/79f48fx6s3",
-    "provider": "openalex",
-    "review_status": "pending",
-    "evidence_level": "metadata_only",
-    "collection": "pilot23",
-    "topics": [
-      "Intergenerational mobility"
-    ],
-    "source_ids": [
-      "researcher:jan-stuhler"
-    ],
-    "score": 14,
-    "match_type": "none"
+    "match_type": "none",
+    "kind": "working_paper"
   },
   {
     "id": "openalex:https://openalex.org/W7129768374",
@@ -907,7 +818,8 @@
       "researcher:martin-nybom"
     ],
     "score": 14,
-    "match_type": "none"
+    "match_type": "none",
+    "kind": "working_paper"
   },
   {
     "id": "openalex:https://openalex.org/W4408883837",
@@ -932,7 +844,8 @@
       "researcher:martin-nybom"
     ],
     "score": 14,
-    "match_type": "none"
+    "match_type": "none",
+    "kind": "journal_article"
   },
   {
     "id": "repec:RePEc:iza:izadps:dp19035",
@@ -958,11 +871,12 @@
       "working_paper_series:iza-discussion-papers"
     ],
     "score": 14,
-    "match_type": "none"
+    "match_type": "none",
+    "kind": "working_paper"
   },
   {
     "id": "repec:RePEc:iza:izadps:dp18951",
-    "title": "Will Todayâ€™s Children Be Richer than Their Parents? Projecting Future Absolute Intergenerational Income Mobility",
+    "title": "Will Today’s Children Be Richer than Their Parents? Projecting Future Absolute Intergenerational Income Mobility",
     "authors": [
       "Ahmed, Maruf",
       "Deutscher, Nathan",
@@ -983,7 +897,8 @@
       "working_paper_series:iza-discussion-papers"
     ],
     "score": 14,
-    "match_type": "none"
+    "match_type": "none",
+    "kind": "working_paper"
   },
   {
     "id": "openalex:https://openalex.org/W4409727725",
@@ -1009,7 +924,8 @@
       "researcher:martin-nybom"
     ],
     "score": 14,
-    "match_type": "none"
+    "match_type": "none",
+    "kind": "journal_article"
   },
   {
     "id": "crossref:10.3368/jhr.0321-11554r3",
@@ -1033,33 +949,8 @@
       "journal:journal-of-human-resources"
     ],
     "score": 14,
-    "match_type": "none"
-  },
-  {
-    "id": "openalex:https://openalex.org/W7117691836",
-    "title": "Assortative Mating, Inequality, and Rising Educational Mobility in Spain",
-    "authors": [
-      "Ricard Grebol",
-      "Margarita Machelett",
-      "Jan Leonard Stuhler",
-      "Ernesto Villanueva"
-    ],
-    "year": 2025,
-    "source": "arXiv (Cornell University)",
-    "doi": "10.48550/arxiv.2512.22848",
-    "url": "https://doi.org/10.48550/arxiv.2512.22848",
-    "provider": "openalex",
-    "review_status": "pending",
-    "evidence_level": "metadata_only",
-    "collection": "pilot23",
-    "topics": [
-      "Intergenerational mobility"
-    ],
-    "source_ids": [
-      "researcher:jan-stuhler"
-    ],
-    "score": 14,
-    "match_type": "none"
+    "match_type": "none",
+    "kind": "journal_article"
   },
   {
     "id": "crossref:10.1257/app.20210117",
@@ -1083,34 +974,8 @@
       "journal:aej-applied-economics"
     ],
     "score": 14,
-    "match_type": "none"
-  },
-  {
-    "id": "openalex:https://openalex.org/W7108456416",
-    "title": "Data and Code for: The Opportunity Atlas: Mapping the Childhood Roots of Social Mobility",
-    "authors": [
-      "Raj Chetty",
-      "Friedman, John N.",
-      "Nathaniel Hendren",
-      "Jones, Maggie R.",
-      "Porter, Sonya R."
-    ],
-    "year": 2025,
-    "source": "ICPSR Data Holdings",
-    "doi": "10.3886/e232764",
-    "url": "https://doi.org/10.3886/e232764",
-    "provider": "openalex",
-    "review_status": "pending",
-    "evidence_level": "metadata_only",
-    "collection": "pilot23",
-    "topics": [
-      "Intergenerational mobility"
-    ],
-    "source_ids": [
-      "researcher:raj-chetty"
-    ],
-    "score": 14,
-    "match_type": "none"
+    "match_type": "none",
+    "kind": "journal_article"
   },
   {
     "id": "openalex:https://openalex.org/W4411467207",
@@ -1135,7 +1000,8 @@
       "researcher:martin-nybom"
     ],
     "score": 14,
-    "match_type": "none"
+    "match_type": "none",
+    "kind": "journal_article"
   },
   {
     "id": "crossref:10.1086/730322",
@@ -1160,7 +1026,8 @@
       "journal:journal-of-labor-economics"
     ],
     "score": 14,
-    "match_type": "none"
+    "match_type": "none",
+    "kind": "journal_article"
   },
   {
     "id": "openalex:https://openalex.org/W4407693098",
@@ -1208,130 +1075,29 @@
       "researcher:kjell-g-salvanes"
     ],
     "score": 14,
-    "match_type": "none"
-  },
-  {
-    "id": "openalex:https://openalex.org/W4408284171",
-    "title": "Intergenerational Mobility of Immigrants in 15 Destination Countries",
-    "authors": [
-      "Leah Platt Boustan",
-      "Mathias Fjællegaard Jensen",
-      "Ran Abramitzky",
-      "Elisa Jácome",
-      "Alan Manning",
-      "Santiago T. Pérez",
-      "Analysia Watley",
-      "Adrian Adermon",
-      "Jaime Arellano-Bover",
-      "Olof Åslund",
-      "Marie Connolly",
-      "Nathan Deutscher",
-      "Anne C. Gielen",
-      "Yvonne Giesing",
-      "Yajna Govind",
-      "Martin Halla",
-      "Dominik Hangartner",
-      "Yuyan Jiang",
-      "Cecilia Karmel",
-      "Fanny Landaud",
-      "Lindsey Macmillan",
-      "Isabel Z. Martínez",
-      "Alberto Polo",
-      "Panu Poutvaara",
-      "Hillel Rapoport C"
+    "match_type": "possible",
+    "kind": "working_paper",
+    "versions": [
+      {
+        "doi": "10.2139/ssrn.5142323",
+        "url": "https://doi.org/10.2139/ssrn.5142323",
+        "source": "SSRN Electronic Journal",
+        "provider": "openalex"
+      },
+      {
+        "doi": "10.3386/w33558",
+        "url": "https://doi.org/10.3386/w33558",
+        "source": "National Bureau of Economic Research",
+        "provider": "openalex"
+      },
+      {
+        "doi": "10.2139/ssrn.5172102",
+        "url": "https://doi.org/10.2139/ssrn.5172102",
+        "source": "SSRN Electronic Journal",
+        "provider": "openalex"
+      }
     ],
-    "year": 2025,
-    "source": "National Bureau of Economic Research",
-    "doi": "10.3386/w33558",
-    "url": "https://doi.org/10.3386/w33558",
-    "provider": "openalex",
-    "review_status": "pending",
-    "evidence_level": "metadata_only",
-    "collection": "pilot23",
-    "topics": [
-      "Intergenerational mobility"
-    ],
-    "source_ids": [
-      "researcher:jan-stuhler",
-      "researcher:kjell-g-salvanes"
-    ],
-    "score": 14,
-    "match_type": "none"
-  },
-  {
-    "id": "openalex:https://openalex.org/W4408289461",
-    "title": "Intergenerational Mobility of Immigrants in 15 Destination Countries",
-    "authors": [
-      "Leah Platt Boustan",
-      "Mathias Fjællegaard Jensen",
-      "Ran Abramitzky",
-      "Elisa Jácome",
-      "Alan Manning",
-      "Santiago T. Pérez",
-      "Analysia Watley",
-      "Adrian Adermon",
-      "Jaime Arellano-Bover",
-      "Olof Åslund",
-      "Marie Connolly",
-      "Nathan Deutscher",
-      "Anne C. Gielen",
-      "Yvonne Giesing",
-      "Yajna Govind",
-      "Martin Halla",
-      "Dominik Hangartner",
-      "Yuyan Jiang",
-      "Cecilia Karmel",
-      "Fanny Landaud",
-      "Lindsey Macmillan",
-      "Isabel Z. Martínez",
-      "Alberto Polo",
-      "Panu Poutvaara",
-      "Hillel Rapoport C"
-    ],
-    "year": 2025,
-    "source": "SSRN Electronic Journal",
-    "doi": "10.2139/ssrn.5172102",
-    "url": "https://doi.org/10.2139/ssrn.5172102",
-    "provider": "openalex",
-    "review_status": "pending",
-    "evidence_level": "metadata_only",
-    "collection": "pilot23",
-    "topics": [
-      "Intergenerational mobility"
-    ],
-    "source_ids": [
-      "researcher:jan-stuhler",
-      "researcher:kjell-g-salvanes"
-    ],
-    "score": 14,
-    "match_type": "none"
-  },
-  {
-    "id": "openalex:https://openalex.org/W7117134977",
-    "title": "Replication Data for: 'Changing Opportunity: Sociological Mechanisms Underlying Growing Class Gaps and Shrinking Race Gaps in Economic Mobility'",
-    "authors": [
-      "Raj Chetty",
-      "Will Dobbie",
-      "Benjamin Goldman",
-      "Sonya R. Porter",
-      "Crystal Yang"
-    ],
-    "year": 2025,
-    "source": "Harvard Dataverse",
-    "doi": "10.7910/dvn/hacb3p",
-    "url": "https://doi.org/10.7910/dvn/hacb3p",
-    "provider": "openalex",
-    "review_status": "pending",
-    "evidence_level": "metadata_only",
-    "collection": "pilot23",
-    "topics": [
-      "Intergenerational mobility"
-    ],
-    "source_ids": [
-      "researcher:raj-chetty"
-    ],
-    "score": 14,
-    "match_type": "none"
+    "version_count": 3
   },
   {
     "id": "crossref:10.1086/725595",
@@ -1355,7 +1121,8 @@
       "journal:journal-of-labor-economics"
     ],
     "score": 14,
-    "match_type": "none"
+    "match_type": "none",
+    "kind": "journal_article"
   },
   {
     "id": "openalex:https://openalex.org/W3134434737",
@@ -1382,7 +1149,8 @@
       "researcher:raj-chetty"
     ],
     "score": 14,
-    "match_type": "none"
+    "match_type": "none",
+    "kind": "journal_article"
   },
   {
     "id": "crossref:10.3368/jhr.0221-11499r5",
@@ -1405,34 +1173,8 @@
       "journal:journal-of-human-resources"
     ],
     "score": 14,
-    "match_type": "none"
-  },
-  {
-    "id": "openalex:https://openalex.org/W4401066634",
-    "title": "Changing Opportunity: Sociological Mechanisms Underlying Growing Class Gaps and Shrinking Race Gaps in Economic Mobility",
-    "authors": [
-      "Raj Chetty",
-      "Will Dobbie",
-      "Benjamin Goldman",
-      "Sonya R. Porter",
-      "Crystal Yang"
-    ],
-    "year": 2024,
-    "source": "National Bureau of Economic Research",
-    "doi": "10.3386/w32697",
-    "url": "https://doi.org/10.3386/w32697",
-    "provider": "openalex",
-    "review_status": "pending",
-    "evidence_level": "metadata_only",
-    "collection": "pilot23",
-    "topics": [
-      "Intergenerational mobility"
-    ],
-    "source_ids": [
-      "researcher:raj-chetty"
-    ],
-    "score": 14,
-    "match_type": "none"
+    "match_type": "none",
+    "kind": "journal_article"
   },
   {
     "id": "openalex:https://openalex.org/W4399518485",
@@ -1457,7 +1199,8 @@
       "researcher:kjell-g-salvanes"
     ],
     "score": 14,
-    "match_type": "none"
+    "match_type": "none",
+    "kind": "working_paper"
   },
   {
     "id": "openalex:https://openalex.org/W4398184276",
@@ -1480,7 +1223,8 @@
       "researcher:martin-nybom"
     ],
     "score": 14,
-    "match_type": "none"
+    "match_type": "none",
+    "kind": "other"
   },
   {
     "id": "crossref:10.1086/730206",
@@ -1505,7 +1249,8 @@
       "journal:journal-of-political-economy"
     ],
     "score": 14,
-    "match_type": "none"
+    "match_type": "none",
+    "kind": "journal_article"
   },
   {
     "id": "crossref:10.1257/app.20210686",
@@ -1530,7 +1275,8 @@
       "journal:aej-applied-economics"
     ],
     "score": 14,
-    "match_type": "none"
+    "match_type": "none",
+    "kind": "journal_article"
   },
   {
     "id": "crossref:10.1086/729582",
@@ -1556,7 +1302,17 @@
       "researcher:martin-nybom"
     ],
     "score": 14,
-    "match_type": "none"
+    "match_type": "none",
+    "kind": "journal_article",
+    "versions": [
+      {
+        "doi": "10.1086/729582",
+        "url": "https://doi.org/10.1086/729582",
+        "source": "Journal of Political Economy",
+        "provider": "openalex"
+      }
+    ],
+    "version_count": 1
   },
   {
     "id": "openalex:https://openalex.org/W4403383913",
@@ -1581,7 +1337,8 @@
       "researcher:martin-nybom"
     ],
     "score": 14,
-    "match_type": "none"
+    "match_type": "none",
+    "kind": "journal_article"
   },
   {
     "id": "crossref:10.1257/app.20210137",
@@ -1618,7 +1375,17 @@
       "researcher:martin-nybom"
     ],
     "score": 14,
-    "match_type": "none"
+    "match_type": "none",
+    "kind": "journal_article",
+    "versions": [
+      {
+        "doi": "10.1257/app.20210137",
+        "url": "https://doi.org/10.1257/app.20210137",
+        "source": "American Economic Journal Applied Economics",
+        "provider": "openalex"
+      }
+    ],
+    "version_count": 1
   },
   {
     "id": "openalex:https://openalex.org/W4398184596",
@@ -1641,7 +1408,8 @@
       "researcher:jan-stuhler"
     ],
     "score": 14,
-    "match_type": "none"
+    "match_type": "none",
+    "kind": "other"
   },
   {
     "id": "crossref:10.1257/app.20220137",
@@ -1667,7 +1435,8 @@
       "journal:aej-applied-economics"
     ],
     "score": 14,
-    "match_type": "none"
+    "match_type": "none",
+    "kind": "journal_article"
   },
   {
     "id": "openalex:https://openalex.org/W4396918681",
@@ -1691,7 +1460,8 @@
       "researcher:jan-stuhler"
     ],
     "score": 14,
-    "match_type": "none"
+    "match_type": "none",
+    "kind": "journal_article"
   },
   {
     "id": "crossref:10.3368/jhr.0422-12259r2",
@@ -1719,7 +1489,8 @@
       "journal:journal-of-human-resources"
     ],
     "score": 14,
-    "match_type": "none"
+    "match_type": "none",
+    "kind": "journal_article"
   },
   {
     "id": "openalex:https://openalex.org/W4405398345",
@@ -1745,7 +1516,8 @@
       "researcher:kjell-g-salvanes"
     ],
     "score": 14,
-    "match_type": "none"
+    "match_type": "none",
+    "kind": "journal_article"
   },
   {
     "id": "openalex:https://openalex.org/W4393007675",
@@ -1771,59 +1543,29 @@
       "researcher:aline-butikofer"
     ],
     "score": 14,
-    "match_type": "none"
-  },
-  {
-    "id": "openalex:https://openalex.org/W4393007736",
-    "title": "The Consequences of Miscarriage on Parental Investments",
-    "authors": [
-      "Aline Bütikofer",
-      "Deirdre Coy",
-      "Orla Doyle",
-      "Rita Ginja"
+    "match_type": "possible",
+    "kind": "working_paper",
+    "versions": [
+      {
+        "doi": "10.2139/ssrn.4761335",
+        "url": "https://doi.org/10.2139/ssrn.4761335",
+        "source": "SSRN Electronic Journal",
+        "provider": "openalex"
+      },
+      {
+        "doi": "10.2139/ssrn.4764350",
+        "url": "https://doi.org/10.2139/ssrn.4764350",
+        "source": "SSRN Electronic Journal",
+        "provider": "openalex"
+      },
+      {
+        "doi": "10.1920/wp.ifs.2024.0624",
+        "url": "https://doi.org/10.1920/wp.ifs.2024.0624",
+        "source": "Aline Bütikofer",
+        "provider": "openalex"
+      }
     ],
-    "year": 2024,
-    "source": "SSRN Electronic Journal",
-    "doi": "10.2139/ssrn.4764350",
-    "url": "https://doi.org/10.2139/ssrn.4764350",
-    "provider": "openalex",
-    "review_status": "pending",
-    "evidence_level": "metadata_only",
-    "collection": "pilot23",
-    "topics": [
-      "Family structure"
-    ],
-    "source_ids": [
-      "researcher:aline-butikofer"
-    ],
-    "score": 14,
-    "match_type": "none"
-  },
-  {
-    "id": "openalex:https://openalex.org/W4393075399",
-    "title": "The consequences of miscarriage on parental investments",
-    "authors": [
-      "Aline Bütikofer",
-      "Deidre Coy",
-      "Orla Doyle",
-      "Rita Ginja"
-    ],
-    "year": 2024,
-    "source": "Aline Bütikofer",
-    "doi": "10.1920/wp.ifs.2024.0624",
-    "url": "https://doi.org/10.1920/wp.ifs.2024.0624",
-    "provider": "openalex",
-    "review_status": "pending",
-    "evidence_level": "metadata_only",
-    "collection": "pilot23",
-    "topics": [
-      "Family structure"
-    ],
-    "source_ids": [
-      "researcher:aline-butikofer"
-    ],
-    "score": 14,
-    "match_type": "none"
+    "version_count": 3
   },
   {
     "id": "crossref:10.1257/app.20210816",
@@ -1849,7 +1591,8 @@
       "journal:aej-applied-economics"
     ],
     "score": 14,
-    "match_type": "none"
+    "match_type": "none",
+    "kind": "journal_article"
   },
   {
     "id": "crossref:10.3368/jhr.1022-12589r1",
@@ -1873,7 +1616,8 @@
       "journal:journal-of-human-resources"
     ],
     "score": 14,
-    "match_type": "none"
+    "match_type": "none",
+    "kind": "journal_article"
   },
   {
     "id": "crossref:10.3368/jhr.0422-12241r2",
@@ -1898,7 +1642,8 @@
       "journal:journal-of-human-resources"
     ],
     "score": 14,
-    "match_type": "none"
+    "match_type": "none",
+    "kind": "journal_article"
   },
   {
     "id": "crossref:10.1093/qje/qjae031",
@@ -1922,7 +1667,8 @@
       "journal:quarterly-journal-of-economics"
     ],
     "score": 14,
-    "match_type": "none"
+    "match_type": "none",
+    "kind": "journal_article"
   },
   {
     "id": "crossref:10.1093/qje/qjae036",
@@ -1945,7 +1691,8 @@
       "journal:quarterly-journal-of-economics"
     ],
     "score": 14,
-    "match_type": "none"
+    "match_type": "none",
+    "kind": "journal_article"
   },
   {
     "id": "crossref:10.3982/ecta19092",
@@ -1969,7 +1716,8 @@
       "journal:econometrica"
     ],
     "score": 14,
-    "match_type": "none"
+    "match_type": "none",
+    "kind": "journal_article"
   },
   {
     "id": "crossref:10.1920/wp.ifs.2017.1701",
