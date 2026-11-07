@@ -1,0 +1,179 @@
+{
+  "candidate_total": 1226,
+  "cross_provider_duplicate_dois": 6,
+  "date": "2026-11-07",
+  "end_date": "2026-11-07",
+  "errors": [],
+  "fetched": 1246,
+  "new_candidates": 1226,
+  "per_source": [
+    {
+      "adapter": "crossref_journal",
+      "fetched": 80,
+      "new": 80,
+      "possibly_truncated": true,
+      "source_id": "journal:american-economic-review"
+    },
+    {
+      "adapter": "crossref_journal",
+      "fetched": 80,
+      "new": 80,
+      "possibly_truncated": true,
+      "source_id": "journal:quarterly-journal-of-economics"
+    },
+    {
+      "adapter": "crossref_journal",
+      "fetched": 80,
+      "new": 80,
+      "possibly_truncated": true,
+      "source_id": "journal:journal-of-political-economy"
+    },
+    {
+      "adapter": "crossref_journal",
+      "fetched": 80,
+      "new": 80,
+      "possibly_truncated": true,
+      "source_id": "journal:econometrica"
+    },
+    {
+      "adapter": "crossref_journal",
+      "fetched": 80,
+      "new": 80,
+      "possibly_truncated": true,
+      "source_id": "journal:review-of-economic-studies"
+    },
+    {
+      "adapter": "crossref_journal",
+      "fetched": 80,
+      "new": 80,
+      "possibly_truncated": true,
+      "source_id": "journal:aej-applied-economics"
+    },
+    {
+      "adapter": "crossref_journal",
+      "fetched": 80,
+      "new": 80,
+      "possibly_truncated": true,
+      "source_id": "journal:aej-economic-policy"
+    },
+    {
+      "adapter": "crossref_journal",
+      "fetched": 80,
+      "new": 80,
+      "possibly_truncated": true,
+      "source_id": "journal:review-of-economics-and-statistics"
+    },
+    {
+      "adapter": "crossref_journal",
+      "fetched": 80,
+      "new": 80,
+      "possibly_truncated": true,
+      "source_id": "journal:journal-of-labor-economics"
+    },
+    {
+      "adapter": "crossref_journal",
+      "fetched": 80,
+      "new": 80,
+      "possibly_truncated": true,
+      "source_id": "journal:journal-of-human-resources"
+    },
+    {
+      "adapter": "repec_series_listing",
+      "fetched": 80,
+      "new": 80,
+      "possibly_truncated": true,
+      "source_id": "working_paper_series:nber-working-papers"
+    },
+    {
+      "adapter": "repec_series_listing",
+      "fetched": 80,
+      "new": 80,
+      "possibly_truncated": true,
+      "source_id": "working_paper_series:cepr-discussion-papers"
+    },
+    {
+      "adapter": "repec_series_listing",
+      "fetched": 80,
+      "new": 80,
+      "possibly_truncated": true,
+      "source_id": "working_paper_series:iza-discussion-papers"
+    },
+    {
+      "adapter": "openalex_author",
+      "fetched": 32,
+      "new": 32,
+      "possibly_truncated": false,
+      "source_id": "researcher:jan-stuhler"
+    },
+    {
+      "adapter": "openalex_author",
+      "fetched": 12,
+      "new": 6,
+      "possibly_truncated": false,
+      "source_id": "researcher:martin-nybom"
+    },
+    {
+      "adapter": "openalex_author",
+      "fetched": 15,
+      "new": 15,
+      "possibly_truncated": false,
+      "source_id": "researcher:katrine-v-l-ken"
+    },
+    {
+      "adapter": "openalex_author",
+      "fetched": 11,
+      "new": 10,
+      "possibly_truncated": false,
+      "source_id": "researcher:aline-butikofer"
+    },
+    {
+      "adapter": "openalex_author",
+      "fetched": 25,
+      "new": 18,
+      "possibly_truncated": false,
+      "source_id": "researcher:kjell-g-salvanes"
+    },
+    {
+      "adapter": "openalex_author",
+      "fetched": 54,
+      "new": 48,
+      "possibly_truncated": false,
+      "source_id": "researcher:magne-mogstad"
+    },
+    {
+      "adapter": "openalex_author",
+      "fetched": 27,
+      "new": 27,
+      "possibly_truncated": false,
+      "source_id": "researcher:alessandra-voena"
+    },
+    {
+      "adapter": "openalex_author",
+      "fetched": 6,
+      "new": 6,
+      "possibly_truncated": false,
+      "source_id": "researcher:corina-mommaerts"
+    },
+    {
+      "adapter": "openalex_author",
+      "fetched": 12,
+      "new": 12,
+      "possibly_truncated": false,
+      "source_id": "researcher:wojciech-kopczuk"
+    },
+    {
+      "adapter": "openalex_author",
+      "fetched": 12,
+      "new": 12,
+      "possibly_truncated": false,
+      "source_id": "researcher:raj-chetty"
+    }
+  ],
+  "publication_status": "unreviewed_metadata_only",
+  "source_count": 23,
+  "sources_at_cap": 13,
+  "sources_failed": 0,
+  "sources_succeeded": 23,
+  "sqlite_candidate_rows": 1226,
+  "start_date": "2024-01-01"
+}

@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "sources": {
+    "researcher:alessandra-voena": {
+      "last_run": "2026-11-07",
+      "last_successful_end": "2026-11-07"
+    },
+    "researcher:aline-butikofer": {
+      "last_run": "2026-11-07",
+      "last_successful_end": "2026-11-07"
+    },
+    "researcher:corina-mommaerts": {
+      "last_run": "2026-11-07",
+      "last_successful_end": "2026-11-07"
+    },
+    "researcher:jan-stuhler": {
+      "last_run": "2026-11-07",
+      "last_successful_end": "2026-11-07"
+    },
+    "researcher:katrine-v-l-ken": {
+      "last_run": "2026-11-07",
+      "last_successful_end": "2026-11-07"
+    },
+    "researcher:kjell-g-salvanes": {
+      "last_run": "2026-11-07",
+      "last_successful_end": "2026-11-07"
+    },
+    "researcher:magne-mogstad": {
+      "last_run": "2026-11-07",
+      "last_successful_end": "2026-11-07"
+    },
+    "researcher:martin-nybom": {
+      "last_run": "2026-11-07",
+      "last_successful_end": "2026-11-07"
+    },
+    "researcher:raj-chetty": {
+      "last_run": "2026-11-07",
+      "last_successful_end": "2026-11-07"
+    },
+    "researcher:wojciech-kopczuk": {
+      "last_run": "2026-11-07",
+      "last_successful_end": "2026-11-07"
+    }
+  }
+}
