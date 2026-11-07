@@ -9,7 +9,7 @@ ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/"scripts"))
 from publish_pilot_discovery import (
     classify,valid_https,catalog_from_manifest,base_records,pilot_records,
-    curated_records,combine,build,write_json
+    curated_records,combine,build,write_json,repair_encoding
 )
 
 def pilot(id="10.1000/abc",title="Inheritance and wealth inequality",doi=None):
@@ -73,6 +73,32 @@ class ExportTests(unittest.TestCase):
             self.assertEqual(len(merged),1)
             self.assertEqual(merged[0]["review_status"],"curated")
             self.assertIn("journal:american-economic-review",merged[0]["source_ids"])
+
+    def test_exact_title_and_first_author_group_versions(self):
+        a={"id":"a","title":"Educational Mobility Across Generations","authors":["Jan Stuhler"],
+           "doi":"10.1234/working","url":"https://example.org/a","source":"SSRN",
+           "provider":"openalex","review_status":"pending","collection":"pilot23",
+           "source_ids":["researcher:jan-stuhler"],"topics":["Intergenerational mobility"],"score":14,"year":2025}
+        b={**a,"id":"b","title":"Educational mobility across generations",
+           "doi":"10.1234/journal","url":"https://example.org/b",
+           "source":"Journal of Development Economics","year":2026}
+        out=combine([a,b])
+        self.assertEqual(len(out),1)
+        self.assertEqual(out[0]["source"],"Journal of Development Economics")
+        self.assertEqual(out[0]["version_count"],2)
+        self.assertEqual(out[0]["match_type"],"possible")
+        c={**b,"id":"c","authors":["Someone Else"],"doi":"10.1234/other"}
+        self.assertEqual(len(combine([a,b,c])),2)
+
+    def test_excludes_replication_packages_and_repairs_mojibake(self):
+        with tempfile.TemporaryDirectory() as d:
+            path=Path(d)/"snapshot.jsonl"
+            replication=pilot("10.1000/rep","Replication Code for: Intergenerational Mobility")
+            actual=pilot("10.1000/actual","Will Todayâ€™s Children Be Richer than Their Parents? Intergenerational Mobility")
+            path.write_text("\n".join(json.dumps(x) for x in [replication,actual])+"\n")
+            rows,stats=pilot_records(path,self.manifest)
+            self.assertEqual(stats["title_screened_candidates"],1)
+            self.assertIn("Today’s",rows[0]["title"])
 
     def test_baseline_does_not_duplicate_previous_exports(self):
         existing=[
