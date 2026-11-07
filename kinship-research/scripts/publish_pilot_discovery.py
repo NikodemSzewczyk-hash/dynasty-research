@@ -12,6 +12,7 @@ from datetime import date
 import json
 from pathlib import Path
 import re
+import unicodedata
 from urllib.parse import urlsplit
 
 ROOT=Path(__file__).resolve().parents[1]
@@ -126,6 +127,19 @@ def base_records(existing):
         result.append(x)
     return result
 
+NONPAPER=re.compile(
+    r"^\s*(?:replication (?:data|code)|replication package|data and code for|"
+    r"replication files? for|supplementary (?:data|materials?)|"
+    r"corrigendum|erratum|correction to:|dataset for:)\b",re.I)
+
+def repair_encoding(value):
+    """Repair obvious UTF-8/Latin-1 mojibake in public RePEc titles only."""
+    text=str(value or "")
+    if any(mark in text for mark in ("â€™","â€œ","â€","Ã©","Ã¼")):
+        try:return text.encode("latin-1").decode("utf-8")
+        except (UnicodeEncodeError,UnicodeDecodeError):return text
+    return text
+
 def pilot_records(snapshot,manifest):
     names={s["id"]:s["name"] for s in manifest["sources"]}
     active={s["id"] for s in manifest["sources"] if (s.get("retrieval") or {}).get("enabled")}
@@ -139,7 +153,8 @@ def pilot_records(snapshot,manifest):
         ids=sorted(set(r.get("pilot_source_ids") or []))
         if not ids or any(s not in active for s in ids):
             unrecognized+=1;continue
-        title=r.get("title","")
+        title=repair_encoding(r.get("title",""))
+        if NONPAPER.search(title):continue
         topics=classify(title)
         if not topics:continue
         if not isinstance(r.get("authors"),list):continue
@@ -151,12 +166,12 @@ def pilot_records(snapshot,manifest):
         source=r.get("source_name") or names[ids[0]]
         rows.append({
             "id":str(r["provider"])+":"+str(r["provider_id"]),
-            "title":title,"authors":r["authors"][:25],"year":yr,
+            "title":title,"authors":[repair_encoding(a) for a in r["authors"][:25]],"year":yr,
             "source":source,"doi":doi_key(r.get("doi")) or None,"url":url,
             "provider":r["provider"],"review_status":"pending",
             "evidence_level":"metadata_only","collection":"pilot23",
             "topics":topics,"source_ids":ids,
-            "score":12+len(topics)*2,"match_type":"none",
+            "score":12+len(topics)*2,"match_type":"none","kind":r.get("kind",""),
         })
     return rows,{"raw_candidates":total,"title_screened_candidates":screened,
                  "unrecognized_source_rows":unrecognized}
@@ -176,24 +191,61 @@ def curated_records(papers):
         })
     return result
 
+def _text_key(text):
+    ascii_text=unicodedata.normalize("NFKD",str(text or ""))
+    ascii_text="".join(c for c in ascii_text if not unicodedata.combining(c))
+    return re.sub(r"[^a-z0-9]+"," ",ascii_text.casefold()).strip()
+
+def _version(row):
+    return {"doi":doi_key(row.get("doi")) or None,
+            "url":row.get("url"),"source":row.get("source",""),
+            "provider":row.get("provider","")}
+
+def _priority(row):
+    if row.get("collection")=="curated":return (4,0)
+    if row.get("collection")=="historical":return (0,0)
+    venue=(row.get("source") or "").casefold()
+    is_journal=("journal" in venue or "review of" in venue or "econometrica" in venue)
+    not_journal=any(t in venue for t in ("ssrn","arxiv","working paper","nber","cesifo"))
+    return (3 if is_journal and not not_journal else 2, row.get("year") or 0)
+
+def _merge_rows(old,new,possible):
+    a,b=dict(old),dict(new)
+    chosen=a if _priority(a)>=_priority(b) else b
+    out=dict(chosen)
+    out["source_ids"]=sorted(set(a.get("source_ids",[]))|set(b.get("source_ids",[])))
+    out["topics"]=list(dict.fromkeys(a.get("topics",[])+b.get("topics",[])))
+    versions=(a.get("versions") or [_version(a)])+(b.get("versions") or [_version(b)])
+    dedup={}
+    for v in versions:
+        k=doi_key(v.get("doi")) or v.get("url")
+        if k:dedup[k]=v
+    out["versions"]=list(dedup.values())
+    out["version_count"]=len(out["versions"])
+    if possible or a.get("match_type")=="possible" or b.get("match_type")=="possible":
+        out["match_type"]="possible"
+    return out
+
 def combine(records):
-    # DOI identity only: do not conflate similar titles, working papers and
-    # journal versions without a verified identifier.
-    bykey={}
-    rank={"historical":1,"pilot23":2,"curated":3}
-    for r in records:
+    # Two passes: exact DOI, then exact normalized title AND first author.
+    # The second pass is labelled as *possible* versions, not verified
+    # equivalence. Do not fuzzy-match titles or people.
+    bydoi={}
+    for row in records:
+        r=dict(row)
         doi=doi_key(r.get("doi"))
         key="doi:"+doi if doi else "record:"+str(r["id"])
-        if key not in bykey:
-            bykey[key]=dict(r);continue
-        prev=bykey[key]
-        merged_sources=sorted(set(prev.get("source_ids",[]))|set(r.get("source_ids",[])))
-        merged_topics=list(dict.fromkeys(prev.get("topics",[])+r.get("topics",[])))
-        if rank[r["collection"]]>rank[prev["collection"]]:
-            bykey[key]=dict(r)
-        bykey[key]["source_ids"]=merged_sources
-        bykey[key]["topics"]=merged_topics
-    return sorted(bykey.values(),key=lambda r:(
+        if key in bydoi:bydoi[key]=_merge_rows(bydoi[key],r,False)
+        else:bydoi[key]=r
+    bytitle={}
+    for r in bydoi.values():
+        title=_text_key(r.get("title"))
+        authors=r.get("authors") or []
+        first=_text_key(authors[0]) if authors else ""
+        key="title:"+title+":"+first if title and first else "record:"+str(r["id"])
+        if key in bytitle:bytitle[key]=_merge_rows(bytitle[key],r,True)
+        else:bytitle[key]=r
+    return sorted(bytitle.values(),key=lambda r:(
         0 if r["review_status"]=="curated" else 1,
         -(r.get("score") or 0),-(r.get("year") or 0),r["title"].casefold()))
 
@@ -210,7 +262,7 @@ def build(manifest,papers,existing,snapshot):
         "pilot_displayed":counts["pilot23"],"curated_displayed":counts["curated"],
         "pilot_source_count":cat["summary"]["verified_active"],
         "scope":"Title-screened bibliographic candidates; not editorial endorsements",
-        "deduplication":"Exact DOI only; distinct versions without DOI may remain",
+        "deduplication":"Exact DOI, then exact normalized title + first author (latter labelled possible versions)",
     })
     return cat,merged,stats
 
