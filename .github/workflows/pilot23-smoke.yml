@@ -45,6 +45,24 @@ jobs:
           assert r["publication_status"]=="unreviewed_metadata_only"
           print("Smoke verified: Crossref journal, OpenAlex author, RePEc series")
           PY
+      - name: Live all-23-source connectivity check (2 records each; not backfill)
+        env:
+          OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
+          DYNASTY_CONTACT_EMAIL: ${{ vars.DYNASTY_CONTACT_EMAIL }}
+        run: |
+          python scripts/pilot23_ingest.py --mode weekly --max-per-source 2 \
+            --from-date 2024-01-01 \
+            --snapshot /tmp/pilot23-all.jsonl \
+            --state /tmp/pilot23-all-state.json \
+            --report /tmp/pilot23-all-report.json \
+            --db /tmp/pilot23-all.sqlite
+          python - <<'PY'
+          import json
+          r=json.load(open("/tmp/pilot23-all-report.json"))
+          assert r["source_count"]==23 and r["sources_succeeded"]==23,r
+          assert r["sources_failed"]==0 and r["candidate_total"]>0,r
+          print("Live all-source check:",r["sources_succeeded"],"of 23 sources")
+          PY
       - uses: actions/upload-artifact@v4
         if: always()
         with:
@@ -52,4 +70,6 @@ jobs:
           path: |
             /tmp/pilot23-smoke-report.json
             /tmp/pilot23-smoke.jsonl
+            /tmp/pilot23-all-report.json
+            /tmp/pilot23-all.jsonl
           retention-days: 7
