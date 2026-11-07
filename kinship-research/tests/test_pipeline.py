@@ -216,15 +216,15 @@ class PipelineTest(unittest.TestCase):
 
     def test_source_identifier_suggestions_not_autoverified(self):
         seed_sources(self.db,SITE/"registry"/"source_manifest.json")
-        sid="journal:quarterly-journal-of-economics"
+        sid="journal:journal-of-development-economics"
         called=[]
         def fake(url):
             called.append(url)
-            return {"results":[{"id":"https://openalex.org/S101","display_name":"Quarterly Journal of Economics",
-                                "issn":["0033-5533"],"issn_l":"0033-5533","works_count":1234}]}
+            return {"results":[{"id":"https://openalex.org/S101","display_name":"Journal of Development Economics",
+                                "issn":["0304-3878"],"issn_l":"0304-3878","works_count":1234}]}
         result=suggest_identifiers(self.db,sid,limit=3,fetcher=fake)
         self.assertIn("UNVERIFIED",result["note"])
-        self.assertEqual(result["suggestions"][0]["issn_candidates"],["0033-5533"])
+        self.assertEqual(result["suggestions"][0]["issn_candidates"],["0304-3878"])
         self.assertTrue(result["suggestions"][0]["name_exact"])
         self.assertIn("/sources?",called[0])
         db_source=self.db.execute("SELECT retrieval_json FROM sources WHERE id=?",(sid,)).fetchone()
