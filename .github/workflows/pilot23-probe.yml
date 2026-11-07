@@ -1,0 +1,32 @@
+name: Pilot23 read-only identifier probe
+on:
+  push:
+    branches: [feat/pilot23-source-activation]
+    paths:
+      - 'kinship-research/scripts/pilot23_probe.py'
+      - 'kinship-research/scripts/pilot23_series_probe.py'
+      - '.github/workflows/pilot23-probe.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    defaults:
+      run:
+        working-directory: kinship-research
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Probe official Crossref and OpenAlex identity APIs
+        run: python scripts/pilot23_probe.py
+      - name: Probe RePEc and publisher series listing markup
+        run: python scripts/pilot23_series_probe.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: pilot23-identifier-probe
+          path: kinship-research/registry/pilot23-probe.json
+          retention-days: 7

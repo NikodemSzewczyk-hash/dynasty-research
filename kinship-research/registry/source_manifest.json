@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "generated_from": "data/sources.json",
-  "notes": "Internal IDs are stable local identifiers, not verified OpenAlex, Crossref, ORCID or ISSN matches. Retrieval stays disabled until external identifiers or feeds are manually verified.",
+  "notes": "Local source IDs are stable. Exactly 23 pilot sources have externally checked ISSN, OpenAlex author ID or RePEc series handle; all others remain disabled. See registry/pilot23-verification.json. Enabled means metadata retrieval is configured, not that full coverage or PDF access is established.",
   "sources": [
     {
       "id": "journal:american-economic-review",
@@ -9,13 +9,17 @@
       "name": "American Economic Review",
       "area": "General economics",
       "tier": "A",
-      "identifiers": {},
+      "identifiers": {
+        "issn": "0002-8282"
+      },
       "retrieval": {
-        "provider": "crossref",
-        "method": "issn_endpoint",
-        "identifier_field": "issn",
-        "enabled": false,
-        "verification": "needs_verified_identifier"
+        "enabled": true,
+        "adapter": "crossref_journal",
+        "verification": "crossref_registry_title_issn",
+        "verified_on": "2026-11-07",
+        "verified_by": "dynasty_ pilot source audit",
+        "evidence_url": "https://api.crossref.org/journals/0002-8282",
+        "registry_title": "American Economic Review"
       },
       "editorial_status": "candidate"
     },
@@ -25,13 +29,17 @@
       "name": "Quarterly Journal of Economics",
       "area": "General economics",
       "tier": "A",
-      "identifiers": {},
+      "identifiers": {
+        "issn": "0033-5533"
+      },
       "retrieval": {
-        "provider": "crossref",
-        "method": "issn_endpoint",
-        "identifier_field": "issn",
-        "enabled": false,
-        "verification": "needs_verified_identifier"
+        "enabled": true,
+        "adapter": "crossref_journal",
+        "verification": "crossref_registry_title_issn",
+        "verified_on": "2026-11-07",
+        "verified_by": "dynasty_ pilot source audit",
+        "evidence_url": "https://api.crossref.org/journals/0033-5533",
+        "registry_title": "The Quarterly Journal of Economics"
       },
       "editorial_status": "candidate"
     },
@@ -41,13 +49,17 @@
       "name": "Journal of Political Economy",
       "area": "General economics",
       "tier": "A",
-      "identifiers": {},
+      "identifiers": {
+        "issn": "0022-3808"
+      },
       "retrieval": {
-        "provider": "crossref",
-        "method": "issn_endpoint",
-        "identifier_field": "issn",
-        "enabled": false,
-        "verification": "needs_verified_identifier"
+        "enabled": true,
+        "adapter": "crossref_journal",
+        "verification": "crossref_registry_title_issn",
+        "verified_on": "2026-11-07",
+        "verified_by": "dynasty_ pilot source audit",
+        "evidence_url": "https://api.crossref.org/journals/0022-3808",
+        "registry_title": "Journal of Political Economy"
       },
       "editorial_status": "candidate"
     },
@@ -57,13 +69,17 @@
       "name": "Econometrica",
       "area": "General economics",
       "tier": "A",
-      "identifiers": {},
+      "identifiers": {
+        "issn": "0012-9682"
+      },
       "retrieval": {
-        "provider": "crossref",
-        "method": "issn_endpoint",
-        "identifier_field": "issn",
-        "enabled": false,
-        "verification": "needs_verified_identifier"
+        "enabled": true,
+        "adapter": "crossref_journal",
+        "verification": "crossref_registry_title_issn",
+        "verified_on": "2026-11-07",
+        "verified_by": "dynasty_ pilot source audit",
+        "evidence_url": "https://api.crossref.org/journals/0012-9682",
+        "registry_title": "Econometrica"
       },
       "editorial_status": "candidate"
     },
@@ -73,13 +89,17 @@
       "name": "Review of Economic Studies",
       "area": "General economics",
       "tier": "A",
-      "identifiers": {},
+      "identifiers": {
+        "issn": "0034-6527"
+      },
       "retrieval": {
-        "provider": "crossref",
-        "method": "issn_endpoint",
-        "identifier_field": "issn",
-        "enabled": false,
-        "verification": "needs_verified_identifier"
+        "enabled": true,
+        "adapter": "crossref_journal",
+        "verification": "crossref_registry_title_issn",
+        "verified_on": "2026-11-07",
+        "verified_by": "dynasty_ pilot source audit",
+        "evidence_url": "https://api.crossref.org/journals/0034-6527",
+        "registry_title": "The Review of Economic Studies"
       },
       "editorial_status": "candidate"
     },
@@ -89,13 +109,17 @@
       "name": "AEJ: Applied Economics",
       "area": "Applied microeconomics",
       "tier": "A",
-      "identifiers": {},
+      "identifiers": {
+        "issn": "1945-7782"
+      },
       "retrieval": {
-        "provider": "crossref",
-        "method": "issn_endpoint",
-        "identifier_field": "issn",
-        "enabled": false,
-        "verification": "needs_verified_identifier"
+        "enabled": true,
+        "adapter": "crossref_journal",
+        "verification": "crossref_registry_title_issn",
+        "verified_on": "2026-11-07",
+        "verified_by": "dynasty_ pilot source audit",
+        "evidence_url": "https://api.crossref.org/journals/1945-7782",
+        "registry_title": "American Economic Journal Applied Economics"
       },
       "editorial_status": "candidate"
     },
@@ -105,13 +129,17 @@
       "name": "AEJ: Economic Policy",
       "area": "Applied public policy",
       "tier": "A",
-      "identifiers": {},
+      "identifiers": {
+        "issn": "1945-7731"
+      },
       "retrieval": {
-        "provider": "crossref",
-        "method": "issn_endpoint",
-        "identifier_field": "issn",
-        "enabled": false,
-        "verification": "needs_verified_identifier"
+        "enabled": true,
+        "adapter": "crossref_journal",
+        "verification": "crossref_registry_title_issn",
+        "verified_on": "2026-11-07",
+        "verified_by": "dynasty_ pilot source audit",
+        "evidence_url": "https://api.crossref.org/journals/1945-7731",
+        "registry_title": "American Economic Journal Economic Policy"
       },
       "editorial_status": "candidate"
     },
@@ -137,13 +165,17 @@
       "name": "Review of Economics and Statistics",
       "area": "Applied economics",
       "tier": "A",
-      "identifiers": {},
+      "identifiers": {
+        "issn": "0034-6535"
+      },
       "retrieval": {
-        "provider": "crossref",
-        "method": "issn_endpoint",
-        "identifier_field": "issn",
-        "enabled": false,
-        "verification": "needs_verified_identifier"
+        "enabled": true,
+        "adapter": "crossref_journal",
+        "verification": "crossref_registry_title_issn",
+        "verified_on": "2026-11-07",
+        "verified_by": "dynasty_ pilot source audit",
+        "evidence_url": "https://api.crossref.org/journals/0034-6535",
+        "registry_title": "The Review of Economics and Statistics"
       },
       "editorial_status": "candidate"
     },
@@ -185,13 +217,17 @@
       "name": "Journal of Labor Economics",
       "area": "Labor and family",
       "tier": "A",
-      "identifiers": {},
+      "identifiers": {
+        "issn": "0734-306X"
+      },
       "retrieval": {
-        "provider": "crossref",
-        "method": "issn_endpoint",
-        "identifier_field": "issn",
-        "enabled": false,
-        "verification": "needs_verified_identifier"
+        "enabled": true,
+        "adapter": "crossref_journal",
+        "verification": "crossref_registry_title_issn",
+        "verified_on": "2026-11-07",
+        "verified_by": "dynasty_ pilot source audit",
+        "evidence_url": "https://api.crossref.org/journals/0734-306X",
+        "registry_title": "Journal of Labor Economics"
       },
       "editorial_status": "candidate"
     },
@@ -201,13 +237,17 @@
       "name": "Journal of Human Resources",
       "area": "Human capital and mobility",
       "tier": "A",
-      "identifiers": {},
+      "identifiers": {
+        "issn": "0022-166X"
+      },
       "retrieval": {
-        "provider": "crossref",
-        "method": "issn_endpoint",
-        "identifier_field": "issn",
-        "enabled": false,
-        "verification": "needs_verified_identifier"
+        "enabled": true,
+        "adapter": "crossref_journal",
+        "verification": "crossref_registry_title_issn",
+        "verified_on": "2026-11-07",
+        "verified_by": "dynasty_ pilot source audit",
+        "evidence_url": "https://api.crossref.org/journals/0022-166X",
+        "registry_title": "The Journal of Human Resources"
       },
       "editorial_status": "candidate"
     },
@@ -857,14 +897,17 @@
       "name": "NBER Working Papers",
       "area": "General economics",
       "tier": "A",
-      "identifiers": {},
+      "identifiers": {
+        "repec_series_handle": "RePEc:nbr:nberwo"
+      },
       "retrieval": {
-        "provider": "nber",
-        "method": "official_ref_tsv_manual_import",
-        "identifier_field": "feed_url",
-        "enabled": false,
-        "verification": "official_metadata_documented_not_scheduled",
-        "documentation_url": "https://www.nber.org/research/data/nber-working-papers-and-chapters-metadata"
+        "enabled": true,
+        "adapter": "repec_series_listing",
+        "verification": "repec_series_handle_and_publisher_identity",
+        "verified_on": "2026-11-07",
+        "verified_by": "dynasty_ pilot source audit",
+        "evidence_url": "https://ideas.repec.org/s/nbr/nberwo.html",
+        "limitations": "RePEc public listing provides bounded recent metadata, not an exhaustive historical backfill; publisher PDF access is not implied."
       },
       "editorial_status": "candidate"
     },
@@ -874,13 +917,17 @@
       "name": "CEPR Discussion Papers",
       "area": "European/international economics",
       "tier": "A",
-      "identifiers": {},
+      "identifiers": {
+        "repec_series_handle": "RePEc:cpr:ceprdp"
+      },
       "retrieval": {
-        "provider": "institutional",
-        "method": "verified_feed",
-        "identifier_field": "feed_url",
-        "enabled": false,
-        "verification": "needs_verified_identifier"
+        "enabled": true,
+        "adapter": "repec_series_listing",
+        "verification": "repec_series_handle_and_publisher_identity",
+        "verified_on": "2026-11-07",
+        "verified_by": "dynasty_ pilot source audit",
+        "evidence_url": "https://ideas.repec.org/s/cpr/ceprdp.html",
+        "limitations": "RePEc public listing provides bounded recent metadata, not an exhaustive historical backfill; publisher PDF access is not implied."
       },
       "editorial_status": "candidate"
     },
@@ -890,13 +937,17 @@
       "name": "IZA Discussion Papers",
       "area": "Labor and family",
       "tier": "A",
-      "identifiers": {},
+      "identifiers": {
+        "repec_series_handle": "RePEc:iza:izadps"
+      },
       "retrieval": {
-        "provider": "institutional",
-        "method": "verified_feed",
-        "identifier_field": "feed_url",
-        "enabled": false,
-        "verification": "needs_verified_identifier"
+        "enabled": true,
+        "adapter": "repec_series_listing",
+        "verification": "repec_series_handle_and_publisher_identity",
+        "verified_on": "2026-11-07",
+        "verified_by": "dynasty_ pilot source audit",
+        "evidence_url": "https://ideas.repec.org/s/iza/izadps.html",
+        "limitations": "RePEc public listing provides bounded recent metadata, not an exhaustive historical backfill; publisher PDF access is not implied."
       },
       "editorial_status": "candidate"
     },
@@ -1386,13 +1437,22 @@
       "name": "Jan Stuhler",
       "area": "Multigenerational mobility",
       "tier": "A",
-      "identifiers": {},
+      "identifiers": {
+        "openalex_author_id": "A5071390181",
+        "orcid": "https://orcid.org/0000-0003-0762-5591"
+      },
       "retrieval": {
-        "provider": "openalex",
-        "method": "author_id_filter",
-        "identifier_field": "openalex_author_id",
-        "enabled": false,
-        "verification": "needs_verified_identifier"
+        "enabled": true,
+        "adapter": "openalex_author",
+        "verification": "openalex_name_affiliation_orcid_manual_crosscheck",
+        "verified_on": "2026-11-07",
+        "verified_by": "dynasty_ pilot source audit",
+        "evidence_url": "https://api.openalex.org/authors/A5071390181",
+        "registry_title": "Jan Leonard Stuhler",
+        "affiliation_context": [
+          "Queen Mary University of London",
+          "Universidad Carlos III de Madrid"
+        ]
       },
       "editorial_status": "candidate"
     },
@@ -1402,13 +1462,22 @@
       "name": "Martin Nybom",
       "area": "Intergenerational persistence",
       "tier": "A",
-      "identifiers": {},
+      "identifiers": {
+        "openalex_author_id": "A5018550128",
+        "orcid": "https://orcid.org/0000-0001-8624-0280"
+      },
       "retrieval": {
-        "provider": "openalex",
-        "method": "author_id_filter",
-        "identifier_field": "openalex_author_id",
-        "enabled": false,
-        "verification": "needs_verified_identifier"
+        "enabled": true,
+        "adapter": "openalex_author",
+        "verification": "openalex_name_affiliation_orcid_manual_crosscheck",
+        "verified_on": "2026-11-07",
+        "verified_by": "dynasty_ pilot source audit",
+        "evidence_url": "https://api.openalex.org/authors/A5018550128",
+        "registry_title": "Martin Nybom",
+        "affiliation_context": [
+          "Uppsala University",
+          "Institute for Evaluation of Labour Market and Education Policy"
+        ]
       },
       "editorial_status": "candidate"
     },
@@ -1418,13 +1487,20 @@
       "name": "Katrine V. Løken",
       "area": "Families and child outcomes",
       "tier": "A",
-      "identifiers": {},
+      "identifiers": {
+        "openalex_author_id": "A5038351764"
+      },
       "retrieval": {
-        "provider": "openalex",
-        "method": "author_id_filter",
-        "identifier_field": "openalex_author_id",
-        "enabled": false,
-        "verification": "needs_verified_identifier"
+        "enabled": true,
+        "adapter": "openalex_author",
+        "verification": "openalex_name_affiliation_orcid_manual_crosscheck",
+        "verified_on": "2026-11-07",
+        "verified_by": "dynasty_ pilot source audit",
+        "evidence_url": "https://api.openalex.org/authors/A5038351764",
+        "registry_title": "Katrine Vellesen Løken",
+        "affiliation_context": [
+          "Norwegian School of Economics"
+        ]
       },
       "editorial_status": "candidate"
     },
@@ -1434,13 +1510,21 @@
       "name": "Aline Bütikofer",
       "area": "Family and long-run outcomes",
       "tier": "A",
-      "identifiers": {},
+      "identifiers": {
+        "openalex_author_id": "A5038291213",
+        "orcid": "https://orcid.org/0000-0002-8546-4503"
+      },
       "retrieval": {
-        "provider": "openalex",
-        "method": "author_id_filter",
-        "identifier_field": "openalex_author_id",
-        "enabled": false,
-        "verification": "needs_verified_identifier"
+        "enabled": true,
+        "adapter": "openalex_author",
+        "verification": "openalex_name_affiliation_orcid_manual_crosscheck",
+        "verified_on": "2026-11-07",
+        "verified_by": "dynasty_ pilot source audit",
+        "evidence_url": "https://api.openalex.org/authors/A5038291213",
+        "registry_title": "Aline Bütikofer",
+        "affiliation_context": [
+          "University College London"
+        ]
       },
       "editorial_status": "candidate"
     },
@@ -1450,13 +1534,22 @@
       "name": "Kjell G. Salvanes",
       "area": "Family, education, mobility",
       "tier": "A",
-      "identifiers": {},
+      "identifiers": {
+        "openalex_author_id": "A5025896273",
+        "orcid": "https://orcid.org/0000-0002-6381-4496"
+      },
       "retrieval": {
-        "provider": "openalex",
-        "method": "author_id_filter",
-        "identifier_field": "openalex_author_id",
-        "enabled": false,
-        "verification": "needs_verified_identifier"
+        "enabled": true,
+        "adapter": "openalex_author",
+        "verification": "openalex_name_affiliation_orcid_manual_crosscheck",
+        "verified_on": "2026-11-07",
+        "verified_by": "dynasty_ pilot source audit",
+        "evidence_url": "https://api.openalex.org/authors/A5025896273",
+        "registry_title": "Kjell G. Salvanes",
+        "affiliation_context": [
+          "University College London",
+          "Norwegian School of Economics"
+        ]
       },
       "editorial_status": "candidate"
     },
@@ -1466,13 +1559,23 @@
       "name": "Magne Mogstad",
       "area": "Intergenerational outcomes",
       "tier": "A",
-      "identifiers": {},
+      "identifiers": {
+        "openalex_author_id": "A5035713394",
+        "orcid": "https://orcid.org/0000-0002-7177-050X"
+      },
       "retrieval": {
-        "provider": "openalex",
-        "method": "author_id_filter",
-        "identifier_field": "openalex_author_id",
-        "enabled": false,
-        "verification": "needs_verified_identifier"
+        "enabled": true,
+        "adapter": "openalex_author",
+        "verification": "openalex_name_affiliation_orcid_manual_crosscheck",
+        "verified_on": "2026-11-07",
+        "verified_by": "dynasty_ pilot source audit",
+        "evidence_url": "https://api.openalex.org/authors/A5035713394",
+        "registry_title": "Magne Mogstad",
+        "affiliation_context": [
+          "National Bureau of Economic Research",
+          "Statistics Norway",
+          "University of Chicago"
+        ]
       },
       "editorial_status": "candidate"
     },
@@ -1498,13 +1601,22 @@
       "name": "Alessandra Voena",
       "area": "Marriage, divorce, bargaining",
       "tier": "A",
-      "identifiers": {},
+      "identifiers": {
+        "openalex_author_id": "A5045271714"
+      },
       "retrieval": {
-        "provider": "openalex",
-        "method": "author_id_filter",
-        "identifier_field": "openalex_author_id",
-        "enabled": false,
-        "verification": "needs_verified_identifier"
+        "enabled": true,
+        "adapter": "openalex_author",
+        "verification": "openalex_name_affiliation_orcid_manual_crosscheck",
+        "verified_on": "2026-11-07",
+        "verified_by": "dynasty_ pilot source audit",
+        "evidence_url": "https://api.openalex.org/authors/A5045271714",
+        "registry_title": "Alessandra Voena",
+        "affiliation_context": [
+          "Center for Economic and Policy Research",
+          "Stanford Institute for Economic Policy Research",
+          "Stanford University"
+        ]
       },
       "editorial_status": "candidate"
     },
@@ -1514,13 +1626,22 @@
       "name": "Corina Mommaerts",
       "area": "Family insurance and transfers",
       "tier": "A",
-      "identifiers": {},
+      "identifiers": {
+        "openalex_author_id": "A5020232464",
+        "orcid": "https://orcid.org/0000-0001-7066-7351"
+      },
       "retrieval": {
-        "provider": "openalex",
-        "method": "author_id_filter",
-        "identifier_field": "openalex_author_id",
-        "enabled": false,
-        "verification": "needs_verified_identifier"
+        "enabled": true,
+        "adapter": "openalex_author",
+        "verification": "openalex_name_affiliation_orcid_manual_crosscheck",
+        "verified_on": "2026-11-07",
+        "verified_by": "dynasty_ pilot source audit",
+        "evidence_url": "https://api.openalex.org/authors/A5020232464",
+        "registry_title": "Corina Mommaerts",
+        "affiliation_context": [
+          "National Bureau of Economic Research",
+          "University of Wisconsin–Madison"
+        ]
       },
       "editorial_status": "candidate"
     },
@@ -1530,13 +1651,22 @@
       "name": "Wojciech Kopczuk",
       "area": "Bequests, gifts, taxation",
       "tier": "A",
-      "identifiers": {},
+      "identifiers": {
+        "openalex_author_id": "A5028570467",
+        "orcid": "https://orcid.org/0000-0001-8678-275X"
+      },
       "retrieval": {
-        "provider": "openalex",
-        "method": "author_id_filter",
-        "identifier_field": "openalex_author_id",
-        "enabled": false,
-        "verification": "needs_verified_identifier"
+        "enabled": true,
+        "adapter": "openalex_author",
+        "verification": "openalex_name_affiliation_orcid_manual_crosscheck",
+        "verified_on": "2026-11-07",
+        "verified_by": "dynasty_ pilot source audit",
+        "evidence_url": "https://api.openalex.org/authors/A5028570467",
+        "registry_title": "Wojciech Kopczuk",
+        "affiliation_context": [
+          "National Bureau of Economic Research",
+          "Columbia University"
+        ]
       },
       "editorial_status": "candidate"
     },
@@ -1562,13 +1692,21 @@
       "name": "Raj Chetty",
       "area": "Opportunity and mobility",
       "tier": "A",
-      "identifiers": {},
+      "identifiers": {
+        "openalex_author_id": "A5051484328",
+        "orcid": "https://orcid.org/0000-0001-8610-8546"
+      },
       "retrieval": {
-        "provider": "openalex",
-        "method": "author_id_filter",
-        "identifier_field": "openalex_author_id",
-        "enabled": false,
-        "verification": "needs_verified_identifier"
+        "enabled": true,
+        "adapter": "openalex_author",
+        "verification": "openalex_name_affiliation_orcid_manual_crosscheck",
+        "verified_on": "2026-11-07",
+        "verified_by": "dynasty_ pilot source audit",
+        "evidence_url": "https://api.openalex.org/authors/A5051484328",
+        "registry_title": "Raj Chetty",
+        "affiliation_context": [
+          "Harvard University"
+        ]
       },
       "editorial_status": "candidate"
     },

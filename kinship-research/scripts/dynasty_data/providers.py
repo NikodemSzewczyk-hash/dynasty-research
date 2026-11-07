@@ -108,7 +108,7 @@ def iter_openalex(query: str, from_date: str, to_date: str,
         raise ValueError("Expected a verified OpenAlex author ID such as A1234567890")
     filter_value=f"from_publication_date:{from_date},to_publication_date:{to_date}"
     if author_id:
-        filter_value+=",author.id:"+author_id
+        filter_value+=",authorships.author.id:"+author_id
     processed=0  # Count ALL fetched records, even if metadata normalization rejects them.
     per_page=min(100,max_records)
     page=1
@@ -117,6 +117,9 @@ def iter_openalex(query: str, from_date: str, to_date: str,
                 "select":"id,doi,title,publication_year,publication_date,authorships,primary_location,type"}
         if query:
             params["search"]=query
+        if author_id:
+            # Source monitoring must retrieve recent works, not the most-cited works.
+            params["sort"]="publication_date:desc"
         email=os.getenv("DYNASTY_CONTACT_EMAIL","").strip()
         if email:
             params["mailto"]=email

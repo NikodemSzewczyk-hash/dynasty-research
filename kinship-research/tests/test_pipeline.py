@@ -48,12 +48,13 @@ class PipelineTest(unittest.TestCase):
         self.assertEqual(seed_sources(self.db,SITE/"registry"/"source_manifest.json"),0)
         self.assertEqual(stats(self.db)["sources"],128)
         all_rows=self.db.execute("SELECT id,retrieval_json FROM sources").fetchall()
-        self.assertTrue(all(not json.loads(r["retrieval_json"])["enabled"] for r in all_rows))
+        self.assertEqual(sum(bool(json.loads(r["retrieval_json"])["enabled"]) for r in all_rows),23)
+        self.assertEqual(sum(not json.loads(r["retrieval_json"])["enabled"] for r in all_rows),105)
         self.assertEqual(len({x["id"] for x in all_rows}),128)
 
     def test_manual_source_verification(self):
         seed_sources(self.db,SITE/"registry"/"source_manifest.json")
-        sid="journal:american-economic-review"
+        sid="journal:journal-of-development-economics"
         with self.assertRaisesRegex(ValueError,"disabled"):
             lookup_source(self.db,sid,"crossref")
         with self.assertRaisesRegex(ValueError,"Expected"):
@@ -215,15 +216,15 @@ class PipelineTest(unittest.TestCase):
 
     def test_source_identifier_suggestions_not_autoverified(self):
         seed_sources(self.db,SITE/"registry"/"source_manifest.json")
-        sid="journal:quarterly-journal-of-economics"
+        sid="journal:journal-of-development-economics"
         called=[]
         def fake(url):
             called.append(url)
-            return {"results":[{"id":"https://openalex.org/S101","display_name":"Quarterly Journal of Economics",
-                                "issn":["0033-5533"],"issn_l":"0033-5533","works_count":1234}]}
+            return {"results":[{"id":"https://openalex.org/S101","display_name":"Journal of Development Economics",
+                                "issn":["0304-3878"],"issn_l":"0304-3878","works_count":1234}]}
         result=suggest_identifiers(self.db,sid,limit=3,fetcher=fake)
         self.assertIn("UNVERIFIED",result["note"])
-        self.assertEqual(result["suggestions"][0]["issn_candidates"],["0033-5533"])
+        self.assertEqual(result["suggestions"][0]["issn_candidates"],["0304-3878"])
         self.assertTrue(result["suggestions"][0]["name_exact"])
         self.assertIn("/sources?",called[0])
         db_source=self.db.execute("SELECT retrieval_json FROM sources WHERE id=?",(sid,)).fetchone()

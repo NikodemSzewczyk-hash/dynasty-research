@@ -1,0 +1,230 @@
+{
+  "schema_version": 1,
+  "verified_on": "2026-11-07",
+  "source_count": 23,
+  "source_types": {
+    "journal": 10,
+    "working_paper_series": 3,
+    "researcher": 10
+  },
+  "notes": "Journal ISSNs checked via Crossref /journals/{issn}; researcher IDs checked via OpenAlex profile names, affiliations, ORCIDs when available; RePEc handles checked against IDEAS series pages. Name-only matches are not accepted. Sandra E. Black excluded due to homonymous medical researcher. RePEc listings are recent windows, not complete archives.",
+  "evidence": [
+    {
+      "source_id": "journal:american-economic-review",
+      "method": "Crossref journal registry",
+      "id": "0002-8282",
+      "observed_name": "American Economic Review",
+      "evidence_url": "https://api.crossref.org/journals/0002-8282"
+    },
+    {
+      "source_id": "journal:quarterly-journal-of-economics",
+      "method": "Crossref journal registry",
+      "id": "0033-5533",
+      "observed_name": "The Quarterly Journal of Economics",
+      "evidence_url": "https://api.crossref.org/journals/0033-5533"
+    },
+    {
+      "source_id": "journal:journal-of-political-economy",
+      "method": "Crossref journal registry",
+      "id": "0022-3808",
+      "observed_name": "Journal of Political Economy",
+      "evidence_url": "https://api.crossref.org/journals/0022-3808"
+    },
+    {
+      "source_id": "journal:econometrica",
+      "method": "Crossref journal registry",
+      "id": "0012-9682",
+      "observed_name": "Econometrica",
+      "evidence_url": "https://api.crossref.org/journals/0012-9682"
+    },
+    {
+      "source_id": "journal:review-of-economic-studies",
+      "method": "Crossref journal registry",
+      "id": "0034-6527",
+      "observed_name": "The Review of Economic Studies",
+      "evidence_url": "https://api.crossref.org/journals/0034-6527"
+    },
+    {
+      "source_id": "journal:aej-applied-economics",
+      "method": "Crossref journal registry",
+      "id": "1945-7782",
+      "observed_name": "American Economic Journal Applied Economics",
+      "evidence_url": "https://api.crossref.org/journals/1945-7782"
+    },
+    {
+      "source_id": "journal:aej-economic-policy",
+      "method": "Crossref journal registry",
+      "id": "1945-7731",
+      "observed_name": "American Economic Journal Economic Policy",
+      "evidence_url": "https://api.crossref.org/journals/1945-7731"
+    },
+    {
+      "source_id": "journal:review-of-economics-and-statistics",
+      "method": "Crossref journal registry",
+      "id": "0034-6535",
+      "observed_name": "The Review of Economics and Statistics",
+      "evidence_url": "https://api.crossref.org/journals/0034-6535"
+    },
+    {
+      "source_id": "journal:journal-of-labor-economics",
+      "method": "Crossref journal registry",
+      "id": "0734-306X",
+      "observed_name": "Journal of Labor Economics",
+      "evidence_url": "https://api.crossref.org/journals/0734-306X"
+    },
+    {
+      "source_id": "journal:journal-of-human-resources",
+      "method": "Crossref journal registry",
+      "id": "0022-166X",
+      "observed_name": "The Journal of Human Resources",
+      "evidence_url": "https://api.crossref.org/journals/0022-166X"
+    },
+    {
+      "source_id": "researcher:jan-stuhler",
+      "method": "OpenAlex author profile, affiliation, ORCID where available",
+      "id": "A5071390181",
+      "observed_name": "Jan Leonard Stuhler",
+      "evidence_url": "https://api.openalex.org/authors/A5071390181",
+      "orcid": "https://orcid.org/0000-0003-0762-5591",
+      "affiliation_context": [
+        "Queen Mary University of London",
+        "Universidad Carlos III de Madrid"
+      ],
+      "alternatives": 2
+    },
+    {
+      "source_id": "researcher:martin-nybom",
+      "method": "OpenAlex author profile, affiliation, ORCID where available",
+      "id": "A5018550128",
+      "observed_name": "Martin Nybom",
+      "evidence_url": "https://api.openalex.org/authors/A5018550128",
+      "orcid": "https://orcid.org/0000-0001-8624-0280",
+      "affiliation_context": [
+        "Uppsala University",
+        "Institute for Evaluation of Labour Market and Education Policy"
+      ],
+      "alternatives": 1
+    },
+    {
+      "source_id": "researcher:katrine-v-l-ken",
+      "method": "OpenAlex author profile, affiliation, ORCID where available",
+      "id": "A5038351764",
+      "observed_name": "Katrine Vellesen Løken",
+      "evidence_url": "https://api.openalex.org/authors/A5038351764",
+      "orcid": null,
+      "affiliation_context": [
+        "Norwegian School of Economics"
+      ],
+      "alternatives": 4
+    },
+    {
+      "source_id": "researcher:aline-butikofer",
+      "method": "OpenAlex author profile, affiliation, ORCID where available",
+      "id": "A5038291213",
+      "observed_name": "Aline Bütikofer",
+      "evidence_url": "https://api.openalex.org/authors/A5038291213",
+      "orcid": "https://orcid.org/0000-0002-8546-4503",
+      "affiliation_context": [
+        "University College London"
+      ],
+      "alternatives": 1
+    },
+    {
+      "source_id": "researcher:kjell-g-salvanes",
+      "method": "OpenAlex author profile, affiliation, ORCID where available",
+      "id": "A5025896273",
+      "observed_name": "Kjell G. Salvanes",
+      "evidence_url": "https://api.openalex.org/authors/A5025896273",
+      "orcid": "https://orcid.org/0000-0002-6381-4496",
+      "affiliation_context": [
+        "University College London",
+        "Norwegian School of Economics"
+      ],
+      "alternatives": 4
+    },
+    {
+      "source_id": "researcher:magne-mogstad",
+      "method": "OpenAlex author profile, affiliation, ORCID where available",
+      "id": "A5035713394",
+      "observed_name": "Magne Mogstad",
+      "evidence_url": "https://api.openalex.org/authors/A5035713394",
+      "orcid": "https://orcid.org/0000-0002-7177-050X",
+      "affiliation_context": [
+        "National Bureau of Economic Research",
+        "Statistics Norway",
+        "University of Chicago"
+      ],
+      "alternatives": 4
+    },
+    {
+      "source_id": "researcher:raj-chetty",
+      "method": "OpenAlex author profile, affiliation, ORCID where available",
+      "id": "A5051484328",
+      "observed_name": "Raj Chetty",
+      "evidence_url": "https://api.openalex.org/authors/A5051484328",
+      "orcid": "https://orcid.org/0000-0001-8610-8546",
+      "affiliation_context": [
+        "Harvard University"
+      ],
+      "alternatives": 5
+    },
+    {
+      "source_id": "researcher:alessandra-voena",
+      "method": "OpenAlex author profile, affiliation, ORCID where available",
+      "id": "A5045271714",
+      "observed_name": "Alessandra Voena",
+      "evidence_url": "https://api.openalex.org/authors/A5045271714",
+      "orcid": null,
+      "affiliation_context": [
+        "Center for Economic and Policy Research",
+        "Stanford Institute for Economic Policy Research",
+        "Stanford University"
+      ],
+      "alternatives": 2
+    },
+    {
+      "source_id": "researcher:corina-mommaerts",
+      "method": "OpenAlex author profile, affiliation, ORCID where available",
+      "id": "A5020232464",
+      "observed_name": "Corina Mommaerts",
+      "evidence_url": "https://api.openalex.org/authors/A5020232464",
+      "orcid": "https://orcid.org/0000-0001-7066-7351",
+      "affiliation_context": [
+        "National Bureau of Economic Research",
+        "University of Wisconsin–Madison"
+      ],
+      "alternatives": 1
+    },
+    {
+      "source_id": "researcher:wojciech-kopczuk",
+      "method": "OpenAlex author profile, affiliation, ORCID where available",
+      "id": "A5028570467",
+      "observed_name": "Wojciech Kopczuk",
+      "evidence_url": "https://api.openalex.org/authors/A5028570467",
+      "orcid": "https://orcid.org/0000-0001-8678-275X",
+      "affiliation_context": [
+        "National Bureau of Economic Research",
+        "Columbia University"
+      ],
+      "alternatives": 1
+    },
+    {
+      "source_id": "working_paper_series:nber-working-papers",
+      "method": "RePEc series handle, publisher identity",
+      "id": "RePEc:nbr:nberwo",
+      "evidence_url": "https://ideas.repec.org/s/nbr/nberwo.html"
+    },
+    {
+      "source_id": "working_paper_series:cepr-discussion-papers",
+      "method": "RePEc series handle, publisher identity",
+      "id": "RePEc:cpr:ceprdp",
+      "evidence_url": "https://ideas.repec.org/s/cpr/ceprdp.html"
+    },
+    {
+      "source_id": "working_paper_series:iza-discussion-papers",
+      "method": "RePEc series handle, publisher identity",
+      "id": "RePEc:iza:izadps",
+      "evidence_url": "https://ideas.repec.org/s/iza/izadps.html"
+    }
+  ]
+}

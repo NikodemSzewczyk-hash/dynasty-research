@@ -1,0 +1,90 @@
+name: Pilot23 weekly unreviewed metadata PR
+on:
+  schedule:
+    - cron: '20 9 * * 1'
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "weekly (45-day overlap) or bounded backfill (not exhaustive)"
+        required: true
+        type: choice
+        options:
+          - weekly
+          - backfill
+      max_per_source:
+        description: "Maximum normalized records per source, 1..500"
+        required: true
+        default: '150'
+        type: string
+permissions:
+  contents: write
+  pull-requests: write
+concurrency:
+  group: pilot23-weekly-metadata
+  cancel-in-progress: false
+jobs:
+  collect:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    defaults:
+      run:
+        working-directory: kinship-research
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Prepare persistent review branch (never modify main)
+        run: |
+          git fetch origin main
+          if git ls-remote --exit-code --heads origin bot/pilot23-weekly >/dev/null; then
+            git fetch origin bot/pilot23-weekly
+            git switch -C bot/pilot23-weekly origin/bot/pilot23-weekly
+            git merge --no-edit origin/main
+          else
+            git switch -c bot/pilot23-weekly
+          fi
+      - name: Import verified sources into unreviewed JSONL
+        env:
+          OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
+          DYNASTY_CONTACT_EMAIL: ${{ vars.DYNASTY_CONTACT_EMAIL }}
+          RUN_MODE: ${{ inputs.mode || 'weekly' }}
+          MAX_PER_SOURCE: ${{ inputs.max_per_source || '150' }}
+        run: |
+          python -m unittest discover -s tests -q
+          python scripts/pilot23_ingest.py --mode "$RUN_MODE" \
+            --max-per-source "$MAX_PER_SOURCE" \
+            --snapshot registry/pilot23-candidates.jsonl \
+            --state registry/pilot23-state.json \
+            --report registry/pilot23-report.json \
+            --db data/pilot23.sqlite
+      - uses: actions/upload-artifact@v4
+        with:
+          name: pilot23-weekly-review
+          path: |
+            kinship-research/registry/pilot23-report.json
+            kinship-research/registry/pilot23-candidates.jsonl
+            kinship-research/data/pilot23.sqlite
+          retention-days: 30
+      - name: Push metadata branch and open/update review PR
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add registry/pilot23-candidates.jsonl registry/pilot23-state.json registry/pilot23-report.json
+          if ! git diff --cached --quiet; then
+            git commit -m "data: weekly 23-source unreviewed metadata candidates"
+            git push origin HEAD:bot/pilot23-weekly
+          fi
+          if [ -z "$(gh pr list --head bot/pilot23-weekly --base main --state open --json number --jq '.[0].number')" ]; then
+            if ! gh pr create --base main --head bot/pilot23-weekly \
+              --title "Review: 23-source weekly metadata candidates (unreviewed)" \
+              --body "Automated bibliographic metadata only. Review source report, truncation flags, duplicate DOI candidates and provenance before merging. No paper summaries or curated website changes."; then
+              echo "::warning::PR creation unavailable. Data branch remains available for manual review."
+            fi
+          fi

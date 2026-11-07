@@ -1,0 +1,75 @@
+name: Pilot23 offline tests and live read-only smoke
+on:
+  push:
+    branches: [feat/pilot23-source-activation]
+    paths:
+      - 'kinship-research/scripts/pilot23_ingest.py'
+      - 'kinship-research/scripts/dynasty_data/repec.py'
+      - 'kinship-research/scripts/dynasty_data/providers.py'
+      - 'kinship-research/registry/source_manifest.json'
+      - 'kinship-research/registry/pilot23-verification.json'
+      - 'kinship-research/tests/test_pilot23.py'
+      - '.github/workflows/pilot23-smoke.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    defaults:
+      run:
+        working-directory: kinship-research
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Offline regression tests
+        run: python -m unittest discover -s tests -v
+      - name: Live three-adapter smoke (unreviewed metadata only)
+        env:
+          OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
+          DYNASTY_CONTACT_EMAIL: ${{ vars.DYNASTY_CONTACT_EMAIL }}
+        run: |
+          python scripts/pilot23_ingest.py --mode smoke --max-per-source 3 \
+            --snapshot /tmp/pilot23-smoke.jsonl \
+            --state /tmp/pilot23-smoke-state.json \
+            --report /tmp/pilot23-smoke-report.json \
+            --db /tmp/pilot23-smoke.sqlite
+          python - <<'PY'
+          import json
+          r=json.load(open("/tmp/pilot23-smoke-report.json"))
+          assert r["source_count"]==3 and r["sources_succeeded"]==3,r
+          assert all(s["fetched"]>0 for s in r["per_source"]),r
+          assert r["publication_status"]=="unreviewed_metadata_only"
+          print("Smoke verified: Crossref journal, OpenAlex author, RePEc series")
+          PY
+      - name: Live all-23-source connectivity check (2 records each; not backfill)
+        env:
+          OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
+          DYNASTY_CONTACT_EMAIL: ${{ vars.DYNASTY_CONTACT_EMAIL }}
+        run: |
+          python scripts/pilot23_ingest.py --mode weekly --max-per-source 2 \
+            --from-date 2024-01-01 \
+            --snapshot /tmp/pilot23-all.jsonl \
+            --state /tmp/pilot23-all-state.json \
+            --report /tmp/pilot23-all-report.json \
+            --db /tmp/pilot23-all.sqlite
+          python - <<'PY'
+          import json
+          r=json.load(open("/tmp/pilot23-all-report.json"))
+          assert r["source_count"]==23 and r["sources_succeeded"]==23,r
+          assert r["sources_failed"]==0 and r["candidate_total"]>0,r
+          print("Live all-source check:",r["sources_succeeded"],"of 23 sources")
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: pilot23-smoke-evidence
+          path: |
+            /tmp/pilot23-smoke-report.json
+            /tmp/pilot23-smoke.jsonl
+            /tmp/pilot23-all-report.json
+            /tmp/pilot23-all.jsonl
+          retention-days: 7
