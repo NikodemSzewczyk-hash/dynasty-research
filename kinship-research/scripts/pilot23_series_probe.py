@@ -31,6 +31,6 @@ def main():
                 html=r.read(2000000).decode("utf-8",errors="replace")
             p=Links();p.feed(html)
             matches=[(href,label[:140]) for href,label in p.links if any(x in href.lower() for x in ("/p/nbr/nberwo/","/p/cpr/ceprdp/","/p/iza/izadps/","/dp","/discussion"))]
-            print(json.dumps({"name":name,"bytes":len(html),"total_links":len(p.links),"matched_links":matches[:8],"html_prefix":html[:100]},ensure_ascii=False))
+            print(json.dumps({"name":name,"bytes":len(html),"total_links":len(p.links),"matched_links":matches[:8],"html_prefix":html[:100],"first_match_context":html[max(0,html.find(matches[2][0])-260):html.find(matches[2][0])+460] if len(matches)>2 else ""},ensure_ascii=False))
         except Exception as e:print(json.dumps({"name":name,"error":str(e)}))
 if __name__=="__main__":main()
