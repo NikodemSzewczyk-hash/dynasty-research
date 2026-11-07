@@ -136,7 +136,7 @@ def repair_encoding(value):
     """Repair obvious UTF-8/Latin-1 mojibake in public RePEc titles only."""
     text=str(value or "")
     if any(mark in text for mark in ("â€™","â€œ","â€","Ã©","Ã¼")):
-        try:return text.encode("latin-1").decode("utf-8")
+        try:return text.encode("cp1252").decode("utf-8")
         except (UnicodeEncodeError,UnicodeDecodeError):return text
     return text
 
