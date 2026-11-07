@@ -8,7 +8,7 @@
       <h1>The research <span>index.</span></h1>
       <p>Browse the entire research database, including curated papers and unreviewed bibliographic candidates. Filter by topic, source, year, or editorial status.</p>
     </div>
-    <div class="page-aside"><span class="micro-label">INDEXED ENTRIES</span><strong id="discovery-total">{{ with $report }}{{ .total_displayed }}{{ else }}—{{ end }}</strong><span class="micro-label">{{ with site.Data.discovery_pilot_report }}{{ .curated_displayed }} CURATED · <span id="discovery-pilot-total">{{ .pilot_displayed }}</span> NEW PILOT CANDIDATES{{ else }}<span id="discovery-pilot-total">—</span> NEW PILOT CANDIDATES{{ end }}</span></div>
+    <div class="page-aside"><span class="micro-label">INDEXED ENTRIES</span><strong id="discovery-total">{{ with $report }}{{ .total_displayed }}{{ else }}—{{ end }}</strong><span class="micro-label">{{ with $report }}{{ .curated_displayed }} CURATED · <span id="discovery-pilot-total">{{ .pilot_displayed }}</span> NEW PILOT CANDIDATES{{ else }}<span id="discovery-pilot-total">—</span> NEW PILOT CANDIDATES{{ end }}</span></div>
   </div>
 </section>
 <section class="archive-section">
