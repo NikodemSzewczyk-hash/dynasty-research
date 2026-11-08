@@ -27,7 +27,7 @@ jobs:
           python-version: '3.12'
       - name: Offline regression tests
         run: python -m unittest discover -s tests -v
-      - name: Live three-adapter smoke (unreviewed metadata only)
+      - name: Live smoke, one source per adapter (unreviewed metadata only)
         env:
           OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
           DYNASTY_CONTACT_EMAIL: ${{ vars.DYNASTY_CONTACT_EMAIL }}
