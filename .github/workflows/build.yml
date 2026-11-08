@@ -46,12 +46,15 @@ jobs:
           home=Path("public/index.html").read_text(encoding="utf-8")
           print("Papers count HTML:",papers[max(0,papers.find("discovery-total")-40):papers.find("discovery-total")+100])
           print("Homepage indexed count HTML:",home[max(0,home.find("INDEXED RESEARCH RECORDS")-100):home.find("INDEXED RESEARCH RECORDS")+100])
-          assert len(index)==report["total_displayed"]==103
+          total,pilot,feeds=report["total_displayed"],report["pilot_displayed"],report["pilot_source_count"]
+          verified=json.loads(Path("registry/pilot23-verification.json").read_text(encoding="utf-8"))
+          assert len(index)==total and total>=report["curated_displayed"]==12
           assert sum(r["review_status"]=="curated" for r in index)==12
+          assert feeds==verified["source_count"], (feeds,verified["source_count"])
           assert 'discovery-results' in papers, "Papers page is still the 12-only archive"
-          assert 'discovery-total' in papers and '>103<' in papers, "Index count not rendered on Papers page"
-          assert 'NEW PILOT CANDIDATES' in papers and '>39<' in papers, "Pilot count missing from Papers page"
-          assert 'INDEXED RESEARCH RECORDS' in home and '>103<' in home, "Home still shows 12 as full collection"
-          assert 'VERIFIED FEEDS' in home and '>23<' in home, "Verified source count missing"
-          print("Verified: all 103 records are indexed on the Papers page, with 12 curated and 23 active feeds.")
+          assert 'discovery-total' in papers and f'>{total}<' in papers, "Index count not rendered on Papers page"
+          assert 'NEW PILOT CANDIDATES' in papers and f'>{pilot}<' in papers, "Pilot count missing from Papers page"
+          assert 'INDEXED RESEARCH RECORDS' in home and f'>{total}<' in home, "Home still shows 12 as full collection"
+          assert 'VERIFIED FEEDS' in home and f'>{feeds}<' in home, "Verified source count missing"
+          print(f"Verified: all {total} records are indexed on the Papers page, with 12 curated and {feeds} active feeds.")
           PY

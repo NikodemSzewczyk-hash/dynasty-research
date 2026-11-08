@@ -67,3 +67,14 @@ The default backfill mode is dry run. Manually verified source IDs can be sugges
 The searchable /discovery/ section is explicitly **unreviewed bibliographic metadata**, separate from the 12-paper curated archive. Its complete 3,477-record candidate corpus is version-controlled in registry/candidates-v03.jsonl; the public preview shows only a title-screened subset. See docs/v03-milestone.md and docs/metadata-audit.md.
 
 The proposed 30-paper reading queue in registry/reading_queue_v03.json contains **unread** papers, not full-text summaries. Use scripts/notes.py to create evidence-first note templates only after acquiring the relevant PDF.
+
+## V0.6 source access
+
+Each of the 24 verified sources now has a documented access path covering 1990 to the present, and every run checks how complete it is. The sources are:
+
+- 10 journals, read from Crossref by ISSN
+- NBER and IFS, read from Crossref by their own DOI prefixes
+- CEPR and IZA, read from RePEc ReDIF archives
+- 10 researchers, read from OpenAlex by author ID
+
+The unreviewed snapshot (about 98k records) is stored as one file per source under `registry/snapshot/`. The Sources page shows coverage for each source. See [docs/source-access.md](docs/source-access.md).

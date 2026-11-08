@@ -14,7 +14,7 @@
 </div></section>
 <section class="content-section"><div class="wrap">
   {{ with $catalog }}
-  <p class="source-disclaimer"><span class="code-bullet"></span> <strong>Verified</strong> means a retrieval identifier has been checked and the source connector tested. It does not mean every publication is indexed. <strong>Planned</strong> sources are not yet systematically ingested. <a href="{{ "/discovery/" | relURL }}">Explore indexed papers →</a></p>
+  <p class="source-disclaimer"><span class="code-bullet"></span> <strong>Verified</strong> means a retrieval identifier has been checked and the source connector tested. It does not mean every publication is indexed. <strong>Planned</strong> sources are not yet systematically ingested. Coverage compares what we read with what the provider itself reports; a provider's own records can still be incomplete. <a href="{{ "/discovery/" | relURL }}">Explore indexed papers →</a></p>
   {{ range (slice (dict "name" "Journals" "tag" "01 / JOURNAL SIGNAL" "key" "journals") (dict "name" "Working-paper series" "tag" "02 / EARLY RESEARCH" "key" "repositories") (dict "name" "Researchers" "tag" "03 / RESEARCH NETWORK" "key" "researchers")) }}
     {{ $key := .key }}
     {{ $rows := index $catalog $key }}
@@ -29,6 +29,8 @@
             <strong>{{ .name }}</strong><small>{{ .area }}</small>
             <span class="source-status {{ if .active }}is-verified{{ end }}">{{ if .active }}VERIFIED FEED{{ else }}PLANNED{{ end }}</span>
             {{ if and .active .evidence_url }}<a class="source-evidence" href="{{ .evidence_url }}" target="_blank" rel="noopener noreferrer" aria-label="Verification record for {{ .name }}">IDENTIFIER ↗</a>{{ end }}
+            {{ with .coverage }}<small class="source-coverage" title="Records read from the provider versus records the provider reports for the window, at the last run">{{ lang.FormatNumber 0 .read }} of {{ lang.FormatNumber 0 .available }} records read since {{ .since }} · {{ .access }}{{ if .incomplete }} · <strong>incomplete</strong>{{ end }}</small>{{ end }}
+            {{ with .coverage_note }}<small class="source-coverage source-coverage-note">{{ . }}</small>{{ end }}
           </div>
         </div>
         {{ end }}

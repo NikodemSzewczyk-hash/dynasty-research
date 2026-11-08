@@ -1,5 +1,7 @@
 # dynasty_ 23-source activation pilot (V0.4)
 
+> **Superseded in part by V0.6** ([source-access.md](source-access.md)). NBER and IFS now use their Crossref DOI prefixes, CEPR and IZA use RePEc ReDIF archives instead of IDEAS listing pages (which RePEc asks users not to scrape), the snapshot is sharded under `registry/snapshot/`, and collection reaches back to 1990 with per-source completeness checks.
+
 **Status: review-only pull request.** No unreviewed paper is added to the curated site. The 12 existing curated papers and the V0.3 discovery preview remain unchanged. All source IDs have provenance in registry/pilot23-verification.json and enabled retrieval settings in registry/source_manifest.json.
 
 ## Sources and identity checks

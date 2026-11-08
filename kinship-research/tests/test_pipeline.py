@@ -48,8 +48,8 @@ class PipelineTest(unittest.TestCase):
         self.assertEqual(seed_sources(self.db,SITE/"registry"/"source_manifest.json"),0)
         self.assertEqual(stats(self.db)["sources"],128)
         all_rows=self.db.execute("SELECT id,retrieval_json FROM sources").fetchall()
-        self.assertEqual(sum(bool(json.loads(r["retrieval_json"])["enabled"]) for r in all_rows),23)
-        self.assertEqual(sum(not json.loads(r["retrieval_json"])["enabled"] for r in all_rows),105)
+        self.assertEqual(sum(bool(json.loads(r["retrieval_json"])["enabled"]) for r in all_rows),24)
+        self.assertEqual(sum(not json.loads(r["retrieval_json"])["enabled"] for r in all_rows),104)
         self.assertEqual(len({x["id"] for x in all_rows}),128)
 
     def test_manual_source_verification(self):
@@ -195,8 +195,8 @@ class PipelineTest(unittest.TestCase):
         self.assertEqual(len(calls),1)
         self.assertIn("per_page=5",calls[0])
         self.assertIn("from_publication_date",calls[0])
-        with self.assertRaisesRegex(ValueError,"1..10000"):
-            list(iter_openalex("mobility","2020-01-01","2021-01-01",max_records=10001,fetcher=fake))
+        with self.assertRaisesRegex(ValueError,"1..200000"):
+            list(iter_openalex("mobility","2020-01-01","2021-01-01",max_records=200001,fetcher=fake))
 
     def test_bounded_crossref_queries(self):
         calls=[]

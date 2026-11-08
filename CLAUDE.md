@@ -20,7 +20,9 @@ hugo --minify                                 # production build into public/
 python scripts/dynasty.py seed                # build local SQLite (data/dynasty.sqlite, gitignored)
 python scripts/dynasty.py review list --status pending
 python scripts/dynasty.py export --site-root /tmp/dynasty-hugo-test   # always export to a scratch dir first
-python scripts/publish_pilot_discovery.py     # rebuild discovery index from registry snapshots
+python scripts/pilot23_ingest.py --mode smoke --snapshot /tmp/s.jsonl --state /tmp/st.json --report /tmp/r.json --no-db
+python scripts/pilot23_ingest.py --mode backfill --max-per-source 200000 --report registry/pilot23-report.json
+python scripts/publish_pilot_discovery.py     # rebuild discovery index and source catalog from registry/snapshot
 python scripts/repair_doi_years.py            # dry run; --write fixes stored years that contradict DOI conventions
 python scripts/audit_autocheck.py check --cache DIR   # offline metadata pre-check of the audit sample (fetch first)
 ```
@@ -36,12 +38,13 @@ builds Hugo and checks the HTML.
 |---|---|
 | `data/papers.json` | The 12 curated papers, the source for `content/papers/*.md` |
 | `data/sources.json`, `data/source-catalog.json` | Sources page |
-| `registry/source_manifest.json` | 128 local source IDs. Only the 23 verified pilot sources are enabled |
-| `registry/pilot23-*.json(l)` | Verification provenance, checkpoints, report, unreviewed snapshot |
+| `registry/source_manifest.json` | 128 local source IDs. Only the verified sources listed in `registry/pilot23-verification.json` (24) are enabled |
+| `registry/snapshot/*.jsonl` | Unreviewed metadata from the verified sources, one shard per primary source (1990–present) |
+| `registry/pilot23-*.json` | Verification provenance, checkpoints and per-source coverage, last ingestion report |
 | `registry/candidates-v03.jsonl` | 3,477-record unreviewed historical Crossref corpus |
-| `static/data/discovery-index.json` | 103-row public index (12 curated, 39 pilot, 52 historical) |
-| `scripts/dynasty.py`, `scripts/dynasty_data/` | Pipeline CLI and package (schema, identity/dedup, providers, repec, nber, catalog, notes) |
-| `scripts/pilot23_ingest.py` | Bounded ingestion from the 23 verified sources (smoke/weekly/backfill) |
+| `static/data/discovery-index.json` | Public title-screened index (curated, pilot and historical rows) |
+| `scripts/dynasty.py`, `scripts/dynasty_data/` | Pipeline CLI and package (schema, identity/dedup, providers, redif, nber, catalog, notes) |
+| `scripts/pilot23_ingest.py` | Bounded ingestion from the verified sources (smoke/weekly/backfill from 1990), with per-source completeness checks |
 | `layouts/`, `static/css/site.css`, `static/js/` | Site design and the client-side discovery explorer |
 | `docs/` | Per-stage docs: read the relevant one before changing that stage |
 
@@ -65,6 +68,10 @@ The weekly `pilot23-sync.yml` job (Monday 09:20 UTC) pushes `bot/pilot23-weekly`
 - Respect access controls and rights: no workarounds for HTTP 403s (NBER TSV and CEPR
   listings from CI), no PDF scraping, no republishing full text or abstracts, and never
   print or commit API keys.
+- Use each provider's documented bulk route, never its website. RePEc asks users not to
+  scrape IDEAS pages, so CEPR and IZA come from ReDIF archives (`dynasty_data/redif.py`).
+  ReDIF author e-mails, workplaces and abstracts are dropped, and PDFs are never fetched.
+  See `kinship-research/docs/source-access.md`.
 - Report coverage honestly: a network failure does not mean "zero new papers", a cap that
   is hit is flagged, and a bounded window is not a full backfill.
 

@@ -4,7 +4,7 @@ on:
     branches: [feat/pilot23-source-activation]
     paths:
       - 'kinship-research/scripts/pilot23_ingest.py'
-      - 'kinship-research/scripts/dynasty_data/repec.py'
+      - 'kinship-research/scripts/dynasty_data/redif.py'
       - 'kinship-research/scripts/dynasty_data/providers.py'
       - 'kinship-research/registry/source_manifest.json'
       - 'kinship-research/registry/pilot23-verification.json'
@@ -40,12 +40,13 @@ jobs:
           python - <<'PY'
           import json
           r=json.load(open("/tmp/pilot23-smoke-report.json"))
-          assert r["source_count"]==3 and r["sources_succeeded"]==3,r
+          assert r["source_count"]==5 and r["sources_succeeded"]==5,r
           assert all(s["fetched"]>0 for s in r["per_source"]),r
+          assert all("provider_records_available" in s for s in r["per_source"]),r
           assert r["publication_status"]=="unreviewed_metadata_only"
-          print("Smoke verified: Crossref journal, OpenAlex author, RePEc series")
+          print("Smoke verified: Crossref journal, Crossref DOI prefix, OpenAlex author, ReDIF (HTTPS and FTP mirror)")
           PY
-      - name: Live all-23-source connectivity check (2 records each; not backfill)
+      - name: Live all-verified-source connectivity check (2 records each; not backfill)
         env:
           OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
           DYNASTY_CONTACT_EMAIL: ${{ vars.DYNASTY_CONTACT_EMAIL }}
@@ -59,9 +60,10 @@ jobs:
           python - <<'PY'
           import json
           r=json.load(open("/tmp/pilot23-all-report.json"))
-          assert r["source_count"]==23 and r["sources_succeeded"]==23,r
+          v=json.load(open("registry/pilot23-verification.json"))
+          assert r["source_count"]==v["source_count"]==r["sources_succeeded"],r
           assert r["sources_failed"]==0 and r["candidate_total"]>0,r
-          print("Live all-source check:",r["sources_succeeded"],"of 23 sources")
+          print("Live all-source check:",r["sources_succeeded"],"of",v["source_count"],"sources")
           PY
       - uses: actions/upload-artifact@v4
         if: always()

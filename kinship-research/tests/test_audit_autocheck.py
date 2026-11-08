@@ -64,8 +64,8 @@ class AuditAutocheckTests(unittest.TestCase):
         with sample.open("w",newline="",encoding="utf-8") as f:
             w=csv.DictWriter(f,fieldnames=FIELDS); w.writeheader(); w.writerow(row("10.1/x",2010,notes))
         (cache/cache_name("10.1/x")).write_text(json.dumps(cached("10.1/x",crossref(published_print=2010,issued=2010))))
-        root=tmp/"site"; (root/"registry").mkdir(parents=True); (root/"data").mkdir()
-        for n in ("candidates-v03.jsonl","pilot23-candidates.jsonl"): (root/"registry"/n).write_text("")
+        root=tmp/"site"; (root/"registry/snapshot").mkdir(parents=True); (root/"data").mkdir()
+        (root/"registry/candidates-v03.jsonl").write_text("")
         (root/"data/papers.json").write_text("[]")
         return sample,cache,root
 

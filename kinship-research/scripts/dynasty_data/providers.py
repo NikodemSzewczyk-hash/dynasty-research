@@ -49,15 +49,22 @@ def validate_dates(from_date: str, to_date: str) -> None:
 
 # Some publishers re-deposit old working papers, so Crossref "published"/"issued" (and the
 # OpenAlex year derived from it) can be the re-deposit date rather than the issue date.
-# IFS DOIs encode the issue year twice: 10.1920/wp.ifs.<YYYY>.<w?><YY><NN> (e.g. W95/20 ->
-# 10.1920/wp.ifs.1995.9520). We trust the DOI year only when both encodings agree; this was
+# IFS DOIs encode the issue year twice: 10.1920/wp.ifs.<YYYY>.<w?><YYNN or NNYY> (e.g. W95/20 ->
+# 10.1920/wp.ifs.1995.9520; WP22/25 -> 10.1920/wp.ifs.2025.2225). We trust the DOI year only when both encodings agree; this was
 # cross-checked against RePEc IDEAS citation dates (see docs/metadata-audit.md).
-_IFS_DOI_YEAR=re.compile(r"^10\.1920/wp\.ifs\.((?:19|20)\d{2})\.w?(\d{2})\d{2}$",re.I)
+# Newer IFS deposits sometimes use "wp/ifs" instead of "wp.ifs" (e.g. 10.1920/wp/ifs.2024.1924).
+_IFS_DOI_YEAR=re.compile(r"^10\.1920/wp[./]ifs\.((?:19|20)\d{2})\.w?(\d{3,4})$",re.I)
 
 def doi_convention_year(doi: str | None) -> int | None:
     """Issue year encoded by a known DOI convention, or None when absent/inconsistent."""
     m=_IFS_DOI_YEAR.match((doi or "").strip())
-    if not m or m.group(1)[2:]!=m.group(2):
+    if not m:
+        return None
+    yy,number=m.group(1)[2:],m.group(2)
+    # Older numbers put the year first (W95/20 -> 9520); newer ones put it last
+    # (22/25 -> 2225, and single-digit 2/20 -> 220).
+    candidates={number[-2:]} | ({number[:2]} if len(number)==4 else set())
+    if yy not in candidates:
         return None
     return int(m.group(1))
 
@@ -111,12 +118,15 @@ def normalize_crossref(work: dict) -> dict | None:
             "authors":people,"year":doi_convention_year(doi) or _year_crossref(work),"date":None,
             "source_name":source,"url":url,"kind":kind}
 
+MAX_BOUNDED_RECORDS=200000
+
 def iter_openalex(query: str, from_date: str, to_date: str,
                   max_records: int=100, fetcher: Fetch=fetch_json,
-                  author_id: str | None=None) -> Iterator[dict]:
+                  author_id: str | None=None, stats: dict | None=None) -> Iterator[dict]:
+    """Cursor-paged OpenAlex works. stats gets "available" (meta.count) and "raw" (records read)."""
     validate_dates(from_date,to_date)
-    if not 1<=max_records<=10000:
-        raise ValueError("Bounded OpenAlex runs must request 1..10000 records")
+    if not 1<=max_records<=MAX_BOUNDED_RECORDS:
+        raise ValueError(f"Bounded OpenAlex runs must request 1..{MAX_BOUNDED_RECORDS} records")
     if not query and not author_id:
         raise ValueError("OpenAlex requires a query or verified author ID")
     if author_id and not re.fullmatch(r"A\d{4,12}",author_id):
@@ -124,11 +134,13 @@ def iter_openalex(query: str, from_date: str, to_date: str,
     filter_value=f"from_publication_date:{from_date},to_publication_date:{to_date}"
     if author_id:
         filter_value+=",authorships.author.id:"+author_id
+    stats=stats if stats is not None else {}
+    stats.setdefault("raw",0)
     processed=0  # Count ALL fetched records, even if metadata normalization rejects them.
     per_page=min(100,max_records)
-    page=1
+    cursor="*"
     while processed<max_records:
-        params={"filter":filter_value,"per_page":min(per_page,max_records-processed),"page":page,
+        params={"filter":filter_value,"per_page":min(per_page,max_records-processed),"cursor":cursor,
                 "select":"id,doi,title,publication_year,publication_date,authorships,primary_location,type"}
         if query:
             params["search"]=query
@@ -139,37 +151,57 @@ def iter_openalex(query: str, from_date: str, to_date: str,
         if email:
             params["mailto"]=email
         result=fetcher("https://api.openalex.org/works?"+urlencode(params))
+        meta=result.get("meta") or {}
+        if "available" not in stats and isinstance(meta.get("count"),int):
+            stats["available"]=meta["count"]
         batch=result.get("results") or []
         if not batch:
             break
         for raw in batch:
             processed+=1
+            stats["raw"]=processed
             normalized=normalize_openalex(raw)
             if normalized:
                 yield normalized
             if processed>=max_records:
                 break
-        if len(batch)<params["per_page"]:
+        nxt=meta.get("next_cursor")
+        if len(batch)<params["per_page"] or not nxt or nxt==cursor:
             break
-        page+=1
+        cursor=nxt
 
 def iter_crossref(query: str, from_date: str, to_date: str,
                   max_records: int=100, fetcher: Fetch=fetch_json,
-                  journal_issn: str | None=None, query_mode: str="bibliographic") -> Iterator[dict]:
+                  journal_issn: str | None=None, query_mode: str="bibliographic",
+                  prefix: str | None=None, stats: dict | None=None) -> Iterator[dict]:
+    """Cursor-paged Crossref works for a query, a verified journal ISSN, or a DOI prefix.
+
+    stats gets "available" (Crossref total-results for the filter) and "raw" (records read).
+    """
     validate_dates(from_date,to_date)
     if query_mode not in ("bibliographic","title"):
         raise ValueError("Crossref query_mode must be bibliographic or title")
-    if not 1<=max_records<=10000:
-        raise ValueError("Bounded Crossref runs must request 1..10000 records")
-    if not query and not journal_issn:
-        raise ValueError("Crossref requires a query or verified journal ISSN")
+    if not 1<=max_records<=MAX_BOUNDED_RECORDS:
+        raise ValueError(f"Bounded Crossref runs must request 1..{MAX_BOUNDED_RECORDS} records")
+    if not query and not journal_issn and not prefix:
+        raise ValueError("Crossref requires a query, verified journal ISSN or verified DOI prefix")
+    if journal_issn and prefix:
+        raise ValueError("Use either a journal ISSN or a DOI prefix, not both")
     if journal_issn and not re.fullmatch(r"\d{4}-[\dXx]{4}",journal_issn):
         raise ValueError("Journal ISSN must have the form 1234-567X")
-    base=("https://api.crossref.org/journals/"+quote(journal_issn)+"/works"
-          if journal_issn else "https://api.crossref.org/works")
+    if prefix and not re.fullmatch(r"10\.\d{4,9}",prefix):
+        raise ValueError("DOI prefix must have the form 10.1234")
+    if journal_issn:
+        base="https://api.crossref.org/journals/"+quote(journal_issn)+"/works"
+    elif prefix:
+        base="https://api.crossref.org/prefixes/"+quote(prefix)+"/works"
+    else:
+        base="https://api.crossref.org/works"
+    stats=stats if stats is not None else {}
+    stats.setdefault("raw",0)
     cursor="*"
     processed=0  # Raw API records, not just accepted metadata.
-    page_size=min(100,max_records)
+    page_size=min(1000 if max_records>1000 else 100,max_records)
     while processed<max_records:
         params={"filter":f"from-pub-date:{from_date},until-pub-date:{to_date}",
                 "rows":min(page_size,max_records-processed),"cursor":cursor}
@@ -180,11 +212,14 @@ def iter_crossref(query: str, from_date: str, to_date: str,
             params["mailto"]=mailto
         response=fetcher(base+"?"+urlencode(params))
         message=response.get("message") or {}
+        if "available" not in stats and isinstance(message.get("total-results"),int):
+            stats["available"]=message["total-results"]
         batch=message.get("items") or []
         if not batch:
             break
         for raw in batch:
             processed+=1
+            stats["raw"]=processed
             normalized=normalize_crossref(raw)
             if normalized:
                 yield normalized

@@ -21,6 +21,9 @@ class DoiConventionYearTests(unittest.TestCase):
         self.assertEqual(doi_convention_year("10.1920/wp.ifs.1995.9520"),1995)
         self.assertEqual(doi_convention_year("10.1920/wp.ifs.2017.w1711"),2017)
         self.assertEqual(doi_convention_year("10.1920/WP.IFS.2010.1016"),2010)
+        self.assertEqual(doi_convention_year("10.1920/wp.ifs.2025.2225"),2025)  # newer NN/YY order
+        self.assertEqual(doi_convention_year("10.1920/wp.ifs.2020.220"),2020)   # single-digit N/YY
+        self.assertIsNone(doi_convention_year("10.1920/wp.ifs.2000.9710"))      # W97/10 under a 2000 DOI
         self.assertIsNone(doi_convention_year("10.1920/wp.ifs.2013.1604"))   # inconsistent
         self.assertIsNone(doi_convention_year("10.1920/wp.ifs.20256.6126"))  # malformed DOI
         self.assertIsNone(doi_convention_year("10.1016/j.jpubeco.2018.04.001"))
