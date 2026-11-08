@@ -7,7 +7,16 @@
       "area": "Applied microeconomics",
       "active": true,
       "provider": "crossref_journal",
-      "evidence_url": "https://api.crossref.org/journals/1945-7782"
+      "evidence_url": "https://api.crossref.org/journals/1945-7782",
+      "coverage": {
+        "read": 858,
+        "available": 858,
+        "since": "1990",
+        "measured_on": "2026-11-08",
+        "incomplete": false,
+        "access": "Crossref, journal ISSN"
+      },
+      "coverage_note": null
     },
     {
       "id": "journal:aej-economic-policy",
@@ -16,7 +25,16 @@
       "area": "Applied public policy",
       "active": true,
       "provider": "crossref_journal",
-      "evidence_url": "https://api.crossref.org/journals/1945-7731"
+      "evidence_url": "https://api.crossref.org/journals/1945-7731",
+      "coverage": {
+        "read": 935,
+        "available": 935,
+        "since": "1990",
+        "measured_on": "2026-11-08",
+        "incomplete": false,
+        "access": "Crossref, journal ISSN"
+      },
+      "coverage_note": null
     },
     {
       "id": "journal:american-economic-review",
@@ -25,7 +43,16 @@
       "area": "General economics",
       "active": true,
       "provider": "crossref_journal",
-      "evidence_url": "https://api.crossref.org/journals/0002-8282"
+      "evidence_url": "https://api.crossref.org/journals/0002-8282",
+      "coverage": {
+        "read": 5687,
+        "available": 5687,
+        "since": "1990",
+        "measured_on": "2026-11-08",
+        "incomplete": false,
+        "access": "Crossref, journal ISSN"
+      },
+      "coverage_note": "Crossref holds no AER records under this ISSN for 1990–1994 and only 178 for 1995–1999; older issues likely carry JSTOR DOIs and need a separate path."
     },
     {
       "id": "journal:american-economic-review-insights",
@@ -34,7 +61,9 @@
       "area": "General economics",
       "active": false,
       "provider": "",
-      "evidence_url": null
+      "evidence_url": null,
+      "coverage": null,
+      "coverage_note": null
     },
     {
       "id": "journal:demography",
@@ -43,7 +72,9 @@
       "area": "Population and families",
       "active": false,
       "provider": "",
-      "evidence_url": null
+      "evidence_url": null,
+      "coverage": null,
+      "coverage_note": null
     },
     {
       "id": "journal:econometrica",
@@ -52,7 +83,16 @@
       "area": "General economics",
       "active": true,
       "provider": "crossref_journal",
-      "evidence_url": "https://api.crossref.org/journals/0012-9682"
+      "evidence_url": "https://api.crossref.org/journals/0012-9682",
+      "coverage": {
+        "read": 3217,
+        "available": 3217,
+        "since": "1990",
+        "measured_on": "2026-11-08",
+        "incomplete": false,
+        "access": "Crossref, journal ISSN"
+      },
+      "coverage_note": null
     },
     {
       "id": "journal:economic-journal",
@@ -61,7 +101,9 @@
       "area": "General economics",
       "active": false,
       "provider": "",
-      "evidence_url": null
+      "evidence_url": null,
+      "coverage": null,
+      "coverage_note": null
     },
     {
       "id": "journal:journal-of-development-economics",
@@ -70,7 +112,9 @@
       "area": "Families and development",
       "active": false,
       "provider": "",
-      "evidence_url": null
+      "evidence_url": null,
+      "coverage": null,
+      "coverage_note": null
     },
     {
       "id": "journal:journal-of-economic-literature",
@@ -79,7 +123,9 @@
       "area": "Synthesis and reviews",
       "active": false,
       "provider": "",
-      "evidence_url": null
+      "evidence_url": null,
+      "coverage": null,
+      "coverage_note": null
     },
     {
       "id": "journal:journal-of-economic-perspectives",
@@ -88,7 +134,9 @@
       "area": "Synthesis and reviews",
       "active": false,
       "provider": "",
-      "evidence_url": null
+      "evidence_url": null,
+      "coverage": null,
+      "coverage_note": null
     },
     {
       "id": "journal:journal-of-human-resources",
@@ -97,7 +145,16 @@
       "area": "Human capital and mobility",
       "active": true,
       "provider": "crossref_journal",
-      "evidence_url": "https://api.crossref.org/journals/0022-166X"
+      "evidence_url": "https://api.crossref.org/journals/0022-166X",
+      "coverage": {
+        "read": 1684,
+        "available": 1684,
+        "since": "1990",
+        "measured_on": "2026-11-08",
+        "incomplete": false,
+        "access": "Crossref, journal ISSN"
+      },
+      "coverage_note": null
     },
     {
       "id": "journal:journal-of-labor-economics",
@@ -106,7 +163,16 @@
       "area": "Labor and family",
       "active": true,
       "provider": "crossref_journal",
-      "evidence_url": "https://api.crossref.org/journals/0734-306X"
+      "evidence_url": "https://api.crossref.org/journals/0734-306X",
+      "coverage": {
+        "read": 1629,
+        "available": 1629,
+        "since": "1990",
+        "measured_on": "2026-11-08",
+        "incomplete": false,
+        "access": "Crossref, journal ISSN"
+      },
+      "coverage_note": null
     },
     {
       "id": "journal:journal-of-political-economy",
@@ -115,7 +181,16 @@
       "area": "General economics",
       "active": true,
       "provider": "crossref_journal",
-      "evidence_url": "https://api.crossref.org/journals/0022-3808"
+      "evidence_url": "https://api.crossref.org/journals/0022-3808",
+      "coverage": {
+        "read": 2861,
+        "available": 2861,
+        "since": "1990",
+        "measured_on": "2026-11-08",
+        "incomplete": false,
+        "access": "Crossref, journal ISSN"
+      },
+      "coverage_note": null
     },
     {
       "id": "journal:journal-of-population-economics",
@@ -124,7 +199,9 @@
       "area": "Family and demography",
       "active": false,
       "provider": "",
-      "evidence_url": null
+      "evidence_url": null,
+      "coverage": null,
+      "coverage_note": null
     },
     {
       "id": "journal:journal-of-public-economics",
@@ -133,7 +210,9 @@
       "area": "Transfers and taxation",
       "active": false,
       "provider": "",
-      "evidence_url": null
+      "evidence_url": null,
+      "coverage": null,
+      "coverage_note": null
     },
     {
       "id": "journal:journal-of-the-european-economic-association",
@@ -142,7 +221,9 @@
       "area": "General economics",
       "active": false,
       "provider": "",
-      "evidence_url": null
+      "evidence_url": null,
+      "coverage": null,
+      "coverage_note": null
     },
     {
       "id": "journal:quarterly-journal-of-economics",
@@ -151,7 +232,16 @@
       "area": "General economics",
       "active": true,
       "provider": "crossref_journal",
-      "evidence_url": "https://api.crossref.org/journals/0033-5533"
+      "evidence_url": "https://api.crossref.org/journals/0033-5533",
+      "coverage": {
+        "read": 1848,
+        "available": 1848,
+        "since": "1990",
+        "measured_on": "2026-11-08",
+        "incomplete": false,
+        "access": "Crossref, journal ISSN"
+      },
+      "coverage_note": null
     },
     {
       "id": "journal:review-of-economic-studies",
@@ -160,7 +250,16 @@
       "area": "General economics",
       "active": true,
       "provider": "crossref_journal",
-      "evidence_url": "https://api.crossref.org/journals/0034-6527"
+      "evidence_url": "https://api.crossref.org/journals/0034-6527",
+      "coverage": {
+        "read": 2259,
+        "available": 2259,
+        "since": "1990",
+        "measured_on": "2026-11-08",
+        "incomplete": false,
+        "access": "Crossref, journal ISSN"
+      },
+      "coverage_note": null
     },
     {
       "id": "journal:review-of-economics-and-statistics",
@@ -169,7 +268,16 @@
       "area": "Applied economics",
       "active": true,
       "provider": "crossref_journal",
-      "evidence_url": "https://api.crossref.org/journals/0034-6535"
+      "evidence_url": "https://api.crossref.org/journals/0034-6535",
+      "coverage": {
+        "read": 3349,
+        "available": 3349,
+        "since": "1990",
+        "measured_on": "2026-11-08",
+        "incomplete": false,
+        "access": "Crossref, journal ISSN"
+      },
+      "coverage_note": null
     },
     {
       "id": "journal:american-journal-of-sociology",
@@ -178,7 +286,9 @@
       "area": "Social stratification",
       "active": false,
       "provider": "",
-      "evidence_url": null
+      "evidence_url": null,
+      "coverage": null,
+      "coverage_note": null
     },
     {
       "id": "journal:american-sociological-review",
@@ -187,7 +297,9 @@
       "area": "Social stratification",
       "active": false,
       "provider": "",
-      "evidence_url": null
+      "evidence_url": null,
+      "coverage": null,
+      "coverage_note": null
     },
     {
       "id": "journal:economic-policy",
@@ -196,7 +308,9 @@
       "area": "Policy",
       "active": false,
       "provider": "",
-      "evidence_url": null
+      "evidence_url": null,
+      "coverage": null,
+      "coverage_note": null
     },
     {
       "id": "journal:economics-of-education-review",
@@ -205,7 +319,9 @@
       "area": "Human capital",
       "active": false,
       "provider": "",
-      "evidence_url": null
+      "evidence_url": null,
+      "coverage": null,
+      "coverage_note": null
     },
     {
       "id": "journal:european-economic-review",
@@ -214,7 +330,9 @@
       "area": "General economics",
       "active": false,
       "provider": "",
-      "evidence_url": null
+      "evidence_url": null,
+      "coverage": null,
+      "coverage_note": null
     },
     {
       "id": "journal:european-sociological-review",
@@ -223,7 +341,9 @@
       "area": "Inequality and family",
       "active": false,
       "provider": "",
-      "evidence_url": null
+      "evidence_url": null,
+      "coverage": null,
+      "coverage_note": null
     },
     {
       "id": "journal:fiscal-studies",
@@ -232,7 +352,9 @@
       "area": "Household/public policy",
       "active": false,
       "provider": "",
-      "evidence_url": null
+      "evidence_url": null,
+      "coverage": null,
+      "coverage_note": null
     },
     {
       "id": "journal:international-tax-and-public-finance",
@@ -241,7 +363,9 @@
       "area": "Taxation",
       "active": false,
       "provider": "",
-      "evidence_url": null
+      "evidence_url": null,
+      "coverage": null,
+      "coverage_note": null
     },
     {
       "id": "journal:journal-of-economic-behavior-and-organization",
@@ -250,7 +374,9 @@
       "area": "Behavior and households",
       "active": false,
       "provider": "",
-      "evidence_url": null
+      "evidence_url": null,
+      "coverage": null,
+      "coverage_note": null
     },
     {
       "id": "journal:journal-of-economic-geography",
@@ -259,7 +385,9 @@
       "area": "Place and mobility",
       "active": false,
       "provider": "",
-      "evidence_url": null
+      "evidence_url": null,
+      "coverage": null,
+      "coverage_note": null
     },
     {
       "id": "journal:journal-of-economic-inequality",
@@ -268,7 +396,9 @@
       "area": "Wealth and mobility",
       "active": false,
       "provider": "",
-      "evidence_url": null
+      "evidence_url": null,
+      "coverage": null,
+      "coverage_note": null
     },
     {
       "id": "journal:journal-of-finance",
@@ -277,7 +407,9 @@
       "area": "Household finance",
       "active": false,
       "provider": "",
-      "evidence_url": null
+      "evidence_url": null,
+      "coverage": null,
+      "coverage_note": null
     },
     {
       "id": "journal:journal-of-financial-economics",
@@ -286,7 +418,9 @@
       "area": "Household finance",
       "active": false,
       "provider": "",
-      "evidence_url": null
+      "evidence_url": null,
+      "coverage": null,
+      "coverage_note": null
     },
     {
       "id": "journal:journal-of-health-economics",
@@ -295,7 +429,9 @@
       "area": "Health and family",
       "active": false,
       "provider": "",
-      "evidence_url": null
+      "evidence_url": null,
+      "coverage": null,
+      "coverage_note": null
     },
     {
       "id": "journal:journal-of-marriage-and-family",
@@ -304,7 +440,9 @@
       "area": "Family sociology",
       "active": false,
       "provider": "",
-      "evidence_url": null
+      "evidence_url": null,
+      "coverage": null,
+      "coverage_note": null
     },
     {
       "id": "journal:journal-of-policy-analysis-and-management",
@@ -313,7 +451,9 @@
       "area": "Family and social policy",
       "active": false,
       "provider": "",
-      "evidence_url": null
+      "evidence_url": null,
+      "coverage": null,
+      "coverage_note": null
     },
     {
       "id": "journal:journal-of-urban-economics",
@@ -322,7 +462,9 @@
       "area": "Neighborhoods and mobility",
       "active": false,
       "provider": "",
-      "evidence_url": null
+      "evidence_url": null,
+      "coverage": null,
+      "coverage_note": null
     },
     {
       "id": "journal:labour-economics",
@@ -331,7 +473,9 @@
       "area": "Labor economics",
       "active": false,
       "provider": "",
-      "evidence_url": null
+      "evidence_url": null,
+      "coverage": null,
+      "coverage_note": null
     },
     {
       "id": "journal:national-tax-journal",
@@ -340,7 +484,9 @@
       "area": "Taxation and transfers",
       "active": false,
       "provider": "",
-      "evidence_url": null
+      "evidence_url": null,
+      "coverage": null,
+      "coverage_note": null
     },
     {
       "id": "journal:nature-human-behaviour",
@@ -349,7 +495,9 @@
       "area": "Interdisciplinary",
       "active": false,
       "provider": "",
-      "evidence_url": null
+      "evidence_url": null,
+      "coverage": null,
+      "coverage_note": null
     },
     {
       "id": "journal:population-and-development-review",
@@ -358,7 +506,9 @@
       "area": "Demography",
       "active": false,
       "provider": "",
-      "evidence_url": null
+      "evidence_url": null,
+      "coverage": null,
+      "coverage_note": null
     },
     {
       "id": "journal:review-of-economics-of-the-household",
@@ -367,7 +517,9 @@
       "area": "Household decisions",
       "active": false,
       "provider": "",
-      "evidence_url": null
+      "evidence_url": null,
+      "coverage": null,
+      "coverage_note": null
     },
     {
       "id": "journal:review-of-financial-studies",
@@ -376,7 +528,9 @@
       "area": "Household finance",
       "active": false,
       "provider": "",
-      "evidence_url": null
+      "evidence_url": null,
+      "coverage": null,
+      "coverage_note": null
     },
     {
       "id": "journal:social-forces",
@@ -385,7 +539,9 @@
       "area": "Social stratification",
       "active": false,
       "provider": "",
-      "evidence_url": null
+      "evidence_url": null,
+      "coverage": null,
+      "coverage_note": null
     },
     {
       "id": "journal:experimental-economics",
@@ -394,7 +550,9 @@
       "area": "Transfers and preferences",
       "active": false,
       "provider": "",
-      "evidence_url": null
+      "evidence_url": null,
+      "coverage": null,
+      "coverage_note": null
     },
     {
       "id": "journal:games-and-economic-behavior",
@@ -403,7 +561,9 @@
       "area": "Bargaining theory",
       "active": false,
       "provider": "",
-      "evidence_url": null
+      "evidence_url": null,
+      "coverage": null,
+      "coverage_note": null
     },
     {
       "id": "journal:journal-of-econometrics",
@@ -412,7 +572,9 @@
       "area": "Causal methods",
       "active": false,
       "provider": "",
-      "evidence_url": null
+      "evidence_url": null,
+      "coverage": null,
+      "coverage_note": null
     },
     {
       "id": "journal:journal-of-economic-history",
@@ -421,7 +583,9 @@
       "area": "Historical mobility",
       "active": false,
       "provider": "",
-      "evidence_url": null
+      "evidence_url": null,
+      "coverage": null,
+      "coverage_note": null
     },
     {
       "id": "journal:journal-of-economic-theory",
@@ -430,7 +594,9 @@
       "area": "Family and inequality theory",
       "active": false,
       "provider": "",
-      "evidence_url": null
+      "evidence_url": null,
+      "coverage": null,
+      "coverage_note": null
     },
     {
       "id": "journal:nature",
@@ -439,7 +605,9 @@
       "area": "Selective cross-disciplinary",
       "active": false,
       "provider": "",
-      "evidence_url": null
+      "evidence_url": null,
+      "coverage": null,
+      "coverage_note": null
     },
     {
       "id": "journal:pnas",
@@ -448,7 +616,9 @@
       "area": "Selective cross-disciplinary",
       "active": false,
       "provider": "",
-      "evidence_url": null
+      "evidence_url": null,
+      "coverage": null,
+      "coverage_note": null
     },
     {
       "id": "journal:quantitative-economics",
@@ -457,7 +627,9 @@
       "area": "Causal methods",
       "active": false,
       "provider": "",
-      "evidence_url": null
+      "evidence_url": null,
+      "coverage": null,
+      "coverage_note": null
     },
     {
       "id": "journal:scandinavian-journal-of-economics",
@@ -466,7 +638,9 @@
       "area": "Nordic economics",
       "active": false,
       "provider": "",
-      "evidence_url": null
+      "evidence_url": null,
+      "coverage": null,
+      "coverage_note": null
     },
     {
       "id": "journal:science",
@@ -475,7 +649,9 @@
       "area": "Selective cross-disciplinary",
       "active": false,
       "provider": "",
-      "evidence_url": null
+      "evidence_url": null,
+      "coverage": null,
+      "coverage_note": null
     }
   ],
   "repositories": [
@@ -485,8 +661,17 @@
       "tier": "A",
       "area": "European/international economics",
       "active": true,
-      "provider": "repec_series_listing",
-      "evidence_url": "https://ideas.repec.org/s/cpr/ceprdp.html"
+      "provider": "repec_redif",
+      "evidence_url": "https://ideas.repec.org/getdata.html",
+      "coverage": {
+        "read": 21296,
+        "available": 21296,
+        "since": "1990",
+        "measured_on": "2026-11-08",
+        "incomplete": false,
+        "access": "RePEc ReDIF archive"
+      },
+      "coverage_note": "The RePEc mirror ends at DP21601 while CEPR has issued up to DP22115 (checked 2026-11-08), so the newest few months are missing; 80 recent papers collected earlier are kept."
     },
     {
       "id": "working_paper_series:hceo-university-of-chicago",
@@ -495,7 +680,9 @@
       "area": "Human capital and inequality",
       "active": false,
       "provider": "",
-      "evidence_url": null
+      "evidence_url": null,
+      "coverage": null,
+      "coverage_note": null
     },
     {
       "id": "working_paper_series:ifau-sweden",
@@ -504,16 +691,27 @@
       "area": "Register-based applied micro",
       "active": false,
       "provider": "",
-      "evidence_url": null
+      "evidence_url": null,
+      "coverage": null,
+      "coverage_note": null
     },
     {
       "id": "working_paper_series:ifs-working-papers",
       "name": "IFS Working Papers",
       "tier": "A",
       "area": "Public, families, wealth",
-      "active": false,
-      "provider": "",
-      "evidence_url": null
+      "active": true,
+      "provider": "crossref_prefix",
+      "evidence_url": "https://api.crossref.org/prefixes/10.1920",
+      "coverage": {
+        "read": 6445,
+        "available": 6445,
+        "since": "1990",
+        "measured_on": "2026-11-08",
+        "incomplete": false,
+        "access": "Crossref, publisher DOI prefix"
+      },
+      "coverage_note": "Two records keep Crossref's re-deposit year because their DOI encodings disagree (wp.ifs.2000.9710, briefing note wp.ifs.2017.0194)."
     },
     {
       "id": "working_paper_series:iza-discussion-papers",
@@ -521,8 +719,17 @@
       "tier": "A",
       "area": "Labor and family",
       "active": true,
-      "provider": "repec_series_listing",
-      "evidence_url": "https://ideas.repec.org/s/iza/izadps.html"
+      "provider": "repec_redif",
+      "evidence_url": "https://repec.iza.org/RePEc/iza/izadps/",
+      "coverage": {
+        "read": 19019,
+        "available": 19019,
+        "since": "1990",
+        "measured_on": "2026-11-08",
+        "incomplete": false,
+        "access": "RePEc ReDIF archive"
+      },
+      "coverage_note": null
     },
     {
       "id": "working_paper_series:lse-centre-for-economic-performance",
@@ -531,7 +738,9 @@
       "area": "Labor and mobility",
       "active": false,
       "provider": "",
-      "evidence_url": null
+      "evidence_url": null,
+      "coverage": null,
+      "coverage_note": null
     },
     {
       "id": "working_paper_series:nber-working-papers",
@@ -539,8 +748,17 @@
       "tier": "A",
       "area": "General economics",
       "active": true,
-      "provider": "repec_series_listing",
-      "evidence_url": "https://ideas.repec.org/s/nbr/nberwo.html"
+      "provider": "crossref_prefix",
+      "evidence_url": "https://api.crossref.org/prefixes/10.3386",
+      "coverage": {
+        "read": 33146,
+        "available": 33146,
+        "since": "1990",
+        "measured_on": "2026-11-08",
+        "incomplete": false,
+        "access": "Crossref, publisher DOI prefix"
+      },
+      "coverage_note": null
     },
     {
       "id": "working_paper_series:nhh-economics",
@@ -549,7 +767,9 @@
       "area": "Norwegian applied micro",
       "active": false,
       "provider": "",
-      "evidence_url": null
+      "evidence_url": null,
+      "coverage": null,
+      "coverage_note": null
     },
     {
       "id": "working_paper_series:nhh-fair-choice-lab",
@@ -558,7 +778,9 @@
       "area": "Family, inequality, behavioral",
       "active": false,
       "provider": "",
-      "evidence_url": null
+      "evidence_url": null,
+      "coverage": null,
+      "coverage_note": null
     },
     {
       "id": "working_paper_series:princeton-industrial-relations-section",
@@ -567,7 +789,9 @@
       "area": "Labor economics",
       "active": false,
       "provider": "",
-      "evidence_url": null
+      "evidence_url": null,
+      "coverage": null,
+      "coverage_note": null
     },
     {
       "id": "working_paper_series:sofi-stockholm-university",
@@ -576,7 +800,9 @@
       "area": "Mobility and family",
       "active": false,
       "provider": "",
-      "evidence_url": null
+      "evidence_url": null,
+      "coverage": null,
+      "coverage_note": null
     },
     {
       "id": "working_paper_series:cemfi-working-papers",
@@ -585,7 +811,9 @@
       "area": "Applied micro",
       "active": false,
       "provider": "",
-      "evidence_url": null
+      "evidence_url": null,
+      "coverage": null,
+      "coverage_note": null
     },
     {
       "id": "working_paper_series:cesifo-working-papers",
@@ -594,7 +822,9 @@
       "area": "International economics",
       "active": false,
       "provider": "",
-      "evidence_url": null
+      "evidence_url": null,
+      "coverage": null,
+      "coverage_note": null
     },
     {
       "id": "working_paper_series:chicago-becker-friedman-institute",
@@ -603,7 +833,9 @@
       "area": "Economics research",
       "active": false,
       "provider": "",
-      "evidence_url": null
+      "evidence_url": null,
+      "coverage": null,
+      "coverage_note": null
     },
     {
       "id": "working_paper_series:eui-economics-working-papers",
@@ -612,7 +844,9 @@
       "area": "European economics",
       "active": false,
       "provider": "",
-      "evidence_url": null
+      "evidence_url": null,
+      "coverage": null,
+      "coverage_note": null
     },
     {
       "id": "working_paper_series:frisch-centre",
@@ -621,7 +855,9 @@
       "area": "Norwegian economics",
       "active": false,
       "provider": "",
-      "evidence_url": null
+      "evidence_url": null,
+      "coverage": null,
+      "coverage_note": null
     },
     {
       "id": "working_paper_series:iies-stockholm",
@@ -630,7 +866,9 @@
       "area": "Economics",
       "active": false,
       "provider": "",
-      "evidence_url": null
+      "evidence_url": null,
+      "coverage": null,
+      "coverage_note": null
     },
     {
       "id": "working_paper_series:iser-essex-working-papers",
@@ -639,7 +877,9 @@
       "area": "Household dynamics",
       "active": false,
       "provider": "",
-      "evidence_url": null
+      "evidence_url": null,
+      "coverage": null,
+      "coverage_note": null
     },
     {
       "id": "working_paper_series:luxembourg-income-study",
@@ -648,7 +888,9 @@
       "area": "Income and wealth",
       "active": false,
       "provider": "",
-      "evidence_url": null
+      "evidence_url": null,
+      "coverage": null,
+      "coverage_note": null
     },
     {
       "id": "working_paper_series:opportunity-insights",
@@ -657,7 +899,9 @@
       "area": "Mobility, inequality",
       "active": false,
       "provider": "",
-      "evidence_url": null
+      "evidence_url": null,
+      "coverage": null,
+      "coverage_note": null
     },
     {
       "id": "working_paper_series:paris-school-of-economics",
@@ -666,7 +910,9 @@
       "area": "Wealth and inequality",
       "active": false,
       "provider": "",
-      "evidence_url": null
+      "evidence_url": null,
+      "coverage": null,
+      "coverage_note": null
     },
     {
       "id": "working_paper_series:rockwool-foundation",
@@ -675,7 +921,9 @@
       "area": "Nordic social and labor",
       "active": false,
       "provider": "",
-      "evidence_url": null
+      "evidence_url": null,
+      "coverage": null,
+      "coverage_note": null
     },
     {
       "id": "working_paper_series:statistics-norway-discussion-papers",
@@ -684,7 +932,9 @@
       "area": "Administrative data",
       "active": false,
       "provider": "",
-      "evidence_url": null
+      "evidence_url": null,
+      "coverage": null,
+      "coverage_note": null
     },
     {
       "id": "working_paper_series:uppsala-ucls",
@@ -693,7 +943,9 @@
       "area": "Longitudinal research",
       "active": false,
       "provider": "",
-      "evidence_url": null
+      "evidence_url": null,
+      "coverage": null,
+      "coverage_note": null
     },
     {
       "id": "working_paper_series:vive-denmark",
@@ -702,7 +954,9 @@
       "area": "Welfare and families",
       "active": false,
       "provider": "",
-      "evidence_url": null
+      "evidence_url": null,
+      "coverage": null,
+      "coverage_note": null
     },
     {
       "id": "working_paper_series:world-bank-policy-research",
@@ -711,7 +965,9 @@
       "area": "Families and development",
       "active": false,
       "provider": "",
-      "evidence_url": null
+      "evidence_url": null,
+      "coverage": null,
+      "coverage_note": null
     },
     {
       "id": "working_paper_series:zew-discussion-papers",
@@ -720,7 +976,9 @@
       "area": "Labor and public",
       "active": false,
       "provider": "",
-      "evidence_url": null
+      "evidence_url": null,
+      "coverage": null,
+      "coverage_note": null
     },
     {
       "id": "working_paper_series:federal-reserve-working-papers",
@@ -729,7 +987,9 @@
       "area": "Household debt and wealth",
       "active": false,
       "provider": "",
-      "evidence_url": null
+      "evidence_url": null,
+      "coverage": null,
+      "coverage_note": null
     },
     {
       "id": "working_paper_series:max-planck-demographic-research",
@@ -738,7 +998,9 @@
       "area": "Family demography",
       "active": false,
       "provider": "",
-      "evidence_url": null
+      "evidence_url": null,
+      "coverage": null,
+      "coverage_note": null
     },
     {
       "id": "working_paper_series:openalex",
@@ -747,7 +1009,9 @@
       "area": "Metadata discovery",
       "active": false,
       "provider": "",
-      "evidence_url": null
+      "evidence_url": null,
+      "coverage": null,
+      "coverage_note": null
     },
     {
       "id": "working_paper_series:repec-ideas",
@@ -756,7 +1020,9 @@
       "area": "Metadata discovery",
       "active": false,
       "provider": "",
-      "evidence_url": null
+      "evidence_url": null,
+      "coverage": null,
+      "coverage_note": null
     },
     {
       "id": "working_paper_series:ssrn-economics",
@@ -765,7 +1031,9 @@
       "area": "Early discovery",
       "active": false,
       "provider": "",
-      "evidence_url": null
+      "evidence_url": null,
+      "coverage": null,
+      "coverage_note": null
     },
     {
       "id": "working_paper_series:ucl-cream",
@@ -774,7 +1042,9 @@
       "area": "Families and migration",
       "active": false,
       "provider": "",
-      "evidence_url": null
+      "evidence_url": null,
+      "coverage": null,
+      "coverage_note": null
     }
   ],
   "researchers": [
@@ -785,7 +1055,9 @@
       "area": "Marriage, divorce, bargaining",
       "active": true,
       "provider": "openalex_author",
-      "evidence_url": "https://api.openalex.org/authors/A5045271714"
+      "evidence_url": "https://api.openalex.org/authors/A5045271714",
+      "coverage": null,
+      "coverage_note": null
     },
     {
       "id": "researcher:aline-butikofer",
@@ -794,7 +1066,9 @@
       "area": "Family and long-run outcomes",
       "active": true,
       "provider": "openalex_author",
-      "evidence_url": "https://api.openalex.org/authors/A5038291213"
+      "evidence_url": "https://api.openalex.org/authors/A5038291213",
+      "coverage": null,
+      "coverage_note": null
     },
     {
       "id": "researcher:anne-ardila-bren-e",
@@ -803,7 +1077,9 @@
       "area": "Families, gender, education",
       "active": false,
       "provider": "",
-      "evidence_url": null
+      "evidence_url": null,
+      "coverage": null,
+      "coverage_note": null
     },
     {
       "id": "researcher:corina-mommaerts",
@@ -812,7 +1088,9 @@
       "area": "Family insurance and transfers",
       "active": true,
       "provider": "openalex_author",
-      "evidence_url": "https://api.openalex.org/authors/A5020232464"
+      "evidence_url": "https://api.openalex.org/authors/A5020232464",
+      "coverage": null,
+      "coverage_note": null
     },
     {
       "id": "researcher:daniel-waldenstrom",
@@ -821,7 +1099,9 @@
       "area": "Wealth and inheritance",
       "active": false,
       "provider": "",
-      "evidence_url": null
+      "evidence_url": null,
+      "coverage": null,
+      "coverage_note": null
     },
     {
       "id": "researcher:jan-stuhler",
@@ -830,7 +1110,9 @@
       "area": "Multigenerational mobility",
       "active": true,
       "provider": "openalex_author",
-      "evidence_url": "https://api.openalex.org/authors/A5071390181"
+      "evidence_url": "https://api.openalex.org/authors/A5071390181",
+      "coverage": null,
+      "coverage_note": null
     },
     {
       "id": "researcher:katrine-v-l-ken",
@@ -839,7 +1121,9 @@
       "area": "Families and child outcomes",
       "active": true,
       "provider": "openalex_author",
-      "evidence_url": "https://api.openalex.org/authors/A5038351764"
+      "evidence_url": "https://api.openalex.org/authors/A5038351764",
+      "coverage": null,
+      "coverage_note": null
     },
     {
       "id": "researcher:kjell-g-salvanes",
@@ -848,7 +1132,9 @@
       "area": "Family, education, mobility",
       "active": true,
       "provider": "openalex_author",
-      "evidence_url": "https://api.openalex.org/authors/A5025896273"
+      "evidence_url": "https://api.openalex.org/authors/A5025896273",
+      "coverage": null,
+      "coverage_note": null
     },
     {
       "id": "researcher:magne-mogstad",
@@ -857,7 +1143,9 @@
       "area": "Intergenerational outcomes",
       "active": true,
       "provider": "openalex_author",
-      "evidence_url": "https://api.openalex.org/authors/A5035713394"
+      "evidence_url": "https://api.openalex.org/authors/A5035713394",
+      "coverage": null,
+      "coverage_note": null
     },
     {
       "id": "researcher:martin-nybom",
@@ -866,7 +1154,9 @@
       "area": "Intergenerational persistence",
       "active": true,
       "provider": "openalex_author",
-      "evidence_url": "https://api.openalex.org/authors/A5018550128"
+      "evidence_url": "https://api.openalex.org/authors/A5018550128",
+      "coverage": null,
+      "coverage_note": null
     },
     {
       "id": "researcher:nathaniel-hendren",
@@ -875,7 +1165,9 @@
       "area": "Mobility and welfare",
       "active": false,
       "provider": "",
-      "evidence_url": null
+      "evidence_url": null,
+      "coverage": null,
+      "coverage_note": null
     },
     {
       "id": "researcher:raj-chetty",
@@ -884,7 +1176,9 @@
       "area": "Opportunity and mobility",
       "active": true,
       "provider": "openalex_author",
-      "evidence_url": "https://api.openalex.org/authors/A5051484328"
+      "evidence_url": "https://api.openalex.org/authors/A5051484328",
+      "coverage": null,
+      "coverage_note": null
     },
     {
       "id": "researcher:sandra-e-black",
@@ -893,7 +1187,9 @@
       "area": "Parental resources and children",
       "active": false,
       "provider": "",
-      "evidence_url": null
+      "evidence_url": null,
+      "coverage": null,
+      "coverage_note": null
     },
     {
       "id": "researcher:sarah-cattan",
@@ -902,7 +1198,9 @@
       "area": "Child development",
       "active": false,
       "provider": "",
-      "evidence_url": null
+      "evidence_url": null,
+      "coverage": null,
+      "coverage_note": null
     },
     {
       "id": "researcher:wojciech-kopczuk",
@@ -911,7 +1209,9 @@
       "area": "Bequests, gifts, taxation",
       "active": true,
       "provider": "openalex_author",
-      "evidence_url": "https://api.openalex.org/authors/A5028570467"
+      "evidence_url": "https://api.openalex.org/authors/A5028570467",
+      "coverage": null,
+      "coverage_note": null
     },
     {
       "id": "researcher:andreas-kotsadam",
@@ -920,7 +1220,9 @@
       "area": "Gender and family",
       "active": false,
       "provider": "",
-      "evidence_url": null
+      "evidence_url": null,
+      "coverage": null,
+      "coverage_note": null
     },
     {
       "id": "researcher:anna-aizer",
@@ -929,7 +1231,9 @@
       "area": "Families and public policy",
       "active": false,
       "provider": "",
-      "evidence_url": null
+      "evidence_url": null,
+      "coverage": null,
+      "coverage_note": null
     },
     {
       "id": "researcher:bhashkar-mazumder",
@@ -938,7 +1242,9 @@
       "area": "Income mobility",
       "active": false,
       "provider": "",
-      "evidence_url": null
+      "evidence_url": null,
+      "coverage": null,
+      "coverage_note": null
     },
     {
       "id": "researcher:claudia-olivetti",
@@ -947,7 +1253,9 @@
       "area": "Gender and family",
       "active": false,
       "provider": "",
-      "evidence_url": null
+      "evidence_url": null,
+      "coverage": null,
+      "coverage_note": null
     },
     {
       "id": "researcher:david-deming",
@@ -956,7 +1264,9 @@
       "area": "Education and mobility",
       "active": false,
       "provider": "",
-      "evidence_url": null
+      "evidence_url": null,
+      "coverage": null,
+      "coverage_note": null
     },
     {
       "id": "researcher:fabian-pfeffer",
@@ -965,7 +1275,9 @@
       "area": "Wealth and opportunity",
       "active": false,
       "provider": "",
-      "evidence_url": null
+      "evidence_url": null,
+      "coverage": null,
+      "coverage_note": null
     },
     {
       "id": "researcher:florencia-torche",
@@ -974,7 +1286,9 @@
       "area": "Stratification and family",
       "active": false,
       "provider": "",
-      "evidence_url": null
+      "evidence_url": null,
+      "coverage": null,
+      "coverage_note": null
     },
     {
       "id": "researcher:henrik-kleven",
@@ -983,7 +1297,9 @@
       "area": "Tax, gender, household labor",
       "active": false,
       "provider": "",
-      "evidence_url": null
+      "evidence_url": null,
+      "coverage": null,
+      "coverage_note": null
     },
     {
       "id": "researcher:hilary-hoynes",
@@ -992,7 +1308,9 @@
       "area": "Family transfers and welfare",
       "active": false,
       "provider": "",
-      "evidence_url": null
+      "evidence_url": null,
+      "coverage": null,
+      "coverage_note": null
     },
     {
       "id": "researcher:jo-blanden",
@@ -1001,7 +1319,9 @@
       "area": "Education and mobility",
       "active": false,
       "provider": "",
-      "evidence_url": null
+      "evidence_url": null,
+      "coverage": null,
+      "coverage_note": null
     },
     {
       "id": "researcher:johanna-rickne",
@@ -1010,7 +1330,9 @@
       "area": "Gender, marriage, inequality",
       "active": false,
       "provider": "",
-      "evidence_url": null
+      "evidence_url": null,
+      "coverage": null,
+      "coverage_note": null
     },
     {
       "id": "researcher:mari-rege",
@@ -1019,7 +1341,9 @@
       "area": "Child development",
       "active": false,
       "provider": "",
-      "evidence_url": null
+      "evidence_url": null,
+      "coverage": null,
+      "coverage_note": null
     },
     {
       "id": "researcher:marianne-bertrand",
@@ -1028,7 +1352,9 @@
       "area": "Gender and households",
       "active": false,
       "provider": "",
-      "evidence_url": null
+      "evidence_url": null,
+      "coverage": null,
+      "coverage_note": null
     },
     {
       "id": "researcher:martin-hallsten",
@@ -1037,7 +1363,9 @@
       "area": "Wealth and family",
       "active": false,
       "provider": "",
-      "evidence_url": null
+      "evidence_url": null,
+      "coverage": null,
+      "coverage_note": null
     },
     {
       "id": "researcher:matthias-doepke",
@@ -1046,7 +1374,9 @@
       "area": "Family and parenting",
       "active": false,
       "provider": "",
-      "evidence_url": null
+      "evidence_url": null,
+      "coverage": null,
+      "coverage_note": null
     },
     {
       "id": "researcher:maya-rossin-slater",
@@ -1055,7 +1385,9 @@
       "area": "Family policy and early life",
       "active": false,
       "provider": "",
-      "evidence_url": null
+      "evidence_url": null,
+      "coverage": null,
+      "coverage_note": null
     },
     {
       "id": "researcher:melissa-kearney",
@@ -1064,7 +1396,9 @@
       "area": "Family structure",
       "active": false,
       "provider": "",
-      "evidence_url": null
+      "evidence_url": null,
+      "coverage": null,
+      "coverage_note": null
     },
     {
       "id": "researcher:mette-g-rtz",
@@ -1073,7 +1407,9 @@
       "area": "Family labor supply",
       "active": false,
       "provider": "",
-      "evidence_url": null
+      "evidence_url": null,
+      "coverage": null,
+      "coverage_note": null
     },
     {
       "id": "researcher:mikael-lindahl",
@@ -1082,7 +1418,9 @@
       "area": "Mobility and human capital",
       "active": false,
       "provider": "",
-      "evidence_url": null
+      "evidence_url": null,
+      "coverage": null,
+      "coverage_note": null
     },
     {
       "id": "researcher:nezih-guner",
@@ -1091,7 +1429,9 @@
       "area": "Fertility and marriage",
       "active": false,
       "provider": "",
-      "evidence_url": null
+      "evidence_url": null,
+      "coverage": null,
+      "coverage_note": null
     },
     {
       "id": "researcher:paul-devereux",
@@ -1100,7 +1440,9 @@
       "area": "Family background",
       "active": false,
       "provider": "",
-      "evidence_url": null
+      "evidence_url": null,
+      "coverage": null,
+      "coverage_note": null
     },
     {
       "id": "researcher:pierre-andre-chiappori",
@@ -1109,7 +1451,9 @@
       "area": "Household bargaining",
       "active": false,
       "provider": "",
-      "evidence_url": null
+      "evidence_url": null,
+      "coverage": null,
+      "coverage_note": null
     },
     {
       "id": "researcher:raquel-fernandez",
@@ -1118,7 +1462,9 @@
       "area": "Gender and family",
       "active": false,
       "provider": "",
-      "evidence_url": null
+      "evidence_url": null,
+      "coverage": null,
+      "coverage_note": null
     },
     {
       "id": "researcher:raymond-kluender",
@@ -1127,7 +1473,9 @@
       "area": "Bankruptcy and credit",
       "active": false,
       "provider": "",
-      "evidence_url": null
+      "evidence_url": null,
+      "coverage": null,
+      "coverage_note": null
     },
     {
       "id": "researcher:theresa-kuchler",
@@ -1136,7 +1484,9 @@
       "area": "Networks and finance",
       "active": false,
       "provider": "",
-      "evidence_url": null
+      "evidence_url": null,
+      "coverage": null,
+      "coverage_note": null
     },
     {
       "id": "researcher:will-dobbie",
@@ -1145,7 +1495,9 @@
       "area": "Debt and distress",
       "active": false,
       "provider": "",
-      "evidence_url": null
+      "evidence_url": null,
+      "coverage": null,
+      "coverage_note": null
     },
     {
       "id": "researcher:winnie-van-dijk",
@@ -1154,13 +1506,15 @@
       "area": "Household finance",
       "active": false,
       "provider": "",
-      "evidence_url": null
+      "evidence_url": null,
+      "coverage": null,
+      "coverage_note": null
     }
   ],
   "summary": {
     "registered": 128,
-    "verified_active": 23,
-    "planned": 105,
+    "verified_active": 24,
+    "planned": 104,
     "scope": "Metadata collection configured; not a claim of comprehensive coverage"
   }
 }
