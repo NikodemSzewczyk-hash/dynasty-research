@@ -1,10 +1,11 @@
 ---
-title: "Mobility Report Cards: The Role of Colleges in Intergenerational Mobility"
-year: 2017
-source: "NBER Working Papers"
-status: "Working-paper version"
-doi: "10.3386/w23618"
-paper_url: "https://www.nber.org/papers/w23618"
+title: "Income Segregation and Intergenerational Mobility Across Colleges in the United States"
+year: 2020
+source: "Quarterly Journal of Economics"
+status: "Published"
+doi: "10.1093/qje/qjaa005"
+paper_url: "https://doi.org/10.1093/qje/qjaa005"
+working_paper_url: "https://www.nber.org/papers/w23618"
 takeaway: "Colleges differ greatly in low-income access and mobility outcomes, showing how institutional access can reproduce or reduce advantage."
 method: "US tax and higher-education administrative data; descriptive mobility measures"
 authors:
@@ -28,4 +29,4 @@ Colleges differ greatly in low-income access and mobility outcomes, showing how 
 
 ## Original source
 
-[NBER Working Papers](https://www.nber.org/papers/w23618)
+[Quarterly Journal of Economics](https://doi.org/10.1093/qje/qjaa005)

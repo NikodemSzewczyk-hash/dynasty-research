@@ -1,10 +1,11 @@
 ---
 title: "Born with a Silver Spoon? Danish Evidence on Wealth Inequality in Childhood"
-year: 2016
-source: "NBER Working Papers"
-status: "Working-paper version"
-doi: "10.3386/w22549"
-paper_url: "https://www.nber.org/papers/w22549"
+year: 2018
+source: "Economic Journal"
+status: "Published"
+doi: "10.1111/ecoj.12496"
+paper_url: "https://doi.org/10.1111/ecoj.12496"
+working_paper_url: "https://www.nber.org/papers/w22549"
 takeaway: "Wealth inequality emerges already in childhood, and wealth at age 18 predicts later outcomes beyond parental wealth alone."
 method: "Danish wealth records; descriptive childhood wealth distributions"
 authors:
@@ -26,4 +27,4 @@ Wealth inequality emerges already in childhood, and wealth at age 18 predicts la
 
 ## Original source
 
-[NBER Working Papers](https://www.nber.org/papers/w22549)
+[Economic Journal](https://doi.org/10.1111/ecoj.12496)

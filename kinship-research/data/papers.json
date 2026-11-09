@@ -191,7 +191,7 @@
   },
   {
     "id": "mobility-report-cards-colleges",
-    "title": "Mobility Report Cards: The Role of Colleges in Intergenerational Mobility",
+    "title": "Income Segregation and Intergenerational Mobility Across Colleges in the United States",
     "authors": [
       "Raj Chetty",
       "John N. Friedman",
@@ -199,18 +199,19 @@
       "Nicholas Turner",
       "Danny Yagan"
     ],
-    "year": 2017,
-    "source": "NBER Working Papers",
-    "status": "Working-paper version",
-    "doi": "10.3386/w23618",
-    "paper_url": "https://www.nber.org/papers/w23618",
+    "year": 2020,
+    "source": "Quarterly Journal of Economics",
+    "status": "Published",
+    "doi": "10.1093/qje/qjaa005",
+    "paper_url": "https://doi.org/10.1093/qje/qjaa005",
     "topics": [
       "Intergenerational mobility",
       "Childhood and education"
     ],
     "method": "US tax and higher-education administrative data; descriptive mobility measures",
     "takeaway": "Colleges differ greatly in low-income access and mobility outcomes, showing how institutional access can reproduce or reduce advantage.",
-    "description": "Documents intergenerational income mobility by college using large-scale US administrative data."
+    "description": "Documents intergenerational income mobility by college using large-scale US administrative data.",
+    "working_paper_url": "https://www.nber.org/papers/w23618"
   },
   {
     "id": "born-with-silver-spoon",
@@ -220,18 +221,19 @@
       "Wojciech Kopczuk",
       "Claus Thustrup Kreiner"
     ],
-    "year": 2016,
-    "source": "NBER Working Papers",
-    "status": "Working-paper version",
-    "doi": "10.3386/w22549",
-    "paper_url": "https://www.nber.org/papers/w22549",
+    "year": 2018,
+    "source": "Economic Journal",
+    "status": "Published",
+    "doi": "10.1111/ecoj.12496",
+    "paper_url": "https://doi.org/10.1111/ecoj.12496",
     "topics": [
       "Wealth and inheritance",
       "Intergenerational transfers"
     ],
     "method": "Danish wealth records; descriptive childhood wealth distributions",
     "takeaway": "Wealth inequality emerges already in childhood, and wealth at age 18 predicts later outcomes beyond parental wealth alone.",
-    "description": "Examines childhood assets and the role of inter vivos transfers in Danish register data."
+    "description": "Examines childhood assets and the role of inter vivos transfers in Danish register data.",
+    "working_paper_url": "https://www.nber.org/papers/w22549"
   },
   {
     "id": "parenting-with-style",
@@ -240,17 +242,18 @@
       "Matthias Doepke",
       "Fabrizio Zilibotti"
     ],
-    "year": 2014,
-    "source": "NBER Working Papers",
-    "status": "Working-paper version",
-    "doi": "10.3386/w20214",
-    "paper_url": "https://www.nber.org/papers/w20214",
+    "year": 2017,
+    "source": "Econometrica",
+    "status": "Published",
+    "doi": "10.3982/ecta14634",
+    "paper_url": "https://doi.org/10.3982/ecta14634",
     "topics": [
       "Families and kinship",
       "Intergenerational mobility"
     ],
     "method": "Theoretical model of parenting and preference transmission",
     "takeaway": "A model of how socioeconomic conditions shape parenting strategies and thereby influence the transmission of preferences.",
-    "description": "Develops a theory of parenting styles in which parents combine altruism and paternalism."
+    "description": "Develops a theory of parenting styles in which parents combine altruism and paternalism.",
+    "working_paper_url": "https://www.nber.org/papers/w20214"
   }
 ]
