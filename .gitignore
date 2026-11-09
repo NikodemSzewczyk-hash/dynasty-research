@@ -17,3 +17,4 @@ kinship-research/public/
 kinship-research/resources/
 kinship-research/data/candidates.jsonl
 kinship-research/.hugo_build.lock
+kinship-research/registry/seed/cache/
