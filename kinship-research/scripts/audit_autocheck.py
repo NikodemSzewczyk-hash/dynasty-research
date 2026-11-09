@@ -142,10 +142,11 @@ def year_findings(year, m, dy) -> tuple[list,list]:
 
 def load_corpus(root: Path) -> list[tuple]:
     recs=[]
-    for name in ("registry/candidates-v03.jsonl","registry/pilot23-candidates.jsonl"):
-        for line in (root/name).open(encoding="utf-8"):
+    files=[root/"registry/candidates-v03.jsonl"]+sorted((root/"registry/snapshot").glob("*.jsonl"))
+    for path in files:
+        for line in path.open(encoding="utf-8"):
             if line.strip():
-                r=json.loads(line); recs.append((Path(name).name,(r.get("doi") or "").lower(),r.get("title",""),r.get("authors") or [],r.get("year")))
+                r=json.loads(line); recs.append((path.name,(r.get("doi") or "").lower(),r.get("title",""),r.get("authors") or [],r.get("year")))
     for p in json.loads((root/"data/papers.json").read_text(encoding="utf-8")):
         a=p.get("authors"); a=a if isinstance(a,list) else [x.strip() for x in str(a).split(",")]
         recs.append(("papers.json",(p.get("doi") or "").lower(),p.get("title",""),a,p.get("year")))

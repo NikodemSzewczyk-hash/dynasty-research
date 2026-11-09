@@ -1,64 +1,53 @@
 {{ define "main" }}
 {{ $papers := where site.RegularPages "Section" "papers" }}
-{{ $nSources := add (add (len site.Data.sources.journals) (len site.Data.sources.repositories)) (len site.Data.sources.researchers) }}
-{{ $report := index site.Data "discovery-pilot-report" | default (index site.Data "discovery_pilot_report") }}
-{{ $catalog := index site.Data "source-catalog" | default (index site.Data "source_catalog") }}
+{{ $nSources := add (add (len hugo.Data.sources.journals) (len hugo.Data.sources.repositories)) (len hugo.Data.sources.researchers) }}
+{{ $report := index hugo.Data "discovery-pilot-report" | default (index hugo.Data "discovery_pilot_report") }}
+{{ $catalog := index hugo.Data "source-catalog" | default (index hugo.Data "source_catalog") }}
 {{ $indexTotal := $report.total_displayed | default (len $papers) }}
 {{ $verifiedSources := $catalog.summary.verified_active | default 0 }}
-<section class="hero">
-  <div class="hero-gridline" aria-hidden="true"></div>
-  <div class="wrap hero-inner">
-    <div class="hero-copy">
-      <div class="micro-label hero-code"><span class="code-bullet"></span> dynasty_ / OBSERVATORY <span class="code-divider">—</span> 001</div>
-      <h1>Inequality<br>has a <span class="display-accent">history<span class="hero-stop">.</span></span></h1>
-      <p class="hero-intro">The origins and persistence of economic advantage — traced through families, institutions, and generations.</p>
-      <form class="hero-search" action="{{ "/papers/" | relURL }}" method="get" role="search">
-        <label class="sr-only" for="hero-query">Search the paper archive</label>
-        <span class="search-glyph" aria-hidden="true">⌕</span>
-        <input id="hero-query" type="search" name="q" placeholder="Search papers, authors, ideas…" autocomplete="off">
-        <button type="submit" aria-label="Search the archive">↗</button>
-      </form>
-      <div class="hero-actions"><a class="btn btn-primary" href="{{ "/papers/" | relURL }}">Explore research <span aria-hidden="true">↗</span></a><a class="text-link" href="{{ "/about/" | relURL }}">What is dynasty_? <span aria-hidden="true">↗</span></a></div>
-    </div>
-    <div class="hero-visual">
-      <div class="visual-head"><span><span class="tiny-square"></span> FIGURE 01 / THE TRANSMISSION OF ADVANTAGE</span><span>CONCEPTUAL MAP</span></div>
-      <img class="network-image" src="{{ "images/transmission-map.svg" | relURL }}" alt="Conceptual network diagram linking family resources and institutions to opportunities and outcomes across generations." width="680" height="480">
-      <div class="visual-foot"><span><span class="legend-dot"></span> FAMILY & NETWORKS</span><span><span class="legend-dot violet"></span> INSTITUTIONS</span><span>NOT EMPIRICAL DATA</span></div>
-    </div>
-  </div>
-  <div class="wrap hero-bottom"><span>RESEARCH NOTE / 001</span><span>THE QUESTION: WHY DOES ADVANTAGE PERSIST?</span><span class="scroll-cue">SCROLL TO EXPLORE <span aria-hidden="true">↓</span></span></div>
+<section class="wrap home-intro">
+  <p class="label">An independent research archive</p>
+  <h1 class="home-title">Inequality has a <em>history.</em></h1>
+  <p class="lede">The origins and persistence of economic advantage, traced through families, institutions and generations. A catalogue of research on how resources, risks and opportunities pass from parents to children.</p>
+  <form class="home-search" action="{{ "/papers/" | relURL }}" method="get" role="search">
+    <label class="sr-only" for="hero-query">Search the catalogue</label>
+    <input id="hero-query" type="search" name="q" placeholder="Search papers, authors, ideas…" autocomplete="off">
+    <button type="submit">Search</button>
+  </form>
+  <p class="home-stats">
+    <span><strong>{{ $indexTotal }}</strong> <span class="sc">INDEXED RESEARCH RECORDS</span></span>
+    <span><strong>{{ len $papers }}</strong> <span class="sc">CURATED PAPERS</span></span>
+    <span><strong>{{ $verifiedSources }}</strong> <span class="sc">VERIFIED FEEDS</span> of {{ $nSources }}</span>
+  </p>
 </section>
-<section class="index-strip" aria-label="Collection status"><div class="wrap index-strip-inner">
-  <div class="index-stat"><strong>{{ $indexTotal }}</strong><div><span>INDEXED RESEARCH RECORDS</span><small>Curated and unreviewed metadata</small></div></div>
-  <div class="index-stat"><strong>{{ len $papers }}</strong><div><span>CURATED PAPERS</span><small>Editorial summaries available</small></div></div>
-  <div class="index-stat"><strong>{{ $verifiedSources }}</strong><div><span>VERIFIED FEEDS</span><small>Of {{ $nSources }} registered sources</small></div></div>
-  <div class="index-status"><span class="code-bullet"></span><span>METADATA PILOT ACTIVE<br><small>Unreviewed papers labelled</small></span></div>
-</div></section>
-<section class="content-section collection-section"><div class="wrap">
-  <div class="section-heading">
-    <div><div class="micro-label section-code">01 / THE COLLECTION</div><h2>Inside the <span>research index</span></h2><p>A curated selection from a larger, searchable database of research on inequality and families.</p></div>
-    <a class="text-link" href="{{ "/papers/" | relURL }}">VIEW FULL INDEX <span aria-hidden="true">↗</span></a>
-  </div>
-  <div class="list-heading"><span>SELECTED RESEARCH / CURATED SET</span><span>PUBLICATION YEAR ↓</span></div>
-  <div class="paper-list">{{ range first 5 (sort $papers "Params.year" "desc") }}{{ partial "paper-card.html" . }}{{ end }}</div>
-  <div class="collection-footer"><span>Showing a curated selection; the full index also contains unreviewed bibliographic candidates.</span><a class="text-link" href="{{ "/papers/" | relURL }}">EXPLORE ALL {{ $indexTotal }} RECORDS ↗</a></div>
-</div></section>
-<section class="thesis-section"><div class="wrap">
-  <div class="thesis-top"><span class="micro-label">02 / THE RESEARCH LENS</span><span class="micro-label">THREE QUESTIONS / ONE BIG PROBLEM</span></div>
-  <h2>To understand inequality,<br><span>follow its transmission.</span></h2>
-  <div class="thesis-grid">
-    <div class="thesis-item"><div class="thesis-number">01 / ORIGINS</div><h3>Where does advantage begin?</h3><p>Initial conditions, wealth, human capital, place, and the institutions that create durable differences.</p></div>
-    <div class="thesis-item"><div class="thesis-number">02 / PERSISTENCE</div><h3>Why do differences endure?</h3><p>Intergenerational mobility, accumulated advantage, inequality over the life course, and transmission through kin.</p></div>
-    <div class="thesis-item"><div class="thesis-number">03 / MECHANISMS</div><h3>What carries it forward?</h3><p>Transfers, parental investments, family structures, informal networks, and public policy.</p></div>
-  </div>
-  <a class="text-link thesis-link" href="{{ "/about/" | relURL }}">READ THE EDITORIAL MISSION <span aria-hidden="true">↗</span></a>
-</div></section>
-<section class="content-section editorial-section"><div class="wrap">
-  <div class="section-heading"><div><div class="micro-label section-code">03 / EDITORIAL DESK</div><h2>Research <span>briefs</span></h2><p>Interpretation and synthesis, beyond the bibliographic record.</p></div><a class="text-link" href="{{ "/briefs/" | relURL }}">ALL BRIEFS <span aria-hidden="true">↗</span></a></div>
-  <div class="brief-grid">{{ range first 3 (where site.RegularPages "Section" "briefs") }}
-    <article class="brief-card"><div class="micro-label">{{ .Date.Format "02 JAN 2006" }} <span class="sep">/</span> EDITORIAL</div><h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3><p>{{ .Summary | plainify | truncate 220 }}</p><a href="{{ .RelPermalink }}" class="text-link">READ ANALYSIS <span aria-hidden="true">↗</span></a></article>
-  {{ end }}
-  <div class="brief-extra"><span class="micro-label">SIGNAL / NOT NOISE</span><p>We follow research questions across journals, working-paper series, and disciplines — not just prestige labels.</p><a href="{{ "/sources/" | relURL }}">EXPLORE OUR SOURCES ↗</a></div>
-  </div>
-</div></section>
+
+<section class="wrap epigraph" aria-label="The question">
+  <div class="fleuron" aria-hidden="true">⁂</div>
+  <blockquote>Why does advantage persist? How are economic advantages and disadvantages created, sustained, and passed from one generation to the next?</blockquote>
+  <p class="epigraph-src">The question this archive follows</p>
+</section>
+
+<div class="wrap home-cols">
+  <section>
+    <h2 class="label"><span class="num">I.</span>Selected papers</h2>
+    <div class="entries">{{ range first 6 (sort $papers "Params.year" "desc") }}{{ partial "paper-card.html" . }}{{ end }}</div>
+    <p class="more"><a href="{{ "/papers/" | relURL }}">Browse all {{ $indexTotal }} records in the catalogue →</a></p>
+    <p class="aside-note">A curated selection. The full catalogue also holds unreviewed bibliographic candidates, clearly labelled.</p>
+  </section>
+  <aside>
+    <h2 class="label"><span class="num">II.</span>The research lens</h2>
+    <ol class="lens">
+      <li><span class="lens-head">Origins.</span> Where does advantage begin? Initial conditions, wealth, human capital, place, and the institutions that create durable differences.</li>
+      <li><span class="lens-head">Persistence.</span> Why do differences endure? Mobility, accumulated advantage, and transmission through kin.</li>
+      <li><span class="lens-head">Mechanisms.</span> What carries it forward? Transfers, parental investment, family structure, networks and public policy.</li>
+    </ol>
+    <p class="more"><a href="{{ "/about/" | relURL }}">The editorial mission →</a></p>
+    <h2 class="label section-gap"><span class="num">III.</span>From the editors</h2>
+    <ul class="brief-list">{{ range first 3 (where site.RegularPages "Section" "briefs").ByDate.Reverse }}<li><span class="brief-date">{{ .Date.Format "2 Jan 2006" }}</span><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>{{ end }}</ul>
+    <p class="more"><a href="{{ "/briefs/" | relURL }}">All briefs →</a></p>
+    <h2 class="label section-gap"><span class="num">IV.</span>Sources</h2>
+    <p class="aside-note">We follow research across journals, working-paper series and disciplines, not only prestige labels. {{ $verifiedSources }} of {{ $nSources }} registered sources are connected as verified metadata feeds.</p>
+    <p class="more"><a href="{{ "/sources/" | relURL }}">The source register →</a></p>
+  </aside>
+</div>
 {{ end }}

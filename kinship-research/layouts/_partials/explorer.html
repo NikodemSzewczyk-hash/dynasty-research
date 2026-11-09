@@ -1,0 +1,21 @@
+{{/* Catalogue explorer driven by static/js/discovery.js. Element IDs are the script's API: do not rename. */}}
+{{ $catalog := index hugo.Data "source-catalog" | default (index hugo.Data "source_catalog") }}
+<p class="discovery-notice">{{ .notice | safeHTML }}</p>
+<div class="finder">
+  <label class="finder-search"><span class="sr-only">Search the catalogue</span><input type="search" id="discovery-search" placeholder="Search titles, authors, journals, DOI…" autocomplete="off"></label>
+  <div class="finder-filters">
+    <label class="finder-select"><span>Year</span><select id="discovery-year"><option value="">All years</option></select></label>
+    <label class="finder-select"><span>Subject</span><select id="discovery-topic"><option value="">All subjects</option></select></label>
+    <label class="finder-select"><span>Source</span><select id="discovery-source"><option value="">All sources</option><option value="__other__">Historical / other</option>
+      {{ with $catalog }}{{ range (slice .journals .repositories .researchers) }}{{ range . }}{{ if .active }}<option value="{{ .id }}">{{ .name }}</option>{{ end }}{{ end }}{{ end }}{{ end }}
+    </select></label>
+    <label class="finder-select"><span>Status</span><select id="discovery-status"><option value="">All statuses</option><option value="pending">Unreviewed metadata</option><option value="curated">Curated summary</option></select></label>
+    <label class="finder-select"><span>Order</span><select id="discovery-sort"><option value="newest">Newest first</option><option value="relevance">Title relevance</option><option value="oldest">Oldest first</option><option value="title">Title A–Z</option></select></label>
+  </div>
+</div>
+<p class="finder-count"><span id="discovery-count" role="status" aria-live="polite">Loading…</span> · curated and unreviewed records are labelled</p>
+<div id="discovery-results" class="entries" aria-live="off"></div>
+<p id="discovery-empty" class="empty-state" hidden>No records match this search. Try another word or filter.</p>
+<p id="discovery-error" class="empty-state" hidden>{{ .error }}</p>
+<div class="discovery-pagination"><button id="discovery-more" type="button" hidden>Show more records</button></div>
+<script src="{{ "js/discovery.js" | relURL }}" defer></script>

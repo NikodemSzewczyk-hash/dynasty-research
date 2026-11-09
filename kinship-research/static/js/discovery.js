@@ -32,21 +32,26 @@
       return u.protocol === 'https:' ? u.href : null;
     } catch (_) { return null; }
   }
+  // Status wording is an editorial guardrail: every non-curated record must read as unreviewed.
+  const COLLECTION_LABELS = {
+    pilot23: 'Unreviewed · title-screened',
+    seedlist: 'Unreviewed · hand-compiled list',
+  };
+  function authorLine(authors) {
+    const list = (authors || []).filter(Boolean);
+    if (!list.length) return 'Authors not listed.';
+    if (list.length > 4) return list[0] + ' et al.';
+    if (list.length === 1) return list[0] + '.';
+    // RePEc gives "Surname, First": separate such names with semicolons so they stay readable.
+    const sep = list.some(name => name.includes(',')) ? '; ' : ', ';
+    return list.slice(0, -1).join(sep) + (sep === '; ' ? '; ' : ' and ') + list[list.length - 1] + '.';
+  }
   function card(record) {
-    const article = el('article', 'paper-card discovery-paper');
-    const mark = el('div', 'paper-index');
-    mark.appendChild(el('span', 'index-mark'));
-    mark.setAttribute('aria-hidden', 'true');
-    article.appendChild(mark);
-    const body = el('div', 'paper-content');
-    const top = el('div', 'paper-topline');
     const curated = record.review_status === 'curated';
-    const pilot = record.collection === 'pilot23';
-    top.appendChild(el('span', 'discovery-label' + (curated ? ' is-curated' : ''), curated ? 'CURATED SUMMARY' : (pilot ? 'TITLE-SCREENED / UNREVIEWED' : 'UNREVIEWED METADATA')));
-    top.appendChild(el('span', 'paper-divider', '/'));
-    top.appendChild(el('span', '', record.source || 'Source not specified'));
-    body.appendChild(top);
-    const h = el('h3');
+    const article = el('article', 'entry discovery-paper' + (curated ? ' is-curated' : ''));
+    article.appendChild(el('div', 'entry-mark', record.year || '—'));
+    const body = el('div', 'entry-body');
+    const h = el('h3', 'entry-title');
     const url = safeUrl(curated ? record.curated_url : record.url, curated);
     if (url) {
       const link = el('a', '', record.title);
@@ -57,16 +62,17 @@
       h.textContent = record.title || 'Untitled record';
     }
     body.appendChild(h);
-    body.appendChild(el('p', 'paper-authors', (record.authors || []).join(', ') || 'Authors not listed'));
-    body.appendChild(el('p', 'paper-takeaway', curated ?
-      'Editorially selected research. Open the curated archive for the summary.' :
-      'Bibliographic metadata only. Title relevance has not been checked against the full paper.'));
-    const tags = el('div', 'tag-row');
-    (record.topics || []).slice(0, 2).forEach(t => tags.appendChild(el('span', 'tag', t)));
-    if (!curated) tags.appendChild(el('span', 'tag', (record.provider || 'unknown').toUpperCase() + ' metadata'));
-    if (pilot) tags.appendChild(el('span', 'tag', 'Verified-source pilot'));
-    if (record.match_type === 'possible') tags.appendChild(el('span', 'tag', 'Possible other version'));
-    body.appendChild(tags);
+    const meta = el('p', 'entry-meta', authorLine(record.authors) + ' ');
+    meta.appendChild(el('em', '', record.source || 'Source not specified'));
+    meta.appendChild(el('span', 'status-label' + (curated ? ' is-curated' : ''),
+      curated ? 'Curated summary' : (COLLECTION_LABELS[record.collection] || 'Unreviewed metadata')));
+    body.appendChild(meta);
+    const notes = [];
+    if (!curated) notes.push((record.provider || 'unknown') + ' metadata');
+    if (record.collection === 'pilot23') notes.push('verified-source pilot');
+    if (record.match_type === 'possible') notes.push('possible other version');
+    const subjects = (record.topics || []).slice(0, 3).concat(notes);
+    if (subjects.length) body.appendChild(el('p', 'entry-subjects', subjects.join(' · ')));
     if ((record.version_count || 0) > 1 && Array.isArray(record.versions)) {
       const details = el('details', 'discovery-versions');
       details.appendChild(el('summary', '', record.version_count + ' metadata versions (possible same work)'));
@@ -86,16 +92,6 @@
       body.appendChild(details);
     }
     article.appendChild(body);
-    const aside = el('div', 'paper-aside');
-    aside.appendChild(el('span', 'paper-year', record.year || '—'));
-    if (url) {
-      const arrow = el('a', 'paper-arrow', '↗');
-      arrow.href = url;
-      if (!curated) { arrow.target = '_blank'; arrow.rel = 'noopener noreferrer'; }
-      arrow.setAttribute('aria-label', curated ? 'Read curated summary: ' + record.title : 'Open metadata source: ' + record.title);
-      aside.appendChild(arrow);
-    }
-    article.appendChild(aside);
     return article;
   }
   function sortRecords(rows) {

@@ -1,4 +1,16 @@
 {{ define "main" }}
-<section class="page-hero"><div class="wrap"><div class="micro-label section-code"><span class="code-bullet"></span> 002 / EDITORIAL DESK</div><h1>Research <span>briefs.</span></h1><p>Arguments, syntheses, and questions worth following. A live weekly newsletter is planned; the current archive is a prototype.</p></div></section>
-<section class="content-section"><div class="wrap"><div class="brief-grid brief-archive">{{ range .Pages.ByDate.Reverse }}<article class="brief-card"><div class="micro-label">{{ .Date.Format "02 JAN 2006" }} / EDITORIAL</div><h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3><p>{{ .Summary | plainify | truncate 240 }}</p><a class="text-link" href="{{ .RelPermalink }}">READ BRIEF ↗</a></article>{{ end }}</div></div></section>
+<header class="wrap page-head">
+  <p class="label">The editorial desk</p>
+  <h1 class="page-title">Research briefs</h1>
+  <p class="page-intro">Arguments, syntheses and questions worth following. A weekly newsletter is planned; the current archive is a prototype.</p>
+</header>
+<section class="wrap narrow">
+  {{ range .Pages.ByDate.Reverse }}
+  <article class="brief">
+    <p class="brief-date">{{ .Date.Format "2 January 2006" }}</p>
+    <h2 class="brief-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+    <p class="brief-summary">{{ .Summary | plainify | truncate 260 }}</p>
+  </article>
+  {{ end }}
+</section>
 {{ end }}

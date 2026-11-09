@@ -1,6 +1,126 @@
 {
   "schema_version": 1,
   "sources": {
+    "journal:aej-applied-economics": {
+      "coverage": {
+        "available": 858,
+        "complete": true,
+        "end_date": "2026-11-08",
+        "measured_on": "2026-11-08",
+        "read": 858,
+        "start_date": "1990-01-01"
+      },
+      "last_run": "2026-11-08",
+      "last_successful_end": "2026-11-08"
+    },
+    "journal:aej-economic-policy": {
+      "coverage": {
+        "available": 935,
+        "complete": true,
+        "end_date": "2026-11-08",
+        "measured_on": "2026-11-08",
+        "read": 935,
+        "start_date": "1990-01-01"
+      },
+      "last_run": "2026-11-08",
+      "last_successful_end": "2026-11-08"
+    },
+    "journal:american-economic-review": {
+      "coverage": {
+        "available": 5687,
+        "complete": true,
+        "end_date": "2026-11-08",
+        "measured_on": "2026-11-08",
+        "read": 5687,
+        "start_date": "1990-01-01"
+      },
+      "last_run": "2026-11-08",
+      "last_successful_end": "2026-11-08"
+    },
+    "journal:econometrica": {
+      "coverage": {
+        "available": 3217,
+        "complete": true,
+        "end_date": "2026-11-08",
+        "measured_on": "2026-11-08",
+        "read": 3217,
+        "start_date": "1990-01-01"
+      },
+      "last_run": "2026-11-08",
+      "last_successful_end": "2026-11-08"
+    },
+    "journal:journal-of-human-resources": {
+      "coverage": {
+        "available": 1684,
+        "complete": true,
+        "end_date": "2026-11-08",
+        "measured_on": "2026-11-08",
+        "read": 1684,
+        "start_date": "1990-01-01"
+      },
+      "last_run": "2026-11-08",
+      "last_successful_end": "2026-11-08"
+    },
+    "journal:journal-of-labor-economics": {
+      "coverage": {
+        "available": 1629,
+        "complete": true,
+        "end_date": "2026-11-08",
+        "measured_on": "2026-11-08",
+        "read": 1629,
+        "start_date": "1990-01-01"
+      },
+      "last_run": "2026-11-08",
+      "last_successful_end": "2026-11-08"
+    },
+    "journal:journal-of-political-economy": {
+      "coverage": {
+        "available": 2861,
+        "complete": true,
+        "end_date": "2026-11-08",
+        "measured_on": "2026-11-08",
+        "read": 2861,
+        "start_date": "1990-01-01"
+      },
+      "last_run": "2026-11-08",
+      "last_successful_end": "2026-11-08"
+    },
+    "journal:quarterly-journal-of-economics": {
+      "coverage": {
+        "available": 1848,
+        "complete": true,
+        "end_date": "2026-11-08",
+        "measured_on": "2026-11-08",
+        "read": 1848,
+        "start_date": "1990-01-01"
+      },
+      "last_run": "2026-11-08",
+      "last_successful_end": "2026-11-08"
+    },
+    "journal:review-of-economic-studies": {
+      "coverage": {
+        "available": 2259,
+        "complete": true,
+        "end_date": "2026-11-08",
+        "measured_on": "2026-11-08",
+        "read": 2259,
+        "start_date": "1990-01-01"
+      },
+      "last_run": "2026-11-08",
+      "last_successful_end": "2026-11-08"
+    },
+    "journal:review-of-economics-and-statistics": {
+      "coverage": {
+        "available": 3349,
+        "complete": true,
+        "end_date": "2026-11-08",
+        "measured_on": "2026-11-08",
+        "read": 3349,
+        "start_date": "1990-01-01"
+      },
+      "last_run": "2026-11-08",
+      "last_successful_end": "2026-11-08"
+    },
     "researcher:alessandra-voena": {
       "last_run": "2026-11-07",
       "last_successful_end": "2026-11-07"
@@ -40,6 +160,54 @@
     "researcher:wojciech-kopczuk": {
       "last_run": "2026-11-07",
       "last_successful_end": "2026-11-07"
+    },
+    "working_paper_series:cepr-discussion-papers": {
+      "coverage": {
+        "available": 21296,
+        "complete": true,
+        "end_date": "2026-11-08",
+        "measured_on": "2026-11-08",
+        "read": 21296,
+        "start_date": "1990-01-01"
+      },
+      "last_run": "2026-11-08",
+      "last_successful_end": "2026-11-08"
+    },
+    "working_paper_series:ifs-working-papers": {
+      "coverage": {
+        "available": 6445,
+        "complete": true,
+        "end_date": "2026-11-08",
+        "measured_on": "2026-11-08",
+        "read": 6445,
+        "start_date": "1990-01-01"
+      },
+      "last_run": "2026-11-08",
+      "last_successful_end": "2026-11-08"
+    },
+    "working_paper_series:iza-discussion-papers": {
+      "coverage": {
+        "available": 19019,
+        "complete": true,
+        "end_date": "2026-11-08",
+        "measured_on": "2026-11-08",
+        "read": 19019,
+        "start_date": "1990-01-01"
+      },
+      "last_run": "2026-11-08",
+      "last_successful_end": "2026-11-08"
+    },
+    "working_paper_series:nber-working-papers": {
+      "coverage": {
+        "available": 33146,
+        "complete": true,
+        "end_date": "2026-11-08",
+        "measured_on": "2026-11-08",
+        "read": 33146,
+        "start_date": "1990-01-01"
+      },
+      "last_run": "2026-11-08",
+      "last_successful_end": "2026-11-08"
     }
   }
 }

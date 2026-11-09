@@ -36,13 +36,13 @@ class ExportTests(unittest.TestCase):
         self.assertEqual(classify("Climate Change and Economic Growth"),[])
         self.assertEqual(classify("Financial Market Risk and Volatility"),[])
 
-    def test_catalog_reports_23_verified_sources(self):
+    def test_catalog_reports_verified_sources(self):
         c=catalog_from_manifest(self.manifest)
-        self.assertEqual(c["summary"]["verified_active"],23)
+        self.assertEqual(c["summary"]["verified_active"],24)
         self.assertEqual(c["summary"]["registered"],128)
-        self.assertEqual(c["summary"]["planned"],105)
+        self.assertEqual(c["summary"]["planned"],104)
         self.assertEqual(sum(x["active"] for x in c["journals"]),10)
-        self.assertEqual(sum(x["active"] for x in c["repositories"]),3)
+        self.assertEqual(sum(x["active"] for x in c["repositories"]),4)
         self.assertEqual(sum(x["active"] for x in c["researchers"]),10)
         self.assertTrue(all(x["evidence_url"].startswith("https://") for rows in
             (c["journals"],c["repositories"],c["researchers"]) for x in rows if x["active"]))
@@ -143,7 +143,15 @@ class ExportTests(unittest.TestCase):
             self.assertEqual(report["total_displayed"],14)
             self.assertEqual(len([x for x in index if x["review_status"]=="curated"]),12)
             self.assertEqual(len([x for x in index if x["review_status"]=="pending"]),2)
-            self.assertEqual(cat["summary"]["verified_active"],23)
+            self.assertEqual(cat["summary"]["verified_active"],24)
+
+class SurnameKeyTests(unittest.TestCase):
+    def test_repec_and_crossref_name_orders_match(self):
+        from publish_pilot_discovery import _surname_key
+        self.assertEqual(_surname_key("Snower, Dennis"),_surname_key("Dennis Snower"))
+        self.assertEqual(_surname_key("Moraga-González, José-Luis"),_surname_key("José-Luis Moraga-González"))
+        self.assertEqual(_surname_key("Sánchez de la Sierra, Raúl"),_surname_key("Raúl Sánchez de la Sierra"))
+        self.assertNotEqual(_surname_key("Snower, Dennis"),_surname_key("Dennis Smith"))
 
 if __name__=="__main__":
     unittest.main()

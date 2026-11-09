@@ -1,10 +1,20 @@
 {{ define "main" }}
-<article class="article-shell wrap"><a class="back-link" href="{{ "/papers/" | relURL }}">← Paper archive</a>
-<div class="article-kicker">{{ .Params.year }} <span>—</span> {{ .Params.source }} <span>—</span> {{ .Params.status | default "Published" }}</div>
-<h1>{{ .Title }}</h1><p class="article-authors">{{ delimit .Params.authors " · " }}</p>
-<div class="article-metadata"><span>Listed year: {{ .Params.year }}</span>{{ with .Params.doi }}<span>DOI: <a href="https://doi.org/{{ . }}" target="_blank" rel="noopener noreferrer">{{ . }}</a></span>{{ end }}</div>
-<div class="article-grid"><div class="article-main"><div class="eyebrow muted">WHY IT MATTERS</div><p class="standfirst">{{ .Params.takeaway }}</p><div class="article-body">{{ .Content }}</div>
-<div class="article-ctas"><a class="btn btn-dark" href="{{ .Params.paper_url }}" target="_blank" rel="noopener noreferrer">Read original paper ↗</a>{{ with .Params.working_paper_url }}<a class="btn btn-outline" href="{{ . }}" target="_blank" rel="noopener noreferrer">Working-paper version ↗</a>{{ end }}</div></div>
-<aside class="article-side"><div class="aside-label">RESEARCH DETAILS</div><div class="side-label">TOPICS</div><div class="tag-row">{{ range .Params.topics }}<span class="tag">{{ . }}</span>{{ end }}</div><div class="side-label">METHOD / LENS</div><p>{{ .Params.method | default "See original study" }}</p><div class="side-label">SOURCE</div><p>{{ .Params.source }}</p><div class="side-note">Summaries are editorial descriptions, not substitutes for reading the original study.</div></aside></div>
+<article class="wrap narrow record">
+  <a class="back" href="{{ "/papers/" | relURL }}">← All papers</a>
+  <p class="label">Catalogue record · curated</p>
+  <h1 class="record-title">{{ .Title }}</h1>
+  <p class="record-authors">{{ delimit .Params.authors ", " " and " }}</p>
+  <dl class="record-card">
+    <dt>Published</dt><dd><em>{{ .Params.source }}</em>, {{ .Params.year }}{{ with .Params.status }}{{ if ne . "Published" }} · {{ . }}{{ end }}{{ end }}</dd>
+    {{ with .Params.doi }}<dt>DOI</dt><dd class="mono"><a href="https://doi.org/{{ . }}" target="_blank" rel="noopener noreferrer">{{ . }}</a></dd>{{ end }}
+    {{ with .Params.topics }}<dt>Subjects</dt><dd>{{ delimit . " · " }}</dd>{{ end }}
+    <dt>Approach</dt><dd>{{ .Params.method | default "See original study" }}</dd>
+    <dt>Read</dt><dd class="record-links"><a href="{{ .Params.paper_url }}" target="_blank" rel="noopener noreferrer">Original paper ↗</a>{{ with .Params.working_paper_url }}<a href="{{ . }}" target="_blank" rel="noopener noreferrer">Working-paper version ↗</a>{{ end }}</dd>
+  </dl>
+  <section class="record-note">
+    <h2 class="label">Editorial note</h2>
+    <div class="prose">{{ .Content }}</div>
+  </section>
+  <p class="record-foot">Summaries are editorial descriptions, not substitutes for reading the original study.</p>
 </article>
 {{ end }}

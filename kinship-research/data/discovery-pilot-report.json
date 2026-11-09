@@ -1,14 +1,16 @@
 {
-  "raw_candidates": 1226,
-  "title_screened_candidates": 46,
+  "raw_candidates": 98302,
+  "title_screened_candidates": 1603,
   "unrecognized_source_rows": 0,
   "schema_version": 1,
-  "generated_on": "2026-11-07",
-  "total_displayed": 103,
-  "historical_displayed": 52,
-  "pilot_displayed": 39,
+  "generated_on": "2026-11-09",
+  "total_displayed": 1588,
+  "historical_displayed": 42,
+  "pilot_displayed": 1295,
   "curated_displayed": 12,
-  "pilot_source_count": 23,
+  "seed_candidates": 360,
+  "seed_displayed": 239,
+  "pilot_source_count": 24,
   "scope": "Title-screened bibliographic candidates; not editorial endorsements",
-  "deduplication": "Exact DOI, then exact normalized title + first author (latter labelled possible versions)"
+  "deduplication": "Exact DOI, then exact normalized title + first-author surname (latter labelled possible versions)"
 }

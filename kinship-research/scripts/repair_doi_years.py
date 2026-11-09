@@ -16,7 +16,7 @@ from dynasty_data.identity import canonical_doi
 from dynasty_data.providers import doi_convention_year
 
 ROOT=Path(__file__).resolve().parents[1]
-JSONL=[ROOT/"registry/candidates-v03.jsonl",ROOT/"registry/pilot23-candidates.jsonl"]
+JSONL=[ROOT/"registry/candidates-v03.jsonl"]+sorted((ROOT/"registry/snapshot").glob("*.jsonl"))
 INDEX=ROOT/"static/data/discovery-index.json"
 
 def _fix(rec: dict):

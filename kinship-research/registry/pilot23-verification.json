@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
-  "verified_on": "2026-11-07",
-  "source_count": 23,
+  "verified_on": "2026-11-08",
+  "source_count": 24,
   "source_types": {
     "journal": 10,
-    "working_paper_series": 3,
+    "working_paper_series": 4,
     "researcher": 10
   },
-  "notes": "Journal ISSNs checked via Crossref /journals/{issn}; researcher IDs checked via OpenAlex profile names, affiliations, ORCIDs when available; RePEc handles checked against IDEAS series pages. Name-only matches are not accepted. Sandra E. Black excluded due to homonymous medical researcher. RePEc listings are recent windows, not complete archives.",
+  "notes": "Journal ISSNs checked via Crossref /journals/{issn}; researcher IDs checked via OpenAlex profile names, affiliations, ORCIDs when available; RePEc handles checked against IDEAS series pages. Name-only matches are not accepted. Sandra E. Black excluded due to homonymous medical researcher. RePEc listings are recent windows, not complete archives. V0.6 (2026-11-08): NBER and IFS switched to their Crossref DOI prefixes (owner checked via /prefixes); CEPR and IZA switched from IDEAS listing pages, which RePEc asks users not to scrape, to ReDIF archives located via RePEc:all archive templates. IFS added as the 24th verified source.",
   "evidence": [
     {
       "source_id": "journal:american-economic-review",
@@ -210,21 +210,39 @@
     },
     {
       "source_id": "working_paper_series:nber-working-papers",
-      "method": "RePEc series handle, publisher identity",
-      "id": "RePEc:nbr:nberwo",
-      "evidence_url": "https://ideas.repec.org/s/nbr/nberwo.html"
+      "method": "Crossref prefix owner",
+      "id": "10.3386",
+      "observed_name": "National Bureau of Economic Research (Crossref member 1960)",
+      "evidence_url": "https://api.crossref.org/prefixes/10.3386",
+      "verified_on": "2026-11-08",
+      "note": "Old working papers keep original dates (checked w3200=1989, w5000=1995, w7000=1999, w10000=2003)."
     },
     {
       "source_id": "working_paper_series:cepr-discussion-papers",
-      "method": "RePEc series handle, publisher identity",
+      "method": "RePEc archive template + series handle",
       "id": "RePEc:cpr:ceprdp",
-      "evidence_url": "https://ideas.repec.org/s/cpr/ceprdp.html"
+      "observed_name": "Centre for Economic Policy Research (archive URL https://repec.cepr.org/repec/cpr/, HTTP 403; mirror used)",
+      "evidence_url": "https://ideas.repec.org/getdata.html",
+      "archive_template": "ftp://all.repec.org/RePEc/all/cprarch.rdf",
+      "verified_on": "2026-11-08"
     },
     {
       "source_id": "working_paper_series:iza-discussion-papers",
-      "method": "RePEc series handle, publisher identity",
+      "method": "RePEc archive template + series template",
       "id": "RePEc:iza:izadps",
-      "evidence_url": "https://ideas.repec.org/s/iza/izadps.html"
+      "observed_name": "IZA Discussion Papers (IZA Network @ LISER, ISSN 2365-9793)",
+      "evidence_url": "https://repec.iza.org/RePEc/iza/izadps/",
+      "archive_template": "ftp://all.repec.org/RePEc/all/izaarch.rdf",
+      "verified_on": "2026-11-08"
+    },
+    {
+      "source_id": "working_paper_series:ifs-working-papers",
+      "method": "Crossref prefix owner",
+      "id": "10.1920",
+      "observed_name": "Institute for Fiscal Studies (Crossref member 10170)",
+      "evidence_url": "https://api.crossref.org/prefixes/10.1920",
+      "verified_on": "2026-11-08",
+      "note": "Issue years cross-checked against RePEc citation dates for W95/20, W10/16, W05/05, W17/11."
     }
   ]
 }

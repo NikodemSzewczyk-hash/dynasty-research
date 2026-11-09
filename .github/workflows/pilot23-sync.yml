@@ -5,16 +5,21 @@ on:
   workflow_dispatch:
     inputs:
       mode:
-        description: "weekly (45-day overlap) or bounded backfill (not exhaustive)"
+        description: "weekly (45-day overlap) or backfill from 1990-01-01"
         required: true
         type: choice
         options:
           - weekly
           - backfill
       max_per_source:
-        description: "Maximum normalized records per source, 1..500"
+        description: "Maximum provider records read per source, 1..200000"
         required: true
-        default: '150'
+        default: '5000'
+        type: string
+      sources:
+        description: "Optional space-separated source IDs to limit the run (e.g. all researcher:... IDs)"
+        required: false
+        default: ''
         type: string
 permissions:
   contents: write
@@ -53,12 +58,15 @@ jobs:
           OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
           DYNASTY_CONTACT_EMAIL: ${{ vars.DYNASTY_CONTACT_EMAIL }}
           RUN_MODE: ${{ inputs.mode || 'weekly' }}
-          MAX_PER_SOURCE: ${{ inputs.max_per_source || '150' }}
+          MAX_PER_SOURCE: ${{ inputs.max_per_source || '5000' }}
+          SOURCES: ${{ inputs.sources || '' }}
         run: |
           python -m unittest discover -s tests -q
+          source_args=()
+          for s in $SOURCES; do source_args+=(--source "$s"); done
           python scripts/pilot23_ingest.py --mode "$RUN_MODE" \
-            --max-per-source "$MAX_PER_SOURCE" \
-            --snapshot registry/pilot23-candidates.jsonl \
+            --max-per-source "$MAX_PER_SOURCE" "${source_args[@]}" \
+            --snapshot registry/snapshot \
             --state registry/pilot23-state.json \
             --report registry/pilot23-report.json \
             --db data/pilot23.sqlite
@@ -69,7 +77,7 @@ jobs:
           name: pilot23-weekly-review
           path: |
             kinship-research/registry/pilot23-report.json
-            kinship-research/registry/pilot23-candidates.jsonl
+            kinship-research/registry/snapshot/
             kinship-research/static/data/discovery-index.json
             kinship-research/data/source-catalog.json
             kinship-research/data/discovery-pilot-report.json
@@ -81,16 +89,16 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add registry/pilot23-candidates.jsonl registry/pilot23-state.json registry/pilot23-report.json \
+          git add -A registry/snapshot registry/pilot23-state.json registry/pilot23-report.json \
             static/data/discovery-index.json data/source-catalog.json data/discovery-pilot-report.json
           if ! git diff --cached --quiet; then
-            git commit -m "data: weekly 23-source unreviewed metadata candidates"
+            git commit -m "data: weekly verified-source unreviewed metadata candidates"
             git push origin HEAD:bot/pilot23-weekly
           fi
           if [ -z "$(gh pr list --head bot/pilot23-weekly --base main --state open --json number --jq '.[0].number')" ]; then
             if ! gh pr create --base main --head bot/pilot23-weekly \
-              --title "Review: 23-source weekly metadata candidates (unreviewed)" \
-              --body "Automated bibliographic metadata only. Review source report, truncation flags, duplicate DOI candidates and provenance before merging. Title-screened discovery preview and source status only; no curated summaries are changed."; then
+              --title "Review: weekly verified-source metadata candidates (unreviewed)" \
+              --body "Automated bibliographic metadata only. Review source report, per-source coverage and truncation flags, duplicate DOI candidates and provenance before merging. Title-screened discovery preview and source status only; no curated summaries are changed."; then
               echo "::warning::PR creation unavailable. Data branch remains available for manual review."
             fi
           fi
