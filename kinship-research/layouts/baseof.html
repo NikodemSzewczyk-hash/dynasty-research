@@ -3,40 +3,39 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#0a1119">
+  <meta name="theme-color" content="#F7F3EA">
   <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ site.Params.description }}{{ end }}">
   {{ if eq .Section "discovery" }}<meta name="robots" content="noindex,follow">{{ end }}
   <title>{{ if .IsHome }}dynasty_ — The origins and persistence of inequality{{ else }}{{ .Title }} · dynasty_{{ end }}</title>
   <link rel="icon" href="{{ "favicon.svg" | relURL }}" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Courier+Prime&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=IM+Fell+English:ital@0;1&family=IM+Fell+English+SC&display=swap">
   <link rel="stylesheet" href="{{ "css/site.css" | relURL }}">
   <script src="{{ "js/site.js" | relURL }}" defer></script>
 </head>
 <body>
   <a href="#main" class="skip-link">Skip to main content</a>
-  <header class="site-header">
-    <div class="wrap header-row">
-      <a class="brand" href="{{ "/" | relURL }}" aria-label="dynasty_ home"><span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span><span></span></span><span>dynasty<span class="brand-period">_</span></span></a>
-      <div class="header-identity" aria-hidden="true"><span class="identity-pulse"></span><span>INDEPENDENT RESEARCH OBSERVATORY</span></div>
-      <button type="button" id="menu-toggle" class="menu-toggle" aria-expanded="false" aria-controls="primary-nav">MENU <span aria-hidden="true">☰</span></button>
+  <header class="masthead">
+    <div class="wrap">
+      <a class="wordmark" href="{{ "/" | relURL }}" aria-label="dynasty_ home">{{ partial "logo.html" . }}<span class="wordmark-name">dynasty<span class="wordmark-rule">_</span></span></a>
+      <p class="wordmark-sub">An archive of research on how advantage passes between generations</p>
       <nav class="nav" id="primary-nav" aria-label="Primary navigation">
         {{ $current := .RelPermalink }}
-        {{ range site.Menus.main }}
-          <a href="{{ .URL | relURL }}" {{ if eq $current (.URL | relURL) }}aria-current="page"{{ end }}>{{ .Name }}</a>
-        {{ end }}
+        {{ range site.Menus.main }}<a href="{{ .URL | relURL }}" {{ if eq $current (.URL | relURL) }}aria-current="page"{{ end }}>{{ .Name }}</a>{{ end }}
       </nav>
     </div>
   </header>
   <main id="main">{{ block "main" . }}{{ end }}</main>
-  <footer class="site-footer">
-    <div class="wrap footer-grid">
-      <div class="footer-intro"><a class="brand foot-brand" href="{{ "/" | relURL }}"><span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span><span></span></span><span>dynasty<span class="brand-period">_</span></span></a><p>Mapping the origins and persistence of economic inequality, and how advantage passes across generations.</p></div>
-      <div class="footer-links"><span class="micro-label">EXPLORE</span><a href="{{ "/papers/" | relURL }}">All indexed papers ↗</a><a href="{{ "/briefs/" | relURL }}">Research briefs ↗</a><a href="{{ "/sources/" | relURL }}">Sources ↗</a><a href="{{ "/about/" | relURL }}">About ↗</a></div>
-      <div class="footer-note"><span class="micro-label">PROJECT STATUS</span><span>RESEARCH OBSERVATORY / PROTOTYPE</span><span>Metadata discovery pilot · editorial review separate</span><span>© {{ now.Year }} dynasty_ research</span></div>
+  <footer class="colophon">
+    <div class="wrap colophon-inner">
+      <div>
+        <a class="wordmark wordmark-small" href="{{ "/" | relURL }}">{{ partial "logo.html" . }}<span class="wordmark-name">dynasty<span class="wordmark-rule">_</span></span></a>
+        <p>An independent archive of research on the origins and persistence of economic inequality. Prototype; editorial review is separate from metadata discovery.</p>
+      </div>
+      <nav class="colophon-links" aria-label="Footer">{{ range site.Menus.main }}<a href="{{ .URL | relURL }}">{{ .Name }}</a>{{ end }}</nav>
+      <p class="colophon-type">Set in EB Garamond, IM Fell English and Courier Prime. Records drawn from Crossref, OpenAlex and RePEc. © {{ now.Year }} dynasty_ research.</p>
     </div>
-    <div class="wrap footer-bottom"><span>FOLLOW THE MECHANISMS. QUESTION THE PATTERNS.</span><span>INDEPENDENT / INTERDISCIPLINARY / OPEN</span></div>
   </footer>
 </body>
 </html>

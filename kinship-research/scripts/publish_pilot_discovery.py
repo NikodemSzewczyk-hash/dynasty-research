@@ -18,10 +18,12 @@ from urllib.parse import urlsplit
 ROOT=Path(__file__).resolve().parents[1]
 MANIFEST=ROOT/"registry/source_manifest.json"
 PAPERS=ROOT/"data/papers.json"
-SNAPSHOT=ROOT/"registry/pilot23-candidates.jsonl"
+SNAPSHOT=ROOT/"registry/snapshot"
 INDEX=ROOT/"static/data/discovery-index.json"
 CATALOG=ROOT/"data/source-catalog.json"
 REPORT=ROOT/"data/discovery-pilot-report.json"
+STATE=ROOT/"registry/pilot23-state.json"
+SEEDLIST=ROOT/"registry/seed-list.jsonl"
 
 # High-precision, title-only screening. These categories are discovery
 # hypotheses, not human-assessed relevance or paper-level findings.
@@ -94,7 +96,17 @@ def doi_key(value):
 def load_json(path):
     return json.loads(Path(path).read_text(encoding="utf-8"))
 
-def catalog_from_manifest(manifest):
+ACCESS_LABELS={"crossref_journal":"Crossref, journal ISSN","crossref_prefix":"Crossref, publisher DOI prefix",
+               "openalex_author":"OpenAlex, author ID","repec_redif":"RePEc ReDIF archive"}
+
+def coverage_for(source_id,adapter,state):
+    c=((state or {}).get("sources",{}).get(source_id) or {}).get("coverage")
+    if not c or not isinstance(c.get("available"),int):return None
+    return {"read":c["read"],"available":c["available"],"since":c["start_date"][:4],
+            "measured_on":c.get("measured_on"),"incomplete":not c.get("complete",False),
+            "access":ACCESS_LABELS.get(adapter,adapter)}
+
+def catalog_from_manifest(manifest,state=None):
     out={"journals":[],"repositories":[],"researchers":[]}
     kinds={"journal":"journals","working_paper_series":"repositories","researcher":"researchers"}
     for s in manifest["sources"]:
@@ -104,6 +116,8 @@ def catalog_from_manifest(manifest):
             "id":s["id"],"name":s["name"],"tier":s["tier"],"area":s.get("area",""),
             "active":active,"provider":r.get("adapter","") if active else "",
             "evidence_url":valid_https(r.get("evidence_url")) if active else None,
+            "coverage":coverage_for(s["id"],r.get("adapter"),state) if active else None,
+            "coverage_note":r.get("coverage_note") if active else None,
         })
     for rows in out.values():rows.sort(key=lambda x:("ABC".find(x["tier"]),x["name"].casefold()))
     all_sources=sum(len(v) for v in out.values())
@@ -140,11 +154,18 @@ def repair_encoding(value):
         except (UnicodeEncodeError,UnicodeDecodeError):return text
     return text
 
+def snapshot_lines(snapshot):
+    """Lines of a single snapshot JSONL file or of every shard in a snapshot directory."""
+    path=Path(snapshot)
+    files=sorted(path.glob("*.jsonl")) if path.is_dir() else [path]
+    for f in files:
+        yield from f.read_text(encoding="utf-8").splitlines()
+
 def pilot_records(snapshot,manifest):
     names={s["id"]:s["name"] for s in manifest["sources"]}
     active={s["id"] for s in manifest["sources"] if (s.get("retrieval") or {}).get("enabled")}
     rows=[];screened=0;total=0;unrecognized=0
-    for line in Path(snapshot).read_text(encoding="utf-8").splitlines():
+    for line in snapshot_lines(snapshot):
         if not line.strip():continue
         total+=1
         r=json.loads(line)
@@ -178,6 +199,36 @@ def pilot_records(snapshot,manifest):
     return rows,{"raw_candidates":total,"title_screened_candidates":screened,
                  "unrecognized_source_rows":unrecognized}
 
+def seed_records(path):
+    """Unreviewed candidates from the hand-compiled seed list (scripts/export_seed_list.py).
+
+    Only scope-coded `core` rows with an https link and a plausible year are shown. Scope
+    coding is screening, not review: rows stay pending/metadata_only like pilot rows.
+    """
+    rows=[]
+    if not path or not Path(path).exists():return rows
+    for line in Path(path).read_text(encoding="utf-8").splitlines():
+        if not line.strip():continue
+        r=json.loads(line)
+        if r.get("review_status")!="pending" or r.get("evidence_level")!="metadata_only":
+            raise ValueError("Seed list contains non-pending or non-metadata record")
+        if r.get("scope_tier")!="core":continue
+        url=valid_https(r.get("url"))
+        if not url:continue
+        yr=r.get("year")
+        if not isinstance(yr,int) or not 1900<=yr<=date.today().year+1:continue
+        topics=[t for t in (r.get("topics") or []) if isinstance(t,str)]
+        if not topics or not isinstance(r.get("authors"),list):continue
+        rows.append({
+            "id":str(r["id"]),"title":str(r["title"]),"authors":r["authors"][:25],"year":yr,
+            "source":r.get("source") or "","doi":doi_key(r.get("doi")) or None,"url":url,
+            "provider":r.get("provider") or "seedlist","review_status":"pending",
+            "evidence_level":"metadata_only","collection":"seedlist",
+            "topics":topics,"source_ids":[],
+            "score":14+len(topics)*2,"match_type":"none","kind":r.get("kind",""),
+        })
+    return rows
+
 def curated_records(papers):
     result=[]
     for p in papers:
@@ -197,6 +248,14 @@ def _text_key(text):
     ascii_text=unicodedata.normalize("NFKD",str(text or ""))
     ascii_text="".join(c for c in ascii_text if not unicodedata.combining(c))
     return re.sub(r"[^a-z0-9]+"," ",ascii_text.casefold()).strip()
+
+def _surname_key(name):
+    """Surname for "Last, First" (RePEc) and "First Last" (Crossref/OpenAlex) forms."""
+    name=str(name or "")
+    part=name.split(",",1)[0] if "," in name else name
+    tokens=_text_key(part).split()
+    # Final surname token in both orders: "First Last" cannot be split reliably otherwise.
+    return tokens[-1] if tokens else ""
 
 def _version(row):
     return {"doi":doi_key(row.get("doi")) or None,
@@ -229,7 +288,7 @@ def _merge_rows(old,new,possible):
     return out
 
 def combine(records):
-    # Two passes: exact DOI, then exact normalized title AND first author.
+    # Two passes: exact DOI, then exact normalized title AND first-author surname.
     # The second pass is labelled as *possible* versions, not verified
     # equivalence. Do not fuzzy-match titles or people.
     bydoi={}
@@ -243,7 +302,7 @@ def combine(records):
     for r in bydoi.values():
         title=_text_key(r.get("title"))
         authors=r.get("authors") or []
-        first=_text_key(authors[0]) if authors else ""
+        first=_surname_key(authors[0]) if authors else ""
         key="title:"+title+":"+first if title and first else "record:"+str(r["id"])
         if key in bytitle:bytitle[key]=_merge_rows(bytitle[key],r,True)
         else:bytitle[key]=r
@@ -251,20 +310,22 @@ def combine(records):
         0 if r["review_status"]=="curated" else 1,
         -(r.get("score") or 0),-(r.get("year") or 0),r["title"].casefold()))
 
-def build(manifest,papers,existing,snapshot):
-    cat=catalog_from_manifest(manifest)
+def build(manifest,papers,existing,snapshot,state=None,seed_list=None):
+    cat=catalog_from_manifest(manifest,state)
     pilot,stats=pilot_records(snapshot,manifest)
     legacy=base_records(existing)
+    seed=seed_records(seed_list)
     curated=curated_records(papers)
-    merged=combine(legacy+pilot+curated)
+    merged=combine(legacy+pilot+seed+curated)
     counts=Counter(r["collection"] for r in merged)
     stats.update({
         "schema_version":1,"generated_on":date.today().isoformat(),
         "total_displayed":len(merged),"historical_displayed":counts["historical"],
         "pilot_displayed":counts["pilot23"],"curated_displayed":counts["curated"],
+        "seed_candidates":len(seed),"seed_displayed":counts["seedlist"],
         "pilot_source_count":cat["summary"]["verified_active"],
         "scope":"Title-screened bibliographic candidates; not editorial endorsements",
-        "deduplication":"Exact DOI, then exact normalized title + first author (latter labelled possible versions)",
+        "deduplication":"Exact DOI, then exact normalized title + first-author surname (latter labelled possible versions)",
     })
     return cat,merged,stats
 
@@ -278,11 +339,14 @@ def main(argv=None):
     p.add_argument("--index",type=Path,default=INDEX)
     p.add_argument("--catalog",type=Path,default=CATALOG)
     p.add_argument("--report",type=Path,default=REPORT)
+    p.add_argument("--seed-list",type=Path,default=SEEDLIST,
+                   help="Scope-coded seed candidates (scripts/export_seed_list.py); skipped if missing")
     args=p.parse_args(argv)
     if not args.snapshot.exists():p.error("Pilot snapshot missing: run ingestion first")
     manifest=load_json(MANIFEST);papers=load_json(PAPERS)
     existing=load_json(args.index) if args.index.exists() else []
-    cat,index,report=build(manifest,papers,existing,args.snapshot)
+    state=load_json(STATE) if STATE.exists() else None
+    cat,index,report=build(manifest,papers,existing,args.snapshot,state,args.seed_list)
     if report["pilot_displayed"]==0:
         p.error("No title-screened pilot records; refusing to publish empty pilot")
     if report["curated_displayed"]!=len(papers):

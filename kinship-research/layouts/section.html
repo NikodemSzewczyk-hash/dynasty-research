@@ -1,1 +1,7 @@
-{{ define "main" }}<div class="article-shell wrap narrow"><h1>{{ .Title }}</h1><div class="article-body">{{ .Content }}</div>{{ range .Pages }}<p><a href="{{ .RelPermalink }}">{{ .Title }}</a></p>{{ end }}</div>{{ end }}
+{{ define "main" }}
+<article class="wrap narrow">
+  <h1 class="page-title">{{ .Title }}</h1>
+  <div class="prose">{{ .Content }}</div>
+  <ul class="plain-list">{{ range .Pages }}<li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>{{ end }}</ul>
+</article>
+{{ end }}

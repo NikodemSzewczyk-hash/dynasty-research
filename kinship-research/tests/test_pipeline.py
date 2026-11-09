@@ -48,8 +48,8 @@ class PipelineTest(unittest.TestCase):
         self.assertEqual(seed_sources(self.db,SITE/"registry"/"source_manifest.json"),0)
         self.assertEqual(stats(self.db)["sources"],128)
         all_rows=self.db.execute("SELECT id,retrieval_json FROM sources").fetchall()
-        self.assertEqual(sum(bool(json.loads(r["retrieval_json"])["enabled"]) for r in all_rows),23)
-        self.assertEqual(sum(not json.loads(r["retrieval_json"])["enabled"] for r in all_rows),105)
+        self.assertEqual(sum(bool(json.loads(r["retrieval_json"])["enabled"]) for r in all_rows),24)
+        self.assertEqual(sum(not json.loads(r["retrieval_json"])["enabled"] for r in all_rows),104)
         self.assertEqual(len({x["id"] for x in all_rows}),128)
 
     def test_manual_source_verification(self):
@@ -67,11 +67,11 @@ class PipelineTest(unittest.TestCase):
     def test_seed_and_export_idempotent(self):
         self.seed()
         self.assertEqual(stats(self.db)["works"],12)
-        self.assertEqual(stats(self.db)["versions"],16)
+        self.assertEqual(stats(self.db)["versions"],19)
         self.assertEqual(stats(self.db)["published"],12)
         seed_curated(self.db,SITE/"data"/"papers.json")
         self.assertEqual(stats(self.db)["works"],12)
-        self.assertEqual(stats(self.db)["versions"],16)
+        self.assertEqual(stats(self.db)["versions"],19)
         folder=Path(self.tmp.name)/"hugo"
         report=export_hugo(self.db,folder)
         self.assertEqual(report["papers"],12)
@@ -81,7 +81,7 @@ class PipelineTest(unittest.TestCase):
         self.assertIn("authors",search[0])
         self.assertIn("paper_url",search[0])
         has_wp=[p for p in search if p.get("working_paper_url")]
-        self.assertEqual(len(has_wp),4)
+        self.assertEqual(len(has_wp),7)
         self.assertTrue(all(p["version_count"]>=2 for p in has_wp))
         page=(folder/"content"/"papers"/"bequests-wealth-inequality.md").read_text(encoding="utf-8")
         self.assertIn("working_paper_url:",page)
@@ -96,7 +96,7 @@ class PipelineTest(unittest.TestCase):
 
     def test_exact_version_merging_across_providers(self):
         self.seed()
-        doi="10.3386/w22549"
+        doi="10.1111/ecoj.12496"  # Born with a Silver Spoon? (journal version)
         rec=candidate(doi="https://doi.org/"+doi,title="Different title doesn't override editorial content",authors=["X Person"])
         ok,cid=enqueue(self.db,rec)
         self.assertTrue(ok)
@@ -104,7 +104,7 @@ class PipelineTest(unittest.TestCase):
         self.assertEqual(row["match_type"],"exact")
         existing=self.db.execute("SELECT work_id FROM versions WHERE doi=?",(doi,)).fetchone()["work_id"]
         self.assertEqual(decide(self.db,cid,"approve",reviewer="tester"),existing)
-        self.assertEqual(stats(self.db)["versions"],16)
+        self.assertEqual(stats(self.db)["versions"],19)
         self.assertEqual(stats(self.db)["works"],12)
         self.assertEqual(self.db.execute("SELECT status FROM candidates WHERE id=?",(cid,)).fetchone()["status"],"accepted")
         self.assertEqual(self.db.execute("SELECT openalex_id FROM versions WHERE doi=?",(doi,)).fetchone()["openalex_id"],rec["provider_id"])
@@ -142,7 +142,7 @@ class PipelineTest(unittest.TestCase):
         with self.assertRaisesRegex(ValueError,"Possible existing"):
             decide(self.db,cid,"approve",reviewer="editor",takeaway="Test",topics=["Mobility"])
         self.assertEqual(decide(self.db,cid,"approve",reviewer="editor",merge_into=base["id"]),base["id"])
-        self.assertEqual(stats(self.db)["versions"],17)
+        self.assertEqual(stats(self.db)["versions"],20)
         self.assertEqual(self.db.execute("SELECT count(*) FROM works").fetchone()[0],12)
 
     def test_review_reject_defer_and_unreviewed_export(self):
@@ -195,8 +195,8 @@ class PipelineTest(unittest.TestCase):
         self.assertEqual(len(calls),1)
         self.assertIn("per_page=5",calls[0])
         self.assertIn("from_publication_date",calls[0])
-        with self.assertRaisesRegex(ValueError,"1..10000"):
-            list(iter_openalex("mobility","2020-01-01","2021-01-01",max_records=10001,fetcher=fake))
+        with self.assertRaisesRegex(ValueError,"1..200000"):
+            list(iter_openalex("mobility","2020-01-01","2021-01-01",max_records=200001,fetcher=fake))
 
     def test_bounded_crossref_queries(self):
         calls=[]
@@ -269,7 +269,7 @@ class PipelineTest(unittest.TestCase):
         self.assertEqual(row["match_type"],"exact")
         self.assertEqual(row["possible_work_id"],original["work_id"])
         self.assertEqual(decide(self.db,cid,"approve",reviewer="editor"),original["work_id"])
-        self.assertEqual(stats(self.db)["versions"],16)
+        self.assertEqual(stats(self.db)["versions"],19)
         linked=self.db.execute("SELECT openalex_id FROM versions WHERE provider_id='w21896'").fetchone()
         self.assertEqual(linked["openalex_id"],"https://openalex.org/W777000123")
 
@@ -328,7 +328,7 @@ class PipelineTest(unittest.TestCase):
         self.assertEqual(match["match_type"],"exact")
         self.assertEqual(match["possible_work_id"],original["work_id"])
         self.assertEqual(decide(self.db,cid,"approve",reviewer="editor"),original["work_id"])
-        self.assertEqual(stats(self.db)["versions"],16)
+        self.assertEqual(stats(self.db)["versions"],19)
         _,new_id=enqueue(self.db,items[1])
         self.assertEqual(self.db.execute("SELECT match_type FROM candidates WHERE id=?",(new_id,)).fetchone()[0],"none")
         self.assertEqual(stats(self.db)["queue_status"]["pending"],1)
