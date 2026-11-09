@@ -61,11 +61,18 @@
       "Intergenerational transfers"
     ],
     "source_ids": [
+      "working_paper_series:cepr-discussion-papers",
       "working_paper_series:nber-working-papers"
     ],
     "score": 100,
     "match_type": "possible",
     "versions": [
+      {
+        "doi": null,
+        "url": "https://ideas.repec.org/p/cpr/ceprdp/11490.html",
+        "source": "CEPR Discussion Papers",
+        "provider": "repec"
+      },
       {
         "doi": "10.3386/w22549",
         "url": "https://doi.org/10.3386/w22549",
@@ -79,7 +86,7 @@
         "provider": "curated"
       }
     ],
-    "version_count": 2
+    "version_count": 3
   },
   {
     "id": "curated:inheritance-multiple-generations",
@@ -103,11 +110,18 @@
       "Wealth and inheritance"
     ],
     "source_ids": [
+      "working_paper_series:cepr-discussion-papers",
       "working_paper_series:iza-discussion-papers"
     ],
     "score": 100,
     "match_type": "possible",
     "versions": [
+      {
+        "doi": null,
+        "url": "https://ideas.repec.org/p/cpr/ceprdp/11456.html",
+        "source": "CEPR Discussion Papers",
+        "provider": "repec"
+      },
       {
         "doi": null,
         "url": "https://ideas.repec.org/p/iza/izadps/dp10126.html",
@@ -121,7 +135,7 @@
         "provider": "curated"
       }
     ],
-    "version_count": 2
+    "version_count": 3
   },
   {
     "id": "curated:neighborhood-childhood-exposure",
@@ -232,6 +246,7 @@
     ],
     "source_ids": [
       "journal:econometrica",
+      "working_paper_series:cepr-discussion-papers",
       "working_paper_series:iza-discussion-papers",
       "working_paper_series:nber-working-papers"
     ],
@@ -255,9 +270,15 @@
         "url": "https://doi.org/10.3386/w20214",
         "source": "NBER Working Papers",
         "provider": "crossref"
+      },
+      {
+        "doi": null,
+        "url": "https://ideas.repec.org/p/cpr/ceprdp/10029.html",
+        "source": "CEPR Discussion Papers",
+        "provider": "repec"
       }
     ],
-    "version_count": 3
+    "version_count": 4
   },
   {
     "id": "curated:neighborhood-mto-children",
@@ -316,6 +337,7 @@
     ],
     "source_ids": [
       "journal:american-economic-review",
+      "working_paper_series:cepr-discussion-papers",
       "working_paper_series:nber-working-papers"
     ],
     "score": 100,
@@ -332,9 +354,15 @@
         "url": "https://doi.org/10.3386/w21896",
         "source": "NBER Working Papers",
         "provider": "crossref"
+      },
+      {
+        "doi": null,
+        "url": "https://ideas.repec.org/p/cpr/ceprdp/11059.html",
+        "source": "CEPR Discussion Papers",
+        "provider": "repec"
       }
     ],
-    "version_count": 2
+    "version_count": 3
   },
   {
     "id": "curated:divorce-laws-intertemporal",
@@ -1384,7 +1412,7 @@
     "title": "Measuring Intergenerational Income Mobility: A Synthesis of Approaches",
     "authors": [
       "Nathan Deutscher",
-      "Bhashkar Mazumder B"
+      "Bhashkar Mazumder"
     ],
     "year": 2023,
     "source": "Journal of Economic Perspectives",
@@ -1762,7 +1790,7 @@
     "title": "Intergenerational mobility in self-reported health status in the US",
     "authors": [
       "Timothy J. Halliday",
-      "Bhashkar Mazumder B",
+      "Bhashkar Mazumder",
       "Ashley Wong"
     ],
     "year": 2021,
@@ -1959,7 +1987,7 @@
     "title": "Intergenerational mobility across Australia and the stability of regional estimates",
     "authors": [
       "Nathan Deutscher",
-      "Bhashkar Mazumder B"
+      "Bhashkar Mazumder"
     ],
     "year": 2020,
     "source": "Labour Economics",
@@ -2266,10 +2294,27 @@
       "Intergenerational mobility",
       "Place and opportunity"
     ],
-    "source_ids": [],
+    "source_ids": [
+      "working_paper_series:cepr-discussion-papers"
+    ],
     "score": 18,
-    "match_type": "none",
-    "kind": "journal_article"
+    "match_type": "possible",
+    "kind": "journal_article",
+    "versions": [
+      {
+        "doi": null,
+        "url": "https://ideas.repec.org/p/cpr/ceprdp/10496.html",
+        "source": "CEPR Discussion Papers",
+        "provider": "repec"
+      },
+      {
+        "doi": "10.1111/ecoj.12599",
+        "url": "https://doi.org/10.1111/ecoj.12599",
+        "source": "Economic Journal",
+        "provider": "crossref"
+      }
+    ],
+    "version_count": 2
   },
   {
     "id": "seedlist:arenas-2018-countercyclical-school-attainment-and",
@@ -3315,7 +3360,7 @@
     "id": "seedlist:pekkarinen-2009-school-tracking-and-intergenerational",
     "title": "School tracking and intergenerational income mobility: Evidence from the Finnish comprehensive school reform",
     "authors": [
-      "Tuomas Pekkarinen Y",
+      "Tuomas Pekkarinen",
       "Roope Uusitalo",
       "Sari Pekkala Kerr"
     ],
@@ -3695,7 +3740,7 @@
     "authors": [
       "Raquel Fernández",
       "Alessandra Fogli",
-      "Claudia Olivetti Z"
+      "Claudia Olivetti"
     ],
     "year": 2004,
     "source": "Quarterly Journal of Economics",
@@ -4161,7 +4206,7 @@
     "id": "seedlist:checchi-1999-more-equal-but-lessmobile",
     "title": "More equal but less mobile?",
     "authors": [
-      "Daniele Checchi A",
+      "Daniele Checchi",
       "Andrea Ichino",
       "Aldo Rustichini"
     ],
@@ -4732,7 +4777,7 @@
       "Harrison Chang",
       "Timothy J. Halliday",
       "Ming‐Jen Lin",
-      "Bhashkar Mazumder B"
+      "Bhashkar Mazumder"
     ],
     "year": 2024,
     "source": "Journal of Public Economics",
@@ -4908,10 +4953,27 @@
     "topics": [
       "Intergenerational mobility"
     ],
-    "source_ids": [],
+    "source_ids": [
+      "working_paper_series:cepr-discussion-papers"
+    ],
     "score": 16,
-    "match_type": "none",
-    "kind": "journal_article"
+    "match_type": "possible",
+    "kind": "journal_article",
+    "versions": [
+      {
+        "doi": null,
+        "url": "https://ideas.repec.org/p/cpr/ceprdp/16355.html",
+        "source": "CEPR Discussion Papers",
+        "provider": "repec"
+      },
+      {
+        "doi": "10.1016/j.jpubeco.2024.105074",
+        "url": "https://doi.org/10.1016/j.jpubeco.2024.105074",
+        "source": "Journal of Public Economics",
+        "provider": "crossref"
+      }
+    ],
+    "version_count": 2
   },
   {
     "id": "seedlist:aschard-2025-the-intergenerational-im-mobility",
@@ -5147,7 +5209,7 @@
     "authors": [
       "Panka Bencsik",
       "Timothy J. Halliday",
-      "Bhashkar Mazumder B"
+      "Bhashkar Mazumder"
     ],
     "year": 2023,
     "source": "Journal of Health Economics",
@@ -5473,6 +5535,7 @@
     ],
     "source_ids": [
       "journal:journal-of-political-economy",
+      "working_paper_series:cepr-discussion-papers",
       "working_paper_series:nber-working-papers"
     ],
     "score": 16,
@@ -5490,9 +5553,15 @@
         "url": "https://doi.org/10.3386/w16924",
         "source": "NBER Working Papers",
         "provider": "crossref"
+      },
+      {
+        "doi": null,
+        "url": "https://ideas.repec.org/p/cpr/ceprdp/8329.html",
+        "source": "CEPR Discussion Papers",
+        "provider": "repec"
       }
     ],
-    "version_count": 2
+    "version_count": 3
   },
   {
     "id": "seedlist:lib-doorley-2020-labour-supply-after-inheritances",
@@ -5729,12 +5798,19 @@
       "Wealth and inheritance"
     ],
     "source_ids": [
+      "working_paper_series:cepr-discussion-papers",
       "working_paper_series:iza-discussion-papers"
     ],
     "score": 16,
     "match_type": "possible",
     "kind": "journal_article",
     "versions": [
+      {
+        "doi": null,
+        "url": "https://ideas.repec.org/p/cpr/ceprdp/11191.html",
+        "source": "CEPR Discussion Papers",
+        "provider": "repec"
+      },
       {
         "doi": null,
         "url": "https://ideas.repec.org/p/iza/izadps/dp9839.html",
@@ -5748,7 +5824,7 @@
         "provider": "crossref"
       }
     ],
-    "version_count": 2
+    "version_count": 3
   },
   {
     "id": "seedlist:guell-2018-new-directions-in-measuring",
@@ -5946,7 +6022,7 @@
     "authors": [
       "Espen Bratberg",
       "Jonathan M. Davis",
-      "Bhashkar Mazumder B",
+      "Bhashkar Mazumder",
       "Martin Nybom",
       "Daniel D. Schnitzlein",
       "Kjell Vaage"
@@ -6060,33 +6136,6 @@
     "kind": "journal_article"
   },
   {
-    "id": "repec:RePEc:cpr:ceprdp:11456",
-    "title": "Intergenerational wealth mobility and the role of inheritance: Evidence from multiple generations",
-    "authors": [
-      "Waldenstrom, Daniel",
-      "Adermon, Adrian",
-      "Lindahl, Mikael"
-    ],
-    "year": 2016,
-    "source": "CEPR Discussion Papers",
-    "doi": null,
-    "url": "https://ideas.repec.org/p/cpr/ceprdp/11456.html",
-    "provider": "repec",
-    "review_status": "pending",
-    "evidence_level": "metadata_only",
-    "collection": "pilot23",
-    "topics": [
-      "Intergenerational mobility",
-      "Wealth and inheritance"
-    ],
-    "source_ids": [
-      "working_paper_series:cepr-discussion-papers"
-    ],
-    "score": 16,
-    "match_type": "none",
-    "kind": "working_paper"
-  },
-  {
     "id": "crossref:10.3386/w22759",
     "title": "The Effects of Income Mobility and Tax Persistence on Income Redistribution and Inequality",
     "authors": [
@@ -6116,7 +6165,7 @@
     "id": "seedlist:pekkarinen-2017-the-evolution-of-social",
     "title": "The Evolution of Social Mobility: Norway during the Twentieth Century",
     "authors": [
-      "Tuomas Pekkarinen Y",
+      "Tuomas Pekkarinen",
       "Kjell G. Salvanes",
       "Matti Sarvimäki"
     ],
@@ -6335,7 +6384,7 @@
     "authors": [
       "Miles Corak",
       "Matthew J. Lindquist",
-      "Bhashkar Mazumder B"
+      "Bhashkar Mazumder"
     ],
     "year": 2014,
     "source": "Labour Economics",
@@ -6617,7 +6666,7 @@
     "id": "seedlist:checchi-2003-intergenerational-persistence-of-educational",
     "title": "Intergenerational persistence of educational attainment in Italy",
     "authors": [
-      "Daniele Checchi A",
+      "Daniele Checchi",
       "Carlo V. Fiorio",
       "Marco Leonardi"
     ],
@@ -6939,33 +6988,6 @@
       }
     ],
     "version_count": 2
-  },
-  {
-    "id": "repec:RePEc:cpr:ceprdp:8329",
-    "title": "Intergenerational Redistribution in the Great Recession",
-    "authors": [
-      "Heathcote, Jonathan",
-      "Krueger, Dirk",
-      "Glover, Andrew"
-    ],
-    "year": 2011,
-    "source": "CEPR Discussion Papers",
-    "doi": null,
-    "url": "https://ideas.repec.org/p/cpr/ceprdp/8329.html",
-    "provider": "repec",
-    "review_status": "pending",
-    "evidence_level": "metadata_only",
-    "collection": "pilot23",
-    "topics": [
-      "Intergenerational mobility",
-      "Institutions and policy"
-    ],
-    "source_ids": [
-      "working_paper_series:cepr-discussion-papers"
-    ],
-    "score": 16,
-    "match_type": "none",
-    "kind": "working_paper"
   },
   {
     "id": "repec:RePEc:iza:izadps:dp5914",
@@ -7520,7 +7542,7 @@
     "id": "seedlist:mazumder-2008-sibling-similarities-and-economic",
     "title": "Sibling similarities and economic inequality in the US",
     "authors": [
-      "Bhashkar Mazumder B"
+      "Bhashkar Mazumder"
     ],
     "year": 2007,
     "source": "Journal of Population Economics",
@@ -7942,16 +7964,7 @@
     "source_ids": [],
     "score": 16,
     "match_type": "none",
-    "kind": "journal_article",
-    "versions": [
-      {
-        "doi": "10.1016/s0047-2727(00)00101-8",
-        "url": "https://doi.org/10.1016/s0047-2727(00)00101-8",
-        "source": "Journal of Public Economics",
-        "provider": "crossref"
-      }
-    ],
-    "version_count": 1
+    "kind": "journal_article"
   },
   {
     "id": "seedlist:osterbacka-2001-family-background-and-economic",
@@ -8910,6 +8923,7 @@
     ],
     "source_ids": [
       "researcher:jan-stuhler",
+      "working_paper_series:cepr-discussion-papers",
       "working_paper_series:iza-discussion-papers"
     ],
     "score": 14,
@@ -8939,36 +8953,15 @@
         "url": "https://ideas.repec.org/p/iza/izadps/dp18351.html",
         "source": "IZA Discussion Papers",
         "provider": "repec"
+      },
+      {
+        "doi": null,
+        "url": "https://ideas.repec.org/p/cpr/ceprdp/21407.html",
+        "source": "CEPR Discussion Papers",
+        "provider": "repec"
       }
     ],
-    "version_count": 4
-  },
-  {
-    "id": "repec:RePEc:cpr:ceprdp:21407",
-    "title": "Assortative Mating, Inequality, and Rising Educational Mobility in Spain",
-    "authors": [
-      "Stuhler, Jan",
-      "Grebol, Ricard",
-      "Machelett, Margarita",
-      "Villanueva, Ernesto"
-    ],
-    "year": 2026,
-    "source": "CEPR Discussion Papers",
-    "doi": null,
-    "url": "https://ideas.repec.org/p/cpr/ceprdp/21407.html",
-    "provider": "repec",
-    "review_status": "pending",
-    "evidence_level": "metadata_only",
-    "collection": "pilot23",
-    "topics": [
-      "Intergenerational mobility"
-    ],
-    "source_ids": [
-      "working_paper_series:cepr-discussion-papers"
-    ],
-    "score": 14,
-    "match_type": "none",
-    "kind": "working_paper"
+    "version_count": 5
   },
   {
     "id": "repec:RePEc:cpr:ceprdp:21481",
@@ -11021,6 +11014,8 @@
     "source_ids": [
       "journal:journal-of-political-economy",
       "working_paper_series:cepr-discussion-papers",
+      "working_paper_series:ifs-working-papers",
+      "working_paper_series:iza-discussion-papers",
       "working_paper_series:nber-working-papers"
     ],
     "score": 14,
@@ -11044,9 +11039,21 @@
         "url": "https://doi.org/10.3386/w18145",
         "source": "NBER Working Papers",
         "provider": "crossref"
+      },
+      {
+        "doi": "10.1920/wp.ifs.2011.1111",
+        "url": "https://doi.org/10.1920/wp.ifs.2011.1111",
+        "source": "Working Paper Series",
+        "provider": "crossref"
+      },
+      {
+        "doi": null,
+        "url": "https://ideas.repec.org/p/iza/izadps/dp6142.html",
+        "source": "IZA Discussion Papers",
+        "provider": "repec"
       }
     ],
-    "version_count": 3
+    "version_count": 5
   },
   {
     "id": "repec:RePEc:iza:izadps:dp18402",
@@ -11940,11 +11947,27 @@
       "Family structure"
     ],
     "source_ids": [
-      "journal:aej-applied-economics"
+      "journal:aej-applied-economics",
+      "working_paper_series:nber-working-papers"
     ],
     "score": 14,
-    "match_type": "none",
-    "kind": "journal_article"
+    "match_type": "possible",
+    "kind": "journal_article",
+    "versions": [
+      {
+        "doi": "10.1257/app.20210117",
+        "url": "https://doi.org/10.1257/app.20210117",
+        "source": "American Economic Journal: Applied Economics",
+        "provider": "crossref"
+      },
+      {
+        "doi": "10.3386/w26238",
+        "url": "https://doi.org/10.3386/w26238",
+        "source": "NBER Working Papers",
+        "provider": "crossref"
+      }
+    ],
+    "version_count": 2
   },
   {
     "id": "crossref:10.1257/pol.20230220",
@@ -12714,7 +12737,7 @@
       "Isabel Z. Martínez",
       "Alberto Polo",
       "Panu Poutvaara",
-      "Hillel Rapoport C"
+      "Hillel Rapoport"
     ],
     "year": 2025,
     "source": "SSRN Electronic Journal",
@@ -14521,7 +14544,7 @@
     "id": "crossref:10.1162/rest_a_01240",
     "title": "Measuring Preferences for Income Equality and Income Mobility",
     "authors": [
-      "Bernardo Lara E.",
+      "Bernardo Lara",
       "Kenneth A. Shores"
     ],
     "year": 2024,
@@ -15253,12 +15276,19 @@
       "Intergenerational mobility"
     ],
     "source_ids": [
+      "working_paper_series:cepr-discussion-papers",
       "working_paper_series:ifs-working-papers"
     ],
     "score": 14,
     "match_type": "possible",
     "kind": "working_paper",
     "versions": [
+      {
+        "doi": null,
+        "url": "https://ideas.repec.org/p/cpr/ceprdp/15975.html",
+        "source": "CEPR Discussion Papers",
+        "provider": "repec"
+      },
       {
         "doi": "10.1920/wp.ifs.2021.721",
         "url": "https://doi.org/10.1920/wp.ifs.2021.721",
@@ -15272,7 +15302,7 @@
         "provider": "crossref"
       }
     ],
-    "version_count": 2
+    "version_count": 3
   },
   {
     "id": "repec:RePEc:iza:izadps:dp17089",
@@ -17534,6 +17564,7 @@
     ],
     "source_ids": [
       "journal:aej-applied-economics",
+      "working_paper_series:cepr-discussion-papers",
       "working_paper_series:iza-discussion-papers",
       "working_paper_series:nber-working-papers"
     ],
@@ -17558,9 +17589,15 @@
         "url": "https://doi.org/10.3386/w25732",
         "source": "NBER Working Papers",
         "provider": "crossref"
+      },
+      {
+        "doi": null,
+        "url": "https://ideas.repec.org/p/cpr/ceprdp/13646.html",
+        "source": "CEPR Discussion Papers",
+        "provider": "repec"
       }
     ],
-    "version_count": 3
+    "version_count": 4
   },
   {
     "id": "repec:RePEc:cpr:ceprdp:17148",
@@ -18284,7 +18321,7 @@
   },
   {
     "id": "crossref:10.3982/ecta17082",
-    "title": "Making a <i>NARCO</i>: Childhood Exposure to Illegal Labor Markets and Criminal Life Paths",
+    "title": "Making a NARCO: Childhood Exposure to Illegal Labor Markets and Criminal Life Paths",
     "authors": [
       "Maria Micaela Sviatschi"
     ],
@@ -18611,11 +18648,27 @@
       "Wealth and inheritance"
     ],
     "source_ids": [
-      "working_paper_series:cepr-discussion-papers"
+      "working_paper_series:cepr-discussion-papers",
+      "working_paper_series:nber-working-papers"
     ],
     "score": 14,
-    "match_type": "none",
-    "kind": "working_paper"
+    "match_type": "possible",
+    "kind": "working_paper",
+    "versions": [
+      {
+        "doi": null,
+        "url": "https://ideas.repec.org/p/cpr/ceprdp/15573.html",
+        "source": "CEPR Discussion Papers",
+        "provider": "repec"
+      },
+      {
+        "doi": "10.3386/w28261",
+        "url": "https://doi.org/10.3386/w28261",
+        "source": "NBER Working Papers",
+        "provider": "crossref"
+      }
+    ],
+    "version_count": 2
   },
   {
     "id": "repec:RePEc:iza:izadps:dp15109",
@@ -19674,38 +19727,27 @@
       "Wealth and inheritance"
     ],
     "source_ids": [
-      "working_paper_series:cepr-discussion-papers"
-    ],
-    "score": 14,
-    "match_type": "none",
-    "kind": "working_paper"
-  },
-  {
-    "id": "crossref:10.3386/w28613",
-    "title": "Financial and Total Wealth Inequality with Declining Interest Rates",
-    "authors": [
-      "Daniel Greenwald",
-      "Matteo Leombroni",
-      "Hanno Lustig",
-      "Stijn Van Nieuwerburgh"
-    ],
-    "year": 2021,
-    "source": "NBER Working Papers",
-    "doi": "10.3386/w28613",
-    "url": "https://doi.org/10.3386/w28613",
-    "provider": "crossref",
-    "review_status": "pending",
-    "evidence_level": "metadata_only",
-    "collection": "pilot23",
-    "topics": [
-      "Wealth and inheritance"
-    ],
-    "source_ids": [
+      "working_paper_series:cepr-discussion-papers",
       "working_paper_series:nber-working-papers"
     ],
     "score": 14,
-    "match_type": "none",
-    "kind": "working_paper"
+    "match_type": "possible",
+    "kind": "working_paper",
+    "versions": [
+      {
+        "doi": null,
+        "url": "https://ideas.repec.org/p/cpr/ceprdp/16081.html",
+        "source": "CEPR Discussion Papers",
+        "provider": "repec"
+      },
+      {
+        "doi": "10.3386/w28613",
+        "url": "https://doi.org/10.3386/w28613",
+        "source": "NBER Working Papers",
+        "provider": "crossref"
+      }
+    ],
+    "version_count": 2
   },
   {
     "id": "repec:RePEc:cpr:ceprdp:16820",
@@ -19728,38 +19770,27 @@
       "Family structure"
     ],
     "source_ids": [
-      "working_paper_series:cepr-discussion-papers"
-    ],
-    "score": 14,
-    "match_type": "none",
-    "kind": "working_paper"
-  },
-  {
-    "id": "crossref:10.3386/w29589",
-    "title": "Forced Displacement and Human Capital: Evidence from Separated Siblings",
-    "authors": [
-      "Giorgio Chiovelli",
-      "Stelios Michalopoulos",
-      "Elias Papaioannou",
-      "Sandra Sequeira"
-    ],
-    "year": 2021,
-    "source": "NBER Working Papers",
-    "doi": "10.3386/w29589",
-    "url": "https://doi.org/10.3386/w29589",
-    "provider": "crossref",
-    "review_status": "pending",
-    "evidence_level": "metadata_only",
-    "collection": "pilot23",
-    "topics": [
-      "Family structure"
-    ],
-    "source_ids": [
+      "working_paper_series:cepr-discussion-papers",
       "working_paper_series:nber-working-papers"
     ],
     "score": 14,
-    "match_type": "none",
-    "kind": "working_paper"
+    "match_type": "possible",
+    "kind": "working_paper",
+    "versions": [
+      {
+        "doi": null,
+        "url": "https://ideas.repec.org/p/cpr/ceprdp/16820.html",
+        "source": "CEPR Discussion Papers",
+        "provider": "repec"
+      },
+      {
+        "doi": "10.3386/w29589",
+        "url": "https://doi.org/10.3386/w29589",
+        "source": "NBER Working Papers",
+        "provider": "crossref"
+      }
+    ],
+    "version_count": 2
   },
   {
     "id": "repec:RePEc:iza:izadps:dp14129",
@@ -19997,6 +20028,7 @@
     ],
     "source_ids": [
       "journal:econometrica",
+      "working_paper_series:cepr-discussion-papers",
       "working_paper_series:nber-working-papers"
     ],
     "score": 14,
@@ -20014,9 +20046,15 @@
         "url": "https://doi.org/10.3386/w25534",
         "source": "NBER Working Papers",
         "provider": "crossref"
+      },
+      {
+        "doi": null,
+        "url": "https://ideas.repec.org/p/cpr/ceprdp/13497.html",
+        "source": "CEPR Discussion Papers",
+        "provider": "repec"
       }
     ],
-    "version_count": 2
+    "version_count": 3
   },
   {
     "id": "crossref:10.1257/aer.20191586",
@@ -20619,34 +20657,6 @@
     "version_count": 2
   },
   {
-    "id": "repec:RePEc:cpr:ceprdp:16355",
-    "title": "Social Mobility in Germany",
-    "authors": [
-      "Findeisen, Sebastian",
-      "Sachs, Dominik",
-      "Schüle, Paul",
-      "Henkel, Lukas",
-      "Dodin, Majed"
-    ],
-    "year": 2021,
-    "source": "CEPR Discussion Papers",
-    "doi": null,
-    "url": "https://ideas.repec.org/p/cpr/ceprdp/16355.html",
-    "provider": "repec",
-    "review_status": "pending",
-    "evidence_level": "metadata_only",
-    "collection": "pilot23",
-    "topics": [
-      "Intergenerational mobility"
-    ],
-    "source_ids": [
-      "working_paper_series:cepr-discussion-papers"
-    ],
-    "score": 14,
-    "match_type": "none",
-    "kind": "working_paper"
-  },
-  {
     "id": "repec:RePEc:cpr:ceprdp:16444",
     "title": "The Effects of Biased Labor Market Expectations on Consumption, Wealth Inequality, and Welfare",
     "authors": [
@@ -20741,32 +20751,6 @@
       }
     ],
     "version_count": 2
-  },
-  {
-    "id": "repec:RePEc:cpr:ceprdp:15975",
-    "title": "The Intergenerational Elasticity of Earnings: Exploring the Mechanisms",
-    "authors": [
-      "French, Eric Baird",
-      "O’Dea, Cormac",
-      "MacCuish, Jamie"
-    ],
-    "year": 2021,
-    "source": "CEPR Discussion Papers",
-    "doi": null,
-    "url": "https://ideas.repec.org/p/cpr/ceprdp/15975.html",
-    "provider": "repec",
-    "review_status": "pending",
-    "evidence_level": "metadata_only",
-    "collection": "pilot23",
-    "topics": [
-      "Intergenerational mobility"
-    ],
-    "source_ids": [
-      "working_paper_series:cepr-discussion-papers"
-    ],
-    "score": 14,
-    "match_type": "none",
-    "kind": "working_paper"
   },
   {
     "id": "repec:RePEc:iza:izadps:dp14854",
@@ -20999,7 +20983,7 @@
     "id": "repec:RePEc:iza:izadps:dp13082",
     "title": "Accounting for Wealth Concentration in the US",
     "authors": [
-      "Kaymak, Bar&#305;&#537;",
+      "Kaymak, Barıș",
       "Leung, David",
       "Poschke, Markus"
     ],
@@ -21582,11 +21566,27 @@
       "Wealth and inheritance"
     ],
     "source_ids": [
-      "journal:journal-of-political-economy"
+      "journal:journal-of-political-economy",
+      "working_paper_series:cepr-discussion-papers"
     ],
     "score": 14,
-    "match_type": "none",
-    "kind": "journal_article"
+    "match_type": "possible",
+    "kind": "journal_article",
+    "versions": [
+      {
+        "doi": "10.1086/708815",
+        "url": "https://doi.org/10.1086/708815",
+        "source": "Journal of Political Economy",
+        "provider": "crossref"
+      },
+      {
+        "doi": null,
+        "url": "https://ideas.repec.org/p/cpr/ceprdp/12218.html",
+        "source": "CEPR Discussion Papers",
+        "provider": "repec"
+      }
+    ],
+    "version_count": 2
   },
   {
     "id": "repec:RePEc:iza:izadps:dp13443",
@@ -21713,7 +21713,7 @@
     "id": "repec:RePEc:iza:izadps:dp13050",
     "title": "Intergenerational Occupational Mobility in Latin American Economies: An Empirical Approach",
     "authors": [
-      "Doruk, Ömer Tu&#287;sal",
+      "Doruk, Ömer Tuğsal",
       "Pastore, Francesco",
       "Yavuz, Hasan Bilgehan"
     ],
@@ -21779,36 +21779,27 @@
       "Intergenerational mobility"
     ],
     "source_ids": [
-      "working_paper_series:cepr-discussion-papers"
-    ],
-    "score": 14,
-    "match_type": "none",
-    "kind": "working_paper"
-  },
-  {
-    "id": "repec:RePEc:iza:izadps:dp13114",
-    "title": "Intergenerational Ties and Case Fatality Rates: A Cross-Country Analysis",
-    "authors": [
-      "Bayer, Christian",
-      "Kuhn, Moritz"
-    ],
-    "year": 2020,
-    "source": "IZA Discussion Papers",
-    "doi": null,
-    "url": "https://ideas.repec.org/p/iza/izadps/dp13114.html",
-    "provider": "repec",
-    "review_status": "pending",
-    "evidence_level": "metadata_only",
-    "collection": "pilot23",
-    "topics": [
-      "Intergenerational mobility"
-    ],
-    "source_ids": [
+      "working_paper_series:cepr-discussion-papers",
       "working_paper_series:iza-discussion-papers"
     ],
     "score": 14,
-    "match_type": "none",
-    "kind": "working_paper"
+    "match_type": "possible",
+    "kind": "working_paper",
+    "versions": [
+      {
+        "doi": null,
+        "url": "https://ideas.repec.org/p/cpr/ceprdp/14519.html",
+        "source": "CEPR Discussion Papers",
+        "provider": "repec"
+      },
+      {
+        "doi": null,
+        "url": "https://ideas.repec.org/p/iza/izadps/dp13114.html",
+        "source": "IZA Discussion Papers",
+        "provider": "repec"
+      }
+    ],
+    "version_count": 2
   },
   {
     "id": "crossref:10.3368/jhr.58.1.0819-10372r2",
@@ -21865,37 +21856,27 @@
       "Intergenerational mobility"
     ],
     "source_ids": [
-      "working_paper_series:cepr-discussion-papers"
-    ],
-    "score": 14,
-    "match_type": "none",
-    "kind": "working_paper"
-  },
-  {
-    "id": "repec:RePEc:iza:izadps:dp13068",
-    "title": "Intergenerational Transmission of Unemployment: Causal Evidence from Austria",
-    "authors": [
-      "Grübl, Dominik",
-      "Lackner, Mario",
-      "Winter-Ebmer, Rudolf"
-    ],
-    "year": 2020,
-    "source": "IZA Discussion Papers",
-    "doi": null,
-    "url": "https://ideas.repec.org/p/iza/izadps/dp13068.html",
-    "provider": "repec",
-    "review_status": "pending",
-    "evidence_level": "metadata_only",
-    "collection": "pilot23",
-    "topics": [
-      "Intergenerational mobility"
-    ],
-    "source_ids": [
+      "working_paper_series:cepr-discussion-papers",
       "working_paper_series:iza-discussion-papers"
     ],
     "score": 14,
-    "match_type": "none",
-    "kind": "working_paper"
+    "match_type": "possible",
+    "kind": "working_paper",
+    "versions": [
+      {
+        "doi": null,
+        "url": "https://ideas.repec.org/p/cpr/ceprdp/14505.html",
+        "source": "CEPR Discussion Papers",
+        "provider": "repec"
+      },
+      {
+        "doi": null,
+        "url": "https://ideas.repec.org/p/iza/izadps/dp13068.html",
+        "source": "IZA Discussion Papers",
+        "provider": "repec"
+      }
+    ],
+    "version_count": 2
   },
   {
     "id": "crossref:10.3368/jhr.58.2.0619-10265r2",
@@ -22020,7 +22001,7 @@
   },
   {
     "id": "crossref:10.1093/qje/qjz039",
-    "title": "Negotiating a Better Future: How Interpersonal Skills Facilitate Intergenerational Investment*",
+    "title": "Negotiating a Better Future: How Interpersonal Skills Facilitate Intergenerational Investment",
     "authors": [
       "Nava Ashraf",
       "Natalie Bau",
@@ -22303,31 +22284,6 @@
     "collection": "pilot23",
     "topics": [
       "Intergenerational mobility"
-    ],
-    "source_ids": [
-      "working_paper_series:nber-working-papers"
-    ],
-    "score": 14,
-    "match_type": "none",
-    "kind": "working_paper"
-  },
-  {
-    "id": "crossref:10.3386/w28261",
-    "title": "Self-Fulfilling Prophecies, Quasi Non-Ergodicity & Wealth Inequality",
-    "authors": [
-      "Roger Farmer",
-      "Jean-Philippe Bouchaud"
-    ],
-    "year": 2020,
-    "source": "NBER Working Papers",
-    "doi": "10.3386/w28261",
-    "url": "https://doi.org/10.3386/w28261",
-    "provider": "crossref",
-    "review_status": "pending",
-    "evidence_level": "metadata_only",
-    "collection": "pilot23",
-    "topics": [
-      "Wealth and inheritance"
     ],
     "source_ids": [
       "working_paper_series:nber-working-papers"
@@ -22889,32 +22845,6 @@
     "version_count": 2
   },
   {
-    "id": "repec:RePEc:cpr:ceprdp:13646",
-    "title": "\"And Yet, It Moves\": Intergenerational Mobility in Italy",
-    "authors": [
-      "Violante, Giovanni",
-      ",",
-      "Acciari, Paolo"
-    ],
-    "year": 2019,
-    "source": "CEPR Discussion Papers",
-    "doi": null,
-    "url": "https://ideas.repec.org/p/cpr/ceprdp/13646.html",
-    "provider": "repec",
-    "review_status": "pending",
-    "evidence_level": "metadata_only",
-    "collection": "pilot23",
-    "topics": [
-      "Intergenerational mobility"
-    ],
-    "source_ids": [
-      "working_paper_series:cepr-discussion-papers"
-    ],
-    "score": 14,
-    "match_type": "none",
-    "kind": "working_paper"
-  },
-  {
     "id": "repec:RePEc:iza:izadps:dp12523",
     "title": "Active Choice Framing and Intergenerational Education Benefits: Evidence from the Field",
     "authors": [
@@ -22989,31 +22919,6 @@
     ],
     "source_ids": [
       "working_paper_series:iza-discussion-papers"
-    ],
-    "score": 14,
-    "match_type": "none",
-    "kind": "working_paper"
-  },
-  {
-    "id": "crossref:10.3386/w26238",
-    "title": "Changes in Family Structure and Welfare Participation Since the 1960s: The Role of Legal Services",
-    "authors": [
-      "Andrew Goodman-Bacon",
-      "Jamein Cunningham"
-    ],
-    "year": 2019,
-    "source": "NBER Working Papers",
-    "doi": "10.3386/w26238",
-    "url": "https://doi.org/10.3386/w26238",
-    "provider": "crossref",
-    "review_status": "pending",
-    "evidence_level": "metadata_only",
-    "collection": "pilot23",
-    "topics": [
-      "Family structure"
-    ],
-    "source_ids": [
-      "working_paper_series:nber-working-papers"
     ],
     "score": 14,
     "match_type": "none",
@@ -23473,33 +23378,6 @@
     "version_count": 2
   },
   {
-    "id": "repec:RePEc:cpr:ceprdp:13497",
-    "title": "Intergenerational Mobility in Africa",
-    "authors": [
-      "Papaioannou, Elias",
-      "Alesina, Alberto",
-      "Hohmann, Sebastian",
-      "Michalopoulos, Stelios"
-    ],
-    "year": 2019,
-    "source": "CEPR Discussion Papers",
-    "doi": null,
-    "url": "https://ideas.repec.org/p/cpr/ceprdp/13497.html",
-    "provider": "repec",
-    "review_status": "pending",
-    "evidence_level": "metadata_only",
-    "collection": "pilot23",
-    "topics": [
-      "Intergenerational mobility"
-    ],
-    "source_ids": [
-      "working_paper_series:cepr-discussion-papers"
-    ],
-    "score": 14,
-    "match_type": "none",
-    "kind": "working_paper"
-  },
-  {
     "id": "crossref:10.3386/w26408",
     "title": "Intergenerational Mobility of Immigrants in the US over Two Centuries",
     "authors": [
@@ -23532,7 +23410,7 @@
     "authors": [
       "Yavuz, Hasan Bilgehan",
       "Pastore, Francesco",
-      "Doruk, Ömer Tu&#287;sal"
+      "Doruk, Ömer Tuğsal"
     ],
     "year": 2019,
     "source": "IZA Discussion Papers",
@@ -23911,7 +23789,7 @@
   },
   {
     "id": "crossref:10.1093/qje/qjz042",
-    "title": "Race and Economic Opportunity in the United States: an Intergenerational Perspective*",
+    "title": "Race and Economic Opportunity in the United States: an Intergenerational Perspective",
     "authors": [
       "Raj Chetty",
       "Nathaniel Hendren",
@@ -24967,11 +24845,27 @@
       "Intergenerational mobility"
     ],
     "source_ids": [
-      "journal:american-economic-review"
+      "journal:american-economic-review",
+      "working_paper_series:cepr-discussion-papers"
     ],
     "score": 14,
-    "match_type": "none",
-    "kind": "journal_article"
+    "match_type": "possible",
+    "kind": "journal_article",
+    "versions": [
+      {
+        "doi": "10.1257/aer.20162015",
+        "url": "https://doi.org/10.1257/aer.20162015",
+        "source": "American Economic Review",
+        "provider": "crossref"
+      },
+      {
+        "doi": null,
+        "url": "https://ideas.repec.org/p/cpr/ceprdp/11738.html",
+        "source": "CEPR Discussion Papers",
+        "provider": "repec"
+      }
+    ],
+    "version_count": 2
   },
   {
     "id": "crossref:10.3386/w25324",
@@ -25934,32 +25828,6 @@
     "kind": "working_paper"
   },
   {
-    "id": "repec:RePEc:cpr:ceprdp:12218",
-    "title": "Income and Wealth Inequality in America, 1949-2016",
-    "authors": [
-      "Schularick, Moritz",
-      "Kuhn, Moritz",
-      "Steins, Ulrike"
-    ],
-    "year": 2017,
-    "source": "CEPR Discussion Papers",
-    "doi": null,
-    "url": "https://ideas.repec.org/p/cpr/ceprdp/12218.html",
-    "provider": "repec",
-    "review_status": "pending",
-    "evidence_level": "metadata_only",
-    "collection": "pilot23",
-    "topics": [
-      "Wealth and inheritance"
-    ],
-    "source_ids": [
-      "working_paper_series:cepr-discussion-papers"
-    ],
-    "score": 14,
-    "match_type": "none",
-    "kind": "working_paper"
-  },
-  {
     "id": "crossref:10.3386/w23578",
     "title": "Income Mobility, Income Risk and Welfare",
     "authors": [
@@ -26085,32 +25953,6 @@
     ],
     "source_ids": [
       "working_paper_series:ifs-working-papers"
-    ],
-    "score": 14,
-    "match_type": "none",
-    "kind": "working_paper"
-  },
-  {
-    "id": "repec:RePEc:cpr:ceprdp:11738",
-    "title": "Intergenerational Mobility and Preferences for Redistribution",
-    "authors": [
-      "Stantcheva, Stefanie",
-      "Alesina, Alberto",
-      "Teso, Edoardo"
-    ],
-    "year": 2017,
-    "source": "CEPR Discussion Papers",
-    "doi": null,
-    "url": "https://ideas.repec.org/p/cpr/ceprdp/11738.html",
-    "provider": "repec",
-    "review_status": "pending",
-    "evidence_level": "metadata_only",
-    "collection": "pilot23",
-    "topics": [
-      "Intergenerational mobility"
-    ],
-    "source_ids": [
-      "working_paper_series:cepr-discussion-papers"
     ],
     "score": 14,
     "match_type": "none",
@@ -26632,7 +26474,7 @@
   },
   {
     "id": "crossref:10.1093/qje/qjx038",
-    "title": "Social Mobility and Stability of Democracy: Reevaluating De Tocqueville*",
+    "title": "Social Mobility and Stability of Democracy: Reevaluating De Tocqueville",
     "authors": [
       "Daron Acemoglu",
       "Georgy Egorov",
@@ -27063,32 +26905,6 @@
     "version_count": 1
   },
   {
-    "id": "repec:RePEc:cpr:ceprdp:11490",
-    "title": "Born with a silver spoon? Danish evidence on wealth inequality in childhood",
-    "authors": [
-      "Kopczuk, Wojciech",
-      "Boserup, Simon H.",
-      "Kreiner, Claus Thustrup"
-    ],
-    "year": 2016,
-    "source": "CEPR Discussion Papers",
-    "doi": null,
-    "url": "https://ideas.repec.org/p/cpr/ceprdp/11490.html",
-    "provider": "repec",
-    "review_status": "pending",
-    "evidence_level": "metadata_only",
-    "collection": "pilot23",
-    "topics": [
-      "Wealth and inheritance"
-    ],
-    "source_ids": [
-      "working_paper_series:cepr-discussion-papers"
-    ],
-    "score": 14,
-    "match_type": "none",
-    "kind": "working_paper"
-  },
-  {
     "id": "crossref:10.3386/w22670",
     "title": "Can Cash Transfers Help Households Escape an Inter-Generational Poverty Trap?",
     "authors": [
@@ -27468,38 +27284,27 @@
       "Wealth and inheritance"
     ],
     "source_ids": [
-      "journal:american-economic-review"
-    ],
-    "score": 14,
-    "match_type": "none",
-    "kind": "journal_article"
-  },
-  {
-    "id": "repec:RePEc:cpr:ceprdp:11047",
-    "title": "Heterogeneity in Returns to Wealth and the Measurement of Wealth Inequality",
-    "authors": [
-      "Guiso, Luigi",
-      "Pistaferri, Luigi",
-      "Fagereng, Andreas",
-      "Malacrino, Davide"
-    ],
-    "year": 2016,
-    "source": "CEPR Discussion Papers",
-    "doi": null,
-    "url": "https://ideas.repec.org/p/cpr/ceprdp/11047.html",
-    "provider": "repec",
-    "review_status": "pending",
-    "evidence_level": "metadata_only",
-    "collection": "pilot23",
-    "topics": [
-      "Wealth and inheritance"
-    ],
-    "source_ids": [
+      "journal:american-economic-review",
       "working_paper_series:cepr-discussion-papers"
     ],
     "score": 14,
-    "match_type": "none",
-    "kind": "working_paper"
+    "match_type": "possible",
+    "kind": "journal_article",
+    "versions": [
+      {
+        "doi": "10.1257/aer.p20161022",
+        "url": "https://doi.org/10.1257/aer.p20161022",
+        "source": "American Economic Review",
+        "provider": "crossref"
+      },
+      {
+        "doi": null,
+        "url": "https://ideas.repec.org/p/cpr/ceprdp/11047.html",
+        "source": "CEPR Discussion Papers",
+        "provider": "repec"
+      }
+    ],
+    "version_count": 2
   },
   {
     "id": "crossref:10.3368/jhr.51.1.239",
@@ -27580,37 +27385,27 @@
       "Family structure"
     ],
     "source_ids": [
-      "working_paper_series:cepr-discussion-papers"
-    ],
-    "score": 14,
-    "match_type": "none",
-    "kind": "working_paper"
-  },
-  {
-    "id": "repec:RePEc:iza:izadps:dp9928",
-    "title": "How Does Parental Divorce Affect Children's Long-term Outcomes?",
-    "authors": [
-      "Frimmel, Wolfgang",
-      "Halla, Martin",
-      "Winter-Ebmer, Rudolf"
-    ],
-    "year": 2016,
-    "source": "IZA Discussion Papers",
-    "doi": null,
-    "url": "https://ideas.repec.org/p/iza/izadps/dp9928.html",
-    "provider": "repec",
-    "review_status": "pending",
-    "evidence_level": "metadata_only",
-    "collection": "pilot23",
-    "topics": [
-      "Family structure"
-    ],
-    "source_ids": [
+      "working_paper_series:cepr-discussion-papers",
       "working_paper_series:iza-discussion-papers"
     ],
     "score": 14,
-    "match_type": "none",
-    "kind": "working_paper"
+    "match_type": "possible",
+    "kind": "working_paper",
+    "versions": [
+      {
+        "doi": null,
+        "url": "https://ideas.repec.org/p/cpr/ceprdp/11339.html",
+        "source": "CEPR Discussion Papers",
+        "provider": "repec"
+      },
+      {
+        "doi": null,
+        "url": "https://ideas.repec.org/p/iza/izadps/dp9928.html",
+        "source": "IZA Discussion Papers",
+        "provider": "repec"
+      }
+    ],
+    "version_count": 2
   },
   {
     "id": "crossref:10.3386/w22575",
@@ -27677,31 +27472,6 @@
       }
     ],
     "version_count": 2
-  },
-  {
-    "id": "repec:RePEc:cpr:ceprdp:11191",
-    "title": "Inheritance and wealth inequality: Evidence from population registers",
-    "authors": [
-      "Waldenstrom, Daniel",
-      "Elinder, Mikael"
-    ],
-    "year": 2016,
-    "source": "CEPR Discussion Papers",
-    "doi": null,
-    "url": "https://ideas.repec.org/p/cpr/ceprdp/11191.html",
-    "provider": "repec",
-    "review_status": "pending",
-    "evidence_level": "metadata_only",
-    "collection": "pilot23",
-    "topics": [
-      "Wealth and inheritance"
-    ],
-    "source_ids": [
-      "working_paper_series:cepr-discussion-papers"
-    ],
-    "score": 14,
-    "match_type": "none",
-    "kind": "working_paper"
   },
   {
     "id": "repec:RePEc:cpr:ceprdp:11387",
@@ -27848,31 +27618,7 @@
       "Intergenerational mobility"
     ],
     "source_ids": [
-      "working_paper_series:cepr-discussion-papers"
-    ],
-    "score": 14,
-    "match_type": "none",
-    "kind": "working_paper"
-  },
-  {
-    "id": "repec:RePEc:iza:izadps:dp9728",
-    "title": "Intergenerational Persistence of Health in the U.S.: Do Immigrants Get Healthier as They Assimilate?",
-    "authors": [
-      "Akbulut-Yuksel, Mevlude",
-      "Kugler, Adriana"
-    ],
-    "year": 2016,
-    "source": "IZA Discussion Papers",
-    "doi": null,
-    "url": "https://ideas.repec.org/p/iza/izadps/dp9728.html",
-    "provider": "repec",
-    "review_status": "pending",
-    "evidence_level": "metadata_only",
-    "collection": "pilot23",
-    "topics": [
-      "Intergenerational mobility"
-    ],
-    "source_ids": [
+      "working_paper_series:cepr-discussion-papers",
       "working_paper_series:iza-discussion-papers",
       "working_paper_series:nber-working-papers"
     ],
@@ -27880,6 +27626,12 @@
     "match_type": "possible",
     "kind": "working_paper",
     "versions": [
+      {
+        "doi": null,
+        "url": "https://ideas.repec.org/p/cpr/ceprdp/11100.html",
+        "source": "CEPR Discussion Papers",
+        "provider": "repec"
+      },
       {
         "doi": null,
         "url": "https://ideas.repec.org/p/iza/izadps/dp9728.html",
@@ -27893,7 +27645,7 @@
         "provider": "crossref"
       }
     ],
-    "version_count": 2
+    "version_count": 3
   },
   {
     "id": "repec:RePEc:iza:izadps:dp9662",
@@ -28042,38 +27794,27 @@
       "Family structure"
     ],
     "source_ids": [
-      "working_paper_series:cepr-discussion-papers"
-    ],
-    "score": 14,
-    "match_type": "none",
-    "kind": "working_paper"
-  },
-  {
-    "id": "repec:RePEc:iza:izadps:dp10278",
-    "title": "On the Origins of Entrepreneurship: Evidence from Sibling Correlations",
-    "authors": [
-      "Lindquist, Matthew J.",
-      "Sol, Joeri",
-      "van Praag, Mirjam C.",
-      "Vladasel, Theodor"
-    ],
-    "year": 2016,
-    "source": "IZA Discussion Papers",
-    "doi": null,
-    "url": "https://ideas.repec.org/p/iza/izadps/dp10278.html",
-    "provider": "repec",
-    "review_status": "pending",
-    "evidence_level": "metadata_only",
-    "collection": "pilot23",
-    "topics": [
-      "Family structure"
-    ],
-    "source_ids": [
+      "working_paper_series:cepr-discussion-papers",
       "working_paper_series:iza-discussion-papers"
     ],
     "score": 14,
-    "match_type": "none",
-    "kind": "working_paper"
+    "match_type": "possible",
+    "kind": "working_paper",
+    "versions": [
+      {
+        "doi": null,
+        "url": "https://ideas.repec.org/p/cpr/ceprdp/11562.html",
+        "source": "CEPR Discussion Papers",
+        "provider": "repec"
+      },
+      {
+        "doi": null,
+        "url": "https://ideas.repec.org/p/iza/izadps/dp10278.html",
+        "source": "IZA Discussion Papers",
+        "provider": "repec"
+      }
+    ],
+    "version_count": 2
   },
   {
     "id": "repec:RePEc:iza:izadps:dp10271",
@@ -28106,7 +27847,7 @@
     "title": "Origins and implications of family structure across Italian provinces in historical perspective",
     "authors": [
       "Bertocchi, Graziella",
-      "BOZZANO, MONICA"
+      "Bozzano, Monica"
     ],
     "year": 2016,
     "source": "CEPR Discussion Papers",
@@ -28214,8 +27955,7 @@
     "id": "repec:RePEc:cpr:ceprdp:11522",
     "title": "Saving Alberta’s Resource Revenues: Role of Intergenerational and Liquidity Funds",
     "authors": [
-      "van der Ploeg, Frederick",
-      ","
+      "van der Ploeg, Frederick"
     ],
     "year": 2016,
     "source": "CEPR Discussion Papers",
@@ -28261,32 +28001,6 @@
     "kind": "working_paper"
   },
   {
-    "id": "crossref:10.3386/w22174",
-    "title": "Social Mobility and Stability of Democracy: Re-evaluating De Tocqueville",
-    "authors": [
-      "Daron Acemoglu",
-      "Georgy Egorov",
-      "Konstantin Sonin"
-    ],
-    "year": 2016,
-    "source": "NBER Working Papers",
-    "doi": "10.3386/w22174",
-    "url": "https://doi.org/10.3386/w22174",
-    "provider": "crossref",
-    "review_status": "pending",
-    "evidence_level": "metadata_only",
-    "collection": "pilot23",
-    "topics": [
-      "Intergenerational mobility"
-    ],
-    "source_ids": [
-      "working_paper_series:nber-working-papers"
-    ],
-    "score": 14,
-    "match_type": "none",
-    "kind": "working_paper"
-  },
-  {
     "id": "repec:RePEc:cpr:ceprdp:11209",
     "title": "Social Mobility and Stability of Democracy: Re-evaluating De Tocqueville\u0003",
     "authors": [
@@ -28306,11 +28020,27 @@
       "Intergenerational mobility"
     ],
     "source_ids": [
-      "working_paper_series:cepr-discussion-papers"
+      "working_paper_series:cepr-discussion-papers",
+      "working_paper_series:nber-working-papers"
     ],
     "score": 14,
-    "match_type": "none",
-    "kind": "working_paper"
+    "match_type": "possible",
+    "kind": "working_paper",
+    "versions": [
+      {
+        "doi": null,
+        "url": "https://ideas.repec.org/p/cpr/ceprdp/11209.html",
+        "source": "CEPR Discussion Papers",
+        "provider": "repec"
+      },
+      {
+        "doi": "10.3386/w22174",
+        "url": "https://doi.org/10.3386/w22174",
+        "source": "NBER Working Papers",
+        "provider": "crossref"
+      }
+    ],
+    "version_count": 2
   },
   {
     "id": "repec:RePEc:iza:izadps:dp10277",
@@ -28589,32 +28319,6 @@
     "kind": "working_paper"
   },
   {
-    "id": "repec:RePEc:cpr:ceprdp:11059",
-    "title": "The Role of Bequests in Shaping Wealth Inequality: Evidence from Danish Wealth Records",
-    "authors": [
-      "Kreiner, Claus Thustrup",
-      "Kopczuk, Wojciech",
-      "Boserup, Simon H."
-    ],
-    "year": 2016,
-    "source": "CEPR Discussion Papers",
-    "doi": null,
-    "url": "https://ideas.repec.org/p/cpr/ceprdp/11059.html",
-    "provider": "repec",
-    "review_status": "pending",
-    "evidence_level": "metadata_only",
-    "collection": "pilot23",
-    "topics": [
-      "Wealth and inheritance"
-    ],
-    "source_ids": [
-      "working_paper_series:cepr-discussion-papers"
-    ],
-    "score": 14,
-    "match_type": "none",
-    "kind": "working_paper"
-  },
-  {
     "id": "repec:RePEc:iza:izadps:dp10000",
     "title": "The Scandinavian Fantasy: The Sources of Intergenerational Mobility in Denmark and the U.S.",
     "authors": [
@@ -28674,40 +28378,31 @@
       "Wealth and inheritance"
     ],
     "source_ids": [
-      "working_paper_series:cepr-discussion-papers"
-    ],
-    "score": 14,
-    "match_type": "none",
-    "kind": "working_paper"
-  },
-  {
-    "id": "repec:RePEc:iza:izadps:dp9902",
-    "title": "Wealth Inequality in Sweden: What Can We Learn from Capitalized Income Tax Data?",
-    "authors": [
-      "Lundberg, Jacob",
-      "Waldenström, Daniel"
-    ],
-    "year": 2016,
-    "source": "IZA Discussion Papers",
-    "doi": null,
-    "url": "https://ideas.repec.org/p/iza/izadps/dp9902.html",
-    "provider": "repec",
-    "review_status": "pending",
-    "evidence_level": "metadata_only",
-    "collection": "pilot23",
-    "topics": [
-      "Wealth and inheritance"
-    ],
-    "source_ids": [
+      "working_paper_series:cepr-discussion-papers",
       "working_paper_series:iza-discussion-papers"
     ],
     "score": 14,
-    "match_type": "none",
-    "kind": "working_paper"
+    "match_type": "possible",
+    "kind": "working_paper",
+    "versions": [
+      {
+        "doi": null,
+        "url": "https://ideas.repec.org/p/cpr/ceprdp/11246.html",
+        "source": "CEPR Discussion Papers",
+        "provider": "repec"
+      },
+      {
+        "doi": null,
+        "url": "https://ideas.repec.org/p/iza/izadps/dp9902.html",
+        "source": "IZA Discussion Papers",
+        "provider": "repec"
+      }
+    ],
+    "version_count": 2
   },
   {
     "id": "crossref:10.1093/qje/qjw004",
-    "title": "Wealth Inequality in the United States since 1913: Evidence from Capitalized Income Tax Data *",
+    "title": "Wealth Inequality in the United States since 1913: Evidence from Capitalized Income Tax Data",
     "authors": [
       "Emmanuel Saez",
       "Gabriel Zucman"
@@ -28775,33 +28470,6 @@
     ],
     "source_ids": [
       "working_paper_series:iza-discussion-papers"
-    ],
-    "score": 14,
-    "match_type": "none",
-    "kind": "working_paper"
-  },
-  {
-    "id": "repec:RePEc:cpr:ceprdp:10496",
-    "title": "Correlating Social Mobility and Economic Outcomes",
-    "authors": [
-      "Rodríguez Mora, José V",
-      "Güell, Maia",
-      "Pellizzari, Michele",
-      "Pica, Giovanni"
-    ],
-    "year": 2015,
-    "source": "CEPR Discussion Papers",
-    "doi": null,
-    "url": "https://ideas.repec.org/p/cpr/ceprdp/10496.html",
-    "provider": "repec",
-    "review_status": "pending",
-    "evidence_level": "metadata_only",
-    "collection": "pilot23",
-    "topics": [
-      "Intergenerational mobility"
-    ],
-    "source_ids": [
-      "working_paper_series:cepr-discussion-papers"
     ],
     "score": 14,
     "match_type": "none",
@@ -28955,32 +28623,7 @@
       "Family structure"
     ],
     "source_ids": [
-      "working_paper_series:cepr-discussion-papers"
-    ],
-    "score": 14,
-    "match_type": "none",
-    "kind": "working_paper"
-  },
-  {
-    "id": "repec:RePEc:iza:izadps:dp9172",
-    "title": "Healthy(?), Wealthy, and Wise: Birth Order and Adult Health",
-    "authors": [
-      "Black, Sandra E.",
-      "Devereux, Paul J.",
-      "Salvanes, Kjell G."
-    ],
-    "year": 2015,
-    "source": "IZA Discussion Papers",
-    "doi": null,
-    "url": "https://ideas.repec.org/p/iza/izadps/dp9172.html",
-    "provider": "repec",
-    "review_status": "pending",
-    "evidence_level": "metadata_only",
-    "collection": "pilot23",
-    "topics": [
-      "Family structure"
-    ],
-    "source_ids": [
+      "working_paper_series:cepr-discussion-papers",
       "working_paper_series:iza-discussion-papers",
       "working_paper_series:nber-working-papers"
     ],
@@ -28988,6 +28631,12 @@
     "match_type": "possible",
     "kind": "working_paper",
     "versions": [
+      {
+        "doi": null,
+        "url": "https://ideas.repec.org/p/cpr/ceprdp/10695.html",
+        "source": "CEPR Discussion Papers",
+        "provider": "repec"
+      },
       {
         "doi": null,
         "url": "https://ideas.repec.org/p/iza/izadps/dp9172.html",
@@ -29001,7 +28650,7 @@
         "provider": "crossref"
       }
     ],
-    "version_count": 2
+    "version_count": 3
   },
   {
     "id": "repec:RePEc:cpr:ceprdp:10774",
@@ -30211,18 +29860,34 @@
       "Wealth and inheritance"
     ],
     "source_ids": [
-      "working_paper_series:cepr-discussion-papers"
+      "working_paper_series:cepr-discussion-papers",
+      "working_paper_series:iza-discussion-papers"
     ],
     "score": 14,
-    "match_type": "none",
-    "kind": "working_paper"
+    "match_type": "possible",
+    "kind": "working_paper",
+    "versions": [
+      {
+        "doi": null,
+        "url": "https://ideas.repec.org/p/cpr/ceprdp/9788.html",
+        "source": "CEPR Discussion Papers",
+        "provider": "repec"
+      },
+      {
+        "doi": null,
+        "url": "https://ideas.repec.org/p/iza/izadps/dp7733.html",
+        "source": "IZA Discussion Papers",
+        "provider": "repec"
+      }
+    ],
+    "version_count": 2
   },
   {
     "id": "repec:RePEc:cpr:ceprdp:10091",
     "title": "Family Structure and the Education Gender Gap: Evidence from Italian Provinces",
     "authors": [
       "Bertocchi, Graziella",
-      "BOZZANO, MONICA"
+      "Bozzano, Monica"
     ],
     "year": 2014,
     "source": "CEPR Discussion Papers",
@@ -30574,31 +30239,6 @@
     "score": 14,
     "match_type": "none",
     "kind": "journal_article"
-  },
-  {
-    "id": "repec:RePEc:cpr:ceprdp:10029",
-    "title": "Parenting with Style: Altruism and Paternalism in Intergenerational Preference Transmission",
-    "authors": [
-      "Zilibotti, Fabrizio",
-      "Doepke, Matthias"
-    ],
-    "year": 2014,
-    "source": "CEPR Discussion Papers",
-    "doi": null,
-    "url": "https://ideas.repec.org/p/cpr/ceprdp/10029.html",
-    "provider": "repec",
-    "review_status": "pending",
-    "evidence_level": "metadata_only",
-    "collection": "pilot23",
-    "topics": [
-      "Intergenerational mobility"
-    ],
-    "source_ids": [
-      "working_paper_series:cepr-discussion-papers"
-    ],
-    "score": 14,
-    "match_type": "none",
-    "kind": "working_paper"
   },
   {
     "id": "crossref:10.3386/w20742",
@@ -31048,31 +30688,6 @@
     "score": 14,
     "match_type": "none",
     "kind": "journal_article"
-  },
-  {
-    "id": "repec:RePEc:iza:izadps:dp7733",
-    "title": "Does Wealth Inequality Matter for Growth? The Effect of Billionaire Wealth, Income Distribution, and Poverty",
-    "authors": [
-      "Bagchi, Sutirtha",
-      "Svejnar, Jan"
-    ],
-    "year": 2013,
-    "source": "IZA Discussion Papers",
-    "doi": null,
-    "url": "https://ideas.repec.org/p/iza/izadps/dp7733.html",
-    "provider": "repec",
-    "review_status": "pending",
-    "evidence_level": "metadata_only",
-    "collection": "pilot23",
-    "topics": [
-      "Wealth and inheritance"
-    ],
-    "source_ids": [
-      "working_paper_series:iza-discussion-papers"
-    ],
-    "score": 14,
-    "match_type": "none",
-    "kind": "working_paper"
   },
   {
     "id": "repec:RePEc:iza:izadps:dp7123",
@@ -31654,7 +31269,7 @@
   },
   {
     "id": "crossref:10.1093/qje/qjt011",
-    "title": "Marriage Institutions and Sibling Competition: Evidence from South Asia*",
+    "title": "Marriage Institutions and Sibling Competition: Evidence from South Asia",
     "authors": [
       "Tom S. Vogl"
     ],
@@ -32914,7 +32529,7 @@
   },
   {
     "id": "crossref:10.1086/666746",
-    "title": "The Schooling Decision: Family Preferences, Intergenerational Conflict, and Moral Hazard in the Brazilian <i>Favelas</i>",
+    "title": "The Schooling Decision: Family Preferences, Intergenerational Conflict, and Moral Hazard in the Brazilian Favelas",
     "authors": [
       "Leonardo Bursztyn",
       "Lucas C. Coffman"
@@ -33574,11 +33189,27 @@
       "Intergenerational mobility"
     ],
     "source_ids": [
-      "journal:review-of-economics-and-statistics"
+      "journal:review-of-economics-and-statistics",
+      "working_paper_series:cepr-discussion-papers"
     ],
     "score": 14,
-    "match_type": "none",
-    "kind": "journal_article"
+    "match_type": "possible",
+    "kind": "journal_article",
+    "versions": [
+      {
+        "doi": "10.1162/rest_a_00105",
+        "url": "https://doi.org/10.1162/rest_a_00105",
+        "source": "Review of Economics and Statistics",
+        "provider": "crossref"
+      },
+      {
+        "doi": null,
+        "url": "https://ideas.repec.org/p/cpr/ceprdp/7759.html",
+        "source": "CEPR Discussion Papers",
+        "provider": "repec"
+      }
+    ],
+    "version_count": 2
   },
   {
     "id": "repec:RePEc:cpr:ceprdp:8605",
@@ -33660,7 +33291,7 @@
   },
   {
     "id": "crossref:10.1093/qje/qjr020",
-    "title": "On the Long-Run Evolution of Inheritance: France 1820–2050 *",
+    "title": "On the Long-Run Evolution of Inheritance: France 1820–2050",
     "authors": [
       "Thomas Piketty"
     ],
@@ -33843,36 +33474,27 @@
       "Intergenerational mobility"
     ],
     "source_ids": [
-      "working_paper_series:cepr-discussion-papers"
-    ],
-    "score": 14,
-    "match_type": "none",
-    "kind": "working_paper"
-  },
-  {
-    "id": "repec:RePEc:iza:izadps:dp5787",
-    "title": "Social Networks and Parental Behavior in the Intergenerational Transmission of Religion",
-    "authors": [
-      "Patacchini, Eleonora",
-      "Zenou, Yves"
-    ],
-    "year": 2011,
-    "source": "IZA Discussion Papers",
-    "doi": null,
-    "url": "https://ideas.repec.org/p/iza/izadps/dp5787.html",
-    "provider": "repec",
-    "review_status": "pending",
-    "evidence_level": "metadata_only",
-    "collection": "pilot23",
-    "topics": [
-      "Intergenerational mobility"
-    ],
-    "source_ids": [
+      "working_paper_series:cepr-discussion-papers",
       "working_paper_series:iza-discussion-papers"
     ],
     "score": 14,
-    "match_type": "none",
-    "kind": "working_paper"
+    "match_type": "possible",
+    "kind": "working_paper",
+    "versions": [
+      {
+        "doi": null,
+        "url": "https://ideas.repec.org/p/cpr/ceprdp/8443.html",
+        "source": "CEPR Discussion Papers",
+        "provider": "repec"
+      },
+      {
+        "doi": null,
+        "url": "https://ideas.repec.org/p/iza/izadps/dp5787.html",
+        "source": "IZA Discussion Papers",
+        "provider": "repec"
+      }
+    ],
+    "version_count": 2
   },
   {
     "id": "repec:RePEc:cpr:ceprdp:8627",
@@ -33923,48 +33545,6 @@
     "version_count": 3
   },
   {
-    "id": "crossref:10.1920/wp.ifs.2011.1111",
-    "title": "The effect of education policy on crime: an intergenerational perspective",
-    "authors": [
-      "Costas Meghir",
-      "Mårten Palme",
-      "Marieke Schnabel"
-    ],
-    "year": 2011,
-    "source": "Working Paper Series",
-    "doi": "10.1920/wp.ifs.2011.1111",
-    "url": "https://doi.org/10.1920/wp.ifs.2011.1111",
-    "provider": "crossref",
-    "review_status": "pending",
-    "evidence_level": "metadata_only",
-    "collection": "pilot23",
-    "topics": [
-      "Intergenerational mobility"
-    ],
-    "source_ids": [
-      "working_paper_series:ifs-working-papers",
-      "working_paper_series:iza-discussion-papers"
-    ],
-    "score": 14,
-    "match_type": "possible",
-    "kind": "working_paper",
-    "versions": [
-      {
-        "doi": "10.1920/wp.ifs.2011.1111",
-        "url": "https://doi.org/10.1920/wp.ifs.2011.1111",
-        "source": "Working Paper Series",
-        "provider": "crossref"
-      },
-      {
-        "doi": null,
-        "url": "https://ideas.repec.org/p/iza/izadps/dp6142.html",
-        "source": "IZA Discussion Papers",
-        "provider": "repec"
-      }
-    ],
-    "version_count": 2
-  },
-  {
     "id": "repec:RePEc:iza:izadps:dp5733",
     "title": "The Effects of Cooperation: A Structural Model of Siblings' Caregiving Interactions",
     "authors": [
@@ -34009,37 +33589,27 @@
       "Wealth and inheritance"
     ],
     "source_ids": [
-      "working_paper_series:cepr-discussion-papers"
-    ],
-    "score": 14,
-    "match_type": "none",
-    "kind": "working_paper"
-  },
-  {
-    "id": "crossref:10.3386/w17353",
-    "title": "The Financial Crisis and The Geography of Wealth Transfers",
-    "authors": [
-      "Pierre-Olivier Gourinchas",
-      "Hélène Rey",
-      "Kai Truempler"
-    ],
-    "year": 2011,
-    "source": "NBER Working Papers",
-    "doi": "10.3386/w17353",
-    "url": "https://doi.org/10.3386/w17353",
-    "provider": "crossref",
-    "review_status": "pending",
-    "evidence_level": "metadata_only",
-    "collection": "pilot23",
-    "topics": [
-      "Wealth and inheritance"
-    ],
-    "source_ids": [
+      "working_paper_series:cepr-discussion-papers",
       "working_paper_series:nber-working-papers"
     ],
     "score": 14,
-    "match_type": "none",
-    "kind": "working_paper"
+    "match_type": "possible",
+    "kind": "working_paper",
+    "versions": [
+      {
+        "doi": null,
+        "url": "https://ideas.repec.org/p/cpr/ceprdp/8567.html",
+        "source": "CEPR Discussion Papers",
+        "provider": "repec"
+      },
+      {
+        "doi": "10.3386/w17353",
+        "url": "https://doi.org/10.3386/w17353",
+        "source": "NBER Working Papers",
+        "provider": "crossref"
+      }
+    ],
+    "version_count": 2
   },
   {
     "id": "crossref:10.3386/w16773",
@@ -34207,6 +33777,7 @@
     ],
     "source_ids": [
       "journal:review-of-economic-studies",
+      "working_paper_series:cepr-discussion-papers",
       "working_paper_series:iza-discussion-papers"
     ],
     "score": 14,
@@ -34224,9 +33795,15 @@
         "url": "https://ideas.repec.org/p/iza/izadps/dp2380.html",
         "source": "IZA Discussion Papers",
         "provider": "repec"
+      },
+      {
+        "doi": null,
+        "url": "https://ideas.repec.org/p/cpr/ceprdp/6844.html",
+        "source": "CEPR Discussion Papers",
+        "provider": "repec"
       }
     ],
-    "version_count": 2
+    "version_count": 3
   },
   {
     "id": "repec:RePEc:cpr:ceprdp:8318",
@@ -34580,11 +34157,27 @@
       "Wealth and inheritance"
     ],
     "source_ids": [
-      "journal:american-economic-review"
+      "journal:american-economic-review",
+      "working_paper_series:cepr-discussion-papers"
     ],
     "score": 14,
-    "match_type": "none",
-    "kind": "journal_article"
+    "match_type": "possible",
+    "kind": "journal_article",
+    "versions": [
+      {
+        "doi": "10.1257/aer.100.5.2414",
+        "url": "https://doi.org/10.1257/aer.100.5.2414",
+        "source": "American Economic Review",
+        "provider": "crossref"
+      },
+      {
+        "doi": null,
+        "url": "https://ideas.repec.org/p/cpr/ceprdp/6977.html",
+        "source": "CEPR Discussion Papers",
+        "provider": "repec"
+      }
+    ],
+    "version_count": 2
   },
   {
     "id": "crossref:10.1257/aer.100.5.2060",
@@ -34768,32 +34361,6 @@
     "score": 14,
     "match_type": "none",
     "kind": "journal_article"
-  },
-  {
-    "id": "repec:RePEc:cpr:ceprdp:7759",
-    "title": "Migration and Economic Mobility in Tanzania: Evidence from a Tracking Survey",
-    "authors": [
-      "Dercon, Stefan",
-      "Beegle, Kathleen",
-      ","
-    ],
-    "year": 2010,
-    "source": "CEPR Discussion Papers",
-    "doi": null,
-    "url": "https://ideas.repec.org/p/cpr/ceprdp/7759.html",
-    "provider": "repec",
-    "review_status": "pending",
-    "evidence_level": "metadata_only",
-    "collection": "pilot23",
-    "topics": [
-      "Intergenerational mobility"
-    ],
-    "source_ids": [
-      "working_paper_series:cepr-discussion-papers"
-    ],
-    "score": 14,
-    "match_type": "none",
-    "kind": "working_paper"
   },
   {
     "id": "repec:RePEc:iza:izadps:dp5271",
@@ -36029,32 +35596,6 @@
     "kind": "working_paper"
   },
   {
-    "id": "repec:RePEc:cpr:ceprdp:6977",
-    "title": "Inheritance Law and Investment in Family Firms",
-    "authors": [
-      "Pagano, Marco",
-      "Panunzi, Fausto",
-      "Ellul, Andrew"
-    ],
-    "year": 2008,
-    "source": "CEPR Discussion Papers",
-    "doi": null,
-    "url": "https://ideas.repec.org/p/cpr/ceprdp/6977.html",
-    "provider": "repec",
-    "review_status": "pending",
-    "evidence_level": "metadata_only",
-    "collection": "pilot23",
-    "topics": [
-      "Wealth and inheritance"
-    ],
-    "source_ids": [
-      "working_paper_series:cepr-discussion-papers"
-    ],
-    "score": 14,
-    "match_type": "none",
-    "kind": "working_paper"
-  },
-  {
     "id": "crossref:10.3368/jhr.43.1.139",
     "title": "Intergenerational Economic Mobility in the United States, 1940 to 2000",
     "authors": [
@@ -36537,33 +36078,6 @@
     ],
     "source_ids": [
       "working_paper_series:nber-working-papers"
-    ],
-    "score": 14,
-    "match_type": "none",
-    "kind": "working_paper"
-  },
-  {
-    "id": "repec:RePEc:cpr:ceprdp:6844",
-    "title": "The Intergenerational Transmission of Risk and Trust Attitudes",
-    "authors": [
-      "Falk, Armin",
-      "Dohmen, Thomas J",
-      "Sunde, Uwe",
-      "Huffman, David"
-    ],
-    "year": 2008,
-    "source": "CEPR Discussion Papers",
-    "doi": null,
-    "url": "https://ideas.repec.org/p/cpr/ceprdp/6844.html",
-    "provider": "repec",
-    "review_status": "pending",
-    "evidence_level": "metadata_only",
-    "collection": "pilot23",
-    "topics": [
-      "Intergenerational mobility"
-    ],
-    "source_ids": [
-      "working_paper_series:cepr-discussion-papers"
     ],
     "score": 14,
     "match_type": "none",
@@ -37290,31 +36804,7 @@
       "Family structure"
     ],
     "source_ids": [
-      "working_paper_series:cepr-discussion-papers"
-    ],
-    "score": 14,
-    "match_type": "none",
-    "kind": "working_paper"
-  },
-  {
-    "id": "repec:RePEc:iza:izadps:dp2602",
-    "title": "Marriage and Divorce: Changes and their Driving Forces",
-    "authors": [
-      "Stevenson, Betsey",
-      "Wolfers, Justin"
-    ],
-    "year": 2007,
-    "source": "IZA Discussion Papers",
-    "doi": null,
-    "url": "https://ideas.repec.org/p/iza/izadps/dp2602.html",
-    "provider": "repec",
-    "review_status": "pending",
-    "evidence_level": "metadata_only",
-    "collection": "pilot23",
-    "topics": [
-      "Family structure"
-    ],
-    "source_ids": [
+      "working_paper_series:cepr-discussion-papers",
       "working_paper_series:iza-discussion-papers",
       "working_paper_series:nber-working-papers"
     ],
@@ -37322,6 +36812,12 @@
     "match_type": "possible",
     "kind": "working_paper",
     "versions": [
+      {
+        "doi": null,
+        "url": "https://ideas.repec.org/p/cpr/ceprdp/6144.html",
+        "source": "CEPR Discussion Papers",
+        "provider": "repec"
+      },
       {
         "doi": null,
         "url": "https://ideas.repec.org/p/iza/izadps/dp2602.html",
@@ -37335,7 +36831,7 @@
         "provider": "crossref"
       }
     ],
-    "version_count": 2
+    "version_count": 3
   },
   {
     "id": "crossref:10.3386/w13649",
@@ -37409,32 +36905,7 @@
       "Family structure"
     ],
     "source_ids": [
-      "working_paper_series:cepr-discussion-papers"
-    ],
-    "score": 14,
-    "match_type": "none",
-    "kind": "working_paper"
-  },
-  {
-    "id": "repec:RePEc:iza:izadps:dp3007",
-    "title": "Older and Wiser? Birth Order and IQ of Young Men",
-    "authors": [
-      "Black, Sandra E.",
-      "Devereux, Paul J.",
-      "Salvanes, Kjell G."
-    ],
-    "year": 2007,
-    "source": "IZA Discussion Papers",
-    "doi": null,
-    "url": "https://ideas.repec.org/p/iza/izadps/dp3007.html",
-    "provider": "repec",
-    "review_status": "pending",
-    "evidence_level": "metadata_only",
-    "collection": "pilot23",
-    "topics": [
-      "Family structure"
-    ],
-    "source_ids": [
+      "working_paper_series:cepr-discussion-papers",
       "working_paper_series:iza-discussion-papers",
       "working_paper_series:nber-working-papers"
     ],
@@ -37442,6 +36913,12 @@
     "match_type": "possible",
     "kind": "working_paper",
     "versions": [
+      {
+        "doi": null,
+        "url": "https://ideas.repec.org/p/cpr/ceprdp/6375.html",
+        "source": "CEPR Discussion Papers",
+        "provider": "repec"
+      },
       {
         "doi": null,
         "url": "https://ideas.repec.org/p/iza/izadps/dp3007.html",
@@ -37455,7 +36932,7 @@
         "provider": "crossref"
       }
     ],
-    "version_count": 2
+    "version_count": 3
   },
   {
     "id": "repec:RePEc:cpr:ceprdp:6089",
@@ -37702,8 +37179,8 @@
     "id": "crossref:10.1111/j.1467-937x.2007.00419.x",
     "title": "To Leave or Not to Leave: The Distribution of Bequest Motives",
     "authors": [
-      "WOJCIECH KOPCZUK",
-      "JOSEPHP LUPTON"
+      "Wojciech Kopczuk",
+      "Josephp Lupton"
     ],
     "year": 2007,
     "source": "Review of Economic Studies",
@@ -38699,9 +38176,9 @@
     "id": "crossref:10.1111/j.1467-937x.2006.0379.x",
     "title": "Social Learning and Norms in a Public Goods Experiment with Inter-Generational Advice1",
     "authors": [
-      "ANANISH CHAUDHURI",
-      "SARA GRAZIANO",
-      "PUSHKAR MAITRA"
+      "Ananish Chaudhuri",
+      "Sara Graziano",
+      "Pushkar Maitra"
     ],
     "year": 2006,
     "source": "Review of Economic Studies",
@@ -38860,7 +38337,7 @@
   },
   {
     "id": "crossref:10.1162/qjec.121.3.999",
-    "title": "The Origins of Intergenerational Associations: Lessons from Swedish Adoption Data*",
+    "title": "The Origins of Intergenerational Associations: Lessons from Swedish Adoption Data",
     "authors": [
       "Anders Björklund",
       "Mikael Lindahl",
@@ -39063,37 +38540,27 @@
       "Family structure"
     ],
     "source_ids": [
-      "working_paper_series:cepr-discussion-papers"
-    ],
-    "score": 14,
-    "match_type": "none",
-    "kind": "working_paper"
-  },
-  {
-    "id": "repec:RePEc:iza:izadps:dp1837",
-    "title": "Childhood Family Structure and Schooling Outcomes: Evidence for Germany",
-    "authors": [
-      "Francesconi, Marco",
-      "Jenkins, Stephen P.",
-      "Siedler, Thomas"
-    ],
-    "year": 2005,
-    "source": "IZA Discussion Papers",
-    "doi": null,
-    "url": "https://ideas.repec.org/p/iza/izadps/dp1837.html",
-    "provider": "repec",
-    "review_status": "pending",
-    "evidence_level": "metadata_only",
-    "collection": "pilot23",
-    "topics": [
-      "Family structure"
-    ],
-    "source_ids": [
+      "working_paper_series:cepr-discussion-papers",
       "working_paper_series:iza-discussion-papers"
     ],
     "score": 14,
-    "match_type": "none",
-    "kind": "working_paper"
+    "match_type": "possible",
+    "kind": "working_paper",
+    "versions": [
+      {
+        "doi": null,
+        "url": "https://ideas.repec.org/p/cpr/ceprdp/5362.html",
+        "source": "CEPR Discussion Papers",
+        "provider": "repec"
+      },
+      {
+        "doi": null,
+        "url": "https://ideas.repec.org/p/iza/izadps/dp1837.html",
+        "source": "IZA Discussion Papers",
+        "provider": "repec"
+      }
+    ],
+    "version_count": 2
   },
   {
     "id": "crossref:10.3386/w11025",
@@ -39163,11 +38630,27 @@
       "Family structure"
     ],
     "source_ids": [
-      "journal:american-economic-review"
+      "journal:american-economic-review",
+      "working_paper_series:ifs-working-papers"
     ],
     "score": 14,
-    "match_type": "none",
-    "kind": "journal_article"
+    "match_type": "possible",
+    "kind": "journal_article",
+    "versions": [
+      {
+        "doi": "10.1257/0002828053828671",
+        "url": "https://doi.org/10.1257/0002828053828671",
+        "source": "American Economic Review",
+        "provider": "crossref"
+      },
+      {
+        "doi": "10.1920/wp.ifs.2004.0410",
+        "url": "https://doi.org/10.1920/wp.ifs.2004.0410",
+        "source": "Working Paper Series",
+        "provider": "crossref"
+      }
+    ],
+    "version_count": 2
   },
   {
     "id": "crossref:10.1162/0034653053970249",
@@ -39676,37 +39159,27 @@
       "Intergenerational mobility"
     ],
     "source_ids": [
-      "working_paper_series:cepr-discussion-papers"
-    ],
-    "score": 14,
-    "match_type": "none",
-    "kind": "working_paper"
-  },
-  {
-    "id": "repec:RePEc:iza:izadps:dp1832",
-    "title": "The Impact of Parental Income and Education on the Health of their Children",
-    "authors": [
-      "Doyle, Orla",
-      "Harmon, Colm P.",
-      "Walker, Ian"
-    ],
-    "year": 2005,
-    "source": "IZA Discussion Papers",
-    "doi": null,
-    "url": "https://ideas.repec.org/p/iza/izadps/dp1832.html",
-    "provider": "repec",
-    "review_status": "pending",
-    "evidence_level": "metadata_only",
-    "collection": "pilot23",
-    "topics": [
-      "Intergenerational mobility"
-    ],
-    "source_ids": [
+      "working_paper_series:cepr-discussion-papers",
       "working_paper_series:iza-discussion-papers"
     ],
     "score": 14,
-    "match_type": "none",
-    "kind": "working_paper"
+    "match_type": "possible",
+    "kind": "working_paper",
+    "versions": [
+      {
+        "doi": null,
+        "url": "https://ideas.repec.org/p/cpr/ceprdp/5359.html",
+        "source": "CEPR Discussion Papers",
+        "provider": "repec"
+      },
+      {
+        "doi": null,
+        "url": "https://ideas.repec.org/p/iza/izadps/dp1832.html",
+        "source": "IZA Discussion Papers",
+        "provider": "repec"
+      }
+    ],
+    "version_count": 2
   },
   {
     "id": "crossref:10.1920/wp.ifs.2005.0505",
@@ -39861,36 +39334,27 @@
       "Wealth and inheritance"
     ],
     "source_ids": [
-      "working_paper_series:cepr-discussion-papers"
-    ],
-    "score": 14,
-    "match_type": "none",
-    "kind": "working_paper"
-  },
-  {
-    "id": "crossref:10.3386/w11440",
-    "title": "Wealth Transfers, Contagion, and Portfolio Constraints",
-    "authors": [
-      "Anna Pavlova",
-      "Roberto Rigobon"
-    ],
-    "year": 2005,
-    "source": "NBER Working Papers",
-    "doi": "10.3386/w11440",
-    "url": "https://doi.org/10.3386/w11440",
-    "provider": "crossref",
-    "review_status": "pending",
-    "evidence_level": "metadata_only",
-    "collection": "pilot23",
-    "topics": [
-      "Wealth and inheritance"
-    ],
-    "source_ids": [
+      "working_paper_series:cepr-discussion-papers",
       "working_paper_series:nber-working-papers"
     ],
     "score": 14,
-    "match_type": "none",
-    "kind": "working_paper"
+    "match_type": "possible",
+    "kind": "working_paper",
+    "versions": [
+      {
+        "doi": null,
+        "url": "https://ideas.repec.org/p/cpr/ceprdp/5117.html",
+        "source": "CEPR Discussion Papers",
+        "provider": "repec"
+      },
+      {
+        "doi": "10.3386/w11440",
+        "url": "https://doi.org/10.3386/w11440",
+        "source": "NBER Working Papers",
+        "provider": "crossref"
+      }
+    ],
+    "version_count": 2
   },
   {
     "id": "repec:RePEc:cpr:ceprdp:5116",
@@ -40153,31 +39617,6 @@
     ],
     "source_ids": [
       "working_paper_series:iza-discussion-papers"
-    ],
-    "score": 14,
-    "match_type": "none",
-    "kind": "working_paper"
-  },
-  {
-    "id": "crossref:10.1920/wp.ifs.2004.0410",
-    "title": "Educational reform, ability and family background",
-    "authors": [
-      "Mårten Palme",
-      "Costas Meghir"
-    ],
-    "year": 2004,
-    "source": "Working Paper Series",
-    "doi": "10.1920/wp.ifs.2004.0410",
-    "url": "https://doi.org/10.1920/wp.ifs.2004.0410",
-    "provider": "crossref",
-    "review_status": "pending",
-    "evidence_level": "metadata_only",
-    "collection": "pilot23",
-    "topics": [
-      "Family structure"
-    ],
-    "source_ids": [
-      "working_paper_series:ifs-working-papers"
     ],
     "score": 14,
     "match_type": "none",
@@ -45340,7 +44779,7 @@
       "Robert Joyce"
     ],
     "year": 2017,
-    "source": "",
+    "source": "IFS Working Papers",
     "doi": "10.1920/wp.ifs.2017.1701",
     "url": "https://doi.org/10.1920/wp.ifs.2017.1701",
     "provider": "crossref",
@@ -45494,7 +44933,7 @@
       "James P. Ziliak"
     ],
     "year": 2017,
-    "source": "",
+    "source": "IFS Working Papers",
     "doi": "10.1920/wp.ifs.2017.w1725",
     "url": "https://doi.org/10.1920/wp.ifs.2017.w1725",
     "provider": "crossref",
@@ -45763,7 +45202,7 @@
       "Farina Weiss"
     ],
     "year": 2020,
-    "source": "",
+    "source": "SSRN Electronic Journal",
     "doi": "10.2139/ssrn.3506725",
     "url": "https://doi.org/10.2139/ssrn.3506725",
     "provider": "crossref",
@@ -45901,7 +45340,7 @@
       "Magne Mogstad"
     ],
     "year": 2014,
-    "source": "",
+    "source": "IFS Working Papers",
     "doi": "10.1920/wp.ifs.2014.1401",
     "url": "https://doi.org/10.1920/wp.ifs.2014.1401",
     "provider": "crossref",
@@ -45916,9 +45355,9 @@
   },
   {
     "id": "crossref:10.1111/j.1465-7295.2008.00208.x",
-    "title": "BEQUEST RECEIPT AND FAMILY SIZE EFFECTS",
+    "title": "Bequest Receipt and Family Size Effects",
     "authors": [
-      "NATHAN D. GRAWE"
+      "Nathan D. Grawe"
     ],
     "year": 2010,
     "source": "Economic Inquiry",

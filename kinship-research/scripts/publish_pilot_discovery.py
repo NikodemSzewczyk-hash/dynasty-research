@@ -9,6 +9,7 @@ from __future__ import annotations
 import argparse
 from collections import Counter
 from datetime import date
+import html
 import json
 from pathlib import Path
 import re
@@ -287,6 +288,41 @@ def _merge_rows(old,new,possible):
         out["match_type"]="possible"
     return out
 
+_SMALL_WORDS={"a","an","and","as","at","by","for","from","in","of","on","or","the","to","with","vs"}
+_KNOWN_SOURCES={"10.1920/":"IFS Working Papers","10.2139/":"SSRN Electronic Journal","10.3386/":"NBER Working Papers"}
+
+def _tidy_text(value):
+    return re.sub(r"\s+"," ",html.unescape(re.sub(r"<[^>]+>","",str(value or "")))).strip()
+
+def tidy_title(value):
+    """Display cleanup only: strip HTML, entities and footnote stars; soften ALL-CAPS titles."""
+    t=re.sub(r"\s*\*+$","",_tidy_text(value))
+    if t.isupper() and len(t)>12:
+        words=t.lower().split()
+        t=" ".join(w if (i and w in _SMALL_WORDS) else w[:1].upper()+w[1:] for i,w in enumerate(words))
+    return t
+
+def tidy_author(value):
+    """Display cleanup only. Never merges or renames people beyond case and stray characters."""
+    a=_tidy_text(value).strip(" ,;")
+    if a.isupper() and len(a)>3:a=a.title()
+    # OpenAlex sometimes appends a lone initial ("Bhashkar Mazumder B"). Only for
+    # "First Last X" forms (3+ tokens, no comma), so "Surname, First M" is untouched.
+    parts=a.split()
+    if "," not in a and len(parts)>=3 and re.fullmatch(r"[A-Z]\.?",parts[-1]):a=" ".join(parts[:-1])
+    return a
+
+def tidy(row):
+    """Normalize display fields of non-curated rows before deduplication."""
+    if row.get("collection")=="curated":return row
+    r=dict(row)
+    r["title"]=tidy_title(r.get("title"))
+    r["authors"]=[a for a in (tidy_author(x) for x in r.get("authors") or []) if re.search(r"\w",a)]
+    if not r.get("source"):
+        doi=doi_key(r.get("doi"))
+        r["source"]=next((name for prefix,name in _KNOWN_SOURCES.items() if doi.startswith(prefix)),"")
+    return r
+
 def combine(records):
     # Two passes: exact DOI, then exact normalized title AND first-author surname.
     # The second pass is labelled as *possible* versions, not verified
@@ -306,7 +342,22 @@ def combine(records):
         key="title:"+title+":"+first if title and first else "record:"+str(r["id"])
         if key in bytitle:bytitle[key]=_merge_rows(bytitle[key],r,True)
         else:bytitle[key]=r
-    return sorted(bytitle.values(),key=lambda r:(
+    # Third pass: exact normalized title AND at least one shared author surname, for
+    # the same work listed with another author order (e.g. CEPR's alphabetical lists).
+    # Still exact on the title and labelled *possible* versions; no fuzzy matching.
+    out=[];seen={}
+    for r in bytitle.values():
+        title=_text_key(r.get("title"))
+        names={_surname_key(a) for a in r.get("authors") or []}-{""}
+        target=None
+        if title and names:
+            for slot in seen.get(title,[]):
+                if names & slot["names"]:target=slot;break
+        if target is None:
+            out.append(r);seen.setdefault(title,[]).append({"i":len(out)-1,"names":set(names)})
+        else:
+            out[target["i"]]=_merge_rows(out[target["i"]],r,True);target["names"]|=names
+    return sorted(out,key=lambda r:(
         0 if r["review_status"]=="curated" else 1,
         -(r.get("score") or 0),-(r.get("year") or 0),r["title"].casefold()))
 
@@ -316,7 +367,7 @@ def build(manifest,papers,existing,snapshot,state=None,seed_list=None):
     legacy=base_records(existing)
     seed=seed_records(seed_list)
     curated=curated_records(papers)
-    merged=combine(legacy+pilot+seed+curated)
+    merged=combine([tidy(r) for r in legacy+pilot+seed]+curated)
     counts=Counter(r["collection"] for r in merged)
     stats.update({
         "schema_version":1,"generated_on":date.today().isoformat(),
@@ -325,7 +376,7 @@ def build(manifest,papers,existing,snapshot,state=None,seed_list=None):
         "seed_candidates":len(seed),"seed_displayed":counts["seedlist"],
         "pilot_source_count":cat["summary"]["verified_active"],
         "scope":"Title-screened bibliographic candidates; not editorial endorsements",
-        "deduplication":"Exact DOI, then exact normalized title + first-author surname (latter labelled possible versions)",
+        "deduplication":"Exact DOI, then exact normalized title + first-author surname, then exact normalized title + any shared author surname (latter two labelled possible versions)",
     })
     return cat,merged,stats
 

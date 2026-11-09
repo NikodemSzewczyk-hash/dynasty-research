@@ -4,13 +4,13 @@
   "unrecognized_source_rows": 0,
   "schema_version": 1,
   "generated_on": "2026-11-09",
-  "total_displayed": 1618,
+  "total_displayed": 1578,
   "historical_displayed": 41,
-  "pilot_displayed": 1292,
+  "pilot_displayed": 1252,
   "curated_displayed": 12,
   "seed_candidates": 405,
   "seed_displayed": 273,
   "pilot_source_count": 24,
   "scope": "Title-screened bibliographic candidates; not editorial endorsements",
-  "deduplication": "Exact DOI, then exact normalized title + first-author surname (latter labelled possible versions)"
+  "deduplication": "Exact DOI, then exact normalized title + first-author surname, then exact normalized title + any shared author surname (latter two labelled possible versions)"
 }
