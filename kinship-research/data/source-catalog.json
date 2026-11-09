@@ -1056,7 +1056,14 @@
       "active": true,
       "provider": "openalex_author",
       "evidence_url": "https://api.openalex.org/authors/A5045271714",
-      "coverage": null,
+      "coverage": {
+        "read": 0,
+        "available": 0,
+        "since": "2026",
+        "measured_on": "2026-11-09",
+        "incomplete": false,
+        "access": "OpenAlex, author ID"
+      },
       "coverage_note": null
     },
     {
@@ -1067,7 +1074,14 @@
       "active": true,
       "provider": "openalex_author",
       "evidence_url": "https://api.openalex.org/authors/A5038291213",
-      "coverage": null,
+      "coverage": {
+        "read": 0,
+        "available": 0,
+        "since": "2026",
+        "measured_on": "2026-11-09",
+        "incomplete": false,
+        "access": "OpenAlex, author ID"
+      },
       "coverage_note": null
     },
     {
@@ -1089,7 +1103,14 @@
       "active": true,
       "provider": "openalex_author",
       "evidence_url": "https://api.openalex.org/authors/A5020232464",
-      "coverage": null,
+      "coverage": {
+        "read": 0,
+        "available": 0,
+        "since": "2026",
+        "measured_on": "2026-11-09",
+        "incomplete": false,
+        "access": "OpenAlex, author ID"
+      },
       "coverage_note": null
     },
     {
@@ -1111,7 +1132,14 @@
       "active": true,
       "provider": "openalex_author",
       "evidence_url": "https://api.openalex.org/authors/A5071390181",
-      "coverage": null,
+      "coverage": {
+        "read": 0,
+        "available": 0,
+        "since": "2026",
+        "measured_on": "2026-11-09",
+        "incomplete": false,
+        "access": "OpenAlex, author ID"
+      },
       "coverage_note": null
     },
     {
@@ -1122,7 +1150,14 @@
       "active": true,
       "provider": "openalex_author",
       "evidence_url": "https://api.openalex.org/authors/A5038351764",
-      "coverage": null,
+      "coverage": {
+        "read": 0,
+        "available": 0,
+        "since": "2026",
+        "measured_on": "2026-11-09",
+        "incomplete": false,
+        "access": "OpenAlex, author ID"
+      },
       "coverage_note": null
     },
     {
@@ -1133,7 +1168,14 @@
       "active": true,
       "provider": "openalex_author",
       "evidence_url": "https://api.openalex.org/authors/A5025896273",
-      "coverage": null,
+      "coverage": {
+        "read": 2,
+        "available": 2,
+        "since": "2026",
+        "measured_on": "2026-11-09",
+        "incomplete": false,
+        "access": "OpenAlex, author ID"
+      },
       "coverage_note": null
     },
     {
@@ -1144,7 +1186,14 @@
       "active": true,
       "provider": "openalex_author",
       "evidence_url": "https://api.openalex.org/authors/A5035713394",
-      "coverage": null,
+      "coverage": {
+        "read": 1,
+        "available": 1,
+        "since": "2026",
+        "measured_on": "2026-11-09",
+        "incomplete": false,
+        "access": "OpenAlex, author ID"
+      },
       "coverage_note": null
     },
     {
@@ -1155,7 +1204,14 @@
       "active": true,
       "provider": "openalex_author",
       "evidence_url": "https://api.openalex.org/authors/A5018550128",
-      "coverage": null,
+      "coverage": {
+        "read": 0,
+        "available": 0,
+        "since": "2026",
+        "measured_on": "2026-11-09",
+        "incomplete": false,
+        "access": "OpenAlex, author ID"
+      },
       "coverage_note": null
     },
     {
@@ -1177,7 +1233,14 @@
       "active": true,
       "provider": "openalex_author",
       "evidence_url": "https://api.openalex.org/authors/A5051484328",
-      "coverage": null,
+      "coverage": {
+        "read": 1,
+        "available": 1,
+        "since": "2026",
+        "measured_on": "2026-11-09",
+        "incomplete": false,
+        "access": "OpenAlex, author ID"
+      },
       "coverage_note": null
     },
     {
@@ -1210,7 +1273,14 @@
       "active": true,
       "provider": "openalex_author",
       "evidence_url": "https://api.openalex.org/authors/A5028570467",
-      "coverage": null,
+      "coverage": {
+        "read": 0,
+        "available": 0,
+        "since": "2026",
+        "measured_on": "2026-11-09",
+        "incomplete": false,
+        "access": "OpenAlex, author ID"
+      },
       "coverage_note": null
     },
     {

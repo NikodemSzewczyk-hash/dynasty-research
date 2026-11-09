@@ -10,8 +10,8 @@
         "read": 858,
         "start_date": "1990-01-01"
       },
-      "last_run": "2026-11-08",
-      "last_successful_end": "2026-11-08"
+      "last_run": "2026-11-09",
+      "last_successful_end": "2026-11-09"
     },
     "journal:aej-economic-policy": {
       "coverage": {
@@ -22,8 +22,8 @@
         "read": 935,
         "start_date": "1990-01-01"
       },
-      "last_run": "2026-11-08",
-      "last_successful_end": "2026-11-08"
+      "last_run": "2026-11-09",
+      "last_successful_end": "2026-11-09"
     },
     "journal:american-economic-review": {
       "coverage": {
@@ -34,8 +34,8 @@
         "read": 5687,
         "start_date": "1990-01-01"
       },
-      "last_run": "2026-11-08",
-      "last_successful_end": "2026-11-08"
+      "last_run": "2026-11-09",
+      "last_successful_end": "2026-11-09"
     },
     "journal:econometrica": {
       "coverage": {
@@ -46,8 +46,8 @@
         "read": 3217,
         "start_date": "1990-01-01"
       },
-      "last_run": "2026-11-08",
-      "last_successful_end": "2026-11-08"
+      "last_run": "2026-11-09",
+      "last_successful_end": "2026-11-09"
     },
     "journal:journal-of-human-resources": {
       "coverage": {
@@ -58,8 +58,8 @@
         "read": 1684,
         "start_date": "1990-01-01"
       },
-      "last_run": "2026-11-08",
-      "last_successful_end": "2026-11-08"
+      "last_run": "2026-11-09",
+      "last_successful_end": "2026-11-09"
     },
     "journal:journal-of-labor-economics": {
       "coverage": {
@@ -70,8 +70,8 @@
         "read": 1629,
         "start_date": "1990-01-01"
       },
-      "last_run": "2026-11-08",
-      "last_successful_end": "2026-11-08"
+      "last_run": "2026-11-09",
+      "last_successful_end": "2026-11-09"
     },
     "journal:journal-of-political-economy": {
       "coverage": {
@@ -82,8 +82,8 @@
         "read": 2861,
         "start_date": "1990-01-01"
       },
-      "last_run": "2026-11-08",
-      "last_successful_end": "2026-11-08"
+      "last_run": "2026-11-09",
+      "last_successful_end": "2026-11-09"
     },
     "journal:quarterly-journal-of-economics": {
       "coverage": {
@@ -94,8 +94,8 @@
         "read": 1848,
         "start_date": "1990-01-01"
       },
-      "last_run": "2026-11-08",
-      "last_successful_end": "2026-11-08"
+      "last_run": "2026-11-09",
+      "last_successful_end": "2026-11-09"
     },
     "journal:review-of-economic-studies": {
       "coverage": {
@@ -106,8 +106,8 @@
         "read": 2259,
         "start_date": "1990-01-01"
       },
-      "last_run": "2026-11-08",
-      "last_successful_end": "2026-11-08"
+      "last_run": "2026-11-09",
+      "last_successful_end": "2026-11-09"
     },
     "journal:review-of-economics-and-statistics": {
       "coverage": {
@@ -118,48 +118,128 @@
         "read": 3349,
         "start_date": "1990-01-01"
       },
-      "last_run": "2026-11-08",
-      "last_successful_end": "2026-11-08"
+      "last_run": "2026-11-09",
+      "last_successful_end": "2026-11-09"
     },
     "researcher:alessandra-voena": {
-      "last_run": "2026-11-07",
-      "last_successful_end": "2026-11-07"
+      "coverage": {
+        "available": 0,
+        "complete": true,
+        "end_date": "2026-11-09",
+        "measured_on": "2026-11-09",
+        "read": 0,
+        "start_date": "2026-09-23"
+      },
+      "last_run": "2026-11-09",
+      "last_successful_end": "2026-11-09"
     },
     "researcher:aline-butikofer": {
-      "last_run": "2026-11-07",
-      "last_successful_end": "2026-11-07"
+      "coverage": {
+        "available": 0,
+        "complete": true,
+        "end_date": "2026-11-09",
+        "measured_on": "2026-11-09",
+        "read": 0,
+        "start_date": "2026-09-23"
+      },
+      "last_run": "2026-11-09",
+      "last_successful_end": "2026-11-09"
     },
     "researcher:corina-mommaerts": {
-      "last_run": "2026-11-07",
-      "last_successful_end": "2026-11-07"
+      "coverage": {
+        "available": 0,
+        "complete": true,
+        "end_date": "2026-11-09",
+        "measured_on": "2026-11-09",
+        "read": 0,
+        "start_date": "2026-09-23"
+      },
+      "last_run": "2026-11-09",
+      "last_successful_end": "2026-11-09"
     },
     "researcher:jan-stuhler": {
-      "last_run": "2026-11-07",
-      "last_successful_end": "2026-11-07"
+      "coverage": {
+        "available": 0,
+        "complete": true,
+        "end_date": "2026-11-09",
+        "measured_on": "2026-11-09",
+        "read": 0,
+        "start_date": "2026-09-23"
+      },
+      "last_run": "2026-11-09",
+      "last_successful_end": "2026-11-09"
     },
     "researcher:katrine-v-l-ken": {
-      "last_run": "2026-11-07",
-      "last_successful_end": "2026-11-07"
+      "coverage": {
+        "available": 0,
+        "complete": true,
+        "end_date": "2026-11-09",
+        "measured_on": "2026-11-09",
+        "read": 0,
+        "start_date": "2026-09-23"
+      },
+      "last_run": "2026-11-09",
+      "last_successful_end": "2026-11-09"
     },
     "researcher:kjell-g-salvanes": {
-      "last_run": "2026-11-07",
-      "last_successful_end": "2026-11-07"
+      "coverage": {
+        "available": 2,
+        "complete": true,
+        "end_date": "2026-11-09",
+        "measured_on": "2026-11-09",
+        "read": 2,
+        "start_date": "2026-09-23"
+      },
+      "last_run": "2026-11-09",
+      "last_successful_end": "2026-11-09"
     },
     "researcher:magne-mogstad": {
-      "last_run": "2026-11-07",
-      "last_successful_end": "2026-11-07"
+      "coverage": {
+        "available": 1,
+        "complete": true,
+        "end_date": "2026-11-09",
+        "measured_on": "2026-11-09",
+        "read": 1,
+        "start_date": "2026-09-23"
+      },
+      "last_run": "2026-11-09",
+      "last_successful_end": "2026-11-09"
     },
     "researcher:martin-nybom": {
-      "last_run": "2026-11-07",
-      "last_successful_end": "2026-11-07"
+      "coverage": {
+        "available": 0,
+        "complete": true,
+        "end_date": "2026-11-09",
+        "measured_on": "2026-11-09",
+        "read": 0,
+        "start_date": "2026-09-23"
+      },
+      "last_run": "2026-11-09",
+      "last_successful_end": "2026-11-09"
     },
     "researcher:raj-chetty": {
-      "last_run": "2026-11-07",
-      "last_successful_end": "2026-11-07"
+      "coverage": {
+        "available": 1,
+        "complete": true,
+        "end_date": "2026-11-09",
+        "measured_on": "2026-11-09",
+        "read": 1,
+        "start_date": "2026-09-23"
+      },
+      "last_run": "2026-11-09",
+      "last_successful_end": "2026-11-09"
     },
     "researcher:wojciech-kopczuk": {
-      "last_run": "2026-11-07",
-      "last_successful_end": "2026-11-07"
+      "coverage": {
+        "available": 0,
+        "complete": true,
+        "end_date": "2026-11-09",
+        "measured_on": "2026-11-09",
+        "read": 0,
+        "start_date": "2026-09-23"
+      },
+      "last_run": "2026-11-09",
+      "last_successful_end": "2026-11-09"
     },
     "working_paper_series:cepr-discussion-papers": {
       "coverage": {
@@ -170,8 +250,8 @@
         "read": 21296,
         "start_date": "1990-01-01"
       },
-      "last_run": "2026-11-08",
-      "last_successful_end": "2026-11-08"
+      "last_run": "2026-11-09",
+      "last_successful_end": "2026-11-09"
     },
     "working_paper_series:ifs-working-papers": {
       "coverage": {
@@ -182,8 +262,8 @@
         "read": 6445,
         "start_date": "1990-01-01"
       },
-      "last_run": "2026-11-08",
-      "last_successful_end": "2026-11-08"
+      "last_run": "2026-11-09",
+      "last_successful_end": "2026-11-09"
     },
     "working_paper_series:iza-discussion-papers": {
       "coverage": {
@@ -194,8 +274,8 @@
         "read": 19019,
         "start_date": "1990-01-01"
       },
-      "last_run": "2026-11-08",
-      "last_successful_end": "2026-11-08"
+      "last_run": "2026-11-09",
+      "last_successful_end": "2026-11-09"
     },
     "working_paper_series:nber-working-papers": {
       "coverage": {
@@ -206,8 +286,8 @@
         "read": 33146,
         "start_date": "1990-01-01"
       },
-      "last_run": "2026-11-08",
-      "last_successful_end": "2026-11-08"
+      "last_run": "2026-11-09",
+      "last_successful_end": "2026-11-09"
     }
   }
 }
