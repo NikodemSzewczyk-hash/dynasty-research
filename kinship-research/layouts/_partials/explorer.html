@@ -7,7 +7,7 @@
     <label class="finder-select"><span>Year</span><select id="discovery-year"><option value="">All years</option></select></label>
     <label class="finder-select"><span>Subject</span><select id="discovery-topic"><option value="">All subjects</option></select></label>
     <label class="finder-select"><span>Source</span><select id="discovery-source"><option value="">All sources</option><option value="__other__">Historical / other</option>
-      {{ with $catalog }}{{ range (slice .journals .repositories .researchers) }}{{ range . }}{{ if .active }}<option value="{{ .id }}">{{ .name }}</option>{{ end }}{{ end }}{{ end }}{{ end }}
+      {{ with $catalog }}{{ range (slice .journals .repositories) }}{{ range . }}{{ if .active }}<option value="{{ .id }}">{{ .name }}</option>{{ end }}{{ end }}{{ end }}{{ end }}
     </select></label>
     <label class="finder-select"><span>Status</span><select id="discovery-status"><option value="">All statuses</option><option value="pending">Unreviewed metadata</option><option value="curated">Curated summary</option></select></label>
     <label class="finder-select"><span>Order</span><select id="discovery-sort"><option value="newest">Newest first</option><option value="relevance">Title relevance</option><option value="oldest">Oldest first</option><option value="title">Title A–Z</option></select></label>

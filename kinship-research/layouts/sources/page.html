@@ -4,7 +4,7 @@
   <div>
     <p class="label">Discovery infrastructure</p>
     <h1 class="page-title">The source register</h1>
-    <p class="page-intro">The journals, working-paper series and researchers we track. A verified feed is a source of metadata, not an endorsement of every paper it produces.</p>
+    <p class="page-intro">The journals and working-paper series we track. We also follow the publication records of a number of researchers in the field; they are counted below but not listed by name. A verified feed is a source of metadata, not an endorsement of every paper it produces.</p>
   </div>
   {{ with $catalog }}
   <div class="page-count source-summary" aria-label="Source monitoring status">
@@ -17,7 +17,8 @@
 <section class="wrap">
   {{ with $catalog }}
   <p class="discovery-notice"><strong>Verified</strong> means a retrieval identifier has been checked and the connector tested. It does not mean every publication is indexed. <strong>Planned</strong> sources are not yet systematically ingested. Coverage compares what we read with what the provider itself reports; a provider's own records can still be incomplete. <a href="{{ "/discovery/" | relURL }}">Explore indexed papers →</a></p>
-  {{ range (slice (dict "num" "I." "name" "Journals" "key" "journals") (dict "num" "II." "name" "Working-paper series" "key" "repositories") (dict "num" "III." "name" "Researchers" "key" "researchers")) }}
+  {{/* Researcher feeds are counted in the summary but deliberately not listed by name. */}}
+  {{ range (slice (dict "num" "I." "name" "Journals" "key" "journals") (dict "num" "II." "name" "Working-paper series" "key" "repositories")) }}
     {{ $rows := index $catalog .key }}
     {{ $active := where $rows "active" true }}
     <div class="source-section">
