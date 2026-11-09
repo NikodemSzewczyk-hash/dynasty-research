@@ -1,1 +1,7 @@
-{{ define "main" }}<article class="article-shell wrap narrow"><div class="eyebrow muted">KINSHIP</div><h1>{{ .Title }}</h1><div class="article-body">{{ .Content }}</div></article>{{ end }}
+{{ define "main" }}
+<article class="wrap narrow">
+  <p class="label">dynasty_</p>
+  <h1 class="page-title">{{ .Title }}</h1>
+  <div class="prose">{{ .Content }}</div>
+</article>
+{{ end }}

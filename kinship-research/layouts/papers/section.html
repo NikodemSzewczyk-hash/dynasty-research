@@ -1,42 +1,20 @@
 {{ define "main" }}
-{{ $report := index site.Data "discovery-pilot-report" | default (index site.Data "discovery_pilot_report") }}
-
-<section class="page-hero archive-hero">
-  <div class="wrap page-hero-inner">
-    <div>
-      <div class="micro-label section-code"><span class="code-bullet"></span> RESEARCH PAPERS / FULL INDEX</div>
-      <h1>The research <span>index.</span></h1>
-      <p>Browse the entire research database, including curated papers and unreviewed bibliographic candidates. Filter by topic, source, year, or editorial status.</p>
-    </div>
-    <div class="page-aside"><span class="micro-label">INDEXED ENTRIES</span><strong id="discovery-total">{{ with $report }}{{ .total_displayed }}{{ else }}—{{ end }}</strong><span class="micro-label">{{ with $report }}{{ .curated_displayed }} CURATED · <span id="discovery-pilot-total">{{ .pilot_displayed }}</span> NEW PILOT CANDIDATES{{ else }}<span id="discovery-pilot-total">—</span> NEW PILOT CANDIDATES{{ end }}</span></div>
+{{ $report := index hugo.Data "discovery-pilot-report" | default (index hugo.Data "discovery_pilot_report") }}
+<header class="wrap page-head page-head-split">
+  <div>
+    <p class="label">The catalogue</p>
+    <h1 class="page-title">All research papers</h1>
+    <p class="page-intro">The whole index: curated papers with editorial summaries, and unreviewed bibliographic records. Filter by subject, source, year or editorial status.</p>
   </div>
-</section>
-<section class="archive-section">
-  <div class="wrap">
-    <p class="discovery-notice"><strong>How to read this index:</strong> The default view shows <strong>all indexed records</strong>. <em>Curated</em> papers have editorial summaries; <em>unreviewed</em> entries are metadata screened by title keywords only, not verified against full texts. <a href="{{ "/papers/?status=curated" | relURL }}">Show curated papers only</a>. Neither label implies a full PDF was read for this index.</p>
-    <div class="archive-toolbar discovery-toolbar">
-      <div class="archive-tools">
-        <label class="search-wrap"><span class="sr-only">Search discovered research</span><span class="search-icon" aria-hidden="true">⌕</span><input type="search" id="discovery-search" placeholder="Search titles, authors, journals, DOI…" autocomplete="off"></label>
-        <div class="filter-row discovery-filters">
-          <label for="discovery-year">YEAR</label><select id="discovery-year"><option value="">All years</option></select>
-          <label for="discovery-topic">TOPIC</label><select id="discovery-topic"><option value="">All topics</option></select>
-          <label for="discovery-source">SOURCE</label><select id="discovery-source"><option value="">All sources</option><option value="__other__">Historical / other</option>
-            {{ with site.Data.source_catalog }}
-              {{ range (slice .journals .repositories .researchers) }}{{ range . }}{{ if .active }}<option value="{{ .id }}">{{ .name }}</option>{{ end }}{{ end }}{{ end }}
-            {{ end }}
-          </select>
-          <label for="discovery-status">STATUS</label><select id="discovery-status"><option value="">All statuses</option><option value="pending">Unreviewed metadata</option><option value="curated">Curated summary</option></select>
-          <label for="discovery-sort">SORT</label><select id="discovery-sort"><option value="newest">Newest first</option><option value="relevance">Title relevance</option><option value="oldest">Oldest first</option><option value="title">Title A–Z</option></select>
-        </div>
-      </div>
-      <div class="archive-meta"><span id="discovery-count" role="status" aria-live="polite">Loading…</span><span>METADATA / CURATED SUMMARIES LABELLED</span></div>
-    </div>
-    <div class="list-heading"><span>RESEARCH / AUTHORS / SOURCE</span><span>YEAR ↓</span></div>
-    <div id="discovery-results" class="paper-list" aria-live="off"></div>
-    <p id="discovery-empty" class="empty-state" hidden>No records match your filters.</p>
-    <p id="discovery-error" class="empty-state" hidden>The research index is temporarily unavailable. Please try again shortly.</p>
-    <div class="discovery-pagination"><button id="discovery-more" type="button" hidden>LOAD MORE RECORDS ↓</button></div>
+  <div class="page-count">
+    <strong id="discovery-total">{{ with $report }}{{ .total_displayed }}{{ else }}—{{ end }}</strong>
+    <span class="sc">INDEXED ENTRIES</span>
+    <span class="page-count-detail">{{ with $report }}{{ .curated_displayed }} <span class="sc">CURATED</span> · <span id="discovery-pilot-total">{{ .pilot_displayed }}</span> <span class="sc">NEW PILOT CANDIDATES</span>{{ else }}<span id="discovery-pilot-total">—</span> <span class="sc">NEW PILOT CANDIDATES</span>{{ end }}</span>
   </div>
+</header>
+<section class="wrap">
+  {{ partial "explorer.html" (dict
+      "notice" (printf "<strong>How to read this catalogue.</strong> The default view shows <strong>every indexed record</strong>. <em>Curated</em> papers have editorial summaries; <em>unreviewed</em> entries are bibliographic metadata screened by title, not checked against the full text. <a href=\"%s\">Show curated papers only</a>. Neither label means a full paper was read for this index." ("/papers/?status=curated" | relURL))
+      "error" "The research index is temporarily unavailable. Please try again shortly.") }}
 </section>
-<script src="{{ "js/discovery.js" | relURL }}" defer></script>
 {{ end }}

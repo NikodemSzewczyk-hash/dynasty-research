@@ -1,11 +1,9 @@
-<article class="paper-card" data-paper data-title="{{ .Title | lower }}" data-authors="{{ delimit .Params.authors " " | lower }}" data-topics="{{ delimit .Params.topics "|" | lower }}" data-year="{{ .Params.year }}" data-source="{{ .Params.source | lower }}" data-summary="{{ .Params.takeaway | lower }}">
-  <div class="paper-index" aria-hidden="true"><span class="index-mark"></span></div>
-  <div class="paper-content">
-    <div class="paper-topline"><span>{{ .Params.status | default "Research" }}</span><span class="paper-divider">/</span><span>{{ .Params.source }}</span></div>
-    <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
-    <p class="paper-authors">{{ delimit .Params.authors ", " }}</p>
-    <p class="paper-takeaway">{{ .Params.takeaway }}</p>
-    <div class="tag-row">{{ range first 3 .Params.topics }}<span class="tag">{{ . }}</span>{{ end }}</div>
+{{ $a := .Params.authors }}<article class="entry is-curated" data-paper data-title="{{ .Title | lower }}" data-authors="{{ delimit $a " " | lower }}" data-topics="{{ delimit .Params.topics "|" | lower }}" data-year="{{ .Params.year }}" data-source="{{ .Params.source | lower }}" data-summary="{{ .Params.takeaway | default "" | lower }}">
+  <div class="entry-mark">{{ .Params.year }}</div>
+  <div class="entry-body">
+    <h3 class="entry-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+    <p class="entry-meta">{{ if gt (len $a) 4 }}{{ index $a 0 }} et al.{{ else }}{{ delimit $a ", " " and " }}.{{ end }} <em>{{ .Params.source }}</em><span class="status-label is-curated">Curated summary</span></p>
+    {{ with .Params.takeaway }}<p class="entry-note">{{ . }}</p>{{ end }}
+    <p class="entry-subjects">{{ delimit .Params.topics " · " }}</p>
   </div>
-  <div class="paper-aside"><span class="paper-year">{{ .Params.year }}</span><a class="paper-arrow" href="{{ .RelPermalink }}" aria-label="Read details: {{ .Title }}">↗</a></div>
 </article>

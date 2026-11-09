@@ -1,45 +1,45 @@
 {{ define "main" }}
-{{ $catalog := index site.Data "source-catalog" | default (index site.Data "source_catalog") }}
-<section class="page-hero"><div class="wrap">
-  <div class="micro-label section-code"><span class="code-bullet"></span> 003 / DISCOVERY INFRASTRUCTURE</div>
-  <h1>The source <span>network.</span></h1>
-  <p>We track journals, working-paper series and researchers to study how economic advantage originates and persists across generations. A verified feed is a source of metadata, not an endorsement of every paper.</p>
+{{ $catalog := index hugo.Data "source-catalog" | default (index hugo.Data "source_catalog") }}
+<header class="wrap page-head page-head-split">
+  <div>
+    <p class="label">Discovery infrastructure</p>
+    <h1 class="page-title">The source register</h1>
+    <p class="page-intro">The journals, working-paper series and researchers we track. A verified feed is a source of metadata, not an endorsement of every paper it produces.</p>
+  </div>
   {{ with $catalog }}
-  <div class="source-summary" aria-label="Source monitoring status">
-    <div><strong>{{ .summary.verified_active }}</strong><span>VERIFIED METADATA FEEDS</span></div>
-    <div><strong>{{ .summary.planned }}</strong><span>PLANNED / NOT CONNECTED</span></div>
-    <div><strong>{{ .summary.registered }}</strong><span>TOTAL REGISTERED SOURCES</span></div>
+  <div class="page-count source-summary" aria-label="Source monitoring status">
+    <strong>{{ .summary.verified_active }}</strong>
+    <span class="sc">VERIFIED METADATA FEEDS</span>
+    <span class="page-count-detail">{{ .summary.planned }} <span class="sc">PLANNED / NOT CONNECTED</span> · {{ .summary.registered }} <span class="sc">TOTAL REGISTERED SOURCES</span></span>
   </div>
   {{ end }}
-</div></section>
-<section class="content-section"><div class="wrap">
+</header>
+<section class="wrap">
   {{ with $catalog }}
-  <p class="source-disclaimer"><span class="code-bullet"></span> <strong>Verified</strong> means a retrieval identifier has been checked and the source connector tested. It does not mean every publication is indexed. <strong>Planned</strong> sources are not yet systematically ingested. Coverage compares what we read with what the provider itself reports; a provider's own records can still be incomplete. <a href="{{ "/discovery/" | relURL }}">Explore indexed papers →</a></p>
-  {{ range (slice (dict "name" "Journals" "tag" "01 / JOURNAL SIGNAL" "key" "journals") (dict "name" "Working-paper series" "tag" "02 / EARLY RESEARCH" "key" "repositories") (dict "name" "Researchers" "tag" "03 / RESEARCH NETWORK" "key" "researchers")) }}
-    {{ $key := .key }}
-    {{ $rows := index $catalog $key }}
+  <p class="discovery-notice"><strong>Verified</strong> means a retrieval identifier has been checked and the connector tested. It does not mean every publication is indexed. <strong>Planned</strong> sources are not yet systematically ingested. Coverage compares what we read with what the provider itself reports; a provider's own records can still be incomplete. <a href="{{ "/discovery/" | relURL }}">Explore indexed papers →</a></p>
+  {{ range (slice (dict "num" "I." "name" "Journals" "key" "journals") (dict "num" "II." "name" "Working-paper series" "key" "repositories") (dict "num" "III." "name" "Researchers" "key" "researchers")) }}
+    {{ $rows := index $catalog .key }}
     {{ $active := where $rows "active" true }}
     <div class="source-section">
-      <div class="section-heading"><div><div class="micro-label section-code">{{ .tag }}</div><h2>{{ .name }}</h2></div><span class="source-count">{{ len $active }} VERIFIED / {{ len $rows }} REGISTERED</span></div>
-      <div class="source-grid">
+      <h2 class="label section-gap"><span class="num">{{ .num }}</span>{{ .name }} <span class="source-count">· {{ len $active }} verified of {{ len $rows }} registered</span></h2>
+      <ul class="source-list">
         {{ range $rows }}
-        <div class="source-item {{ if .active }}source-active{{ else }}source-planned{{ end }}">
-          <span class="source-tier">{{ .tier }}</span>
-          <div class="source-item-copy">
-            <strong>{{ .name }}</strong><small>{{ .area }}</small>
-            <span class="source-status {{ if .active }}is-verified{{ end }}">{{ if .active }}VERIFIED FEED{{ else }}PLANNED{{ end }}</span>
-            {{ if and .active .evidence_url }}<a class="source-evidence" href="{{ .evidence_url }}" target="_blank" rel="noopener noreferrer" aria-label="Verification record for {{ .name }}">IDENTIFIER ↗</a>{{ end }}
+        <li class="{{ if .active }}source-active{{ else }}source-planned{{ end }}">
+          <span class="tier">{{ .tier }}</span>
+          <span class="source-copy">
+            <strong>{{ .name }}</strong> <span class="area">{{ .area }}</span>
+            <span class="source-line"><span class="source-status{{ if .active }} is-verified{{ end }}">{{ if .active }}Verified feed{{ else }}Planned{{ end }}</span>{{ if and .active .evidence_url }} · <a class="source-evidence" href="{{ .evidence_url }}" target="_blank" rel="noopener noreferrer" aria-label="Verification record for {{ .name }}">identifier ↗</a>{{ end }}</span>
             {{ with .coverage }}<small class="source-coverage" title="Records read from the provider versus records the provider reports for the window, at the last run">{{ lang.FormatNumber 0 .read }} of {{ lang.FormatNumber 0 .available }} records read since {{ .since }} · {{ .access }}{{ if .incomplete }} · <strong>incomplete</strong>{{ end }}</small>{{ end }}
             {{ with .coverage_note }}<small class="source-coverage source-coverage-note">{{ . }}</small>{{ end }}
-          </div>
-        </div>
+          </span>
+        </li>
         {{ end }}
-      </div>
+      </ul>
     </div>
   {{ end }}
   {{ else }}
-  <p class="source-disclaimer">Source catalog is being prepared. The existing research archive remains available.</p>
+  <p class="discovery-notice">The source catalogue is being prepared. The research archive remains available.</p>
   {{ end }}
-  <p class="source-disclaimer"><span class="code-bullet"></span> Source tiers are editorial monitoring priorities, not academic rankings. Newly discovered papers are unreviewed until explicitly curated.</p>
-</div></section>
+  <p class="record-foot">Source tiers are editorial monitoring priorities, not academic rankings. Newly discovered papers are unreviewed until explicitly curated.</p>
+</section>
 {{ end }}
