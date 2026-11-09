@@ -75,6 +75,9 @@ def export_rows(coding: list[dict], enriched: dict[str, dict]) -> tuple[list[dic
         is_wp = WP_NOTE in e['review_notes']
         if doi:
             url, provider = f'https://doi.org/{doi}', 'crossref'
+        elif status == 'matched_url' and https(e.get('landing_url', '')):
+            # Hand-verified catalogue page from corrections.csv (set_url), e.g. RePEc for pre-DOI AER.
+            url, provider = e['landing_url'], 'repec' if 'repec.org' in e['landing_url'] else 'seedlist'
         elif e.get('openalex_id'):
             landing = https(e.get('landing_url', ''))
             article_page = landing and re.search(r'repec\.org/(a/|article/)', landing)

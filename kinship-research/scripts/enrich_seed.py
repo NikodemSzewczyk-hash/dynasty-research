@@ -35,7 +35,8 @@ from urllib.request import Request, urlopen
 ROOT = Path(__file__).resolve().parents[1]
 SEED = ROOT / 'registry' / 'seed'
 SRC = SEED / 'intergenerational_dataset.clean.csv'
-CORRECTIONS = SEED / 'corrections.csv'  # hand-checked fixes: set_title, set_authors, set_doi, reject_match
+CORRECTIONS = SEED / 'corrections.csv'  # hand-checked fixes: set_title, set_authors, set_doi, set_url, reject_match
+NO_DOI = ('unmatched', 'matched_openalex_only', 'matched_url')  # statuses without a Crossref DOI match
 OUT = SEED / 'intergenerational_dataset.enriched.csv'
 CACHE = SEED / 'cache'
 UA = 'KinshipResearchPrototype/0.1 (metadata research discovery; python-urllib)'
@@ -294,6 +295,10 @@ def main() -> None:
         acts = {c['action']: c['value'] for c in corrections.get(rec['seed_id'], [])}
         if 'set_doi' in acts:
             rec.update(crossref_by_doi(rec, acts['set_doi']))
+        elif 'set_url' in acts:
+            # Hand-verified catalogue page for a work with no DOI (e.g. pre-1999 AER on RePEc).
+            assert acts['set_url'].startswith('https://'), f"{rec['seed_id']}: set_url must be https"
+            rec.update({'match_status': 'matched_url', 'landing_url': acts['set_url']})
         elif 'reject_match' in acts:
             rec['match_status'] = 'unmatched'
         else:
@@ -301,7 +306,7 @@ def main() -> None:
         if n % 50 == 0:
             print(f'  {n}/{len(records)}', flush=True)
 
-    dois = sorted({r['doi'] for r in records if r['match_status'] != 'unmatched'})
+    dois = sorted({r['doi'] for r in records if r['match_status'] not in NO_DOI})
     print(f'OpenAlex: looking up {len(dois)} DOIs...', flush=True)
     oa = openalex_by_doi(dois)
     unmatched = [r for r in records if r['match_status'] == 'unmatched']
@@ -313,7 +318,7 @@ def main() -> None:
         notes = []
         if rec['seed_id'] in corrections:
             notes.append('hand_corrected')
-        if rec['match_status'] not in ('unmatched', 'matched_openalex_only'):
+        if rec['match_status'] not in NO_DOI:
             rec.update(oa.get(rec['doi'], {}))
             if norm(rec['title']) != norm(rec['cr_title']):
                 notes.append('title_differs')
@@ -333,10 +338,10 @@ def main() -> None:
 
     by_doi: dict[str, list[str]] = {}
     for rec in records:
-        if rec.get('doi') and rec['match_status'] not in ('unmatched', 'matched_openalex_only'):
+        if rec.get('doi') and rec['match_status'] not in NO_DOI:
             by_doi.setdefault(rec['doi'], []).append(rec['seed_id'])
     for rec in records:
-        others = [s for s in by_doi.get(rec.get('doi', ''), []) if s != rec['seed_id']] if rec['match_status'] not in ('unmatched', 'matched_openalex_only') else []
+        others = [s for s in by_doi.get(rec.get('doi', ''), []) if s != rec['seed_id']] if rec['match_status'] not in NO_DOI else []
         if others:
             rec['review_notes'] = ';'.join(filter(None, [rec['review_notes'], 'same_doi_as:' + ','.join(others)]))
 
@@ -348,7 +353,7 @@ def main() -> None:
         w.writeheader()
         w.writerows(records)
 
-    status = {s: sum(r['match_status'] == s for r in records) for s in ('matched', 'probable', 'matched_openalex_only', 'unmatched')}
+    status = {s: sum(r['match_status'] == s for r in records) for s in ('matched', 'probable', 'matched_openalex_only', 'matched_url', 'unmatched')}
     print(f'Wrote {OUT.relative_to(ROOT)}')
     print('Match status:', status)
     print('In OpenAlex:', sum(bool(r.get('openalex_id')) for r in records))
