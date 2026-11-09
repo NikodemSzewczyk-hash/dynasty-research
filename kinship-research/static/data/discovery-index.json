@@ -1708,6 +1708,30 @@
     "kind": "journal_article"
   },
   {
+    "id": "seedlist:aneja-2022-the-costs-of-employment",
+    "title": "The Costs of Employment Segregation: Evidence from the Federal Government Under Woodrow Wilson",
+    "authors": [
+      "Abhay Aneja",
+      "Guo Xu"
+    ],
+    "year": 2021,
+    "source": "Quarterly Journal of Economics",
+    "doi": "10.1093/qje/qjab040",
+    "url": "https://doi.org/10.1093/qje/qjab040",
+    "provider": "crossref",
+    "review_status": "pending",
+    "evidence_level": "metadata_only",
+    "collection": "seedlist",
+    "topics": [
+      "Institutions and policy",
+      "Intergenerational mobility"
+    ],
+    "source_ids": [],
+    "score": 18,
+    "match_type": "none",
+    "kind": "journal_article"
+  },
+  {
     "id": "seedlist:meng-2021-the-long-shadow-of",
     "title": "The long shadow of a large scale education interruption: The intergenerational effect",
     "authors": [
@@ -1773,6 +1797,32 @@
     "collection": "seedlist",
     "topics": [
       "Place and opportunity",
+      "Intergenerational mobility"
+    ],
+    "source_ids": [],
+    "score": 18,
+    "match_type": "none",
+    "kind": "journal_article"
+  },
+  {
+    "id": "seedlist:fagereng-2020-heterogeneity-and-persistence-in",
+    "title": "Heterogeneity and Persistence in Returns to Wealth",
+    "authors": [
+      "Andreas Fagereng",
+      "Luigi Guiso",
+      "Davide Malacrino",
+      "Luigi Pistaferri"
+    ],
+    "year": 2020,
+    "source": "Econometrica",
+    "doi": "10.3982/ecta14835",
+    "url": "https://doi.org/10.3982/ecta14835",
+    "provider": "crossref",
+    "review_status": "pending",
+    "evidence_level": "metadata_only",
+    "collection": "seedlist",
+    "topics": [
+      "Wealth and inheritance",
       "Intergenerational mobility"
     ],
     "source_ids": [],
@@ -2382,6 +2432,29 @@
     "topics": [
       "Intergenerational mobility",
       "Place and opportunity"
+    ],
+    "source_ids": [],
+    "score": 18,
+    "match_type": "none",
+    "kind": "journal_article"
+  },
+  {
+    "id": "seedlist:simon-2016-does-early-life-exposure",
+    "title": "Does Early Life Exposure to Cigarette Smoke Permanently Harm Childhood Welfare? Evidence from Cigarette Tax Hikes",
+    "authors": [
+      "David Simon"
+    ],
+    "year": 2016,
+    "source": "AEJ: Applied Economics",
+    "doi": "10.1257/app.20150476",
+    "url": "https://doi.org/10.1257/app.20150476",
+    "provider": "crossref",
+    "review_status": "pending",
+    "evidence_level": "metadata_only",
+    "collection": "seedlist",
+    "topics": [
+      "Genes, health and endowments",
+      "Institutions and policy"
     ],
     "source_ids": [],
     "score": 18,
@@ -3651,16 +3724,7 @@
     "source_ids": [],
     "score": 18,
     "match_type": "none",
-    "kind": "journal_article",
-    "versions": [
-      {
-        "doi": "10.1016/s0047-2727(00)00097-9",
-        "url": "https://doi.org/10.1016/s0047-2727(00)00097-9",
-        "source": "Journal of Public Economics",
-        "provider": "crossref"
-      }
-    ],
-    "version_count": 1
+    "kind": "journal_article"
   },
   {
     "id": "seedlist:fernandez-2001-sorting-and-long-run",
@@ -3918,6 +3982,29 @@
     "kind": "journal_article"
   },
   {
+    "id": "seedlist:zimmerman-1992-regression-toward-mediocrity-in",
+    "title": "Regression toward mediocrity in economic stature",
+    "authors": [
+      "David J. Zimmerman"
+    ],
+    "year": 1992,
+    "source": "American Economic Review",
+    "doi": null,
+    "url": "https://ideas.repec.org/a/aea/aecrev/v82y1992i3p409-29.html",
+    "provider": "repec",
+    "review_status": "pending",
+    "evidence_level": "metadata_only",
+    "collection": "seedlist",
+    "topics": [
+      "Intergenerational mobility",
+      "Data, methods and theory"
+    ],
+    "source_ids": [],
+    "score": 18,
+    "match_type": "none",
+    "kind": "journal_article"
+  },
+  {
     "id": "seedlist:behrman-1985-intergenerational-earnings-mobility-in",
     "title": "Intergenerational Earnings Mobility in the United States: Some Estimates and a Test of Becker's Intergenerational Endowments Model",
     "authors": [
@@ -4027,6 +4114,29 @@
     "topics": [
       "Data, methods and theory",
       "Childhood and education"
+    ],
+    "source_ids": [],
+    "score": 18,
+    "match_type": "none",
+    "kind": "journal_article"
+  },
+  {
+    "id": "seedlist:loury-1981-is-equal-opportunity-enough",
+    "title": "Is Equal Opportunity Enough?",
+    "authors": [
+      "Glenn C. Loury"
+    ],
+    "year": 1981,
+    "source": "American Economic Review",
+    "doi": null,
+    "url": "https://ideas.repec.org/a/aea/aecrev/v71y1981i2p122-26.html",
+    "provider": "repec",
+    "review_status": "pending",
+    "evidence_level": "metadata_only",
+    "collection": "seedlist",
+    "topics": [
+      "Data, methods and theory",
+      "Institutions and policy"
     ],
     "source_ids": [],
     "score": 18,
@@ -6475,16 +6585,7 @@
     "source_ids": [],
     "score": 16,
     "match_type": "none",
-    "kind": "journal_article",
-    "versions": [
-      {
-        "doi": "10.1016/j.labeco.2009.06.002",
-        "url": "https://doi.org/10.1016/j.labeco.2009.06.002",
-        "source": "Labour Economics",
-        "provider": "crossref"
-      }
-    ],
-    "version_count": 1
+    "kind": "journal_article"
   },
   {
     "id": "repec:RePEc:iza:izadps:dp4876",
@@ -7622,6 +7723,28 @@
     "source_ids": [
       "journal:review-of-economics-and-statistics"
     ],
+    "score": 16,
+    "match_type": "none",
+    "kind": "journal_article"
+  },
+  {
+    "id": "seedlist:solon-1992-intergenerational-income-mobility-in",
+    "title": "Intergenerational Income Mobility in the United States",
+    "authors": [
+      "Gary Solon"
+    ],
+    "year": 1992,
+    "source": "American Economic Review",
+    "doi": null,
+    "url": "https://ideas.repec.org/a/aea/aecrev/v82y1992i3p393-408.html",
+    "provider": "repec",
+    "review_status": "pending",
+    "evidence_level": "metadata_only",
+    "collection": "seedlist",
+    "topics": [
+      "Intergenerational mobility"
+    ],
+    "source_ids": [],
     "score": 16,
     "match_type": "none",
     "kind": "journal_article"

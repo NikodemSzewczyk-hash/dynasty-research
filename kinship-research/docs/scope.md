@@ -94,7 +94,7 @@ Applies to every exclusion rule: **an exclusion is a default, not a veto.** A pa
 | **H11** | Inheritance law, including stepchild inheritance when there is no will | **Core** (C/B6) |
 | **H12** | Birth weight and long-run outcomes | **Core** (B3) if D1 = health counts as an advantage on its own; otherwise **Adjacent** |
 | **H13** | Divorce and marital-property law affecting couples' saving | **Adjacent** (B6/C, within one generation, E4) |
-| **H14** | Transmission of crime, violence, risky behaviour or language, with no economic outcome measured | **Adjacent** (T1 met, T2 not). **Core** if the paper also measures education, earnings or another advantage |
+| **H14** | Transmission of crime, violence, risky behaviour, language, or ethnic and religious identity, with no economic outcome measured | **Adjacent** (T1 met, T2 not). **Core** if the paper also measures education, earnings or another advantage. A paper that only correlates such traits, without studying how families pass them on, stays **Out** under E5 |
 | **H15** | Perceptions of mobility, preferences for redistribution, politics of mobility (no family data) | **Adjacent** (C): about how transmission is perceived or governed, not transmission itself |
 | **H16** | "Intergenerational" meaning birth cohorts or generations of a population, not linked families | **Out**, unless immigrant generations or population-level transmission is the explicit object (then **Adjacent**) |
 | **H17** | Welfare or benefit receipt passed from parents to children | **Core** (B7/C): benefit dependence counts as economic disadvantage |
@@ -211,3 +211,4 @@ Note: Jakobsen et al. is a useful **negative** case. It belongs in the research 
 |---|---|---|
 | 2026-11-09 | 0.1 | First draft: definition, tests T1–T2, tiers I1–I6, categories A–D, exclusions E1–E6, hard cases H1–H13, reference set. |
 | 2026-11-09 | 0.1 | Added H14–H17 from first coding pass of the 403-paper seed list (`registry/seed/scope_coding.csv`). They record rulings applied in that pass. |
+| 2026-11-09 | 0.1 | Second pass on the 53 flagged records (adjacent, out, low confidence), recorded in the review columns as a model pass, not a human review. 4 adjacent → core (Fagereng et al. 2020, Aneja & Xu 2022, Ludwig et al. 2013, Simon 2016), 1 out → adjacent (Bisin & Verdier 2000). H14 extended to ethnic and religious identity. |
