@@ -118,10 +118,35 @@ def export_rows(coding: list[dict], enriched: dict[str, dict]) -> tuple[list[dic
     return rows, held
 
 
+# (label, scope coding CSV, enriched CSV). Each list is matched and coded separately; ids must not collide.
+SOURCES = [
+    ('spreadsheet', SEED / 'scope_coding.csv', SEED / 'intergenerational_dataset.enriched.csv'),
+    ('inheritance-library', SEED / 'library_scope_coding.csv', SEED / 'library.enriched.csv'),
+]
+
+
+def collect_all() -> tuple[list[dict], list[str], list[dict]]:
+    """Export rows from every available source, tagged with `seed_source`."""
+    rows, held, coding_all = [], [], []
+    for label, coding_path, enriched_path in SOURCES:
+        if not coding_path.exists():
+            continue
+        enriched = {r['seed_id']: r for r in csv.DictReader(enriched_path.open(encoding='utf-8-sig'))}
+        coding = list(csv.DictReader(coding_path.open(encoding='utf-8-sig')))
+        part, part_held = export_rows(coding, enriched)
+        for r in part:
+            r['seed_source'] = label
+        rows += part
+        held += part_held
+        coding_all += coding
+    ids = [r['id'] for r in rows]
+    assert len(ids) == len(set(ids)), 'seed_id collision between sources'
+    rows.sort(key=lambda r: r['id'])
+    return rows, held, coding_all
+
+
 def main() -> int:
-    enriched = {r['seed_id']: r for r in csv.DictReader((SEED / 'intergenerational_dataset.enriched.csv').open(encoding='utf-8-sig'))}
-    coding = list(csv.DictReader((SEED / 'scope_coding.csv').open(encoding='utf-8-sig')))
-    rows, held = export_rows(coding, enriched)
+    rows, held, coding = collect_all()
     OUT.write_text(''.join(json.dumps(r, ensure_ascii=False) + '\n' for r in rows), encoding='utf-8')
     core = sum(c['scope_tier'] == 'core' for c in coding)
     print(f'{len(coding)} coded records, {core} core; wrote {len(rows)} candidates to {OUT.relative_to(ROOT)}')

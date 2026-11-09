@@ -2,6 +2,8 @@
 
 This folder holds the import of `intergenerational_dataset.xlsx`, a list of 405 papers compiled by hand in 2025. The workbook in this folder is the untouched original.
 
+A second, smaller source is the editor's **inheritance library**: 43 papers on bequests, gifts, inheritance taxation, stepfamilies and succession law, identified from each PDF's title page (`library.clean.csv`, `library.enriched.csv`, `library_corrections.csv`, `library_scope_coding.csv`). Rebuild it with `python scripts/enrich_seed.py --src registry/seed/library.clean.csv --out registry/seed/library.enriched.csv --corrections registry/seed/library_corrections.csv`. `export_seed_list.py` reads both sources and tags each row with `seed_source`. Two library files were left out because they cannot be identified reliably: a scanned Mahoney article (UC Davis Law Review, 1989; image only) and Bravo, *Stepfamilies & Intestacy Law* (no venue or year on the PDF). One library file, "Heterogeneity of the Carnegie Effect_Halvorsen.pdf", actually contains Locks (2026), *Behavioral Responses to Inheritance Taxes: Evidence from Brazil*, and is catalogued as such.
+
 Records reach the public discovery index only as **unreviewed metadata** (`review_status: pending`, `evidence_level: metadata_only`, `collection: seedlist`), like the verified-source pilot. Nothing here writes `content/papers/` or changes the 12 curated papers.
 
 ## Pipeline

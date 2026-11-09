@@ -722,6 +722,30 @@
     "kind": "journal_article"
   },
   {
+    "id": "seedlist:lib-tomes-1981-the-family-inheritance-and",
+    "title": "The Family, Inheritance, and the Intergenerational Transmission of Inequality",
+    "authors": [
+      "Nigel Tomes"
+    ],
+    "year": 1981,
+    "source": "Journal of Political Economy",
+    "doi": "10.1086/261014",
+    "url": "https://doi.org/10.1086/261014",
+    "provider": "crossref",
+    "review_status": "pending",
+    "evidence_level": "metadata_only",
+    "collection": "seedlist",
+    "topics": [
+      "Wealth and inheritance",
+      "Intergenerational mobility",
+      "Data, methods and theory"
+    ],
+    "source_ids": [],
+    "score": 20,
+    "match_type": "none",
+    "kind": "journal_article"
+  },
+  {
     "id": "seedlist:behrman-1976-intergenerational-transmission-of-income",
     "title": "Intergenerational Transmission of Income and Wealth",
     "authors": [
@@ -767,6 +791,29 @@
     ],
     "source_ids": [],
     "score": 20,
+    "match_type": "none",
+    "kind": "journal_article"
+  },
+  {
+    "id": "seedlist:lib-locks-2026-behavioral-responses-to-inheritance",
+    "title": "Behavioral responses to inheritance taxes: Evidence from Brazil",
+    "authors": [
+      "Gedeão Locks"
+    ],
+    "year": 2026,
+    "source": "Journal of Public Economics",
+    "doi": "10.1016/j.jpubeco.2026.105720",
+    "url": "https://doi.org/10.1016/j.jpubeco.2026.105720",
+    "provider": "crossref",
+    "review_status": "pending",
+    "evidence_level": "metadata_only",
+    "collection": "seedlist",
+    "topics": [
+      "Institutions and policy",
+      "Wealth and inheritance"
+    ],
+    "source_ids": [],
+    "score": 18,
     "match_type": "none",
     "kind": "journal_article"
   },
@@ -1380,6 +1427,34 @@
     "kind": "journal_article"
   },
   {
+    "id": "seedlist:lib-pettay-2023-parental-investment-by-birth",
+    "title": "Parental Investment by Birth Fathers and Stepfathers",
+    "authors": [
+      "Jenni E. Pettay",
+      "Mirkka Danielsbacka",
+      "Samuli Helle",
+      "Gretchen Perry",
+      "Martin Daly",
+      "Antti Olavi Tanskanen"
+    ],
+    "year": 2023,
+    "source": "Human Nature",
+    "doi": "10.1007/s12110-023-09450-6",
+    "url": "https://doi.org/10.1007/s12110-023-09450-6",
+    "provider": "crossref",
+    "review_status": "pending",
+    "evidence_level": "metadata_only",
+    "collection": "seedlist",
+    "topics": [
+      "Childhood and education",
+      "Family structure"
+    ],
+    "source_ids": [],
+    "score": 18,
+    "match_type": "none",
+    "kind": "journal_article"
+  },
+  {
     "id": "seedlist:buscha-2023-selective-schooling-and-social",
     "title": "Selective schooling and social mobility in England",
     "authors": [
@@ -1708,6 +1783,29 @@
     "kind": "journal_article"
   },
   {
+    "id": "seedlist:lib-cardenas-2020-lines-drawn-in-blood",
+    "title": "Lines Drawn in Blood: A Comparative Perspective on the Accommodation of Blended Families in Succession Law",
+    "authors": [
+      "Laura Maritza Cardenas"
+    ],
+    "year": 2021,
+    "source": "McGill Law Journal",
+    "doi": "10.7202/1076906ar",
+    "url": "https://doi.org/10.7202/1076906ar",
+    "provider": "crossref",
+    "review_status": "pending",
+    "evidence_level": "metadata_only",
+    "collection": "seedlist",
+    "topics": [
+      "Institutions and policy",
+      "Family structure"
+    ],
+    "source_ids": [],
+    "score": 18,
+    "match_type": "none",
+    "kind": "journal_article"
+  },
+  {
     "id": "seedlist:aneja-2022-the-costs-of-employment",
     "title": "The Costs of Employment Segregation: Evidence from the Federal Government Under Woodrow Wilson",
     "authors": [
@@ -1749,6 +1847,32 @@
     "topics": [
       "Institutions and policy",
       "Childhood and education"
+    ],
+    "source_ids": [],
+    "score": 18,
+    "match_type": "none",
+    "kind": "journal_article"
+  },
+  {
+    "id": "seedlist:lib-palomino-2022-wealth-inequality-intergenerational-transfers",
+    "title": "Wealth inequality, intergenerational transfers, and family background",
+    "authors": [
+      "Juan Carlos Palomino",
+      "Gustavo A. Marrero",
+      "Brian W. Nolan",
+      "Juan Gabriel Rodríguez"
+    ],
+    "year": 2021,
+    "source": "Oxford Economic Papers",
+    "doi": "10.1093/oep/gpab052",
+    "url": "https://doi.org/10.1093/oep/gpab052",
+    "provider": "crossref",
+    "review_status": "pending",
+    "evidence_level": "metadata_only",
+    "collection": "seedlist",
+    "topics": [
+      "Intergenerational mobility",
+      "Wealth and inheritance"
     ],
     "source_ids": [],
     "score": 18,
@@ -1945,6 +2069,30 @@
     "topics": [
       "Intergenerational mobility",
       "Place and opportunity"
+    ],
+    "source_ids": [],
+    "score": 18,
+    "match_type": "none",
+    "kind": "journal_article"
+  },
+  {
+    "id": "seedlist:lib-erixson-2019-estate-division-equal-sharing",
+    "title": "Estate division: equal sharing, exchange motives, and Cinderella effects",
+    "authors": [
+      "Oscar Erixson",
+      "Henry Ohlsson"
+    ],
+    "year": 2019,
+    "source": "Journal of Population Economics",
+    "doi": "10.1007/s00148-018-0727-7",
+    "url": "https://doi.org/10.1007/s00148-018-0727-7",
+    "provider": "crossref",
+    "review_status": "pending",
+    "evidence_level": "metadata_only",
+    "collection": "seedlist",
+    "topics": [
+      "Wealth and inheritance",
+      "Family structure"
     ],
     "source_ids": [],
     "score": 18,
@@ -2486,6 +2634,30 @@
     "kind": "journal_article"
   },
   {
+    "id": "seedlist:lib-erola-2017-the-replaceable",
+    "title": "The Replaceable: The Inheritance of Paternal and Maternal Socioeconomic Statuses in Non-Standard Families",
+    "authors": [
+      "Jani Erola",
+      "Marika Jalovaara"
+    ],
+    "year": 2016,
+    "source": "Social Forces",
+    "doi": "10.1093/sf/sow089",
+    "url": "https://doi.org/10.1093/sf/sow089",
+    "provider": "crossref",
+    "review_status": "pending",
+    "evidence_level": "metadata_only",
+    "collection": "seedlist",
+    "topics": [
+      "Intergenerational mobility",
+      "Family structure"
+    ],
+    "source_ids": [],
+    "score": 18,
+    "match_type": "none",
+    "kind": "journal_article"
+  },
+  {
     "id": "seedlist:heckman-2017-the-scandinavian-fantasy-the",
     "title": "The Scandinavian Fantasy: The Sources of Intergenerational Mobility in Denmark and the US",
     "authors": [
@@ -2820,6 +2992,29 @@
     "topics": [
       "Childhood and education",
       "Institutions and policy"
+    ],
+    "source_ids": [],
+    "score": 18,
+    "match_type": "none",
+    "kind": "journal_article"
+  },
+  {
+    "id": "seedlist:lib-bowman-2012-the-new-illegitimacy-children",
+    "title": "The New Illegitimacy: Children of Cohabiting Couples and Stepchildren",
+    "authors": [
+      "Cynthia Grant Bowman"
+    ],
+    "year": 2012,
+    "source": "American University Journal of Gender, Social Policy & the Law",
+    "doi": null,
+    "url": "https://digitalcommons.wcl.american.edu/jgspl/vol20/iss3/3/",
+    "provider": "seedlist",
+    "review_status": "pending",
+    "evidence_level": "metadata_only",
+    "collection": "seedlist",
+    "topics": [
+      "Institutions and policy",
+      "Family structure"
     ],
     "source_ids": [],
     "score": 18,
@@ -3255,6 +3450,29 @@
     "version_count": 2
   },
   {
+    "id": "seedlist:lib-cox-2007-biological-basics-and-the",
+    "title": "Biological Basics and the Economics of the Family",
+    "authors": [
+      "Donald Cox"
+    ],
+    "year": 2007,
+    "source": "Journal of Economic Perspectives",
+    "doi": "10.1257/jep.21.2.91",
+    "url": "https://doi.org/10.1257/jep.21.2.91",
+    "provider": "crossref",
+    "review_status": "pending",
+    "evidence_level": "metadata_only",
+    "collection": "seedlist",
+    "topics": [
+      "Genes, health and endowments",
+      "Data, methods and theory"
+    ],
+    "source_ids": [],
+    "score": 18,
+    "match_type": "none",
+    "kind": "journal_article"
+  },
+  {
     "id": "seedlist:machin-2007-education-expansion-and-intergenerational",
     "title": "Education Expansion and Intergenerational Mobility in Britain",
     "authors": [
@@ -3489,6 +3707,30 @@
     "collection": "seedlist",
     "topics": [
       "Preferences and norms",
+      "Family structure"
+    ],
+    "source_ids": [],
+    "score": 18,
+    "match_type": "none",
+    "kind": "journal_article"
+  },
+  {
+    "id": "seedlist:lib-hofferth-2003-are-all-dads-equal",
+    "title": "Are All Dads Equal? Biology Versus Marriage as a Basis for Paternal Investment",
+    "authors": [
+      "Sandra L. Hofferth",
+      "Kermyt G. Anderson"
+    ],
+    "year": 2003,
+    "source": "Journal of Marriage and Family",
+    "doi": "10.1111/j.1741-3737.2003.00213.x",
+    "url": "https://doi.org/10.1111/j.1741-3737.2003.00213.x",
+    "provider": "crossref",
+    "review_status": "pending",
+    "evidence_level": "metadata_only",
+    "collection": "seedlist",
+    "topics": [
+      "Childhood and education",
       "Family structure"
     ],
     "source_ids": [],
@@ -3751,6 +3993,52 @@
     "kind": "journal_article"
   },
   {
+    "id": "seedlist:lib-mcgarry-2001-the-cost-of-equality",
+    "title": "The cost of equality: unequal bequests and tax avoidance",
+    "authors": [
+      "Kathleen M. McGarry"
+    ],
+    "year": 2001,
+    "source": "Journal of Public Economics",
+    "doi": "10.1016/s0047-2727(00)00100-6",
+    "url": "https://doi.org/10.1016/s0047-2727(00)00100-6",
+    "provider": "crossref",
+    "review_status": "pending",
+    "evidence_level": "metadata_only",
+    "collection": "seedlist",
+    "topics": [
+      "Wealth and inheritance",
+      "Institutions and policy"
+    ],
+    "source_ids": [],
+    "score": 18,
+    "match_type": "none",
+    "kind": "journal_article"
+  },
+  {
+    "id": "seedlist:lib-gary-2000-adapting-intestacy-laws-to",
+    "title": "Adapting Intestacy Laws to Changing Families",
+    "authors": [
+      "Susan N. Gary"
+    ],
+    "year": 2000,
+    "source": "Law & Inequality",
+    "doi": "10.24926/25730037.303",
+    "url": "https://doi.org/10.24926/25730037.303",
+    "provider": "crossref",
+    "review_status": "pending",
+    "evidence_level": "metadata_only",
+    "collection": "seedlist",
+    "topics": [
+      "Institutions and policy",
+      "Family structure"
+    ],
+    "source_ids": [],
+    "score": 18,
+    "match_type": "none",
+    "kind": "journal_article"
+  },
+  {
     "id": "seedlist:solon-2000-correlations-between-neighboring-children",
     "title": "Correlations between Neighboring Children in Their Subsequent Educational Attainment",
     "authors": [
@@ -3952,6 +4240,54 @@
     "topics": [
       "Preferences and norms",
       "Institutions and policy"
+    ],
+    "source_ids": [],
+    "score": 18,
+    "match_type": "none",
+    "kind": "journal_article"
+  },
+  {
+    "id": "seedlist:lib-hanson-1995-intestate-succession-for-stepchildren",
+    "title": "Intestate Succession for Stepchildren: California Leads the Way, but Has It Gone Far Enough",
+    "authors": [
+      "Thomas M. Hanson"
+    ],
+    "year": 1995,
+    "source": "Hastings Law Journal",
+    "doi": null,
+    "url": "https://repository.uclawsf.edu/hastings_law_journal/vol47/iss1/7/",
+    "provider": "seedlist",
+    "review_status": "pending",
+    "evidence_level": "metadata_only",
+    "collection": "seedlist",
+    "topics": [
+      "Institutions and policy",
+      "Family structure"
+    ],
+    "source_ids": [],
+    "score": 18,
+    "match_type": "none",
+    "kind": "journal_article"
+  },
+  {
+    "id": "seedlist:lib-holtz-eakin-1994-entrepreneurial-decisions-and",
+    "title": "Entrepreneurial Decisions and Liquidity Constraints",
+    "authors": [
+      "Douglas Holtz‐Eakin",
+      "David Joulfaian",
+      "Harvey S. Rosen"
+    ],
+    "year": 1994,
+    "source": "RAND Journal of Economics",
+    "doi": "10.2307/2555834",
+    "url": "https://doi.org/10.2307/2555834",
+    "provider": "crossref",
+    "review_status": "pending",
+    "evidence_level": "metadata_only",
+    "collection": "seedlist",
+    "topics": [
+      "Wealth and inheritance",
+      "Networks and occupations"
     ],
     "source_ids": [],
     "score": 18,
@@ -4848,6 +5184,61 @@
     "version_count": 2
   },
   {
+    "id": "seedlist:lib-francesconi-2023-unequal-bequests",
+    "title": "Unequal bequests",
+    "authors": [
+      "Marco Francesconi",
+      "Robert A. Pollak",
+      "Domenico Tabasso"
+    ],
+    "year": 2023,
+    "source": "European Economic Review",
+    "doi": "10.1016/j.euroecorev.2023.104513",
+    "url": "https://doi.org/10.1016/j.euroecorev.2023.104513",
+    "provider": "crossref",
+    "review_status": "pending",
+    "evidence_level": "metadata_only",
+    "collection": "seedlist",
+    "topics": [
+      "Wealth and inheritance"
+    ],
+    "source_ids": [
+      "working_paper_series:cepr-discussion-papers",
+      "working_paper_series:iza-discussion-papers",
+      "working_paper_series:nber-working-papers"
+    ],
+    "score": 16,
+    "match_type": "possible",
+    "kind": "journal_article",
+    "versions": [
+      {
+        "doi": null,
+        "url": "https://ideas.repec.org/p/cpr/ceprdp/10401.html",
+        "source": "CEPR Discussion Papers",
+        "provider": "repec"
+      },
+      {
+        "doi": null,
+        "url": "https://ideas.repec.org/p/iza/izadps/dp8813.html",
+        "source": "IZA Discussion Papers",
+        "provider": "repec"
+      },
+      {
+        "doi": "10.3386/w21692",
+        "url": "https://doi.org/10.3386/w21692",
+        "source": "NBER Working Papers",
+        "provider": "crossref"
+      },
+      {
+        "doi": "10.1016/j.euroecorev.2023.104513",
+        "url": "https://doi.org/10.1016/j.euroecorev.2023.104513",
+        "source": "European Economic Review",
+        "provider": "crossref"
+      }
+    ],
+    "version_count": 4
+  },
+  {
     "id": "seedlist:antonie-2022-intergenerational-mobility-in-a",
     "title": "Intergenerational Mobility in a Mid-Atlantic Economy: Canada, 1871–1901",
     "authors": [
@@ -4866,6 +5257,29 @@
     "collection": "seedlist",
     "topics": [
       "Intergenerational mobility"
+    ],
+    "source_ids": [],
+    "score": 16,
+    "match_type": "none",
+    "kind": "journal_article"
+  },
+  {
+    "id": "seedlist:lib-druedahl-2022-long-run-saving-dynamics",
+    "title": "Long-Run Saving Dynamics: Evidence from Unexpected Inheritances",
+    "authors": [
+      "Jeppe Druedahl",
+      "Alessandro Tang-Andersen Martinello"
+    ],
+    "year": 2022,
+    "source": "Review of Economics and Statistics",
+    "doi": "10.1162/rest_a_01004",
+    "url": "https://doi.org/10.1162/rest_a_01004",
+    "provider": "crossref",
+    "review_status": "pending",
+    "evidence_level": "metadata_only",
+    "collection": "seedlist",
+    "topics": [
+      "Wealth and inheritance"
     ],
     "source_ids": [],
     "score": 16,
@@ -5081,6 +5495,29 @@
     "version_count": 2
   },
   {
+    "id": "seedlist:lib-doorley-2020-labour-supply-after-inheritances",
+    "title": "Labour Supply after Inheritances and the Role of Expectations",
+    "authors": [
+      "Karina Doorley",
+      "Nico Pestel"
+    ],
+    "year": 2020,
+    "source": "Oxford Bulletin of Economics and Statistics",
+    "doi": "10.1111/obes.12353",
+    "url": "https://doi.org/10.1111/obes.12353",
+    "provider": "crossref",
+    "review_status": "pending",
+    "evidence_level": "metadata_only",
+    "collection": "seedlist",
+    "topics": [
+      "Wealth and inheritance"
+    ],
+    "source_ids": [],
+    "score": 16,
+    "match_type": "none",
+    "kind": "journal_article"
+  },
+  {
     "id": "crossref:10.3368/jhr.57.2.0219-10014r2",
     "title": "Shackled to the Soil? Inherited Land, Birth Order, and Labor Mobility",
     "authors": [
@@ -5271,6 +5708,47 @@
     "score": 16,
     "match_type": "none",
     "kind": "working_paper"
+  },
+  {
+    "id": "seedlist:lib-elinder-2018-inheritance-and-wealth-inequality",
+    "title": "Inheritance and wealth inequality: Evidence from population registers",
+    "authors": [
+      "Mikael Elinder",
+      "Oscar Erixson",
+      "Daniel Waldenström"
+    ],
+    "year": 2018,
+    "source": "Journal of Public Economics",
+    "doi": "10.1016/j.jpubeco.2018.06.012",
+    "url": "https://doi.org/10.1016/j.jpubeco.2018.06.012",
+    "provider": "crossref",
+    "review_status": "pending",
+    "evidence_level": "metadata_only",
+    "collection": "seedlist",
+    "topics": [
+      "Wealth and inheritance"
+    ],
+    "source_ids": [
+      "working_paper_series:iza-discussion-papers"
+    ],
+    "score": 16,
+    "match_type": "possible",
+    "kind": "journal_article",
+    "versions": [
+      {
+        "doi": null,
+        "url": "https://ideas.repec.org/p/iza/izadps/dp9839.html",
+        "source": "IZA Discussion Papers",
+        "provider": "repec"
+      },
+      {
+        "doi": "10.1016/j.jpubeco.2018.06.012",
+        "url": "https://doi.org/10.1016/j.jpubeco.2018.06.012",
+        "source": "Journal of Public Economics",
+        "provider": "crossref"
+      }
+    ],
+    "version_count": 2
   },
   {
     "id": "seedlist:guell-2018-new-directions-in-measuring",
@@ -6614,6 +7092,29 @@
     "kind": "working_paper"
   },
   {
+    "id": "seedlist:lib-hochguertel-2009-compensatory-inter-vivos-gifts",
+    "title": "Compensatory inter vivos gifts",
+    "authors": [
+      "Stefan Hochguertel",
+      "Henry Ohlsson"
+    ],
+    "year": 2009,
+    "source": "Journal of Applied Econometrics",
+    "doi": "10.1002/jae.1071",
+    "url": "https://doi.org/10.1002/jae.1071",
+    "provider": "crossref",
+    "review_status": "pending",
+    "evidence_level": "metadata_only",
+    "collection": "seedlist",
+    "topics": [
+      "Wealth and inheritance"
+    ],
+    "source_ids": [],
+    "score": 16,
+    "match_type": "none",
+    "kind": "journal_article"
+  },
+  {
     "id": "seedlist:royer-2009-separated-at-girth-us",
     "title": "Separated at Girth: US Twin Estimates of the Effects of Birth Weight",
     "authors": [
@@ -6652,6 +7153,29 @@
     "collection": "seedlist",
     "topics": [
       "Intergenerational mobility"
+    ],
+    "source_ids": [],
+    "score": 16,
+    "match_type": "none",
+    "kind": "journal_article"
+  },
+  {
+    "id": "seedlist:lib-halvorsen-2008-parents-desire-to-make",
+    "title": "Parents' Desire to Make Equal Inter Vivos Transfers",
+    "authors": [
+      "Elin Halvorsen",
+      "Thor Olav Thoresen"
+    ],
+    "year": 2008,
+    "source": "CESifo Working Paper",
+    "doi": "10.2139/ssrn.1306264",
+    "url": "https://doi.org/10.2139/ssrn.1306264",
+    "provider": "crossref",
+    "review_status": "pending",
+    "evidence_level": "metadata_only",
+    "collection": "seedlist",
+    "topics": [
+      "Wealth and inheritance"
     ],
     "source_ids": [],
     "score": 16,
@@ -7059,6 +7583,28 @@
     "kind": "book_chapter"
   },
   {
+    "id": "seedlist:lib-brown-2006-informal-care-and-the",
+    "title": "Informal Care and the Division of End-of-Life Transfers",
+    "authors": [
+      "Meta Brown"
+    ],
+    "year": 2006,
+    "source": "Journal of Human Resources",
+    "doi": "10.3368/jhr.xli.1.191",
+    "url": "https://doi.org/10.3368/jhr.xli.1.191",
+    "provider": "crossref",
+    "review_status": "pending",
+    "evidence_level": "metadata_only",
+    "collection": "seedlist",
+    "topics": [
+      "Wealth and inheritance"
+    ],
+    "source_ids": [],
+    "score": 16,
+    "match_type": "none",
+    "kind": "journal_article"
+  },
+  {
     "id": "seedlist:grawe-2006-lifecycle-bias-in-estimates",
     "title": "Lifecycle bias in estimates of intergenerational earnings persistence",
     "authors": [
@@ -7197,7 +7743,16 @@
     ],
     "score": 16,
     "match_type": "none",
-    "kind": "journal_article"
+    "kind": "journal_article",
+    "versions": [
+      {
+        "doi": "10.1162/003465304323031175",
+        "url": "https://doi.org/10.1162/003465304323031175",
+        "source": "Review of Economics and Statistics",
+        "provider": "crossref"
+      }
+    ],
+    "version_count": 1
   },
   {
     "id": "crossref:10.1111/j.1467-937x.2004.00302.x",
@@ -7367,6 +7922,38 @@
     "kind": "journal_article"
   },
   {
+    "id": "seedlist:lib-laitner-2001-bequest-motives-a-comparison",
+    "title": "Bequest motives: a comparison of Sweden and the United States",
+    "authors": [
+      "John Laitner",
+      "Henry Ohlsson"
+    ],
+    "year": 2001,
+    "source": "Journal of Public Economics",
+    "doi": "10.1016/s0047-2727(00)00101-8",
+    "url": "https://doi.org/10.1016/s0047-2727(00)00101-8",
+    "provider": "crossref",
+    "review_status": "pending",
+    "evidence_level": "metadata_only",
+    "collection": "seedlist",
+    "topics": [
+      "Wealth and inheritance"
+    ],
+    "source_ids": [],
+    "score": 16,
+    "match_type": "none",
+    "kind": "journal_article",
+    "versions": [
+      {
+        "doi": "10.1016/s0047-2727(00)00101-8",
+        "url": "https://doi.org/10.1016/s0047-2727(00)00101-8",
+        "source": "Journal of Public Economics",
+        "provider": "crossref"
+      }
+    ],
+    "version_count": 1
+  },
+  {
     "id": "seedlist:osterbacka-2001-family-background-and-economic",
     "title": "Family Background and Economic Status in Finland",
     "authors": [
@@ -7453,6 +8040,45 @@
     "score": 16,
     "match_type": "none",
     "kind": "journal_article"
+  },
+  {
+    "id": "seedlist:lib-mcgarry-1999-inter-vivos-transfers-and",
+    "title": "Inter vivos transfers and intended bequests",
+    "authors": [
+      "Kathleen M. McGarry"
+    ],
+    "year": 1999,
+    "source": "Journal of Public Economics",
+    "doi": "10.1016/s0047-2727(99)00017-1",
+    "url": "https://doi.org/10.1016/s0047-2727(99)00017-1",
+    "provider": "crossref",
+    "review_status": "pending",
+    "evidence_level": "metadata_only",
+    "collection": "seedlist",
+    "topics": [
+      "Wealth and inheritance"
+    ],
+    "source_ids": [
+      "working_paper_series:nber-working-papers"
+    ],
+    "score": 16,
+    "match_type": "possible",
+    "kind": "journal_article",
+    "versions": [
+      {
+        "doi": "10.3386/w6345",
+        "url": "https://doi.org/10.3386/w6345",
+        "source": "NBER Working Papers",
+        "provider": "crossref"
+      },
+      {
+        "doi": "10.1016/s0047-2727(99)00017-1",
+        "url": "https://doi.org/10.1016/s0047-2727(99)00017-1",
+        "source": "Journal of Public Economics",
+        "provider": "crossref"
+      }
+    ],
+    "version_count": 2
   },
   {
     "id": "seedlist:blau-1999-the-effect-of-income",
@@ -7612,6 +8238,28 @@
     "kind": "journal_article"
   },
   {
+    "id": "seedlist:lib-wilhelm-1996-bequest-behavior-and-the",
+    "title": "Bequest Behavior and the Effect of Heirs' Earnings: Testing the Altruistic Model of Bequests",
+    "authors": [
+      "Mark O. Wilhelm"
+    ],
+    "year": 1996,
+    "source": "American Economic Review",
+    "doi": null,
+    "url": "https://ideas.repec.org/a/aea/aecrev/v86y1996i4p874-92.html",
+    "provider": "repec",
+    "review_status": "pending",
+    "evidence_level": "metadata_only",
+    "collection": "seedlist",
+    "topics": [
+      "Wealth and inheritance"
+    ],
+    "source_ids": [],
+    "score": 16,
+    "match_type": "none",
+    "kind": "journal_article"
+  },
+  {
     "id": "repec:RePEc:cpr:ceprdp:1396",
     "title": "Intergenerational Redistribution with Short-lived Governments",
     "authors": [
@@ -7702,6 +8350,30 @@
     "kind": "journal_article"
   },
   {
+    "id": "seedlist:lib-holtz-eakin-1993-the-carnegie-conjecture",
+    "title": "The Carnegie Conjecture: Some Empirical Evidence",
+    "authors": [
+      "Douglas Holtz‐Eakin",
+      "David Joulfaian",
+      "Harvey S. Rosen"
+    ],
+    "year": 1993,
+    "source": "Quarterly Journal of Economics",
+    "doi": "10.2307/2118337",
+    "url": "https://doi.org/10.2307/2118337",
+    "provider": "crossref",
+    "review_status": "pending",
+    "evidence_level": "metadata_only",
+    "collection": "seedlist",
+    "topics": [
+      "Wealth and inheritance"
+    ],
+    "source_ids": [],
+    "score": 16,
+    "match_type": "none",
+    "kind": "journal_article"
+  },
+  {
     "id": "crossref:10.2307/2109662",
     "title": "Inter-Vivos Transfers and Intergenerational Exchange",
     "authors": [
@@ -7725,7 +8397,16 @@
     ],
     "score": 16,
     "match_type": "none",
-    "kind": "journal_article"
+    "kind": "journal_article",
+    "versions": [
+      {
+        "doi": "10.2307/2109662",
+        "url": "https://doi.org/10.2307/2109662",
+        "source": "Review of Economics and Statistics",
+        "provider": "crossref"
+      }
+    ],
+    "version_count": 1
   },
   {
     "id": "seedlist:solon-1992-intergenerational-income-mobility-in",
@@ -7743,6 +8424,30 @@
     "collection": "seedlist",
     "topics": [
       "Intergenerational mobility"
+    ],
+    "source_ids": [],
+    "score": 16,
+    "match_type": "none",
+    "kind": "journal_article"
+  },
+  {
+    "id": "seedlist:lib-altonji-1992-is-the-extended-family",
+    "title": "Is the Extended Family Altruistically Linked? Direct Tests Using Micro Data",
+    "authors": [
+      "Joseph G. Altonji",
+      "Fumio Hayashi",
+      "Laurence J. Kotlikoff"
+    ],
+    "year": 1992,
+    "source": "American Economic Review",
+    "doi": null,
+    "url": "https://ideas.repec.org/a/aea/aecrev/v82y1992i5p1177-98.html",
+    "provider": "repec",
+    "review_status": "pending",
+    "evidence_level": "metadata_only",
+    "collection": "seedlist",
+    "topics": [
+      "Wealth and inheritance"
     ],
     "source_ids": [],
     "score": 16,
@@ -7914,6 +8619,28 @@
     "kind": "journal_article"
   },
   {
+    "id": "seedlist:lib-cox-1987-motives-for-private-income",
+    "title": "Motives for Private Income Transfers",
+    "authors": [
+      "Donald Cox"
+    ],
+    "year": 1987,
+    "source": "Journal of Political Economy",
+    "doi": "10.1086/261470",
+    "url": "https://doi.org/10.1086/261470",
+    "provider": "crossref",
+    "review_status": "pending",
+    "evidence_level": "metadata_only",
+    "collection": "seedlist",
+    "topics": [
+      "Wealth and inheritance"
+    ],
+    "source_ids": [],
+    "score": 16,
+    "match_type": "none",
+    "kind": "journal_article"
+  },
+  {
     "id": "seedlist:jenkins-1987-snapshots-versus-movies-lifecycle",
     "title": "Snapshots versus movies",
     "authors": [
@@ -7952,6 +8679,30 @@
     "collection": "seedlist",
     "topics": [
       "Intergenerational mobility"
+    ],
+    "source_ids": [],
+    "score": 16,
+    "match_type": "none",
+    "kind": "journal_article"
+  },
+  {
+    "id": "seedlist:lib-bernheim-1985-the-strategic-bequest-motive",
+    "title": "The Strategic Bequest Motive",
+    "authors": [
+      "B. Douglas Bernheim",
+      "Andrei Shleifer",
+      "Lawrence H. Summers"
+    ],
+    "year": 1985,
+    "source": "Journal of Political Economy",
+    "doi": "10.1086/261351",
+    "url": "https://doi.org/10.1086/261351",
+    "provider": "crossref",
+    "review_status": "pending",
+    "evidence_level": "metadata_only",
+    "collection": "seedlist",
+    "topics": [
+      "Wealth and inheritance"
     ],
     "source_ids": [],
     "score": 16,
@@ -17205,7 +17956,7 @@
       {
         "doi": "10.1093/restud/rdac016",
         "url": "https://doi.org/10.1093/restud/rdac016",
-        "source": "The Review of Economic Studies",
+        "source": "Review of Economic Studies",
         "provider": "crossref"
       },
       {
@@ -26953,32 +27704,6 @@
     "kind": "working_paper"
   },
   {
-    "id": "repec:RePEc:iza:izadps:dp9839",
-    "title": "Inheritance and Wealth Inequality: Evidence from Population Registers",
-    "authors": [
-      "Elinder, Mikael",
-      "Erixson, Oscar",
-      "Waldenström, Daniel"
-    ],
-    "year": 2016,
-    "source": "IZA Discussion Papers",
-    "doi": null,
-    "url": "https://ideas.repec.org/p/iza/izadps/dp9839.html",
-    "provider": "repec",
-    "review_status": "pending",
-    "evidence_level": "metadata_only",
-    "collection": "pilot23",
-    "topics": [
-      "Wealth and inheritance"
-    ],
-    "source_ids": [
-      "working_paper_series:iza-discussion-papers"
-    ],
-    "score": 14,
-    "match_type": "none",
-    "kind": "working_paper"
-  },
-  {
     "id": "repec:RePEc:cpr:ceprdp:11387",
     "title": "Inherited Wealth and Demographic Aging",
     "authors": [
@@ -29126,55 +29851,6 @@
     "kind": "working_paper"
   },
   {
-    "id": "repec:RePEc:cpr:ceprdp:10401",
-    "title": "Unequal Bequests",
-    "authors": [
-      "Francesconi, Marco",
-      "Tabasso, Domenico",
-      "Pollak, Robert"
-    ],
-    "year": 2015,
-    "source": "CEPR Discussion Papers",
-    "doi": null,
-    "url": "https://ideas.repec.org/p/cpr/ceprdp/10401.html",
-    "provider": "repec",
-    "review_status": "pending",
-    "evidence_level": "metadata_only",
-    "collection": "pilot23",
-    "topics": [
-      "Wealth and inheritance"
-    ],
-    "source_ids": [
-      "working_paper_series:cepr-discussion-papers",
-      "working_paper_series:iza-discussion-papers",
-      "working_paper_series:nber-working-papers"
-    ],
-    "score": 14,
-    "match_type": "possible",
-    "kind": "working_paper",
-    "versions": [
-      {
-        "doi": null,
-        "url": "https://ideas.repec.org/p/cpr/ceprdp/10401.html",
-        "source": "CEPR Discussion Papers",
-        "provider": "repec"
-      },
-      {
-        "doi": null,
-        "url": "https://ideas.repec.org/p/iza/izadps/dp8813.html",
-        "source": "IZA Discussion Papers",
-        "provider": "repec"
-      },
-      {
-        "doi": "10.3386/w21692",
-        "url": "https://doi.org/10.3386/w21692",
-        "source": "NBER Working Papers",
-        "provider": "crossref"
-      }
-    ],
-    "version_count": 3
-  },
-  {
     "id": "crossref:10.3368/jhr.51.4.0214-6224r",
     "title": "Why Have Divorce Rates Fallen?: The Role of Women’s Age at Marriage",
     "authors": [
@@ -30277,14 +30953,25 @@
     "evidence_level": "metadata_only",
     "collection": "pilot23",
     "topics": [
-      "Wealth and inheritance"
+      "Wealth and inheritance",
+      "Institutions and policy",
+      "Data, methods and theory"
     ],
     "source_ids": [
       "journal:econometrica"
     ],
     "score": 14,
     "match_type": "none",
-    "kind": "journal_article"
+    "kind": "journal_article",
+    "versions": [
+      {
+        "doi": "10.3982/ecta10712",
+        "url": "https://doi.org/10.3982/ecta10712",
+        "source": "Econometrica",
+        "provider": "crossref"
+      }
+    ],
+    "version_count": 1
   },
   {
     "id": "crossref:10.3386/w19505",
@@ -40251,7 +40938,8 @@
     "evidence_level": "metadata_only",
     "collection": "pilot23",
     "topics": [
-      "Wealth and inheritance"
+      "Wealth and inheritance",
+      "Data, methods and theory"
     ],
     "source_ids": [
       "journal:journal-of-political-economy",
@@ -43276,30 +43964,6 @@
     "kind": "working_paper"
   },
   {
-    "id": "crossref:10.3386/w6345",
-    "title": "Inter vivos Transfers and Intended Bequests",
-    "authors": [
-      "Kathleen McGarry"
-    ],
-    "year": 1997,
-    "source": "NBER Working Papers",
-    "doi": "10.3386/w6345",
-    "url": "https://doi.org/10.3386/w6345",
-    "provider": "crossref",
-    "review_status": "pending",
-    "evidence_level": "metadata_only",
-    "collection": "pilot23",
-    "topics": [
-      "Wealth and inheritance"
-    ],
-    "source_ids": [
-      "working_paper_series:nber-working-papers"
-    ],
-    "score": 14,
-    "match_type": "none",
-    "kind": "working_paper"
-  },
-  {
     "id": "crossref:10.2307/146246",
     "title": "Intergenerational Correlations in Labor Market Status: A Comparison of the United States and Germany",
     "authors": [
@@ -43817,7 +44481,16 @@
     ],
     "score": 14,
     "match_type": "none",
-    "kind": "journal_article"
+    "kind": "journal_article",
+    "versions": [
+      {
+        "doi": "10.2307/146138",
+        "url": "https://doi.org/10.2307/146138",
+        "source": "Journal of Human Resources",
+        "provider": "crossref"
+      }
+    ],
+    "version_count": 1
   },
   {
     "id": "crossref:10.2307/146136",
@@ -44955,29 +45628,6 @@
     "source": "Journal of Economic Behavior & Organization",
     "doi": "10.1016/s0167-2681(01)00166-4",
     "url": "https://doi.org/10.1016/s0167-2681(01)00166-4",
-    "provider": "crossref",
-    "match_type": "none",
-    "possible_work_id": null,
-    "review_status": "pending",
-    "score": 11,
-    "evidence_level": "metadata_only",
-    "collection": "historical",
-    "topics": [
-      "Wealth and inheritance"
-    ],
-    "source_ids": []
-  },
-  {
-    "id": "crossref:10.1016/s0047-2727(00)00101-8",
-    "title": "Bequest motives: a comparison of Sweden and the United States",
-    "authors": [
-      "John Laitner",
-      "Henry Ohlsson"
-    ],
-    "year": 2001,
-    "source": "Journal of Public Economics",
-    "doi": "10.1016/s0047-2727(00)00101-8",
-    "url": "https://doi.org/10.1016/s0047-2727(00)00101-8",
     "provider": "crossref",
     "match_type": "none",
     "possible_work_id": null,

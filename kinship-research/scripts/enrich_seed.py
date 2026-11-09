@@ -275,11 +275,18 @@ def openalex_by_doi(dois: list[str]) -> dict[str, dict]:
     return found
 
 
-def main() -> None:
-    records = list(csv.DictReader(SRC.open(encoding='utf-8-sig')))
+def main(argv: list[str] | None = None) -> None:
+    import argparse
+    ap = argparse.ArgumentParser(description='Match a cleaned seed CSV to Crossref/OpenAlex.')
+    ap.add_argument('--src', type=Path, default=SRC, help='cleaned input CSV')
+    ap.add_argument('--out', type=Path, default=OUT, help='enriched output CSV')
+    ap.add_argument('--corrections', type=Path, default=CORRECTIONS, help='hand-checked corrections CSV')
+    args = ap.parse_args(argv)
+    src, out, corrections_path = args.src.resolve(), args.out.resolve(), args.corrections.resolve()
+    records = list(csv.DictReader(src.open(encoding='utf-8-sig')))
     corrections: dict[str, list[dict]] = {}
-    if CORRECTIONS.exists():
-        for c in csv.DictReader(CORRECTIONS.open(encoding='utf-8-sig')):
+    if corrections_path.exists():
+        for c in csv.DictReader(corrections_path.open(encoding='utf-8-sig')):
             corrections.setdefault(c['seed_id'], []).append(c)
     unknown = set(corrections) - {r['seed_id'] for r in records}
     assert not unknown, f'corrections.csv refers to unknown seed_ids: {unknown}'
@@ -348,13 +355,13 @@ def main() -> None:
     fields: list[str] = []
     for rec in records:
         fields += [k for k in rec if k not in fields]
-    with OUT.open('w', encoding='utf-8-sig', newline='') as f:
+    with out.open('w', encoding='utf-8-sig', newline='') as f:
         w = csv.DictWriter(f, fieldnames=fields)
         w.writeheader()
         w.writerows(records)
 
     status = {s: sum(r['match_status'] == s for r in records) for s in ('matched', 'probable', 'matched_openalex_only', 'matched_url', 'unmatched')}
-    print(f'Wrote {OUT.relative_to(ROOT)}')
+    print(f'Wrote {out.relative_to(ROOT)}')
     print('Match status:', status)
     print('In OpenAlex:', sum(bool(r.get('openalex_id')) for r in records))
     print('Working-paper version replaced by journal version:', sum(bool(r.get('working_paper_doi')) for r in records))

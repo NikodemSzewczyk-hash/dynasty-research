@@ -187,7 +187,10 @@ Note: under these rules, Voena 2015 is Adjacent, not Core. It should either be m
 | Pezzin & Schone 1999, Demography, *Parental Marital Disruption and Intergenerational Transfers* | Adjacent | B1, B6 (H3) |
 | US law articles on stepchild intestacy (Law folder) | Core | C, B6 (H11) |
 | Jakobsen, Jakobsen, Kleven & Zucman 2020, QJE, *Wealth Taxation and Wealth Accumulation* | **Out** | E1 |
-| Kalmijn 2013, JMF, *Adult Children's Relationships With Married Parents, Divorced Parents, and Stepparents* | **To code** | Boundary test for E5 vs H3 |
+| Kalmijn 2013, JMF, *Adult Children's Relationships With Married Parents, Divorced Parents, and Stepparents* | Adjacent | B6 (I2): family ties studied, no economic outcome |
+| Locks 2026, JPubE, *Behavioral Responses to Inheritance Taxes: Evidence from Brazil* | Core | C, B1 (H7) |
+
+These rows are coded in `registry/seed/library_scope_coding.csv` (the inheritance library, 43 records).
 
 Note: Jakobsen et al. is a useful **negative** case. It belongs in the research library but not on the site: it is about wealth accumulation, not transmission.
 

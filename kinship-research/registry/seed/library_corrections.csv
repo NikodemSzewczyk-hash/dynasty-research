@@ -1,0 +1,6 @@
+seed_id,action,value,note
+lib-cardenas-2020-lines-drawn-in-blood,set_doi,10.7202/1076906ar,DOI printed on the article (Erudit)
+lib-altonji-1992-is-the-extended-family,set_url,https://ideas.repec.org/a/aea/aecrev/v82y1992i5p1177-98.html,"AER 82(5): 1177-1198, pre-DOI; Crossref has only the 1989 NBER working paper. RePEc page verified 2026-11-09: title, authors, volume, issue and pages match"
+lib-wilhelm-1996-bequest-behavior-and-the,set_url,https://ideas.repec.org/a/aea/aecrev/v86y1996i4p874-92.html,"AER 86(4): 874-892, pre-DOI; no Crossref record. RePEc page verified 2026-11-09: title, author, volume, issue and pages match"
+lib-bowman-2012-the-new-illegitimacy-children,set_url,https://digitalcommons.wcl.american.edu/jgspl/vol20/iss3/3/,"Journal repository page printed on the PDF; verified 2026-11-09: title, author and volume match. Crossref/OpenAlex only had a 2018 SSRN posting"
+lib-hanson-1995-intestate-succession-for-stepchildren,set_url,https://repository.uclawsf.edu/hastings_law_journal/vol47/iss1/7/,"Journal repository page printed on the PDF; verified 2026-11-09: title, author, volume 47 and first page 257 match"

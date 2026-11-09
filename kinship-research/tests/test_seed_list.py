@@ -9,7 +9,7 @@ import unittest
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/"scripts"))
 from publish_pilot_discovery import seed_records,curated_records,combine
-from export_seed_list import export_rows,CHANNEL_TOPICS
+from export_seed_list import export_rows,collect_all,CHANNEL_TOPICS
 
 SEED=ROOT/"registry/seed"
 
@@ -87,7 +87,14 @@ class SeedExportTests(unittest.TestCase):
 
     def test_committed_jsonl_matches_inputs(self):
         committed=[json.loads(l) for l in (ROOT/"registry/seed-list.jsonl").read_text(encoding="utf-8").splitlines() if l.strip()]
-        self.assertEqual(committed,json.loads(json.dumps(self.rows,ensure_ascii=False)))
+        rows,_,_=collect_all()
+        self.assertEqual(committed,json.loads(json.dumps(rows,ensure_ascii=False)))
+
+    def test_sources_are_tagged_and_ids_unique(self):
+        rows,_,_=collect_all()
+        self.assertEqual(len({r["id"] for r in rows}),len(rows))
+        self.assertTrue({r["seed_source"] for r in rows}<={"spreadsheet","inheritance-library"})
+        self.assertTrue(all(r["review_status"]=="pending" for r in rows))
 
 if __name__=="__main__":
     unittest.main()
