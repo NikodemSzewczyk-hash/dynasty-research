@@ -1,0 +1,4314 @@
+{
+ "generated_on": "2026-11-07",
+ "method": "[auto-check 2026-11-07 by Claude vs DOI registry, Crossref, OpenAlex; editor to confirm]",
+ "rows": [
+  {
+   "doi": "10.1016/s0165-1765(00)00293-7",
+   "sample": {
+    "title": "Income inequality and economic development: evidence from the threshold regression model",
+    "authors": [
+     "Andreas Savvides",
+     "Thanasis Stengos"
+    ],
+    "year": 2000,
+    "source": "Economics Letters"
+   },
+   "doi_registered": true,
+   "crossref_title": "Income inequality and economic development: evidence from the threshold regression model",
+   "title_check": "match",
+   "crossref_authors": [
+    "Savvides",
+    "Stengos"
+   ],
+   "crossref_years": {
+    "published": 2000,
+    "published-print": 2000,
+    "issued": 2000,
+    "created": 2002
+   },
+   "crossref_type": "journal-article",
+   "crossref_container": "Economics Letters",
+   "crossref_relations": {},
+   "openalex_year": 2000,
+   "openalex_id": "https://openalex.org/W2016983993",
+   "doi_embedded_year": null,
+   "corpus_duplicates": [],
+   "openalex_same_title_other_doi": [],
+   "issues": [],
+   "notes": [],
+   "metadata_verified": "yes",
+   "duplicate_version": "no",
+   "row": 0
+  },
+  {
+   "doi": "10.1016/s0165-1765(01)00374-3",
+   "sample": {
+    "title": "External sector and income inequality in interdependent economies using a dynamic panel data approach",
+    "authors": [
+     "César Calderón",
+     "Alberto Chong"
+    ],
+    "year": 2001,
+    "source": "Economics Letters"
+   },
+   "doi_registered": true,
+   "crossref_title": "External sector and income inequality in interdependent economies using a dynamic panel data approach",
+   "title_check": "match",
+   "crossref_authors": [
+    "Calderón",
+    "Chong"
+   ],
+   "crossref_years": {
+    "published": 2001,
+    "published-print": 2001,
+    "issued": 2001,
+    "created": 2002
+   },
+   "crossref_type": "journal-article",
+   "crossref_container": "Economics Letters",
+   "crossref_relations": {},
+   "openalex_year": 2001,
+   "openalex_id": "https://openalex.org/W2170652866",
+   "doi_embedded_year": null,
+   "corpus_duplicates": [],
+   "openalex_same_title_other_doi": [],
+   "issues": [],
+   "notes": [],
+   "metadata_verified": "yes",
+   "duplicate_version": "no",
+   "row": 1
+  },
+  {
+   "doi": "10.1016/j.red.2009.10.006",
+   "sample": {
+    "title": "Consumption, income, and wealth inequality in Canada",
+    "authors": [
+     "Matthew Brzozowski",
+     "Martin Gervais",
+     "Paul Klein",
+     "Michio Suzuki"
+    ],
+    "year": 2010,
+    "source": "Review of Economic Dynamics"
+   },
+   "doi_registered": true,
+   "crossref_title": "Consumption, income, and wealth inequality in Canada",
+   "title_check": "match",
+   "crossref_authors": [
+    "Brzozowski",
+    "Gervais",
+    "Klein",
+    "Suzuki"
+   ],
+   "crossref_years": {
+    "published": 2010,
+    "published-print": 2010,
+    "issued": 2010,
+    "created": 2009
+   },
+   "crossref_type": "journal-article",
+   "crossref_container": "Review of Economic Dynamics",
+   "crossref_relations": {},
+   "openalex_year": 2009,
+   "openalex_id": "https://openalex.org/W2150005206",
+   "doi_embedded_year": 2009,
+   "corpus_duplicates": [],
+   "openalex_same_title_other_doi": [],
+   "issues": [],
+   "notes": [
+    "online-first 2009, issue/print 2010 (citation year 2010)"
+   ],
+   "metadata_verified": "yes",
+   "duplicate_version": "no",
+   "row": 2
+  },
+  {
+   "doi": "10.1920/wp.ifs.2010.1016",
+   "sample": {
+    "title": "Explaining the socio-economic gradient in child outcomes: the intergenerational transmission of cognitive skills",
+    "authors": [
+     "Claire Crawford",
+     "Alissa Goodman",
+     "Robert Joyce"
+    ],
+    "year": 2026,
+    "source": ""
+   },
+   "doi_registered": true,
+   "crossref_title": "Explaining the socio-economic gradient in child outcomes:  the intergenerational transmission of cognitive skills",
+   "title_check": "match",
+   "crossref_authors": [
+    "Crawford",
+    "Goodman",
+    "Joyce"
+   ],
+   "crossref_years": {
+    "published": 2026,
+    "published-online": 2026,
+    "issued": 2026,
+    "created": 2017
+   },
+   "crossref_type": "report",
+   "crossref_container": "",
+   "crossref_relations": {},
+   "openalex_year": 2017,
+   "openalex_id": "https://openalex.org/W2023628960",
+   "doi_embedded_year": 2010,
+   "corpus_duplicates": [],
+   "openalex_same_title_other_doi": [],
+   "issues": [
+    "ERROR: year 2026 is a re-deposit date; DOI encodes 2010, first deposited 2017"
+   ],
+   "notes": [
+    "Crossref type: report"
+   ],
+   "metadata_verified": "no",
+   "duplicate_version": "no",
+   "row": 3
+  },
+  {
+   "doi": "10.5465/amj.2017.0769",
+   "sample": {
+    "title": "Revisiting the Portability of Performance Paradox: Employee Mobility and the Utilization of Human and Social Capital Resources",
+    "authors": [
+     "Joseph Raffiee",
+     "Heejung Byun"
+    ],
+    "year": 2020,
+    "source": "Academy of Management Journal"
+   },
+   "doi_registered": true,
+   "crossref_title": "Revisiting the Portability of Performance Paradox: Employee Mobility and the Utilization of Human and Social Capital Resources",
+   "title_check": "match",
+   "crossref_authors": [
+    "Raffiee",
+    "Byun"
+   ],
+   "crossref_years": {
+    "published": 2020,
+    "published-print": 2020,
+    "issued": 2020,
+    "created": 2019
+   },
+   "crossref_type": "journal-article",
+   "crossref_container": "Academy of Management Journal",
+   "crossref_relations": {},
+   "openalex_year": 2019,
+   "openalex_id": "https://openalex.org/W2911987465",
+   "doi_embedded_year": 2017,
+   "corpus_duplicates": [],
+   "openalex_same_title_other_doi": [],
+   "issues": [],
+   "notes": [
+    "online-first 2019, issue/print 2020 (citation year 2020)"
+   ],
+   "metadata_verified": "yes",
+   "duplicate_version": "no",
+   "row": 4
+  },
+  {
+   "doi": "10.1016/j.chieco.2019.101399",
+   "sample": {
+    "title": "Bequest motive, household portfolio choice, and wealth inequality in urban China",
+    "authors": [
+     "Xintong Yang",
+     "Li Gan"
+    ],
+    "year": 2020,
+    "source": "China Economic Review"
+   },
+   "doi_registered": true,
+   "crossref_title": "Bequest motive, household portfolio choice, and wealth inequality in urban China",
+   "title_check": "match",
+   "crossref_authors": [
+    "Yang",
+    "Gan"
+   ],
+   "crossref_years": {
+    "published": 2020,
+    "published-print": 2020,
+    "issued": 2020,
+    "created": 2019
+   },
+   "crossref_type": "journal-article",
+   "crossref_container": "China Economic Review",
+   "crossref_relations": {},
+   "openalex_year": 2019,
+   "openalex_id": "https://openalex.org/W2996781647",
+   "doi_embedded_year": 2019,
+   "corpus_duplicates": [],
+   "openalex_same_title_other_doi": [],
+   "issues": [],
+   "notes": [
+    "online-first 2019, issue/print 2020 (citation year 2020)"
+   ],
+   "metadata_verified": "yes",
+   "duplicate_version": "no",
+   "row": 5
+  },
+  {
+   "doi": "10.1920/wp.ifs.2005.0505",
+   "sample": {
+    "title": "The impact of parental income and education on the schooling of their children",
+    "authors": [
+     "Arnaud Chevalier",
+     "Harmon",
+     "Harmon",
+     "Vincent O'Sullivan",
+     "Ian Walker"
+    ],
+    "year": 2026,
+    "source": ""
+   },
+   "doi_registered": true,
+   "crossref_title": "The impact of parental income and education on the schooling of their children",
+   "title_check": "match",
+   "crossref_authors": [
+    "Chevalier",
+    "Harmon",
+    "O'Sullivan",
+    "Walker"
+   ],
+   "crossref_years": {
+    "published": 2026,
+    "published-online": 2026,
+    "issued": 2026,
+    "created": 2017
+   },
+   "crossref_type": "report",
+   "crossref_container": "",
+   "crossref_relations": {},
+   "openalex_year": 2017,
+   "openalex_id": "https://openalex.org/W2247451245",
+   "doi_embedded_year": 2005,
+   "corpus_duplicates": [],
+   "openalex_same_title_other_doi": [
+    {
+     "doi": "10.1186/2193-8997-2-8",
+     "year": 2013,
+     "type": "article",
+     "openalex_id": "https://openalex.org/W2147450495",
+     "venue": "IZA Journal of Labor Economics"
+    },
+    {
+     "doi": "10.2139/ssrn.673407",
+     "year": 2005,
+     "type": "preprint",
+     "openalex_id": "https://openalex.org/W3122109792",
+     "venue": "SSRN Electronic Journal"
+    },
+    {
+     "doi": "10.82444/warw.33663766",
+     "year": 2026,
+     "type": "preprint",
+     "openalex_id": "https://openalex.org/W7221306302",
+     "venue": "University of Warwick"
+    }
+   ],
+   "issues": [
+    "ERROR: malformed author in Crossref deposit ('Harmon, Harmon', given name missing)",
+    "ERROR: year 2026 is a re-deposit date; DOI encodes 2005, first deposited 2017"
+   ],
+   "notes": [
+    "Crossref type: report",
+    "same title, other DOI: 10.1186/2193-8997-2-8 (2013, article, IZA Journal of Labor Economics); 10.2139/ssrn.673407 (2005, preprint, SSRN Electronic Journal); 10.82444/warw.33663766 (2026, preprint, University of Warwick) (shares an author)"
+   ],
+   "metadata_verified": "no",
+   "duplicate_version": "yes",
+   "row": 6
+  },
+  {
+   "doi": "10.7817/jameroriesoci.135.3.617",
+   "sample": {
+    "title": "Patronage and Poetry in the Islamic World: Social Mobility and Status in the Medieval Middle East and Central Asia. By Jocelyn Shariet",
+    "authors": [
+     "Anna Livia Beelaert",
+     "Hilary Kilpatrick"
+    ],
+    "year": 2021,
+    "source": "Journal of the American Oriental Society"
+   },
+   "doi_registered": true,
+   "crossref_title": "Patronage and Poetry in the Islamic World: Social Mobility and Status in the Medieval Middle East and Central Asia. By Jocelyn Shariet",
+   "title_check": "match",
+   "crossref_authors": [
+    "Beelaert",
+    "Kilpatrick"
+   ],
+   "crossref_years": {
+    "published": 2021,
+    "published-online": 2021,
+    "issued": 2021,
+    "created": 2015
+   },
+   "crossref_type": "journal-article",
+   "crossref_container": "Journal of the American Oriental Society",
+   "crossref_relations": {},
+   "openalex_year": 2015,
+   "openalex_id": "https://openalex.org/W4232407520",
+   "doi_embedded_year": null,
+   "corpus_duplicates": [],
+   "openalex_same_title_other_doi": [],
+   "issues": [
+    "UNCERTAIN year: online-only date 2021, DOI first deposited 2015; check landing page"
+   ],
+   "notes": [],
+   "metadata_verified": "no",
+   "duplicate_version": "no",
+   "row": 7
+  },
+  {
+   "doi": "10.18574/nyu/9780814772522.003.0005",
+   "sample": {
+    "title": "5. A Meta-Analysis on the Relationship between Parental Divorce Family Structures and Adolescents’ Attitudes and Behaviors Regarding Premarital Intercourse",
+    "authors": [
+     "William Jeynes"
+    ],
+    "year": 2020,
+    "source": "Sex for Life"
+   },
+   "doi_registered": true,
+   "crossref_title": "5. A Meta-Analysis on the Relationship between Parental  Divorce Family Structures and Adolescents’ Attitudes and Behaviors Regarding Premarital Intercourse",
+   "title_check": "match",
+   "crossref_authors": [
+    "Jeynes"
+   ],
+   "crossref_years": {
+    "published": 2020,
+    "published-print": 2020,
+    "issued": 2020,
+    "created": 2016
+   },
+   "crossref_type": "book-chapter",
+   "crossref_container": "Sex for Life",
+   "crossref_relations": {},
+   "openalex_year": 2016,
+   "openalex_id": "https://openalex.org/W2506726598",
+   "doi_embedded_year": null,
+   "corpus_duplicates": [],
+   "openalex_same_title_other_doi": [],
+   "issues": [
+    "UNCERTAIN year: listed 2020, but DOI first deposited 2016 (likely platform re-issue)"
+   ],
+   "notes": [
+    "Crossref type: book-chapter"
+   ],
+   "metadata_verified": "no",
+   "duplicate_version": "no",
+   "row": 8
+  },
+  {
+   "doi": "10.1016/j.jebo.2019.03.004",
+   "sample": {
+    "title": "The regional transmission of uncertainty shocks on income inequality in the United States",
+    "authors": [
+     "Manfred M. Fischer",
+     "Florian Huber",
+     "Michael Pfarrhofer"
+    ],
+    "year": 2021,
+    "source": "Journal of Economic Behavior & Organization"
+   },
+   "doi_registered": true,
+   "crossref_title": "The regional transmission of uncertainty shocks on income inequality in the United States",
+   "title_check": "match",
+   "crossref_authors": [
+    "Fischer",
+    "Huber",
+    "Pfarrhofer"
+   ],
+   "crossref_years": {
+    "published": 2021,
+    "published-print": 2021,
+    "issued": 2021,
+    "created": 2019
+   },
+   "crossref_type": "journal-article",
+   "crossref_container": "Journal of Economic Behavior &amp; Organization",
+   "crossref_relations": {},
+   "openalex_year": 2019,
+   "openalex_id": "https://openalex.org/W2914567182",
+   "doi_embedded_year": 2019,
+   "corpus_duplicates": [],
+   "openalex_same_title_other_doi": [],
+   "issues": [],
+   "notes": [
+    "online-first 2019, issue/print 2021 (citation year 2021)"
+   ],
+   "metadata_verified": "yes",
+   "duplicate_version": "no",
+   "row": 9
+  },
+  {
+   "doi": "10.18574/nyu/9781479884575.003.0011",
+   "sample": {
+    "title": "10. Life Trajectories, Social Mobility, and Cultural Capital",
+    "authors": [],
+    "year": 2020,
+    "source": "The Class"
+   },
+   "doi_registered": true,
+   "crossref_title": "10. Life Trajectories, Social Mobility, and Cultural Capital",
+   "title_check": "match",
+   "crossref_authors": [],
+   "crossref_years": {
+    "published": 2020,
+    "published-print": 2020,
+    "issued": 2020,
+    "created": 2017
+   },
+   "crossref_type": "book-chapter",
+   "crossref_container": "The Class",
+   "crossref_relations": {},
+   "openalex_year": 2017,
+   "openalex_id": "https://openalex.org/W2581144359",
+   "doi_embedded_year": null,
+   "corpus_duplicates": [],
+   "openalex_same_title_other_doi": [],
+   "issues": [
+    "UNCERTAIN year: listed 2020, but DOI first deposited 2017 (likely platform re-issue)"
+   ],
+   "notes": [
+    "Crossref lists no authors",
+    "Crossref type: book-chapter"
+   ],
+   "metadata_verified": "no",
+   "duplicate_version": "no",
+   "row": 10
+  },
+  {
+   "doi": "10.1016/s0272-7757(01)00010-3",
+   "sample": {
+    "title": "New Markets, New Opportunities? Economic and Social Mobility in a Changing World",
+    "authors": [
+     "M.P. McKeown-Moak"
+    ],
+    "year": 2001,
+    "source": "Economics of Education Review"
+   },
+   "doi_registered": true,
+   "crossref_title": "New Markets, New Opportunities? Economic and Social Mobility in a Changing World",
+   "title_check": "match",
+   "crossref_authors": [
+    "McKeown-Moak"
+   ],
+   "crossref_years": {
+    "published": 2001,
+    "published-print": 2001,
+    "issued": 2001,
+    "created": 2002
+   },
+   "crossref_type": "journal-article",
+   "crossref_container": "Economics of Education Review",
+   "crossref_relations": {},
+   "openalex_year": 2001,
+   "openalex_id": "https://openalex.org/W1490599060",
+   "doi_embedded_year": null,
+   "corpus_duplicates": [],
+   "openalex_same_title_other_doi": [],
+   "issues": [],
+   "notes": [],
+   "metadata_verified": "yes",
+   "duplicate_version": "no",
+   "row": 11
+  },
+  {
+   "doi": "10.1016/s0277-9536(01)00049-1",
+   "sample": {
+    "title": "Social capital and health (plus wealth, income inequality and regional health governance)",
+    "authors": [
+     "Gerry Veenstra"
+    ],
+    "year": 2002,
+    "source": "Social Science & Medicine"
+   },
+   "doi_registered": true,
+   "crossref_title": "Social capital and health (plus wealth, income inequality and regional health governance)",
+   "title_check": "match",
+   "crossref_authors": [
+    "Veenstra"
+   ],
+   "crossref_years": {
+    "published": 2002,
+    "published-print": 2002,
+    "issued": 2002,
+    "created": 2002
+   },
+   "crossref_type": "journal-article",
+   "crossref_container": "Social Science &amp; Medicine",
+   "crossref_relations": {},
+   "openalex_year": 2002,
+   "openalex_id": "https://openalex.org/W2096844988",
+   "doi_embedded_year": null,
+   "corpus_duplicates": [],
+   "openalex_same_title_other_doi": [],
+   "issues": [],
+   "notes": [],
+   "metadata_verified": "yes",
+   "duplicate_version": "no",
+   "row": 12
+  },
+  {
+   "doi": "10.1016/s0167-2681(01)00166-4",
+   "sample": {
+    "title": "Counter-compensatory inter-vivos transfers and parental altruism: compatibility or orthogonality?",
+    "authors": [
+     "Oded Stark",
+     "Junsen Zhang"
+    ],
+    "year": 2002,
+    "source": "Journal of Economic Behavior & Organization"
+   },
+   "doi_registered": true,
+   "crossref_title": "Counter-compensatory inter-vivos transfers and parental altruism: compatibility or orthogonality?",
+   "title_check": "match",
+   "crossref_authors": [
+    "Stark",
+    "Zhang"
+   ],
+   "crossref_years": {
+    "published": 2002,
+    "published-print": 2002,
+    "issued": 2002,
+    "created": 2002
+   },
+   "crossref_type": "journal-article",
+   "crossref_container": "Journal of Economic Behavior &amp; Organization",
+   "crossref_relations": {},
+   "openalex_year": 2002,
+   "openalex_id": "https://openalex.org/W2041215134",
+   "doi_embedded_year": null,
+   "corpus_duplicates": [],
+   "openalex_same_title_other_doi": [],
+   "issues": [],
+   "notes": [],
+   "metadata_verified": "yes",
+   "duplicate_version": "no",
+   "row": 13
+  },
+  {
+   "doi": "10.1016/j.econedurev.2009.04.005",
+   "sample": {
+    "title": "Intergenerational correlations in educational attainment: Birth order and family size effects using Canadian data",
+    "authors": [
+     "Anindya Sen",
+     "Anthony Clemente"
+    ],
+    "year": 2010,
+    "source": "Economics of Education Review"
+   },
+   "doi_registered": true,
+   "crossref_title": "Intergenerational correlations in educational attainment: Birth order and family size effects using Canadian data",
+   "title_check": "match",
+   "crossref_authors": [
+    "Sen",
+    "Clemente"
+   ],
+   "crossref_years": {
+    "published": 2010,
+    "published-print": 2010,
+    "issued": 2010,
+    "created": 2009
+   },
+   "crossref_type": "journal-article",
+   "crossref_container": "Economics of Education Review",
+   "crossref_relations": {},
+   "openalex_year": 2009,
+   "openalex_id": "https://openalex.org/W2070304684",
+   "doi_embedded_year": 2009,
+   "corpus_duplicates": [],
+   "openalex_same_title_other_doi": [],
+   "issues": [],
+   "notes": [
+    "online-first 2009, issue/print 2010 (citation year 2010)"
+   ],
+   "metadata_verified": "yes",
+   "duplicate_version": "no",
+   "row": 14
+  },
+  {
+   "doi": "10.1016/s0272-7757(99)00029-1",
+   "sample": {
+    "title": "Schooling of girls and boys in a West African country: the effects of parental education, income, and household structure",
+    "authors": [
+     "Peter Glick",
+     "David E. Sahn"
+    ],
+    "year": 2000,
+    "source": "Economics of Education Review"
+   },
+   "doi_registered": true,
+   "crossref_title": "Schooling of girls and boys in a West African country: the effects of parental education, income, and household structure",
+   "title_check": "match",
+   "crossref_authors": [
+    "Glick",
+    "Sahn"
+   ],
+   "crossref_years": {
+    "published": 2000,
+    "published-print": 2000,
+    "issued": 2000,
+    "created": 2002
+   },
+   "crossref_type": "journal-article",
+   "crossref_container": "Economics of Education Review",
+   "crossref_relations": {},
+   "openalex_year": 2000,
+   "openalex_id": "https://openalex.org/W2118362688",
+   "doi_embedded_year": null,
+   "corpus_duplicates": [],
+   "openalex_same_title_other_doi": [],
+   "issues": [],
+   "notes": [],
+   "metadata_verified": "yes",
+   "duplicate_version": "no",
+   "row": 15
+  },
+  {
+   "doi": "10.33200/ijcer.554728",
+   "sample": {
+    "title": "Social Capital Wealth as a Predictor of Innovative Climate in Schools",
+    "authors": [
+     "Mahmut Polatcan",
+     "Ali Balcı"
+    ],
+    "year": 2022,
+    "source": "International Journal of Contemporary Educational Research"
+   },
+   "doi_registered": true,
+   "crossref_title": "Social Capital Wealth as a Predictor of Innovative Climate in Schools",
+   "title_check": "match",
+   "crossref_authors": [
+    "Polatcan",
+    "Balcı"
+   ],
+   "crossref_years": {
+    "published": 2022,
+    "published-online": 2022,
+    "issued": 2022,
+    "created": 2019
+   },
+   "crossref_type": "journal-article",
+   "crossref_container": "International Journal of Contemporary Educational Research",
+   "crossref_relations": {},
+   "openalex_year": 2019,
+   "openalex_id": "https://openalex.org/W2953189826",
+   "doi_embedded_year": null,
+   "corpus_duplicates": [],
+   "openalex_same_title_other_doi": [],
+   "issues": [
+    "UNCERTAIN year: online-only date 2022, DOI first deposited 2019; check landing page"
+   ],
+   "notes": [],
+   "metadata_verified": "no",
+   "duplicate_version": "no",
+   "row": 16
+  },
+  {
+   "doi": "10.1016/j.beth.2009.01.003",
+   "sample": {
+    "title": "Parent-Child Interactions Among Low-Income Mexican American Parents and Preschoolers: Do Clinic-Referred Families Differ From Nonreferred Families?",
+    "authors": [
+     "Kristen McCabe",
+     "May Yeh",
+     "Anna Lau",
+     "Carolina Bertely Argote",
+     "June Liang"
+    ],
+    "year": 2010,
+    "source": "Behavior Therapy"
+   },
+   "doi_registered": true,
+   "crossref_title": "Parent-Child Interactions Among Low-Income Mexican American Parents and Preschoolers: Do Clinic-Referred Families Differ From Nonreferred Families?",
+   "title_check": "match",
+   "crossref_authors": [
+    "McCabe",
+    "Yeh",
+    "Lau",
+    "Argote",
+    "Liang"
+   ],
+   "crossref_years": {
+    "published": 2010,
+    "published-print": 2010,
+    "issued": 2010,
+    "created": 2009
+   },
+   "crossref_type": "journal-article",
+   "crossref_container": "Behavior Therapy",
+   "crossref_relations": {},
+   "openalex_year": 2009,
+   "openalex_id": "https://openalex.org/W2147887811",
+   "doi_embedded_year": 2009,
+   "corpus_duplicates": [],
+   "openalex_same_title_other_doi": [],
+   "issues": [],
+   "notes": [
+    "online-first 2009, issue/print 2010 (citation year 2010)"
+   ],
+   "metadata_verified": "yes",
+   "duplicate_version": "no",
+   "row": 17
+  },
+  {
+   "doi": "10.1920/wp.ifs.2016.1604",
+   "sample": {
+    "title": "Education policy and intergenerational transfers in equilibrium",
+    "authors": [
+     "Brant Abbott",
+     "Giovanni Gallipoli",
+     "Costas Meghir",
+     "Gianluca Violante"
+    ],
+    "year": 2026,
+    "source": ""
+   },
+   "doi_registered": true,
+   "crossref_title": "Education policy and intergenerational transfers in equilibrium",
+   "title_check": "match",
+   "crossref_authors": [
+    "Abbott",
+    "Gallipoli",
+    "Meghir",
+    "Violante"
+   ],
+   "crossref_years": {
+    "published": 2026,
+    "published-online": 2026,
+    "issued": 2026,
+    "created": 2017
+   },
+   "crossref_type": "report",
+   "crossref_container": "",
+   "crossref_relations": {},
+   "openalex_year": 2017,
+   "openalex_id": "https://openalex.org/W2903723198",
+   "doi_embedded_year": 2016,
+   "corpus_duplicates": [
+    "in candidates-v03.jsonl: 10.1920/wp.ifs.2013.1317 (2013)"
+   ],
+   "openalex_same_title_other_doi": [
+    {
+     "doi": "10.1086/702241",
+     "year": 2018,
+     "type": "article",
+     "openalex_id": "https://openalex.org/W4285775041",
+     "venue": "Journal of Political Economy"
+    },
+    {
+     "doi": "10.3386/w18782",
+     "year": 2013,
+     "type": "report",
+     "openalex_id": "https://openalex.org/W3123091197",
+     "venue": "National Bureau of Economic Research"
+    },
+    {
+     "doi": "10.1920/wp.ifs.2013.1317",
+     "year": 2017,
+     "type": "report",
+     "openalex_id": "https://openalex.org/W4302392698",
+     "venue": null
+    },
+    {
+     "doi": "10.1920/wp.ifs.2018.1618",
+     "year": 2022,
+     "type": "report",
+     "openalex_id": "https://openalex.org/W4294820650",
+     "venue": null
+    }
+   ],
+   "issues": [
+    "ERROR: year 2026 is a re-deposit date; DOI encodes 2016, first deposited 2017"
+   ],
+   "notes": [
+    "Crossref type: report",
+    "same title, other DOI: 10.1086/702241 (2018, article, Journal of Political Economy); 10.3386/w18782 (2013, report, National Bureau of Economic Research); 10.1920/wp.ifs.2013.1317 (2017, report, ?) (shares an author)",
+    "in candidates-v03.jsonl: 10.1920/wp.ifs.2013.1317 (2013)"
+   ],
+   "metadata_verified": "no",
+   "duplicate_version": "yes",
+   "row": 18
+  },
+  {
+   "doi": "10.1080/00472330903270726",
+   "sample": {
+    "title": "Income and Wealth Inequality in Nepal, 1996 and 2004: Changes and Socio-demographic, Spatial and Economic Determinants",
+    "authors": [
+     "Udaya R. Wagle"
+    ],
+    "year": 2010,
+    "source": "Journal of Contemporary Asia"
+   },
+   "doi_registered": true,
+   "crossref_title": "Income and Wealth Inequality in Nepal, 1996 and 2004: Changes and Socio-demographic, Spatial and Economic Determinants",
+   "title_check": "match",
+   "crossref_authors": [
+    "Wagle"
+   ],
+   "crossref_years": {
+    "published": 2010,
+    "published-print": 2010,
+    "issued": 2010,
+    "created": 2009
+   },
+   "crossref_type": "journal-article",
+   "crossref_container": "Journal of Contemporary Asia",
+   "crossref_relations": {},
+   "openalex_year": 2009,
+   "openalex_id": "https://openalex.org/W2036007296",
+   "doi_embedded_year": null,
+   "corpus_duplicates": [],
+   "openalex_same_title_other_doi": [],
+   "issues": [],
+   "notes": [
+    "online-first 2009, issue/print 2010 (citation year 2010)"
+   ],
+   "metadata_verified": "yes",
+   "duplicate_version": "no",
+   "row": 19
+  },
+  {
+   "doi": "10.1287/orsc.1090.0470",
+   "sample": {
+    "title": "Social Capital for Hire? Mobility of Technical Professionals and Firm Influence in Wireless Standards Committees",
+    "authors": [
+     "Gina Dokko",
+     "Lori Rosenkopf"
+    ],
+    "year": 2010,
+    "source": "Organization Science"
+   },
+   "doi_registered": true,
+   "crossref_title": "Social Capital for Hire? Mobility of Technical Professionals and Firm Influence in Wireless Standards Committees",
+   "title_check": "match",
+   "crossref_authors": [
+    "Dokko",
+    "Rosenkopf"
+   ],
+   "crossref_years": {
+    "published": 2010,
+    "published-print": 2010,
+    "issued": 2010,
+    "created": 2009
+   },
+   "crossref_type": "journal-article",
+   "crossref_container": "Organization Science",
+   "crossref_relations": {},
+   "openalex_year": 2009,
+   "openalex_id": "https://openalex.org/W2110140475",
+   "doi_embedded_year": null,
+   "corpus_duplicates": [],
+   "openalex_same_title_other_doi": [],
+   "issues": [],
+   "notes": [
+    "online-first 2009, issue/print 2010 (citation year 2010)"
+   ],
+   "metadata_verified": "yes",
+   "duplicate_version": "no",
+   "row": 20
+  },
+  {
+   "doi": "10.1016/j.jaging.2008.03.003",
+   "sample": {
+    "title": "Prioritizing parental autonomy: Adult children's accounts of feeling responsible and supporting aging parents",
+    "authors": [
+     "Laura M. Funk"
+    ],
+    "year": 2010,
+    "source": "Journal of Aging Studies"
+   },
+   "doi_registered": true,
+   "crossref_title": "Prioritizing parental autonomy: Adult children's accounts of feeling responsible and supporting aging parents",
+   "title_check": "match",
+   "crossref_authors": [
+    "Funk"
+   ],
+   "crossref_years": {
+    "published": 2010,
+    "published-print": 2010,
+    "issued": 2010,
+    "created": 2009
+   },
+   "crossref_type": "journal-article",
+   "crossref_container": "Journal of Aging Studies",
+   "crossref_relations": {},
+   "openalex_year": 2009,
+   "openalex_id": "https://openalex.org/W1994562464",
+   "doi_embedded_year": 2008,
+   "corpus_duplicates": [],
+   "openalex_same_title_other_doi": [],
+   "issues": [],
+   "notes": [
+    "online-first 2009, issue/print 2010 (citation year 2010)"
+   ],
+   "metadata_verified": "yes",
+   "duplicate_version": "no",
+   "row": 21
+  },
+  {
+   "doi": "10.1016/s0165-1765(01)00523-7",
+   "sample": {
+    "title": "Risk aversion and social mobility: the implausibility of order-preserving income redistributions",
+    "authors": [
+     "Leif Danziger",
+     "Heinrich W Ursprung"
+    ],
+    "year": 2001,
+    "source": "Economics Letters"
+   },
+   "doi_registered": true,
+   "crossref_title": "Risk aversion and social mobility: the implausibility of order-preserving income redistributions",
+   "title_check": "match",
+   "crossref_authors": [
+    "Danziger",
+    "Ursprung"
+   ],
+   "crossref_years": {
+    "published": 2001,
+    "published-print": 2001,
+    "issued": 2001,
+    "created": 2002
+   },
+   "crossref_type": "journal-article",
+   "crossref_container": "Economics Letters",
+   "crossref_relations": {},
+   "openalex_year": 2001,
+   "openalex_id": "https://openalex.org/W3123659537",
+   "doi_embedded_year": null,
+   "corpus_duplicates": [],
+   "openalex_same_title_other_doi": [],
+   "issues": [],
+   "notes": [],
+   "metadata_verified": "yes",
+   "duplicate_version": "no",
+   "row": 22
+  },
+  {
+   "doi": "10.1162/rest_a_00824",
+   "sample": {
+    "title": "Breaking the Cycle? Education and the Intergenerational Transmission of Violence",
+    "authors": [
+     "Bilge Erten",
+     "Pinar Keskin"
+    ],
+    "year": 2020,
+    "source": "Review of Economics and Statistics"
+   },
+   "doi_registered": true,
+   "crossref_title": "Breaking the Cycle? Education and the Intergenerational Transmission of Violence",
+   "title_check": "match",
+   "crossref_authors": [
+    "Erten",
+    "Keskin"
+   ],
+   "crossref_years": {
+    "published": 2020,
+    "published-print": 2020,
+    "published-online": 2020,
+    "issued": 2020,
+    "created": 2019
+   },
+   "crossref_type": "journal-article",
+   "crossref_container": "Review of Economics and Statistics",
+   "crossref_relations": {},
+   "openalex_year": 2019,
+   "openalex_id": "https://openalex.org/W2787274450",
+   "doi_embedded_year": null,
+   "corpus_duplicates": [],
+   "openalex_same_title_other_doi": [],
+   "issues": [],
+   "notes": [
+    "online-first 2019, issue/print 2020 (citation year 2020)"
+   ],
+   "metadata_verified": "yes",
+   "duplicate_version": "no",
+   "row": 23
+  },
+  {
+   "doi": "10.1016/j.labeco.2009.06.002",
+   "sample": {
+    "title": "Family income and children's education: Using the Norwegian oil boom as a natural experiment",
+    "authors": [
+     "Katrine V. Løken"
+    ],
+    "year": 2010,
+    "source": "Labour Economics"
+   },
+   "doi_registered": true,
+   "crossref_title": "Family income and children's education: Using the Norwegian oil boom as a natural experiment",
+   "title_check": "match",
+   "crossref_authors": [
+    "Løken"
+   ],
+   "crossref_years": {
+    "published": 2010,
+    "published-print": 2010,
+    "issued": 2010,
+    "created": 2009
+   },
+   "crossref_type": "journal-article",
+   "crossref_container": "Labour Economics",
+   "crossref_relations": {},
+   "openalex_year": 2009,
+   "openalex_id": "https://openalex.org/W2052013947",
+   "doi_embedded_year": 2009,
+   "corpus_duplicates": [],
+   "openalex_same_title_other_doi": [],
+   "issues": [],
+   "notes": [
+    "online-first 2009, issue/print 2010 (citation year 2010)"
+   ],
+   "metadata_verified": "yes",
+   "duplicate_version": "no",
+   "row": 24
+  },
+  {
+   "doi": "10.1016/j.frl.2019.04.036",
+   "sample": {
+    "title": "The long-run relationship between finance and income inequality: Evidence from panel data",
+    "authors": [
+     "John Thornton",
+     "Caterina Di Tommaso"
+    ],
+    "year": 2020,
+    "source": "Finance Research Letters"
+   },
+   "doi_registered": true,
+   "crossref_title": "The long-run relationship between finance and income inequality: Evidence from panel data",
+   "title_check": "match",
+   "crossref_authors": [
+    "Thornton",
+    "Tommaso"
+   ],
+   "crossref_years": {
+    "published": 2020,
+    "published-print": 2020,
+    "issued": 2020,
+    "created": 2019
+   },
+   "crossref_type": "journal-article",
+   "crossref_container": "Finance Research Letters",
+   "crossref_relations": {},
+   "openalex_year": 2019,
+   "openalex_id": "https://openalex.org/W2943276089",
+   "doi_embedded_year": 2019,
+   "corpus_duplicates": [],
+   "openalex_same_title_other_doi": [],
+   "issues": [],
+   "notes": [
+    "online-first 2019, issue/print 2020 (citation year 2020)"
+   ],
+   "metadata_verified": "yes",
+   "duplicate_version": "no",
+   "row": 25
+  },
+  {
+   "doi": "10.1111/j.1536-7150.2010.00725.x",
+   "sample": {
+    "title": "Motives for Intergenerational Transfers: New Test for Exchange",
+    "authors": [
+     "Jingshu Wang"
+    ],
+    "year": 2010,
+    "source": "The American Journal of Economics and Sociology"
+   },
+   "doi_registered": true,
+   "crossref_title": "Motives for Intergenerational Transfers: New Test for Exchange",
+   "title_check": "match",
+   "crossref_authors": [
+    "Wang"
+   ],
+   "crossref_years": {
+    "published": 2010,
+    "published-print": 2010,
+    "published-online": 2010,
+    "issued": 2010,
+    "created": 2010
+   },
+   "crossref_type": "journal-article",
+   "crossref_container": "The American Journal of Economics and Sociology",
+   "crossref_relations": {},
+   "openalex_year": 2010,
+   "openalex_id": "https://openalex.org/W1985060792",
+   "doi_embedded_year": 2010,
+   "corpus_duplicates": [],
+   "openalex_same_title_other_doi": [],
+   "issues": [],
+   "notes": [],
+   "metadata_verified": "yes",
+   "duplicate_version": "no",
+   "row": 26
+  },
+  {
+   "doi": "10.1920/wp.ifs.1995.9520",
+   "sample": {
+    "title": "Intergenerational mobility in Britain",
+    "authors": [
+     "Lorraine Dearden",
+     "Stephen Machin",
+     "Howard Reed"
+    ],
+    "year": 2025,
+    "source": ""
+   },
+   "doi_registered": true,
+   "crossref_title": "Intergenerational mobility in Britain",
+   "title_check": "match",
+   "crossref_authors": [
+    "Dearden",
+    "Machin",
+    "Reed"
+   ],
+   "crossref_years": {
+    "published": 2025,
+    "published-online": 2025,
+    "issued": 2025,
+    "created": 2017
+   },
+   "crossref_type": "report",
+   "crossref_container": "",
+   "crossref_relations": {},
+   "openalex_year": 2017,
+   "openalex_id": "https://openalex.org/W2087614364",
+   "doi_embedded_year": 1995,
+   "corpus_duplicates": [],
+   "openalex_same_title_other_doi": [
+    {
+     "doi": "10.1111/1468-0297.00141",
+     "year": 1997,
+     "type": "article",
+     "openalex_id": "https://openalex.org/W3124902078",
+     "venue": "The Economic Journal"
+    }
+   ],
+   "issues": [
+    "ERROR: year 2025 is a re-deposit date; DOI encodes 1995, first deposited 2017"
+   ],
+   "notes": [
+    "Crossref type: report",
+    "same title, other DOI: 10.1111/1468-0297.00141 (1997, article, The Economic Journal) (shares an author)"
+   ],
+   "metadata_verified": "no",
+   "duplicate_version": "yes",
+   "row": 27
+  },
+  {
+   "doi": "10.2298/pan170306025l",
+   "sample": {
+    "title": "Stagnation generation: Evaluating the impact of higher education expansion on social mobility from the perspective of Taiwan",
+    "authors": [
+     "Yen-Ling Lin"
+    ],
+    "year": 2020,
+    "source": "Panoeconomicus"
+   },
+   "doi_registered": true,
+   "crossref_title": "Stagnation generation: Evaluating the impact of higher education expansion on social mobility from the perspective of Taiwan",
+   "title_check": "match",
+   "crossref_authors": [
+    "Lin"
+   ],
+   "crossref_years": {
+    "published": 2020,
+    "published-print": 2020,
+    "issued": 2020,
+    "created": 2018
+   },
+   "crossref_type": "journal-article",
+   "crossref_container": "Panoeconomicus",
+   "crossref_relations": {},
+   "openalex_year": 2018,
+   "openalex_id": "https://openalex.org/W2895346209",
+   "doi_embedded_year": null,
+   "corpus_duplicates": [],
+   "openalex_same_title_other_doi": [],
+   "issues": [],
+   "notes": [
+    "online-first 2018, issue/print 2020 (citation year 2020)"
+   ],
+   "metadata_verified": "yes",
+   "duplicate_version": "no",
+   "row": 28
+  },
+  {
+   "doi": "10.1016/s0047-2727(00)00097-9",
+   "sample": {
+    "title": "Simulating the transmission of wealth inequality via bequests",
+    "authors": [
+     "Jagadeesh Gokhale",
+     "Laurence J Kotlikoff",
+     "James Sefton",
+     "Martin Weale"
+    ],
+    "year": 2001,
+    "source": "Journal of Public Economics"
+   },
+   "doi_registered": true,
+   "crossref_title": "Simulating the transmission of wealth inequality via bequests",
+   "title_check": "match",
+   "crossref_authors": [
+    "Gokhale",
+    "Kotlikoff",
+    "Sefton",
+    "Weale"
+   ],
+   "crossref_years": {
+    "published": 2001,
+    "published-print": 2001,
+    "issued": 2001,
+    "created": 2002
+   },
+   "crossref_type": "journal-article",
+   "crossref_container": "Journal of Public Economics",
+   "crossref_relations": {},
+   "openalex_year": 2001,
+   "openalex_id": "https://openalex.org/W3125171103",
+   "doi_embedded_year": null,
+   "corpus_duplicates": [],
+   "openalex_same_title_other_doi": [
+    {
+     "doi": "10.26509/frbc-wp-199811",
+     "year": 1998,
+     "type": "report",
+     "openalex_id": "https://openalex.org/W3024845095",
+     "venue": "Working paper"
+    }
+   ],
+   "issues": [],
+   "notes": [
+    "same title, other DOI: 10.26509/frbc-wp-199811 (1998, report, Working paper) (shares an author)"
+   ],
+   "metadata_verified": "yes",
+   "duplicate_version": "yes",
+   "row": 29
+  },
+  {
+   "doi": "10.1016/j.gaceta.2018.07.014",
+   "sample": {
+    "title": "The role of parental social class, education and unemployment on child cognitive development",
+    "authors": [
+     "Llúcia González",
+     "Rosa Cortés-Sancho",
+     "Mario Murcia",
+     "Ferran Ballester",
+     "Marisa Rebagliato",
+     "Clara Liliana Rodríguez-Bernal"
+    ],
+    "year": 2020,
+    "source": "Gaceta Sanitaria"
+   },
+   "doi_registered": true,
+   "crossref_title": "The role of parental social class, education and unemployment on child cognitive development",
+   "title_check": "match",
+   "crossref_authors": [
+    "González",
+    "Cortés-Sancho",
+    "Murcia",
+    "Ballester",
+    "Rebagliato",
+    "Rodríguez-Bernal"
+   ],
+   "crossref_years": {
+    "published": 2020,
+    "published-print": 2020,
+    "issued": 2020,
+    "created": 2018
+   },
+   "crossref_type": "journal-article",
+   "crossref_container": "Gaceta Sanitaria",
+   "crossref_relations": {},
+   "openalex_year": 2018,
+   "openalex_id": "https://openalex.org/W2898621662",
+   "doi_embedded_year": 2018,
+   "corpus_duplicates": [],
+   "openalex_same_title_other_doi": [],
+   "issues": [],
+   "notes": [
+    "online-first 2018, issue/print 2020 (citation year 2020)"
+   ],
+   "metadata_verified": "yes",
+   "duplicate_version": "no",
+   "row": 30
+  },
+  {
+   "doi": "10.20856/jnicec.3807",
+   "sample": {
+    "title": "Experiential work-based learning as a social mobility mechanism for widening participaton students",
+    "authors": [
+     "Rachel Roberts",
+     "Laura Brammar",
+     "Fiona Cobb"
+    ],
+    "year": 2025,
+    "source": "Journal of the National Institute for Career Education and Counselling"
+   },
+   "doi_registered": true,
+   "crossref_title": "Experiential work-based learning as a social mobility mechanism for widening participaton students",
+   "title_check": "match",
+   "crossref_authors": [
+    "Roberts",
+    "Brammar",
+    "Cobb"
+   ],
+   "crossref_years": {
+    "published": 2025,
+    "published-online": 2025,
+    "issued": 2025,
+    "created": 2017
+   },
+   "crossref_type": "journal-article",
+   "crossref_container": "Journal of the National Institute for Career  Education and Counselling",
+   "crossref_relations": {},
+   "openalex_year": 2017,
+   "openalex_id": "https://openalex.org/W2616668918",
+   "doi_embedded_year": null,
+   "corpus_duplicates": [],
+   "openalex_same_title_other_doi": [],
+   "issues": [
+    "UNCERTAIN year: online-only date 2025, DOI first deposited 2017; check landing page"
+   ],
+   "notes": [],
+   "metadata_verified": "no",
+   "duplicate_version": "no",
+   "row": 31
+  },
+  {
+   "doi": "10.1920/wp.ifs.2013.1317",
+   "sample": {
+    "title": "Education policy and intergenerational transfers in equilibrium",
+    "authors": [
+     "Brant Abbott",
+     "Giovanni Gallipoli",
+     "Costas Meghir",
+     "Gianluca Violante"
+    ],
+    "year": 2026,
+    "source": ""
+   },
+   "doi_registered": true,
+   "crossref_title": "Education policy and intergenerational transfers in equilibrium",
+   "title_check": "match",
+   "crossref_authors": [
+    "Abbott",
+    "Gallipoli",
+    "Meghir",
+    "Violante"
+   ],
+   "crossref_years": {
+    "published": 2026,
+    "published-online": 2026,
+    "issued": 2026,
+    "created": 2017
+   },
+   "crossref_type": "report",
+   "crossref_container": "",
+   "crossref_relations": {},
+   "openalex_year": 2017,
+   "openalex_id": "https://openalex.org/W4302392698",
+   "doi_embedded_year": 2013,
+   "corpus_duplicates": [
+    "in candidates-v03.jsonl: 10.1920/wp.ifs.2016.1604 (2016)"
+   ],
+   "openalex_same_title_other_doi": [
+    {
+     "doi": "10.1086/702241",
+     "year": 2018,
+     "type": "article",
+     "openalex_id": "https://openalex.org/W4285775041",
+     "venue": "Journal of Political Economy"
+    },
+    {
+     "doi": "10.3386/w18782",
+     "year": 2013,
+     "type": "report",
+     "openalex_id": "https://openalex.org/W3123091197",
+     "venue": "National Bureau of Economic Research"
+    },
+    {
+     "doi": "10.1920/wp.ifs.2016.1604",
+     "year": 2017,
+     "type": "report",
+     "openalex_id": "https://openalex.org/W2903723198",
+     "venue": null
+    },
+    {
+     "doi": "10.1920/wp.ifs.2018.1618",
+     "year": 2022,
+     "type": "report",
+     "openalex_id": "https://openalex.org/W4294820650",
+     "venue": null
+    }
+   ],
+   "issues": [
+    "ERROR: year 2026 is a re-deposit date; DOI encodes 2013, first deposited 2017"
+   ],
+   "notes": [
+    "Crossref type: report",
+    "same title, other DOI: 10.1086/702241 (2018, article, Journal of Political Economy); 10.3386/w18782 (2013, report, National Bureau of Economic Research); 10.1920/wp.ifs.2016.1604 (2017, report, ?) (shares an author)",
+    "in candidates-v03.jsonl: 10.1920/wp.ifs.2016.1604 (2016)"
+   ],
+   "metadata_verified": "no",
+   "duplicate_version": "yes",
+   "row": 32
+  },
+  {
+   "doi": "10.1920/wp.ifs.2017.w1711",
+   "sample": {
+    "title": "Intergenerational income persistence within families",
+    "authors": [
+     "Chris Belfield",
+     "Claire Crawford",
+     "Ellen Greaves",
+     "Paul Gregg",
+     "Lindsey Macmillan"
+    ],
+    "year": 2026,
+    "source": ""
+   },
+   "doi_registered": true,
+   "crossref_title": "Intergenerational income persistence within families",
+   "title_check": "match",
+   "crossref_authors": [
+    "Belfield",
+    "Crawford",
+    "Greaves",
+    "Gregg",
+    "Macmillan"
+   ],
+   "crossref_years": {
+    "published": 2026,
+    "published-online": 2026,
+    "issued": 2026,
+    "created": 2018
+   },
+   "crossref_type": "report",
+   "crossref_container": "",
+   "crossref_relations": {},
+   "openalex_year": 2018,
+   "openalex_id": "https://openalex.org/W2745069611",
+   "doi_embedded_year": 2017,
+   "corpus_duplicates": [],
+   "openalex_same_title_other_doi": [],
+   "issues": [
+    "ERROR: year 2026 is a re-deposit date; DOI encodes 2017, first deposited 2018"
+   ],
+   "notes": [
+    "Crossref type: report"
+   ],
+   "metadata_verified": "no",
+   "duplicate_version": "no",
+   "row": 33
+  },
+  {
+   "doi": "10.1016/j.econmod.2019.06.017",
+   "sample": {
+    "title": "Wealth inequality, governance and economic growth",
+    "authors": [
+     "Md. Rabiul Islam",
+     "Mark McGillivray"
+    ],
+    "year": 2020,
+    "source": "Economic Modelling"
+   },
+   "doi_registered": true,
+   "crossref_title": "Wealth inequality, governance and economic growth",
+   "title_check": "match",
+   "crossref_authors": [
+    "Islam",
+    "McGillivray"
+   ],
+   "crossref_years": {
+    "published": 2020,
+    "published-print": 2020,
+    "issued": 2020,
+    "created": 2019
+   },
+   "crossref_type": "journal-article",
+   "crossref_container": "Economic Modelling",
+   "crossref_relations": {},
+   "openalex_year": 2019,
+   "openalex_id": "https://openalex.org/W2955015368",
+   "doi_embedded_year": 2019,
+   "corpus_duplicates": [],
+   "openalex_same_title_other_doi": [],
+   "issues": [],
+   "notes": [
+    "online-first 2019, issue/print 2020 (citation year 2020)"
+   ],
+   "metadata_verified": "yes",
+   "duplicate_version": "no",
+   "row": 34
+  },
+  {
+   "doi": "10.1016/s0047-2727(00)00101-8",
+   "sample": {
+    "title": "Bequest motives: a comparison of Sweden and the United States",
+    "authors": [
+     "John Laitner",
+     "Henry Ohlsson"
+    ],
+    "year": 2001,
+    "source": "Journal of Public Economics"
+   },
+   "doi_registered": true,
+   "crossref_title": "Bequest motives: a comparison of Sweden and the United States",
+   "title_check": "match",
+   "crossref_authors": [
+    "Laitner",
+    "Ohlsson"
+   ],
+   "crossref_years": {
+    "published": 2001,
+    "published-print": 2001,
+    "issued": 2001,
+    "created": 2002
+   },
+   "crossref_type": "journal-article",
+   "crossref_container": "Journal of Public Economics",
+   "crossref_relations": {},
+   "openalex_year": 2001,
+   "openalex_id": "https://openalex.org/W2111140499",
+   "doi_embedded_year": null,
+   "corpus_duplicates": [],
+   "openalex_same_title_other_doi": [],
+   "issues": [],
+   "notes": [],
+   "metadata_verified": "yes",
+   "duplicate_version": "no",
+   "row": 35
+  },
+  {
+   "doi": "10.1016/s0165-1765(01)00357-3",
+   "sample": {
+    "title": "Why is income inequality so low in China compared to other countries?",
+    "authors": [
+     "John Gibson",
+     "Jikun Huang",
+     "Scott Rozelle"
+    ],
+    "year": 2001,
+    "source": "Economics Letters"
+   },
+   "doi_registered": true,
+   "crossref_title": "Why is income inequality so low in China compared to other countries?",
+   "title_check": "match",
+   "crossref_authors": [
+    "Gibson",
+    "Huang",
+    "Rozelle"
+   ],
+   "crossref_years": {
+    "published": 2001,
+    "published-print": 2001,
+    "issued": 2001,
+    "created": 2002
+   },
+   "crossref_type": "journal-article",
+   "crossref_container": "Economics Letters",
+   "crossref_relations": {},
+   "openalex_year": 2001,
+   "openalex_id": "https://openalex.org/W2133758094",
+   "doi_embedded_year": null,
+   "corpus_duplicates": [],
+   "openalex_same_title_other_doi": [],
+   "issues": [],
+   "notes": [],
+   "metadata_verified": "yes",
+   "duplicate_version": "no",
+   "row": 36
+  },
+  {
+   "doi": "10.1016/s0272-7757(00)00038-8",
+   "sample": {
+    "title": "Can education expenditures reduce income inequality?",
+    "authors": [
+     "Kevin Sylwester"
+    ],
+    "year": 2002,
+    "source": "Economics of Education Review"
+   },
+   "doi_registered": true,
+   "crossref_title": "Can education expenditures reduce income inequality?",
+   "title_check": "match",
+   "crossref_authors": [
+    "Sylwester"
+   ],
+   "crossref_years": {
+    "published": 2002,
+    "published-print": 2002,
+    "issued": 2002,
+    "created": 2002
+   },
+   "crossref_type": "journal-article",
+   "crossref_container": "Economics of Education Review",
+   "crossref_relations": {},
+   "openalex_year": 2002,
+   "openalex_id": "https://openalex.org/W2020818316",
+   "doi_embedded_year": null,
+   "corpus_duplicates": [],
+   "openalex_same_title_other_doi": [],
+   "issues": [],
+   "notes": [],
+   "metadata_verified": "yes",
+   "duplicate_version": "no",
+   "row": 37
+  },
+  {
+   "doi": "10.1920/wp.ifs.2017.w1725",
+   "sample": {
+    "title": "Income inequality and the labour market in Britain and the US",
+    "authors": [
+     "Richard Blundell",
+     "Robert Joyce",
+     "Agnes Norris Keiller",
+     "James P. Ziliak"
+    ],
+    "year": 2026,
+    "source": ""
+   },
+   "doi_registered": true,
+   "crossref_title": "Income inequality and the labour market in Britain and the US",
+   "title_check": "match",
+   "crossref_authors": [
+    "Blundell",
+    "Joyce",
+    "Norris Keiller",
+    "Ziliak"
+   ],
+   "crossref_years": {
+    "published": 2026,
+    "published-online": 2026,
+    "issued": 2026,
+    "created": 2018
+   },
+   "crossref_type": "report",
+   "crossref_container": "",
+   "crossref_relations": {},
+   "openalex_year": 2018,
+   "openalex_id": "https://openalex.org/W3121531933",
+   "doi_embedded_year": 2017,
+   "corpus_duplicates": [],
+   "openalex_same_title_other_doi": [
+    {
+     "doi": "10.1016/j.jpubeco.2018.04.001",
+     "year": 2018,
+     "type": "article",
+     "openalex_id": "https://openalex.org/W2765630584",
+     "venue": "Journal of Public Economics"
+    }
+   ],
+   "issues": [
+    "ERROR: year 2026 is a re-deposit date; DOI encodes 2017, first deposited 2018"
+   ],
+   "notes": [
+    "Crossref type: report",
+    "same title, other DOI: 10.1016/j.jpubeco.2018.04.001 (2018, article, Journal of Public Economics) (shares an author)"
+   ],
+   "metadata_verified": "no",
+   "duplicate_version": "yes",
+   "row": 38
+  },
+  {
+   "doi": "10.1016/j.jmacro.2009.06.005",
+   "sample": {
+    "title": "Intergenerational transfers and fertility: Trade-off between human capital and child labour",
+    "authors": [
+     "Kouki Sugawara"
+    ],
+    "year": 2010,
+    "source": "Journal of Macroeconomics"
+   },
+   "doi_registered": true,
+   "crossref_title": "Intergenerational transfers and fertility: Trade-off between human capital and child labour",
+   "title_check": "match",
+   "crossref_authors": [
+    "Sugawara"
+   ],
+   "crossref_years": {
+    "published": 2010,
+    "published-print": 2010,
+    "issued": 2010,
+    "created": 2009
+   },
+   "crossref_type": "journal-article",
+   "crossref_container": "Journal of Macroeconomics",
+   "crossref_relations": {},
+   "openalex_year": 2009,
+   "openalex_id": "https://openalex.org/W2037030453",
+   "doi_embedded_year": 2009,
+   "corpus_duplicates": [],
+   "openalex_same_title_other_doi": [],
+   "issues": [],
+   "notes": [
+    "online-first 2009, issue/print 2010 (citation year 2010)"
+   ],
+   "metadata_verified": "yes",
+   "duplicate_version": "no",
+   "row": 39
+  },
+  {
+   "doi": "10.1016/j.jeoa.2017.11.002",
+   "sample": {
+    "title": "Private asset income in France: Is there a breakdown of intergenerational equity between 1979 and 2011?",
+    "authors": [
+     "Hippolyte d'Albis",
+     "Ikpidi Badji",
+     "Najat El Mekkaoui",
+     "Julien Navaux"
+    ],
+    "year": 2020,
+    "source": "The Journal of the Economics of Ageing"
+   },
+   "doi_registered": true,
+   "crossref_title": "Private asset income in France: Is there a breakdown of intergenerational equity between 1979 and 2011?",
+   "title_check": "match",
+   "crossref_authors": [
+    "d'Albis",
+    "Badji",
+    "El Mekkaoui",
+    "Navaux"
+   ],
+   "crossref_years": {
+    "published": 2020,
+    "published-print": 2020,
+    "issued": 2020,
+    "created": 2017
+   },
+   "crossref_type": "journal-article",
+   "crossref_container": "The Journal of the Economics of Ageing",
+   "crossref_relations": {},
+   "openalex_year": 2017,
+   "openalex_id": "https://openalex.org/W2767278868",
+   "doi_embedded_year": 2017,
+   "corpus_duplicates": [],
+   "openalex_same_title_other_doi": [],
+   "issues": [
+    "UNCERTAIN year: print 2020 but DOI deposited 2017 (3-year gap); check landing page; DOI encodes 2017"
+   ],
+   "notes": [],
+   "metadata_verified": "no",
+   "duplicate_version": "no",
+   "row": 40
+  },
+  {
+   "doi": "10.1016/j.jhe.2018.08.002",
+   "sample": {
+    "title": "The role of parental financial assistance in the transition to homeownership by young adults",
+    "authors": [
+     "Hyojung Lee",
+     "Dowell Myers",
+     "Gary Painter",
+     "Johanna Thunell",
+     "Julie Zissimopoulos"
+    ],
+    "year": 2020,
+    "source": "Journal of Housing Economics"
+   },
+   "doi_registered": true,
+   "crossref_title": "The role of parental financial assistance in the transition to homeownership by young adults",
+   "title_check": "match",
+   "crossref_authors": [
+    "Lee",
+    "Myers",
+    "Painter",
+    "Thunell",
+    "Zissimopoulos"
+   ],
+   "crossref_years": {
+    "published": 2020,
+    "published-print": 2020,
+    "issued": 2020,
+    "created": 2018
+   },
+   "crossref_type": "journal-article",
+   "crossref_container": "Journal of Housing Economics",
+   "crossref_relations": {},
+   "openalex_year": 2018,
+   "openalex_id": "https://openalex.org/W2885122306",
+   "doi_embedded_year": 2018,
+   "corpus_duplicates": [],
+   "openalex_same_title_other_doi": [],
+   "issues": [],
+   "notes": [
+    "online-first 2018, issue/print 2020 (citation year 2020)"
+   ],
+   "metadata_verified": "yes",
+   "duplicate_version": "no",
+   "row": 41
+  },
+  {
+   "doi": "10.1080/00036840802600590",
+   "sample": {
+    "title": "Intra- and inter-household externalities in children's schooling: evidence from rural residential neighbourhoods in Bangladesh",
+    "authors": [
+     "Mohammad Niaz Asadullah"
+    ],
+    "year": 2011,
+    "source": "Applied Economics"
+   },
+   "doi_registered": true,
+   "crossref_title": "Intra- and inter-household externalities in children's schooling: evidence from rural residential neighbourhoods in Bangladesh",
+   "title_check": "match",
+   "crossref_authors": [
+    "Asadullah"
+   ],
+   "crossref_years": {
+    "published": 2011,
+    "published-print": 2011,
+    "issued": 2011,
+    "created": 2009
+   },
+   "crossref_type": "journal-article",
+   "crossref_container": "Applied Economics",
+   "crossref_relations": {},
+   "openalex_year": 2009,
+   "openalex_id": "https://openalex.org/W2043704377",
+   "doi_embedded_year": null,
+   "corpus_duplicates": [],
+   "openalex_same_title_other_doi": [],
+   "issues": [],
+   "notes": [
+    "online-first 2009, issue/print 2011 (citation year 2011)"
+   ],
+   "metadata_verified": "yes",
+   "duplicate_version": "no",
+   "row": 42
+  },
+  {
+   "doi": "10.1016/s0047-2727(00)00088-8",
+   "sample": {
+    "title": "Bequest taxes and capital gains realizations",
+    "authors": [
+     "Gerald Auten",
+     "David Joulfaian"
+    ],
+    "year": 2001,
+    "source": "Journal of Public Economics"
+   },
+   "doi_registered": true,
+   "crossref_title": "Bequest taxes and capital gains realizations",
+   "title_check": "match",
+   "crossref_authors": [
+    "Auten",
+    "Joulfaian"
+   ],
+   "crossref_years": {
+    "published": 2001,
+    "published-print": 2001,
+    "issued": 2001,
+    "created": 2002
+   },
+   "crossref_type": "journal-article",
+   "crossref_container": "Journal of Public Economics",
+   "crossref_relations": {},
+   "openalex_year": 2001,
+   "openalex_id": "https://openalex.org/W2127242391",
+   "doi_embedded_year": null,
+   "corpus_duplicates": [],
+   "openalex_same_title_other_doi": [],
+   "issues": [],
+   "notes": [],
+   "metadata_verified": "yes",
+   "duplicate_version": "no",
+   "row": 43
+  },
+  {
+   "doi": "10.1016/j.childyouth.2009.07.001",
+   "sample": {
+    "title": "Need for and barriers to accessing public benefits among low-income families with children",
+    "authors": [
+     "Chi-Fang Wu",
+     "Mary Keegan Eamon"
+    ],
+    "year": 2010,
+    "source": "Children and Youth Services Review"
+   },
+   "doi_registered": true,
+   "crossref_title": "Need for and barriers to accessing public benefits among low-income families with children",
+   "title_check": "match",
+   "crossref_authors": [
+    "Wu",
+    "Eamon"
+   ],
+   "crossref_years": {
+    "published": 2010,
+    "published-print": 2010,
+    "issued": 2010,
+    "created": 2009
+   },
+   "crossref_type": "journal-article",
+   "crossref_container": "Children and Youth Services Review",
+   "crossref_relations": {},
+   "openalex_year": 2009,
+   "openalex_id": "https://openalex.org/W2091217556",
+   "doi_embedded_year": 2009,
+   "corpus_duplicates": [],
+   "openalex_same_title_other_doi": [],
+   "issues": [],
+   "notes": [
+    "online-first 2009, issue/print 2010 (citation year 2010)"
+   ],
+   "metadata_verified": "yes",
+   "duplicate_version": "no",
+   "row": 44
+  },
+  {
+   "doi": "10.19031/jkheea.2016.06.28.2.61",
+   "sample": {
+    "title": "Comparison Between South and North Korean Terminologies in Child and Family Domains of Family Life Education",
+    "authors": [
+     "JungHa Lim",
+     "SoonHwa Chung",
+     "Jieun Song"
+    ],
+    "year": 2020,
+    "source": "Korean Home Economics Education Association"
+   },
+   "doi_registered": true,
+   "crossref_title": "Comparison Between South and North Korean Terminologies in Child and Family Domains of Family Life Education",
+   "title_check": "match",
+   "crossref_authors": [
+    "Lim",
+    "Chung",
+    "Song"
+   ],
+   "crossref_years": {
+    "published": 2020,
+    "published-print": 2020,
+    "published-online": 2020,
+    "issued": 2020,
+    "created": 2017
+   },
+   "crossref_type": "journal-article",
+   "crossref_container": "Korean Home Economics Education Association",
+   "crossref_relations": {},
+   "openalex_year": 2017,
+   "openalex_id": "https://openalex.org/W2602013699",
+   "doi_embedded_year": 2016,
+   "corpus_duplicates": [],
+   "openalex_same_title_other_doi": [],
+   "issues": [
+    "UNCERTAIN year: print 2020 but DOI deposited 2017 (3-year gap); check landing page; DOI encodes 2016"
+   ],
+   "notes": [],
+   "metadata_verified": "no",
+   "duplicate_version": "no",
+   "row": 45
+  },
+  {
+   "doi": "10.1016/j.compedu.2009.08.010",
+   "sample": {
+    "title": "Technology to support parental engagement in elementary education: Lessons learned from the UK",
+    "authors": [
+     "Cathy Lewin",
+     "Rosemary Luckin"
+    ],
+    "year": 2010,
+    "source": "Computers & Education"
+   },
+   "doi_registered": true,
+   "crossref_title": "Technology to support parental engagement in elementary education: Lessons learned from the UK",
+   "title_check": "match",
+   "crossref_authors": [
+    "Lewin",
+    "Luckin"
+   ],
+   "crossref_years": {
+    "published": 2010,
+    "published-print": 2010,
+    "issued": 2010,
+    "created": 2009
+   },
+   "crossref_type": "journal-article",
+   "crossref_container": "Computers &amp; Education",
+   "crossref_relations": {},
+   "openalex_year": 2009,
+   "openalex_id": "https://openalex.org/W2143288719",
+   "doi_embedded_year": 2009,
+   "corpus_duplicates": [],
+   "openalex_same_title_other_doi": [],
+   "issues": [],
+   "notes": [
+    "online-first 2009, issue/print 2010 (citation year 2010)"
+   ],
+   "metadata_verified": "yes",
+   "duplicate_version": "no",
+   "row": 46
+  },
+  {
+   "doi": "10.1111/j.1469-8749.2009.03354.x",
+   "sample": {
+    "title": "Does parent report measure performance? A study of the construct validity of the Functional Mobility Scale",
+    "authors": [
+     "ADRIENNE HARVEY",
+     "RICHARD BAKER",
+     "MEG E MORRIS",
+     "JANET HOUGH",
+     "MARTY HUGHES",
+     "H KERR GRAHAM"
+    ],
+    "year": 2010,
+    "source": "Developmental Medicine & Child Neurology"
+   },
+   "doi_registered": true,
+   "crossref_title": "Does parent report measure performance? A study of the construct validity of the Functional Mobility Scale",
+   "title_check": "match",
+   "crossref_authors": [
+    "HARVEY",
+    "BAKER",
+    "MORRIS",
+    "HOUGH",
+    "HUGHES",
+    "GRAHAM"
+   ],
+   "crossref_years": {
+    "published": 2010,
+    "published-print": 2010,
+    "published-online": 2010,
+    "issued": 2010,
+    "created": 2009
+   },
+   "crossref_type": "journal-article",
+   "crossref_container": "Developmental Medicine &amp; Child Neurology",
+   "crossref_relations": {},
+   "openalex_year": 2009,
+   "openalex_id": "https://openalex.org/W1662495179",
+   "doi_embedded_year": 2009,
+   "corpus_duplicates": [],
+   "openalex_same_title_other_doi": [],
+   "issues": [],
+   "notes": [
+    "online-first 2009, issue/print 2010 (citation year 2010)"
+   ],
+   "metadata_verified": "yes",
+   "duplicate_version": "no",
+   "row": 47
+  },
+  {
+   "doi": "10.1080/00036840902837092",
+   "sample": {
+    "title": "Physician response to fee changes: using inheritance as a quasi-natural experiment",
+    "authors": [
+     "Fredrik Carlsen",
+     "Jostein Grytten",
+     "Irene Skau"
+    ],
+    "year": 2011,
+    "source": "Applied Economics"
+   },
+   "doi_registered": true,
+   "crossref_title": "Physician response to fee changes: using inheritance as a quasi-natural experiment",
+   "title_check": "match",
+   "crossref_authors": [
+    "Carlsen",
+    "Grytten",
+    "Skau"
+   ],
+   "crossref_years": {
+    "published": 2011,
+    "published-print": 2011,
+    "issued": 2011,
+    "created": 2009
+   },
+   "crossref_type": "journal-article",
+   "crossref_container": "Applied Economics",
+   "crossref_relations": {},
+   "openalex_year": 2009,
+   "openalex_id": "https://openalex.org/W2119348610",
+   "doi_embedded_year": null,
+   "corpus_duplicates": [],
+   "openalex_same_title_other_doi": [],
+   "issues": [],
+   "notes": [
+    "online-first 2009, issue/print 2011 (citation year 2011)"
+   ],
+   "metadata_verified": "yes",
+   "duplicate_version": "no",
+   "row": 48
+  },
+  {
+   "doi": "10.3138/jmvfh.0011",
+   "sample": {
+    "title": "Military life, mobility, and me: A collection of composite images by British service children",
+    "authors": [
+     "Lucy Robinson"
+    ],
+    "year": 2024,
+    "source": "Journal of Military, Veteran and Family Health"
+   },
+   "doi_registered": true,
+   "crossref_title": "Military life, mobility, and me: A collection of composite images by British service children",
+   "title_check": "match",
+   "crossref_authors": [
+    "Robinson"
+   ],
+   "crossref_years": {
+    "published": 2024,
+    "published-print": 2024,
+    "issued": 2024,
+    "created": 2018
+   },
+   "crossref_type": "journal-article",
+   "crossref_container": "Journal of Military, Veteran and Family Health",
+   "crossref_relations": {},
+   "openalex_year": 2018,
+   "openalex_id": "https://openalex.org/W2894928756",
+   "doi_embedded_year": null,
+   "corpus_duplicates": [],
+   "openalex_same_title_other_doi": [
+    {
+     "doi": "10.3138/jmvfh-2023-0043",
+     "year": 2018,
+     "type": "article",
+     "openalex_id": "https://openalex.org/W2894928756",
+     "venue": "Journal of Military Veteran and Family Health"
+    }
+   ],
+   "issues": [
+    "UNCERTAIN year: print 2024 but DOI deposited 2018 (6-year gap); check landing page"
+   ],
+   "notes": [
+    "same title, other DOI: 10.3138/jmvfh-2023-0043 (2018, article, Journal of Military Veteran and Family Health) (shares an author)"
+   ],
+   "metadata_verified": "no",
+   "duplicate_version": "yes",
+   "row": 49
+  },
+  {
+   "doi": "10.1016/s0140-6736(01)05407-1",
+   "sample": {
+    "title": "Income inequality, the psychosocial environment, and health: comparisons of wealthy nations",
+    "authors": [
+     "John Lynch",
+     "George Davey Smith",
+     "Marianne Hillemeier",
+     "Mary Shaw",
+     "Trivellore Raghunathan",
+     "George Kaplan"
+    ],
+    "year": 2001,
+    "source": "The Lancet"
+   },
+   "doi_registered": true,
+   "crossref_title": "Income inequality, the psychosocial environment, and health: comparisons of wealthy nations",
+   "title_check": "match",
+   "crossref_authors": [
+    "Lynch",
+    "Smith",
+    "Hillemeier",
+    "Shaw",
+    "Raghunathan",
+    "Kaplan"
+   ],
+   "crossref_years": {
+    "published": 2001,
+    "published-print": 2001,
+    "issued": 2001,
+    "created": 2002
+   },
+   "crossref_type": "journal-article",
+   "crossref_container": "The Lancet",
+   "crossref_relations": {},
+   "openalex_year": 2001,
+   "openalex_id": "https://openalex.org/W2162223149",
+   "doi_embedded_year": null,
+   "corpus_duplicates": [],
+   "openalex_same_title_other_doi": [],
+   "issues": [],
+   "notes": [],
+   "metadata_verified": "yes",
+   "duplicate_version": "no",
+   "row": 50
+  },
+  {
+   "doi": "10.1016/j.jdeveco.2009.04.003",
+   "sample": {
+    "title": "Inheritance patterns in migration-prone communities of the Peruvian Highlands",
+    "authors": [
+     "Tatiana Goetghebuer",
+     "Jean-Philippe Platteau"
+    ],
+    "year": 2010,
+    "source": "Journal of Development Economics"
+   },
+   "doi_registered": true,
+   "crossref_title": "Inheritance patterns in migration-prone communities of the Peruvian Highlands",
+   "title_check": "match",
+   "crossref_authors": [
+    "Goetghebuer",
+    "Platteau"
+   ],
+   "crossref_years": {
+    "published": 2010,
+    "published-print": 2010,
+    "issued": 2010,
+    "created": 2009
+   },
+   "crossref_type": "journal-article",
+   "crossref_container": "Journal of Development Economics",
+   "crossref_relations": {},
+   "openalex_year": 2009,
+   "openalex_id": "https://openalex.org/W1979983557",
+   "doi_embedded_year": 2009,
+   "corpus_duplicates": [],
+   "openalex_same_title_other_doi": [],
+   "issues": [],
+   "notes": [
+    "online-first 2009, issue/print 2010 (citation year 2010)"
+   ],
+   "metadata_verified": "yes",
+   "duplicate_version": "no",
+   "row": 51
+  },
+  {
+   "doi": "10.1016/j.labeco.2009.04.009",
+   "sample": {
+    "title": "Estimating the intergenerational persistence of lifetime earnings with life course matching: Evidence from the PSID",
+    "authors": [
+     "Elena Gouskova",
+     "Ngina Chiteji",
+     "Frank Stafford"
+    ],
+    "year": 2010,
+    "source": "Labour Economics"
+   },
+   "doi_registered": true,
+   "crossref_title": "Estimating the intergenerational persistence of lifetime earnings with life course matching: Evidence from the PSID",
+   "title_check": "match",
+   "crossref_authors": [
+    "Gouskova",
+    "Chiteji",
+    "Stafford"
+   ],
+   "crossref_years": {
+    "published": 2010,
+    "published-print": 2010,
+    "issued": 2010,
+    "created": 2009
+   },
+   "crossref_type": "journal-article",
+   "crossref_container": "Labour Economics",
+   "crossref_relations": {},
+   "openalex_year": 2009,
+   "openalex_id": "https://openalex.org/W2046103909",
+   "doi_embedded_year": 2009,
+   "corpus_duplicates": [],
+   "openalex_same_title_other_doi": [],
+   "issues": [],
+   "notes": [
+    "online-first 2009, issue/print 2010 (citation year 2010)"
+   ],
+   "metadata_verified": "yes",
+   "duplicate_version": "no",
+   "row": 52
+  },
+  {
+   "doi": "10.1016/j.jdeveco.2018.08.001",
+   "sample": {
+    "title": "Women's inheritance rights reform and the preference for sons in India",
+    "authors": [
+     "Sonia Bhalotra",
+     "Rachel Brulé",
+     "Sanchari Roy"
+    ],
+    "year": 2020,
+    "source": "Journal of Development Economics"
+   },
+   "doi_registered": true,
+   "crossref_title": "Women's inheritance rights reform and the preference for sons in India",
+   "title_check": "match",
+   "crossref_authors": [
+    "Bhalotra",
+    "Brulé",
+    "Roy"
+   ],
+   "crossref_years": {
+    "published": 2020,
+    "published-print": 2020,
+    "issued": 2020,
+    "created": 2018
+   },
+   "crossref_type": "journal-article",
+   "crossref_container": "Journal of Development Economics",
+   "crossref_relations": {},
+   "openalex_year": 2018,
+   "openalex_id": "https://openalex.org/W2785459582",
+   "doi_embedded_year": 2018,
+   "corpus_duplicates": [],
+   "openalex_same_title_other_doi": [
+    {
+     "doi": "10.2139/ssrn.3097357",
+     "year": 2018,
+     "type": "preprint",
+     "openalex_id": "https://openalex.org/W3123856780",
+     "venue": "SSRN Electronic Journal"
+    }
+   ],
+   "issues": [],
+   "notes": [
+    "online-first 2018, issue/print 2020 (citation year 2020)",
+    "same title, other DOI: 10.2139/ssrn.3097357 (2018, preprint, SSRN Electronic Journal) (shares an author)"
+   ],
+   "metadata_verified": "yes",
+   "duplicate_version": "yes",
+   "row": 53
+  },
+  {
+   "doi": "10.1080/03004430801908327",
+   "sample": {
+    "title": "Teacher support as a buffer between interparental conflict and child social skills",
+    "authors": [
+     "Solveig Spjeldnes",
+     "Gary Koeske",
+     "Esther Sales"
+    ],
+    "year": 2010,
+    "source": "Early Child Development and Care"
+   },
+   "doi_registered": true,
+   "crossref_title": "Teacher support as a buffer between interparental conflict and child social skills",
+   "title_check": "match",
+   "crossref_authors": [
+    "Spjeldnes",
+    "Koeske",
+    "Sales"
+   ],
+   "crossref_years": {
+    "published": 2010,
+    "published-print": 2010,
+    "issued": 2010,
+    "created": 2008
+   },
+   "crossref_type": "journal-article",
+   "crossref_container": "Early Child Development and Care",
+   "crossref_relations": {},
+   "openalex_year": 2008,
+   "openalex_id": "https://openalex.org/W2023288050",
+   "doi_embedded_year": null,
+   "corpus_duplicates": [],
+   "openalex_same_title_other_doi": [],
+   "issues": [],
+   "notes": [
+    "online-first 2008, issue/print 2010 (citation year 2010)"
+   ],
+   "metadata_verified": "yes",
+   "duplicate_version": "no",
+   "row": 54
+  },
+  {
+   "doi": "10.1080/03004430802181452",
+   "sample": {
+    "title": "Multiple aspects of preschool children’s social cognition: relations with peer acceptance and peer interaction style",
+    "authors": [
+     "Darrell Meece",
+     "Jacquelyn Mize"
+    ],
+    "year": 2010,
+    "source": "Early Child Development and Care"
+   },
+   "doi_registered": true,
+   "crossref_title": "Multiple aspects of preschool children’s social cognition: relations with peer acceptance and peer interaction style",
+   "title_check": "match",
+   "crossref_authors": [
+    "Meece",
+    "Mize"
+   ],
+   "crossref_years": {
+    "published": 2010,
+    "published-print": 2010,
+    "issued": 2010,
+    "created": 2008
+   },
+   "crossref_type": "journal-article",
+   "crossref_container": "Early Child Development and Care",
+   "crossref_relations": {},
+   "openalex_year": 2008,
+   "openalex_id": "https://openalex.org/W2077102131",
+   "doi_embedded_year": null,
+   "corpus_duplicates": [],
+   "openalex_same_title_other_doi": [],
+   "issues": [],
+   "notes": [
+    "online-first 2008, issue/print 2010 (citation year 2010)"
+   ],
+   "metadata_verified": "yes",
+   "duplicate_version": "no",
+   "row": 55
+  },
+  {
+   "doi": "10.1016/s0163-6383(01)00067-4",
+   "sample": {
+    "title": "The development of social toy play and language in infancy☆ 3 3☆ This research was funded by a University Faculty Grant to Lori Roggman from the Vice President for Research at Utah State University, 1990–1992, by a College of Family Research Grant to Lori Roggman, 1998–2000, by a Fellowship to Lisa Newland from the Vice President for Research at Utah State University, 1997–1998, and by a College of Family Life Fellowship to Lisa Newland, 1998–2000.",
+    "authors": [
+     "Lisa A Newland",
+     "Lori A Roggman",
+     "Lisa K Boyce"
+    ],
+    "year": 2001,
+    "source": "Infant Behavior and Development"
+   },
+   "doi_registered": true,
+   "crossref_title": "The development of social toy play and language in infancy☆ 3 3☆ This research was funded by a University Faculty Grant to Lori Roggman from the Vice President for Research at Utah State University, 1990–1992, by a College of Family Research Grant to Lori Roggman, 1998–2000, by a Fellowship to Lisa Newland from the Vice President for Research at Utah State University, 1997–1998, and by a College of Family Life Fellowship to Lisa Newland, 1998–2000.",
+   "title_check": "match",
+   "crossref_authors": [
+    "Newland",
+    "Roggman",
+    "Boyce"
+   ],
+   "crossref_years": {
+    "published": 2001,
+    "published-print": 2001,
+    "issued": 2001,
+    "created": 2002
+   },
+   "crossref_type": "journal-article",
+   "crossref_container": "Infant Behavior and Development",
+   "crossref_relations": {},
+   "openalex_year": 2001,
+   "openalex_id": "https://openalex.org/W1967153245",
+   "doi_embedded_year": null,
+   "corpus_duplicates": [],
+   "openalex_same_title_other_doi": [],
+   "issues": [],
+   "notes": [],
+   "metadata_verified": "yes",
+   "duplicate_version": "no",
+   "row": 56
+  },
+  {
+   "doi": "10.1016/s0378-4371(01)00113-3",
+   "sample": {
+    "title": "Finite market size as a source of extreme wealth inequality and market instability",
+    "authors": [
+     "Zhi-Feng Huang",
+     "Sorin Solomon"
+    ],
+    "year": 2001,
+    "source": "Physica A: Statistical Mechanics and its Applications"
+   },
+   "doi_registered": true,
+   "crossref_title": "Finite market size as a source of extreme wealth inequality and market instability",
+   "title_check": "match",
+   "crossref_authors": [
+    "Huang",
+    "Solomon"
+   ],
+   "crossref_years": {
+    "published": 2001,
+    "published-print": 2001,
+    "issued": 2001,
+    "created": 2002
+   },
+   "crossref_type": "journal-article",
+   "crossref_container": "Physica A: Statistical Mechanics and its Applications",
+   "crossref_relations": {},
+   "openalex_year": 2001,
+   "openalex_id": "https://openalex.org/W2106777819",
+   "doi_embedded_year": null,
+   "corpus_duplicates": [],
+   "openalex_same_title_other_doi": [],
+   "issues": [],
+   "notes": [],
+   "metadata_verified": "yes",
+   "duplicate_version": "no",
+   "row": 57
+  },
+  {
+   "doi": "10.2139/ssrn.3506725",
+   "sample": {
+    "title": "Bequest Motives in Consumption-Portfolio Decisions with Recursive Utility",
+    "authors": [
+     "Holger Kraft",
+     "Claus Munk",
+     "Farina Weiss"
+    ],
+    "year": 2020,
+    "source": ""
+   },
+   "doi_registered": true,
+   "crossref_title": "Bequest Motives in Consumption-Portfolio Decisions with Recursive Utility",
+   "title_check": "match",
+   "crossref_authors": [
+    "Kraft",
+    "Munk",
+    "Weiss"
+   ],
+   "crossref_years": {
+    "published": 2020,
+    "issued": 2020,
+    "created": 2020
+   },
+   "crossref_type": "posted-content",
+   "crossref_container": "",
+   "crossref_relations": {},
+   "openalex_year": 2022,
+   "openalex_id": "https://openalex.org/W4225724188",
+   "doi_embedded_year": null,
+   "corpus_duplicates": [],
+   "openalex_same_title_other_doi": [
+    {
+     "doi": "10.1016/j.jbankfin.2022.106428",
+     "year": 2022,
+     "type": "article",
+     "openalex_id": "https://openalex.org/W4225724188",
+     "venue": "Journal of Banking & Finance"
+    }
+   ],
+   "issues": [],
+   "notes": [
+    "Crossref type: posted-content",
+    "same title, other DOI: 10.1016/j.jbankfin.2022.106428 (2022, article, Journal of Banking & Finance) (shares an author)"
+   ],
+   "metadata_verified": "yes",
+   "duplicate_version": "yes",
+   "row": 58
+  },
+  {
+   "doi": "10.1332/204674319x15492792975248",
+   "sample": {
+    "title": "Adoption wars: inequality, child welfare and (social) justice",
+    "authors": [
+     "Derek Kirton"
+    ],
+    "year": 2020,
+    "source": "Families, Relationships and Societies"
+   },
+   "doi_registered": true,
+   "crossref_title": "Adoption wars: inequality, child welfare and (social) justice",
+   "title_check": "match",
+   "crossref_authors": [
+    "Kirton"
+   ],
+   "crossref_years": {
+    "published": 2020,
+    "published-print": 2020,
+    "issued": 2020,
+    "created": 2019
+   },
+   "crossref_type": "journal-article",
+   "crossref_container": "Families, Relationships and Societies",
+   "crossref_relations": {},
+   "openalex_year": 2019,
+   "openalex_id": "https://openalex.org/W2932131021",
+   "doi_embedded_year": null,
+   "corpus_duplicates": [],
+   "openalex_same_title_other_doi": [],
+   "issues": [],
+   "notes": [
+    "online-first 2019, issue/print 2020 (citation year 2020)"
+   ],
+   "metadata_verified": "yes",
+   "duplicate_version": "no",
+   "row": 59
+  },
+  {
+   "doi": "10.18574/nyu/9781479894147.003.0004",
+   "sample": {
+    "title": "3. Of families or individuals?: southern child workers and the progressive crusade for child labor regulation, 1899–1920",
+    "authors": [
+     "Gwendoline Alphonso"
+    ],
+    "year": 2020,
+    "source": "Children and Youth During the Gilded Age and Progressive Era"
+   },
+   "doi_registered": true,
+   "crossref_title": "3. Of families or individuals?: southern child workers and the progressive crusade for child labor regulation, 1899–1920",
+   "title_check": "match",
+   "crossref_authors": [
+    "Alphonso"
+   ],
+   "crossref_years": {
+    "published": 2020,
+    "published-print": 2020,
+    "issued": 2020,
+    "created": 2016
+   },
+   "crossref_type": "book-chapter",
+   "crossref_container": "Children and Youth During the Gilded Age and Progressive Era",
+   "crossref_relations": {},
+   "openalex_year": 2016,
+   "openalex_id": "https://openalex.org/W2490050948",
+   "doi_embedded_year": null,
+   "corpus_duplicates": [],
+   "openalex_same_title_other_doi": [
+    {
+     "doi": "10.18574/nyu/9781479856558.003.0009",
+     "year": 2014,
+     "type": "book-chapter",
+     "openalex_id": "https://openalex.org/W4393266838",
+     "venue": "New York University Press eBooks"
+    }
+   ],
+   "issues": [
+    "UNCERTAIN year: listed 2020, but DOI first deposited 2016 (likely platform re-issue)"
+   ],
+   "notes": [
+    "Crossref type: book-chapter",
+    "same title, other DOI: 10.18574/nyu/9781479856558.003.0009 (2014, book-chapter, New York University Press eBooks) (shares an author)"
+   ],
+   "metadata_verified": "no",
+   "duplicate_version": "yes",
+   "row": 60
+  },
+  {
+   "doi": "10.1111/j.1468-2370.2008.00247.x",
+   "sample": {
+    "title": "A Social Capital Perspective of Innovation from Individuals to Nations: Where is Empirical Literature Directing Us?",
+    "authors": [
+     "Wei Zheng"
+    ],
+    "year": 2010,
+    "source": "International Journal of Management Reviews"
+   },
+   "doi_registered": true,
+   "crossref_title": "A Social Capital Perspective of Innovation from Individuals to Nations: Where is Empirical Literature Directing Us?",
+   "title_check": "match",
+   "crossref_authors": [
+    "Zheng"
+   ],
+   "crossref_years": {
+    "published": 2010,
+    "published-print": 2010,
+    "published-online": 2010,
+    "issued": 2010,
+    "created": 2008
+   },
+   "crossref_type": "journal-article",
+   "crossref_container": "International Journal of Management Reviews",
+   "crossref_relations": {},
+   "openalex_year": 2008,
+   "openalex_id": "https://openalex.org/W2288585550",
+   "doi_embedded_year": 2008,
+   "corpus_duplicates": [],
+   "openalex_same_title_other_doi": [],
+   "issues": [],
+   "notes": [
+    "online-first 2008, issue/print 2010 (citation year 2010)"
+   ],
+   "metadata_verified": "yes",
+   "duplicate_version": "no",
+   "row": 61
+  },
+  {
+   "doi": "10.1016/j.ecresq.2018.04.008",
+   "sample": {
+    "title": "School readiness among children of Hispanic immigrants and their peers: The role of parental cognitive stimulation and early care and education",
+    "authors": [
+     "Christina M. Padilla",
+     "Rebecca M. Ryan"
+    ],
+    "year": 2020,
+    "source": "Early Childhood Research Quarterly"
+   },
+   "doi_registered": true,
+   "crossref_title": "School readiness among children of Hispanic immigrants and their peers: The role of parental cognitive stimulation and early care and education",
+   "title_check": "match",
+   "crossref_authors": [
+    "Padilla",
+    "Ryan"
+   ],
+   "crossref_years": {
+    "published": 2020,
+    "published-print": 2020,
+    "issued": 2020,
+    "created": 2018
+   },
+   "crossref_type": "journal-article",
+   "crossref_container": "Early Childhood Research Quarterly",
+   "crossref_relations": {},
+   "openalex_year": 2018,
+   "openalex_id": "https://openalex.org/W2801581311",
+   "doi_embedded_year": 2018,
+   "corpus_duplicates": [],
+   "openalex_same_title_other_doi": [],
+   "issues": [],
+   "notes": [
+    "online-first 2018, issue/print 2020 (citation year 2020)"
+   ],
+   "metadata_verified": "yes",
+   "duplicate_version": "no",
+   "row": 62
+  },
+  {
+   "doi": "10.1080/03004430802586130",
+   "sample": {
+    "title": "The transition from kindergarten to primary school, as experienced by teachers, parents and children in Hong Kong",
+    "authors": [
+     "Wai Ling Chan"
+    ],
+    "year": 2010,
+    "source": "Early Child Development and Care"
+   },
+   "doi_registered": true,
+   "crossref_title": "The transition from kindergarten to primary school, as experienced by teachers, parents and children in Hong Kong",
+   "title_check": "match",
+   "crossref_authors": [
+    "Chan"
+   ],
+   "crossref_years": {
+    "published": 2010,
+    "published-print": 2010,
+    "issued": 2010,
+    "created": 2009
+   },
+   "crossref_type": "journal-article",
+   "crossref_container": "Early Child Development and Care",
+   "crossref_relations": {},
+   "openalex_year": 2009,
+   "openalex_id": "https://openalex.org/W1980821614",
+   "doi_embedded_year": null,
+   "corpus_duplicates": [],
+   "openalex_same_title_other_doi": [],
+   "issues": [],
+   "notes": [
+    "online-first 2009, issue/print 2010 (citation year 2010)"
+   ],
+   "metadata_verified": "yes",
+   "duplicate_version": "no",
+   "row": 63
+  },
+  {
+   "doi": "10.1016/s1054-139x(99)00077-4",
+   "sample": {
+    "title": "Perceived parental monitoring and health risk behaviors among urban low-income African-American children and adolescents",
+    "authors": [
+     "Xiaoming Li",
+     "Susan Feigelman",
+     "Bonita Stanton"
+    ],
+    "year": 2000,
+    "source": "Journal of Adolescent Health"
+   },
+   "doi_registered": true,
+   "crossref_title": "Perceived parental monitoring and health risk behaviors among urban low-income African-American children and adolescents",
+   "title_check": "match",
+   "crossref_authors": [
+    "Li",
+    "Feigelman",
+    "Stanton"
+   ],
+   "crossref_years": {
+    "published": 2000,
+    "published-print": 2000,
+    "issued": 2000,
+    "created": 2002
+   },
+   "crossref_type": "journal-article",
+   "crossref_container": "Journal of Adolescent Health",
+   "crossref_relations": {},
+   "openalex_year": 2000,
+   "openalex_id": "https://openalex.org/W2137943635",
+   "doi_embedded_year": null,
+   "corpus_duplicates": [],
+   "openalex_same_title_other_doi": [],
+   "issues": [],
+   "notes": [],
+   "metadata_verified": "yes",
+   "duplicate_version": "no",
+   "row": 64
+  },
+  {
+   "doi": "10.1016/s0749-3797(01)00412-3",
+   "sample": {
+    "title": "Predictors of seat-belt use among school-aged children in two low-income Hispanic communities",
+    "authors": [
+     "E Edgerton"
+    ],
+    "year": 2002,
+    "source": "American Journal of Preventive Medicine"
+   },
+   "doi_registered": true,
+   "crossref_title": "Predictors of seat-belt use among school-aged children in two low-income Hispanic communities",
+   "title_check": "match",
+   "crossref_authors": [
+    "Edgerton"
+   ],
+   "crossref_years": {
+    "published": 2002,
+    "published-print": 2002,
+    "issued": 2002,
+    "created": 2002
+   },
+   "crossref_type": "journal-article",
+   "crossref_container": "American Journal of Preventive Medicine",
+   "crossref_relations": {},
+   "openalex_year": 2002,
+   "openalex_id": "https://openalex.org/W1985686120",
+   "doi_embedded_year": null,
+   "corpus_duplicates": [],
+   "openalex_same_title_other_doi": [],
+   "issues": [],
+   "notes": [],
+   "metadata_verified": "yes",
+   "duplicate_version": "no",
+   "row": 65
+  },
+  {
+   "doi": "10.1086/701828",
+   "sample": {
+    "title": "Productivity Shocks and Child Labor: The Role of Credit and Agricultural Labor Markets",
+    "authors": [
+     "Christelle Dumas"
+    ],
+    "year": 2020,
+    "source": "Economic Development and Cultural Change"
+   },
+   "doi_registered": true,
+   "crossref_title": "Productivity Shocks and Child Labor: The Role of Credit and Agricultural Labor Markets",
+   "title_check": "match",
+   "crossref_authors": [
+    "Dumas"
+   ],
+   "crossref_years": {
+    "published": 2020,
+    "published-print": 2020,
+    "issued": 2020,
+    "created": 2018
+   },
+   "crossref_type": "journal-article",
+   "crossref_container": "Economic Development and Cultural Change",
+   "crossref_relations": {},
+   "openalex_year": 2018,
+   "openalex_id": "https://openalex.org/W2902122456",
+   "doi_embedded_year": null,
+   "corpus_duplicates": [],
+   "openalex_same_title_other_doi": [],
+   "issues": [],
+   "notes": [
+    "online-first 2018, issue/print 2020 (citation year 2020)"
+   ],
+   "metadata_verified": "yes",
+   "duplicate_version": "no",
+   "row": 66
+  },
+  {
+   "doi": "10.3386/w26621",
+   "sample": {
+    "title": "The Impact of Bequest Motives on Retirement Behavior in Japan: A Theoretical and Empirical Analysis",
+    "authors": [
+     "Charles Yuji Horioka",
+     "Emin Gahramanov",
+     "Aziz Hayat",
+     "Xueli Tang"
+    ],
+    "year": 2020,
+    "source": ""
+   },
+   "doi_registered": true,
+   "crossref_title": "The Impact of Bequest Motives on Retirement Behavior in Japan:  A Theoretical and Empirical Analysis",
+   "title_check": "match",
+   "crossref_authors": [
+    "Horioka",
+    "Gahramanov",
+    "Hayat",
+    "Tang"
+   ],
+   "crossref_years": {
+    "published": 2020,
+    "published-online": 2020,
+    "issued": 2020,
+    "created": 2020
+   },
+   "crossref_type": "report",
+   "crossref_container": "",
+   "crossref_relations": {},
+   "openalex_year": 2020,
+   "openalex_id": "https://openalex.org/W2997153100",
+   "doi_embedded_year": null,
+   "corpus_duplicates": [],
+   "openalex_same_title_other_doi": [
+    {
+     "doi": "10.2139/ssrn.3517031",
+     "year": 2020,
+     "type": "preprint",
+     "openalex_id": "https://openalex.org/W3123237350",
+     "venue": "SSRN Electronic Journal"
+    }
+   ],
+   "issues": [],
+   "notes": [
+    "Crossref type: report",
+    "same title, other DOI: 10.2139/ssrn.3517031 (2020, preprint, SSRN Electronic Journal) (shares an author)"
+   ],
+   "metadata_verified": "yes",
+   "duplicate_version": "yes",
+   "row": 67
+  },
+  {
+   "doi": "10.1016/j.jdeveco.2009.01.006",
+   "sample": {
+    "title": "Child labor and household wealth: Theory and empirical evidence of an inverted-U",
+    "authors": [
+     "Kaushik Basu",
+     "Sanghamitra Das",
+     "Bhaskar Dutta"
+    ],
+    "year": 2010,
+    "source": "Journal of Development Economics"
+   },
+   "doi_registered": true,
+   "crossref_title": "Child labor and household wealth: Theory and empirical evidence of an inverted-U",
+   "title_check": "match",
+   "crossref_authors": [
+    "Basu",
+    "Das",
+    "Dutta"
+   ],
+   "crossref_years": {
+    "published": 2010,
+    "published-print": 2010,
+    "issued": 2010,
+    "created": 2009
+   },
+   "crossref_type": "journal-article",
+   "crossref_container": "Journal of Development Economics",
+   "crossref_relations": {},
+   "openalex_year": 2009,
+   "openalex_id": "https://openalex.org/W3121888485",
+   "doi_embedded_year": 2009,
+   "corpus_duplicates": [],
+   "openalex_same_title_other_doi": [
+    {
+     "doi": "10.2139/ssrn.966160",
+     "year": 2007,
+     "type": "preprint",
+     "openalex_id": "https://openalex.org/W2075699415",
+     "venue": "SSRN Electronic Journal"
+    },
+    {
+     "doi": "10.2139/ssrn.982152",
+     "year": 2007,
+     "type": "preprint",
+     "openalex_id": "https://openalex.org/W3121438111",
+     "venue": "SSRN Electronic Journal"
+    },
+    {
+     "doi": "10.22004/ag.econ.271311",
+     "year": 2008,
+     "type": "report",
+     "openalex_id": "https://openalex.org/W4302439166",
+     "venue": "Warwick Research Archive Portal (University of Warwick)"
+    },
+    {
+     "doi": "10.82444/warw.33481786",
+     "year": 2026,
+     "type": "preprint",
+     "openalex_id": "https://openalex.org/W7221076468",
+     "venue": "University of Warwick"
+    }
+   ],
+   "issues": [],
+   "notes": [
+    "online-first 2009, issue/print 2010 (citation year 2010)",
+    "same title, other DOI: 10.2139/ssrn.966160 (2007, preprint, SSRN Electronic Journal); 10.2139/ssrn.982152 (2007, preprint, SSRN Electronic Journal); 10.22004/ag.econ.271311 (2008, report, Warwick Research Archive Portal (University of Warwick)) (shares an author)"
+   ],
+   "metadata_verified": "yes",
+   "duplicate_version": "yes",
+   "row": 68
+  },
+  {
+   "doi": "10.1111/j.1469-8749.2009.03341.x",
+   "sample": {
+    "title": "Measuring mobility limitations in children with cerebral palsy: interrater and intrarater reliability of a mobility questionnaire (MobQues)",
+    "authors": [
+     "NICOLIEN T VAN RAVESTEYN",
+     "ANNET J DALLMEIJER",
+     "VANESSA A SCHOLTES",
+     "LEO D ROORDA",
+     "JULES G BECHER"
+    ],
+    "year": 2010,
+    "source": "Developmental Medicine & Child Neurology"
+   },
+   "doi_registered": true,
+   "crossref_title": "Measuring mobility limitations in children with cerebral palsy: interrater and intrarater reliability of a mobility questionnaire (MobQues)",
+   "title_check": "match",
+   "crossref_authors": [
+    "VAN RAVESTEYN",
+    "DALLMEIJER",
+    "SCHOLTES",
+    "ROORDA",
+    "BECHER"
+   ],
+   "crossref_years": {
+    "published": 2010,
+    "published-print": 2010,
+    "published-online": 2010,
+    "issued": 2010,
+    "created": 2009
+   },
+   "crossref_type": "journal-article",
+   "crossref_container": "Developmental Medicine &amp; Child Neurology",
+   "crossref_relations": {},
+   "openalex_year": 2009,
+   "openalex_id": "https://openalex.org/W1946445662",
+   "doi_embedded_year": 2009,
+   "corpus_duplicates": [],
+   "openalex_same_title_other_doi": [],
+   "issues": [],
+   "notes": [
+    "online-first 2009, issue/print 2010 (citation year 2010)"
+   ],
+   "metadata_verified": "yes",
+   "duplicate_version": "no",
+   "row": 69
+  },
+  {
+   "doi": "10.1016/j.ijcard.2008.12.087",
+   "sample": {
+    "title": "Heart rate variability predicts outcome in children with pulmonary arterial hypertension",
+    "authors": [
+     "Astrid E. Lammers",
+     "Elizabeth Munnery",
+     "Alison A. Hislop",
+     "Sheila G. Haworth"
+    ],
+    "year": 2010,
+    "source": "International Journal of Cardiology"
+   },
+   "doi_registered": true,
+   "crossref_title": "Heart rate variability predicts outcome in children with pulmonary arterial hypertension",
+   "title_check": "match",
+   "crossref_authors": [
+    "Lammers",
+    "Munnery",
+    "Hislop",
+    "Haworth"
+   ],
+   "crossref_years": {
+    "published": 2010,
+    "published-print": 2010,
+    "issued": 2010,
+    "created": 2009
+   },
+   "crossref_type": "journal-article",
+   "crossref_container": "International Journal of Cardiology",
+   "crossref_relations": {},
+   "openalex_year": 2009,
+   "openalex_id": "https://openalex.org/W1981501672",
+   "doi_embedded_year": 2008,
+   "corpus_duplicates": [],
+   "openalex_same_title_other_doi": [],
+   "issues": [],
+   "notes": [
+    "online-first 2009, issue/print 2010 (citation year 2010)"
+   ],
+   "metadata_verified": "yes",
+   "duplicate_version": "no",
+   "row": 70
+  },
+  {
+   "doi": "10.1067/mpd.2000.106568",
+   "sample": {
+    "title": "Coping skills training for youth with diabetes mellitus has long-lasting effects on metabolic control and quality of life",
+    "authors": [
+     "Margaret Grey",
+     "Elizabeth A. Boland",
+     "Maryanne Davidson",
+     "Ju Li",
+     "William V. Tamborlane"
+    ],
+    "year": 2000,
+    "source": "The Journal of Pediatrics"
+   },
+   "doi_registered": true,
+   "crossref_title": "Coping skills training for youth with diabetes mellitus has long-lasting effects on metabolic control and quality of life",
+   "title_check": "match",
+   "crossref_authors": [
+    "Grey",
+    "Boland",
+    "Davidson",
+    "Li",
+    "Tamborlane"
+   ],
+   "crossref_years": {
+    "published": 2000,
+    "published-print": 2000,
+    "issued": 2000,
+    "created": 2002
+   },
+   "crossref_type": "journal-article",
+   "crossref_container": "The Journal of Pediatrics",
+   "crossref_relations": {},
+   "openalex_year": 2000,
+   "openalex_id": "https://openalex.org/W2045485213",
+   "doi_embedded_year": 2000,
+   "corpus_duplicates": [],
+   "openalex_same_title_other_doi": [],
+   "issues": [],
+   "notes": [],
+   "metadata_verified": "yes",
+   "duplicate_version": "no",
+   "row": 71
+  },
+  {
+   "doi": "10.1016/s0306-4603(01)00240-4",
+   "sample": {
+    "title": "Anxiety mediates the association between anxiety sensitivity and coping-related drinking motives in alcoholism treatment patients",
+    "authors": [
+     "Matt G Kushner",
+     "Paul Thuras",
+     "Kenneth Abrams",
+     "Marjorie Brekke",
+     "Laura Stritar"
+    ],
+    "year": 2001,
+    "source": "Addictive Behaviors"
+   },
+   "doi_registered": true,
+   "crossref_title": "Anxiety mediates the association between anxiety sensitivity and coping-related drinking motives in alcoholism treatment patients",
+   "title_check": "match",
+   "crossref_authors": [
+    "Kushner",
+    "Thuras",
+    "Abrams",
+    "Brekke",
+    "Stritar"
+   ],
+   "crossref_years": {
+    "published": 2001,
+    "published-print": 2001,
+    "issued": 2001,
+    "created": 2002
+   },
+   "crossref_type": "journal-article",
+   "crossref_container": "Addictive Behaviors",
+   "crossref_relations": {},
+   "openalex_year": 2001,
+   "openalex_id": "https://openalex.org/W2021517853",
+   "doi_embedded_year": null,
+   "corpus_duplicates": [],
+   "openalex_same_title_other_doi": [],
+   "issues": [],
+   "notes": [],
+   "metadata_verified": "yes",
+   "duplicate_version": "no",
+   "row": 72
+  },
+  {
+   "doi": "10.4018/ijmbl.2015100102",
+   "sample": {
+    "title": "The Effects of Mobile Collaborative Activities in a Second Language Course",
+    "authors": [
+     "Peter Ilic"
+    ],
+    "year": 2022,
+    "source": "International Journal of Mobile and Blended Learning"
+   },
+   "doi_registered": true,
+   "crossref_title": "The Effects of Mobile Collaborative Activities in a Second Language Course",
+   "title_check": "match",
+   "crossref_authors": [
+    "Ilic"
+   ],
+   "crossref_years": {
+    "published": 2022,
+    "published-print": 2022,
+    "issued": 2022,
+    "created": 2015
+   },
+   "crossref_type": "journal-article",
+   "crossref_container": "International Journal of Mobile and Blended Learning",
+   "crossref_relations": {},
+   "openalex_year": 2015,
+   "openalex_id": "https://openalex.org/W1412694183",
+   "doi_embedded_year": null,
+   "corpus_duplicates": [],
+   "openalex_same_title_other_doi": [
+    {
+     "doi": "10.4018/978-1-5225-0783-3.ch093",
+     "year": 2016,
+     "type": "book-chapter",
+     "openalex_id": "https://openalex.org/W4242455903",
+     "venue": "IGI Global eBooks"
+    }
+   ],
+   "issues": [
+    "UNCERTAIN year: print 2022 but DOI deposited 2015 (7-year gap); check landing page"
+   ],
+   "notes": [
+    "same title, other DOI: 10.4018/978-1-5225-0783-3.ch093 (2016, book-chapter, IGI Global eBooks) (shares an author)"
+   ],
+   "metadata_verified": "no",
+   "duplicate_version": "yes",
+   "row": 73
+  },
+  {
+   "doi": "10.1351/goldbook.s06150",
+   "sample": {
+    "title": "support plate",
+    "authors": [],
+    "year": 2014,
+    "source": "The IUPAC Compendium of Chemical Terminology"
+   },
+   "doi_registered": true,
+   "crossref_title": "support plate",
+   "title_check": "match",
+   "crossref_authors": [],
+   "crossref_years": {
+    "published": 2014,
+    "published-print": 2014,
+    "issued": 2014,
+    "created": 2008
+   },
+   "crossref_type": "book-section",
+   "crossref_container": "The IUPAC Compendium of Chemical Terminology",
+   "crossref_relations": {},
+   "openalex_year": 2008,
+   "openalex_id": "https://openalex.org/W4249204640",
+   "doi_embedded_year": null,
+   "corpus_duplicates": [],
+   "openalex_same_title_other_doi": [],
+   "issues": [
+    "UNCERTAIN year: listed 2014, but DOI first deposited 2008 (likely platform re-issue)"
+   ],
+   "notes": [
+    "Crossref lists no authors",
+    "Crossref type: book-section",
+    "not a research paper record"
+   ],
+   "metadata_verified": "no",
+   "duplicate_version": "no",
+   "row": 74
+  },
+  {
+   "doi": "10.1007/s00547-004-0932-y",
+   "sample": {
+    "title": "C-reactive protein as a pre-procedural predictor of early and late outcomes of percutaneous coronary interventions",
+    "authors": [
+     "Saide Aytekin",
+     "Alp Burak Çatakoğlu",
+     "Vedat Aytekin",
+     "Bekir Kocazeybek",
+     "Cemşit Demiroğlu",
+     "Cem'i Demiroğlu"
+    ],
+    "year": 2011,
+    "source": "International Journal of Angiology"
+   },
+   "doi_registered": true,
+   "crossref_title": "C-reactive protein as a pre-procedural predictor of early and late outcomes of percutaneous coronary interventions",
+   "title_check": "match",
+   "crossref_authors": [
+    "Aytekin",
+    "Çatakoğlu",
+    "Aytekin",
+    "Kocazeybek",
+    "Demiroğlu",
+    "Demiroğlu"
+   ],
+   "crossref_years": {
+    "published": 2011,
+    "published-online": 2011,
+    "issued": 2011,
+    "created": 2004
+   },
+   "crossref_type": "journal-article",
+   "crossref_container": "International Journal of Angiology",
+   "crossref_relations": {},
+   "openalex_year": 2003,
+   "openalex_id": "https://openalex.org/W2070350821",
+   "doi_embedded_year": null,
+   "corpus_duplicates": [],
+   "openalex_same_title_other_doi": [],
+   "issues": [
+    "UNCERTAIN year: online-only date 2011, DOI first deposited 2004; check landing page"
+   ],
+   "notes": [],
+   "metadata_verified": "no",
+   "duplicate_version": "no",
+   "row": 75
+  },
+  {
+   "doi": "10.1680/jstbu.17.00152",
+   "sample": {
+    "title": "Moment redistribution in continuous steel-fibre-reinforced concrete slabs",
+    "authors": [
+     "Akshay Venkateshwaran",
+     "Kiang Hwee Tan"
+    ],
+    "year": 2020,
+    "source": "Proceedings of the Institution of Civil Engineers - Structures and Buildings"
+   },
+   "doi_registered": true,
+   "crossref_title": "Moment redistribution in continuous steel-fibre-reinforced concrete slabs",
+   "title_check": "match",
+   "crossref_authors": [
+    "Venkateshwaran",
+    "Tan"
+   ],
+   "crossref_years": {
+    "published": 2020,
+    "published-print": 2020,
+    "issued": 2020,
+    "created": 2018
+   },
+   "crossref_type": "journal-article",
+   "crossref_container": "Proceedings of the Institution of Civil Engineers - Structures and Buildings",
+   "crossref_relations": {},
+   "openalex_year": 2018,
+   "openalex_id": "https://openalex.org/W2905035411",
+   "doi_embedded_year": null,
+   "corpus_duplicates": [],
+   "openalex_same_title_other_doi": [],
+   "issues": [],
+   "notes": [
+    "online-first 2018, issue/print 2020 (citation year 2020)"
+   ],
+   "metadata_verified": "yes",
+   "duplicate_version": "no",
+   "row": 76
+  },
+  {
+   "doi": "10.1002/adma.200901819",
+   "sample": {
+    "title": "High‐mobility Ambipolar Transistors and High‐gain Inverters from a Donor–Acceptor Copolymer Semiconductor",
+    "authors": [
+     "Felix Sunjoo Kim",
+     "Xugang Guo",
+     "Mark D. Watson",
+     "Samson A. Jenekhe"
+    ],
+    "year": 2010,
+    "source": "Advanced Materials"
+   },
+   "doi_registered": true,
+   "crossref_title": "High‐mobility Ambipolar Transistors and High‐gain Inverters from a Donor–Acceptor Copolymer Semiconductor",
+   "title_check": "match",
+   "crossref_authors": [
+    "Kim",
+    "Guo",
+    "Watson",
+    "Jenekhe"
+   ],
+   "crossref_years": {
+    "published": 2010,
+    "published-print": 2010,
+    "published-online": 2010,
+    "issued": 2010,
+    "created": 2009
+   },
+   "crossref_type": "journal-article",
+   "crossref_container": "Advanced Materials",
+   "crossref_relations": {},
+   "openalex_year": 2009,
+   "openalex_id": "https://openalex.org/W2167344832",
+   "doi_embedded_year": null,
+   "corpus_duplicates": [],
+   "openalex_same_title_other_doi": [],
+   "issues": [],
+   "notes": [
+    "online-first 2009, issue/print 2010 (citation year 2010)"
+   ],
+   "metadata_verified": "yes",
+   "duplicate_version": "no",
+   "row": 77
+  },
+  {
+   "doi": "10.5958/0975-928x.2017.00059.x",
+   "sample": {
+    "title": "Inter-correlation and path analysis in faba bean (Vicia faba L.)",
+    "authors": [
+     "Praveen kumar",
+     "R.R. Das",
+     "S.K. Bishnoi",
+     "Vinay sharma"
+    ],
+    "year": 2026,
+    "source": "Electronic Journal of Plant Breeding"
+   },
+   "doi_registered": true,
+   "crossref_title": "Inter-correlation and path analysis in faba bean (Vicia faba L.)",
+   "title_check": "match",
+   "crossref_authors": [
+    "Praveen kumar",
+    "R.R. Das",
+    "S.K. Bishnoi",
+    "Vinay sharma"
+   ],
+   "crossref_years": {
+    "published": 2026,
+    "published-online": 2026,
+    "issued": 2026,
+    "created": 2017
+   },
+   "crossref_type": "journal-article",
+   "crossref_container": "Electronic Journal of Plant Breeding",
+   "crossref_relations": {},
+   "openalex_year": 2017,
+   "openalex_id": "https://openalex.org/W2770072135",
+   "doi_embedded_year": 2017,
+   "corpus_duplicates": [],
+   "openalex_same_title_other_doi": [],
+   "issues": [
+    "UNCERTAIN year: online-only date 2026, DOI first deposited 2017; check landing page; DOI encodes 2017"
+   ],
+   "notes": [],
+   "metadata_verified": "no",
+   "duplicate_version": "no",
+   "row": 78
+  },
+  {
+   "doi": "10.1016/j.worlddev.2009.01.003",
+   "sample": {
+    "title": "A Cross-Country Comparison of Rural Income Generating Activities",
+    "authors": [
+     "Benjamin Davis",
+     "Paul Winters",
+     "Gero Carletto",
+     "Katia Covarrubias",
+     "Esteban J. Quiñones",
+     "Alberto Zezza",
+     "Kostas Stamoulis",
+     "Carlo Azzarri",
+     "Stefania DiGiuseppe"
+    ],
+    "year": 2010,
+    "source": "World Development"
+   },
+   "doi_registered": true,
+   "crossref_title": "A Cross-Country Comparison of Rural Income Generating Activities",
+   "title_check": "match",
+   "crossref_authors": [
+    "Davis",
+    "Winters",
+    "Carletto",
+    "Covarrubias",
+    "Quiñones",
+    "Zezza",
+    "Stamoulis",
+    "Azzarri",
+    "DiGiuseppe"
+   ],
+   "crossref_years": {
+    "published": 2010,
+    "published-print": 2010,
+    "issued": 2010,
+    "created": 2009
+   },
+   "crossref_type": "journal-article",
+   "crossref_container": "World Development",
+   "crossref_relations": {},
+   "openalex_year": 2009,
+   "openalex_id": "https://openalex.org/W2133013164",
+   "doi_embedded_year": 2009,
+   "corpus_duplicates": [],
+   "openalex_same_title_other_doi": [],
+   "issues": [],
+   "notes": [
+    "online-first 2009, issue/print 2010 (citation year 2010)"
+   ],
+   "metadata_verified": "yes",
+   "duplicate_version": "no",
+   "row": 79
+  },
+  {
+   "doi": "10.1080/00036840802112372",
+   "sample": {
+    "title": "Export market participation with sunk costs and firm heterogeneity",
+    "authors": [
+     "Evis Sinani",
+     "Bersant Hobdari"
+    ],
+    "year": 2010,
+    "source": "Applied Economics"
+   },
+   "doi_registered": true,
+   "crossref_title": "Export market participation with sunk costs and firm heterogeneity",
+   "title_check": "match",
+   "crossref_authors": [
+    "Sinani",
+    "Hobdari"
+   ],
+   "crossref_years": {
+    "published": 2010,
+    "published-print": 2010,
+    "issued": 2010,
+    "created": 2008
+   },
+   "crossref_type": "journal-article",
+   "crossref_container": "Applied Economics",
+   "crossref_relations": {},
+   "openalex_year": 2008,
+   "openalex_id": "https://openalex.org/W2061637613",
+   "doi_embedded_year": null,
+   "corpus_duplicates": [],
+   "openalex_same_title_other_doi": [],
+   "issues": [],
+   "notes": [
+    "online-first 2008, issue/print 2010 (citation year 2010)"
+   ],
+   "metadata_verified": "yes",
+   "duplicate_version": "no",
+   "row": 80
+  },
+  {
+   "doi": "10.1126/science.aad7481",
+   "sample": {
+    "title": "Video: Birds observed arguing over parental duties for first time",
+    "authors": [],
+    "year": 2021,
+    "source": "AAAS Articles DO Group"
+   },
+   "doi_registered": true,
+   "crossref_title": "Video: Birds observed arguing over parental duties for first time",
+   "title_check": "match",
+   "crossref_authors": [],
+   "crossref_years": {
+    "published": 2021,
+    "published-print": 2021,
+    "issued": 2021,
+    "created": 2015
+   },
+   "crossref_type": "dataset",
+   "crossref_container": "AAAS Articles DO Group",
+   "crossref_relations": {},
+   "openalex_year": 2015,
+   "openalex_id": "https://openalex.org/W2600701359",
+   "doi_embedded_year": null,
+   "corpus_duplicates": [],
+   "openalex_same_title_other_doi": [],
+   "issues": [
+    "UNCERTAIN year: listed 2021, but DOI first deposited 2015 (likely platform re-issue)"
+   ],
+   "notes": [
+    "Crossref lists no authors",
+    "Crossref type: dataset",
+    "not a research paper record"
+   ],
+   "metadata_verified": "no",
+   "duplicate_version": "no",
+   "row": 81
+  },
+  {
+   "doi": "10.1016/s0960-9822(02)00666-8",
+   "sample": {
+    "title": "Parental RNAi in Tribolium (Coleoptera)",
+    "authors": [
+     "Gregor Bucher",
+     "Johannes Scholten",
+     "Martin Klingler"
+    ],
+    "year": 2002,
+    "source": "Current Biology"
+   },
+   "doi_registered": true,
+   "crossref_title": "Parental RNAi in Tribolium (Coleoptera)",
+   "title_check": "match",
+   "crossref_authors": [
+    "Bucher",
+    "Scholten",
+    "Klingler"
+   ],
+   "crossref_years": {
+    "published": 2002,
+    "published-print": 2002,
+    "issued": 2002,
+    "created": 2002
+   },
+   "crossref_type": "journal-article",
+   "crossref_container": "Current Biology",
+   "crossref_relations": {},
+   "openalex_year": 2002,
+   "openalex_id": "https://openalex.org/W2065542901",
+   "doi_embedded_year": null,
+   "corpus_duplicates": [],
+   "openalex_same_title_other_doi": [],
+   "issues": [],
+   "notes": [],
+   "metadata_verified": "yes",
+   "duplicate_version": "no",
+   "row": 82
+  },
+  {
+   "doi": "10.1067/mjd.2001.111342",
+   "sample": {
+    "title": "Longitudinal melanonychia in children",
+    "authors": [
+     "Adil Usman",
+     "David N. Silvers",
+     "Richard K. Scher"
+    ],
+    "year": 2001,
+    "source": "Journal of the American Academy of Dermatology"
+   },
+   "doi_registered": true,
+   "crossref_title": "Longitudinal melanonychia in children",
+   "title_check": "match",
+   "crossref_authors": [
+    "Usman",
+    "Silvers",
+    "Scher"
+   ],
+   "crossref_years": {
+    "published": 2001,
+    "published-print": 2001,
+    "issued": 2001,
+    "created": 2002
+   },
+   "crossref_type": "journal-article",
+   "crossref_container": "Journal of the American Academy of Dermatology",
+   "crossref_relations": {},
+   "openalex_year": 2001,
+   "openalex_id": "https://openalex.org/W2037619706",
+   "doi_embedded_year": 2001,
+   "corpus_duplicates": [],
+   "openalex_same_title_other_doi": [],
+   "issues": [],
+   "notes": [],
+   "metadata_verified": "yes",
+   "duplicate_version": "no",
+   "row": 83
+  },
+  {
+   "doi": "10.1016/s0304-4068(01)00081-7",
+   "sample": {
+    "title": "Asset market equilibrium in Lp spaces with separable utilities",
+    "authors": [
+     "Cuong Le Van",
+     "Duc Ha Truong Xuan"
+    ],
+    "year": 2001,
+    "source": "Journal of Mathematical Economics"
+   },
+   "doi_registered": true,
+   "crossref_title": "Asset market equilibrium in Lp spaces with separable utilities",
+   "title_check": "match",
+   "crossref_authors": [
+    "Le Van",
+    "Truong Xuan"
+   ],
+   "crossref_years": {
+    "published": 2001,
+    "published-print": 2001,
+    "issued": 2001,
+    "created": 2002
+   },
+   "crossref_type": "journal-article",
+   "crossref_container": "Journal of Mathematical Economics",
+   "crossref_relations": {},
+   "openalex_year": 2001,
+   "openalex_id": "https://openalex.org/W2016611583",
+   "doi_embedded_year": null,
+   "corpus_duplicates": [],
+   "openalex_same_title_other_doi": [],
+   "issues": [],
+   "notes": [],
+   "metadata_verified": "yes",
+   "duplicate_version": "no",
+   "row": 84
+  },
+  {
+   "doi": "10.1080/00036840701537844",
+   "sample": {
+    "title": "Social norms and emission tax multiple equilibria in adopting pollution abatement device",
+    "authors": [
+     "Ho J. Shirley"
+    ],
+    "year": 2010,
+    "source": "Applied Economics"
+   },
+   "doi_registered": true,
+   "crossref_title": "Social norms and emission tax multiple equilibria in adopting pollution abatement device",
+   "title_check": "match",
+   "crossref_authors": [
+    "Shirley"
+   ],
+   "crossref_years": {
+    "published": 2010,
+    "published-print": 2010,
+    "issued": 2010,
+    "created": 2008
+   },
+   "crossref_type": "journal-article",
+   "crossref_container": "Applied Economics",
+   "crossref_relations": {},
+   "openalex_year": 2008,
+   "openalex_id": "https://openalex.org/W2142809863",
+   "doi_embedded_year": null,
+   "corpus_duplicates": [],
+   "openalex_same_title_other_doi": [],
+   "issues": [],
+   "notes": [
+    "online-first 2008, issue/print 2010 (citation year 2010)"
+   ],
+   "metadata_verified": "yes",
+   "duplicate_version": "no",
+   "row": 85
+  },
+  {
+   "doi": "10.1016/j.jempfin.2009.10.003",
+   "sample": {
+    "title": "A century of equity premium predictability and the consumption–wealth ratio: An international perspective",
+    "authors": [
+     "Pasquale Della Corte",
+     "Lucio Sarno",
+     "Giorgio Valente"
+    ],
+    "year": 2010,
+    "source": "Journal of Empirical Finance"
+   },
+   "doi_registered": true,
+   "crossref_title": "A century of equity premium predictability and the consumption–wealth ratio: An international perspective",
+   "title_check": "match",
+   "crossref_authors": [
+    "Della Corte",
+    "Sarno",
+    "Valente"
+   ],
+   "crossref_years": {
+    "published": 2010,
+    "published-print": 2010,
+    "issued": 2010,
+    "created": 2009
+   },
+   "crossref_type": "journal-article",
+   "crossref_container": "Journal of Empirical Finance",
+   "crossref_relations": {},
+   "openalex_year": 2009,
+   "openalex_id": "https://openalex.org/W1967042396",
+   "doi_embedded_year": 2009,
+   "corpus_duplicates": [],
+   "openalex_same_title_other_doi": [],
+   "issues": [],
+   "notes": [
+    "online-first 2009, issue/print 2010 (citation year 2010)"
+   ],
+   "metadata_verified": "yes",
+   "duplicate_version": "no",
+   "row": 86
+  },
+  {
+   "doi": "10.1093/imrp/rpm001",
+   "sample": {
+    "title": "Relative Motives and the Theory of Pseudo-finite Fields",
+    "authors": [
+     "J. Nicaise"
+    ],
+    "year": 2010,
+    "source": "International Mathematics Research Papers"
+   },
+   "doi_registered": true,
+   "crossref_title": "Relative Motives and the Theory of Pseudo-finite Fields",
+   "title_check": "match",
+   "crossref_authors": [
+    "Nicaise"
+   ],
+   "crossref_years": {
+    "published": 2010,
+    "published-online": 2010,
+    "issued": 2010,
+    "created": 2008
+   },
+   "crossref_type": "journal-article",
+   "crossref_container": "International Mathematics Research Papers",
+   "crossref_relations": {},
+   "openalex_year": 2008,
+   "openalex_id": "https://openalex.org/W2153218748",
+   "doi_embedded_year": null,
+   "corpus_duplicates": [],
+   "openalex_same_title_other_doi": [],
+   "issues": [
+    "UNCERTAIN year: online-only date 2010, DOI first deposited 2008; check landing page"
+   ],
+   "notes": [],
+   "metadata_verified": "no",
+   "duplicate_version": "no",
+   "row": 87
+  },
+  {
+   "doi": "10.1111/j.1365-3059.2009.02150.x",
+   "sample": {
+    "title": "Analysis of population structure of <i>Rosellinia necatrix</i> on <i>Cyperus esculentus</i> by mycelial compatibility and inter‐simple sequence repeats (ISSR)",
+    "authors": [
+     "J. Armengol",
+     "A. Vicent",
+     "M. León",
+     "M. Berbegal",
+     "P. Abad‐Campos",
+     "J. García‐Jiménez"
+    ],
+    "year": 2010,
+    "source": "Plant Pathology"
+   },
+   "doi_registered": true,
+   "crossref_title": "Analysis of population structure of\n                    <i>Rosellinia necatrix</i>\n                    on\n                    <i>Cyperus esculentus</i>\n                    by mycelial compatibility and inter‐simple sequence repeats (ISSR)",
+   "title_check": "match",
+   "crossref_authors": [
+    "Armengol",
+    "Vicent",
+    "León",
+    "Berbegal",
+    "Abad‐Campos",
+    "García‐Jiménez"
+   ],
+   "crossref_years": {
+    "published": 2010,
+    "published-print": 2010,
+    "published-online": 2010,
+    "issued": 2010,
+    "created": 2009
+   },
+   "crossref_type": "journal-article",
+   "crossref_container": "Plant Pathology",
+   "crossref_relations": {},
+   "openalex_year": 2009,
+   "openalex_id": "https://openalex.org/W1991250020",
+   "doi_embedded_year": 2009,
+   "corpus_duplicates": [],
+   "openalex_same_title_other_doi": [],
+   "issues": [],
+   "notes": [
+    "online-first 2009, issue/print 2010 (citation year 2010)"
+   ],
+   "metadata_verified": "yes",
+   "duplicate_version": "no",
+   "row": 88
+  },
+  {
+   "doi": "10.13051/ee:doc/fauqfrvh0031247a1d",
+   "sample": {
+    "title": "Order in council by His/Her Majesty’s most honourable Privy Council for Virginia General Assembly, Wednesday, 29 May 1765 [fauqfrVH0031247a1d]",
+    "authors": [],
+    "year": 2025,
+    "source": "Electronic Enlightenment Scholarly Edition of Correspondence"
+   },
+   "doi_registered": true,
+   "crossref_title": "Order in council by His/Her Majesty’s most honourable Privy Council for Virginia General Assembly, Wednesday, 29 May 1765 [fauqfrVH0031247a1d]",
+   "title_check": "match",
+   "crossref_authors": [],
+   "crossref_years": {
+    "published": 2025,
+    "published-print": 2025,
+    "issued": 2025,
+    "created": 2014
+   },
+   "crossref_type": "dataset",
+   "crossref_container": "Electronic Enlightenment Scholarly Edition of Correspondence",
+   "crossref_relations": {},
+   "openalex_year": 2014,
+   "openalex_id": "https://openalex.org/W4240811497",
+   "doi_embedded_year": null,
+   "corpus_duplicates": [],
+   "openalex_same_title_other_doi": [],
+   "issues": [
+    "UNCERTAIN year: listed 2025, but DOI first deposited 2014 (likely platform re-issue)"
+   ],
+   "notes": [
+    "Crossref lists no authors",
+    "Crossref type: dataset",
+    "not a research paper record"
+   ],
+   "metadata_verified": "no",
+   "duplicate_version": "no",
+   "row": 89
+  },
+  {
+   "doi": "10.1016/s0030-4018(01)01653-4",
+   "sample": {
+    "title": "Shaping NRZ pulses and suppression of the inter-symbol interference by a second-harmonic-generating module",
+    "authors": [
+     "Michael Gutin",
+     "Uri Mahlab",
+     "Boris A Malomed"
+    ],
+    "year": 2001,
+    "source": "Optics Communications"
+   },
+   "doi_registered": true,
+   "crossref_title": "Shaping NRZ pulses and suppression of the inter-symbol interference by a second-harmonic-generating module",
+   "title_check": "match",
+   "crossref_authors": [
+    "Gutin",
+    "Mahlab",
+    "Malomed"
+   ],
+   "crossref_years": {
+    "published": 2001,
+    "published-print": 2001,
+    "issued": 2001,
+    "created": 2002
+   },
+   "crossref_type": "journal-article",
+   "crossref_container": "Optics Communications",
+   "crossref_relations": {},
+   "openalex_year": 2001,
+   "openalex_id": "https://openalex.org/W2090965014",
+   "doi_embedded_year": null,
+   "corpus_duplicates": [],
+   "openalex_same_title_other_doi": [],
+   "issues": [],
+   "notes": [],
+   "metadata_verified": "yes",
+   "duplicate_version": "no",
+   "row": 90
+  },
+  {
+   "doi": "10.1093/acprof:oso/9780195335156.003.0014",
+   "sample": {
+    "title": "Chapter 14 Political and Historical Consequences of Implicit Motives",
+    "authors": [
+     "David G. Winter"
+    ],
+    "year": 2010,
+    "source": "Implicit Motives"
+   },
+   "doi_registered": true,
+   "crossref_title": "Chapter 14 Political and Historical Consequences of Implicit Motives",
+   "title_check": "match",
+   "crossref_authors": [
+    "Winter"
+   ],
+   "crossref_years": {
+    "published": 2010,
+    "published-print": 2010,
+    "issued": 2010,
+    "created": 2010
+   },
+   "crossref_type": "book-chapter",
+   "crossref_container": "Implicit Motives",
+   "crossref_relations": {},
+   "openalex_year": 2010,
+   "openalex_id": "https://openalex.org/W2481117670",
+   "doi_embedded_year": null,
+   "corpus_duplicates": [],
+   "openalex_same_title_other_doi": [],
+   "issues": [],
+   "notes": [
+    "Crossref type: book-chapter"
+   ],
+   "metadata_verified": "yes",
+   "duplicate_version": "no",
+   "row": 91
+  },
+  {
+   "doi": "10.1016/j.jemermed.2007.12.033",
+   "sample": {
+    "title": "A Brief Educational Intervention May Increase Public Acceptance of Emergency Research Without Consent",
+    "authors": [
+     "Joshua N. Goldstein",
+     "Kate E. Delaney",
+     "Andrea J. Pelletier",
+     "Jonathan Fisher",
+     "Phillip G. Blanc",
+     "Mark Halsey",
+     "Daniel J. Pallin",
+     "Carlos A. Camargo"
+    ],
+    "year": 2010,
+    "source": "The Journal of Emergency Medicine"
+   },
+   "doi_registered": true,
+   "crossref_title": "A Brief Educational Intervention May Increase Public Acceptance of Emergency Research Without Consent",
+   "title_check": "match",
+   "crossref_authors": [
+    "Goldstein",
+    "Delaney",
+    "Pelletier",
+    "Fisher",
+    "Blanc",
+    "Halsey",
+    "Pallin",
+    "Camargo"
+   ],
+   "crossref_years": {
+    "published": 2010,
+    "published-print": 2010,
+    "issued": 2010,
+    "created": 2008
+   },
+   "crossref_type": "journal-article",
+   "crossref_container": "The Journal of Emergency Medicine",
+   "crossref_relations": {},
+   "openalex_year": 2008,
+   "openalex_id": "https://openalex.org/W2150893192",
+   "doi_embedded_year": 2007,
+   "corpus_duplicates": [],
+   "openalex_same_title_other_doi": [],
+   "issues": [],
+   "notes": [
+    "online-first 2008, issue/print 2010 (citation year 2010)"
+   ],
+   "metadata_verified": "yes",
+   "duplicate_version": "no",
+   "row": 92
+  },
+  {
+   "doi": "10.1067/mod.2001.112671",
+   "sample": {
+    "title": "Cephalometric evaluation of craniofacial pattern of syrian children with class III malocclusion",
+    "authors": [
+     "Marwan Mouakeh"
+    ],
+    "year": 2001,
+    "source": "American Journal of Orthodontics and Dentofacial Orthopedics"
+   },
+   "doi_registered": true,
+   "crossref_title": "Cephalometric evaluation of craniofacial pattern of syrian children with class III malocclusion",
+   "title_check": "match",
+   "crossref_authors": [
+    "Mouakeh"
+   ],
+   "crossref_years": {
+    "published": 2001,
+    "published-print": 2001,
+    "issued": 2001,
+    "created": 2002
+   },
+   "crossref_type": "journal-article",
+   "crossref_container": "American Journal of Orthodontics and Dentofacial Orthopedics",
+   "crossref_relations": {},
+   "openalex_year": 2001,
+   "openalex_id": "https://openalex.org/W2169484617",
+   "doi_embedded_year": 2001,
+   "corpus_duplicates": [],
+   "openalex_same_title_other_doi": [],
+   "issues": [],
+   "notes": [],
+   "metadata_verified": "yes",
+   "duplicate_version": "no",
+   "row": 93
+  },
+  {
+   "doi": "10.1201/b14437-62",
+   "sample": {
+    "title": "Pharmaceutical Quality System",
+    "authors": [],
+    "year": 2021,
+    "source": "Handbook of Pharmaceutical Manufacturing Formulations, Second Edition"
+   },
+   "doi_registered": true,
+   "crossref_title": "Pharmaceutical Quality System",
+   "title_check": "match",
+   "crossref_authors": [],
+   "crossref_years": {
+    "published": 2021,
+    "published-print": 2021,
+    "issued": 2021,
+    "created": 2014
+   },
+   "crossref_type": "book-chapter",
+   "crossref_container": "Handbook of Pharmaceutical Manufacturing Formulations, Second Edition",
+   "crossref_relations": {},
+   "openalex_year": 2014,
+   "openalex_id": "https://openalex.org/W4206317534",
+   "doi_embedded_year": null,
+   "corpus_duplicates": [],
+   "openalex_same_title_other_doi": [],
+   "issues": [
+    "UNCERTAIN year: listed 2021, but DOI first deposited 2014 (likely platform re-issue)"
+   ],
+   "notes": [
+    "Crossref lists no authors",
+    "Crossref type: book-chapter"
+   ],
+   "metadata_verified": "no",
+   "duplicate_version": "no",
+   "row": 94
+  },
+  {
+   "doi": "10.1086/702858",
+   "sample": {
+    "title": "Do Informal Transfers Induce Lower Efforts? Evidence from Lab-in-the-Field Experiments in Rural Mexico",
+    "authors": [
+     "Ingela Alger",
+     "Laura Juarez",
+     "Miriam Juarez-Torres",
+     "Josepa Miquel-Florensa"
+    ],
+    "year": 2020,
+    "source": "Economic Development and Cultural Change"
+   },
+   "doi_registered": true,
+   "crossref_title": "Do Informal Transfers Induce Lower Efforts? Evidence from Lab-in-the-Field Experiments in Rural Mexico",
+   "title_check": "match",
+   "crossref_authors": [
+    "Alger",
+    "Juarez",
+    "Juarez-Torres",
+    "Miquel-Florensa"
+   ],
+   "crossref_years": {
+    "published": 2020,
+    "published-print": 2020,
+    "issued": 2020,
+    "created": 2019
+   },
+   "crossref_type": "journal-article",
+   "crossref_container": "Economic Development and Cultural Change",
+   "crossref_relations": {},
+   "openalex_year": 2019,
+   "openalex_id": "https://openalex.org/W2891082693",
+   "doi_embedded_year": null,
+   "corpus_duplicates": [],
+   "openalex_same_title_other_doi": [],
+   "issues": [],
+   "notes": [
+    "online-first 2019, issue/print 2020 (citation year 2020)"
+   ],
+   "metadata_verified": "yes",
+   "duplicate_version": "no",
+   "row": 95
+  },
+  {
+   "doi": "10.1016/j.habitatint.2009.07.002",
+   "sample": {
+    "title": "Land titling, perceived tenure security, and housing consolidation in the kampongs of Bandung, Indonesia",
+    "authors": [
+     "Gustaaf Reerink",
+     "Jean-Louis van Gelder"
+    ],
+    "year": 2010,
+    "source": "Habitat International"
+   },
+   "doi_registered": true,
+   "crossref_title": "Land titling, perceived tenure security, and housing consolidation in the kampongs of Bandung, Indonesia",
+   "title_check": "match",
+   "crossref_authors": [
+    "Reerink",
+    "van Gelder"
+   ],
+   "crossref_years": {
+    "published": 2010,
+    "published-print": 2010,
+    "issued": 2010,
+    "created": 2009
+   },
+   "crossref_type": "journal-article",
+   "crossref_container": "Habitat International",
+   "crossref_relations": {},
+   "openalex_year": 2009,
+   "openalex_id": "https://openalex.org/W2093465932",
+   "doi_embedded_year": 2009,
+   "corpus_duplicates": [],
+   "openalex_same_title_other_doi": [],
+   "issues": [],
+   "notes": [
+    "online-first 2009, issue/print 2010 (citation year 2010)"
+   ],
+   "metadata_verified": "yes",
+   "duplicate_version": "no",
+   "row": 96
+  },
+  {
+   "doi": "10.1016/j.vlsi.2009.09.002",
+   "sample": {
+    "title": "Reducing signal timing variations in inter-core busses",
+    "authors": [
+     "Bassel Soudan"
+    ],
+    "year": 2010,
+    "source": "Integration"
+   },
+   "doi_registered": true,
+   "crossref_title": "Reducing signal timing variations in inter-core busses",
+   "title_check": "match",
+   "crossref_authors": [
+    "Soudan"
+   ],
+   "crossref_years": {
+    "published": 2010,
+    "published-print": 2010,
+    "issued": 2010,
+    "created": 2009
+   },
+   "crossref_type": "journal-article",
+   "crossref_container": "Integration",
+   "crossref_relations": {},
+   "openalex_year": 2009,
+   "openalex_id": "https://openalex.org/W1996090517",
+   "doi_embedded_year": 2009,
+   "corpus_duplicates": [],
+   "openalex_same_title_other_doi": [],
+   "issues": [],
+   "notes": [
+    "online-first 2009, issue/print 2010 (citation year 2010)"
+   ],
+   "metadata_verified": "yes",
+   "duplicate_version": "no",
+   "row": 97
+  },
+  {
+   "doi": "10.1007/s002449910042",
+   "sample": {
+    "title": "Comparative Experimental Study of Cadmium and Methylmercury Trophic Transfers Between the Asiatic Clam Corbicula fluminea and the Crayfish Astacus astacus",
+    "authors": [
+     "O. Simon",
+     "F. Ribeyre",
+     "A. Boudou"
+    ],
+    "year": 2000,
+    "source": "Archives of Environmental Contamination and Toxicology"
+   },
+   "doi_registered": true,
+   "crossref_title": "Comparative Experimental Study of Cadmium and Methylmercury Trophic Transfers Between the Asiatic Clam Corbicula fluminea and the Crayfish Astacus astacus",
+   "title_check": "match",
+   "crossref_authors": [
+    "Simon",
+    "Ribeyre",
+    "Boudou"
+   ],
+   "crossref_years": {
+    "published": 2000,
+    "published-print": 2000,
+    "issued": 2000,
+    "created": 2002
+   },
+   "crossref_type": "journal-article",
+   "crossref_container": "Archives of Environmental Contamination and Toxicology",
+   "crossref_relations": {},
+   "openalex_year": 2000,
+   "openalex_id": "https://openalex.org/W1981478493",
+   "doi_embedded_year": null,
+   "corpus_duplicates": [],
+   "openalex_same_title_other_doi": [],
+   "issues": [],
+   "notes": [],
+   "metadata_verified": "yes",
+   "duplicate_version": "no",
+   "row": 98
+  },
+  {
+   "doi": "10.1067/mhj.2001.111546",
+   "sample": {
+    "title": "Unstable angina in the Myocardial Infarction Triage and Intervention Registry (MITI): Short- and long-term outcomes in men and women",
+    "authors": [
+     "Catherine Kim",
+     "Carol H. Schaaf",
+     "Charles Maynard",
+     "Nathan R. Every"
+    ],
+    "year": 2001,
+    "source": "American Heart Journal"
+   },
+   "doi_registered": true,
+   "crossref_title": "Unstable angina in the Myocardial Infarction Triage and Intervention Registry (MITI): Short- and long-term outcomes in men and women",
+   "title_check": "match",
+   "crossref_authors": [
+    "Kim",
+    "Schaaf",
+    "Maynard",
+    "Every"
+   ],
+   "crossref_years": {
+    "published": 2001,
+    "published-print": 2001,
+    "issued": 2001,
+    "created": 2002
+   },
+   "crossref_type": "journal-article",
+   "crossref_container": "American Heart Journal",
+   "crossref_relations": {},
+   "openalex_year": 2001,
+   "openalex_id": "https://openalex.org/W2102285081",
+   "doi_embedded_year": 2001,
+   "corpus_duplicates": [],
+   "openalex_same_title_other_doi": [],
+   "issues": [],
+   "notes": [],
+   "metadata_verified": "yes",
+   "duplicate_version": "no",
+   "row": 99
+  }
+ ]
+}
