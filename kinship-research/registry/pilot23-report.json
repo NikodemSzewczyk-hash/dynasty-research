@@ -1,11 +1,11 @@
 {
-  "candidate_total": 98307,
+  "candidate_total": 98406,
   "cross_provider_duplicate_dois": 55,
-  "date": "2026-11-09",
-  "end_date": "2026-11-09",
+  "date": "2026-11-16",
+  "end_date": "2026-11-16",
   "errors": [],
-  "fetched": 1614,
-  "new_candidates": 5,
+  "fetched": 1716,
+  "new_candidates": 99,
   "per_source": [
     {
       "adapter": "crossref_journal",
@@ -20,21 +20,21 @@
     {
       "adapter": "crossref_journal",
       "coverage": 1.0,
-      "fetched": 8,
-      "new": 0,
+      "fetched": 11,
+      "new": 3,
       "possibly_truncated": false,
-      "provider_records_available": 8,
-      "provider_records_read": 8,
+      "provider_records_available": 11,
+      "provider_records_read": 11,
       "source_id": "journal:quarterly-journal-of-economics"
     },
     {
       "adapter": "crossref_journal",
       "coverage": 1.0,
-      "fetched": 23,
-      "new": 0,
+      "fetched": 29,
+      "new": 4,
       "possibly_truncated": false,
-      "provider_records_available": 23,
-      "provider_records_read": 23,
+      "provider_records_available": 29,
+      "provider_records_read": 29,
       "source_id": "journal:journal-of-political-economy"
     },
     {
@@ -50,11 +50,11 @@
     {
       "adapter": "crossref_journal",
       "coverage": 1.0,
-      "fetched": 11,
-      "new": 0,
+      "fetched": 16,
+      "new": 5,
       "possibly_truncated": false,
-      "provider_records_available": 11,
-      "provider_records_read": 11,
+      "provider_records_available": 16,
+      "provider_records_read": 16,
       "source_id": "journal:review-of-economic-studies"
     },
     {
@@ -101,7 +101,7 @@
       "adapter": "crossref_journal",
       "coverage": 1.0,
       "fetched": 6,
-      "new": 4,
+      "new": 0,
       "possibly_truncated": false,
       "provider_records_available": 6,
       "provider_records_read": 6,
@@ -110,11 +110,11 @@
     {
       "adapter": "crossref_prefix",
       "coverage": 1.0,
-      "fetched": 154,
-      "new": 0,
+      "fetched": 175,
+      "new": 21,
       "possibly_truncated": false,
-      "provider_records_available": 154,
-      "provider_records_read": 154,
+      "provider_records_available": 175,
+      "provider_records_read": 175,
       "source_id": "working_paper_series:nber-working-papers"
     },
     {
@@ -131,22 +131,22 @@
     {
       "adapter": "repec_redif",
       "coverage": 1.0,
-      "fetched": 671,
+      "fetched": 735,
       "files_read": 2,
-      "new": 0,
+      "new": 64,
       "possibly_truncated": false,
-      "provider_records_available": 671,
-      "provider_records_read": 671,
+      "provider_records_available": 735,
+      "provider_records_read": 735,
       "source_id": "working_paper_series:iza-discussion-papers"
     },
     {
       "adapter": "crossref_prefix",
       "coverage": 1.0,
-      "fetched": 8,
-      "new": 0,
+      "fetched": 10,
+      "new": 1,
       "possibly_truncated": false,
-      "provider_records_available": 37,
-      "provider_records_read": 37,
+      "provider_records_available": 39,
+      "provider_records_read": 39,
       "source_id": "working_paper_series:ifs-working-papers"
     },
     {
@@ -203,7 +203,7 @@
       "adapter": "openalex_author",
       "coverage": 1.0,
       "fetched": 1,
-      "new": 1,
+      "new": 0,
       "possibly_truncated": false,
       "provider_records_available": 1,
       "provider_records_read": 1,
@@ -212,11 +212,11 @@
     {
       "adapter": "openalex_author",
       "coverage": 1.0,
-      "fetched": 0,
-      "new": 0,
+      "fetched": 1,
+      "new": 1,
       "possibly_truncated": false,
-      "provider_records_available": 0,
-      "provider_records_read": 0,
+      "provider_records_available": 1,
+      "provider_records_read": 1,
       "source_id": "researcher:alessandra-voena"
     },
     {
@@ -255,6 +255,6 @@
   "sources_at_cap": 0,
   "sources_failed": 0,
   "sources_succeeded": 24,
-  "sqlite_candidate_rows": 98307,
-  "start_date": "2026-09-23"
+  "sqlite_candidate_rows": 98406,
+  "start_date": "2026-09-25"
 }
