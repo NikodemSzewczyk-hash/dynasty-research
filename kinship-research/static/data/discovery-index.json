@@ -8138,6 +8138,31 @@
     "source_ids": []
   },
   {
+    "id": "crossref:10.3386/w36031",
+    "title": "A Blessing in Disguise: The Long-Term Effects of Childhood Exposure to the Boll Weevil on Old-Age Male Longevity",
+    "authors": [
+      "Hamid Noghanibehambari",
+      "Jason Fletcher"
+    ],
+    "year": 2026,
+    "source": "NBER Working Papers",
+    "doi": "10.3386/w36031",
+    "url": "https://doi.org/10.3386/w36031",
+    "provider": "crossref",
+    "review_status": "pending",
+    "evidence_level": "metadata_only",
+    "collection": "pilot23",
+    "topics": [
+      "Place and opportunity"
+    ],
+    "source_ids": [
+      "working_paper_series:nber-working-papers"
+    ],
+    "score": 14,
+    "match_type": "none",
+    "kind": "working_paper"
+  },
+  {
     "id": "openalex:https://openalex.org/W7118181214",
     "title": "Assortative Mating, Inequality, and Rising Educational Mobility in Spain",
     "authors": [
@@ -8963,6 +8988,33 @@
     ],
     "source_ids": [
       "working_paper_series:ifs-working-papers"
+    ],
+    "score": 14,
+    "match_type": "none",
+    "kind": "working_paper"
+  },
+  {
+    "id": "repec:RePEc:iza:izadps:dp19108",
+    "title": "How Siblings Share Parental Care: Theory and Evidence from Europe",
+    "authors": [
+      "Nishimura, Yukihiro",
+      "Pestieau, Pierre",
+      "Schoenmaeckers, Jerome",
+      "Theodoropoulos, Nikos"
+    ],
+    "year": 2026,
+    "source": "IZA Discussion Papers",
+    "doi": null,
+    "url": "https://ideas.repec.org/p/iza/izadps/dp19108.html",
+    "provider": "repec",
+    "review_status": "pending",
+    "evidence_level": "metadata_only",
+    "collection": "pilot23",
+    "topics": [
+      "Family structure"
+    ],
+    "source_ids": [
+      "working_paper_series:iza-discussion-papers"
     ],
     "score": 14,
     "match_type": "none",

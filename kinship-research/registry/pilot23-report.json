@@ -1,40 +1,40 @@
 {
-  "candidate_total": 98406,
+  "candidate_total": 98479,
   "cross_provider_duplicate_dois": 55,
-  "date": "2026-11-16",
-  "end_date": "2026-11-16",
+  "date": "2026-11-23",
+  "end_date": "2026-11-23",
   "errors": [],
-  "fetched": 1716,
-  "new_candidates": 99,
+  "fetched": 1604,
+  "new_candidates": 73,
   "per_source": [
     {
       "adapter": "crossref_journal",
       "coverage": 1.0,
-      "fetched": 21,
+      "fetched": 11,
       "new": 0,
       "possibly_truncated": false,
-      "provider_records_available": 21,
-      "provider_records_read": 21,
+      "provider_records_available": 11,
+      "provider_records_read": 11,
       "source_id": "journal:american-economic-review"
     },
     {
       "adapter": "crossref_journal",
       "coverage": 1.0,
-      "fetched": 11,
-      "new": 3,
+      "fetched": 8,
+      "new": 1,
       "possibly_truncated": false,
-      "provider_records_available": 11,
-      "provider_records_read": 11,
+      "provider_records_available": 8,
+      "provider_records_read": 8,
       "source_id": "journal:quarterly-journal-of-economics"
     },
     {
       "adapter": "crossref_journal",
       "coverage": 1.0,
-      "fetched": 29,
+      "fetched": 24,
       "new": 4,
       "possibly_truncated": false,
-      "provider_records_available": 29,
-      "provider_records_read": 29,
+      "provider_records_available": 24,
+      "provider_records_read": 24,
       "source_id": "journal:journal-of-political-economy"
     },
     {
@@ -50,21 +50,21 @@
     {
       "adapter": "crossref_journal",
       "coverage": 1.0,
-      "fetched": 16,
-      "new": 5,
+      "fetched": 19,
+      "new": 4,
       "possibly_truncated": false,
-      "provider_records_available": 16,
-      "provider_records_read": 16,
+      "provider_records_available": 19,
+      "provider_records_read": 19,
       "source_id": "journal:review-of-economic-studies"
     },
     {
       "adapter": "crossref_journal",
       "coverage": 1.0,
-      "fetched": 16,
+      "fetched": 0,
       "new": 0,
       "possibly_truncated": false,
-      "provider_records_available": 16,
-      "provider_records_read": 16,
+      "provider_records_available": 0,
+      "provider_records_read": 0,
       "source_id": "journal:aej-applied-economics"
     },
     {
@@ -80,21 +80,21 @@
     {
       "adapter": "crossref_journal",
       "coverage": 1.0,
-      "fetched": 31,
+      "fetched": 51,
       "new": 0,
       "possibly_truncated": false,
-      "provider_records_available": 31,
-      "provider_records_read": 31,
+      "provider_records_available": 51,
+      "provider_records_read": 51,
       "source_id": "journal:review-of-economics-and-statistics"
     },
     {
       "adapter": "crossref_journal",
       "coverage": 1.0,
-      "fetched": 27,
-      "new": 0,
+      "fetched": 28,
+      "new": 10,
       "possibly_truncated": false,
-      "provider_records_available": 27,
-      "provider_records_read": 27,
+      "provider_records_available": 28,
+      "provider_records_read": 28,
       "source_id": "journal:journal-of-labor-economics"
     },
     {
@@ -110,11 +110,11 @@
     {
       "adapter": "crossref_prefix",
       "coverage": 1.0,
-      "fetched": 175,
-      "new": 21,
+      "fetched": 52,
+      "new": 31,
       "possibly_truncated": false,
-      "provider_records_available": 175,
-      "provider_records_read": 175,
+      "provider_records_available": 52,
+      "provider_records_read": 52,
       "source_id": "working_paper_series:nber-working-papers"
     },
     {
@@ -131,22 +131,22 @@
     {
       "adapter": "repec_redif",
       "coverage": 1.0,
-      "fetched": 735,
+      "fetched": 757,
       "files_read": 2,
-      "new": 64,
+      "new": 22,
       "possibly_truncated": false,
-      "provider_records_available": 735,
-      "provider_records_read": 735,
+      "provider_records_available": 757,
+      "provider_records_read": 757,
       "source_id": "working_paper_series:iza-discussion-papers"
     },
     {
       "adapter": "crossref_prefix",
       "coverage": 1.0,
-      "fetched": 10,
+      "fetched": 9,
       "new": 1,
       "possibly_truncated": false,
-      "provider_records_available": 39,
-      "provider_records_read": 39,
+      "provider_records_available": 37,
+      "provider_records_read": 37,
       "source_id": "working_paper_series:ifs-working-papers"
     },
     {
@@ -213,7 +213,7 @@
       "adapter": "openalex_author",
       "coverage": 1.0,
       "fetched": 1,
-      "new": 1,
+      "new": 0,
       "possibly_truncated": false,
       "provider_records_available": 1,
       "provider_records_read": 1,
@@ -255,6 +255,6 @@
   "sources_at_cap": 0,
   "sources_failed": 0,
   "sources_succeeded": 24,
-  "sqlite_candidate_rows": 98406,
-  "start_date": "2026-09-25"
+  "sqlite_candidate_rows": 98479,
+  "start_date": "2026-10-02"
 }
